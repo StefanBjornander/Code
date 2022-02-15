@@ -1,0 +1,29 @@
+0: Assign c 0
+1: Case 5 g_inStatus 0
+2: Case 18 g_inStatus 1
+3: CaseEnd g_inStatus
+4: Goto 26
+5: IntegralToIntegral £temporary942 g_inDevice
+6: Assign stream £temporary942
+7: Dereference £temporary943 -> stream stream 0
+8: Assign handle £temporary943 -> stream
+9: AssignRegister ah 63
+10: AssignRegister bx handle
+11: AssignRegister cx 1
+12: Address £temporary948 c
+13: AssignRegister dx £temporary948
+14: Interrupt 33
+15: BinaryAdd g_inChars g_inChars 1
+16: SetReturnValue
+17: Return c
+18: IntegralToIntegral £temporary950 g_inDevice
+19: Assign inString £temporary950
+20: Assign £temporary951 g_inChars
+21: BinaryAdd g_inChars g_inChars 1
+22: BinaryAdd £temporary954 inString £temporary951
+23: Dereference £temporary952 -> £temporary954 £temporary954 0
+24: SetReturnValue
+25: Return £temporary952 -> £temporary954
+26: SetReturnValue
+27: Return 0
+28: FunctionEnd scanChar

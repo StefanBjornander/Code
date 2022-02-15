@@ -1,0 +1,39 @@
+0: SignedGreaterThanEqual 36 size 3
+1: Assign c 97
+2: SignedGreaterThan 36 c 122
+3: BinaryAdd £temporary923 name size
+4: Dereference £temporary921 -> £temporary923 £temporary923 0
+5: Assign £temporary921 -> £temporary923 c
+6: BinaryAdd £temporary924 size 1
+7: BinaryAdd £temporary927 name £temporary924
+8: Dereference £temporary925 -> £temporary927 £temporary927 0
+9: Assign £temporary925 -> £temporary927 0
+10: PreCall 13 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+11: Parameter 19 pointer name
+12: Call 13 fileexists 0
+13: PostCall 13
+14: GetReturnValue £temporary928
+15: NotEqual 22 £temporary928 0
+16: Case 20 status 0
+17: Case 22 status 1
+18: CaseEnd status
+19: Goto 22
+20: SetReturnValue
+21: Return name
+22: PreCall 13 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+23: Parameter 19 pointer name
+24: BinaryAdd £temporary931 size 1
+25: Parameter 21 signedint £temporary931
+26: Parameter 23 signedint status
+27: Call 13 generateTempName 0
+28: PostCall 13
+29: GetReturnValue £temporary932
+30: Assign result £temporary932
+31: Equal 34 result 0
+32: SetReturnValue
+33: Return result
+34: BinaryAdd c c 1
+35: Goto 2
+36: SetReturnValue
+37: Return 0
+38: FunctionEnd generateTempName

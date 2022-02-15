@@ -1,0 +1,20 @@
+0: IntegralToIntegral £temporary3299 block
+1: Assign charBlock £temporary3299
+2: IntegralToIntegral £temporary3300 i
+3: Assign c £temporary3300
+4: Assign index 0
+5: SignedGreaterThanEqual 17 index size
+6: BinaryAdd £temporary3305 charBlock index
+7: Dereference £temporary3303 -> £temporary3305 £temporary3305 0
+8: NotEqual 15 £temporary3303 -> £temporary3305 c
+9: BinaryAdd £temporary3309 charBlock index
+10: Dereference £temporary3307 -> £temporary3309 £temporary3309 0
+11: Address £temporary3310 £temporary3307 -> £temporary3309
+12: IntegralToIntegral £temporary3311 £temporary3310
+13: SetReturnValue
+14: Return £temporary3311
+15: BinaryAdd index index 1
+16: Goto 5
+17: SetReturnValue
+18: Return 0
+19: FunctionEnd memchr

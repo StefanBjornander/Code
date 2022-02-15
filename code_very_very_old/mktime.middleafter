@@ -1,0 +1,31 @@
+0: Equal 28 tp 0
+1: Dereference £temporary2683 -> tp tp 0
+2: BinarySubtract £temporary2684 £temporary2683 -> tp 69
+3: SignedDivide £temporary2685 £temporary2684 4
+4: IntegralToIntegral £temporary2686 £temporary2685
+5: Assign leapDays £temporary2686
+6: Dereference £temporary2687 -> tp tp 0
+7: BinarySubtract £temporary2688 £temporary2687 -> tp 70
+8: SignedMultiply £temporary2689 £temporary2688 365
+9: IntegralToIntegral £temporary2690 £temporary2689
+10: BinaryAdd £temporary2691 £temporary2690 leapDays
+11: Dereference £temporary2692 -> tp tp 0
+12: IntegralToIntegral £temporary2693 £temporary2692 -> tp
+13: BinaryAdd totalDays £temporary2691 £temporary2693
+14: SignedMultiply £temporary2695 totalDays 86400
+15: Dereference £temporary2696 -> tp tp 0
+16: IntegralToIntegral £temporary2697 £temporary2696 -> tp
+17: SignedMultiply £temporary2698 £temporary2697 3600
+18: BinaryAdd £temporary2699 £temporary2695 £temporary2698
+19: Dereference £temporary2700 -> tp tp 0
+20: IntegralToIntegral £temporary2701 £temporary2700 -> tp
+21: SignedMultiply £temporary2702 £temporary2701 60
+22: BinaryAdd £temporary2703 £temporary2699 £temporary2702
+23: Dereference £temporary2704 -> tp tp 0
+24: IntegralToIntegral £temporary2705 £temporary2704 -> tp
+25: BinaryAdd £temporary2706 £temporary2703 £temporary2705
+26: SetReturnValue
+27: Return £temporary2706
+28: SetReturnValue
+29: Return 0
+30: FunctionEnd mktime

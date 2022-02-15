@@ -1,0 +1,39 @@
+0: PreCall 8
+1: Parameter 14 pointer timePtr
+2: Call 8 gmtime 0
+3: PostCall 8
+4: GetReturnValue £temporary2827
+5: Assign tmPtr £temporary2827
+6: PreCall 10
+7: Call 10 localeconv 0
+8: PostCall 10
+9: GetReturnValue £temporary2828
+10: Assign localeConvPtr £temporary2828
+11: Assign timeZone 0
+12: NotEqual Dereference £temporary2830 -> tmPtr tmPtr 0 localeConvPtr 0
+13: Goto Dereference £temporary2835 -> timePtr timePtr 0
+14: Dereference £temporary2830 -> tmPtr tmPtr 0
+15: Equal Dereference £temporary2832 -> localeConvPtr localeConvPtr 0 £temporary2830 -> tmPtr 1
+16: Goto Dereference £temporary2833 -> localeConvPtr localeConvPtr 0
+17: Dereference £temporary2832 -> localeConvPtr localeConvPtr 0
+18: Assign £temporary2834 £temporary2832 -> localeConvPtr
+19: Goto Empty
+20: Dereference £temporary2833 -> localeConvPtr localeConvPtr 0
+21: Assign £temporary2834 £temporary2833 -> localeConvPtr
+22: Empty
+23: Assign timeZone £temporary2834
+24: Goto Dereference £temporary2835 -> timePtr timePtr 0
+25: Dereference £temporary2835 -> timePtr timePtr 0
+26: IntegralToIntegral £temporary2836 timeZone
+27: SignedMultiply £temporary2837 3600 £temporary2836
+28: BinaryAdd £temporary2838 £temporary2835 -> timePtr £temporary2837
+29: Assign t £temporary2838
+30: PreCall 18
+31: Address £temporary2839 t
+32: Parameter 24 pointer £temporary2839
+33: Call 18 gmtime 0
+34: PostCall 18
+35: GetReturnValue £temporary2840
+36: Return £temporary2840
+37: Empty
+38: FunctionEnd localtime

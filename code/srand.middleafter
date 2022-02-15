@@ -1,0 +1,4 @@
+0: IntegralToIntegral £temporary2543 seed
+1: Assign g_randValue £temporary2543
+2: Return
+3: FunctionEnd srand

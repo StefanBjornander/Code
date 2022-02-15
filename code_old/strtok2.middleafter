@@ -1,0 +1,78 @@
+0: Equal 37 string 0
+1: Deref £temporary4066 -> string string 0
+2: NotEqual 5 £temporary4066 -> string 0
+3: SetReturnValue 0
+4: Return 0
+5: Assign index 0
+6: BinaryAdd £temporary4069 string index
+7: Deref £temporary4068 -> £temporary4069 £temporary4069 0
+8: Equal 31 £temporary4068 -> £temporary4069 0
+9: CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+10: Parameter 14 charSet 6
+11: BinaryAdd £temporary4073 string index
+12: Deref £temporary4072 -> £temporary4073 £temporary4073 0
+13: IntegralToIntegral £temporary4074 £temporary4072 -> £temporary4073
+14: Parameter 14 £temporary4074 8
+15: Call 14 strchr 0
+16: PostCall 14
+17: GetReturnValue £temporary4075
+18: Equal 29 £temporary4075 0
+19: BinaryAdd £temporary4078 string index
+20: Deref £temporary4077 -> £temporary4078 £temporary4078 0
+21: Assign £temporary4077 -> £temporary4078 0
+22: BinaryAdd £temporary4079 index 1
+23: BinaryAdd £temporary4081 string £temporary4079
+24: Deref £temporary4080 -> £temporary4081 £temporary4081 0
+25: address £temporary4082 £temporary4080 -> £temporary4081
+26: Assign token £temporary4082
+27: SetReturnValue string
+28: Return string
+29: Increment index
+30: Goto 6
+31: BinaryAdd £temporary4084 string index
+32: Deref £temporary4083 -> £temporary4084 £temporary4084 0
+33: address £temporary4085 £temporary4083 -> £temporary4084
+34: Assign token £temporary4085
+35: SetReturnValue string
+36: Return string
+37: NotEqual 40 token 0
+38: SetReturnValue 0
+39: Return 0
+40: NotEqual 43 (token,0) 0
+41: SetReturnValue 0
+42: Return 0
+43: Assign index 0
+44: BinaryAdd £temporary4090 token index
+45: Deref £temporary4089 -> £temporary4090 £temporary4090 0
+46: Equal 70 £temporary4089 -> £temporary4090 0
+47: CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+48: Parameter 14 charSet 6
+49: BinaryAdd £temporary4094 token index
+50: Deref £temporary4093 -> £temporary4094 £temporary4094 0
+51: IntegralToIntegral £temporary4095 £temporary4093 -> £temporary4094
+52: Parameter 14 £temporary4095 8
+53: Call 14 strchr 0
+54: PostCall 14
+55: GetReturnValue £temporary4096
+56: Equal 68 £temporary4096 0
+57: Assign tokenStart2 token
+58: BinaryAdd £temporary4099 token index
+59: Deref £temporary4098 -> £temporary4099 £temporary4099 0
+60: Assign £temporary4098 -> £temporary4099 0
+61: BinaryAdd £temporary4100 index 1
+62: BinaryAdd £temporary4102 token £temporary4100
+63: Deref £temporary4101 -> £temporary4102 £temporary4102 0
+64: address £temporary4103 £temporary4101 -> £temporary4102
+65: Assign token £temporary4103
+66: SetReturnValue tokenStart2
+67: Return tokenStart2
+68: Increment index
+69: Goto 44
+70: Assign tokenStart token
+71: BinaryAdd £temporary4105 token index
+72: Deref £temporary4104 -> £temporary4105 £temporary4105 0
+73: address £temporary4106 £temporary4104 -> £temporary4105
+74: Assign token £temporary4106
+75: SetReturnValue tokenStart
+76: Return tokenStart
+77: FunctionEnd strtok

@@ -1,0 +1,7 @@
+0: SignedMultiply £temporary2539 g_randValue 1664525
+1: BinaryAdd £temporary2540 £temporary2539 1013904223
+2: SignedModulo g_randValue £temporary2540 127
+3: IntegralToIntegral £temporary2542 g_randValue
+4: SetReturnValue
+5: Return £temporary2542
+6: FunctionEnd rand

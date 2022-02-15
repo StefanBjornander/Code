@@ -1,0 +1,235 @@
+pwd
+ls
+ls
+pwd
+ls /
+pwd'
+'
+pwd
+vi
+ed
+pwd
+ls ..
+gcc
+ls
+exit
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+clear;gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+clear;gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+exit
+pwd
+ls
+clear;gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+exit
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./Stack.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Stack.m -o Stack -lgnustep-base -lobjc;./Stack.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Person -lgnustep-base -lobjc;./Person.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Stack.m -o Stack -lgnustep-base -lobjc;./Stack.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Queue.m -o Queue -lgnustep-base -lobjc;./Queue.exe
+exit
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries HelloObjectiveC.m -o HelloObjectiveC -lgnustep-base -lobjc;./HelloObjectiveC.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries PersonProtocol.m -o PersonProtocol -lgnustep-base -lobjc;./PersonProtocol.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries PersonProtocol.m -o PersonProtocol -lgnustep-base -lobjc;./PersonProtocol.exe
+gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries PersonProtocol.m -o PersonProtocol -lgnustep-base -lobjc;./PersonProtocol.exe     gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Main -lgnustep-base -lobjc;./Main.exe
+     gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Main -lgnustep-base -lobjc;./Main.exe
+     gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Main -lgnustep-base -lobjc;./Main.exe
+     gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Main -lgnustep-base -lobjc;./Main.exe
+     gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Main -lgnustep-base -lobjc;./Main.exe
+     gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Main -lgnustep-base -lobjc;./Main.exe
+     gcc `gnustep-config --objc-flags` -L /GNUstep/System/Library/Libraries Person.m -o Main -lgnustep-base -lobjc;./Main.exe
+exit

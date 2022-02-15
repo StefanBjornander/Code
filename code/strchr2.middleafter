@@ -1,0 +1,19 @@
+0: IntegralToIntegral £temporary3976 i
+1: Assign c £temporary3976
+2: Assign index 0
+3: BinaryAdd £temporary3978 text index
+4: Deref £temporary3977 -> £temporary3978 £temporary3978 0
+5: Equal 16 £temporary3977 -> £temporary3978 0
+6: BinaryAdd £temporary3982 text index
+7: Deref £temporary3981 -> £temporary3982 £temporary3982 0
+8: NotEqual 14 £temporary3981 -> £temporary3982 c
+9: BinaryAdd £temporary3985 text index
+10: Deref £temporary3984 -> £temporary3985 £temporary3985 0
+11: address £temporary3986 £temporary3984 -> £temporary3985
+12: SetReturnValue £temporary3986
+13: Return £temporary3986
+14: Increment index
+15: Goto 3
+16: SetReturnValue 0
+17: Return 0
+18: FunctionEnd strchr

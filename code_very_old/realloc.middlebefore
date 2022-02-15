@@ -1,0 +1,108 @@
+0: SignedGreaterThanEqual Empty newMemorySize 0
+1: Goto PreCall 10
+2: PreCall 10
+3: Parameter 16 pointer stderr
+4: Parameter 18 pointer "Assertion failed: "%s" in file %s at line %i\n"
+5: Parameter 20 pointer "newMemorySize >= 0"
+6: Parameter 22 pointer "C:\Users\Stefan\Documents\vagrant\homestead\code\code\Malloc.c"
+7: Parameter 24 signedint 259
+8: Call 10 fprintf 6
+9: PostCall 10
+10: PreCall 10
+11: Call 10 abort 0
+12: PostCall 10
+13: Goto Empty
+14: Empty
+15: NotEqual Empty oldMemoryPtr 0
+16: Goto SignedGreaterThan Empty newMemorySize 0
+17: SignedGreaterThan Empty newMemorySize 0
+18: Goto PreCall 10
+19: PreCall 10
+20: Parameter 16 pointer stderr
+21: Parameter 18 pointer "Assertion failed: "%s" in file %s at line %i\n"
+22: Parameter 20 pointer "( oldMemoryPtr != NULL ) || ( newMemorySize > 0 )"
+23: Parameter 22 pointer "C:\Users\Stefan\Documents\vagrant\homestead\code\code\Malloc.c"
+24: Parameter 24 signedint 260
+25: Call 10 fprintf 6
+26: PostCall 10
+27: PreCall 10
+28: Call 10 abort 0
+29: PostCall 10
+30: Goto Empty
+31: Empty
+32: Equal PreCall 10 oldMemoryPtr 0
+33: Goto Equal PreCall 10 newMemorySize 0
+34: PreCall 10
+35: Parameter 16 signedint newMemorySize
+36: Call 10 malloc 0
+37: PostCall 10
+38: GetReturnValue £temporary215
+39: Return £temporary215
+40: Goto Equal PreCall 10 newMemorySize 0
+41: Equal PreCall 10 newMemorySize 0
+42: Goto IntegralToIntegral £temporary218 newMemorySize
+43: PreCall 10
+44: Parameter 16 pointer oldMemoryPtr
+45: Call 10 free 0
+46: PostCall 10
+47: Return 0
+48: Goto IntegralToIntegral £temporary218 newMemorySize
+49: IntegralToIntegral £temporary218 newMemorySize
+50: BinaryAdd £temporary219 £temporary218 4
+51: Assign newBlockSize £temporary219
+52: IntegralToIntegral £temporary220 oldMemoryPtr
+53: BinarySubtract £temporary221 £temporary220 4
+54: IntegralToIntegral £temporary222 £temporary221
+55: Assign oldBlockPtr £temporary222
+56: Dereference £temporary223 -> oldBlockPtr oldBlockPtr 0
+57: UnsignedLessThanEqual Dereference £temporary225 -> oldBlockPtr oldBlockPtr 0 newBlockSize £temporary223 -> oldBlockPtr
+58: Goto Assign lastAddress 65528
+59: Dereference £temporary225 -> oldBlockPtr oldBlockPtr 0
+60: Assign £temporary225 -> oldBlockPtr newBlockSize
+61: Return oldMemoryPtr
+62: Goto Assign lastAddress 65528
+63: Assign lastAddress 65528
+64: Assign currBlockPtr g_firstBlockPtr
+65: NotEqual Equal IntegralToIntegral £temporary228 currBlockPtr currBlockPtr oldBlockPtr currBlockPtr 0
+66: Goto PreCall 14
+67: Equal IntegralToIntegral £temporary228 currBlockPtr currBlockPtr oldBlockPtr
+68: Goto IntegralToIntegral £temporary232 currBlockPtr
+69: IntegralToIntegral £temporary228 currBlockPtr
+70: BinarySubtract £temporary229 lastAddress £temporary228
+71: Assign availableSize £temporary229
+72: UnsignedGreaterThanEqual Dereference £temporary231 -> oldBlockPtr oldBlockPtr 0 availableSize newBlockSize
+73: Goto Goto PreCall 14
+74: Dereference £temporary231 -> oldBlockPtr oldBlockPtr 0
+75: Assign £temporary231 -> oldBlockPtr newBlockSize
+76: Return oldMemoryPtr
+77: Goto IntegralToIntegral £temporary232 currBlockPtr
+78: Goto PreCall 14
+79: Goto IntegralToIntegral £temporary232 currBlockPtr
+80: IntegralToIntegral £temporary232 currBlockPtr
+81: Assign lastAddress £temporary232
+82: Dereference £temporary233 -> currBlockPtr currBlockPtr 0
+83: Assign currBlockPtr £temporary233 -> currBlockPtr
+84: Goto NotEqual Equal IntegralToIntegral £temporary228 currBlockPtr currBlockPtr oldBlockPtr currBlockPtr 0
+85: PreCall 14
+86: Parameter 20 signedint newMemorySize
+87: Call 14 malloc 0
+88: PostCall 14
+89: GetReturnValue £temporary234
+90: Assign newMemoryPtr £temporary234
+91: NotEqual PreCall 16 newMemoryPtr 0
+92: Goto Return 0
+93: PreCall 16
+94: Parameter 22 pointer newMemoryPtr
+95: Parameter 24 pointer oldMemoryPtr
+96: Parameter 26 signedint newMemorySize
+97: Call 16 memcpy 0
+98: PostCall 16
+99: PreCall 16
+100: Parameter 22 pointer oldMemoryPtr
+101: Call 16 free 0
+102: PostCall 16
+103: Return newMemoryPtr
+104: Goto Return 0
+105: Return 0
+106: Empty
+107: FunctionEnd realloc

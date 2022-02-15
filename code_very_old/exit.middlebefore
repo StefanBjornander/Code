@@ -1,0 +1,26 @@
+0: Assign index 255
+1: Empty
+2: SignedGreaterThanEqual UnsignedMultiply £temporary2567 index 2 index 0
+3: Goto IntegralToIntegral £temporary2575 status
+4: UnsignedMultiply £temporary2567 index 2
+5: BinaryAdd £temporary2568 g_funcArray £temporary2567
+6: Dereference £temporary2566 -> £temporary2568 £temporary2568 0
+7: NotEqual UnsignedMultiply £temporary2571 index 2 £temporary2566 -> £temporary2568 0
+8: Goto Empty
+9: UnsignedMultiply £temporary2571 index 2
+10: BinaryAdd £temporary2572 g_funcArray £temporary2571
+11: Dereference £temporary2570 -> £temporary2572 £temporary2572 0
+12: PreCall 10
+13: Call 10 £temporary2570 -> £temporary2572 0
+14: PostCall 10
+15: Goto Empty
+16: Empty
+17: BinarySubtract index index 1
+18: Goto Empty
+19: IntegralToIntegral £temporary2575 status
+20: AssignRegister al £temporary2575
+21: AssignRegister ah 76
+22: Interrupt 33
+23: Empty
+24: Return
+25: FunctionEnd exit
