@@ -22,7 +22,7 @@ section .text
 	; 0 PreCall 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  floating_point_error$1:
-	; 1 Parameter 52 pointer string_Floating20point20error3A2025i0A#
+	; 1 Parameter 52 string string_Floating20point20error3A2025i0A#
 	mov qword [rbp + 52], @11477string_Floating20point20error3A2025i0A#
 
  floating_point_error$2:
@@ -64,7 +64,7 @@ section .text
 	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  exit_handle1$1:
-	; 1 Parameter 48 pointer string_exit10A#
+	; 1 Parameter 48 string string_exit10A#
 	mov qword [rbp + 48], @11481string_exit10A#
 
  exit_handle1$2:
@@ -100,7 +100,7 @@ section .text
 	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  exit_handle2$1:
-	; 1 Parameter 48 pointer string_exit20A#
+	; 1 Parameter 48 string string_exit20A#
 	mov qword [rbp + 48], @11484string_exit20A#
 
  exit_handle2$2:
@@ -136,7 +136,7 @@ section .text
 	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  exit_handle3$1:
-	; 1 Parameter 48 pointer string_exit30A#
+	; 1 Parameter 48 string string_exit30A#
 	mov qword [rbp + 48], @11487string_exit30A#
 
  exit_handle3$2:
@@ -187,7 +187,7 @@ section .text
 	; 4 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  signal_test$4:
-	; 5 Parameter 60 pointer string_25i0A#
+	; 5 Parameter 60 string string_25i0A#
 	mov qword [rbp + 60], @11495string_25i0A#
 
  signal_test$5:
@@ -211,7 +211,7 @@ section .text
 	; 9 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  signal_test$9:
-	; 10 Parameter 60 pointer exit_handle1
+	; 10 Parameter 60 function exit_handle1
 	mov qword [rbp + 60], exit_handle1
 
  signal_test$10:
@@ -228,7 +228,7 @@ section .text
 	; 13 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  signal_test$13:
-	; 14 Parameter 60 pointer exit_handle2
+	; 14 Parameter 60 function exit_handle2
 	mov qword [rbp + 60], exit_handle2
 
  signal_test$14:
@@ -245,7 +245,7 @@ section .text
 	; 17 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  signal_test$17:
-	; 18 Parameter 60 pointer exit_handle3
+	; 18 Parameter 60 function exit_handle3
 	mov qword [rbp + 60], exit_handle3
 
  signal_test$18:

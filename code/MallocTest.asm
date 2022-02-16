@@ -627,7 +627,7 @@ section .text
 	; 4 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  rec$5:
-	; 5 Parameter 60 pointer string_Stack20Top3A2025u2C20Low20Heap3A2025u0A#
+	; 5 Parameter 60 string string_Stack20Top3A2025u2C20Low20Heap3A2025u0A#
 	mov qword [rbp + 60], @11998string_Stack20Top3A2025u2C20Low20Heap3A2025u0A#
 
  rec$6:
@@ -988,7 +988,7 @@ section .text
 	; 14 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  malloc_test6$13:
-	; 15 Parameter 72 pointer string_Index3A2025i2C20Pointer3A2025u2C20Stack20top3A2025u2C20Low20Heap3A2025u0A#
+	; 15 Parameter 72 string string_Index3A2025i2C20Pointer3A2025u2C20Stack20top3A2025u2C20Low20Heap3A2025u0A#
 	mov qword [rbp + 72], @12031string_Index3A2025i2C20Pointer3A2025u2C20Stack20top3A2025u2C20Low20Heap3A2025u0A#
 
  malloc_test6$14:

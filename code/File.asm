@@ -200,7 +200,7 @@ section .text
 	mov [rbp + 56], rax
 
  fileexistsX$2:
-	; 2 Parameter 64 pointer string_r#
+	; 2 Parameter 64 string string_r#
 	mov qword [rbp + 64], @2493string_r#
 
  fileexistsX$3:
@@ -224,7 +224,7 @@ section .text
 	; 7 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  fileexistsX$8:
-	; 8 Parameter 64 pointer string_0Afileexists2025s2025p0A#
+	; 8 Parameter 64 string string_0Afileexists2025s2025p0A#
 	mov qword [rbp + 64], @2495string_0Afileexists2025s2025p0A#
 
  fileexistsX$9:
@@ -588,7 +588,7 @@ section .text
 	mov [rbp + 76], rax
 
  freopen$3:
-	; 3 Parameter 84 pointer string_r#
+	; 3 Parameter 84 string string_r#
 	mov qword [rbp + 84], @2539string_r#
 
  freopen$4:
@@ -651,7 +651,7 @@ section .text
 	mov [rbp + 76], rax
 
  freopen$18:
-	; 21 Parameter 84 pointer string_w#
+	; 21 Parameter 84 string string_w#
 	mov qword [rbp + 84], @2542string_w#
 
  freopen$19:
@@ -710,7 +710,7 @@ section .text
 	mov [rbp + 76], rax
 
  freopen$32:
-	; 38 Parameter 84 pointer string_a#
+	; 38 Parameter 84 string string_a#
 	mov qword [rbp + 84], @2544string_a#
 
  freopen$33:
@@ -833,7 +833,7 @@ section .text
 	mov [rbp + 76], rax
 
  freopen$61:
-	; 74 Parameter 84 pointer string_r2B#
+	; 74 Parameter 84 string string_r2B#
 	mov qword [rbp + 84], @2551string_r2B#
 
  freopen$62:
@@ -858,7 +858,7 @@ section .text
 	; 81 PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  freopen$67:
-	; 82 Parameter 76 pointer string_r2B10A#
+	; 82 Parameter 76 string string_r2B10A#
 	mov qword [rbp + 76], @2553string_r2B10A#
 
  freopen$68:
@@ -905,7 +905,7 @@ section .text
 	; 92 PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  freopen$78:
-	; 93 Parameter 76 pointer string_r2B20A#
+	; 93 Parameter 76 string string_r2B20A#
 	mov qword [rbp + 76], @2555string_r2B20A#
 
  freopen$79:
@@ -932,7 +932,7 @@ section .text
 	mov [rbp + 76], rax
 
  freopen$84:
-	; 100 Parameter 84 pointer string_w2B#
+	; 100 Parameter 84 string string_w2B#
 	mov qword [rbp + 84], @2556string_w2B#
 
  freopen$85:
@@ -1050,7 +1050,7 @@ section .text
 	mov [rbp + 76], rax
 
  freopen$112:
-	; 135 Parameter 84 pointer string_a2B#
+	; 135 Parameter 84 string string_a2B#
 	mov qword [rbp + 84], @2560string_a2B#
 
  freopen$113:
@@ -1198,7 +1198,7 @@ section .text
 	mov rsi, [rbp + 40]
 
  freopen$147:
-	; 186 Parameter 76 pointer £temporary819.name
+	; 186 Parameter 76 array £temporary819.name
 	mov [rbp + 76], rsi
 	add qword [rbp + 76], 8
 
@@ -1818,7 +1818,7 @@ section .text
 	mov [rbp + 74], rax
 
  fgets$7:
-	; 9 Parameter 82 pointer string_25c#
+	; 9 Parameter 82 string string_25c#
 	mov qword [rbp + 82], @2690string_25c#
 
  fgets$8:
@@ -2911,7 +2911,7 @@ section .text
 	; 0 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  perror$1:
-	; 1 Parameter 56 pointer string_25s3A2025s2E0A#
+	; 1 Parameter 56 string string_25s3A2025s2E0A#
 	mov qword [rbp + 56], @2814string_25s3A2025s2E0A#
 
  perror$2:

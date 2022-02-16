@@ -24,7 +24,7 @@ section .text
 	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stack_test$1:
-	; 1 Parameter 48 pointer string_25i20#
+	; 1 Parameter 48 string string_25i20#
 	mov qword [rbp + 48], @11707string_25i20#
 
  stack_test$2:
@@ -119,7 +119,7 @@ section .text
 	; 10 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  heap_test$9:
-	; 11 Parameter 60 pointer string_102420bytes2Dblock20number3A2025i0A#
+	; 11 Parameter 60 string string_102420bytes2Dblock20number3A2025i0A#
 	mov qword [rbp + 60], @11719string_102420bytes2Dblock20number3A2025i0A#
 
  heap_test$10:

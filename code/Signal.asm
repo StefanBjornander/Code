@@ -50,7 +50,7 @@ section .text
 	; 4 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  raise$3:
-	; 5 Parameter 60 pointer string_Raise20default0A#
+	; 5 Parameter 60 string string_Raise20default0A#
 	mov qword [rbp + 60], @2204string_Raise20default0A#
 
  raise$4:
@@ -84,7 +84,7 @@ section .text
 	; 15 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  raise$10:
-	; 16 Parameter 60 pointer string_Raise20error0A#
+	; 16 Parameter 60 string string_Raise20error0A#
 	mov qword [rbp + 60], @2208string_Raise20error0A#
 
  raise$11:
@@ -113,7 +113,7 @@ section .text
 	; 23 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  raise$16:
-	; 24 Parameter 60 pointer string_Raise20function2C20calling2025i20with2025i0A#
+	; 24 Parameter 60 string string_Raise20function2C20calling2025i20with2025i0A#
 	mov qword [rbp + 60], @2210string_Raise20function2C20calling2025i20with2025i0A#
 
  raise$17:

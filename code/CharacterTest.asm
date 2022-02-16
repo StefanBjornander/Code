@@ -240,7 +240,7 @@ section .text
 	; 0 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$1:
-	; 1 Parameter 49 pointer string_ascii2025i0A#
+	; 1 Parameter 49 string string_ascii2025i0A#
 	mov qword [rbp + 49], @7906string_ascii2025i0A#
 
  character_testX$2:
@@ -272,7 +272,7 @@ section .text
 	; 6 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$7:
-	; 7 Parameter 49 pointer string_islower282725c2729203D2025s0A#
+	; 7 Parameter 49 string string_islower282725c2729203D2025s0A#
 	mov qword [rbp + 49], @7907string_islower282725c2729203D2025s0A#
 
  character_testX$8:
@@ -335,7 +335,7 @@ section .text
 	mov rax, @7910string_No#
 
  character_testX$20:
-	; 24 Parameter 61 pointer £temporary3689
+	; 24 Parameter 61 string £temporary3689
 	mov [rbp + 61], rax
 
  character_testX$21:
@@ -354,7 +354,7 @@ section .text
 	; 27 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$24:
-	; 28 Parameter 49 pointer string_isupper282725c2729203D2025s0A#
+	; 28 Parameter 49 string string_isupper282725c2729203D2025s0A#
 	mov qword [rbp + 49], @7911string_isupper282725c2729203D2025s0A#
 
  character_testX$25:
@@ -417,7 +417,7 @@ section .text
 	mov rax, @7914string_No#
 
  character_testX$37:
-	; 45 Parameter 61 pointer £temporary3695
+	; 45 Parameter 61 string £temporary3695
 	mov [rbp + 61], rax
 
  character_testX$38:
@@ -436,7 +436,7 @@ section .text
 	; 48 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$41:
-	; 49 Parameter 49 pointer string_isalpha282725c2729203D2025s0A#
+	; 49 Parameter 49 string string_isalpha282725c2729203D2025s0A#
 	mov qword [rbp + 49], @7915string_isalpha282725c2729203D2025s0A#
 
  character_testX$42:
@@ -499,7 +499,7 @@ section .text
 	mov rax, @7918string_No#
 
  character_testX$54:
-	; 66 Parameter 61 pointer £temporary3701
+	; 66 Parameter 61 string £temporary3701
 	mov [rbp + 61], rax
 
  character_testX$55:
@@ -518,7 +518,7 @@ section .text
 	; 69 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$58:
-	; 70 Parameter 49 pointer string_isdigit282725c2729203D2025s0A#
+	; 70 Parameter 49 string string_isdigit282725c2729203D2025s0A#
 	mov qword [rbp + 49], @7919string_isdigit282725c2729203D2025s0A#
 
  character_testX$59:
@@ -581,7 +581,7 @@ section .text
 	mov rax, @7922string_No#
 
  character_testX$71:
-	; 87 Parameter 61 pointer £temporary3707
+	; 87 Parameter 61 string £temporary3707
 	mov [rbp + 61], rax
 
  character_testX$72:
@@ -600,7 +600,7 @@ section .text
 	; 90 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$75:
-	; 91 Parameter 49 pointer string_isalnum282725c2729203D2025s0A#
+	; 91 Parameter 49 string string_isalnum282725c2729203D2025s0A#
 	mov qword [rbp + 49], @7923string_isalnum282725c2729203D2025s0A#
 
  character_testX$76:
@@ -663,7 +663,7 @@ section .text
 	mov rax, @7926string_No#
 
  character_testX$88:
-	; 108 Parameter 61 pointer £temporary3713
+	; 108 Parameter 61 string £temporary3713
 	mov [rbp + 61], rax
 
  character_testX$89:
@@ -682,7 +682,7 @@ section .text
 	; 111 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$92:
-	; 112 Parameter 49 pointer string_isxdigit282725c2729203D2025s0A#
+	; 112 Parameter 49 string string_isxdigit282725c2729203D2025s0A#
 	mov qword [rbp + 49], @7927string_isxdigit282725c2729203D2025s0A#
 
  character_testX$93:
@@ -745,7 +745,7 @@ section .text
 	mov rax, @7930string_No#
 
  character_testX$105:
-	; 129 Parameter 61 pointer £temporary3719
+	; 129 Parameter 61 string £temporary3719
 	mov [rbp + 61], rax
 
  character_testX$106:
@@ -764,7 +764,7 @@ section .text
 	; 132 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$109:
-	; 133 Parameter 49 pointer string_isgraph282725c2729203D2025s0A#
+	; 133 Parameter 49 string string_isgraph282725c2729203D2025s0A#
 	mov qword [rbp + 49], @7931string_isgraph282725c2729203D2025s0A#
 
  character_testX$110:
@@ -827,7 +827,7 @@ section .text
 	mov rax, @7934string_No#
 
  character_testX$122:
-	; 150 Parameter 61 pointer £temporary3725
+	; 150 Parameter 61 string £temporary3725
 	mov [rbp + 61], rax
 
  character_testX$123:
@@ -846,7 +846,7 @@ section .text
 	; 153 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$126:
-	; 154 Parameter 49 pointer string_isprint282725c2729203D2025s0A#
+	; 154 Parameter 49 string string_isprint282725c2729203D2025s0A#
 	mov qword [rbp + 49], @7935string_isprint282725c2729203D2025s0A#
 
  character_testX$127:
@@ -909,7 +909,7 @@ section .text
 	mov rax, @7938string_No#
 
  character_testX$139:
-	; 171 Parameter 61 pointer £temporary3731
+	; 171 Parameter 61 string £temporary3731
 	mov [rbp + 61], rax
 
  character_testX$140:
@@ -928,7 +928,7 @@ section .text
 	; 174 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$143:
-	; 175 Parameter 49 pointer string_ispunct282725c2729203D2025s0A#
+	; 175 Parameter 49 string string_ispunct282725c2729203D2025s0A#
 	mov qword [rbp + 49], @7939string_ispunct282725c2729203D2025s0A#
 
  character_testX$144:
@@ -991,7 +991,7 @@ section .text
 	mov rax, @7942string_No#
 
  character_testX$156:
-	; 192 Parameter 61 pointer £temporary3737
+	; 192 Parameter 61 string £temporary3737
 	mov [rbp + 61], rax
 
  character_testX$157:
@@ -1010,7 +1010,7 @@ section .text
 	; 195 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$160:
-	; 196 Parameter 49 pointer string_iscntrl282725c2729203D2025s0A#
+	; 196 Parameter 49 string string_iscntrl282725c2729203D2025s0A#
 	mov qword [rbp + 49], @7943string_iscntrl282725c2729203D2025s0A#
 
  character_testX$161:
@@ -1073,7 +1073,7 @@ section .text
 	mov rax, @7946string_No#
 
  character_testX$173:
-	; 213 Parameter 61 pointer £temporary3743
+	; 213 Parameter 61 string £temporary3743
 	mov [rbp + 61], rax
 
  character_testX$174:
@@ -1092,7 +1092,7 @@ section .text
 	; 216 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$177:
-	; 217 Parameter 49 pointer string_isspace282725c2729203D2025s0A#
+	; 217 Parameter 49 string string_isspace282725c2729203D2025s0A#
 	mov qword [rbp + 49], @7947string_isspace282725c2729203D2025s0A#
 
  character_testX$178:
@@ -1155,7 +1155,7 @@ section .text
 	mov rax, @7950string_No#
 
  character_testX$190:
-	; 234 Parameter 61 pointer £temporary3749
+	; 234 Parameter 61 string £temporary3749
 	mov [rbp + 61], rax
 
  character_testX$191:
@@ -1174,7 +1174,7 @@ section .text
 	; 237 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$194:
-	; 238 Parameter 49 pointer string_tolower282725c2729203D202725c270A#
+	; 238 Parameter 49 string string_tolower282725c2729203D202725c270A#
 	mov qword [rbp + 49], @7951string_tolower282725c2729203D202725c270A#
 
  character_testX$195:
@@ -1254,7 +1254,7 @@ section .text
 	; 252 PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  character_testX$209:
-	; 253 Parameter 49 pointer string_toupper282725c2729203D202725c270A0A#
+	; 253 Parameter 49 string string_toupper282725c2729203D202725c270A0A#
 	mov qword [rbp + 49], @7952string_toupper282725c2729203D202725c270A0A#
 
  character_testX$210:

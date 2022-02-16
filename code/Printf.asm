@@ -1751,7 +1751,7 @@ section .text
 	fld qword [rbp + 24]
 
  printLongDoubleExpo$39:
-	; 53 Parameter 76 double value
+	; 53 Parameter 76 long double value
 	fstp qword [rbp + 76]
 
  printLongDoubleExpo$40:
@@ -2945,7 +2945,7 @@ section .text
 	fld qword [rbp + 98]
 
  printArgument$206:
-	; 278 Parameter 138 double longDoubleValue
+	; 278 Parameter 138 long double longDoubleValue
 	fstp qword [rbp + 138]
 
  printArgument$207:
@@ -3177,7 +3177,7 @@ section .text
 	fld qword [rbp + 98]
 
  printArgument$258:
-	; 339 Parameter 138 double longDoubleValue
+	; 339 Parameter 138 long double longDoubleValue
 	fstp qword [rbp + 138]
 
  printArgument$259:
@@ -3419,7 +3419,7 @@ section .text
 	mov rax, [rbp + 106]
 
  printArgument$313:
-	; 402 Parameter 138 unsigned long int £temporary2038
+	; 402 Parameter 138 pointer £temporary2038
 	mov [rbp + 138], rax
 
  printArgument$314:

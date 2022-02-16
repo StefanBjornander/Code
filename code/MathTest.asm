@@ -288,7 +288,7 @@ section .text
 	; 0 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  acos_test$1:
-	; 1 Parameter 56 pointer string_2020acos2825f29203D2025f2C20errno203D2025i0A#
+	; 1 Parameter 56 string string_2020acos2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9509string_2020acos2825f29203D2025f2C20errno203D2025i0A#
 
  acos_test$2:
@@ -370,7 +370,7 @@ section .text
 	; 0 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  atan_test$1:
-	; 1 Parameter 56 pointer string_2020atan2825f29203D2025f2C20errno203D2025i0A#
+	; 1 Parameter 56 string string_2020atan2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9514string_2020atan2825f29203D2025f2C20errno203D2025i0A#
 
  atan_test$2:
@@ -1434,7 +1434,7 @@ section .text
 	; 0 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$1:
-	; 1 Parameter 56 pointer string_3C25f3E0A#
+	; 1 Parameter 56 string string_3C25f3E0A#
 	mov qword [rbp + 56], @9588string_3C25f3E0A#
 
  math_test_1$2:
@@ -1461,7 +1461,7 @@ section .text
 	; 6 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$7:
-	; 7 Parameter 56 pointer string_2020sin2825f29203D2025f2C20errno203D2025i0A#
+	; 7 Parameter 56 string string_2020sin2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9589string_2020sin2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$8:
@@ -1525,7 +1525,7 @@ section .text
 	; 22 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$22:
-	; 23 Parameter 56 pointer string_2020cos2825f29203D2025f2C20errno203D2025i0A#
+	; 23 Parameter 56 string string_2020cos2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9591string_2020cos2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$23:
@@ -1589,7 +1589,7 @@ section .text
 	; 38 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$37:
-	; 39 Parameter 56 pointer string_2020tan2825f29203D2025f2C20errno203D2025i0A#
+	; 39 Parameter 56 string string_2020tan2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9593string_2020tan2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$38:
@@ -1653,7 +1653,7 @@ section .text
 	; 54 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$52:
-	; 55 Parameter 56 pointer string_2020asin2825f29203D2025f2C20errno203D2025i0A#
+	; 55 Parameter 56 string string_2020asin2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9595string_2020asin2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$53:
@@ -1717,7 +1717,7 @@ section .text
 	; 70 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$67:
-	; 71 Parameter 56 pointer string_2020acos2825f29203D2025f2C20errno203D2025i0A#
+	; 71 Parameter 56 string string_2020acos2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9597string_2020acos2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$68:
@@ -1781,7 +1781,7 @@ section .text
 	; 86 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$82:
-	; 87 Parameter 56 pointer string_2020atan2825f29203D2025f2C20errno203D2025i0A#
+	; 87 Parameter 56 string string_2020atan2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9599string_2020atan2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$83:
@@ -1845,7 +1845,7 @@ section .text
 	; 102 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$97:
-	; 103 Parameter 56 pointer string_2020exp2825f29203D2025f2C20errno203D2025i0A#
+	; 103 Parameter 56 string string_2020exp2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9601string_2020exp2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$98:
@@ -1909,7 +1909,7 @@ section .text
 	; 118 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$112:
-	; 119 Parameter 56 pointer string_2020log2825f29203D2025f2C20errno203D2025i0A#
+	; 119 Parameter 56 string string_2020log2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9603string_2020log2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$113:
@@ -1973,7 +1973,7 @@ section .text
 	; 134 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$127:
-	; 135 Parameter 56 pointer string_2020log102825f29203D2025f2C20errno203D2025i0A#
+	; 135 Parameter 56 string string_2020log102825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9605string_2020log102825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$128:
@@ -2037,7 +2037,7 @@ section .text
 	; 150 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$142:
-	; 151 Parameter 56 pointer string_2020sinh2825f29203D2025f2C20errno203D2025i0A#
+	; 151 Parameter 56 string string_2020sinh2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9607string_2020sinh2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$143:
@@ -2101,7 +2101,7 @@ section .text
 	; 166 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$157:
-	; 167 Parameter 56 pointer string_2020cosh2825f29203D2025f2C20errno203D2025i0A#
+	; 167 Parameter 56 string string_2020cosh2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9609string_2020cosh2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$158:
@@ -2165,7 +2165,7 @@ section .text
 	; 182 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$172:
-	; 183 Parameter 56 pointer string_2020tanh2825f29203D2025f2C20errno203D2025i0A#
+	; 183 Parameter 56 string string_2020tanh2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9611string_2020tanh2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$173:
@@ -2229,7 +2229,7 @@ section .text
 	; 198 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$187:
-	; 199 Parameter 56 pointer string_2020sqrt2825f29203D2025f2C20errno203D2025i0A#
+	; 199 Parameter 56 string string_2020sqrt2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9613string_2020sqrt2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$188:
@@ -2293,7 +2293,7 @@ section .text
 	; 214 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$202:
-	; 215 Parameter 56 pointer string_2020floor2825f29203D2025f2C20errno203D2025i0A#
+	; 215 Parameter 56 string string_2020floor2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9615string_2020floor2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$203:
@@ -2357,7 +2357,7 @@ section .text
 	; 230 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$217:
-	; 231 Parameter 56 pointer string_2020ceil2825f29203D2025f2C20errno203D2025i0A#
+	; 231 Parameter 56 string string_2020ceil2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9617string_2020ceil2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$218:
@@ -2421,7 +2421,7 @@ section .text
 	; 246 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$232:
-	; 247 Parameter 56 pointer string_2020fabs2825f29203D2025f2C20errno203D2025i0A#
+	; 247 Parameter 56 string string_2020fabs2825f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 56], @9619string_2020fabs2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$233:
@@ -2526,7 +2526,7 @@ section .text
 	; 272 PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$257:
-	; 273 Parameter 68 pointer string_frexp202825f2C20p29203D202825f2C2025i292C20errno203D2025i0A#
+	; 273 Parameter 68 string string_frexp202825f2C20p29203D202825f2C2025i292C20errno203D2025i0A#
 	mov qword [rbp + 68], @9624string_frexp202825f2C20p29203D202825f2C2025i292C20errno203D2025i0A#
 
  math_test_1$258:
@@ -2576,7 +2576,7 @@ section .text
 	; 285 PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$268:
-	; 286 Parameter 68 pointer string_Error20message3A#
+	; 286 Parameter 68 string string_Error20message3A#
 	mov qword [rbp + 68], @9626string_Error20message3A#
 
  math_test_1$269:
@@ -2642,7 +2642,7 @@ section .text
 	; 306 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$284:
-	; 307 Parameter 72 pointer string_modf202825f2C20p29203D202825f2C2025f292C20errno203D2025i0A#
+	; 307 Parameter 72 string string_modf202825f2C20p29203D202825f2C2025f292C20errno203D2025i0A#
 	mov qword [rbp + 72], @9632string_modf202825f2C20p29203D202825f2C2025f292C20errno203D2025i0A#
 
  math_test_1$285:
@@ -2695,7 +2695,7 @@ section .text
 	; 320 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$296:
-	; 321 Parameter 72 pointer string_Error20message3A#
+	; 321 Parameter 72 string string_Error20message3A#
 	mov qword [rbp + 72], @9634string_Error20message3A#
 
  math_test_1$297:
@@ -2716,7 +2716,7 @@ section .text
 	; 328 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_1$301:
-	; 329 Parameter 56 pointer string_0A#
+	; 329 Parameter 56 string string_0A#
 	mov qword [rbp + 56], @9636string_0A#
 
  math_test_1$302:
@@ -2782,7 +2782,7 @@ section .text
 	; 0 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_2$1:
-	; 1 Parameter 64 pointer string_fmod2825f2C2025f29203D2025f2C20errno203D2025i0A#
+	; 1 Parameter 64 string string_fmod2825f2C2025f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 64], @9682string_fmod2825f2C2025f29203D2025f2C20errno203D2025i0A#
 
  math_test_2$2:
@@ -2862,7 +2862,7 @@ section .text
 	; 20 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_2$20:
-	; 21 Parameter 64 pointer string_atan22825f2C2025f29203D2025f2C20errno203D2025i0A#
+	; 21 Parameter 64 string string_atan22825f2C2025f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 64], @9684string_atan22825f2C2025f29203D2025f2C20errno203D2025i0A#
 
  math_test_2$21:
@@ -2942,7 +2942,7 @@ section .text
 	; 40 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_2$39:
-	; 41 Parameter 64 pointer string_pow2825f2C2025f29203D2025f2C20errno203D2025i0A#
+	; 41 Parameter 64 string string_pow2825f2C2025f29203D2025f2C20errno203D2025i0A#
 	mov qword [rbp + 64], @9686string_pow2825f2C2025f29203D2025f2C20errno203D2025i0A#
 
  math_test_2$40:
@@ -3022,7 +3022,7 @@ section .text
 	; 60 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_2$58:
-	; 61 Parameter 64 pointer string_0A#
+	; 61 Parameter 64 string string_0A#
 	mov qword [rbp + 64], @9688string_0A#
 
  math_test_2$59:
@@ -3040,7 +3040,7 @@ section .text
 	; 64 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  math_test_2$62:
-	; 65 Parameter 64 pointer string_ldexp2825f2C2025i29203D2025f0A0A#
+	; 65 Parameter 64 string string_ldexp2825f2C2025i29203D2025f0A0A#
 	mov qword [rbp + 64], @9689string_ldexp2825f2C2025i29203D2025f0A0A#
 
  math_test_2$63:

@@ -178,7 +178,7 @@ section .text
 	; 0 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  print_div$1:
-	; 1 Parameter 56 pointer string_div_t20quot2025i20rem2025i0A#
+	; 1 Parameter 56 string string_div_t20quot2025i20rem2025i0A#
 	mov qword [rbp + 56], @12277string_div_t20quot2025i20rem2025i0A#
 
  print_div$2:
@@ -242,7 +242,7 @@ section .text
 	; 0 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  print_ldiv$1:
-	; 1 Parameter 64 pointer string_ldiv_t20quot2025li20rem2025li0A#
+	; 1 Parameter 64 string string_ldiv_t20quot2025li20rem2025li0A#
 	mov qword [rbp + 64], @12289string_ldiv_t20quot2025li20rem2025li0A#
 
  print_ldiv$2:
@@ -306,7 +306,7 @@ section .text
 	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  exit_handle1x$1:
-	; 1 Parameter 48 pointer string_exit10A#
+	; 1 Parameter 48 string string_exit10A#
 	mov qword [rbp + 48], @12301string_exit10A#
 
  exit_handle1x$2:
@@ -342,7 +342,7 @@ section .text
 	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  exit_handle2x$1:
-	; 1 Parameter 48 pointer string_exit20A#
+	; 1 Parameter 48 string string_exit20A#
 	mov qword [rbp + 48], @12304string_exit20A#
 
  exit_handle2x$2:
@@ -378,7 +378,7 @@ section .text
 	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  exit_handle3x$1:
-	; 1 Parameter 48 pointer string_exit30A#
+	; 1 Parameter 48 string string_exit30A#
 	mov qword [rbp + 48], @12307string_exit30A#
 
  exit_handle3x$2:
@@ -414,7 +414,7 @@ section .text
 	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  hello$1:
-	; 1 Parameter 48 pointer string_HelloFFF#
+	; 1 Parameter 48 string string_HelloFFF#
 	mov qword [rbp + 48], @12310string_HelloFFF#
 
  hello$2:
@@ -450,7 +450,7 @@ section .text
 	; 0 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  qtest$1:
-	; 1 Parameter 56 pointer string_f3A2025u0A#
+	; 1 Parameter 56 string string_f3A2025u0A#
 	mov qword [rbp + 56], @12314string_f3A2025u0A#
 
  qtest$2:
@@ -515,7 +515,7 @@ section .text
 	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_testZ$1:
-	; 1 Parameter 48 pointer string_hello3A2025u0A#
+	; 1 Parameter 48 string string_hello3A2025u0A#
 	mov qword [rbp + 48], @12318string_hello3A2025u0A#
 
  stdlib_testZ$2:
@@ -542,7 +542,7 @@ section .text
 	; 6 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_testZ$7:
-	; 7 Parameter 48 pointer hello
+	; 7 Parameter 48 function hello
 	mov qword [rbp + 48], hello
 
  stdlib_testZ$8:
@@ -559,7 +559,7 @@ section .text
 	; 10 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_testZ$11:
-	; 11 Parameter 48 pointer string_Y#
+	; 11 Parameter 48 string string_Y#
 	mov qword [rbp + 48], @12319string_Y#
 
  stdlib_testZ$12:
@@ -769,14 +769,14 @@ section .text
 	; 0 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$1:
-	; 1 Parameter 56 pointer string_atof28221232E4562229203D2025f0A#
+	; 1 Parameter 56 string string_atof28221232E4562229203D2025f0A#
 	mov qword [rbp + 56], @12326string_atof28221232E4562229203D2025f0A#
 
  stdlib_test$2:
 	; 2 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$3:
-	; 3 Parameter 88 pointer string_1232E456#
+	; 3 Parameter 88 string string_1232E456#
 	mov qword [rbp + 88], @12327string_1232E456#
 
  stdlib_test$4:
@@ -812,14 +812,14 @@ section .text
 	; 10 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$11:
-	; 11 Parameter 56 pointer string_strtod28221232E456789abc222C2026p29203D202825f2C2025s290A#
+	; 11 Parameter 56 string string_strtod28221232E456789abc222C2026p29203D202825f2C2025s290A#
 	mov qword [rbp + 56], @12328string_strtod28221232E456789abc222C2026p29203D202825f2C2025s290A#
 
  stdlib_test$12:
 	; 12 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$13:
-	; 13 Parameter 88 pointer string_1232E456789abc#
+	; 13 Parameter 88 string string_1232E456789abc#
 	mov qword [rbp + 88], @12329string_1232E456789abc#
 
  stdlib_test$14:
@@ -869,14 +869,14 @@ section .text
 	; 23 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$24:
-	; 24 Parameter 48 pointer string_0Agetenv2822path2229203D2025s0A#
+	; 24 Parameter 48 string string_0Agetenv2822path2229203D2025s0A#
 	mov qword [rbp + 48], @12330string_0Agetenv2822path2229203D2025s0A#
 
  stdlib_test$25:
 	; 25 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$26:
-	; 26 Parameter 80 pointer string_path#
+	; 26 Parameter 80 string string_path#
 	mov qword [rbp + 80], @12331string_path#
 
  stdlib_test$27:
@@ -912,7 +912,7 @@ section .text
 	; 33 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$34:
-	; 34 Parameter 48 pointer string_system2822dir22290A#
+	; 34 Parameter 48 string string_system2822dir22290A#
 	mov qword [rbp + 48], @12332string_system2822dir22290A#
 
  stdlib_test$35:
@@ -930,7 +930,7 @@ section .text
 	; 37 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$38:
-	; 38 Parameter 48 pointer string_dir#
+	; 38 Parameter 48 string string_dir#
 	mov qword [rbp + 48], @12333string_dir#
 
  stdlib_test$39:
@@ -947,7 +947,7 @@ section .text
 	; 41 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$42:
-	; 42 Parameter 48 pointer string_0Aabs282D329203D2025i2C20abs28329203D2025i0A#
+	; 42 Parameter 48 string string_0Aabs282D329203D2025i2C20abs28329203D2025i0A#
 	mov qword [rbp + 48], @12334string_0Aabs282D329203D2025i2C20abs28329203D2025i0A#
 
  stdlib_test$43:
@@ -1014,7 +1014,7 @@ section .text
 	; 57 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$58:
-	; 58 Parameter 48 pointer string_labs282D3l29203D2025li2C20labs283l29203D2025li0A0A#
+	; 58 Parameter 48 string string_labs282D3l29203D2025li2C20labs283l29203D2025li0A0A#
 	mov qword [rbp + 48], @12337string_labs282D3l29203D2025li2C20labs283l29203D2025li0A0A#
 
  stdlib_test$59:
@@ -1121,7 +1121,7 @@ section .text
 	; 81 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$82:
-	; 82 Parameter 56 pointer string_div_t28102C20329203D202825i2C2025i290A#
+	; 82 Parameter 56 string string_div_t28102C20329203D202825i2C2025i290A#
 	mov qword [rbp + 56], @12343string_div_t28102C20329203D202825i2C2025i290A#
 
  stdlib_test$83:
@@ -1200,7 +1200,7 @@ section .text
 	; 95 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$96:
-	; 96 Parameter 64 pointer string_div_t28102C20329203D202825i2C2025i290A0A#
+	; 96 Parameter 64 string string_div_t28102C20329203D202825i2C2025i290A0A#
 	mov qword [rbp + 64], @12347string_div_t28102C20329203D202825i2C2025i290A0A#
 
  stdlib_test$97:
@@ -1269,7 +1269,7 @@ section .text
 	; 109 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$110:
-	; 110 Parameter 64 pointer string_ldiv_t28102C20329203D202825li2C2025li290A#
+	; 110 Parameter 64 string string_ldiv_t28102C20329203D202825li2C2025li290A#
 	mov qword [rbp + 64], @12355string_ldiv_t28102C20329203D202825li2C2025li290A#
 
  stdlib_test$111:
@@ -1348,7 +1348,7 @@ section .text
 	; 123 PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$124:
-	; 124 Parameter 80 pointer string_ldiv_t28102C20329203D202825li2C2025li290A0A#
+	; 124 Parameter 80 string string_ldiv_t28102C20329203D202825li2C2025li290A0A#
 	mov qword [rbp + 80], @12359string_ldiv_t28102C20329203D202825li2C2025li290A0A#
 
  stdlib_test$125:
@@ -1397,7 +1397,7 @@ section .text
 	; 134 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$135:
-	; 135 Parameter 72 pointer string_0AA20List2013A20#
+	; 135 Parameter 72 string string_0AA20List2013A20#
 	mov qword [rbp + 72], @12376string_0AA20List2013A20#
 
  stdlib_test$136:
@@ -1425,7 +1425,7 @@ section .text
 	; 142 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$141:
-	; 143 Parameter 72 pointer string_25i20#
+	; 143 Parameter 72 string string_25i20#
 	mov qword [rbp + 72], @12379string_25i20#
 
  stdlib_test$142:
@@ -1477,7 +1477,7 @@ section .text
 	; 155 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$152:
-	; 156 Parameter 72 pointer string_0AB20List2023A20#
+	; 156 Parameter 72 string string_0AB20List2023A20#
 	mov qword [rbp + 72], @12382string_0AB20List2023A20#
 
  stdlib_test$153:
@@ -1495,7 +1495,7 @@ section .text
 	; 159 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$156:
-	; 160 Parameter 72 pointer list
+	; 160 Parameter 72 array list
 	mov [rbp + 72], rbp
 	add qword [rbp + 72], 24
 
@@ -1509,7 +1509,7 @@ section .text
 	mov dword [rbp + 84], 4
 
  stdlib_test$159:
-	; 163 Parameter 88 pointer compare
+	; 163 Parameter 88 function compare
 	mov qword [rbp + 88], compare
 
  stdlib_test$160:
@@ -1536,7 +1536,7 @@ section .text
 	; 170 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$165:
-	; 171 Parameter 72 pointer string_25i20#
+	; 171 Parameter 72 string string_25i20#
 	mov qword [rbp + 72], @12390string_25i20#
 
  stdlib_test$166:
@@ -1588,7 +1588,7 @@ section .text
 	; 183 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$176:
-	; 184 Parameter 72 pointer string_0AC20List2033A20#
+	; 184 Parameter 72 string string_0AC20List2033A20#
 	mov qword [rbp + 72], @12393string_0AC20List2033A20#
 
  stdlib_test$177:
@@ -1606,7 +1606,7 @@ section .text
 	; 187 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$180:
-	; 188 Parameter 72 pointer list
+	; 188 Parameter 72 array list
 	mov [rbp + 72], rbp
 	add qword [rbp + 72], 24
 
@@ -1620,7 +1620,7 @@ section .text
 	mov dword [rbp + 84], 4
 
  stdlib_test$183:
-	; 191 Parameter 88 pointer reverse_compare
+	; 191 Parameter 88 function reverse_compare
 	mov qword [rbp + 88], reverse_compare
 
  stdlib_test$184:
@@ -1647,7 +1647,7 @@ section .text
 	; 198 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$189:
-	; 199 Parameter 72 pointer string_25i20#
+	; 199 Parameter 72 string string_25i20#
 	mov qword [rbp + 72], @12401string_25i20#
 
  stdlib_test$190:
@@ -1699,7 +1699,7 @@ section .text
 	; 211 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$200:
-	; 212 Parameter 72 pointer string_0AB20List2043A20#
+	; 212 Parameter 72 string string_0AB20List2043A20#
 	mov qword [rbp + 72], @12404string_0AB20List2043A20#
 
  stdlib_test$201:
@@ -1717,7 +1717,7 @@ section .text
 	; 215 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$204:
-	; 216 Parameter 72 pointer list
+	; 216 Parameter 72 array list
 	mov [rbp + 72], rbp
 	add qword [rbp + 72], 24
 
@@ -1731,7 +1731,7 @@ section .text
 	mov dword [rbp + 84], 4
 
  stdlib_test$207:
-	; 219 Parameter 88 pointer compare
+	; 219 Parameter 88 function compare
 	mov qword [rbp + 88], compare
 
  stdlib_test$208:
@@ -1758,7 +1758,7 @@ section .text
 	; 226 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$213:
-	; 227 Parameter 72 pointer string_25i20#
+	; 227 Parameter 72 string string_25i20#
 	mov qword [rbp + 72], @12412string_25i20#
 
  stdlib_test$214:
@@ -1810,7 +1810,7 @@ section .text
 	; 239 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$224:
-	; 240 Parameter 72 pointer string_0A0ASearch3A0A#
+	; 240 Parameter 72 string string_0A0ASearch3A0A#
 	mov qword [rbp + 72], @12415string_0A0ASearch3A0A#
 
  stdlib_test$225:
@@ -1846,7 +1846,7 @@ section .text
 	mov [rbp + 72], rsi
 
  stdlib_test$232:
-	; 250 Parameter 80 pointer list
+	; 250 Parameter 80 array list
 	mov [rbp + 80], rbp
 	add qword [rbp + 80], 24
 
@@ -1860,7 +1860,7 @@ section .text
 	mov dword [rbp + 92], 4
 
  stdlib_test$235:
-	; 253 Parameter 96 pointer compare
+	; 253 Parameter 96 function compare
 	mov qword [rbp + 96], compare
 
  stdlib_test$236:
@@ -1918,7 +1918,7 @@ section .text
 	; 271 PreCall 60 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$249:
-	; 272 Parameter 84 pointer string_20202825i2C2025i290A#
+	; 272 Parameter 84 string string_20202825i2C2025i290A#
 	mov qword [rbp + 84], @12430string_20202825i2C2025i290A#
 
  stdlib_test$250:
@@ -1955,7 +1955,7 @@ section .text
 	; 281 PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdlib_test$257:
-	; 282 Parameter 68 pointer string_0A#
+	; 282 Parameter 68 string string_0A#
 	mov qword [rbp + 68], @12431string_0A#
 
  stdlib_test$258:

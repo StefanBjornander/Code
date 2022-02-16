@@ -201,7 +201,7 @@ section .text
 	; 1 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$2:
-	; 2 Parameter 268 pointer string_strlen282225s2229203D2025i0A#
+	; 2 Parameter 268 string string_strlen282225s2229203D2025i0A#
 	mov qword [rbp + 268], @8861string_strlen282225s2229203D2025i0A#
 
  string_test$3:
@@ -250,7 +250,7 @@ section .text
 	; 12 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$13:
-	; 13 Parameter 268 pointer t
+	; 13 Parameter 268 array t
 	mov [rbp + 268], rbp
 	add qword [rbp + 268], 36
 
@@ -273,7 +273,7 @@ section .text
 	; 17 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$18:
-	; 18 Parameter 268 pointer u
+	; 18 Parameter 268 array u
 	mov [rbp + 268], rbp
 	add qword [rbp + 268], 136
 
@@ -309,16 +309,16 @@ section .text
 	; 26 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$26:
-	; 27 Parameter 268 pointer string_t203D202225s222C20u203D202225s220A#
+	; 27 Parameter 268 string string_t203D202225s222C20u203D202225s220A#
 	mov qword [rbp + 268], @8866string_t203D202225s222C20u203D202225s220A#
 
  string_test$27:
-	; 28 Parameter 276 pointer t
+	; 28 Parameter 276 array t
 	mov [rbp + 276], rbp
 	add qword [rbp + 276], 36
 
  string_test$28:
-	; 29 Parameter 284 pointer u
+	; 29 Parameter 284 array u
 	mov [rbp + 284], rbp
 	add qword [rbp + 284], 136
 
@@ -338,12 +338,12 @@ section .text
 	; 32 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$32:
-	; 33 Parameter 268 pointer t
+	; 33 Parameter 268 array t
 	mov [rbp + 268], rbp
 	add qword [rbp + 268], 36
 
  string_test$33:
-	; 34 Parameter 276 pointer string_abc#
+	; 34 Parameter 276 string string_abc#
 	mov qword [rbp + 276], @8867string_abc#
 
  string_test$34:
@@ -360,7 +360,7 @@ section .text
 	; 37 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$37:
-	; 38 Parameter 268 pointer u
+	; 38 Parameter 268 array u
 	mov [rbp + 268], rbp
 	add qword [rbp + 268], 136
 
@@ -385,12 +385,12 @@ section .text
 	; 43 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$43:
-	; 44 Parameter 268 pointer u
+	; 44 Parameter 268 array u
 	mov [rbp + 268], rbp
 	add qword [rbp + 268], 136
 
  string_test$44:
-	; 45 Parameter 276 pointer string_abc#
+	; 45 Parameter 276 string string_abc#
 	mov qword [rbp + 276], @8868string_abc#
 
  string_test$45:
@@ -434,16 +434,16 @@ section .text
 	; 54 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$54:
-	; 55 Parameter 268 pointer string_t203D202225s222C20u203D202225s220A#
+	; 55 Parameter 268 string string_t203D202225s222C20u203D202225s220A#
 	mov qword [rbp + 268], @8872string_t203D202225s222C20u203D202225s220A#
 
  string_test$55:
-	; 56 Parameter 276 pointer t
+	; 56 Parameter 276 array t
 	mov [rbp + 276], rbp
 	add qword [rbp + 276], 36
 
  string_test$56:
-	; 57 Parameter 284 pointer u
+	; 57 Parameter 284 array u
 	mov [rbp + 284], rbp
 	add qword [rbp + 284], 136
 
@@ -463,7 +463,7 @@ section .text
 	; 60 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$60:
-	; 61 Parameter 268 pointer string_strcmp28s2C20u29203D2025i0A#
+	; 61 Parameter 268 string string_strcmp28s2C20u29203D2025i0A#
 	mov qword [rbp + 268], @8873string_strcmp28s2C20u29203D2025i0A#
 
  string_test$61:
@@ -475,7 +475,7 @@ section .text
 	mov [rbp + 300], rax
 
  string_test$63:
-	; 64 Parameter 308 pointer u
+	; 64 Parameter 308 array u
 	mov [rbp + 308], rbp
 	add qword [rbp + 308], 136
 
@@ -512,7 +512,7 @@ section .text
 	; 71 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$71:
-	; 72 Parameter 268 pointer string_strncmp28s2C20u2C20229203D2025i0A#
+	; 72 Parameter 268 string string_strncmp28s2C20u2C20229203D2025i0A#
 	mov qword [rbp + 268], @8874string_strncmp28s2C20u2C20229203D2025i0A#
 
  string_test$72:
@@ -524,7 +524,7 @@ section .text
 	mov [rbp + 300], rax
 
  string_test$74:
-	; 75 Parameter 308 pointer u
+	; 75 Parameter 308 array u
 	mov [rbp + 308], rbp
 	add qword [rbp + 308], 136
 
@@ -594,7 +594,7 @@ section .text
 	; 90 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$90:
-	; 91 Parameter 268 pointer string_strchr28s2C2027l2729203D2025i0A#
+	; 91 Parameter 268 string string_strchr28s2C2027l2729203D2025i0A#
 	mov qword [rbp + 268], @8878string_strchr28s2C2027l2729203D2025i0A#
 
  string_test$91:
@@ -667,7 +667,7 @@ section .text
 	; 112 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$107:
-	; 113 Parameter 268 pointer string_strrchr28s2C2027l2729203D2025i0A#
+	; 113 Parameter 268 string string_strrchr28s2C2027l2729203D2025i0A#
 	mov qword [rbp + 268], @8884string_strrchr28s2C2027l2729203D2025i0A#
 
  string_test$108:
@@ -740,7 +740,7 @@ section .text
 	; 134 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$124:
-	; 135 Parameter 268 pointer string_strchr28s2C2027x2729203D2025i0A#
+	; 135 Parameter 268 string string_strchr28s2C2027x2729203D2025i0A#
 	mov qword [rbp + 268], @8890string_strchr28s2C2027x2729203D2025i0A#
 
  string_test$125:
@@ -813,7 +813,7 @@ section .text
 	; 156 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$141:
-	; 157 Parameter 268 pointer string_strrchr28s2C2027x2729203D2025i0A#
+	; 157 Parameter 268 string string_strrchr28s2C2027x2729203D2025i0A#
 	mov qword [rbp + 268], @8896string_strrchr28s2C2027x2729203D2025i0A#
 
  string_test$142:
@@ -862,7 +862,7 @@ section .text
 	mov [rbp + 268], rax
 
  string_test$152:
-	; 173 Parameter 276 pointer string_Hello2C20World21#
+	; 173 Parameter 276 string string_Hello2C20World21#
 	mov qword [rbp + 276], @8900string_Hello2C20World21#
 
  string_test$153:
@@ -883,12 +883,12 @@ section .text
 	; 177 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$157:
-	; 178 Parameter 268 pointer t
+	; 178 Parameter 268 array t
 	mov [rbp + 268], rbp
 	add qword [rbp + 268], 36
 
  string_test$158:
-	; 179 Parameter 276 pointer string_Hello2C20World21#
+	; 179 Parameter 276 string string_Hello2C20World21#
 	mov qword [rbp + 276], @8904string_Hello2C20World21#
 
  string_test$159:
@@ -909,7 +909,7 @@ section .text
 	; 183 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$163:
-	; 184 Parameter 268 pointer u
+	; 184 Parameter 268 array u
 	mov [rbp + 268], rbp
 	add qword [rbp + 268], 136
 
@@ -944,7 +944,7 @@ section .text
 	; 192 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$171:
-	; 193 Parameter 268 pointer string_s203D202225s222C20t203D202225s222C20u203D202225s220A#
+	; 193 Parameter 268 string string_s203D202225s222C20t203D202225s222C20u203D202225s220A#
 	mov qword [rbp + 268], @8918string_s203D202225s222C20t203D202225s222C20u203D202225s220A#
 
  string_test$172:
@@ -953,12 +953,12 @@ section .text
 	mov [rbp + 276], rax
 
  string_test$173:
-	; 195 Parameter 284 pointer t
+	; 195 Parameter 284 array t
 	mov [rbp + 284], rbp
 	add qword [rbp + 284], 36
 
  string_test$174:
-	; 196 Parameter 292 pointer u
+	; 196 Parameter 292 array u
 	mov [rbp + 292], rbp
 	add qword [rbp + 292], 136
 
@@ -1011,7 +1011,7 @@ section .text
 	; 207 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$186:
-	; 208 Parameter 268 pointer string_memchr28s2C2027l272C20SIZE202A20sizeof28char2929203D2025i0A#
+	; 208 Parameter 268 string string_memchr28s2C2027l272C20SIZE202A20sizeof28char2929203D2025i0A#
 	mov qword [rbp + 268], @8924string_memchr28s2C2027l272C20SIZE202A20sizeof28char2929203D2025i0A#
 
  string_test$187:
@@ -1088,7 +1088,7 @@ section .text
 	; 230 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$204:
-	; 231 Parameter 268 pointer string_memchr28s2C2027x272C20SIZE202A20sizeof28char2929203D2025i0A#
+	; 231 Parameter 268 string string_memchr28s2C2027x272C20SIZE202A20sizeof28char2929203D2025i0A#
 	mov qword [rbp + 268], @8933string_memchr28s2C2027x272C20SIZE202A20sizeof28char2929203D2025i0A#
 
  string_test$205:
@@ -1132,7 +1132,7 @@ section .text
 	; 245 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$214:
-	; 246 Parameter 268 pointer string_s3A202225s222C20t3A202225s220A#
+	; 246 Parameter 268 string string_s3A202225s222C20t3A202225s220A#
 	mov qword [rbp + 268], @8937string_s3A202225s222C20t3A202225s220A#
 
  string_test$215:
@@ -1141,7 +1141,7 @@ section .text
 	mov [rbp + 276], rax
 
  string_test$216:
-	; 248 Parameter 284 pointer t
+	; 248 Parameter 284 array t
 	mov [rbp + 284], rbp
 	add qword [rbp + 284], 36
 
@@ -1161,7 +1161,7 @@ section .text
 	; 251 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$220:
-	; 252 Parameter 268 pointer string_strcmp28s2C20t29203D2025i0A#
+	; 252 Parameter 268 string string_strcmp28s2C20t29203D2025i0A#
 	mov qword [rbp + 268], @8938string_strcmp28s2C20t29203D2025i0A#
 
  string_test$221:
@@ -1173,7 +1173,7 @@ section .text
 	mov [rbp + 300], rax
 
  string_test$223:
-	; 255 Parameter 308 pointer t
+	; 255 Parameter 308 array t
 	mov [rbp + 308], rbp
 	add qword [rbp + 308], 36
 
@@ -1210,7 +1210,7 @@ section .text
 	; 262 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$231:
-	; 263 Parameter 268 pointer string_memcmp28s2C20t2C20SIZE202A20sizeof28char2929203D2025i0A#
+	; 263 Parameter 268 string string_memcmp28s2C20t2C20SIZE202A20sizeof28char2929203D2025i0A#
 	mov qword [rbp + 268], @8939string_memcmp28s2C20t2C20SIZE202A20sizeof28char2929203D2025i0A#
 
  string_test$232:
@@ -1222,7 +1222,7 @@ section .text
 	mov [rbp + 300], rax
 
  string_test$234:
-	; 266 Parameter 308 pointer t
+	; 266 Parameter 308 array t
 	mov [rbp + 308], rbp
 	add qword [rbp + 308], 36
 
@@ -1263,7 +1263,7 @@ section .text
 	; 274 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$243:
-	; 275 Parameter 268 pointer string_strspn28s2C2022Hello2C20C2229203D2025i0A#
+	; 275 Parameter 268 string string_strspn28s2C2022Hello2C20C2229203D2025i0A#
 	mov qword [rbp + 268], @8943string_strspn28s2C2022Hello2C20C2229203D2025i0A#
 
  string_test$244:
@@ -1275,7 +1275,7 @@ section .text
 	mov [rbp + 300], rax
 
  string_test$246:
-	; 278 Parameter 308 pointer string_Hello2C20C#
+	; 278 Parameter 308 string string_Hello2C20C#
 	mov qword [rbp + 308], @8944string_Hello2C20C#
 
  string_test$247:
@@ -1311,7 +1311,7 @@ section .text
 	; 285 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$254:
-	; 286 Parameter 268 pointer string_strcspn28s2C2022Hello2C20C2229203D2025i0A#
+	; 286 Parameter 268 string string_strcspn28s2C2022Hello2C20C2229203D2025i0A#
 	mov qword [rbp + 268], @8945string_strcspn28s2C2022Hello2C20C2229203D2025i0A#
 
  string_test$255:
@@ -1323,7 +1323,7 @@ section .text
 	mov [rbp + 300], rax
 
  string_test$257:
-	; 289 Parameter 308 pointer string_Hello2C20C#
+	; 289 Parameter 308 string string_Hello2C20C#
 	mov qword [rbp + 308], @8946string_Hello2C20C#
 
  string_test$258:
@@ -1359,7 +1359,7 @@ section .text
 	; 296 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$265:
-	; 297 Parameter 268 pointer string_strerror28errno29203D202225s220A#
+	; 297 Parameter 268 string string_strerror28errno29203D202225s220A#
 	mov qword [rbp + 268], @8947string_strerror28errno29203D202225s220A#
 
  string_test$266:
@@ -1408,7 +1408,7 @@ section .text
 	mov [rbp + 268], rax
 
  string_test$276:
-	; 308 Parameter 276 pointer string_2C#
+	; 308 Parameter 276 string string_2C#
 	mov qword [rbp + 276], @8948string_2C#
 
  string_test$277:
@@ -1437,7 +1437,7 @@ section .text
 	; 316 PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$283:
-	; 317 Parameter 268 pointer string_strtok28s2C20222C2229203D202225s220A#
+	; 317 Parameter 268 string string_strtok28s2C20222C2229203D202225s220A#
 	mov qword [rbp + 268], @8951string_strtok28s2C20222C2229203D202225s220A#
 
  string_test$284:
@@ -1465,7 +1465,7 @@ section .text
 	mov qword [rbp + 268], 0
 
  string_test$289:
-	; 323 Parameter 276 pointer string_2C#
+	; 323 Parameter 276 string string_2C#
 	mov qword [rbp + 276], @8954string_2C#
 
  string_test$290:

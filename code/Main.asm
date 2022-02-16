@@ -54,7 +54,7 @@ section .text
 	; 3 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  mainX$2:
-	; 4 Parameter 48 pointer string_25d20#
+	; 4 Parameter 48 string string_25d20#
 	mov qword [rbp + 48], @315string_25d20#
 
  mainX$3:

@@ -1146,11 +1146,11 @@ section .text
 	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1:
-	; 1 Parameter 48 pointer string_in2Etxt#
+	; 1 Parameter 48 string string_in2Etxt#
 	mov qword [rbp + 48], @9971string_in2Etxt#
 
  file_test$2:
-	; 2 Parameter 56 pointer string_r#
+	; 2 Parameter 56 string string_r#
 	mov qword [rbp + 56], @9972string_r#
 
  file_test$3:
@@ -1174,11 +1174,11 @@ section .text
 	; 7 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$8:
-	; 8 Parameter 56 pointer string_outX2Etxt#
+	; 8 Parameter 56 string string_outX2Etxt#
 	mov qword [rbp + 56], @9974string_outX2Etxt#
 
  file_test$9:
-	; 9 Parameter 64 pointer string_w#
+	; 9 Parameter 64 string string_w#
 	mov qword [rbp + 64], @9975string_w#
 
  file_test$10:
@@ -1212,15 +1212,15 @@ section .text
 	mov [rbp + 64], rax
 
  file_test$17:
-	; 19 Parameter 72 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 19 Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 72], @9979string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$18:
-	; 20 Parameter 80 pointer string_inFilePtr20213D20NULL#
+	; 20 Parameter 80 string string_inFilePtr20213D20NULL#
 	mov qword [rbp + 80], @9980string_inFilePtr20213D20NULL#
 
  file_test$19:
-	; 21 Parameter 88 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 21 Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 88], @9981string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$20:
@@ -1266,15 +1266,15 @@ section .text
 	mov [rbp + 64], rax
 
  file_test$29:
-	; 37 Parameter 72 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 37 Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 72], @9985string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$30:
-	; 38 Parameter 80 pointer string_outFilePtr20213D20NULL#
+	; 38 Parameter 80 string string_outFilePtr20213D20NULL#
 	mov qword [rbp + 80], @9986string_outFilePtr20213D20NULL#
 
  file_test$31:
-	; 39 Parameter 88 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 39 Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 88], @9987string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$32:
@@ -1341,7 +1341,7 @@ section .text
 	mov [rbp + 72], rax
 
  file_test$46:
-	; 60 Parameter 80 pointer string_25lf#
+	; 60 Parameter 80 string string_25lf#
 	mov qword [rbp + 80], @9991string_25lf#
 
  file_test$47:
@@ -1369,7 +1369,7 @@ section .text
 	; 67 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$52:
-	; 68 Parameter 72 pointer string_X12025f0A#
+	; 68 Parameter 72 string string_X12025f0A#
 	mov qword [rbp + 72], @9992string_X12025f0A#
 
  file_test$53:
@@ -1421,7 +1421,7 @@ section .text
 	mov [rbp + 72], rax
 
  file_test$64:
-	; 80 Parameter 80 pointer string_X22025f0A#
+	; 80 Parameter 80 string string_X22025f0A#
 	mov qword [rbp + 80], @9993string_X22025f0A#
 
  file_test$65:
@@ -1472,7 +1472,7 @@ section .text
 	; 92 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$76:
-	; 93 Parameter 64 pointer string_0A#
+	; 93 Parameter 64 string string_0A#
 	mov qword [rbp + 64], @9994string_0A#
 
  file_test$77:
@@ -1526,11 +1526,11 @@ section .text
 	; 104 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$88:
-	; 105 Parameter 48 pointer string_in2Etxt#
+	; 105 Parameter 48 string string_in2Etxt#
 	mov qword [rbp + 48], @9995string_in2Etxt#
 
  file_test$89:
-	; 106 Parameter 56 pointer string_r#
+	; 106 Parameter 56 string string_r#
 	mov qword [rbp + 56], @9996string_r#
 
  file_test$90:
@@ -1554,11 +1554,11 @@ section .text
 	; 111 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$95:
-	; 112 Parameter 56 pointer string_outY2Etxt#
+	; 112 Parameter 56 string string_outY2Etxt#
 	mov qword [rbp + 56], @9998string_outY2Etxt#
 
  file_test$96:
-	; 113 Parameter 64 pointer string_w#
+	; 113 Parameter 64 string string_w#
 	mov qword [rbp + 64], @9999string_w#
 
  file_test$97:
@@ -1592,15 +1592,15 @@ section .text
 	mov [rbp + 64], rax
 
  file_test$104:
-	; 123 Parameter 72 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 123 Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 72], @10003string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$105:
-	; 124 Parameter 80 pointer string_inFilePtr20213D20NULL#
+	; 124 Parameter 80 string string_inFilePtr20213D20NULL#
 	mov qword [rbp + 80], @10004string_inFilePtr20213D20NULL#
 
  file_test$106:
-	; 125 Parameter 88 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 125 Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 88], @10005string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$107:
@@ -1646,15 +1646,15 @@ section .text
 	mov [rbp + 64], rax
 
  file_test$116:
-	; 141 Parameter 72 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 141 Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 72], @10009string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$117:
-	; 142 Parameter 80 pointer string_outFilePtr20213D20NULL#
+	; 142 Parameter 80 string string_outFilePtr20213D20NULL#
 	mov qword [rbp + 80], @10010string_outFilePtr20213D20NULL#
 
  file_test$118:
-	; 143 Parameter 88 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 143 Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 88], @10011string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$119:
@@ -1699,7 +1699,7 @@ section .text
 	mov [rbp + 72], rax
 
  file_test$128:
-	; 157 Parameter 80 pointer string_25i#
+	; 157 Parameter 80 string string_25i#
 	mov qword [rbp + 80], @10016string_25i#
 
  file_test$129:
@@ -1727,7 +1727,7 @@ section .text
 	; 162 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$134:
-	; 163 Parameter 72 pointer string_size2025i0A#
+	; 163 Parameter 72 string string_size2025i0A#
 	mov qword [rbp + 72], @10017string_size2025i0A#
 
  file_test$135:
@@ -1756,7 +1756,7 @@ section .text
 	mov [rbp + 72], rax
 
  file_test$140:
-	; 169 Parameter 80 pointer string_Y20size2025i0A#
+	; 169 Parameter 80 string string_Y20size2025i0A#
 	mov qword [rbp + 80], @10018string_Y20size2025i0A#
 
  file_test$141:
@@ -1795,7 +1795,7 @@ section .text
 	mov [rbp + 80], rax
 
  file_test$148:
-	; 179 Parameter 88 pointer string_25lf#
+	; 179 Parameter 88 string string_25lf#
 	mov qword [rbp + 88], @10022string_25lf#
 
  file_test$149:
@@ -1823,7 +1823,7 @@ section .text
 	; 186 PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$154:
-	; 187 Parameter 80 pointer string_Y12025f0A#
+	; 187 Parameter 80 string string_Y12025f0A#
 	mov qword [rbp + 80], @10023string_Y12025f0A#
 
  file_test$155:
@@ -1875,7 +1875,7 @@ section .text
 	mov [rbp + 80], rax
 
  file_test$166:
-	; 199 Parameter 88 pointer string_Y22025f0A#
+	; 199 Parameter 88 string string_Y22025f0A#
 	mov qword [rbp + 88], @10024string_Y22025f0A#
 
  file_test$167:
@@ -1930,7 +1930,7 @@ section .text
 	; 213 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$179:
-	; 214 Parameter 72 pointer string_0A#
+	; 214 Parameter 72 string string_0A#
 	mov qword [rbp + 72], @10025string_0A#
 
  file_test$180:
@@ -2014,7 +2014,7 @@ section .text
 	; 234 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$198:
-	; 235 Parameter 56 pointer string_2225s2220has20been20removed0A#
+	; 235 Parameter 56 string string_2225s2220has20been20removed0A#
 	mov qword [rbp + 56], @10029string_2225s2220has20been20removed0A#
 
  file_test$199:
@@ -2042,7 +2042,7 @@ section .text
 	; 241 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$204:
-	; 242 Parameter 56 pointer string_Error202225s222025i3A2025s2E0A#
+	; 242 Parameter 56 string string_Error202225s222025i3A2025s2E0A#
 	mov qword [rbp + 56], @10030string_Error202225s222025i3A2025s2E0A#
 
  file_test$205:
@@ -2109,7 +2109,7 @@ section .text
 	mov [rbp + 64], rax
 
  file_test$219:
-	; 258 Parameter 72 pointer string_w#
+	; 258 Parameter 72 string string_w#
 	mov qword [rbp + 72], @10035string_w#
 
  file_test$220:
@@ -2138,7 +2138,7 @@ section .text
 	mov [rbp + 72], rax
 
  file_test$226:
-	; 265 Parameter 80 pointer string_Hello20X#
+	; 265 Parameter 80 string string_Hello20X#
 	mov qword [rbp + 80], @10037string_Hello20X#
 
  file_test$227:
@@ -2205,7 +2205,7 @@ section .text
 	; 281 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$241:
-	; 282 Parameter 72 pointer string_2225s2220has20been20renamed20to202225s222E0A#
+	; 282 Parameter 72 string string_2225s2220has20been20renamed20to202225s222E0A#
 	mov qword [rbp + 72], @10039string_2225s2220has20been20renamed20to202225s222E0A#
 
  file_test$242:
@@ -2238,7 +2238,7 @@ section .text
 	; 289 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$248:
-	; 290 Parameter 72 pointer string_Error202225s22202225s222025i3A2025s2E0A#
+	; 290 Parameter 72 string string_Error202225s22202225s222025i3A2025s2E0A#
 	mov qword [rbp + 72], @10040string_Error202225s22202225s222025i3A2025s2E0A#
 
  file_test$249:
@@ -2336,7 +2336,7 @@ section .text
 	; 314 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$270:
-	; 315 Parameter 64 pointer string_2225s2220has20been20renamed20to202225s222E0A#
+	; 315 Parameter 64 string string_2225s2220has20been20renamed20to202225s222E0A#
 	mov qword [rbp + 64], @10046string_2225s2220has20been20renamed20to202225s222E0A#
 
  file_test$271:
@@ -2369,7 +2369,7 @@ section .text
 	; 322 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$277:
-	; 323 Parameter 64 pointer string_Error202225s22202225s222025i3A2025s2E0A#
+	; 323 Parameter 64 string string_Error202225s22202225s222025i3A2025s2E0A#
 	mov qword [rbp + 64], @10047string_Error202225s22202225s222025i3A2025s2E0A#
 
  file_test$278:
@@ -2437,7 +2437,7 @@ section .text
 	mov [rbp + 56], rax
 
  file_test$292:
-	; 339 Parameter 64 pointer string_w#
+	; 339 Parameter 64 string string_w#
 	mov qword [rbp + 64], @10050string_w#
 
  file_test$293:
@@ -2466,7 +2466,7 @@ section .text
 	mov [rbp + 64], rax
 
  file_test$299:
-	; 346 Parameter 72 pointer string_Hello20Z#
+	; 346 Parameter 72 string string_Hello20Z#
 	mov qword [rbp + 72], @10052string_Hello20Z#
 
  file_test$300:
@@ -2528,7 +2528,7 @@ section .text
 	; 361 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$313:
-	; 362 Parameter 64 pointer string_2225s2220has20been20removed2E0A#
+	; 362 Parameter 64 string string_2225s2220has20been20removed2E0A#
 	mov qword [rbp + 64], @10054string_2225s2220has20been20removed2E0A#
 
  file_test$314:
@@ -2556,7 +2556,7 @@ section .text
 	; 368 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$319:
-	; 369 Parameter 64 pointer string_Error202225s222025i3A2025s2E0A#
+	; 369 Parameter 64 string string_Error202225s222025i3A2025s2E0A#
 	mov qword [rbp + 64], @10055string_Error202225s222025i3A2025s2E0A#
 
  file_test$320:
@@ -2640,7 +2640,7 @@ section .text
 	; 390 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$338:
-	; 391 Parameter 56 pointer string_2225s2220has20been20removed2E0A#
+	; 391 Parameter 56 string string_2225s2220has20been20removed2E0A#
 	mov qword [rbp + 56], @10059string_2225s2220has20been20removed2E0A#
 
  file_test$339:
@@ -2668,7 +2668,7 @@ section .text
 	; 397 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$344:
-	; 398 Parameter 56 pointer string_Error202225s222025i3A2025s2E0A#
+	; 398 Parameter 56 string string_Error202225s222025i3A2025s2E0A#
 	mov qword [rbp + 56], @10060string_Error202225s222025i3A2025s2E0A#
 
  file_test$345:
@@ -2722,11 +2722,11 @@ section .text
 	; 410 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$356:
-	; 411 Parameter 48 pointer string_PBook2Etxt#
+	; 411 Parameter 48 string string_PBook2Etxt#
 	mov qword [rbp + 48], @10061string_PBook2Etxt#
 
  file_test$357:
-	; 412 Parameter 56 pointer string_r#
+	; 412 Parameter 56 string string_r#
 	mov qword [rbp + 56], @10062string_r#
 
  file_test$358:
@@ -2760,15 +2760,15 @@ section .text
 	mov [rbp + 56], rax
 
  file_test$365:
-	; 422 Parameter 64 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 422 Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 64], @10066string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$366:
-	; 423 Parameter 72 pointer string_inFilePtr20213D20NULL#
+	; 423 Parameter 72 string string_inFilePtr20213D20NULL#
 	mov qword [rbp + 72], @10067string_inFilePtr20213D20NULL#
 
  file_test$367:
-	; 424 Parameter 80 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 424 Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 80], @10068string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$368:
@@ -2804,15 +2804,15 @@ section .text
 	; 435 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$375:
-	; 436 Parameter 56 pointer string_0A252D24s20252D24s0A#
+	; 436 Parameter 56 string string_0A252D24s20252D24s0A#
 	mov qword [rbp + 56], @10070string_0A252D24s20252D24s0A#
 
  file_test$376:
-	; 437 Parameter 64 pointer string_Name#
+	; 437 Parameter 64 string string_Name#
 	mov qword [rbp + 64], @10071string_Name#
 
  file_test$377:
-	; 438 Parameter 72 pointer string_Phone#
+	; 438 Parameter 72 string string_Phone#
 	mov qword [rbp + 72], @10072string_Phone#
 
  file_test$378:
@@ -2831,15 +2831,15 @@ section .text
 	; 441 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$381:
-	; 442 Parameter 56 pointer string_252D24s20252D24s0A#
+	; 442 Parameter 56 string string_252D24s20252D24s0A#
 	mov qword [rbp + 56], @10073string_252D24s20252D24s0A#
 
  file_test$382:
-	; 443 Parameter 64 pointer string_3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D#
+	; 443 Parameter 64 string string_3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D#
 	mov qword [rbp + 64], @10074string_3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D#
 
  file_test$383:
-	; 444 Parameter 72 pointer string_3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D#
+	; 444 Parameter 72 string string_3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D#
 	mov qword [rbp + 72], @10075string_3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D#
 
  file_test$384:
@@ -2863,7 +2863,7 @@ section .text
 	mov [rbp + 64], rax
 
  file_test$388:
-	; 449 Parameter 72 pointer string_25i#
+	; 449 Parameter 72 string string_25i#
 	mov qword [rbp + 72], @10078string_25i#
 
  file_test$389:
@@ -2891,7 +2891,7 @@ section .text
 	; 454 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$394:
-	; 455 Parameter 64 pointer string_size2025i0A#
+	; 455 Parameter 64 string string_size2025i0A#
 	mov qword [rbp + 64], @10079string_size2025i0A#
 
  file_test$395:
@@ -2930,16 +2930,16 @@ section .text
 	mov [rbp + 104], rax
 
  file_test$402:
-	; 465 Parameter 112 pointer string_25s25s#
+	; 465 Parameter 112 string string_25s25s#
 	mov qword [rbp + 112], @10088string_25s25s#
 
  file_test$403:
-	; 466 Parameter 120 pointer name
+	; 466 Parameter 120 array name
 	mov [rbp + 120], rbp
 	add qword [rbp + 120], 40
 
  file_test$404:
-	; 467 Parameter 128 pointer phone
+	; 467 Parameter 128 array phone
 	mov [rbp + 128], rbp
 	add qword [rbp + 128], 60
 
@@ -2959,16 +2959,16 @@ section .text
 	; 470 PreCall 80 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$408:
-	; 471 Parameter 104 pointer string_252D24s20252D24s0A#
+	; 471 Parameter 104 string string_252D24s20252D24s0A#
 	mov qword [rbp + 104], @10089string_252D24s20252D24s0A#
 
  file_test$409:
-	; 472 Parameter 112 pointer name
+	; 472 Parameter 112 array name
 	mov [rbp + 112], rbp
 	add qword [rbp + 112], 40
 
  file_test$410:
-	; 473 Parameter 120 pointer phone
+	; 473 Parameter 120 array phone
 	mov [rbp + 120], rbp
 	add qword [rbp + 120], 60
 
@@ -2996,7 +2996,7 @@ section .text
 	; 480 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$416:
-	; 481 Parameter 56 pointer string_0A#
+	; 481 Parameter 56 string string_0A#
 	mov qword [rbp + 56], @10090string_0A#
 
  file_test$417:
@@ -3032,11 +3032,11 @@ section .text
 	; 488 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$424:
-	; 489 Parameter 48 pointer string_TestX2Ebin#
+	; 489 Parameter 48 string string_TestX2Ebin#
 	mov qword [rbp + 48], @10091string_TestX2Ebin#
 
  file_test$425:
-	; 490 Parameter 56 pointer string_w#
+	; 490 Parameter 56 string string_w#
 	mov qword [rbp + 56], @10092string_w#
 
  file_test$426:
@@ -3070,15 +3070,15 @@ section .text
 	mov [rbp + 56], rax
 
  file_test$433:
-	; 500 Parameter 64 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 500 Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 64], @10096string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$434:
-	; 501 Parameter 72 pointer string_outFilePtr20213D20NULL#
+	; 501 Parameter 72 string string_outFilePtr20213D20NULL#
 	mov qword [rbp + 72], @10097string_outFilePtr20213D20NULL#
 
  file_test$435:
-	; 502 Parameter 80 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 502 Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 80], @10098string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$436:
@@ -3239,11 +3239,11 @@ section .text
 	; 547 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$471:
-	; 548 Parameter 48 pointer string_TestX2Ebin#
+	; 548 Parameter 48 string string_TestX2Ebin#
 	mov qword [rbp + 48], @10110string_TestX2Ebin#
 
  file_test$472:
-	; 549 Parameter 56 pointer string_r#
+	; 549 Parameter 56 string string_r#
 	mov qword [rbp + 56], @10111string_r#
 
  file_test$473:
@@ -3277,15 +3277,15 @@ section .text
 	mov [rbp + 64], rax
 
  file_test$480:
-	; 559 Parameter 72 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 559 Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 72], @10117string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$481:
-	; 560 Parameter 80 pointer string_inFilePtr20213D20NULL#
+	; 560 Parameter 80 string string_inFilePtr20213D20NULL#
 	mov qword [rbp + 80], @10118string_inFilePtr20213D20NULL#
 
  file_test$482:
-	; 561 Parameter 88 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 561 Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 88], @10119string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$483:
@@ -3356,7 +3356,7 @@ section .text
 	; 580 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$498:
-	; 581 Parameter 64 pointer string_size13A2025i0A#
+	; 581 Parameter 64 string string_size13A2025i0A#
 	mov qword [rbp + 64], @10123string_size13A2025i0A#
 
  file_test$499:
@@ -3425,7 +3425,7 @@ section .text
 	; 599 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$513:
-	; 600 Parameter 72 pointer string_index13A2025i3A20value2025f0A#
+	; 600 Parameter 72 string string_index13A2025i3A20value2025f0A#
 	mov qword [rbp + 72], @10129string_index13A2025i3A20value2025f0A#
 
  file_test$514:
@@ -3465,7 +3465,7 @@ section .text
 	; 610 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$522:
-	; 611 Parameter 64 pointer string_0A#
+	; 611 Parameter 64 string string_0A#
 	mov qword [rbp + 64], @10130string_0A#
 
  file_test$523:
@@ -3501,11 +3501,11 @@ section .text
 	; 618 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$530:
-	; 619 Parameter 48 pointer string_TestY2Ebin#
+	; 619 Parameter 48 string string_TestY2Ebin#
 	mov qword [rbp + 48], @10131string_TestY2Ebin#
 
  file_test$531:
-	; 620 Parameter 56 pointer string_w#
+	; 620 Parameter 56 string string_w#
 	mov qword [rbp + 56], @10132string_w#
 
  file_test$532:
@@ -3539,15 +3539,15 @@ section .text
 	mov [rbp + 56], rax
 
  file_test$539:
-	; 630 Parameter 64 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 630 Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 64], @10136string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$540:
-	; 631 Parameter 72 pointer string_outFilePtr20213D20NULL#
+	; 631 Parameter 72 string string_outFilePtr20213D20NULL#
 	mov qword [rbp + 72], @10137string_outFilePtr20213D20NULL#
 
  file_test$541:
-	; 632 Parameter 80 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 632 Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 80], @10138string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$542:
@@ -3673,11 +3673,11 @@ section .text
 	; 669 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$569:
-	; 670 Parameter 48 pointer string_TestY2Ebin#
+	; 670 Parameter 48 string string_TestY2Ebin#
 	mov qword [rbp + 48], @10148string_TestY2Ebin#
 
  file_test$570:
-	; 671 Parameter 56 pointer string_r#
+	; 671 Parameter 56 string string_r#
 	mov qword [rbp + 56], @10149string_r#
 
  file_test$571:
@@ -3711,15 +3711,15 @@ section .text
 	mov [rbp + 56], rax
 
  file_test$578:
-	; 681 Parameter 64 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 681 Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 64], @10153string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$579:
-	; 682 Parameter 72 pointer string_inFilePtr20213D20NULL#
+	; 682 Parameter 72 string string_inFilePtr20213D20NULL#
 	mov qword [rbp + 72], @10154string_inFilePtr20213D20NULL#
 
  file_test$580:
-	; 683 Parameter 80 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 683 Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 80], @10155string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$581:
@@ -3802,7 +3802,7 @@ section .text
 	; 709 PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$599:
-	; 710 Parameter 68 pointer string_index23A2025i3A20value2025f0A#
+	; 710 Parameter 68 string string_index23A2025i3A20value2025f0A#
 	mov qword [rbp + 68], @10163string_index23A2025i3A20value2025f0A#
 
  file_test$600:
@@ -3845,7 +3845,7 @@ section .text
 	; 721 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$609:
-	; 722 Parameter 56 pointer string_0A#
+	; 722 Parameter 56 string string_0A#
 	mov qword [rbp + 56], @10166string_0A#
 
  file_test$610:
@@ -3881,11 +3881,11 @@ section .text
 	; 729 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$617:
-	; 730 Parameter 48 pointer string_TestY2Ebin#
+	; 730 Parameter 48 string string_TestY2Ebin#
 	mov qword [rbp + 48], @10167string_TestY2Ebin#
 
  file_test$618:
-	; 731 Parameter 56 pointer string_r#
+	; 731 Parameter 56 string string_r#
 	mov qword [rbp + 56], @10168string_r#
 
  file_test$619:
@@ -3919,15 +3919,15 @@ section .text
 	mov [rbp + 56], rax
 
  file_test$626:
-	; 741 Parameter 64 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 741 Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 64], @10172string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$627:
-	; 742 Parameter 72 pointer string_inFilePtr20213D20NULL#
+	; 742 Parameter 72 string string_inFilePtr20213D20NULL#
 	mov qword [rbp + 72], @10173string_inFilePtr20213D20NULL#
 
  file_test$628:
-	; 743 Parameter 80 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 743 Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 80], @10174string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$629:
@@ -4028,7 +4028,7 @@ section .text
 	; 773 PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$651:
-	; 774 Parameter 68 pointer string_index33A2025i3A20value2025f0A#
+	; 774 Parameter 68 string string_index33A2025i3A20value2025f0A#
 	mov qword [rbp + 68], @10182string_index33A2025i3A20value2025f0A#
 
  file_test$652:
@@ -4071,7 +4071,7 @@ section .text
 	; 785 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$661:
-	; 786 Parameter 56 pointer string_0A#
+	; 786 Parameter 56 string string_0A#
 	mov qword [rbp + 56], @10185string_0A#
 
  file_test$662:
@@ -4107,11 +4107,11 @@ section .text
 	; 793 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$669:
-	; 794 Parameter 48 pointer string_TestX2Ebin#
+	; 794 Parameter 48 string string_TestX2Ebin#
 	mov qword [rbp + 48], @10186string_TestX2Ebin#
 
  file_test$670:
-	; 795 Parameter 56 pointer string_r#
+	; 795 Parameter 56 string string_r#
 	mov qword [rbp + 56], @10187string_r#
 
  file_test$671:
@@ -4145,15 +4145,15 @@ section .text
 	mov [rbp + 60], rax
 
  file_test$678:
-	; 805 Parameter 68 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 805 Parameter 68 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 68], @10192string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$679:
-	; 806 Parameter 76 pointer string_inFilePtr20213D20NULL#
+	; 806 Parameter 76 string string_inFilePtr20213D20NULL#
 	mov qword [rbp + 76], @10193string_inFilePtr20213D20NULL#
 
  file_test$680:
-	; 807 Parameter 84 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 807 Parameter 84 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 84], @10194string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$681:
@@ -4224,7 +4224,7 @@ section .text
 	; 826 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$696:
-	; 827 Parameter 60 pointer string_size43A2025i20total2025i0A#
+	; 827 Parameter 60 string string_size43A2025i20total2025i0A#
 	mov qword [rbp + 60], @10198string_size43A2025i20total2025i0A#
 
  file_test$697:
@@ -4317,15 +4317,15 @@ section .text
 	mov [rbp + 84], rax
 
  file_test$715:
-	; 850 Parameter 92 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 850 Parameter 92 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 92], @10208string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$716:
-	; 851 Parameter 100 pointer string_p20213D20NULL#
+	; 851 Parameter 100 string string_p20213D20NULL#
 	mov qword [rbp + 100], @10209string_p20213D20NULL#
 
  file_test$717:
-	; 852 Parameter 108 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 852 Parameter 108 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 108], @10210string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$718:
@@ -4361,7 +4361,7 @@ section .text
 	; 863 PreCall 60 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$725:
-	; 864 Parameter 84 pointer string_malloc43A2025u2025u2025u0A#
+	; 864 Parameter 84 string string_malloc43A2025u2025u2025u0A#
 	mov qword [rbp + 84], @10212string_malloc43A2025u2025u2025u0A#
 
  file_test$726:
@@ -4437,7 +4437,7 @@ section .text
 	; 881 PreCall 60 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$741:
-	; 882 Parameter 84 pointer string_index43A2025i3A20value2025f0A#
+	; 882 Parameter 84 string string_index43A2025i3A20value2025f0A#
 	mov qword [rbp + 84], @10216string_index43A2025i3A20value2025f0A#
 
  file_test$742:
@@ -4496,7 +4496,7 @@ section .text
 	; 896 PreCall 60 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$754:
-	; 897 Parameter 84 pointer string_0A#
+	; 897 Parameter 84 string string_0A#
 	mov qword [rbp + 84], @10218string_0A#
 
  file_test$755:
@@ -4766,11 +4766,11 @@ section .text
 	; 962 PreCall 232 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$820:
-	; 963 Parameter 256 pointer string_Block2Ebin#
+	; 963 Parameter 256 string string_Block2Ebin#
 	mov qword [rbp + 256], @10282string_Block2Ebin#
 
  file_test$821:
-	; 964 Parameter 264 pointer string_w#
+	; 964 Parameter 264 string string_w#
 	mov qword [rbp + 264], @10283string_w#
 
  file_test$822:
@@ -4794,11 +4794,11 @@ section .text
 	; 969 PreCall 240 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$827:
-	; 970 Parameter 264 pointer string_Block2Ebin#
+	; 970 Parameter 264 string string_Block2Ebin#
 	mov qword [rbp + 264], @10285string_Block2Ebin#
 
  file_test$828:
-	; 971 Parameter 272 pointer string_r#
+	; 971 Parameter 272 string string_r#
 	mov qword [rbp + 272], @10286string_r#
 
  file_test$829:
@@ -4832,15 +4832,15 @@ section .text
 	mov [rbp + 272], rax
 
  file_test$836:
-	; 981 Parameter 280 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 981 Parameter 280 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 280], @10290string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$837:
-	; 982 Parameter 288 pointer string_outFilePtr20213D20NULL#
+	; 982 Parameter 288 string string_outFilePtr20213D20NULL#
 	mov qword [rbp + 288], @10291string_outFilePtr20213D20NULL#
 
  file_test$838:
-	; 983 Parameter 296 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 983 Parameter 296 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 296], @10292string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$839:
@@ -4886,15 +4886,15 @@ section .text
 	mov [rbp + 272], rax
 
  file_test$848:
-	; 999 Parameter 280 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 999 Parameter 280 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 280], @10296string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$849:
-	; 1000 Parameter 288 pointer string_inFilePtr20213D20NULL#
+	; 1000 Parameter 288 string string_inFilePtr20213D20NULL#
 	mov qword [rbp + 288], @10297string_inFilePtr20213D20NULL#
 
  file_test$850:
-	; 1001 Parameter 296 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 1001 Parameter 296 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 296], @10298string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$851:
@@ -4930,7 +4930,7 @@ section .text
 	; 1012 PreCall 248 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$858:
-	; 1013 Parameter 272 pointer personVector
+	; 1013 Parameter 272 array personVector
 	mov [rbp + 272], rbp
 	add qword [rbp + 272], 24
 
@@ -5040,11 +5040,11 @@ section .text
 	; 1039 PreCall 248 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$883:
-	; 1040 Parameter 272 pointer string_Name20203A2025s0A#
+	; 1040 Parameter 272 string string_Name20203A2025s0A#
 	mov qword [rbp + 272], @10305string_Name20203A2025s0A#
 
  file_test$884:
-	; 1041 Parameter 280 pointer person.name
+	; 1041 Parameter 280 array person.name
 	mov [rbp + 280], rbp
 	add qword [rbp + 280], 180
 
@@ -5064,7 +5064,7 @@ section .text
 	; 1044 PreCall 248 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$888:
-	; 1045 Parameter 272 pointer string_Phone203A2025d0A#
+	; 1045 Parameter 272 string string_Phone203A2025d0A#
 	mov qword [rbp + 272], @10307string_Phone203A2025d0A#
 
  file_test$889:
@@ -5110,11 +5110,11 @@ section .text
 	; 1055 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$898:
-	; 1056 Parameter 48 pointer string_outx2Etxt#
+	; 1056 Parameter 48 string string_outx2Etxt#
 	mov qword [rbp + 48], @10309string_outx2Etxt#
 
  file_test$899:
-	; 1057 Parameter 56 pointer string_r#
+	; 1057 Parameter 56 string string_r#
 	mov qword [rbp + 56], @10310string_r#
 
  file_test$900:
@@ -5148,15 +5148,15 @@ section .text
 	mov [rbp + 56], rax
 
  file_test$907:
-	; 1067 Parameter 64 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 1067 Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 64], @10314string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  file_test$908:
-	; 1068 Parameter 72 pointer string_inFilePtr20213D20NULL#
+	; 1068 Parameter 72 string string_inFilePtr20213D20NULL#
 	mov qword [rbp + 72], @10315string_inFilePtr20213D20NULL#
 
  file_test$909:
-	; 1069 Parameter 80 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 1069 Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 80], @10316string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  file_test$910:
@@ -5342,14 +5342,14 @@ section .text
 	; 1119 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$952:
-	; 1120 Parameter 48 pointer string_fileexists2022X223A2025s0A#
+	; 1120 Parameter 48 string string_fileexists2022X223A2025s0A#
 	mov qword [rbp + 48], @10322string_fileexists2022X223A2025s0A#
 
  file_test$953:
 	; 1121 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$954:
-	; 1122 Parameter 80 pointer string_X#
+	; 1122 Parameter 80 string string_X#
 	mov qword [rbp + 80], @10323string_X#
 
  file_test$955:
@@ -5383,7 +5383,7 @@ section .text
 	mov rax, @10325string_No#
 
  file_test$962:
-	; 1134 Parameter 56 pointer £temporary4485
+	; 1134 Parameter 56 string £temporary4485
 	mov [rbp + 56], rax
 
  file_test$963:
@@ -5402,14 +5402,14 @@ section .text
 	; 1137 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$966:
-	; 1138 Parameter 48 pointer string_fileexists2022Y223A2025s0A#
+	; 1138 Parameter 48 string string_fileexists2022Y223A2025s0A#
 	mov qword [rbp + 48], @10327string_fileexists2022Y223A2025s0A#
 
  file_test$967:
 	; 1139 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$968:
-	; 1140 Parameter 80 pointer string_Y#
+	; 1140 Parameter 80 string string_Y#
 	mov qword [rbp + 80], @10328string_Y#
 
  file_test$969:
@@ -5443,7 +5443,7 @@ section .text
 	mov rax, @10330string_No#
 
  file_test$976:
-	; 1152 Parameter 56 pointer £temporary4489
+	; 1152 Parameter 56 string £temporary4489
 	mov [rbp + 56], rax
 
  file_test$977:
@@ -5462,14 +5462,14 @@ section .text
 	; 1155 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$980:
-	; 1156 Parameter 48 pointer string_fileexists2022Main2Easm223A2025s0A#
+	; 1156 Parameter 48 string string_fileexists2022Main2Easm223A2025s0A#
 	mov qword [rbp + 48], @10332string_fileexists2022Main2Easm223A2025s0A#
 
  file_test$981:
 	; 1157 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$982:
-	; 1158 Parameter 80 pointer string_Main2Easm#
+	; 1158 Parameter 80 string string_Main2Easm#
 	mov qword [rbp + 80], @10333string_Main2Easm#
 
  file_test$983:
@@ -5503,7 +5503,7 @@ section .text
 	mov rax, @10335string_No#
 
  file_test$990:
-	; 1170 Parameter 56 pointer £temporary4493
+	; 1170 Parameter 56 string £temporary4493
 	mov [rbp + 56], rax
 
  file_test$991:
@@ -5522,14 +5522,14 @@ section .text
 	; 1173 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$994:
-	; 1174 Parameter 48 pointer string_fileexists2022MainX2Easm223A2025s0A#
+	; 1174 Parameter 48 string string_fileexists2022MainX2Easm223A2025s0A#
 	mov qword [rbp + 48], @10337string_fileexists2022MainX2Easm223A2025s0A#
 
  file_test$995:
 	; 1175 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$996:
-	; 1176 Parameter 80 pointer string_MainX2Easm#
+	; 1176 Parameter 80 string string_MainX2Easm#
 	mov qword [rbp + 80], @10338string_MainX2Easm#
 
  file_test$997:
@@ -5563,7 +5563,7 @@ section .text
 	mov rax, @10340string_No#
 
  file_test$1004:
-	; 1188 Parameter 56 pointer £temporary4497
+	; 1188 Parameter 56 string £temporary4497
 	mov [rbp + 56], rax
 
  file_test$1005:
@@ -5582,14 +5582,14 @@ section .text
 	; 1191 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1008:
-	; 1192 Parameter 48 pointer string_fileexists2022Main2Ec223A2025s0A#
+	; 1192 Parameter 48 string string_fileexists2022Main2Ec223A2025s0A#
 	mov qword [rbp + 48], @10342string_fileexists2022Main2Ec223A2025s0A#
 
  file_test$1009:
 	; 1193 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1010:
-	; 1194 Parameter 80 pointer string_Main2Ec#
+	; 1194 Parameter 80 string string_Main2Ec#
 	mov qword [rbp + 80], @10343string_Main2Ec#
 
  file_test$1011:
@@ -5623,7 +5623,7 @@ section .text
 	mov rax, @10345string_No#
 
  file_test$1018:
-	; 1206 Parameter 56 pointer £temporary4501
+	; 1206 Parameter 56 string £temporary4501
 	mov [rbp + 56], rax
 
  file_test$1019:
@@ -5642,14 +5642,14 @@ section .text
 	; 1209 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1022:
-	; 1210 Parameter 48 pointer string_fileexists2022MainX2Ec223A2025s0A#
+	; 1210 Parameter 48 string string_fileexists2022MainX2Ec223A2025s0A#
 	mov qword [rbp + 48], @10347string_fileexists2022MainX2Ec223A2025s0A#
 
  file_test$1023:
 	; 1211 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1024:
-	; 1212 Parameter 80 pointer string_MainX2Ec#
+	; 1212 Parameter 80 string string_MainX2Ec#
 	mov qword [rbp + 80], @10348string_MainX2Ec#
 
  file_test$1025:
@@ -5683,7 +5683,7 @@ section .text
 	mov rax, @10350string_No#
 
  file_test$1032:
-	; 1224 Parameter 56 pointer £temporary4505
+	; 1224 Parameter 56 string £temporary4505
 	mov [rbp + 56], rax
 
  file_test$1033:
@@ -5702,14 +5702,14 @@ section .text
 	; 1227 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1036:
-	; 1228 Parameter 48 pointer string_fileexists2022File2Ec223A2025s0A#
+	; 1228 Parameter 48 string string_fileexists2022File2Ec223A2025s0A#
 	mov qword [rbp + 48], @10352string_fileexists2022File2Ec223A2025s0A#
 
  file_test$1037:
 	; 1229 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1038:
-	; 1230 Parameter 80 pointer string_File2Ec#
+	; 1230 Parameter 80 string string_File2Ec#
 	mov qword [rbp + 80], @10353string_File2Ec#
 
  file_test$1039:
@@ -5743,7 +5743,7 @@ section .text
 	mov rax, @10355string_No#
 
  file_test$1046:
-	; 1242 Parameter 56 pointer £temporary4509
+	; 1242 Parameter 56 string £temporary4509
 	mov [rbp + 56], rax
 
  file_test$1047:
@@ -5762,14 +5762,14 @@ section .text
 	; 1245 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1050:
-	; 1246 Parameter 48 pointer string_fileexists2022File2Ex223A2025s0A#
+	; 1246 Parameter 48 string string_fileexists2022File2Ex223A2025s0A#
 	mov qword [rbp + 48], @10357string_fileexists2022File2Ex223A2025s0A#
 
  file_test$1051:
 	; 1247 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1052:
-	; 1248 Parameter 80 pointer string_File2Ex#
+	; 1248 Parameter 80 string string_File2Ex#
 	mov qword [rbp + 80], @10358string_File2Ex#
 
  file_test$1053:
@@ -5803,7 +5803,7 @@ section .text
 	mov rax, @10360string_No#
 
  file_test$1060:
-	; 1260 Parameter 56 pointer £temporary4513
+	; 1260 Parameter 56 string £temporary4513
 	mov [rbp + 56], rax
 
  file_test$1061:
@@ -5822,14 +5822,14 @@ section .text
 	; 1263 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1064:
-	; 1264 Parameter 48 pointer string_fileexists2022File2Eh223A2025s0A#
+	; 1264 Parameter 48 string string_fileexists2022File2Eh223A2025s0A#
 	mov qword [rbp + 48], @10362string_fileexists2022File2Eh223A2025s0A#
 
  file_test$1065:
 	; 1265 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1066:
-	; 1266 Parameter 80 pointer string_File2Eh#
+	; 1266 Parameter 80 string string_File2Eh#
 	mov qword [rbp + 80], @10363string_File2Eh#
 
  file_test$1067:
@@ -5863,7 +5863,7 @@ section .text
 	mov rax, @10365string_No#
 
  file_test$1074:
-	; 1278 Parameter 56 pointer £temporary4517
+	; 1278 Parameter 56 string £temporary4517
 	mov [rbp + 56], rax
 
  file_test$1075:
@@ -5882,14 +5882,14 @@ section .text
 	; 1281 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1078:
-	; 1282 Parameter 48 pointer string_fileexists2022File2Ey223A2025s0A#
+	; 1282 Parameter 48 string string_fileexists2022File2Ey223A2025s0A#
 	mov qword [rbp + 48], @10367string_fileexists2022File2Ey223A2025s0A#
 
  file_test$1079:
 	; 1283 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1080:
-	; 1284 Parameter 80 pointer string_File2Ey#
+	; 1284 Parameter 80 string string_File2Ey#
 	mov qword [rbp + 80], @10368string_File2Ey#
 
  file_test$1081:
@@ -5923,7 +5923,7 @@ section .text
 	mov rax, @10370string_No#
 
  file_test$1088:
-	; 1296 Parameter 56 pointer £temporary4521
+	; 1296 Parameter 56 string £temporary4521
 	mov [rbp + 56], rax
 
  file_test$1089:
@@ -5942,14 +5942,14 @@ section .text
 	; 1299 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1092:
-	; 1300 Parameter 48 pointer string_fileexists2022File2Ep223A2025s0A#
+	; 1300 Parameter 48 string string_fileexists2022File2Ep223A2025s0A#
 	mov qword [rbp + 48], @10372string_fileexists2022File2Ep223A2025s0A#
 
  file_test$1093:
 	; 1301 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1094:
-	; 1302 Parameter 80 pointer string_File2Ep#
+	; 1302 Parameter 80 string string_File2Ep#
 	mov qword [rbp + 80], @10373string_File2Ep#
 
  file_test$1095:
@@ -5983,7 +5983,7 @@ section .text
 	mov rax, @10375string_No#
 
  file_test$1102:
-	; 1314 Parameter 56 pointer £temporary4525
+	; 1314 Parameter 56 string £temporary4525
 	mov [rbp + 56], rax
 
  file_test$1103:
@@ -6002,14 +6002,14 @@ section .text
 	; 1317 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1106:
-	; 1318 Parameter 48 pointer string_fileexists2022File2Ez223A2025s0A#
+	; 1318 Parameter 48 string string_fileexists2022File2Ez223A2025s0A#
 	mov qword [rbp + 48], @10377string_fileexists2022File2Ez223A2025s0A#
 
  file_test$1107:
 	; 1319 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  file_test$1108:
-	; 1320 Parameter 80 pointer string_File2Ez#
+	; 1320 Parameter 80 string string_File2Ez#
 	mov qword [rbp + 80], @10378string_File2Ez#
 
  file_test$1109:
@@ -6043,7 +6043,7 @@ section .text
 	mov rax, @10380string_No#
 
  file_test$1116:
-	; 1332 Parameter 56 pointer £temporary4529
+	; 1332 Parameter 56 string £temporary4529
 	mov [rbp + 56], rax
 
  file_test$1117:
@@ -6140,7 +6140,7 @@ section .text
 	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  temp_file$1:
-	; 1 Parameter 48 pointer string_Hello0A#
+	; 1 Parameter 48 string string_Hello0A#
 	mov qword [rbp + 48], @10716string_Hello0A#
 
  temp_file$2:
@@ -6158,11 +6158,11 @@ section .text
 	; 4 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  temp_file$5:
-	; 5 Parameter 56 pointer string_PBookX2Etxt#
+	; 5 Parameter 56 string string_PBookX2Etxt#
 	mov qword [rbp + 56], @10718string_PBookX2Etxt#
 
  temp_file$6:
-	; 6 Parameter 64 pointer string_r2B#
+	; 6 Parameter 64 string string_r2B#
 	mov qword [rbp + 64], @10719string_r2B#
 
  temp_file$7:
@@ -6196,15 +6196,15 @@ section .text
 	mov [rbp + 64], rax
 
  temp_file$14:
-	; 16 Parameter 72 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 16 Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 72], @10723string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  temp_file$15:
-	; 17 Parameter 80 pointer string_inOutFilePtr20213D20NULL#
+	; 17 Parameter 80 string string_inOutFilePtr20213D20NULL#
 	mov qword [rbp + 80], @10724string_inOutFilePtr20213D20NULL#
 
  temp_file$16:
-	; 18 Parameter 88 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 18 Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 88], @10725string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  temp_file$17:
@@ -6240,7 +6240,7 @@ section .text
 	; 29 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  temp_file$24:
-	; 30 Parameter 64 pointer string_Temp0A#
+	; 30 Parameter 64 string string_Temp0A#
 	mov qword [rbp + 64], @10727string_Temp0A#
 
  temp_file$25:
@@ -6288,15 +6288,15 @@ section .text
 	mov [rbp + 64], rax
 
  temp_file$35:
-	; 43 Parameter 72 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 43 Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 72], @10730string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  temp_file$36:
-	; 44 Parameter 80 pointer string_tempFilePtr20213D20NULL#
+	; 44 Parameter 80 string string_tempFilePtr20213D20NULL#
 	mov qword [rbp + 80], @10731string_tempFilePtr20213D20NULL#
 
  temp_file$37:
-	; 45 Parameter 88 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	; 45 Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 	mov qword [rbp + 88], @10732string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
 
  temp_file$38:
@@ -6456,7 +6456,7 @@ section .text
 	mov [rbp + 64], rax
 
  temp_file$71:
-	; 92 Parameter 72 pointer string_0A2D2D2D2D2D2D2D2D2D2D2D2D0A#
+	; 92 Parameter 72 string string_0A2D2D2D2D2D2D2D2D2D2D2D2D0A#
 	mov qword [rbp + 72], @10737string_0A2D2D2D2D2D2D2D2D2D2D2D2D0A#
 
  temp_file$72:

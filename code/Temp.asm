@@ -281,7 +281,7 @@ section .text
 	mov dword [rbp + 60], 0
 
  tmpfile$2:
-	; 2 Parameter 64 pointer name
+	; 2 Parameter 64 array name
 	mov [rbp + 64], rbp
 	add qword [rbp + 64], 32
 
@@ -311,12 +311,12 @@ section .text
 	; 9 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  tmpfile$9:
-	; 10 Parameter 60 pointer name
+	; 10 Parameter 60 array name
 	mov [rbp + 60], rbp
 	add qword [rbp + 60], 32
 
  tmpfile$10:
-	; 11 Parameter 68 pointer string_w#
+	; 11 Parameter 68 string string_w#
 	mov qword [rbp + 68], @3059string_w#
 
  tmpfile$11:

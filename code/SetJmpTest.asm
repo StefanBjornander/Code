@@ -47,7 +47,7 @@ section .text
 	; 0 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  @9212$main$1:
-	; 1 Parameter 64 pointer string_Please20input20a20value3A20#
+	; 1 Parameter 64 string string_Please20input20a20value3A20#
 	mov qword [rbp + 64], @9215string_Please20input20a20value3A20#
 
  @9212$main$2:
@@ -65,7 +65,7 @@ section .text
 	; 4 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  @9212$main$5:
-	; 5 Parameter 64 pointer string_25lf#
+	; 5 Parameter 64 string string_25lf#
 	mov qword [rbp + 64], @9216string_25lf#
 
  @9212$main$6:
@@ -93,7 +93,7 @@ section .text
 	; 12 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  @9212$main$11:
-	; 13 Parameter 64 pointer buffer
+	; 13 Parameter 64 array buffer
 	mov qword [rbp + 64], buffer
 
  @9212$main$12:
@@ -127,7 +127,7 @@ section .text
 	; 22 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  @9212$main$19:
-	; 23 Parameter 64 pointer string_12E0202F2025f203D2025f0A#
+	; 23 Parameter 64 string string_12E0202F2025f203D2025f0A#
 	mov qword [rbp + 64], @9219string_12E0202F2025f203D2025f0A#
 
  @9212$main$20:
@@ -186,7 +186,7 @@ section .text
 	; 37 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  @9212$main$33:
-	; 38 Parameter 64 pointer string_25s0A#
+	; 38 Parameter 64 string string_25s0A#
 	mov qword [rbp + 64], @9220string_25s0A#
 
  @9212$main$34:
@@ -312,7 +312,7 @@ section .text
 	; 12 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  divide$9:
-	; 13 Parameter 64 pointer buffer
+	; 13 Parameter 64 array buffer
 	mov qword [rbp + 64], buffer
 
  divide$10:
@@ -368,7 +368,7 @@ section .text
 	; 0 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  test$1:
-	; 1 Parameter 64 pointer buffer
+	; 1 Parameter 64 array buffer
 	mov qword [rbp + 64], buffer
 
  test$2:
@@ -402,7 +402,7 @@ section .text
 	; 10 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  test$9:
-	; 11 Parameter 64 pointer string_12E0202F2025f203D2025f0A#
+	; 11 Parameter 64 string string_12E0202F2025f203D2025f0A#
 	mov qword [rbp + 64], @9244string_12E0202F2025f203D2025f0A#
 
  test$10:
@@ -461,7 +461,7 @@ section .text
 	; 25 PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  test$23:
-	; 26 Parameter 64 pointer string_25s0A#
+	; 26 Parameter 64 string string_25s0A#
 	mov qword [rbp + 64], @9245string_25s0A#
 
  test$24:

@@ -99,15 +99,15 @@ section .text
 	mov [rbp + 96], rax
 
  malloc$14:
-	; 17 Parameter 104 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 17 Parameter 104 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 104], @622string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  malloc$15:
-	; 18 Parameter 112 pointer string_memorySize203E3D200#
+	; 18 Parameter 112 string string_memorySize203E3D200#
 	mov qword [rbp + 112], @623string_memorySize203E3D200#
 
  malloc$16:
-	; 19 Parameter 120 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
+	; 19 Parameter 120 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
 	mov qword [rbp + 120], @624string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
 
  malloc$17:
@@ -731,15 +731,15 @@ section .text
 	mov [rbp + 60], rax
 
  realloc$3:
-	; 5 Parameter 68 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 5 Parameter 68 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 68], @715string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  realloc$4:
-	; 6 Parameter 76 pointer string_newMemorySize203E3D200#
+	; 6 Parameter 76 string string_newMemorySize203E3D200#
 	mov qword [rbp + 76], @716string_newMemorySize203E3D200#
 
  realloc$5:
-	; 7 Parameter 84 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
+	; 7 Parameter 84 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
 	mov qword [rbp + 84], @717string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
 
  realloc$6:
@@ -790,15 +790,15 @@ section .text
 	mov [rbp + 60], rax
 
  realloc$16:
-	; 25 Parameter 68 pointer string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	; 25 Parameter 68 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 	mov qword [rbp + 68], @722string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
 
  realloc$17:
-	; 26 Parameter 76 pointer string_2820oldMemoryPtr20213D20NULL2029207C7C202820newMemorySize203E2002029#
+	; 26 Parameter 76 string string_2820oldMemoryPtr20213D20NULL2029207C7C202820newMemorySize203E2002029#
 	mov qword [rbp + 76], @723string_2820oldMemoryPtr20213D20NULL2029207C7C202820newMemorySize203E2002029#
 
  realloc$18:
-	; 27 Parameter 84 pointer string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
+	; 27 Parameter 84 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
 	mov qword [rbp + 84], @724string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
 
  realloc$19:
@@ -1174,7 +1174,7 @@ section .text
 	; 1 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  print_heap$2:
-	; 2 Parameter 56 pointer string_Heap3A0A#
+	; 2 Parameter 56 string string_Heap3A0A#
 	mov qword [rbp + 56], @771string_Heap3A0A#
 
  print_heap$3:
@@ -1197,7 +1197,7 @@ section .text
 	; 8 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  print_heap$7:
-	; 9 Parameter 56 pointer string_2020Address2025u2C20Size2025u0A#
+	; 9 Parameter 56 string string_2020Address2025u2C20Size2025u0A#
 	mov qword [rbp + 56], @774string_2020Address2025u2C20Size2025u0A#
 
  print_heap$8:
@@ -1246,7 +1246,7 @@ section .text
 	; 20 PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  print_heap$18:
-	; 21 Parameter 56 pointer string_0A#
+	; 21 Parameter 56 string string_0A#
 	mov qword [rbp + 56], @777string_0A#
 
  print_heap$19:

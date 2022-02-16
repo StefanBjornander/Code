@@ -1519,11 +1519,11 @@ section .text
 	; 25 PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  asctime$16:
-	; 26 Parameter 80 pointer g_timeString
+	; 26 Parameter 80 array g_timeString
 	mov qword [rbp + 80], @6692$g_timeString
 
  asctime$17:
-	; 27 Parameter 88 pointer string_25s2025s2025i202502i3A2502i3A2502i2025i#
+	; 27 Parameter 88 string string_25s2025s2025i202502i3A2502i3A2502i2025i#
 	mov qword [rbp + 88], @6753string_25s2025s2025i202502i3A2502i3A2502i2025i#
 
  asctime$18:
@@ -2218,7 +2218,7 @@ section .text
 	mov [rbp + 116], rax
 
  strftime$35:
-	; 55 Parameter 124 pointer string_#
+	; 55 Parameter 124 string string_#
 	mov qword [rbp + 124], @6830string_#
 
  strftime$36:
@@ -2456,7 +2456,7 @@ section .text
 	; 116 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$86:
-	; 117 Parameter 148 pointer add
+	; 117 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
@@ -2506,7 +2506,7 @@ section .text
 	; 127 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$97:
-	; 128 Parameter 148 pointer add
+	; 128 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
@@ -2556,7 +2556,7 @@ section .text
 	; 138 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$108:
-	; 139 Parameter 148 pointer add
+	; 139 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
@@ -2606,7 +2606,7 @@ section .text
 	; 149 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$119:
-	; 150 Parameter 148 pointer add
+	; 150 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
@@ -2656,12 +2656,12 @@ section .text
 	; 160 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$130:
-	; 161 Parameter 148 pointer add
+	; 161 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$131:
-	; 162 Parameter 156 pointer string_2502i2D2502i2D2502i202502i3A2502i3A2502i#
+	; 162 Parameter 156 string string_2502i2D2502i2D2502i202502i3A2502i3A2502i#
 	mov qword [rbp + 156], @6863string_2502i2D2502i2D2502i202502i3A2502i3A2502i#
 
  strftime$132:
@@ -2746,12 +2746,12 @@ section .text
 	; 180 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$150:
-	; 181 Parameter 148 pointer add
+	; 181 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$151:
-	; 182 Parameter 156 pointer string_2502i#
+	; 182 Parameter 156 string string_2502i#
 	mov qword [rbp + 156], @6874string_2502i#
 
  strftime$152:
@@ -2783,12 +2783,12 @@ section .text
 	; 188 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$158:
-	; 189 Parameter 148 pointer add
+	; 189 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$159:
-	; 190 Parameter 156 pointer string_2502i#
+	; 190 Parameter 156 string string_2502i#
 	mov qword [rbp + 156], @6878string_2502i#
 
  strftime$160:
@@ -2820,12 +2820,12 @@ section .text
 	; 196 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$166:
-	; 197 Parameter 148 pointer add
+	; 197 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$167:
-	; 198 Parameter 156 pointer string_2502i#
+	; 198 Parameter 156 string string_2502i#
 	mov qword [rbp + 156], @6882string_2502i#
 
  strftime$168:
@@ -2862,12 +2862,12 @@ section .text
 	; 205 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$175:
-	; 206 Parameter 148 pointer add
+	; 206 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$176:
-	; 207 Parameter 156 pointer string_2503i#
+	; 207 Parameter 156 string string_2503i#
 	mov qword [rbp + 156], @6887string_2503i#
 
  strftime$177:
@@ -2899,12 +2899,12 @@ section .text
 	; 213 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$183:
-	; 214 Parameter 148 pointer add
+	; 214 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$184:
-	; 215 Parameter 156 pointer string_2502i#
+	; 215 Parameter 156 string string_2502i#
 	mov qword [rbp + 156], @6891string_2502i#
 
  strftime$185:
@@ -2940,12 +2940,12 @@ section .text
 	; 222 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$192:
-	; 223 Parameter 148 pointer add
+	; 223 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$193:
-	; 224 Parameter 156 pointer string_2502i#
+	; 224 Parameter 156 string string_2502i#
 	mov qword [rbp + 156], @6896string_2502i#
 
  strftime$194:
@@ -2977,12 +2977,12 @@ section .text
 	; 230 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$200:
-	; 231 Parameter 148 pointer add
+	; 231 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$201:
-	; 232 Parameter 156 pointer string_25s#
+	; 232 Parameter 156 string string_25s#
 	mov qword [rbp + 156], @6900string_25s#
 
  strftime$202:
@@ -3003,7 +3003,7 @@ section .text
 	mov rax, @6902string_PM#
 
  strftime$206:
-	; 241 Parameter 164 pointer £temporary3222
+	; 241 Parameter 164 string £temporary3222
 	mov [rbp + 164], rax
 
  strftime$207:
@@ -3026,12 +3026,12 @@ section .text
 	; 245 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$211:
-	; 246 Parameter 148 pointer add
+	; 246 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$212:
-	; 247 Parameter 156 pointer string_2502i#
+	; 247 Parameter 156 string string_2502i#
 	mov qword [rbp + 156], @6906string_2502i#
 
  strftime$213:
@@ -3063,12 +3063,12 @@ section .text
 	; 253 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$219:
-	; 254 Parameter 148 pointer add
+	; 254 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$220:
-	; 255 Parameter 156 pointer string_2502i#
+	; 255 Parameter 156 string string_2502i#
 	mov qword [rbp + 156], @6910string_2502i#
 
  strftime$221:
@@ -3096,12 +3096,12 @@ section .text
 	; 260 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$226:
-	; 261 Parameter 148 pointer add
+	; 261 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$227:
-	; 262 Parameter 156 pointer string_2502i#
+	; 262 Parameter 156 string string_2502i#
 	mov qword [rbp + 156], @6913string_2502i#
 
  strftime$228:
@@ -3133,12 +3133,12 @@ section .text
 	; 268 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$234:
-	; 269 Parameter 148 pointer add
+	; 269 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$235:
-	; 270 Parameter 156 pointer string_2502i#
+	; 270 Parameter 156 string string_2502i#
 	mov qword [rbp + 156], @6917string_2502i#
 
  strftime$236:
@@ -3166,12 +3166,12 @@ section .text
 	; 275 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$241:
-	; 276 Parameter 148 pointer add
+	; 276 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$242:
-	; 277 Parameter 156 pointer string_2502i3A2502i3A2502i#
+	; 277 Parameter 156 string string_2502i3A2502i3A2502i#
 	mov qword [rbp + 156], @6920string_2502i3A2502i3A2502i#
 
  strftime$243:
@@ -3221,12 +3221,12 @@ section .text
 	; 287 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$253:
-	; 288 Parameter 148 pointer add
+	; 288 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$254:
-	; 289 Parameter 156 pointer string_2502i3A2502i3A2502i#
+	; 289 Parameter 156 string string_2502i3A2502i3A2502i#
 	mov qword [rbp + 156], @6926string_2502i3A2502i3A2502i#
 
  strftime$255:
@@ -3276,12 +3276,12 @@ section .text
 	; 299 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$265:
-	; 300 Parameter 148 pointer add
+	; 300 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$266:
-	; 301 Parameter 156 pointer string_2502i#
+	; 301 Parameter 156 string string_2502i#
 	mov qword [rbp + 156], @6932string_2502i#
 
  strftime$267:
@@ -3318,12 +3318,12 @@ section .text
 	; 308 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$274:
-	; 309 Parameter 148 pointer add
+	; 309 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$275:
-	; 310 Parameter 156 pointer string_2502i#
+	; 310 Parameter 156 string string_2502i#
 	mov qword [rbp + 156], @6937string_2502i#
 
  strftime$276:
@@ -3359,7 +3359,7 @@ section .text
 	; 317 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$283:
-	; 318 Parameter 148 pointer add
+	; 318 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
@@ -3385,7 +3385,7 @@ section .text
 	mov rax, @6944string_winter#
 
  strftime$289:
-	; 328 Parameter 156 pointer £temporary3246
+	; 328 Parameter 156 string £temporary3246
 	mov [rbp + 156], rax
 
  strftime$290:
@@ -3406,12 +3406,12 @@ section .text
 	; 332 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$294:
-	; 333 Parameter 148 pointer add
+	; 333 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$295:
-	; 334 Parameter 156 pointer string_25#
+	; 334 Parameter 156 string string_25#
 	mov qword [rbp + 156], @6948string_25#
 
  strftime$296:
@@ -3428,12 +3428,12 @@ section .text
 	; 337 PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strftime$299:
-	; 338 Parameter 148 pointer add
+	; 338 Parameter 148 array add
 	mov [rbp + 148], rbp
 	add qword [rbp + 148], 104
 
  strftime$300:
-	; 339 Parameter 156 pointer string_#
+	; 339 Parameter 156 string string_#
 	mov qword [rbp + 156], @6949string_#
 
  strftime$301:
@@ -3509,7 +3509,7 @@ section .text
 	mov [rbp + 124], ebx
 
  strftime$317:
-	; 361 Parameter 148 pointer add
+	; 361 Parameter 148 array add
 	mov [rbp + 152], rbp
 	add qword [rbp + 152], 104
 
@@ -3546,7 +3546,7 @@ section .text
 	mov [rbp + 148], rax
 
  strftime$325:
-	; 371 Parameter 156 pointer add
+	; 371 Parameter 156 array add
 	mov [rbp + 156], rbp
 	add qword [rbp + 156], 104
 
