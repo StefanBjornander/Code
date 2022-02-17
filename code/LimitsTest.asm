@@ -97,18 +97,18 @@ section .data
 section .text
 
  limits_test:
-	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$1:
-	; 1 Parameter 48 string string_CHAR_BIT203D2025i0A#
+	; Parameter 48 string string_CHAR_BIT203D2025i0A#
 	mov qword [rbp + 48], @8321string_CHAR_BIT203D2025i0A#
 
  limits_test$2:
-	; 2 Parameter 56 signed int integral4$8#
+	; Parameter 56 signed int integral4$8#
 	mov dword [rbp + 56], 8
 
  limits_test$3:
-	; 3 Call 24 printf 4
+	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$4
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -117,21 +117,21 @@ section .text
 	jmp printf
 
  limits_test$4:
-	; 4 PostCall 24
+	; PostCall 24
 
  limits_test$5:
-	; 5 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$6:
-	; 6 Parameter 48 string string_CHAR_MIN203D2025i0A0A#
+	; Parameter 48 string string_CHAR_MIN203D2025i0A0A#
 	mov qword [rbp + 48], @8323string_CHAR_MIN203D2025i0A0A#
 
  limits_test$7:
-	; 7 Parameter 56 signed int integral4$minus128#
+	; Parameter 56 signed int integral4$minus128#
 	mov dword [rbp + 56], -128
 
  limits_test$8:
-	; 8 Call 24 printf 4
+	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$9
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -140,21 +140,21 @@ section .text
 	jmp printf
 
  limits_test$9:
-	; 9 PostCall 24
+	; PostCall 24
 
  limits_test$10:
-	; 10 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$11:
-	; 11 Parameter 48 string string_CHAR_MAX203D2025i0A#
+	; Parameter 48 string string_CHAR_MAX203D2025i0A#
 	mov qword [rbp + 48], @8326string_CHAR_MAX203D2025i0A#
 
  limits_test$12:
-	; 12 Parameter 56 signed int integral4$127#
+	; Parameter 56 signed int integral4$127#
 	mov dword [rbp + 56], 127
 
  limits_test$13:
-	; 13 Call 24 printf 4
+	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$14
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -163,21 +163,21 @@ section .text
 	jmp printf
 
  limits_test$14:
-	; 14 PostCall 24
+	; PostCall 24
 
  limits_test$15:
-	; 15 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$16:
-	; 16 Parameter 48 string string_UCHAR_MAX203D2025u0A0A#
+	; Parameter 48 string string_UCHAR_MAX203D2025u0A0A#
 	mov qword [rbp + 48], @8329string_UCHAR_MAX203D2025u0A0A#
 
  limits_test$17:
-	; 17 Parameter 56 unsigned int integral4$255#
+	; Parameter 56 unsigned int integral4$255#
 	mov dword [rbp + 56], 255
 
  limits_test$18:
-	; 18 Call 24 printf 4
+	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$19
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -186,21 +186,21 @@ section .text
 	jmp printf
 
  limits_test$19:
-	; 19 PostCall 24
+	; PostCall 24
 
  limits_test$20:
-	; 20 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$21:
-	; 21 Parameter 48 string string_SHRT_MIN203D2025i0A#
+	; Parameter 48 string string_SHRT_MIN203D2025i0A#
 	mov qword [rbp + 48], @8332string_SHRT_MIN203D2025i0A#
 
  limits_test$22:
-	; 22 Parameter 56 signed int integral4$minus32768#
+	; Parameter 56 signed int integral4$minus32768#
 	mov dword [rbp + 56], -32768
 
  limits_test$23:
-	; 23 Call 24 printf 4
+	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$24
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -209,21 +209,21 @@ section .text
 	jmp printf
 
  limits_test$24:
-	; 24 PostCall 24
+	; PostCall 24
 
  limits_test$25:
-	; 25 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$26:
-	; 26 Parameter 48 string string_SHRT_MAX203D2025i0A#
+	; Parameter 48 string string_SHRT_MAX203D2025i0A#
 	mov qword [rbp + 48], @8335string_SHRT_MAX203D2025i0A#
 
  limits_test$27:
-	; 27 Parameter 56 signed int integral4$32767#
+	; Parameter 56 signed int integral4$32767#
 	mov dword [rbp + 56], 32767
 
  limits_test$28:
-	; 28 Call 24 printf 4
+	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$29
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -232,21 +232,21 @@ section .text
 	jmp printf
 
  limits_test$29:
-	; 29 PostCall 24
+	; PostCall 24
 
  limits_test$30:
-	; 30 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$31:
-	; 31 Parameter 48 string string_USHRT_MAX203D2025u0A0A#
+	; Parameter 48 string string_USHRT_MAX203D2025u0A0A#
 	mov qword [rbp + 48], @8338string_USHRT_MAX203D2025u0A0A#
 
  limits_test$32:
-	; 32 Parameter 56 unsigned int integral4$65535#
+	; Parameter 56 unsigned int integral4$65535#
 	mov dword [rbp + 56], 65535
 
  limits_test$33:
-	; 33 Call 24 printf 4
+	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$34
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -255,21 +255,21 @@ section .text
 	jmp printf
 
  limits_test$34:
-	; 34 PostCall 24
+	; PostCall 24
 
  limits_test$35:
-	; 35 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$36:
-	; 36 Parameter 48 string string_INT_MIN203D2025i0A#
+	; Parameter 48 string string_INT_MIN203D2025i0A#
 	mov qword [rbp + 48], @8341string_INT_MIN203D2025i0A#
 
  limits_test$37:
-	; 37 Parameter 56 signed int integral4$minus2147483648#
+	; Parameter 56 signed int integral4$minus2147483648#
 	mov dword [rbp + 56], -2147483648
 
  limits_test$38:
-	; 38 Call 24 printf 4
+	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$39
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -278,21 +278,21 @@ section .text
 	jmp printf
 
  limits_test$39:
-	; 39 PostCall 24
+	; PostCall 24
 
  limits_test$40:
-	; 40 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$41:
-	; 41 Parameter 48 string string_INT_MAX203D2025i0A#
+	; Parameter 48 string string_INT_MAX203D2025i0A#
 	mov qword [rbp + 48], @8343string_INT_MAX203D2025i0A#
 
  limits_test$42:
-	; 42 Parameter 56 signed int integral4$2147483647#
+	; Parameter 56 signed int integral4$2147483647#
 	mov dword [rbp + 56], 2147483647
 
  limits_test$43:
-	; 43 Call 24 printf 4
+	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$44
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -301,22 +301,22 @@ section .text
 	jmp printf
 
  limits_test$44:
-	; 44 PostCall 24
+	; PostCall 24
 
  limits_test$45:
-	; 45 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$46:
-	; 46 Parameter 48 string string_UINT_MAX203D2025u0A0A#
+	; Parameter 48 string string_UINT_MAX203D2025u0A0A#
 	mov qword [rbp + 48], @8345string_UINT_MAX203D2025u0A0A#
 
  limits_test$47:
-	; 47 Parameter 56 unsigned int integral4$4294967295#
+	; Parameter 56 unsigned int integral4$4294967295#
 	mov eax, 4294967295
 	mov [rbp + 56], eax
 
  limits_test$48:
-	; 48 Call 24 printf 4
+	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$49
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -325,22 +325,22 @@ section .text
 	jmp printf
 
  limits_test$49:
-	; 49 PostCall 24
+	; PostCall 24
 
  limits_test$50:
-	; 50 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$51:
-	; 51 Parameter 48 string string_LONG_MIN203D2025li0A#
+	; Parameter 48 string string_LONG_MIN203D2025li0A#
 	mov qword [rbp + 48], @8347string_LONG_MIN203D2025li0A#
 
  limits_test$52:
-	; 52 Parameter 56 signed long int integral8$minus9223372036854775808#
+	; Parameter 56 signed long int integral8$minus9223372036854775808#
 	mov rax, -9223372036854775808
 	mov [rbp + 56], rax
 
  limits_test$53:
-	; 53 Call 24 printf 8
+	; Call 24 printf 8
 	mov qword [rbp + 24], limits_test$54
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -349,22 +349,22 @@ section .text
 	jmp printf
 
  limits_test$54:
-	; 54 PostCall 24
+	; PostCall 24
 
  limits_test$55:
-	; 55 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$56:
-	; 56 Parameter 48 string string_LONG_MAX203D2025li0A#
+	; Parameter 48 string string_LONG_MAX203D2025li0A#
 	mov qword [rbp + 48], @8349string_LONG_MAX203D2025li0A#
 
  limits_test$57:
-	; 57 Parameter 56 signed long int integral8$9223372036854775807#
+	; Parameter 56 signed long int integral8$9223372036854775807#
 	mov rax, 9223372036854775807
 	mov [rbp + 56], rax
 
  limits_test$58:
-	; 58 Call 24 printf 8
+	; Call 24 printf 8
 	mov qword [rbp + 24], limits_test$59
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -373,22 +373,22 @@ section .text
 	jmp printf
 
  limits_test$59:
-	; 59 PostCall 24
+	; PostCall 24
 
  limits_test$60:
-	; 60 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$61:
-	; 61 Parameter 48 string string_ULONG_MAX203D2025lu0A#
+	; Parameter 48 string string_ULONG_MAX203D2025lu0A#
 	mov qword [rbp + 48], @8351string_ULONG_MAX203D2025lu0A#
 
  limits_test$62:
-	; 62 Parameter 56 unsigned long int integral8$18446744073709551615#
+	; Parameter 56 unsigned long int integral8$18446744073709551615#
 	mov rax, 18446744073709551615
 	mov [rbp + 56], rax
 
  limits_test$63:
-	; 63 Call 24 printf 8
+	; Call 24 printf 8
 	mov qword [rbp + 24], limits_test$64
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -397,22 +397,22 @@ section .text
 	jmp printf
 
  limits_test$64:
-	; 64 PostCall 24
+	; PostCall 24
 
  limits_test$65:
-	; 65 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$66:
-	; 66 Parameter 48 string string_ULONG_MAX203D2025lx0A#
+	; Parameter 48 string string_ULONG_MAX203D2025lx0A#
 	mov qword [rbp + 48], @8353string_ULONG_MAX203D2025lx0A#
 
  limits_test$67:
-	; 67 Parameter 56 unsigned long int integral8$18446744073709551615#
+	; Parameter 56 unsigned long int integral8$18446744073709551615#
 	mov rax, 18446744073709551615
 	mov [rbp + 56], rax
 
  limits_test$68:
-	; 68 Call 24 printf 8
+	; Call 24 printf 8
 	mov qword [rbp + 24], limits_test$69
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -421,22 +421,22 @@ section .text
 	jmp printf
 
  limits_test$69:
-	; 69 PostCall 24
+	; PostCall 24
 
  limits_test$70:
-	; 70 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$71:
-	; 71 Parameter 48 string string_ULONG_MAX203D2025lX0A#
+	; Parameter 48 string string_ULONG_MAX203D2025lX0A#
 	mov qword [rbp + 48], @8355string_ULONG_MAX203D2025lX0A#
 
  limits_test$72:
-	; 72 Parameter 56 unsigned long int integral8$18446744073709551615#
+	; Parameter 56 unsigned long int integral8$18446744073709551615#
 	mov rax, 18446744073709551615
 	mov [rbp + 56], rax
 
  limits_test$73:
-	; 73 Call 24 printf 8
+	; Call 24 printf 8
 	mov qword [rbp + 24], limits_test$74
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -445,14 +445,14 @@ section .text
 	jmp printf
 
  limits_test$74:
-	; 74 PostCall 24
+	; PostCall 24
 
  limits_test$75:
-	; 76 Return
+	; Return
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
 	jmp rax
 
  limits_test$76:
-	; 77 FunctionEnd limits_test
+	; FunctionEnd limits_test

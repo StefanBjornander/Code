@@ -6,11 +6,11 @@
 section .text
 
  float_test:
-	; 1 Return
+	; Return
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
 	jmp rax
 
  float_test$1:
-	; 2 FunctionEnd float_test
+	; FunctionEnd float_test

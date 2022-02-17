@@ -6,11 +6,11 @@
 section .text
 
  locale_test:
-	; 1 Return
+	; Return
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
 	jmp rax
 
  locale_test$1:
-	; 2 FunctionEnd locale_test
+	; FunctionEnd locale_test

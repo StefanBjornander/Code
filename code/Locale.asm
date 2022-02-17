@@ -585,142 +585,142 @@ section .data
 section .text
 
  setlocale:
-	; 0 Equal 4 g_currStructPtr integral8$0#
+	; Equal 4 g_currStructPtr integral8$0#
 	cmp qword [@1539$g_currStructPtr], 0
 	je setlocale$4
 
  setlocale$1:
-	; 3 Dereference £temporary299 g_currStructPtr 0
+	; Dereference £temporary299 g_currStructPtr 0
 	mov rsi, [@1539$g_currStructPtr]
 
  setlocale$2:
-	; 4 Assign £temporary300 £temporary299.name
+	; Assign £temporary300 £temporary299.name
 	mov rax, [rsi]
 
  setlocale$3:
-	; 5 Jump 5
+	; Jump 5
 	jmp setlocale$5
 
  setlocale$4:
-	; 7 Assign £temporary300 integral8$0#
+	; Assign £temporary300 integral8$0#
 	mov rax, 0
 
  setlocale$5:
-	; 9 Assign oldName £temporary300
+	; Assign oldName £temporary300
 	mov [rbp + 40], rax
 
  setlocale$6:
-	; 10 Assign g_currStructPtr integral8$0#
+	; Assign g_currStructPtr integral8$0#
 	mov qword [@1539$g_currStructPtr], 0
 
  setlocale$7:
-	; 11 Equal 30 newName integral8$0#
+	; Equal 30 newName integral8$0#
 	cmp qword [rbp + 28], 0
 	je setlocale$30
 
  setlocale$8:
-	; 14 Assign index integral4$0#
+	; Assign index integral4$0#
 	mov dword [rbp + 36], 0
 
  setlocale$9:
-	; 16 GreaterThanEqual 30 index g_sSize
+	; GreaterThanEqual 30 index g_sSize
 	mov eax, [@1534$g_sSize]
 	cmp [rbp + 36], eax
 	jge setlocale$30
 
  setlocale$10:
-	; 18 PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  setlocale$11:
-	; 19 Parameter 72 pointer newName
+	; Parameter 72 pointer newName
 	mov rax, [rbp + 28]
 	mov [rbp + 72], rax
 
  setlocale$12:
-	; 20 Multiply £temporary304 index integral4$16#
+	; Multiply £temporary304 index integral4$16#
 	mov eax, [rbp + 36]
 	xor edx, edx
 	imul dword [@1555integral4$16#]
 
  setlocale$13:
-	; 21 IntegralToIntegral £temporary305 £temporary304
+	; IntegralToIntegral £temporary305 £temporary304
 	mov rbx, 4294967295
 	and rax, rbx
 
  setlocale$14:
-	; 22 Add £temporary306 g_sArray £temporary305
+	; Add £temporary306 g_sArray £temporary305
 	mov rsi, @1527$g_sArray
 	add rsi, rax
 
  setlocale$15:
-	; 23 Dereference £temporary307 £temporary306 0
+	; Dereference £temporary307 £temporary306 0
 
  setlocale$16:
-	; 24 Parameter 80 pointer £temporary307.name
+	; Parameter 80 pointer £temporary307.name
 	mov rax, [rsi]
 	mov [rbp + 80], rax
 
  setlocale$17:
-	; 25 Call 48 strcmp 0
+	; Call 48 strcmp 0
 	mov qword [rbp + 48], setlocale$18
 	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp strcmp
 
  setlocale$18:
-	; 26 PostCall 48
+	; PostCall 48
 
  setlocale$19:
-	; 27 GetReturnValue £temporary308
+	; GetReturnValue £temporary308
 
  setlocale$20:
-	; 28 NotEqual 28 £temporary308 integral4$0#
+	; NotEqual 28 £temporary308 integral4$0#
 	cmp ebx, 0
 	jne setlocale$28
 
  setlocale$21:
-	; 31 Multiply £temporary310 index integral4$16#
+	; Multiply £temporary310 index integral4$16#
 	mov eax, [rbp + 36]
 	xor edx, edx
 	imul dword [@1558integral4$16#]
 
  setlocale$22:
-	; 32 IntegralToIntegral £temporary311 £temporary310
+	; IntegralToIntegral £temporary311 £temporary310
 	mov rbx, 4294967295
 	and rax, rbx
 
  setlocale$23:
-	; 33 Add £temporary312 g_sArray £temporary311
+	; Add £temporary312 g_sArray £temporary311
 	mov rsi, @1527$g_sArray
 	add rsi, rax
 
  setlocale$24:
-	; 34 Dereference £temporary313 £temporary312 0
+	; Dereference £temporary313 £temporary312 0
 
  setlocale$25:
-	; 35 Address £temporary314 £temporary313
+	; Address £temporary314 £temporary313
 
  setlocale$26:
-	; 36 Assign g_currStructPtr £temporary314
+	; Assign g_currStructPtr £temporary314
 	mov [@1539$g_currStructPtr], rsi
 
  setlocale$27:
-	; 37 Jump 30
+	; Jump 30
 	jmp setlocale$30
 
  setlocale$28:
-	; 42 Add index index integral4$1#
+	; Add index index integral4$1#
 	inc dword [rbp + 36]
 
  setlocale$29:
-	; 44 Jump 9
+	; Jump 9
 	jmp setlocale$9
 
  setlocale$30:
-	; 48 SetReturnValue
+	; SetReturnValue
 
  setlocale$31:
-	; 49 Return oldName
+	; Return oldName
 	mov rbx, [rbp + 40]
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
@@ -728,40 +728,40 @@ section .text
 	jmp rax
 
  setlocale$32:
-	; 51 FunctionEnd setlocale
+	; FunctionEnd setlocale
 
 section .text
 
  localeconv:
-	; 0 Equal 4 g_currStructPtr integral8$0#
+	; Equal 4 g_currStructPtr integral8$0#
 	cmp qword [@1539$g_currStructPtr], 0
 	je localeconv$4
 
  localeconv$1:
-	; 3 Dereference £temporary320 g_currStructPtr 0
+	; Dereference £temporary320 g_currStructPtr 0
 	mov rsi, [@1539$g_currStructPtr]
 
  localeconv$2:
-	; 4 Assign £temporary321 £temporary320.localePtr
+	; Assign £temporary321 £temporary320.localePtr
 	mov rbx, [rsi + 8]
 
  localeconv$3:
-	; 5 Jump 5
+	; Jump 5
 	jmp localeconv$5
 
  localeconv$4:
-	; 7 Assign £temporary321 integral8$0#
+	; Assign £temporary321 integral8$0#
 	mov rbx, 0
 
  localeconv$5:
-	; 9 SetReturnValue
+	; SetReturnValue
 
  localeconv$6:
-	; 10 Return £temporary321
+	; Return £temporary321
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
 	jmp rax
 
  localeconv$7:
-	; 12 FunctionEnd localeconv
+	; FunctionEnd localeconv

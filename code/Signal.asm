@@ -8,14 +8,14 @@
 section .text
 
  signal:
-	; 1 Return
+	; Return
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
 	jmp rax
 
  signal$1:
-	; 2 FunctionEnd signal
+	; FunctionEnd signal
 
 section .data
 
@@ -38,23 +38,23 @@ section .data
 section .text
 
  raise:
-	; 0 Assign func integral8$0#
+	; Assign func integral8$0#
 	mov qword [rbp + 28], 0
 
  raise$1:
-	; 1 NotEqual 8 func integral8$0#
+	; NotEqual 8 func integral8$0#
 	cmp qword [rbp + 28], 0
 	jne raise$8
 
  raise$2:
-	; 4 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  raise$3:
-	; 5 Parameter 60 string string_Raise20default0A#
+	; Parameter 60 string string_Raise20default0A#
 	mov qword [rbp + 60], @2204string_Raise20default0A#
 
  raise$4:
-	; 6 Call 36 printf 0
+	; Call 36 printf 0
 	mov qword [rbp + 36], raise$5
 	mov [rbp + 44], rbp
 	add rbp, 36
@@ -62,13 +62,13 @@ section .text
 	jmp printf
 
  raise$5:
-	; 7 PostCall 36
+	; PostCall 36
 
  raise$6:
-	; 8 SetReturnValue
+	; SetReturnValue
 
  raise$7:
-	; 9 Return integral4$1#
+	; Return integral4$1#
 	mov ebx, 1
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
@@ -76,19 +76,19 @@ section .text
 	jmp rax
 
  raise$8:
-	; 12 NotEqual 15 func integral8$0#
+	; NotEqual 15 func integral8$0#
 	cmp qword [rbp + 28], 0
 	jne raise$15
 
  raise$9:
-	; 15 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  raise$10:
-	; 16 Parameter 60 string string_Raise20error0A#
+	; Parameter 60 string string_Raise20error0A#
 	mov qword [rbp + 60], @2208string_Raise20error0A#
 
  raise$11:
-	; 17 Call 36 printf 0
+	; Call 36 printf 0
 	mov qword [rbp + 36], raise$12
 	mov [rbp + 44], rbp
 	add rbp, 36
@@ -96,13 +96,13 @@ section .text
 	jmp printf
 
  raise$12:
-	; 18 PostCall 36
+	; PostCall 36
 
  raise$13:
-	; 19 SetReturnValue
+	; SetReturnValue
 
  raise$14:
-	; 20 Return integral4$0#
+	; Return integral4$0#
 	mov ebx, 0
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
@@ -110,24 +110,24 @@ section .text
 	jmp rax
 
  raise$15:
-	; 23 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  raise$16:
-	; 24 Parameter 60 string string_Raise20function2C20calling2025i20with2025i0A#
+	; Parameter 60 string string_Raise20function2C20calling2025i20with2025i0A#
 	mov qword [rbp + 60], @2210string_Raise20function2C20calling2025i20with2025i0A#
 
  raise$17:
-	; 25 Parameter 68 pointer func
+	; Parameter 68 pointer func
 	mov rax, [rbp + 28]
 	mov [rbp + 68], rax
 
  raise$18:
-	; 26 Parameter 76 signed int sig
+	; Parameter 76 signed int sig
 	mov eax, [rbp + 24]
 	mov [rbp + 76], eax
 
  raise$19:
-	; 27 Call 36 printf 12
+	; Call 36 printf 12
 	mov qword [rbp + 36], raise$20
 	mov [rbp + 44], rbp
 	add rbp, 36
@@ -136,18 +136,18 @@ section .text
 	jmp printf
 
  raise$20:
-	; 28 PostCall 36
+	; PostCall 36
 
  raise$21:
-	; 29 PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  raise$22:
-	; 30 Parameter 60 signed int sig
+	; Parameter 60 signed int sig
 	mov eax, [rbp + 24]
 	mov [rbp + 60], eax
 
  raise$23:
-	; 31 Call 36 func 0
+	; Call 36 func 0
 	mov qword [rbp + 36], raise$24
 	mov [rbp + 44], rbp
 	mov rax, [rbp + 28]
@@ -155,13 +155,13 @@ section .text
 	jmp rax
 
  raise$24:
-	; 32 PostCall 36
+	; PostCall 36
 
  raise$25:
-	; 33 SetReturnValue
+	; SetReturnValue
 
  raise$26:
-	; 34 Return integral4$1#
+	; Return integral4$1#
 	mov ebx, 1
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
@@ -169,4 +169,4 @@ section .text
 	jmp rax
 
  raise$27:
-	; 38 FunctionEnd raise
+	; FunctionEnd raise

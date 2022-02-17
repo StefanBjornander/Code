@@ -46,31 +46,31 @@ section .data
 section .text
 
  mainX:
-	; 0 GreaterThan 11 count integral4$10#
+	; GreaterThan 11 count integral4$10#
 	cmp dword [@313$count], 10
 	jg mainX$11
 
  mainX$1:
-	; 3 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  mainX$2:
-	; 4 Parameter 48 string string_25d20#
+	; Parameter 48 string string_25d20#
 	mov qword [rbp + 48], @315string_25d20#
 
  mainX$3:
-	; 5 Assign £temporary2 count
+	; Assign £temporary2 count
 	mov eax, [@313$count]
 
  mainX$4:
-	; 6 Add count count integral4$1#
+	; Add count count integral4$1#
 	inc dword [@313$count]
 
  mainX$5:
-	; 8 Parameter 56 signed int £temporary2
+	; Parameter 56 signed int £temporary2
 	mov [rbp + 56], eax
 
  mainX$6:
-	; 9 Call 24 printf 4
+	; Call 24 printf 4
 	mov qword [rbp + 24], mainX$7
 	mov [rbp + 32], rbp
 	add rbp, 24
@@ -79,55 +79,55 @@ section .text
 	jmp printf
 
  mainX$7:
-	; 10 PostCall 24
+	; PostCall 24
 
  mainX$8:
-	; 11 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  mainX$9:
-	; 12 Call 24 mainX 0
+	; Call 24 mainX 0
 	mov qword [rbp + 24], mainX$10
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp mainX
 
  mainX$10:
-	; 13 PostCall 24
+	; PostCall 24
 
  mainX$11:
-	; 18 Return
+	; Return
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
 	jmp rax
 
  mainX$12:
-	; 19 FunctionEnd mainX
+	; FunctionEnd mainX
 
 section .text
 
  mainXXX:
-	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  mainXXX$1:
-	; 1 Call 24 temp_file 0
+	; Call 24 temp_file 0
 	mov qword [rbp + 24], mainXXX$2
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp temp_file
 
  mainXXX$2:
-	; 2 PostCall 24
+	; PostCall 24
 
  mainXXX$3:
-	; 4 Return
+	; Return
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
 	jmp rax
 
  mainXXX$4:
-	; 5 FunctionEnd mainXXX
+	; FunctionEnd mainXXX
 
 section .text
 
@@ -144,228 +144,228 @@ section .text
 	mov qword [$StackTop], 0
 
  main:
-	; 0 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$1:
-	; 1 Call 24 math_test 0
+	; Call 24 math_test 0
 	mov qword [rbp + 24], main$2
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test
 
  main$2:
-	; 2 PostCall 24
+	; PostCall 24
 
  main$3:
-	; 3 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$4:
-	; 4 Call 24 file_test 0
+	; Call 24 file_test 0
 	mov qword [rbp + 24], main$5
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp file_test
 
  main$5:
-	; 5 PostCall 24
+	; PostCall 24
 
  main$6:
-	; 6 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$7:
-	; 7 Call 24 time_test 0
+	; Call 24 time_test 0
 	mov qword [rbp + 24], main$8
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp time_test
 
  main$8:
-	; 8 PostCall 24
+	; PostCall 24
 
  main$9:
-	; 9 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$10:
-	; 10 Call 24 assert_test 0
+	; Call 24 assert_test 0
 	mov qword [rbp + 24], main$11
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp assert_test
 
  main$11:
-	; 11 PostCall 24
+	; PostCall 24
 
  main$12:
-	; 12 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$13:
-	; 13 Call 24 malloc_test 0
+	; Call 24 malloc_test 0
 	mov qword [rbp + 24], main$14
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp malloc_test
 
  main$14:
-	; 14 PostCall 24
+	; PostCall 24
 
  main$15:
-	; 15 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$16:
-	; 16 Call 24 print_test 0
+	; Call 24 print_test 0
 	mov qword [rbp + 24], main$17
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp print_test
 
  main$17:
-	; 17 PostCall 24
+	; PostCall 24
 
  main$18:
-	; 18 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$19:
-	; 19 Call 24 limits_test 0
+	; Call 24 limits_test 0
 	mov qword [rbp + 24], main$20
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp limits_test
 
  main$20:
-	; 20 PostCall 24
+	; PostCall 24
 
  main$21:
-	; 21 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$22:
-	; 22 Call 24 float_test 0
+	; Call 24 float_test 0
 	mov qword [rbp + 24], main$23
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp float_test
 
  main$23:
-	; 23 PostCall 24
+	; PostCall 24
 
  main$24:
-	; 24 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$25:
-	; 25 Call 24 setjmp_test 0
+	; Call 24 setjmp_test 0
 	mov qword [rbp + 24], main$26
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp setjmp_test
 
  main$26:
-	; 26 PostCall 24
+	; PostCall 24
 
  main$27:
-	; 27 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$28:
-	; 28 Call 24 stdio_test 0
+	; Call 24 stdio_test 0
 	mov qword [rbp + 24], main$29
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp stdio_test
 
  main$29:
-	; 29 PostCall 24
+	; PostCall 24
 
  main$30:
-	; 30 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$31:
-	; 31 Call 24 string_test 0
+	; Call 24 string_test 0
 	mov qword [rbp + 24], main$32
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp string_test
 
  main$32:
-	; 32 PostCall 24
+	; PostCall 24
 
  main$33:
-	; 33 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$34:
-	; 34 Call 24 stdio_test 0
+	; Call 24 stdio_test 0
 	mov qword [rbp + 24], main$35
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp stdio_test
 
  main$35:
-	; 35 PostCall 24
+	; PostCall 24
 
  main$36:
-	; 36 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$37:
-	; 37 Call 24 stdlib_test 0
+	; Call 24 stdlib_test 0
 	mov qword [rbp + 24], main$38
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp stdlib_test
 
  main$38:
-	; 38 PostCall 24
+	; PostCall 24
 
  main$39:
-	; 39 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$40:
-	; 40 Call 24 strtol_test 0
+	; Call 24 strtol_test 0
 	mov qword [rbp + 24], main$41
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp strtol_test
 
  main$41:
-	; 41 PostCall 24
+	; PostCall 24
 
  main$42:
-	; 42 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$43:
-	; 43 Call 24 strtoul_test 0
+	; Call 24 strtoul_test 0
 	mov qword [rbp + 24], main$44
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp strtoul_test
 
  main$44:
-	; 44 PostCall 24
+	; PostCall 24
 
  main$45:
-	; 45 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$46:
-	; 46 Call 24 character_test 0
+	; Call 24 character_test 0
 	mov qword [rbp + 24], main$47
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp character_test
 
  main$47:
-	; 47 PostCall 24
+	; PostCall 24
 
  main$48:
-	; 48 PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  main$49:
-	; 49 Call 24 locale_test 0
+	; Call 24 locale_test 0
 	mov qword [rbp + 24], main$50
 	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp locale_test
 
  main$50:
-	; 50 PostCall 24
+	; PostCall 24
 
  main$51:
-	; 52 Return
+	; Return
 	cmp qword [rbp], 0
 	je main$52
 	mov rax, [rbp]
@@ -374,13 +374,13 @@ section .text
 	jmp rax
 
  main$52:
-	; 53 Exit
+	; Exit
 	mov rdi, 0
 	mov rax, 60
 	syscall
 
  main$53:
-	; 54 FunctionEnd main
+	; FunctionEnd main
 
 section .data
 $StackTop:	times 1048576 db 0
