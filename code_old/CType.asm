@@ -33,10 +33,10 @@ section .text
 	; PostCall 28
 
  islower$3:
-	; GetReturnValue £temporary135
+	; GetReturnValue £temporary178
 
  islower$4:
-	; Assign localeConvPtr £temporary135
+	; Assign localeConvPtr £temporary178
 	mov [rbp + 28], rbx
 
  islower$5:
@@ -48,11 +48,11 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  islower$7:
-	; Dereference £temporary137 localeConvPtr 0
+	; Dereference £temporary180 localeConvPtr 0
 	mov rsi, [rbp + 28]
 
  islower$8:
-	; Parameter 60 pointer £temporary137.lowerCase
+	; Parameter 60 pointer £temporary180.lowerCase
 	mov rax, [rsi + 40]
 	mov [rbp + 60], rax
 
@@ -72,15 +72,15 @@ section .text
 	; PostCall 36
 
  islower$12:
-	; GetReturnValue £temporary138
+	; GetReturnValue £temporary181
 
  islower$13:
-	; Equal 16 £temporary138 integral8$0#
+	; Equal 16 £temporary181 integral8$0#
 	cmp rbx, 0
 	je islower$16
 
  islower$14:
-	; Assign £temporary140 integral4$1#
+	; Assign £temporary183 integral4$1#
 	mov ebx, 1
 
  islower$15:
@@ -88,14 +88,14 @@ section .text
 	jmp islower$17
 
  islower$16:
-	; Assign £temporary140 integral4$0#
+	; Assign £temporary183 integral4$0#
 	mov ebx, 0
 
  islower$17:
 	; SetReturnValue
 
  islower$18:
-	; Return £temporary140
+	; Return £temporary183
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -112,7 +112,7 @@ section .text
 	jg islower$23
 
  islower$21:
-	; Assign £temporary144 integral4$1#
+	; Assign £temporary187 integral4$1#
 	mov ebx, 1
 
  islower$22:
@@ -120,14 +120,14 @@ section .text
 	jmp islower$24
 
  islower$23:
-	; Assign £temporary144 integral4$0#
+	; Assign £temporary187 integral4$0#
 	mov ebx, 0
 
  islower$24:
 	; SetReturnValue
 
  islower$25:
-	; Return £temporary144
+	; Return £temporary187
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -152,10 +152,10 @@ section .text
 	; PostCall 28
 
  isupper$3:
-	; GetReturnValue £temporary145
+	; GetReturnValue £temporary190
 
  isupper$4:
-	; Assign localeConvPtr £temporary145
+	; Assign localeConvPtr £temporary190
 	mov [rbp + 28], rbx
 
  isupper$5:
@@ -167,11 +167,11 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  isupper$7:
-	; Dereference £temporary147 localeConvPtr 0
+	; Dereference £temporary192 localeConvPtr 0
 	mov rsi, [rbp + 28]
 
  isupper$8:
-	; Parameter 60 pointer £temporary147.upperCase
+	; Parameter 60 pointer £temporary192.upperCase
 	mov rax, [rsi + 48]
 	mov [rbp + 60], rax
 
@@ -191,15 +191,15 @@ section .text
 	; PostCall 36
 
  isupper$12:
-	; GetReturnValue £temporary148
+	; GetReturnValue £temporary193
 
  isupper$13:
-	; Equal 16 £temporary148 integral8$0#
+	; Equal 16 £temporary193 integral8$0#
 	cmp rbx, 0
 	je isupper$16
 
  isupper$14:
-	; Assign £temporary150 integral4$1#
+	; Assign £temporary195 integral4$1#
 	mov ebx, 1
 
  isupper$15:
@@ -207,14 +207,14 @@ section .text
 	jmp isupper$17
 
  isupper$16:
-	; Assign £temporary150 integral4$0#
+	; Assign £temporary195 integral4$0#
 	mov ebx, 0
 
  isupper$17:
 	; SetReturnValue
 
  isupper$18:
-	; Return £temporary150
+	; Return £temporary195
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -231,7 +231,7 @@ section .text
 	jg isupper$23
 
  isupper$21:
-	; Assign £temporary154 integral4$1#
+	; Assign £temporary199 integral4$1#
 	mov ebx, 1
 
  isupper$22:
@@ -239,14 +239,14 @@ section .text
 	jmp isupper$24
 
  isupper$23:
-	; Assign £temporary154 integral4$0#
+	; Assign £temporary199 integral4$0#
 	mov ebx, 0
 
  isupper$24:
 	; SetReturnValue
 
  isupper$25:
-	; Return £temporary154
+	; Return £temporary199
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -276,10 +276,10 @@ section .text
 	; PostCall 28
 
  isalpha$4:
-	; GetReturnValue £temporary155
+	; GetReturnValue £temporary202
 
  isalpha$5:
-	; NotEqual 12 £temporary155 integral4$0#
+	; NotEqual 12 £temporary202 integral4$0#
 	cmp ebx, 0
 	jne isalpha$12
 
@@ -302,15 +302,15 @@ section .text
 	; PostCall 28
 
  isalpha$10:
-	; GetReturnValue £temporary156
+	; GetReturnValue £temporary203
 
  isalpha$11:
-	; Equal 14 £temporary156 integral4$0#
+	; Equal 14 £temporary203 integral4$0#
 	cmp ebx, 0
 	je isalpha$14
 
  isalpha$12:
-	; Assign £temporary160 integral4$1#
+	; Assign £temporary207 integral4$1#
 	mov ebx, 1
 
  isalpha$13:
@@ -318,14 +318,14 @@ section .text
 	jmp isalpha$15
 
  isalpha$14:
-	; Assign £temporary160 integral4$0#
+	; Assign £temporary207 integral4$0#
 	mov ebx, 0
 
  isalpha$15:
 	; SetReturnValue
 
  isalpha$16:
-	; Return £temporary160
+	; Return £temporary207
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -347,7 +347,7 @@ section .text
 	jg isdigit$4
 
  isdigit$2:
-	; Assign £temporary164 integral4$1#
+	; Assign £temporary211 integral4$1#
 	mov ebx, 1
 
  isdigit$3:
@@ -355,14 +355,14 @@ section .text
 	jmp isdigit$5
 
  isdigit$4:
-	; Assign £temporary164 integral4$0#
+	; Assign £temporary211 integral4$0#
 	mov ebx, 0
 
  isdigit$5:
 	; SetReturnValue
 
  isdigit$6:
-	; Return £temporary164
+	; Return £temporary211
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -392,10 +392,10 @@ section .text
 	; PostCall 28
 
  isalnum$4:
-	; GetReturnValue £temporary165
+	; GetReturnValue £temporary212
 
  isalnum$5:
-	; NotEqual 12 £temporary165 integral4$0#
+	; NotEqual 12 £temporary212 integral4$0#
 	cmp ebx, 0
 	jne isalnum$12
 
@@ -418,15 +418,15 @@ section .text
 	; PostCall 28
 
  isalnum$10:
-	; GetReturnValue £temporary166
+	; GetReturnValue £temporary213
 
  isalnum$11:
-	; Equal 14 £temporary166 integral4$0#
+	; Equal 14 £temporary213 integral4$0#
 	cmp ebx, 0
 	je isalnum$14
 
  isalnum$12:
-	; Assign £temporary170 integral4$1#
+	; Assign £temporary217 integral4$1#
 	mov ebx, 1
 
  isalnum$13:
@@ -434,14 +434,14 @@ section .text
 	jmp isalnum$15
 
  isalnum$14:
-	; Assign £temporary170 integral4$0#
+	; Assign £temporary217 integral4$0#
 	mov ebx, 0
 
  isalnum$15:
 	; SetReturnValue
 
  isalnum$16:
-	; Return £temporary170
+	; Return £temporary217
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -471,10 +471,10 @@ section .text
 	; PostCall 28
 
  isxdigit$4:
-	; GetReturnValue £temporary171
+	; GetReturnValue £temporary218
 
  isxdigit$5:
-	; NotEqual 10 £temporary171 integral4$0#
+	; NotEqual 10 £temporary218 integral4$0#
 	cmp ebx, 0
 	jne isxdigit$10
 
@@ -499,7 +499,7 @@ section .text
 	jg isxdigit$12
 
  isxdigit$10:
-	; Assign £temporary181 integral4$1#
+	; Assign £temporary228 integral4$1#
 	mov ebx, 1
 
  isxdigit$11:
@@ -507,14 +507,14 @@ section .text
 	jmp isxdigit$13
 
  isxdigit$12:
-	; Assign £temporary181 integral4$0#
+	; Assign £temporary228 integral4$0#
 	mov ebx, 0
 
  isxdigit$13:
 	; SetReturnValue
 
  isxdigit$14:
-	; Return £temporary181
+	; Return £temporary228
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -536,7 +536,7 @@ section .text
 	jg isgraph$4
 
  isgraph$2:
-	; Assign £temporary185 integral4$1#
+	; Assign £temporary232 integral4$1#
 	mov ebx, 1
 
  isgraph$3:
@@ -544,14 +544,14 @@ section .text
 	jmp isgraph$5
 
  isgraph$4:
-	; Assign £temporary185 integral4$0#
+	; Assign £temporary232 integral4$0#
 	mov ebx, 0
 
  isgraph$5:
 	; SetReturnValue
 
  isgraph$6:
-	; Return £temporary185
+	; Return £temporary232
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -581,10 +581,10 @@ section .text
 	; PostCall 28
 
  isprint$4:
-	; GetReturnValue £temporary186
+	; GetReturnValue £temporary233
 
  isprint$5:
-	; Equal 9 £temporary186 integral4$0#
+	; Equal 9 £temporary233 integral4$0#
 	cmp ebx, 0
 	je isprint$9
 
@@ -594,7 +594,7 @@ section .text
 	je isprint$9
 
  isprint$7:
-	; Assign £temporary190 integral4$1#
+	; Assign £temporary237 integral4$1#
 	mov ebx, 1
 
  isprint$8:
@@ -602,14 +602,14 @@ section .text
 	jmp isprint$10
 
  isprint$9:
-	; Assign £temporary190 integral4$0#
+	; Assign £temporary237 integral4$0#
 	mov ebx, 0
 
  isprint$10:
 	; SetReturnValue
 
  isprint$11:
-	; Return £temporary190
+	; Return £temporary237
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -639,10 +639,10 @@ section .text
 	; PostCall 28
 
  ispunct$4:
-	; GetReturnValue £temporary191
+	; GetReturnValue £temporary238
 
  ispunct$5:
-	; Equal 14 £temporary191 integral4$0#
+	; Equal 14 £temporary238 integral4$0#
 	cmp ebx, 0
 	je ispunct$14
 
@@ -665,15 +665,15 @@ section .text
 	; PostCall 28
 
  ispunct$10:
-	; GetReturnValue £temporary192
+	; GetReturnValue £temporary239
 
  ispunct$11:
-	; NotEqual 14 £temporary192 integral4$0#
+	; NotEqual 14 £temporary239 integral4$0#
 	cmp ebx, 0
 	jne ispunct$14
 
  ispunct$12:
-	; Assign £temporary197 integral4$1#
+	; Assign £temporary244 integral4$1#
 	mov ebx, 1
 
  ispunct$13:
@@ -681,14 +681,14 @@ section .text
 	jmp ispunct$15
 
  ispunct$14:
-	; Assign £temporary197 integral4$0#
+	; Assign £temporary244 integral4$0#
 	mov ebx, 0
 
  ispunct$15:
 	; SetReturnValue
 
  ispunct$16:
-	; Return £temporary197
+	; Return £temporary244
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -718,15 +718,15 @@ section .text
 	; PostCall 28
 
  iscntrl$4:
-	; GetReturnValue £temporary198
+	; GetReturnValue £temporary245
 
  iscntrl$5:
-	; NotEqual 8 £temporary198 integral4$0#
+	; NotEqual 8 £temporary245 integral4$0#
 	cmp ebx, 0
 	jne iscntrl$8
 
  iscntrl$6:
-	; Assign £temporary201 integral4$1#
+	; Assign £temporary248 integral4$1#
 	mov ebx, 1
 
  iscntrl$7:
@@ -734,14 +734,14 @@ section .text
 	jmp iscntrl$9
 
  iscntrl$8:
-	; Assign £temporary201 integral4$0#
+	; Assign £temporary248 integral4$0#
 	mov ebx, 0
 
  iscntrl$9:
 	; SetReturnValue
 
  iscntrl$10:
-	; Return £temporary201
+	; Return £temporary248
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -783,7 +783,7 @@ section .text
 	jne isspace$8
 
  isspace$6:
-	; Assign £temporary213 integral4$1#
+	; Assign £temporary260 integral4$1#
 	mov ebx, 1
 
  isspace$7:
@@ -791,14 +791,14 @@ section .text
 	jmp isspace$9
 
  isspace$8:
-	; Assign £temporary213 integral4$0#
+	; Assign £temporary260 integral4$0#
 	mov ebx, 0
 
  isspace$9:
 	; SetReturnValue
 
  isspace$10:
-	; Return £temporary213
+	; Return £temporary260
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -828,10 +828,10 @@ section .text
 	; PostCall 28
 
  tolower$4:
-	; GetReturnValue £temporary214
+	; GetReturnValue £temporary261
 
  tolower$5:
-	; Equal 34 £temporary214 integral4$0#
+	; Equal 34 £temporary261 integral4$0#
 	cmp ebx, 0
 	je tolower$34
 
@@ -849,10 +849,10 @@ section .text
 	; PostCall 28
 
  tolower$9:
-	; GetReturnValue £temporary215
+	; GetReturnValue £temporary262
 
  tolower$10:
-	; Assign localeConvPtr £temporary215
+	; Assign localeConvPtr £temporary262
 	mov [rbp + 28], rbx
 
  tolower$11:
@@ -861,20 +861,20 @@ section .text
 	je tolower$31
 
  tolower$12:
-	; Dereference £temporary217 localeConvPtr 0
+	; Dereference £temporary264 localeConvPtr 0
 	mov rsi, [rbp + 28]
 
  tolower$13:
-	; Assign lowerCase £temporary217.lowerCase
+	; Assign lowerCase £temporary264.lowerCase
 	mov rax, [rsi + 40]
 	mov [rbp + 36], rax
 
  tolower$14:
-	; Dereference £temporary218 localeConvPtr 0
+	; Dereference £temporary265 localeConvPtr 0
 	mov rsi, [rbp + 28]
 
  tolower$15:
-	; Assign upperCase £temporary218.upperCase
+	; Assign upperCase £temporary265.upperCase
 	mov rax, [rsi + 48]
 	mov [rbp + 44], rax
 
@@ -902,35 +902,35 @@ section .text
 	; PostCall 52
 
  tolower$21:
-	; GetReturnValue £temporary219
+	; GetReturnValue £temporary266
 
  tolower$22:
-	; Subtract £temporary220 £temporary219 upperCase
+	; Subtract £temporary267 £temporary266 upperCase
 	sub rbx, [rbp + 44]
 
  tolower$23:
-	; IntegralToIntegral £temporary221 £temporary220
+	; IntegralToIntegral £temporary268 £temporary267
 
  tolower$24:
-	; Assign index £temporary221
+	; Assign index £temporary268
 	mov [rbp + 52], ebx
 
  tolower$25:
-	; IntegralToIntegral £temporary222 index
+	; IntegralToIntegral £temporary269 index
 	mov eax, [rbp + 52]
 	mov rbx, 4294967295
 	and rax, rbx
 
  tolower$26:
-	; Add £temporary223 lowerCase £temporary222
+	; Add £temporary270 lowerCase £temporary269
 	mov rsi, [rbp + 36]
 	add rsi, rax
 
  tolower$27:
-	; Dereference £temporary224 £temporary223 0
+	; Dereference £temporary271 £temporary270 0
 
  tolower$28:
-	; IntegralToIntegral £temporary225 £temporary224
+	; IntegralToIntegral £temporary272 £temporary271
 	mov bl, [rsi]
 	and ebx, 255
 	cmp bl, 0
@@ -942,14 +942,14 @@ section .text
 	; SetReturnValue
 
  tolower$30:
-	; Return £temporary225
+	; Return £temporary272
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
 	jmp rax
 
  tolower$31:
-	; Add £temporary226 c integral4$32#
+	; Add £temporary273 c integral4$32#
 	mov ebx, [rbp + 24]
 	add ebx, 32
 
@@ -957,7 +957,7 @@ section .text
 	; SetReturnValue
 
  tolower$33:
-	; Return £temporary226
+	; Return £temporary273
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -998,10 +998,10 @@ section .text
 	; PostCall 28
 
  toupper$4:
-	; GetReturnValue £temporary228
+	; GetReturnValue £temporary279
 
  toupper$5:
-	; Equal 34 £temporary228 integral4$0#
+	; Equal 34 £temporary279 integral4$0#
 	cmp ebx, 0
 	je toupper$34
 
@@ -1019,10 +1019,10 @@ section .text
 	; PostCall 28
 
  toupper$9:
-	; GetReturnValue £temporary229
+	; GetReturnValue £temporary280
 
  toupper$10:
-	; Assign localeConvPtr £temporary229
+	; Assign localeConvPtr £temporary280
 	mov [rbp + 28], rbx
 
  toupper$11:
@@ -1031,20 +1031,20 @@ section .text
 	je toupper$31
 
  toupper$12:
-	; Dereference £temporary231 localeConvPtr 0
+	; Dereference £temporary282 localeConvPtr 0
 	mov rsi, [rbp + 28]
 
  toupper$13:
-	; Assign lowerCase £temporary231.lowerCase
+	; Assign lowerCase £temporary282.lowerCase
 	mov rax, [rsi + 40]
 	mov [rbp + 36], rax
 
  toupper$14:
-	; Dereference £temporary232 localeConvPtr 0
+	; Dereference £temporary283 localeConvPtr 0
 	mov rsi, [rbp + 28]
 
  toupper$15:
-	; Assign upperCase £temporary232.upperCase
+	; Assign upperCase £temporary283.upperCase
 	mov rax, [rsi + 48]
 	mov [rbp + 44], rax
 
@@ -1072,35 +1072,35 @@ section .text
 	; PostCall 52
 
  toupper$21:
-	; GetReturnValue £temporary233
+	; GetReturnValue £temporary284
 
  toupper$22:
-	; Subtract £temporary234 £temporary233 lowerCase
+	; Subtract £temporary285 £temporary284 lowerCase
 	sub rbx, [rbp + 36]
 
  toupper$23:
-	; IntegralToIntegral £temporary235 £temporary234
+	; IntegralToIntegral £temporary286 £temporary285
 
  toupper$24:
-	; Assign index £temporary235
+	; Assign index £temporary286
 	mov [rbp + 52], ebx
 
  toupper$25:
-	; IntegralToIntegral £temporary236 index
+	; IntegralToIntegral £temporary287 index
 	mov eax, [rbp + 52]
 	mov rbx, 4294967295
 	and rax, rbx
 
  toupper$26:
-	; Add £temporary237 upperCase £temporary236
+	; Add £temporary288 upperCase £temporary287
 	mov rsi, [rbp + 44]
 	add rsi, rax
 
  toupper$27:
-	; Dereference £temporary238 £temporary237 0
+	; Dereference £temporary289 £temporary288 0
 
  toupper$28:
-	; IntegralToIntegral £temporary239 £temporary238
+	; IntegralToIntegral £temporary290 £temporary289
 	mov bl, [rsi]
 	and ebx, 255
 	cmp bl, 0
@@ -1112,14 +1112,14 @@ section .text
 	; SetReturnValue
 
  toupper$30:
-	; Return £temporary239
+	; Return £temporary290
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
 	jmp rax
 
  toupper$31:
-	; Subtract £temporary240 c integral4$32#
+	; Subtract £temporary291 c integral4$32#
 	mov ebx, [rbp + 24]
 	sub ebx, 32
 
@@ -1127,7 +1127,7 @@ section .text
 	; SetReturnValue
 
  toupper$33:
-	; Return £temporary240
+	; Return £temporary291
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]

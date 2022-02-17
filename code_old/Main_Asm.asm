@@ -20171,6 +20171,7 @@ x30647:	mov [bp + 82], ax	; 3: 137 70 82
 
 time_test$59:	; Parameter 64 s$tm_sec 20
 x30650:	mov ax, [bp + 24]	; 3: 139 70 24
+
 x30653:	mov [bp + 84], ax	; 3: 137 70 84
 
 time_test$60:	; Parameter 64 s$tm_yday 22

@@ -859,4 +859,5 @@ break ;
 }
 
 return strlen ( result ) ;
-} 
+}
+

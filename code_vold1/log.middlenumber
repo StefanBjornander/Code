@@ -1,0 +1,100 @@
+0: PushFloat x
+1: PushFloat floating8$0#
+2: GreaterThan 4 x floating8$0#
+3: Jump 93
+4: Assign n integral4$0#
+5: PushFloat x
+6: PushFloat floating8$1#
+7: GreaterThan 9 x floating8$1#
+8: Jump 23
+9: Empty
+10: PushFloat x
+11: PushFloat floating8$1#
+12: GreaterThan 14 x floating8$1#
+13: Jump 42
+14: PushFloat x
+15: PushFloat floating8$2.71#
+16: Divide £temporary274 x floating8$2.71#
+17: PopFloat x
+18: Add £temporary275 n integral4$1#
+19: Assign n £temporary275
+20: Empty
+21: Jump 9
+22: Jump 42
+23: PushFloat x
+24: PushFloat floating8$0.368#
+25: LessThan 27 x floating8$0.368#
+26: Jump 42
+27: Empty
+28: PushFloat x
+29: PushFloat floating8$0.368#
+30: LessThan 32 x floating8$0.368#
+31: Jump 42
+32: PushFloat x
+33: PushFloat floating8$2.71#
+34: Multiply £temporary278 x floating8$2.71#
+35: PopFloat x
+36: Subtract £temporary279 n integral4$1#
+37: Assign n £temporary279
+38: Empty
+39: Jump 27
+40: Jump 42
+41: Jump 42
+42: PushFloat floating8$1#
+43: PopFloat index
+44: PushFloat floating8$0#
+45: PopFloat sum
+46: PushFloat floating8$1#
+47: PopFloat sign
+48: PushFloat x
+49: PushFloat floating8$1#
+50: Subtract £temporary280 x floating8$1#
+51: PopFloat x_minus_1
+52: PushFloat x_minus_1
+53: PopFloat power
+54: PushFloat term
+55: PopEmpty
+56: PushFloat sign
+57: PushFloat power
+58: Multiply £temporary281 sign power
+59: PushFloat index
+60: PushFloat index
+61: PushOne
+62: Add index index floating8$1#
+63: PopFloat index
+64: Divide £temporary285 £temporary281 £temporary284
+65: PopFloat term
+66: PushFloat sum
+67: PushFloat term
+68: Add £temporary286 sum term
+69: PopFloat sum
+70: PushFloat power
+71: PushFloat x_minus_1
+72: Multiply £temporary287 power x_minus_1
+73: PopFloat power
+74: PushFloat sign
+75: PushFloat floating8$minus1.0#
+76: Multiply £temporary288 sign floating8$minus1.0#
+77: PopFloat sign
+78: PreCall 84
+79: PushFloat term
+80: Parameter 108 double term
+81: Call 84 fabs 0
+82: PostCall 84
+83: GetReturnValue £temporary289
+84: PushFloat floating8$0.000000001#
+85: GreaterThanEqual 54 £temporary289 floating8$0.000000001#
+86: Jump 87
+87: PushFloat sum
+88: IntegralToFloating £temporary291 n
+89: Add £temporary292 sum £temporary291
+90: SetReturnValue
+91: Return £temporary292
+92: Jump 98
+93: Assign errno EDOM
+94: PushFloat floating8$0#
+95: SetReturnValue
+96: Return floating8$0#
+97: Jump 98
+98: Empty
+99: FunctionEnd log

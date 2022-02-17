@@ -3,44 +3,46 @@
 2: Parameter 22 double x
 3: Call 16 fabs 0
 4: PostCall 16
-5: GetReturnValue £temporary475
+5: GetReturnValue £temporary359
 6: PopFloat abs_x
 7: PushFloat abs_x
-8: FloatingToIntegral £temporary476 abs_x
-9: IntegralToFloating £temporary477 £temporary476
+8: FloatingToIntegral £temporary360 abs_x
+9: IntegralToFloating £temporary361 £temporary360
 10: PopFloat integral
 11: PushFloat abs_x
 12: PushFloat integral
-13: BinarySubtract £temporary478 abs_x integral
+13: Subtract £temporary362 abs_x integral
 14: PopFloat fractional
-15: NotEqual Dereference £temporary480 -> p p 0 p 0
-16: Goto PushFloat x
-17: Dereference £temporary480 -> p p 0
-18: PushFloat £temporary480 -> p
-19: PopFloat
+15: NotEqual Dereference £temporary364 p 0 p integral2$0#
+16: Jump Empty
+17: Dereference £temporary364 p 0
+18: PushFloat £temporary364
+19: PopEmpty
 20: PushFloat x
-21: PushFloat 0
-22: SignedGreaterThan PushFloat integral x 0
-23: Goto PushFloat integral
+21: PushFloat floating8$0#
+22: GreaterThan PushFloat integral x floating8$0#
+23: Jump PushFloat integral
 24: PushFloat integral
 25: DecreaseStack
-26: Goto Empty
+26: Jump Empty
 27: PushFloat integral
-28: UnarySubtract £temporary482 integral
+28: Minus £temporary366 integral
 29: Empty
-30: TopFloat £temporary480 -> p
-31: PopFloat
-32: Goto PushFloat x
-33: PushFloat x
-34: PushFloat 0
-35: SignedGreaterThan PushFloat fractional x 0
-36: Goto PushFloat fractional
-37: PushFloat fractional
-38: DecreaseStack
-39: Goto Empty
-40: PushFloat fractional
-41: UnarySubtract £temporary485 fractional
-42: Empty
-43: Return £temporary486
-44: Empty
-45: FunctionEnd modf
+30: PopFloat £temporary364
+31: Jump PushFloat x
+32: Empty
+33: Jump PushFloat x
+34: PushFloat x
+35: PushFloat floating8$0#
+36: GreaterThan PushFloat fractional x floating8$0#
+37: Jump PushFloat fractional
+38: PushFloat fractional
+39: DecreaseStack
+40: Jump Empty
+41: PushFloat fractional
+42: Minus £temporary369 fractional
+43: Empty
+44: SetReturnValue
+45: Return £temporary370
+46: Empty
+47: FunctionEnd modf

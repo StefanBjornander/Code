@@ -509,4 +509,5 @@ return ( double ) ( ( long ) ( ( x < 0 ) ? ( x - 0.5 ) : ( x + 0.5 ) ) ) ;
 
 double fabs ( double x ) {
 return ( x < 0 ) ? - x : x ;
-} 
+}
+

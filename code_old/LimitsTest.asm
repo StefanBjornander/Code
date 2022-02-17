@@ -6,91 +6,91 @@
 
 section .data
 
-@8321string_CHAR_BIT203D2025i0A#:
+@8304string_CHAR_BIT203D2025i0A#:
 	; Initializer String CHAR_BIT = %i\n
 	db "CHAR_BIT = %i", 10, 0
 
 section .data
 
-@8323string_CHAR_MIN203D2025i0A0A#:
+@8306string_CHAR_MIN203D2025i0A0A#:
 	; Initializer String CHAR_MIN = %i\n\n
 	db "CHAR_MIN = %i", 10, 10, 0
 
 section .data
 
-@8326string_CHAR_MAX203D2025i0A#:
+@8309string_CHAR_MAX203D2025i0A#:
 	; Initializer String CHAR_MAX = %i\n
 	db "CHAR_MAX = %i", 10, 0
 
 section .data
 
-@8329string_UCHAR_MAX203D2025u0A0A#:
+@8312string_UCHAR_MAX203D2025u0A0A#:
 	; Initializer String UCHAR_MAX = %u\n\n
 	db "UCHAR_MAX = %u", 10, 10, 0
 
 section .data
 
-@8332string_SHRT_MIN203D2025i0A#:
+@8315string_SHRT_MIN203D2025i0A#:
 	; Initializer String SHRT_MIN = %i\n
 	db "SHRT_MIN = %i", 10, 0
 
 section .data
 
-@8335string_SHRT_MAX203D2025i0A#:
+@8318string_SHRT_MAX203D2025i0A#:
 	; Initializer String SHRT_MAX = %i\n
 	db "SHRT_MAX = %i", 10, 0
 
 section .data
 
-@8338string_USHRT_MAX203D2025u0A0A#:
+@8321string_USHRT_MAX203D2025u0A0A#:
 	; Initializer String USHRT_MAX = %u\n\n
 	db "USHRT_MAX = %u", 10, 10, 0
 
 section .data
 
-@8341string_INT_MIN203D2025i0A#:
+@8324string_INT_MIN203D2025i0A#:
 	; Initializer String INT_MIN = %i\n
 	db "INT_MIN = %i", 10, 0
 
 section .data
 
-@8343string_INT_MAX203D2025i0A#:
+@8326string_INT_MAX203D2025i0A#:
 	; Initializer String INT_MAX = %i\n
 	db "INT_MAX = %i", 10, 0
 
 section .data
 
-@8345string_UINT_MAX203D2025u0A0A#:
+@8328string_UINT_MAX203D2025u0A0A#:
 	; Initializer String UINT_MAX = %u\n\n
 	db "UINT_MAX = %u", 10, 10, 0
 
 section .data
 
-@8347string_LONG_MIN203D2025li0A#:
+@8330string_LONG_MIN203D2025li0A#:
 	; Initializer String LONG_MIN = %li\n
 	db "LONG_MIN = %li", 10, 0
 
 section .data
 
-@8349string_LONG_MAX203D2025li0A#:
+@8332string_LONG_MAX203D2025li0A#:
 	; Initializer String LONG_MAX = %li\n
 	db "LONG_MAX = %li", 10, 0
 
 section .data
 
-@8351string_ULONG_MAX203D2025lu0A#:
+@8334string_ULONG_MAX203D2025lu0A#:
 	; Initializer String ULONG_MAX = %lu\n
 	db "ULONG_MAX = %lu", 10, 0
 
 section .data
 
-@8353string_ULONG_MAX203D2025lx0A#:
+@8336string_ULONG_MAX203D2025lx0A#:
 	; Initializer String ULONG_MAX = %lx\n
 	db "ULONG_MAX = %lx", 10, 0
 
 section .data
 
-@8355string_ULONG_MAX203D2025lX0A#:
+@8338string_ULONG_MAX203D2025lX0A#:
 	; Initializer String ULONG_MAX = %lX\n
 	db "ULONG_MAX = %lX", 10, 0
 
@@ -100,8 +100,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$1:
-	; Parameter 48 pointer string_CHAR_BIT203D2025i0A#
-	mov qword [rbp + 48], @8321string_CHAR_BIT203D2025i0A#
+	; Parameter 48 string string_CHAR_BIT203D2025i0A#
+	mov qword [rbp + 48], @8304string_CHAR_BIT203D2025i0A#
 
  limits_test$2:
 	; Parameter 56 signed int integral4$8#
@@ -123,8 +123,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$6:
-	; Parameter 48 pointer string_CHAR_MIN203D2025i0A0A#
-	mov qword [rbp + 48], @8323string_CHAR_MIN203D2025i0A0A#
+	; Parameter 48 string string_CHAR_MIN203D2025i0A0A#
+	mov qword [rbp + 48], @8306string_CHAR_MIN203D2025i0A0A#
 
  limits_test$7:
 	; Parameter 56 signed int integral4$minus128#
@@ -146,8 +146,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$11:
-	; Parameter 48 pointer string_CHAR_MAX203D2025i0A#
-	mov qword [rbp + 48], @8326string_CHAR_MAX203D2025i0A#
+	; Parameter 48 string string_CHAR_MAX203D2025i0A#
+	mov qword [rbp + 48], @8309string_CHAR_MAX203D2025i0A#
 
  limits_test$12:
 	; Parameter 56 signed int integral4$127#
@@ -169,8 +169,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$16:
-	; Parameter 48 pointer string_UCHAR_MAX203D2025u0A0A#
-	mov qword [rbp + 48], @8329string_UCHAR_MAX203D2025u0A0A#
+	; Parameter 48 string string_UCHAR_MAX203D2025u0A0A#
+	mov qword [rbp + 48], @8312string_UCHAR_MAX203D2025u0A0A#
 
  limits_test$17:
 	; Parameter 56 unsigned int integral4$255#
@@ -192,8 +192,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$21:
-	; Parameter 48 pointer string_SHRT_MIN203D2025i0A#
-	mov qword [rbp + 48], @8332string_SHRT_MIN203D2025i0A#
+	; Parameter 48 string string_SHRT_MIN203D2025i0A#
+	mov qword [rbp + 48], @8315string_SHRT_MIN203D2025i0A#
 
  limits_test$22:
 	; Parameter 56 signed int integral4$minus32768#
@@ -215,8 +215,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$26:
-	; Parameter 48 pointer string_SHRT_MAX203D2025i0A#
-	mov qword [rbp + 48], @8335string_SHRT_MAX203D2025i0A#
+	; Parameter 48 string string_SHRT_MAX203D2025i0A#
+	mov qword [rbp + 48], @8318string_SHRT_MAX203D2025i0A#
 
  limits_test$27:
 	; Parameter 56 signed int integral4$32767#
@@ -238,8 +238,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$31:
-	; Parameter 48 pointer string_USHRT_MAX203D2025u0A0A#
-	mov qword [rbp + 48], @8338string_USHRT_MAX203D2025u0A0A#
+	; Parameter 48 string string_USHRT_MAX203D2025u0A0A#
+	mov qword [rbp + 48], @8321string_USHRT_MAX203D2025u0A0A#
 
  limits_test$32:
 	; Parameter 56 unsigned int integral4$65535#
@@ -261,8 +261,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$36:
-	; Parameter 48 pointer string_INT_MIN203D2025i0A#
-	mov qword [rbp + 48], @8341string_INT_MIN203D2025i0A#
+	; Parameter 48 string string_INT_MIN203D2025i0A#
+	mov qword [rbp + 48], @8324string_INT_MIN203D2025i0A#
 
  limits_test$37:
 	; Parameter 56 signed int integral4$minus2147483648#
@@ -284,8 +284,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$41:
-	; Parameter 48 pointer string_INT_MAX203D2025i0A#
-	mov qword [rbp + 48], @8343string_INT_MAX203D2025i0A#
+	; Parameter 48 string string_INT_MAX203D2025i0A#
+	mov qword [rbp + 48], @8326string_INT_MAX203D2025i0A#
 
  limits_test$42:
 	; Parameter 56 signed int integral4$2147483647#
@@ -307,8 +307,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$46:
-	; Parameter 48 pointer string_UINT_MAX203D2025u0A0A#
-	mov qword [rbp + 48], @8345string_UINT_MAX203D2025u0A0A#
+	; Parameter 48 string string_UINT_MAX203D2025u0A0A#
+	mov qword [rbp + 48], @8328string_UINT_MAX203D2025u0A0A#
 
  limits_test$47:
 	; Parameter 56 unsigned int integral4$4294967295#
@@ -331,8 +331,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$51:
-	; Parameter 48 pointer string_LONG_MIN203D2025li0A#
-	mov qword [rbp + 48], @8347string_LONG_MIN203D2025li0A#
+	; Parameter 48 string string_LONG_MIN203D2025li0A#
+	mov qword [rbp + 48], @8330string_LONG_MIN203D2025li0A#
 
  limits_test$52:
 	; Parameter 56 signed long int integral8$minus9223372036854775808#
@@ -355,8 +355,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$56:
-	; Parameter 48 pointer string_LONG_MAX203D2025li0A#
-	mov qword [rbp + 48], @8349string_LONG_MAX203D2025li0A#
+	; Parameter 48 string string_LONG_MAX203D2025li0A#
+	mov qword [rbp + 48], @8332string_LONG_MAX203D2025li0A#
 
  limits_test$57:
 	; Parameter 56 signed long int integral8$9223372036854775807#
@@ -379,8 +379,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$61:
-	; Parameter 48 pointer string_ULONG_MAX203D2025lu0A#
-	mov qword [rbp + 48], @8351string_ULONG_MAX203D2025lu0A#
+	; Parameter 48 string string_ULONG_MAX203D2025lu0A#
+	mov qword [rbp + 48], @8334string_ULONG_MAX203D2025lu0A#
 
  limits_test$62:
 	; Parameter 56 unsigned long int integral8$18446744073709551615#
@@ -403,8 +403,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$66:
-	; Parameter 48 pointer string_ULONG_MAX203D2025lx0A#
-	mov qword [rbp + 48], @8353string_ULONG_MAX203D2025lx0A#
+	; Parameter 48 string string_ULONG_MAX203D2025lx0A#
+	mov qword [rbp + 48], @8336string_ULONG_MAX203D2025lx0A#
 
  limits_test$67:
 	; Parameter 56 unsigned long int integral8$18446744073709551615#
@@ -427,8 +427,8 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  limits_test$71:
-	; Parameter 48 pointer string_ULONG_MAX203D2025lX0A#
-	mov qword [rbp + 48], @8355string_ULONG_MAX203D2025lX0A#
+	; Parameter 48 string string_ULONG_MAX203D2025lX0A#
+	mov qword [rbp + 48], @8338string_ULONG_MAX203D2025lX0A#
 
  limits_test$72:
 	; Parameter 56 unsigned long int integral8$18446744073709551615#

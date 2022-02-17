@@ -142,8 +142,8 @@ double sqrt(double x) {
 
 double modf(double x, double* p) {
   double abs_x = fabs(x),
-  integral = (double) ((long) abs_x),
-  fractional = abs_x - integral;
+         integral = (double) ((long) abs_x),
+         fractional = abs_x - integral;
 
   if (p != NULL)  {
     *p = (x > 0) ? integral : -integral;

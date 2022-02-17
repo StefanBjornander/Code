@@ -7,607 +7,607 @@
 
 section .data
 
-@10920string_3C25i3E203C25i3E203C25li3E203C25li3E203C25u3E203C25lu3E0A0A#:
+@10901string_3C25i3E203C25i3E203C25li3E203C25li3E203C25u3E203C25lu3E0A0A#:
 	; Initializer String <%i> <%i> <%li> <%li> <%u> <%lu>\n\n
 	db "<%i> <%i> <%li> <%li> <%u> <%lu>", 10, 10, 0
 
 section .data
 
-@10927string_3C256i3E203C256i3E203C256li3E203C256li3E203C256u3E203C256lu3E0A#:
+@10908string_3C256i3E203C256i3E203C256li3E203C256li3E203C256u3E203C256lu3E0A#:
 	; Initializer String <%6i> <%6i> <%6li> <%6li> <%6u> <%6lu>\n
 	db "<%6i> <%6i> <%6li> <%6li> <%6u> <%6lu>", 10, 0
 
 section .data
 
-@10934string_3C252B6i3E203C252B6i3E203C252B6li3E203C252B6li3E203C252B6u3E203C252B6lu3E0A#:
+@10915string_3C252B6i3E203C252B6i3E203C252B6li3E203C252B6li3E203C252B6u3E203C252B6lu3E0A#:
 	; Initializer String <%+6i> <%+6i> <%+6li> <%+6li> <%+6u> <%+6lu>\n
 	db "<%+6i> <%+6i> <%+6li> <%+6li> <%+6u> <%+6lu>", 10, 0
 
 section .data
 
-@10941string_3C252D6i3E203C252D6i3E203C252D6li3E203C252D6li3E203C252D6u3E203C252D6lu3E0A#:
+@10922string_3C252D6i3E203C252D6i3E203C252D6li3E203C252D6li3E203C252D6u3E203C252D6lu3E0A#:
 	; Initializer String <%-6i> <%-6i> <%-6li> <%-6li> <%-6u> <%-6lu>\n
 	db "<%-6i> <%-6i> <%-6li> <%-6li> <%-6u> <%-6lu>", 10, 0
 
 section .data
 
-@10948string_3C252B2D6i3E203C252B2D6i3E203C252B2D6li3E203C252B2D6li3E203C252B2D6u3E203C252B2D6lu3E0A0A#:
+@10929string_3C252B2D6i3E203C252B2D6i3E203C252B2D6li3E203C252B2D6li3E203C252B2D6u3E203C252B2D6lu3E0A0A#:
 	; Initializer String <%+-6i> <%+-6i> <%+-6li> <%+-6li> <%+-6u> <%+-6lu>\n\n
 	db "<%+-6i> <%+-6i> <%+-6li> <%+-6li> <%+-6u> <%+-6lu>", 10, 10, 0
 
 section .data
 
-@10959string_3C2506i3E203C2506i3E203C2506li3E203C2506li3E203C2506u3E203C2506lu3E0A#:
+@10940string_3C2506i3E203C2506i3E203C2506li3E203C2506li3E203C2506u3E203C2506lu3E0A#:
 	; Initializer String <%06i> <%06i> <%06li> <%06li> <%06u> <%06lu>\n
 	db "<%06i> <%06i> <%06li> <%06li> <%06u> <%06lu>", 10, 0
 
 section .data
 
-@10966string_3C252B06i3E203C252B06i3E203C252B06li3E203C252B06li3E203C252B06u3E203C252B06lu3E0A#:
+@10947string_3C252B06i3E203C252B06i3E203C252B06li3E203C252B06li3E203C252B06u3E203C252B06lu3E0A#:
 	; Initializer String <%+06i> <%+06i> <%+06li> <%+06li> <%+06u> <%+06lu>\n
 	db "<%+06i> <%+06i> <%+06li> <%+06li> <%+06u> <%+06lu>", 10, 0
 
 section .data
 
-@10973string_3C252D06i3E203C252D06i3E203C252D06li3E203C252D06li3E203C252D06u3E203C252D06lu3E0A#:
+@10954string_3C252D06i3E203C252D06i3E203C252D06li3E203C252D06li3E203C252D06u3E203C252D06lu3E0A#:
 	; Initializer String <%-06i> <%-06i> <%-06li> <%-06li> <%-06u> <%-06lu>\n
 	db "<%-06i> <%-06i> <%-06li> <%-06li> <%-06u> <%-06lu>", 10, 0
 
 section .data
 
-@10980string_3C252B2D06i3E203C252B2D06i3E203C252B2D06li3E203C252B2D06li3E203C252B2D06u3E203C252B2D06lu3E0A0A#:
+@10961string_3C252B2D06i3E203C252B2D06i3E203C252B2D06li3E203C252B2D06li3E203C252B2D06u3E203C252B2D06lu3E0A0A#:
 	; Initializer String <%+-06i> <%+-06i> <%+-06li> <%+-06li> <%+-06u> <%+-06lu>\n\n
 	db "<%+-06i> <%+-06i> <%+-06li> <%+-06li> <%+-06u> <%+-06lu>", 10, 10, 0
 
 section .data
 
-@10987string_3C25206i3E203C25206i3E203C25206li3E203C25206li3E203C25206u3E203C25206lu3E0A#:
+@10968string_3C25206i3E203C25206i3E203C25206li3E203C25206li3E203C25206u3E203C25206lu3E0A#:
 	; Initializer String <% 6i> <% 6i> <% 6li> <% 6li> <% 6u> <% 6lu>\n
 	db "<% 6i> <% 6i> <% 6li> <% 6li> <% 6u> <% 6lu>", 10, 0
 
 section .data
 
-@10994string_3C252B206i3E203C252B206i3E203C252B206li3E203C252B206li3E203C252B206u3E203C252B206lu3E0A#:
+@10975string_3C252B206i3E203C252B206i3E203C252B206li3E203C252B206li3E203C252B206u3E203C252B206lu3E0A#:
 	; Initializer String <%+ 6i> <%+ 6i> <%+ 6li> <%+ 6li> <%+ 6u> <%+ 6lu>\n
 	db "<%+ 6i> <%+ 6i> <%+ 6li> <%+ 6li> <%+ 6u> <%+ 6lu>", 10, 0
 
 section .data
 
-@11001string_3C252D206i3E203C252D206i3E203C252D206li3E203C252D206li3E203C252D206u3E203C252D206lu3E0A#:
+@10982string_3C252D206i3E203C252D206i3E203C252D206li3E203C252D206li3E203C252D206u3E203C252D206lu3E0A#:
 	; Initializer String <%- 6i> <%- 6i> <%- 6li> <%- 6li> <%- 6u> <%- 6lu>\n
 	db "<%- 6i> <%- 6i> <%- 6li> <%- 6li> <%- 6u> <%- 6lu>", 10, 0
 
 section .data
 
-@11008string_3C252B2D206i3E203C252B2D206i3E203C252B2D206li3E203C252B2D206li3E203C252B2D206u3E203C252B2D206lu3E0A0A#:
+@10989string_3C252B2D206i3E203C252B2D206i3E203C252B2D206li3E203C252B2D206li3E203C252B2D206u3E203C252B2D206lu3E0A0A#:
 	; Initializer String <%+- 6i> <%+- 6i> <%+- 6li> <%+- 6li> <%+- 6u> <%+- 6lu>\n\n
 	db "<%+- 6i> <%+- 6i> <%+- 6li> <%+- 6li> <%+- 6u> <%+- 6lu>", 10, 10, 0
 
 section .data
 
-@11015string_3C25x3E203C25X3E203C25o3E203C25lx3E203C25lX3E203C25lo3E0A#:
+@10996string_3C25x3E203C25X3E203C25o3E203C25lx3E203C25lX3E203C25lo3E0A#:
 	; Initializer String <%x> <%X> <%o> <%lx> <%lX> <%lo>\n
 	db "<%x> <%X> <%o> <%lx> <%lX> <%lo>", 10, 0
 
 section .data
 
-@11022string_3C2523x3E203C2523X3E203C2523o3E203C2523lx3E203C2523lX3E203C2523lo3E0A#:
+@11003string_3C2523x3E203C2523X3E203C2523o3E203C2523lx3E203C2523lX3E203C2523lo3E0A#:
 	; Initializer String <%#x> <%#X> <%#o> <%#lx> <%#lX> <%#lo>\n
 	db "<%#x> <%#X> <%#o> <%#lx> <%#lX> <%#lo>", 10, 0
 
 section .data
 
-@11029string_3C25253E203C25s3E203C25c3E203C25p3E0A0A#:
+@11010string_3C25253E203C25s3E203C25c3E203C25p3E0A0A#:
 	; Initializer String <%%> <%s> <%c> <%p>\n\n
 	db "<%%> <%s> <%c> <%p>", 10, 10, 0
 
 section .data
 
-@11030string_Hello2C20World21#:
+@11011string_Hello2C20World21#:
 	; Initializer String Hello, World!
 	db "Hello, World!", 0
 
 section .data
 
-@11033string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#:
+@11014string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#:
 	; Initializer String <%f> <%e> <%E> <%g> <%G>\n
 	db "<%f> <%e> <%E> <%g> <%G>", 10, 0
 
 section .data
 
-@11039string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#:
+@11020string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#:
 	; Initializer String <%lf> <%le> <%lE> <%lg> <%lG>\n
 	db "<%lf> <%le> <%lE> <%lg> <%lG>", 10, 0
 
 section .data
 
-@11045string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#:
+@11026string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#:
 	; Initializer String <%#f> <%#e> <%#E> <%#g> <%#G>\n
 	db "<%#f> <%#e> <%#E> <%#g> <%#G>", 10, 0
 
 section .data
 
-@11051string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#:
+@11032string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#:
 	; Initializer String <%#lf> <%#le> <%#lE> <%#lg> <%#lG>\n
 	db "<%#lf> <%#le> <%#lE> <%#lg> <%#lG>", 10, 0
 
 section .data
 
-@11057string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#:
+@11038string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#:
 	; Initializer String <%6.3f> <%6.3e> <%6.3E> <%6.3g> <%6.3G>\n
 	db "<%6.3f> <%6.3e> <%6.3E> <%6.3g> <%6.3G>", 10, 0
 
 section .data
 
-@11063string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#:
+@11044string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#:
 	; Initializer String <%6.3lf> <%6.3le> <%6.3lE> <%6.3lg> <%6.3lG>\n\n
 	db "<%6.3lf> <%6.3le> <%6.3lE> <%6.3lg> <%6.3lG>", 10, 10, 0
 
 section .data
 
-@11069string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#:
+@11050string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#:
 	; Initializer String <%f> <%e> <%E> <%g> <%G>\n
 	db "<%f> <%e> <%E> <%g> <%G>", 10, 0
 
 section .data
 
-@11075string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#:
+@11056string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#:
 	; Initializer String <%lf> <%le> <%lE> <%lg> <%lG>\n
 	db "<%lf> <%le> <%lE> <%lg> <%lG>", 10, 0
 
 section .data
 
-@11081string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#:
+@11062string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#:
 	; Initializer String <%#f> <%#e> <%#E> <%#g> <%#G>\n
 	db "<%#f> <%#e> <%#E> <%#g> <%#G>", 10, 0
 
 section .data
 
-@11087string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#:
+@11068string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#:
 	; Initializer String <%#lf> <%#le> <%#lE> <%#lg> <%#lG>\n
 	db "<%#lf> <%#le> <%#lE> <%#lg> <%#lG>", 10, 0
 
 section .data
 
-@11093string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#:
+@11074string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#:
 	; Initializer String <%6.3f> <%6.3e> <%6.3E> <%6.3g> <%6.3G>\n
 	db "<%6.3f> <%6.3e> <%6.3E> <%6.3g> <%6.3G>", 10, 0
 
 section .data
 
-@11099string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#:
+@11080string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#:
 	; Initializer String <%6.3lf> <%6.3le> <%6.3lE> <%6.3lg> <%6.3lG>\n\n
 	db "<%6.3lf> <%6.3le> <%6.3lE> <%6.3lg> <%6.3lG>", 10, 10, 0
 
 section .data
 
-@11111string_Please20write20three20integers3A20#:
+@11092string_Please20write20three20integers3A20#:
 	; Initializer String Please write three integers: 
 	db "Please write three integers: ", 0
 
 section .data
 
-@11112string_1232045620789#:
+@11093string_1232045620789#:
 	; Initializer String 123 456 789
 	db "123 456 789", 0
 
 section .data
 
-@11113string_25i20252Ai2025i2025n#:
+@11094string_25i20252Ai2025i2025n#:
 	; Initializer String %i %*i %i %n
 	db "%i %*i %i %n", 0
 
 section .data
 
-@11114string_3C25i3E203C25i3E203C25i3E0A#:
+@11095string_3C25i3E203C25i3E203C25i3E0A#:
 	; Initializer String <%i> <%i> <%i>\n
 	db "<%i> <%i> <%i>", 10, 0
 
 section .data
 
-@11118string_Please20write20the20patterns205Babc5D3A20#:
+@11099string_Please20write20the20patterns205Babc5D3A20#:
 	; Initializer String Please write the patterns [abc]: 
 	db "Please write the patterns [abc]: ", 0
 
 section .data
 
-@11119string_abcdef#:
+@11100string_abcdef#:
 	; Initializer String abcdef
 	db "abcdef", 0
 
 section .data
 
-@11120string_255Babc5D#:
+@11101string_255Babc5D#:
 	; Initializer String %[abc]
 	db "%[abc]", 0
 
 section .data
 
-@11121string_3C25s3E0A#:
+@11102string_3C25s3E0A#:
 	; Initializer String <%s>\n
 	db "<%s>", 10, 0
 
 section .data
 
-@11122string_Please20write20the20patterns205B5Eabc5D3A20#:
+@11103string_Please20write20the20patterns205B5Eabc5D3A20#:
 	; Initializer String Please write the patterns [^abc]: 
 	db "Please write the patterns [^abc]: ", 0
 
 section .data
 
-@11123string_defabc#:
+@11104string_defabc#:
 	; Initializer String defabc
 	db "defabc", 0
 
 section .data
 
-@11124string_255B5Eabc5D#:
+@11105string_255B5Eabc5D#:
 	; Initializer String %[^abc]
 	db "%[^abc]", 0
 
 section .data
 
-@11125string_3C25s3E0A0A#:
+@11106string_3C25s3E0A0A#:
 	; Initializer String <%s>\n\n
 	db "<%s>", 10, 10, 0
 
 section .data
 
-@11034floating8$123.456#:
+@11015floating8$123.456#:
 	; Initializer Double 123.456
+	dq 123.456
+
+section .data
+
+@11016floating8$123.456#:
+	; Initializer Double 123.456
+	dq 123.456
+
+section .data
+
+@11017floating8$123.456#:
+	; Initializer Double 123.456
+	dq 123.456
+
+section .data
+
+@11018floating8$123456.1#:
+	; Initializer Double 123456.1
+	dq 123456.1
+
+section .data
+
+@11019floating8$123456.1#:
+	; Initializer Double 123456.1
+	dq 123456.1
+
+section .data
+
+@11021floating8$123.456#:
+	; Initializer LongDouble 123.456
+	dq 123.456
+
+section .data
+
+@11022floating8$123.456#:
+	; Initializer LongDouble 123.456
+	dq 123.456
+
+section .data
+
+@11023floating8$123.456#:
+	; Initializer LongDouble 123.456
+	dq 123.456
+
+section .data
+
+@11024floating8$123456.1#:
+	; Initializer LongDouble 123456.1
+	dq 123456.1
+
+section .data
+
+@11025floating8$123456.1#:
+	; Initializer LongDouble 123456.1
+	dq 123456.1
+
+section .data
+
+@11027floating8$123.456#:
+	; Initializer Double 123.456
+	dq 123.456
+
+section .data
+
+@11028floating8$123.456#:
+	; Initializer Double 123.456
+	dq 123.456
+
+section .data
+
+@11029floating8$123.456#:
+	; Initializer Double 123.456
+	dq 123.456
+
+section .data
+
+@11030floating8$123.456#:
+	; Initializer Double 123.456
+	dq 123.456
+
+section .data
+
+@11031floating8$123.456#:
+	; Initializer Double 123.456
+	dq 123.456
+
+section .data
+
+@11033floating8$123.456#:
+	; Initializer LongDouble 123.456
+	dq 123.456
+
+section .data
+
+@11034floating8$123.456#:
+	; Initializer LongDouble 123.456
 	dq 123.456
 
 section .data
 
 @11035floating8$123.456#:
-	; Initializer Double 123.456
+	; Initializer LongDouble 123.456
 	dq 123.456
 
 section .data
 
 @11036floating8$123.456#:
+	; Initializer LongDouble 123.456
+	dq 123.456
+
+section .data
+
+@11037floating8$123.456#:
+	; Initializer LongDouble 123.456
+	dq 123.456
+
+section .data
+
+@11039floating8$123.456#:
 	; Initializer Double 123.456
 	dq 123.456
 
 section .data
 
-@11037floating8$123456.1#:
-	; Initializer Double 123456.1
-	dq 123456.1
-
-section .data
-
-@11038floating8$123456.1#:
-	; Initializer Double 123456.1
-	dq 123456.1
-
-section .data
-
 @11040floating8$123.456#:
-	; Initializer LongDouble 123.456
+	; Initializer Double 123.456
 	dq 123.456
 
 section .data
 
 @11041floating8$123.456#:
-	; Initializer LongDouble 123.456
+	; Initializer Double 123.456
 	dq 123.456
 
 section .data
 
 @11042floating8$123.456#:
+	; Initializer Double 123.456
+	dq 123.456
+
+section .data
+
+@11043floating8$123.456#:
+	; Initializer Double 123.456
+	dq 123.456
+
+section .data
+
+@11045floating8$123.456#:
 	; Initializer LongDouble 123.456
 	dq 123.456
 
 section .data
 
-@11043floating8$123456.1#:
-	; Initializer LongDouble 123456.1
-	dq 123456.1
-
-section .data
-
-@11044floating8$123456.1#:
-	; Initializer LongDouble 123456.1
-	dq 123456.1
-
-section .data
-
 @11046floating8$123.456#:
-	; Initializer Double 123.456
+	; Initializer LongDouble 123.456
 	dq 123.456
 
 section .data
 
 @11047floating8$123.456#:
-	; Initializer Double 123.456
+	; Initializer LongDouble 123.456
 	dq 123.456
 
 section .data
 
 @11048floating8$123.456#:
-	; Initializer Double 123.456
+	; Initializer LongDouble 123.456
 	dq 123.456
 
 section .data
 
 @11049floating8$123.456#:
-	; Initializer Double 123.456
-	dq 123.456
-
-section .data
-
-@11050floating8$123.456#:
-	; Initializer Double 123.456
-	dq 123.456
-
-section .data
-
-@11052floating8$123.456#:
 	; Initializer LongDouble 123.456
 	dq 123.456
 
 section .data
 
-@11053floating8$123.456#:
-	; Initializer LongDouble 123.456
-	dq 123.456
+@11051floating8$minus123.456#:
+	; Initializer Double -123.456
+	dq -123.456
 
 section .data
 
-@11054floating8$123.456#:
-	; Initializer LongDouble 123.456
-	dq 123.456
+@11052floating8$minus123.456#:
+	; Initializer Double -123.456
+	dq -123.456
 
 section .data
 
-@11055floating8$123.456#:
-	; Initializer LongDouble 123.456
-	dq 123.456
+@11053floating8$minus123.456#:
+	; Initializer Double -123.456
+	dq -123.456
 
 section .data
 
-@11056floating8$123.456#:
-	; Initializer LongDouble 123.456
-	dq 123.456
+@11054floating8$minus0.000000123456#:
+	; Initializer Double -0.000000123456
+	dq -0.000000123456
 
 section .data
 
-@11058floating8$123.456#:
-	; Initializer Double 123.456
-	dq 123.456
+@11055floating8$minus0.000000123456#:
+	; Initializer Double -0.000000123456
+	dq -0.000000123456
 
 section .data
 
-@11059floating8$123.456#:
-	; Initializer Double 123.456
-	dq 123.456
+@11057floating8$minus123.456#:
+	; Initializer LongDouble -123.456
+	dq -123.456
 
 section .data
 
-@11060floating8$123.456#:
-	; Initializer Double 123.456
-	dq 123.456
+@11058floating8$minus123.456#:
+	; Initializer LongDouble -123.456
+	dq -123.456
 
 section .data
 
-@11061floating8$123.456#:
-	; Initializer Double 123.456
-	dq 123.456
+@11059floating8$minus123.456#:
+	; Initializer LongDouble -123.456
+	dq -123.456
 
 section .data
 
-@11062floating8$123.456#:
-	; Initializer Double 123.456
-	dq 123.456
+@11060floating8$minus0.000000123456#:
+	; Initializer LongDouble -0.000000123456
+	dq -0.000000123456
 
 section .data
 
-@11064floating8$123.456#:
-	; Initializer LongDouble 123.456
-	dq 123.456
+@11061floating8$minus0.000000123456#:
+	; Initializer LongDouble -0.000000123456
+	dq -0.000000123456
 
 section .data
 
-@11065floating8$123.456#:
-	; Initializer LongDouble 123.456
-	dq 123.456
+@11063floating8$minus123.456#:
+	; Initializer Double -123.456
+	dq -123.456
 
 section .data
 
-@11066floating8$123.456#:
-	; Initializer LongDouble 123.456
-	dq 123.456
+@11064floating8$minus123.456#:
+	; Initializer Double -123.456
+	dq -123.456
 
 section .data
 
-@11067floating8$123.456#:
-	; Initializer LongDouble 123.456
-	dq 123.456
+@11065floating8$minus123.456#:
+	; Initializer Double -123.456
+	dq -123.456
 
 section .data
 
-@11068floating8$123.456#:
-	; Initializer LongDouble 123.456
-	dq 123.456
+@11066floating8$minus123.456#:
+	; Initializer Double -123.456
+	dq -123.456
+
+section .data
+
+@11067floating8$minus123.456#:
+	; Initializer Double -123.456
+	dq -123.456
+
+section .data
+
+@11069floating8$minus123.456#:
+	; Initializer LongDouble -123.456
+	dq -123.456
 
 section .data
 
 @11070floating8$minus123.456#:
-	; Initializer Double -123.456
+	; Initializer LongDouble -123.456
 	dq -123.456
 
 section .data
 
 @11071floating8$minus123.456#:
-	; Initializer Double -123.456
+	; Initializer LongDouble -123.456
 	dq -123.456
 
 section .data
 
 @11072floating8$minus123.456#:
+	; Initializer LongDouble -123.456
+	dq -123.456
+
+section .data
+
+@11073floating8$minus123.456#:
+	; Initializer LongDouble -123.456
+	dq -123.456
+
+section .data
+
+@11075floating8$minus123.456#:
 	; Initializer Double -123.456
 	dq -123.456
 
 section .data
 
-@11073floating8$minus0.000000123456#:
-	; Initializer Double -0.000000123456
-	dq -0.000000123456
-
-section .data
-
-@11074floating8$minus0.000000123456#:
-	; Initializer Double -0.000000123456
-	dq -0.000000123456
-
-section .data
-
 @11076floating8$minus123.456#:
-	; Initializer LongDouble -123.456
+	; Initializer Double -123.456
 	dq -123.456
 
 section .data
 
 @11077floating8$minus123.456#:
-	; Initializer LongDouble -123.456
+	; Initializer Double -123.456
 	dq -123.456
 
 section .data
 
 @11078floating8$minus123.456#:
+	; Initializer Double -123.456
+	dq -123.456
+
+section .data
+
+@11079floating8$minus123.456#:
+	; Initializer Double -123.456
+	dq -123.456
+
+section .data
+
+@11081floating8$minus123.456#:
 	; Initializer LongDouble -123.456
 	dq -123.456
 
 section .data
 
-@11079floating8$minus0.000000123456#:
-	; Initializer LongDouble -0.000000123456
-	dq -0.000000123456
-
-section .data
-
-@11080floating8$minus0.000000123456#:
-	; Initializer LongDouble -0.000000123456
-	dq -0.000000123456
-
-section .data
-
 @11082floating8$minus123.456#:
-	; Initializer Double -123.456
+	; Initializer LongDouble -123.456
 	dq -123.456
 
 section .data
 
 @11083floating8$minus123.456#:
-	; Initializer Double -123.456
+	; Initializer LongDouble -123.456
 	dq -123.456
 
 section .data
 
 @11084floating8$minus123.456#:
-	; Initializer Double -123.456
+	; Initializer LongDouble -123.456
 	dq -123.456
 
 section .data
 
 @11085floating8$minus123.456#:
-	; Initializer Double -123.456
-	dq -123.456
-
-section .data
-
-@11086floating8$minus123.456#:
-	; Initializer Double -123.456
-	dq -123.456
-
-section .data
-
-@11088floating8$minus123.456#:
-	; Initializer LongDouble -123.456
-	dq -123.456
-
-section .data
-
-@11089floating8$minus123.456#:
-	; Initializer LongDouble -123.456
-	dq -123.456
-
-section .data
-
-@11090floating8$minus123.456#:
-	; Initializer LongDouble -123.456
-	dq -123.456
-
-section .data
-
-@11091floating8$minus123.456#:
-	; Initializer LongDouble -123.456
-	dq -123.456
-
-section .data
-
-@11092floating8$minus123.456#:
-	; Initializer LongDouble -123.456
-	dq -123.456
-
-section .data
-
-@11094floating8$minus123.456#:
-	; Initializer Double -123.456
-	dq -123.456
-
-section .data
-
-@11095floating8$minus123.456#:
-	; Initializer Double -123.456
-	dq -123.456
-
-section .data
-
-@11096floating8$minus123.456#:
-	; Initializer Double -123.456
-	dq -123.456
-
-section .data
-
-@11097floating8$minus123.456#:
-	; Initializer Double -123.456
-	dq -123.456
-
-section .data
-
-@11098floating8$minus123.456#:
-	; Initializer Double -123.456
-	dq -123.456
-
-section .data
-
-@11100floating8$minus123.456#:
-	; Initializer LongDouble -123.456
-	dq -123.456
-
-section .data
-
-@11101floating8$minus123.456#:
-	; Initializer LongDouble -123.456
-	dq -123.456
-
-section .data
-
-@11102floating8$minus123.456#:
-	; Initializer LongDouble -123.456
-	dq -123.456
-
-section .data
-
-@11103floating8$minus123.456#:
-	; Initializer LongDouble -123.456
-	dq -123.456
-
-section .data
-
-@11104floating8$minus123.456#:
 	; Initializer LongDouble -123.456
 	dq -123.456
 
@@ -618,20 +618,20 @@ section .text
 	mov dword [rbp + 24], 0
 
  stdio_test$1:
-	; Address £temporary4019 n
+	; Address £temporary4575 n
 	mov rsi, rbp
 	add rsi, 24
 
  stdio_test$2:
-	; Assign p £temporary4019
+	; Assign p £temporary4575
 	mov [rbp + 28], rsi
 
  stdio_test$3:
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$4:
-	; Parameter 60 pointer string_3C25i3E203C25i3E203C25li3E203C25li3E203C25u3E203C25lu3E0A0A#
-	mov qword [rbp + 60], @10920string_3C25i3E203C25i3E203C25li3E203C25li3E203C25u3E203C25lu3E0A0A#
+	; Parameter 60 string string_3C25i3E203C25i3E203C25li3E203C25li3E203C25u3E203C25lu3E0A0A#
+	mov qword [rbp + 60], @10901string_3C25i3E203C25i3E203C25li3E203C25li3E203C25u3E203C25lu3E0A0A#
 
  stdio_test$5:
 	; Parameter 68 signed int integral4$123#
@@ -673,8 +673,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$14:
-	; Parameter 60 pointer string_3C256i3E203C256i3E203C256li3E203C256li3E203C256u3E203C256lu3E0A#
-	mov qword [rbp + 60], @10927string_3C256i3E203C256i3E203C256li3E203C256li3E203C256u3E203C256lu3E0A#
+	; Parameter 60 string string_3C256i3E203C256i3E203C256li3E203C256li3E203C256u3E203C256lu3E0A#
+	mov qword [rbp + 60], @10908string_3C256i3E203C256i3E203C256li3E203C256li3E203C256u3E203C256lu3E0A#
 
  stdio_test$15:
 	; Parameter 68 signed int integral4$123#
@@ -716,8 +716,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$24:
-	; Parameter 60 pointer string_3C252B6i3E203C252B6i3E203C252B6li3E203C252B6li3E203C252B6u3E203C252B6lu3E0A#
-	mov qword [rbp + 60], @10934string_3C252B6i3E203C252B6i3E203C252B6li3E203C252B6li3E203C252B6u3E203C252B6lu3E0A#
+	; Parameter 60 string string_3C252B6i3E203C252B6i3E203C252B6li3E203C252B6li3E203C252B6u3E203C252B6lu3E0A#
+	mov qword [rbp + 60], @10915string_3C252B6i3E203C252B6i3E203C252B6li3E203C252B6li3E203C252B6u3E203C252B6lu3E0A#
 
  stdio_test$25:
 	; Parameter 68 signed int integral4$123#
@@ -759,8 +759,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$34:
-	; Parameter 60 pointer string_3C252D6i3E203C252D6i3E203C252D6li3E203C252D6li3E203C252D6u3E203C252D6lu3E0A#
-	mov qword [rbp + 60], @10941string_3C252D6i3E203C252D6i3E203C252D6li3E203C252D6li3E203C252D6u3E203C252D6lu3E0A#
+	; Parameter 60 string string_3C252D6i3E203C252D6i3E203C252D6li3E203C252D6li3E203C252D6u3E203C252D6lu3E0A#
+	mov qword [rbp + 60], @10922string_3C252D6i3E203C252D6i3E203C252D6li3E203C252D6li3E203C252D6u3E203C252D6lu3E0A#
 
  stdio_test$35:
 	; Parameter 68 signed int integral4$123#
@@ -802,8 +802,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$44:
-	; Parameter 60 pointer string_3C252B2D6i3E203C252B2D6i3E203C252B2D6li3E203C252B2D6li3E203C252B2D6u3E203C252B2D6lu3E0A0A#
-	mov qword [rbp + 60], @10948string_3C252B2D6i3E203C252B2D6i3E203C252B2D6li3E203C252B2D6li3E203C252B2D6u3E203C252B2D6lu3E0A0A#
+	; Parameter 60 string string_3C252B2D6i3E203C252B2D6i3E203C252B2D6li3E203C252B2D6li3E203C252B2D6u3E203C252B2D6lu3E0A0A#
+	mov qword [rbp + 60], @10929string_3C252B2D6i3E203C252B2D6i3E203C252B2D6li3E203C252B2D6li3E203C252B2D6u3E203C252B2D6lu3E0A0A#
 
  stdio_test$45:
 	; Parameter 68 signed int integral4$123#
@@ -845,8 +845,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$54:
-	; Parameter 60 pointer string_3C2506i3E203C2506i3E203C2506li3E203C2506li3E203C2506u3E203C2506lu3E0A#
-	mov qword [rbp + 60], @10959string_3C2506i3E203C2506i3E203C2506li3E203C2506li3E203C2506u3E203C2506lu3E0A#
+	; Parameter 60 string string_3C2506i3E203C2506i3E203C2506li3E203C2506li3E203C2506u3E203C2506lu3E0A#
+	mov qword [rbp + 60], @10940string_3C2506i3E203C2506i3E203C2506li3E203C2506li3E203C2506u3E203C2506lu3E0A#
 
  stdio_test$55:
 	; Parameter 68 signed int integral4$123#
@@ -888,8 +888,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$64:
-	; Parameter 60 pointer string_3C252B06i3E203C252B06i3E203C252B06li3E203C252B06li3E203C252B06u3E203C252B06lu3E0A#
-	mov qword [rbp + 60], @10966string_3C252B06i3E203C252B06i3E203C252B06li3E203C252B06li3E203C252B06u3E203C252B06lu3E0A#
+	; Parameter 60 string string_3C252B06i3E203C252B06i3E203C252B06li3E203C252B06li3E203C252B06u3E203C252B06lu3E0A#
+	mov qword [rbp + 60], @10947string_3C252B06i3E203C252B06i3E203C252B06li3E203C252B06li3E203C252B06u3E203C252B06lu3E0A#
 
  stdio_test$65:
 	; Parameter 68 signed int integral4$123#
@@ -931,8 +931,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$74:
-	; Parameter 60 pointer string_3C252D06i3E203C252D06i3E203C252D06li3E203C252D06li3E203C252D06u3E203C252D06lu3E0A#
-	mov qword [rbp + 60], @10973string_3C252D06i3E203C252D06i3E203C252D06li3E203C252D06li3E203C252D06u3E203C252D06lu3E0A#
+	; Parameter 60 string string_3C252D06i3E203C252D06i3E203C252D06li3E203C252D06li3E203C252D06u3E203C252D06lu3E0A#
+	mov qword [rbp + 60], @10954string_3C252D06i3E203C252D06i3E203C252D06li3E203C252D06li3E203C252D06u3E203C252D06lu3E0A#
 
  stdio_test$75:
 	; Parameter 68 signed int integral4$123#
@@ -974,8 +974,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$84:
-	; Parameter 60 pointer string_3C252B2D06i3E203C252B2D06i3E203C252B2D06li3E203C252B2D06li3E203C252B2D06u3E203C252B2D06lu3E0A0A#
-	mov qword [rbp + 60], @10980string_3C252B2D06i3E203C252B2D06i3E203C252B2D06li3E203C252B2D06li3E203C252B2D06u3E203C252B2D06lu3E0A0A#
+	; Parameter 60 string string_3C252B2D06i3E203C252B2D06i3E203C252B2D06li3E203C252B2D06li3E203C252B2D06u3E203C252B2D06lu3E0A0A#
+	mov qword [rbp + 60], @10961string_3C252B2D06i3E203C252B2D06i3E203C252B2D06li3E203C252B2D06li3E203C252B2D06u3E203C252B2D06lu3E0A0A#
 
  stdio_test$85:
 	; Parameter 68 signed int integral4$123#
@@ -1017,8 +1017,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$94:
-	; Parameter 60 pointer string_3C25206i3E203C25206i3E203C25206li3E203C25206li3E203C25206u3E203C25206lu3E0A#
-	mov qword [rbp + 60], @10987string_3C25206i3E203C25206i3E203C25206li3E203C25206li3E203C25206u3E203C25206lu3E0A#
+	; Parameter 60 string string_3C25206i3E203C25206i3E203C25206li3E203C25206li3E203C25206u3E203C25206lu3E0A#
+	mov qword [rbp + 60], @10968string_3C25206i3E203C25206i3E203C25206li3E203C25206li3E203C25206u3E203C25206lu3E0A#
 
  stdio_test$95:
 	; Parameter 68 signed int integral4$123#
@@ -1060,8 +1060,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$104:
-	; Parameter 60 pointer string_3C252B206i3E203C252B206i3E203C252B206li3E203C252B206li3E203C252B206u3E203C252B206lu3E0A#
-	mov qword [rbp + 60], @10994string_3C252B206i3E203C252B206i3E203C252B206li3E203C252B206li3E203C252B206u3E203C252B206lu3E0A#
+	; Parameter 60 string string_3C252B206i3E203C252B206i3E203C252B206li3E203C252B206li3E203C252B206u3E203C252B206lu3E0A#
+	mov qword [rbp + 60], @10975string_3C252B206i3E203C252B206i3E203C252B206li3E203C252B206li3E203C252B206u3E203C252B206lu3E0A#
 
  stdio_test$105:
 	; Parameter 68 signed int integral4$123#
@@ -1103,8 +1103,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$114:
-	; Parameter 60 pointer string_3C252D206i3E203C252D206i3E203C252D206li3E203C252D206li3E203C252D206u3E203C252D206lu3E0A#
-	mov qword [rbp + 60], @11001string_3C252D206i3E203C252D206i3E203C252D206li3E203C252D206li3E203C252D206u3E203C252D206lu3E0A#
+	; Parameter 60 string string_3C252D206i3E203C252D206i3E203C252D206li3E203C252D206li3E203C252D206u3E203C252D206lu3E0A#
+	mov qword [rbp + 60], @10982string_3C252D206i3E203C252D206i3E203C252D206li3E203C252D206li3E203C252D206u3E203C252D206lu3E0A#
 
  stdio_test$115:
 	; Parameter 68 signed int integral4$123#
@@ -1146,8 +1146,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$124:
-	; Parameter 60 pointer string_3C252B2D206i3E203C252B2D206i3E203C252B2D206li3E203C252B2D206li3E203C252B2D206u3E203C252B2D206lu3E0A0A#
-	mov qword [rbp + 60], @11008string_3C252B2D206i3E203C252B2D206i3E203C252B2D206li3E203C252B2D206li3E203C252B2D206u3E203C252B2D206lu3E0A0A#
+	; Parameter 60 string string_3C252B2D206i3E203C252B2D206i3E203C252B2D206li3E203C252B2D206li3E203C252B2D206u3E203C252B2D206lu3E0A0A#
+	mov qword [rbp + 60], @10989string_3C252B2D206i3E203C252B2D206i3E203C252B2D206li3E203C252B2D206li3E203C252B2D206u3E203C252B2D206lu3E0A0A#
 
  stdio_test$125:
 	; Parameter 68 signed int integral4$123#
@@ -1189,8 +1189,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$134:
-	; Parameter 60 pointer string_3C25x3E203C25X3E203C25o3E203C25lx3E203C25lX3E203C25lo3E0A#
-	mov qword [rbp + 60], @11015string_3C25x3E203C25X3E203C25o3E203C25lx3E203C25lX3E203C25lo3E0A#
+	; Parameter 60 string string_3C25x3E203C25X3E203C25o3E203C25lx3E203C25lX3E203C25lo3E0A#
+	mov qword [rbp + 60], @10996string_3C25x3E203C25X3E203C25o3E203C25lx3E203C25lX3E203C25lo3E0A#
 
  stdio_test$135:
 	; Parameter 68 signed int integral4$123#
@@ -1232,8 +1232,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$144:
-	; Parameter 60 pointer string_3C2523x3E203C2523X3E203C2523o3E203C2523lx3E203C2523lX3E203C2523lo3E0A#
-	mov qword [rbp + 60], @11022string_3C2523x3E203C2523X3E203C2523o3E203C2523lx3E203C2523lX3E203C2523lo3E0A#
+	; Parameter 60 string string_3C2523x3E203C2523X3E203C2523o3E203C2523lx3E203C2523lX3E203C2523lo3E0A#
+	mov qword [rbp + 60], @11003string_3C2523x3E203C2523X3E203C2523o3E203C2523lx3E203C2523lX3E203C2523lo3E0A#
 
  stdio_test$145:
 	; Parameter 68 signed int integral4$123#
@@ -1275,12 +1275,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$154:
-	; Parameter 60 pointer string_3C25253E203C25s3E203C25c3E203C25p3E0A0A#
-	mov qword [rbp + 60], @11029string_3C25253E203C25s3E203C25c3E203C25p3E0A0A#
+	; Parameter 60 string string_3C25253E203C25s3E203C25c3E203C25p3E0A0A#
+	mov qword [rbp + 60], @11010string_3C25253E203C25s3E203C25c3E203C25p3E0A0A#
 
  stdio_test$155:
-	; Parameter 68 pointer string_Hello2C20World21#
-	mov qword [rbp + 68], @11030string_Hello2C20World21#
+	; Parameter 68 string string_Hello2C20World21#
+	mov qword [rbp + 68], @11011string_Hello2C20World21#
 
  stdio_test$156:
 	; Parameter 76 signed int integral4$88#
@@ -1307,12 +1307,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$161:
-	; Parameter 60 pointer string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#
-	mov qword [rbp + 60], @11033string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#
+	; Parameter 60 string string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#
+	mov qword [rbp + 60], @11014string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#
 
  stdio_test$162:
 	; PushFloat floating8$123.456#
-	fld qword [@11034floating8$123.456#]
+	fld qword [@11015floating8$123.456#]
 
  stdio_test$163:
 	; Parameter 68 double floating8$123.456#
@@ -1320,7 +1320,7 @@ section .text
 
  stdio_test$164:
 	; PushFloat floating8$123.456#
-	fld qword [@11035floating8$123.456#]
+	fld qword [@11016floating8$123.456#]
 
  stdio_test$165:
 	; Parameter 76 double floating8$123.456#
@@ -1328,7 +1328,7 @@ section .text
 
  stdio_test$166:
 	; PushFloat floating8$123.456#
-	fld qword [@11036floating8$123.456#]
+	fld qword [@11017floating8$123.456#]
 
  stdio_test$167:
 	; Parameter 84 double floating8$123.456#
@@ -1336,7 +1336,7 @@ section .text
 
  stdio_test$168:
 	; PushFloat floating8$123456.1#
-	fld qword [@11037floating8$123456.1#]
+	fld qword [@11018floating8$123456.1#]
 
  stdio_test$169:
 	; Parameter 92 double floating8$123456.1#
@@ -1344,7 +1344,7 @@ section .text
 
  stdio_test$170:
 	; PushFloat floating8$123456.1#
-	fld qword [@11038floating8$123456.1#]
+	fld qword [@11019floating8$123456.1#]
 
  stdio_test$171:
 	; Parameter 100 double floating8$123456.1#
@@ -1366,12 +1366,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$175:
-	; Parameter 60 pointer string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#
-	mov qword [rbp + 60], @11039string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#
+	; Parameter 60 string string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#
+	mov qword [rbp + 60], @11020string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#
 
  stdio_test$176:
 	; PushFloat floating8$123.456#
-	fld qword [@11040floating8$123.456#]
+	fld qword [@11021floating8$123.456#]
 
  stdio_test$177:
 	; Parameter 68 long double floating8$123.456#
@@ -1379,7 +1379,7 @@ section .text
 
  stdio_test$178:
 	; PushFloat floating8$123.456#
-	fld qword [@11041floating8$123.456#]
+	fld qword [@11022floating8$123.456#]
 
  stdio_test$179:
 	; Parameter 76 long double floating8$123.456#
@@ -1387,7 +1387,7 @@ section .text
 
  stdio_test$180:
 	; PushFloat floating8$123.456#
-	fld qword [@11042floating8$123.456#]
+	fld qword [@11023floating8$123.456#]
 
  stdio_test$181:
 	; Parameter 84 long double floating8$123.456#
@@ -1395,7 +1395,7 @@ section .text
 
  stdio_test$182:
 	; PushFloat floating8$123456.1#
-	fld qword [@11043floating8$123456.1#]
+	fld qword [@11024floating8$123456.1#]
 
  stdio_test$183:
 	; Parameter 92 long double floating8$123456.1#
@@ -1403,7 +1403,7 @@ section .text
 
  stdio_test$184:
 	; PushFloat floating8$123456.1#
-	fld qword [@11044floating8$123456.1#]
+	fld qword [@11025floating8$123456.1#]
 
  stdio_test$185:
 	; Parameter 100 long double floating8$123456.1#
@@ -1425,12 +1425,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$189:
-	; Parameter 60 pointer string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#
-	mov qword [rbp + 60], @11045string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#
+	; Parameter 60 string string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#
+	mov qword [rbp + 60], @11026string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#
 
  stdio_test$190:
 	; PushFloat floating8$123.456#
-	fld qword [@11046floating8$123.456#]
+	fld qword [@11027floating8$123.456#]
 
  stdio_test$191:
 	; Parameter 68 double floating8$123.456#
@@ -1438,7 +1438,7 @@ section .text
 
  stdio_test$192:
 	; PushFloat floating8$123.456#
-	fld qword [@11047floating8$123.456#]
+	fld qword [@11028floating8$123.456#]
 
  stdio_test$193:
 	; Parameter 76 double floating8$123.456#
@@ -1446,7 +1446,7 @@ section .text
 
  stdio_test$194:
 	; PushFloat floating8$123.456#
-	fld qword [@11048floating8$123.456#]
+	fld qword [@11029floating8$123.456#]
 
  stdio_test$195:
 	; Parameter 84 double floating8$123.456#
@@ -1454,7 +1454,7 @@ section .text
 
  stdio_test$196:
 	; PushFloat floating8$123.456#
-	fld qword [@11049floating8$123.456#]
+	fld qword [@11030floating8$123.456#]
 
  stdio_test$197:
 	; Parameter 92 double floating8$123.456#
@@ -1462,7 +1462,7 @@ section .text
 
  stdio_test$198:
 	; PushFloat floating8$123.456#
-	fld qword [@11050floating8$123.456#]
+	fld qword [@11031floating8$123.456#]
 
  stdio_test$199:
 	; Parameter 100 double floating8$123.456#
@@ -1484,12 +1484,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$203:
-	; Parameter 60 pointer string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#
-	mov qword [rbp + 60], @11051string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#
+	; Parameter 60 string string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#
+	mov qword [rbp + 60], @11032string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#
 
  stdio_test$204:
 	; PushFloat floating8$123.456#
-	fld qword [@11052floating8$123.456#]
+	fld qword [@11033floating8$123.456#]
 
  stdio_test$205:
 	; Parameter 68 long double floating8$123.456#
@@ -1497,7 +1497,7 @@ section .text
 
  stdio_test$206:
 	; PushFloat floating8$123.456#
-	fld qword [@11053floating8$123.456#]
+	fld qword [@11034floating8$123.456#]
 
  stdio_test$207:
 	; Parameter 76 long double floating8$123.456#
@@ -1505,7 +1505,7 @@ section .text
 
  stdio_test$208:
 	; PushFloat floating8$123.456#
-	fld qword [@11054floating8$123.456#]
+	fld qword [@11035floating8$123.456#]
 
  stdio_test$209:
 	; Parameter 84 long double floating8$123.456#
@@ -1513,7 +1513,7 @@ section .text
 
  stdio_test$210:
 	; PushFloat floating8$123.456#
-	fld qword [@11055floating8$123.456#]
+	fld qword [@11036floating8$123.456#]
 
  stdio_test$211:
 	; Parameter 92 long double floating8$123.456#
@@ -1521,7 +1521,7 @@ section .text
 
  stdio_test$212:
 	; PushFloat floating8$123.456#
-	fld qword [@11056floating8$123.456#]
+	fld qword [@11037floating8$123.456#]
 
  stdio_test$213:
 	; Parameter 100 long double floating8$123.456#
@@ -1543,12 +1543,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$217:
-	; Parameter 60 pointer string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#
-	mov qword [rbp + 60], @11057string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#
+	; Parameter 60 string string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#
+	mov qword [rbp + 60], @11038string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#
 
  stdio_test$218:
 	; PushFloat floating8$123.456#
-	fld qword [@11058floating8$123.456#]
+	fld qword [@11039floating8$123.456#]
 
  stdio_test$219:
 	; Parameter 68 double floating8$123.456#
@@ -1556,7 +1556,7 @@ section .text
 
  stdio_test$220:
 	; PushFloat floating8$123.456#
-	fld qword [@11059floating8$123.456#]
+	fld qword [@11040floating8$123.456#]
 
  stdio_test$221:
 	; Parameter 76 double floating8$123.456#
@@ -1564,7 +1564,7 @@ section .text
 
  stdio_test$222:
 	; PushFloat floating8$123.456#
-	fld qword [@11060floating8$123.456#]
+	fld qword [@11041floating8$123.456#]
 
  stdio_test$223:
 	; Parameter 84 double floating8$123.456#
@@ -1572,7 +1572,7 @@ section .text
 
  stdio_test$224:
 	; PushFloat floating8$123.456#
-	fld qword [@11061floating8$123.456#]
+	fld qword [@11042floating8$123.456#]
 
  stdio_test$225:
 	; Parameter 92 double floating8$123.456#
@@ -1580,7 +1580,7 @@ section .text
 
  stdio_test$226:
 	; PushFloat floating8$123.456#
-	fld qword [@11062floating8$123.456#]
+	fld qword [@11043floating8$123.456#]
 
  stdio_test$227:
 	; Parameter 100 double floating8$123.456#
@@ -1602,12 +1602,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$231:
-	; Parameter 60 pointer string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#
-	mov qword [rbp + 60], @11063string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#
+	; Parameter 60 string string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#
+	mov qword [rbp + 60], @11044string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#
 
  stdio_test$232:
 	; PushFloat floating8$123.456#
-	fld qword [@11064floating8$123.456#]
+	fld qword [@11045floating8$123.456#]
 
  stdio_test$233:
 	; Parameter 68 long double floating8$123.456#
@@ -1615,7 +1615,7 @@ section .text
 
  stdio_test$234:
 	; PushFloat floating8$123.456#
-	fld qword [@11065floating8$123.456#]
+	fld qword [@11046floating8$123.456#]
 
  stdio_test$235:
 	; Parameter 76 long double floating8$123.456#
@@ -1623,7 +1623,7 @@ section .text
 
  stdio_test$236:
 	; PushFloat floating8$123.456#
-	fld qword [@11066floating8$123.456#]
+	fld qword [@11047floating8$123.456#]
 
  stdio_test$237:
 	; Parameter 84 long double floating8$123.456#
@@ -1631,7 +1631,7 @@ section .text
 
  stdio_test$238:
 	; PushFloat floating8$123.456#
-	fld qword [@11067floating8$123.456#]
+	fld qword [@11048floating8$123.456#]
 
  stdio_test$239:
 	; Parameter 92 long double floating8$123.456#
@@ -1639,7 +1639,7 @@ section .text
 
  stdio_test$240:
 	; PushFloat floating8$123.456#
-	fld qword [@11068floating8$123.456#]
+	fld qword [@11049floating8$123.456#]
 
  stdio_test$241:
 	; Parameter 100 long double floating8$123.456#
@@ -1661,12 +1661,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$245:
-	; Parameter 60 pointer string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#
-	mov qword [rbp + 60], @11069string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#
+	; Parameter 60 string string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#
+	mov qword [rbp + 60], @11050string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#
 
  stdio_test$246:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11070floating8$minus123.456#]
+	fld qword [@11051floating8$minus123.456#]
 
  stdio_test$247:
 	; Parameter 68 double floating8$minus123.456#
@@ -1674,7 +1674,7 @@ section .text
 
  stdio_test$248:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11071floating8$minus123.456#]
+	fld qword [@11052floating8$minus123.456#]
 
  stdio_test$249:
 	; Parameter 76 double floating8$minus123.456#
@@ -1682,7 +1682,7 @@ section .text
 
  stdio_test$250:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11072floating8$minus123.456#]
+	fld qword [@11053floating8$minus123.456#]
 
  stdio_test$251:
 	; Parameter 84 double floating8$minus123.456#
@@ -1690,7 +1690,7 @@ section .text
 
  stdio_test$252:
 	; PushFloat floating8$minus0.000000123456#
-	fld qword [@11073floating8$minus0.000000123456#]
+	fld qword [@11054floating8$minus0.000000123456#]
 
  stdio_test$253:
 	; Parameter 92 double floating8$minus0.000000123456#
@@ -1698,7 +1698,7 @@ section .text
 
  stdio_test$254:
 	; PushFloat floating8$minus0.000000123456#
-	fld qword [@11074floating8$minus0.000000123456#]
+	fld qword [@11055floating8$minus0.000000123456#]
 
  stdio_test$255:
 	; Parameter 100 double floating8$minus0.000000123456#
@@ -1720,12 +1720,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$259:
-	; Parameter 60 pointer string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#
-	mov qword [rbp + 60], @11075string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#
+	; Parameter 60 string string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#
+	mov qword [rbp + 60], @11056string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#
 
  stdio_test$260:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11076floating8$minus123.456#]
+	fld qword [@11057floating8$minus123.456#]
 
  stdio_test$261:
 	; Parameter 68 long double floating8$minus123.456#
@@ -1733,7 +1733,7 @@ section .text
 
  stdio_test$262:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11077floating8$minus123.456#]
+	fld qword [@11058floating8$minus123.456#]
 
  stdio_test$263:
 	; Parameter 76 long double floating8$minus123.456#
@@ -1741,7 +1741,7 @@ section .text
 
  stdio_test$264:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11078floating8$minus123.456#]
+	fld qword [@11059floating8$minus123.456#]
 
  stdio_test$265:
 	; Parameter 84 long double floating8$minus123.456#
@@ -1749,7 +1749,7 @@ section .text
 
  stdio_test$266:
 	; PushFloat floating8$minus0.000000123456#
-	fld qword [@11079floating8$minus0.000000123456#]
+	fld qword [@11060floating8$minus0.000000123456#]
 
  stdio_test$267:
 	; Parameter 92 long double floating8$minus0.000000123456#
@@ -1757,7 +1757,7 @@ section .text
 
  stdio_test$268:
 	; PushFloat floating8$minus0.000000123456#
-	fld qword [@11080floating8$minus0.000000123456#]
+	fld qword [@11061floating8$minus0.000000123456#]
 
  stdio_test$269:
 	; Parameter 100 long double floating8$minus0.000000123456#
@@ -1779,12 +1779,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$273:
-	; Parameter 60 pointer string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#
-	mov qword [rbp + 60], @11081string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#
+	; Parameter 60 string string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#
+	mov qword [rbp + 60], @11062string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#
 
  stdio_test$274:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11082floating8$minus123.456#]
+	fld qword [@11063floating8$minus123.456#]
 
  stdio_test$275:
 	; Parameter 68 double floating8$minus123.456#
@@ -1792,7 +1792,7 @@ section .text
 
  stdio_test$276:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11083floating8$minus123.456#]
+	fld qword [@11064floating8$minus123.456#]
 
  stdio_test$277:
 	; Parameter 76 double floating8$minus123.456#
@@ -1800,7 +1800,7 @@ section .text
 
  stdio_test$278:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11084floating8$minus123.456#]
+	fld qword [@11065floating8$minus123.456#]
 
  stdio_test$279:
 	; Parameter 84 double floating8$minus123.456#
@@ -1808,7 +1808,7 @@ section .text
 
  stdio_test$280:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11085floating8$minus123.456#]
+	fld qword [@11066floating8$minus123.456#]
 
  stdio_test$281:
 	; Parameter 92 double floating8$minus123.456#
@@ -1816,7 +1816,7 @@ section .text
 
  stdio_test$282:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11086floating8$minus123.456#]
+	fld qword [@11067floating8$minus123.456#]
 
  stdio_test$283:
 	; Parameter 100 double floating8$minus123.456#
@@ -1838,12 +1838,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$287:
-	; Parameter 60 pointer string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#
-	mov qword [rbp + 60], @11087string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#
+	; Parameter 60 string string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#
+	mov qword [rbp + 60], @11068string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#
 
  stdio_test$288:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11088floating8$minus123.456#]
+	fld qword [@11069floating8$minus123.456#]
 
  stdio_test$289:
 	; Parameter 68 long double floating8$minus123.456#
@@ -1851,7 +1851,7 @@ section .text
 
  stdio_test$290:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11089floating8$minus123.456#]
+	fld qword [@11070floating8$minus123.456#]
 
  stdio_test$291:
 	; Parameter 76 long double floating8$minus123.456#
@@ -1859,7 +1859,7 @@ section .text
 
  stdio_test$292:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11090floating8$minus123.456#]
+	fld qword [@11071floating8$minus123.456#]
 
  stdio_test$293:
 	; Parameter 84 long double floating8$minus123.456#
@@ -1867,7 +1867,7 @@ section .text
 
  stdio_test$294:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11091floating8$minus123.456#]
+	fld qword [@11072floating8$minus123.456#]
 
  stdio_test$295:
 	; Parameter 92 long double floating8$minus123.456#
@@ -1875,7 +1875,7 @@ section .text
 
  stdio_test$296:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11092floating8$minus123.456#]
+	fld qword [@11073floating8$minus123.456#]
 
  stdio_test$297:
 	; Parameter 100 long double floating8$minus123.456#
@@ -1897,12 +1897,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$301:
-	; Parameter 60 pointer string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#
-	mov qword [rbp + 60], @11093string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#
+	; Parameter 60 string string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#
+	mov qword [rbp + 60], @11074string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#
 
  stdio_test$302:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11094floating8$minus123.456#]
+	fld qword [@11075floating8$minus123.456#]
 
  stdio_test$303:
 	; Parameter 68 double floating8$minus123.456#
@@ -1910,7 +1910,7 @@ section .text
 
  stdio_test$304:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11095floating8$minus123.456#]
+	fld qword [@11076floating8$minus123.456#]
 
  stdio_test$305:
 	; Parameter 76 double floating8$minus123.456#
@@ -1918,7 +1918,7 @@ section .text
 
  stdio_test$306:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11096floating8$minus123.456#]
+	fld qword [@11077floating8$minus123.456#]
 
  stdio_test$307:
 	; Parameter 84 double floating8$minus123.456#
@@ -1926,7 +1926,7 @@ section .text
 
  stdio_test$308:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11097floating8$minus123.456#]
+	fld qword [@11078floating8$minus123.456#]
 
  stdio_test$309:
 	; Parameter 92 double floating8$minus123.456#
@@ -1934,7 +1934,7 @@ section .text
 
  stdio_test$310:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11098floating8$minus123.456#]
+	fld qword [@11079floating8$minus123.456#]
 
  stdio_test$311:
 	; Parameter 100 double floating8$minus123.456#
@@ -1956,12 +1956,12 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$315:
-	; Parameter 60 pointer string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#
-	mov qword [rbp + 60], @11099string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#
+	; Parameter 60 string string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#
+	mov qword [rbp + 60], @11080string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#
 
  stdio_test$316:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11100floating8$minus123.456#]
+	fld qword [@11081floating8$minus123.456#]
 
  stdio_test$317:
 	; Parameter 68 long double floating8$minus123.456#
@@ -1969,7 +1969,7 @@ section .text
 
  stdio_test$318:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11101floating8$minus123.456#]
+	fld qword [@11082floating8$minus123.456#]
 
  stdio_test$319:
 	; Parameter 76 long double floating8$minus123.456#
@@ -1977,7 +1977,7 @@ section .text
 
  stdio_test$320:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11102floating8$minus123.456#]
+	fld qword [@11083floating8$minus123.456#]
 
  stdio_test$321:
 	; Parameter 84 long double floating8$minus123.456#
@@ -1985,7 +1985,7 @@ section .text
 
  stdio_test$322:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11103floating8$minus123.456#]
+	fld qword [@11084floating8$minus123.456#]
 
  stdio_test$323:
 	; Parameter 92 long double floating8$minus123.456#
@@ -1993,7 +1993,7 @@ section .text
 
  stdio_test$324:
 	; PushFloat floating8$minus123.456#
-	fld qword [@11104floating8$minus123.456#]
+	fld qword [@11085floating8$minus123.456#]
 
  stdio_test$325:
 	; Parameter 100 long double floating8$minus123.456#
@@ -2027,8 +2027,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$332:
-	; Parameter 60 pointer string_Please20write20three20integers3A20#
-	mov qword [rbp + 60], @11111string_Please20write20three20integers3A20#
+	; Parameter 60 string string_Please20write20three20integers3A20#
+	mov qword [rbp + 60], @11092string_Please20write20three20integers3A20#
 
  stdio_test$333:
 	; Call 36 printf 0
@@ -2045,38 +2045,38 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$336:
-	; Parameter 60 pointer string_1232045620789#
-	mov qword [rbp + 60], @11112string_1232045620789#
+	; Parameter 60 string string_1232045620789#
+	mov qword [rbp + 60], @11093string_1232045620789#
 
  stdio_test$337:
-	; Parameter 68 pointer string_25i20252Ai2025i2025n#
-	mov qword [rbp + 68], @11113string_25i20252Ai2025i2025n#
+	; Parameter 68 string string_25i20252Ai2025i2025n#
+	mov qword [rbp + 68], @11094string_25i20252Ai2025i2025n#
 
  stdio_test$338:
-	; Address £temporary4049 a
+	; Address £temporary4605 a
 	mov rsi, rbp
 	add rsi, 24
 
  stdio_test$339:
-	; Parameter 76 pointer £temporary4049
+	; Parameter 76 pointer £temporary4605
 	mov [rbp + 76], rsi
 
  stdio_test$340:
-	; Address £temporary4050 b
+	; Address £temporary4606 b
 	mov rsi, rbp
 	add rsi, 28
 
  stdio_test$341:
-	; Parameter 84 pointer £temporary4050
+	; Parameter 84 pointer £temporary4606
 	mov [rbp + 84], rsi
 
  stdio_test$342:
-	; Address £temporary4051 n
+	; Address £temporary4607 n
 	mov rsi, rbp
 	add rsi, 32
 
  stdio_test$343:
-	; Parameter 92 pointer £temporary4051
+	; Parameter 92 pointer £temporary4607
 	mov [rbp + 92], rsi
 
  stdio_test$344:
@@ -2095,8 +2095,8 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$347:
-	; Parameter 60 pointer string_3C25i3E203C25i3E203C25i3E0A#
-	mov qword [rbp + 60], @11114string_3C25i3E203C25i3E203C25i3E0A#
+	; Parameter 60 string string_3C25i3E203C25i3E203C25i3E0A#
+	mov qword [rbp + 60], @11095string_3C25i3E203C25i3E203C25i3E0A#
 
  stdio_test$348:
 	; Parameter 68 signed int a
@@ -2129,8 +2129,8 @@ section .text
 	; PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$354:
-	; Parameter 148 pointer string_Please20write20the20patterns205Babc5D3A20#
-	mov qword [rbp + 148], @11118string_Please20write20the20patterns205Babc5D3A20#
+	; Parameter 148 string string_Please20write20the20patterns205Babc5D3A20#
+	mov qword [rbp + 148], @11099string_Please20write20the20patterns205Babc5D3A20#
 
  stdio_test$355:
 	; Call 124 printf 0
@@ -2147,15 +2147,15 @@ section .text
 	; PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$358:
-	; Parameter 148 pointer string_abcdef#
-	mov qword [rbp + 148], @11119string_abcdef#
+	; Parameter 148 string string_abcdef#
+	mov qword [rbp + 148], @11100string_abcdef#
 
  stdio_test$359:
-	; Parameter 156 pointer string_255Babc5D#
-	mov qword [rbp + 156], @11120string_255Babc5D#
+	; Parameter 156 string string_255Babc5D#
+	mov qword [rbp + 156], @11101string_255Babc5D#
 
  stdio_test$360:
-	; Parameter 164 pointer s
+	; Parameter 164 array s
 	mov [rbp + 164], rbp
 	add qword [rbp + 164], 24
 
@@ -2175,11 +2175,11 @@ section .text
 	; PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$364:
-	; Parameter 148 pointer string_3C25s3E0A#
-	mov qword [rbp + 148], @11121string_3C25s3E0A#
+	; Parameter 148 string string_3C25s3E0A#
+	mov qword [rbp + 148], @11102string_3C25s3E0A#
 
  stdio_test$365:
-	; Parameter 156 pointer s
+	; Parameter 156 array s
 	mov [rbp + 156], rbp
 	add qword [rbp + 156], 24
 
@@ -2199,8 +2199,8 @@ section .text
 	; PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$369:
-	; Parameter 148 pointer string_Please20write20the20patterns205B5Eabc5D3A20#
-	mov qword [rbp + 148], @11122string_Please20write20the20patterns205B5Eabc5D3A20#
+	; Parameter 148 string string_Please20write20the20patterns205B5Eabc5D3A20#
+	mov qword [rbp + 148], @11103string_Please20write20the20patterns205B5Eabc5D3A20#
 
  stdio_test$370:
 	; Call 124 printf 0
@@ -2217,15 +2217,15 @@ section .text
 	; PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$373:
-	; Parameter 148 pointer string_defabc#
-	mov qword [rbp + 148], @11123string_defabc#
+	; Parameter 148 string string_defabc#
+	mov qword [rbp + 148], @11104string_defabc#
 
  stdio_test$374:
-	; Parameter 156 pointer string_255B5Eabc5D#
-	mov qword [rbp + 156], @11124string_255B5Eabc5D#
+	; Parameter 156 string string_255B5Eabc5D#
+	mov qword [rbp + 156], @11105string_255B5Eabc5D#
 
  stdio_test$375:
-	; Parameter 164 pointer s
+	; Parameter 164 array s
 	mov [rbp + 164], rbp
 	add qword [rbp + 164], 24
 
@@ -2245,11 +2245,11 @@ section .text
 	; PreCall 124 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stdio_test$379:
-	; Parameter 148 pointer string_3C25s3E0A0A#
-	mov qword [rbp + 148], @11125string_3C25s3E0A0A#
+	; Parameter 148 string string_3C25s3E0A0A#
+	mov qword [rbp + 148], @11106string_3C25s3E0A0A#
 
  stdio_test$380:
-	; Parameter 156 pointer s
+	; Parameter 156 array s
 	mov [rbp + 156], rbp
 	add qword [rbp + 156], 24
 

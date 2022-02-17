@@ -30,54 +30,54 @@ section .text
 	mov dword [rbp + 40], 0
 
  strcpy$1:
-	; IntegralToIntegral £temporary3267 index
+	; IntegralToIntegral £temporary3250 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcpy$2:
-	; Add £temporary3268 source £temporary3267
+	; Add £temporary3251 source £temporary3250
 	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strcpy$3:
-	; Dereference £temporary3269 £temporary3268 0
+	; Dereference £temporary3252 £temporary3251 0
 
  strcpy$4:
-	; Equal 14 £temporary3269 integral1$0#
+	; Equal 14 £temporary3252 integral1$0#
 	cmp byte [rsi], 0
 	je strcpy$14
 
  strcpy$5:
-	; IntegralToIntegral £temporary3272 index
+	; IntegralToIntegral £temporary3255 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcpy$6:
-	; Add £temporary3273 target £temporary3272
+	; Add £temporary3256 target £temporary3255
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcpy$7:
-	; Dereference £temporary3274 £temporary3273 0
+	; Dereference £temporary3257 £temporary3256 0
 
  strcpy$8:
-	; IntegralToIntegral £temporary3275 index
+	; IntegralToIntegral £temporary3258 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcpy$9:
-	; Add £temporary3276 source £temporary3275
+	; Add £temporary3259 source £temporary3258
 	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strcpy$10:
-	; Dereference £temporary3277 £temporary3276 0
+	; Dereference £temporary3260 £temporary3259 0
 
  strcpy$11:
-	; Assign £temporary3274 £temporary3277
+	; Assign £temporary3257 £temporary3260
 	mov al, [rdi]
 	mov [rsi], al
 
@@ -90,21 +90,21 @@ section .text
 	jmp strcpy$1
 
  strcpy$14:
-	; IntegralToIntegral £temporary3278 index
+	; IntegralToIntegral £temporary3261 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcpy$15:
-	; Add £temporary3279 target £temporary3278
+	; Add £temporary3262 target £temporary3261
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcpy$16:
-	; Dereference £temporary3280 £temporary3279 0
+	; Dereference £temporary3263 £temporary3262 0
 
  strcpy$17:
-	; Assign £temporary3280 integral1$0#
+	; Assign £temporary3263 integral1$0#
 	mov byte [rsi], 0
 
  strcpy$18:
@@ -134,54 +134,54 @@ section .text
 	jge strncpy$15
 
  strncpy$2:
-	; IntegralToIntegral £temporary3282 index
+	; IntegralToIntegral £temporary3265 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncpy$3:
-	; Add £temporary3283 source £temporary3282
+	; Add £temporary3266 source £temporary3265
 	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strncpy$4:
-	; Dereference £temporary3284 £temporary3283 0
+	; Dereference £temporary3267 £temporary3266 0
 
  strncpy$5:
-	; Equal 15 £temporary3284 integral1$0#
+	; Equal 15 £temporary3267 integral1$0#
 	cmp byte [rsi], 0
 	je strncpy$15
 
  strncpy$6:
-	; IntegralToIntegral £temporary3288 index
+	; IntegralToIntegral £temporary3271 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncpy$7:
-	; Add £temporary3289 target £temporary3288
+	; Add £temporary3272 target £temporary3271
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncpy$8:
-	; Dereference £temporary3290 £temporary3289 0
+	; Dereference £temporary3273 £temporary3272 0
 
  strncpy$9:
-	; IntegralToIntegral £temporary3291 index
+	; IntegralToIntegral £temporary3274 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncpy$10:
-	; Add £temporary3292 source £temporary3291
+	; Add £temporary3275 source £temporary3274
 	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strncpy$11:
-	; Dereference £temporary3293 £temporary3292 0
+	; Dereference £temporary3276 £temporary3275 0
 
  strncpy$12:
-	; Assign £temporary3290 £temporary3293
+	; Assign £temporary3273 £temporary3276
 	mov al, [rdi]
 	mov [rsi], al
 
@@ -200,21 +200,21 @@ section .text
 	jge strncpy$22
 
  strncpy$16:
-	; IntegralToIntegral £temporary3296 index
+	; IntegralToIntegral £temporary3279 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncpy$17:
-	; Add £temporary3297 target £temporary3296
+	; Add £temporary3280 target £temporary3279
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncpy$18:
-	; Dereference £temporary3298 £temporary3297 0
+	; Dereference £temporary3281 £temporary3280 0
 
  strncpy$19:
-	; Assign £temporary3298 integral1$0#
+	; Assign £temporary3281 integral1$0#
 	mov byte [rsi], 0
 
  strncpy$20:
@@ -260,10 +260,10 @@ section .text
 	; PostCall 44
 
  strcat$4:
-	; GetReturnValue £temporary3299
+	; GetReturnValue £temporary3282
 
  strcat$5:
-	; Assign targetLength £temporary3299
+	; Assign targetLength £temporary3282
 	mov [rbp + 44], ebx
 
  strcat$6:
@@ -271,58 +271,58 @@ section .text
 	mov dword [rbp + 40], 0
 
  strcat$7:
-	; IntegralToIntegral £temporary3300 index
+	; IntegralToIntegral £temporary3283 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcat$8:
-	; Add £temporary3301 source £temporary3300
+	; Add £temporary3284 source £temporary3283
 	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strcat$9:
-	; Dereference £temporary3302 £temporary3301 0
+	; Dereference £temporary3285 £temporary3284 0
 
  strcat$10:
-	; Equal 21 £temporary3302 integral1$0#
+	; Equal 21 £temporary3285 integral1$0#
 	cmp byte [rsi], 0
 	je strcat$21
 
  strcat$11:
-	; Add £temporary3305 targetLength index
+	; Add £temporary3288 targetLength index
 	mov eax, [rbp + 44]
 	add eax, [rbp + 40]
 
  strcat$12:
-	; IntegralToIntegral £temporary3306 £temporary3305
+	; IntegralToIntegral £temporary3289 £temporary3288
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcat$13:
-	; Add £temporary3307 target £temporary3306
+	; Add £temporary3290 target £temporary3289
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcat$14:
-	; Dereference £temporary3308 £temporary3307 0
+	; Dereference £temporary3291 £temporary3290 0
 
  strcat$15:
-	; IntegralToIntegral £temporary3309 index
+	; IntegralToIntegral £temporary3292 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcat$16:
-	; Add £temporary3310 source £temporary3309
+	; Add £temporary3293 source £temporary3292
 	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strcat$17:
-	; Dereference £temporary3311 £temporary3310 0
+	; Dereference £temporary3294 £temporary3293 0
 
  strcat$18:
-	; Assign £temporary3308 £temporary3311
+	; Assign £temporary3291 £temporary3294
 	mov al, [rdi]
 	mov [rsi], al
 
@@ -335,25 +335,25 @@ section .text
 	jmp strcat$7
 
  strcat$21:
-	; Add £temporary3312 targetLength index
+	; Add £temporary3295 targetLength index
 	mov eax, [rbp + 44]
 	add eax, [rbp + 40]
 
  strcat$22:
-	; IntegralToIntegral £temporary3313 £temporary3312
+	; IntegralToIntegral £temporary3296 £temporary3295
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcat$23:
-	; Add £temporary3314 target £temporary3313
+	; Add £temporary3297 target £temporary3296
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcat$24:
-	; Dereference £temporary3315 £temporary3314 0
+	; Dereference £temporary3298 £temporary3297 0
 
  strcat$25:
-	; Assign £temporary3315 integral1$0#
+	; Assign £temporary3298 integral1$0#
 	mov byte [rsi], 0
 
  strcat$26:
@@ -391,10 +391,10 @@ section .text
 	; PostCall 48
 
  strncat$4:
-	; GetReturnValue £temporary3316
+	; GetReturnValue £temporary3299
 
  strncat$5:
-	; Assign targetLength £temporary3316
+	; Assign targetLength £temporary3299
 	mov [rbp + 48], ebx
 
  strncat$6:
@@ -402,68 +402,68 @@ section .text
 	mov dword [rbp + 44], 0
 
  strncat$7:
-	; Subtract £temporary3317 size integral4$1#
+	; Subtract £temporary3300 size integral4$1#
 	mov eax, [rbp + 40]
 	dec eax
 
  strncat$8:
-	; GreaterThanEqual 23 index £temporary3317
+	; GreaterThanEqual 23 index £temporary3300
 	cmp [rbp + 44], eax
 	jge strncat$23
 
  strncat$9:
-	; IntegralToIntegral £temporary3319 index
+	; IntegralToIntegral £temporary3302 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncat$10:
-	; Add £temporary3320 source £temporary3319
+	; Add £temporary3303 source £temporary3302
 	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strncat$11:
-	; Dereference £temporary3321 £temporary3320 0
+	; Dereference £temporary3304 £temporary3303 0
 
  strncat$12:
-	; Equal 23 £temporary3321 integral1$0#
+	; Equal 23 £temporary3304 integral1$0#
 	cmp byte [rsi], 0
 	je strncat$23
 
  strncat$13:
-	; Add £temporary3325 targetLength index
+	; Add £temporary3308 targetLength index
 	mov eax, [rbp + 48]
 	add eax, [rbp + 44]
 
  strncat$14:
-	; IntegralToIntegral £temporary3326 £temporary3325
+	; IntegralToIntegral £temporary3309 £temporary3308
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncat$15:
-	; Add £temporary3327 target £temporary3326
+	; Add £temporary3310 target £temporary3309
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncat$16:
-	; Dereference £temporary3328 £temporary3327 0
+	; Dereference £temporary3311 £temporary3310 0
 
  strncat$17:
-	; IntegralToIntegral £temporary3329 index
+	; IntegralToIntegral £temporary3312 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncat$18:
-	; Add £temporary3330 source £temporary3329
+	; Add £temporary3313 source £temporary3312
 	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strncat$19:
-	; Dereference £temporary3331 £temporary3330 0
+	; Dereference £temporary3314 £temporary3313 0
 
  strncat$20:
-	; Assign £temporary3328 £temporary3331
+	; Assign £temporary3311 £temporary3314
 	mov al, [rdi]
 	mov [rsi], al
 
@@ -476,29 +476,29 @@ section .text
 	jmp strncat$7
 
  strncat$23:
-	; Add £temporary3332 targetLength size
+	; Add £temporary3315 targetLength size
 	mov eax, [rbp + 48]
 	add eax, [rbp + 40]
 
  strncat$24:
-	; Subtract £temporary3333 £temporary3332 integral4$1#
+	; Subtract £temporary3316 £temporary3315 integral4$1#
 	dec eax
 
  strncat$25:
-	; IntegralToIntegral £temporary3334 £temporary3333
+	; IntegralToIntegral £temporary3317 £temporary3316
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncat$26:
-	; Add £temporary3335 target £temporary3334
+	; Add £temporary3318 target £temporary3317
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncat$27:
-	; Dereference £temporary3336 £temporary3335 0
+	; Dereference £temporary3319 £temporary3318 0
 
  strncat$28:
-	; Assign £temporary3336 integral1$0#
+	; Assign £temporary3319 integral1$0#
 	mov byte [rsi], 0
 
  strncat$29:
@@ -522,40 +522,40 @@ section .text
 	mov dword [rbp + 40], 0
 
  strcmp$1:
-	; IntegralToIntegral £temporary3338 index
+	; IntegralToIntegral £temporary3321 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$2:
-	; Add £temporary3339 left £temporary3338
+	; Add £temporary3322 left £temporary3321
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcmp$3:
-	; Dereference £temporary3340 £temporary3339 0
+	; Dereference £temporary3323 £temporary3322 0
 
  strcmp$4:
-	; NotEqual 11 £temporary3340 integral1$0#
+	; NotEqual 11 £temporary3323 integral1$0#
 	cmp byte [rsi], 0
 	jne strcmp$11
 
  strcmp$5:
-	; IntegralToIntegral £temporary3342 index
+	; IntegralToIntegral £temporary3325 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$6:
-	; Add £temporary3343 right £temporary3342
+	; Add £temporary3326 right £temporary3325
 	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strcmp$7:
-	; Dereference £temporary3344 £temporary3343 0
+	; Dereference £temporary3327 £temporary3326 0
 
  strcmp$8:
-	; NotEqual 11 £temporary3344 integral1$0#
+	; NotEqual 11 £temporary3327 integral1$0#
 	cmp byte [rsi], 0
 	jne strcmp$11
 
@@ -571,35 +571,35 @@ section .text
 	jmp rax
 
  strcmp$11:
-	; IntegralToIntegral £temporary3347 index
+	; IntegralToIntegral £temporary3330 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$12:
-	; Add £temporary3348 left £temporary3347
+	; Add £temporary3331 left £temporary3330
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcmp$13:
-	; Dereference £temporary3349 £temporary3348 0
+	; Dereference £temporary3332 £temporary3331 0
 
  strcmp$14:
-	; IntegralToIntegral £temporary3350 index
+	; IntegralToIntegral £temporary3333 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$15:
-	; Add £temporary3351 right £temporary3350
+	; Add £temporary3334 right £temporary3333
 	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strcmp$16:
-	; Dereference £temporary3352 £temporary3351 0
+	; Dereference £temporary3335 £temporary3334 0
 
  strcmp$17:
-	; GreaterThanEqual 20 £temporary3349 £temporary3352
+	; GreaterThanEqual 20 £temporary3332 £temporary3335
 	mov al, [rdi]
 	cmp [rsi], al
 	jge strcmp$20
@@ -616,35 +616,35 @@ section .text
 	jmp rax
 
  strcmp$20:
-	; IntegralToIntegral £temporary3354 index
+	; IntegralToIntegral £temporary3337 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$21:
-	; Add £temporary3355 left £temporary3354
+	; Add £temporary3338 left £temporary3337
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcmp$22:
-	; Dereference £temporary3356 £temporary3355 0
+	; Dereference £temporary3339 £temporary3338 0
 
  strcmp$23:
-	; IntegralToIntegral £temporary3357 index
+	; IntegralToIntegral £temporary3340 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$24:
-	; Add £temporary3358 right £temporary3357
+	; Add £temporary3341 right £temporary3340
 	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strcmp$25:
-	; Dereference £temporary3359 £temporary3358 0
+	; Dereference £temporary3342 £temporary3341 0
 
  strcmp$26:
-	; LessThanEqual 29 £temporary3356 £temporary3359
+	; LessThanEqual 29 £temporary3339 £temporary3342
 	mov al, [rdi]
 	cmp [rsi], al
 	jle strcmp$29
@@ -684,40 +684,40 @@ section .text
 	jge strncmp$32
 
  strncmp$2:
-	; IntegralToIntegral £temporary3370 index
+	; IntegralToIntegral £temporary3353 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$3:
-	; Add £temporary3371 left £temporary3370
+	; Add £temporary3354 left £temporary3353
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncmp$4:
-	; Dereference £temporary3372 £temporary3371 0
+	; Dereference £temporary3355 £temporary3354 0
 
  strncmp$5:
-	; NotEqual 12 £temporary3372 integral1$0#
+	; NotEqual 12 £temporary3355 integral1$0#
 	cmp byte [rsi], 0
 	jne strncmp$12
 
  strncmp$6:
-	; IntegralToIntegral £temporary3374 index
+	; IntegralToIntegral £temporary3357 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$7:
-	; Add £temporary3375 right £temporary3374
+	; Add £temporary3358 right £temporary3357
 	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strncmp$8:
-	; Dereference £temporary3376 £temporary3375 0
+	; Dereference £temporary3359 £temporary3358 0
 
  strncmp$9:
-	; NotEqual 12 £temporary3376 integral1$0#
+	; NotEqual 12 £temporary3359 integral1$0#
 	cmp byte [rsi], 0
 	jne strncmp$12
 
@@ -733,35 +733,35 @@ section .text
 	jmp rax
 
  strncmp$12:
-	; IntegralToIntegral £temporary3379 index
+	; IntegralToIntegral £temporary3362 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$13:
-	; Add £temporary3380 left £temporary3379
+	; Add £temporary3363 left £temporary3362
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncmp$14:
-	; Dereference £temporary3381 £temporary3380 0
+	; Dereference £temporary3364 £temporary3363 0
 
  strncmp$15:
-	; IntegralToIntegral £temporary3382 index
+	; IntegralToIntegral £temporary3365 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$16:
-	; Add £temporary3383 right £temporary3382
+	; Add £temporary3366 right £temporary3365
 	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strncmp$17:
-	; Dereference £temporary3384 £temporary3383 0
+	; Dereference £temporary3367 £temporary3366 0
 
  strncmp$18:
-	; GreaterThanEqual 21 £temporary3381 £temporary3384
+	; GreaterThanEqual 21 £temporary3364 £temporary3367
 	mov al, [rdi]
 	cmp [rsi], al
 	jge strncmp$21
@@ -778,35 +778,35 @@ section .text
 	jmp rax
 
  strncmp$21:
-	; IntegralToIntegral £temporary3386 index
+	; IntegralToIntegral £temporary3369 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$22:
-	; Add £temporary3387 left £temporary3386
+	; Add £temporary3370 left £temporary3369
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncmp$23:
-	; Dereference £temporary3388 £temporary3387 0
+	; Dereference £temporary3371 £temporary3370 0
 
  strncmp$24:
-	; IntegralToIntegral £temporary3389 index
+	; IntegralToIntegral £temporary3372 index
 	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$25:
-	; Add £temporary3390 right £temporary3389
+	; Add £temporary3373 right £temporary3372
 	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strncmp$26:
-	; Dereference £temporary3391 £temporary3390 0
+	; Dereference £temporary3374 £temporary3373 0
 
  strncmp$27:
-	; LessThanEqual 30 £temporary3388 £temporary3391
+	; LessThanEqual 30 £temporary3371 £temporary3374
 	mov al, [rdi]
 	cmp [rsi], al
 	jle strncmp$30
@@ -847,7 +847,7 @@ section .text
 section .text
 
  strchr:
-	; IntegralToIntegral £temporary3399 i
+	; IntegralToIntegral £temporary3382 i
 	mov eax, [rbp + 32]
 	cmp eax, 0
 	jge strchr$1
@@ -855,7 +855,7 @@ section .text
 	neg al
 
  strchr$1:
-	; Assign c £temporary3399
+	; Assign c £temporary3382
 	mov [rbp + 40], al
 
  strchr$2:
@@ -863,66 +863,66 @@ section .text
 	mov dword [rbp + 36], 0
 
  strchr$3:
-	; IntegralToIntegral £temporary3400 index
+	; IntegralToIntegral £temporary3383 index
 	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strchr$4:
-	; Add £temporary3401 text £temporary3400
+	; Add £temporary3384 text £temporary3383
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strchr$5:
-	; Dereference £temporary3402 £temporary3401 0
+	; Dereference £temporary3385 £temporary3384 0
 
  strchr$6:
-	; Equal 19 £temporary3402 integral1$0#
+	; Equal 19 £temporary3385 integral1$0#
 	cmp byte [rsi], 0
 	je strchr$19
 
  strchr$7:
-	; IntegralToIntegral £temporary3405 index
+	; IntegralToIntegral £temporary3388 index
 	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strchr$8:
-	; Add £temporary3406 text £temporary3405
+	; Add £temporary3389 text £temporary3388
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strchr$9:
-	; Dereference £temporary3407 £temporary3406 0
+	; Dereference £temporary3390 £temporary3389 0
 
  strchr$10:
-	; NotEqual 17 £temporary3407 c
+	; NotEqual 17 £temporary3390 c
 	mov al, [rbp + 40]
 	cmp [rsi], al
 	jne strchr$17
 
  strchr$11:
-	; IntegralToIntegral £temporary3409 index
+	; IntegralToIntegral £temporary3392 index
 	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strchr$12:
-	; Add £temporary3410 text £temporary3409
+	; Add £temporary3393 text £temporary3392
 	mov rbx, [rbp + 24]
 	add rbx, rax
 
  strchr$13:
-	; Dereference £temporary3411 £temporary3410 0
+	; Dereference £temporary3394 £temporary3393 0
 
  strchr$14:
-	; Address £temporary3412 £temporary3411
+	; Address £temporary3395 £temporary3394
 
  strchr$15:
 	; SetReturnValue
 
  strchr$16:
-	; Return £temporary3412
+	; Return £temporary3395
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -957,7 +957,7 @@ section .text
 	mov qword [rbp + 40], 0
 
  strrchr$1:
-	; IntegralToIntegral £temporary3415 i
+	; IntegralToIntegral £temporary3398 i
 	mov eax, [rbp + 32]
 	cmp eax, 0
 	jge strrchr$2
@@ -965,7 +965,7 @@ section .text
 	neg al
 
  strrchr$2:
-	; Assign c £temporary3415
+	; Assign c £temporary3398
 	mov [rbp + 48], al
 
  strrchr$3:
@@ -973,63 +973,63 @@ section .text
 	mov dword [rbp + 36], 0
 
  strrchr$4:
-	; IntegralToIntegral £temporary3416 index
+	; IntegralToIntegral £temporary3399 index
 	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strrchr$5:
-	; Add £temporary3417 text £temporary3416
+	; Add £temporary3400 text £temporary3399
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strrchr$6:
-	; Dereference £temporary3418 £temporary3417 0
+	; Dereference £temporary3401 £temporary3400 0
 
  strrchr$7:
-	; Equal 19 £temporary3418 integral1$0#
+	; Equal 19 £temporary3401 integral1$0#
 	cmp byte [rsi], 0
 	je strrchr$19
 
  strrchr$8:
-	; IntegralToIntegral £temporary3421 index
+	; IntegralToIntegral £temporary3404 index
 	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strrchr$9:
-	; Add £temporary3422 text £temporary3421
+	; Add £temporary3405 text £temporary3404
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strrchr$10:
-	; Dereference £temporary3423 £temporary3422 0
+	; Dereference £temporary3406 £temporary3405 0
 
  strrchr$11:
-	; NotEqual 17 £temporary3423 c
+	; NotEqual 17 £temporary3406 c
 	mov al, [rbp + 48]
 	cmp [rsi], al
 	jne strrchr$17
 
  strrchr$12:
-	; IntegralToIntegral £temporary3425 index
+	; IntegralToIntegral £temporary3408 index
 	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strrchr$13:
-	; Add £temporary3426 text £temporary3425
+	; Add £temporary3409 text £temporary3408
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strrchr$14:
-	; Dereference £temporary3427 £temporary3426 0
+	; Dereference £temporary3410 £temporary3409 0
 
  strrchr$15:
-	; Address £temporary3428 £temporary3427
+	; Address £temporary3411 £temporary3410
 
  strrchr$16:
-	; Assign result £temporary3428
+	; Assign result £temporary3411
 	mov [rbp + 40], rsi
 
  strrchr$17:
@@ -1061,21 +1061,21 @@ section .text
 	mov dword [rbp + 40], 0
 
  strspn$1:
-	; IntegralToIntegral £temporary3431 index
+	; IntegralToIntegral £temporary3414 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strspn$2:
-	; Add £temporary3432 mainString £temporary3431
+	; Add £temporary3415 mainString £temporary3414
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strspn$3:
-	; Dereference £temporary3433 £temporary3432 0
+	; Dereference £temporary3416 £temporary3415 0
 
  strspn$4:
-	; Equal 20 £temporary3433 integral1$0#
+	; Equal 20 £temporary3416 integral1$0#
 	cmp byte [rsi], 0
 	je strspn$20
 
@@ -1088,21 +1088,21 @@ section .text
 	mov [rbp + 68], rax
 
  strspn$7:
-	; IntegralToIntegral £temporary3436 index
+	; IntegralToIntegral £temporary3419 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strspn$8:
-	; Add £temporary3437 mainString £temporary3436
+	; Add £temporary3420 mainString £temporary3419
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strspn$9:
-	; Dereference £temporary3438 £temporary3437 0
+	; Dereference £temporary3421 £temporary3420 0
 
  strspn$10:
-	; IntegralToIntegral £temporary3439 £temporary3438
+	; IntegralToIntegral £temporary3422 £temporary3421
 	mov al, [rsi]
 	and eax, 255
 	cmp al, 0
@@ -1111,7 +1111,7 @@ section .text
 	neg eax
 
  strspn$11:
-	; Parameter 76 signed int £temporary3439
+	; Parameter 76 signed int £temporary3422
 	mov [rbp + 76], eax
 
  strspn$12:
@@ -1125,10 +1125,10 @@ section .text
 	; PostCall 44
 
  strspn$14:
-	; GetReturnValue £temporary3440
+	; GetReturnValue £temporary3423
 
  strspn$15:
-	; NotEqual 18 £temporary3440 integral8$0#
+	; NotEqual 18 £temporary3423 integral8$0#
 	cmp rbx, 0
 	jne strspn$18
 
@@ -1172,21 +1172,21 @@ section .text
 	mov dword [rbp + 40], 0
 
  strcspn$1:
-	; IntegralToIntegral £temporary3444 index
+	; IntegralToIntegral £temporary3427 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcspn$2:
-	; Add £temporary3445 mainString £temporary3444
+	; Add £temporary3428 mainString £temporary3427
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcspn$3:
-	; Dereference £temporary3446 £temporary3445 0
+	; Dereference £temporary3429 £temporary3428 0
 
  strcspn$4:
-	; Equal 20 £temporary3446 integral1$0#
+	; Equal 20 £temporary3429 integral1$0#
 	cmp byte [rsi], 0
 	je strcspn$20
 
@@ -1199,21 +1199,21 @@ section .text
 	mov [rbp + 68], rax
 
  strcspn$7:
-	; IntegralToIntegral £temporary3449 index
+	; IntegralToIntegral £temporary3432 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcspn$8:
-	; Add £temporary3450 mainString £temporary3449
+	; Add £temporary3433 mainString £temporary3432
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcspn$9:
-	; Dereference £temporary3451 £temporary3450 0
+	; Dereference £temporary3434 £temporary3433 0
 
  strcspn$10:
-	; IntegralToIntegral £temporary3452 £temporary3451
+	; IntegralToIntegral £temporary3435 £temporary3434
 	mov al, [rsi]
 	and eax, 255
 	cmp al, 0
@@ -1222,7 +1222,7 @@ section .text
 	neg eax
 
  strcspn$11:
-	; Parameter 76 signed int £temporary3452
+	; Parameter 76 signed int £temporary3435
 	mov [rbp + 76], eax
 
  strcspn$12:
@@ -1236,10 +1236,10 @@ section .text
 	; PostCall 44
 
  strcspn$14:
-	; GetReturnValue £temporary3453
+	; GetReturnValue £temporary3436
 
  strcspn$15:
-	; Equal 18 £temporary3453 integral8$0#
+	; Equal 18 £temporary3436 integral8$0#
 	cmp rbx, 0
 	je strcspn$18
 
@@ -1283,21 +1283,21 @@ section .text
 	mov dword [rbp + 40], 0
 
  strpbrk$1:
-	; IntegralToIntegral £temporary3457 index
+	; IntegralToIntegral £temporary3440 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strpbrk$2:
-	; Add £temporary3458 mainString £temporary3457
+	; Add £temporary3441 mainString £temporary3440
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strpbrk$3:
-	; Dereference £temporary3459 £temporary3458 0
+	; Dereference £temporary3442 £temporary3441 0
 
  strpbrk$4:
-	; Equal 24 £temporary3459 integral1$0#
+	; Equal 24 £temporary3442 integral1$0#
 	cmp byte [rsi], 0
 	je strpbrk$24
 
@@ -1310,21 +1310,21 @@ section .text
 	mov [rbp + 68], rax
 
  strpbrk$7:
-	; IntegralToIntegral £temporary3462 index
+	; IntegralToIntegral £temporary3445 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strpbrk$8:
-	; Add £temporary3463 mainString £temporary3462
+	; Add £temporary3446 mainString £temporary3445
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strpbrk$9:
-	; Dereference £temporary3464 £temporary3463 0
+	; Dereference £temporary3447 £temporary3446 0
 
  strpbrk$10:
-	; IntegralToIntegral £temporary3465 £temporary3464
+	; IntegralToIntegral £temporary3448 £temporary3447
 	mov al, [rsi]
 	and eax, 255
 	cmp al, 0
@@ -1333,7 +1333,7 @@ section .text
 	neg eax
 
  strpbrk$11:
-	; Parameter 76 signed int £temporary3465
+	; Parameter 76 signed int £temporary3448
 	mov [rbp + 76], eax
 
  strpbrk$12:
@@ -1347,35 +1347,35 @@ section .text
 	; PostCall 44
 
  strpbrk$14:
-	; GetReturnValue £temporary3466
+	; GetReturnValue £temporary3449
 
  strpbrk$15:
-	; Equal 22 £temporary3466 integral8$0#
+	; Equal 22 £temporary3449 integral8$0#
 	cmp rbx, 0
 	je strpbrk$22
 
  strpbrk$16:
-	; IntegralToIntegral £temporary3468 index
+	; IntegralToIntegral £temporary3451 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strpbrk$17:
-	; Add £temporary3469 mainString £temporary3468
+	; Add £temporary3452 mainString £temporary3451
 	mov rbx, [rbp + 24]
 	add rbx, rax
 
  strpbrk$18:
-	; Dereference £temporary3470 £temporary3469 0
+	; Dereference £temporary3453 £temporary3452 0
 
  strpbrk$19:
-	; Address £temporary3471 £temporary3470
+	; Address £temporary3454 £temporary3453
 
  strpbrk$20:
 	; SetReturnValue
 
  strpbrk$21:
-	; Return £temporary3471
+	; Return £temporary3454
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -1424,10 +1424,10 @@ section .text
 	; PostCall 44
 
  strstr$4:
-	; GetReturnValue £temporary3474
+	; GetReturnValue £temporary3457
 
  strstr$5:
-	; Assign subStringSize £temporary3474
+	; Assign subStringSize £temporary3457
 	mov [rbp + 44], ebx
 
  strstr$6:
@@ -1435,21 +1435,21 @@ section .text
 	mov dword [rbp + 40], 0
 
  strstr$7:
-	; IntegralToIntegral £temporary3475 index
+	; IntegralToIntegral £temporary3458 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strstr$8:
-	; Add £temporary3476 mainString £temporary3475
+	; Add £temporary3459 mainString £temporary3458
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strstr$9:
-	; Dereference £temporary3477 £temporary3476 0
+	; Dereference £temporary3460 £temporary3459 0
 
  strstr$10:
-	; Equal 29 £temporary3477 integral1$0#
+	; Equal 29 £temporary3460 integral1$0#
 	cmp byte [rsi], 0
 	je strstr$29
 
@@ -1457,18 +1457,18 @@ section .text
 	; PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  strstr$12:
-	; IntegralToIntegral £temporary3480 index
+	; IntegralToIntegral £temporary3463 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strstr$13:
-	; Add £temporary3481 mainString £temporary3480
+	; Add £temporary3464 mainString £temporary3463
 	mov rbx, [rbp + 24]
 	add rbx, rax
 
  strstr$14:
-	; Parameter 72 pointer £temporary3481
+	; Parameter 72 pointer £temporary3464
 	mov [rbp + 72], rbx
 
  strstr$15:
@@ -1492,35 +1492,35 @@ section .text
 	; PostCall 48
 
  strstr$19:
-	; GetReturnValue £temporary3482
+	; GetReturnValue £temporary3465
 
  strstr$20:
-	; NotEqual 27 £temporary3482 integral4$0#
+	; NotEqual 27 £temporary3465 integral4$0#
 	cmp ebx, 0
 	jne strstr$27
 
  strstr$21:
-	; IntegralToIntegral £temporary3484 index
+	; IntegralToIntegral £temporary3467 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strstr$22:
-	; Add £temporary3485 mainString £temporary3484
+	; Add £temporary3468 mainString £temporary3467
 	mov rbx, [rbp + 24]
 	add rbx, rax
 
  strstr$23:
-	; Dereference £temporary3486 £temporary3485 0
+	; Dereference £temporary3469 £temporary3468 0
 
  strstr$24:
-	; Address £temporary3487 £temporary3486
+	; Address £temporary3470 £temporary3469
 
  strstr$25:
 	; SetReturnValue
 
  strstr$26:
-	; Return £temporary3487
+	; Return £temporary3470
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -1555,21 +1555,21 @@ section .text
 	mov dword [rbp + 32], 0
 
  strlen$1:
-	; IntegralToIntegral £temporary3490 index
+	; IntegralToIntegral £temporary3473 index
 	mov eax, [rbp + 32]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strlen$2:
-	; Add £temporary3491 string £temporary3490
+	; Add £temporary3474 string £temporary3473
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strlen$3:
-	; Dereference £temporary3492 £temporary3491 0
+	; Dereference £temporary3475 £temporary3474 0
 
  strlen$4:
-	; Equal 7 £temporary3492 integral1$0#
+	; Equal 7 £temporary3475 integral1$0#
 	cmp byte [rsi], 0
 	je strlen$7
 
@@ -1597,7 +1597,7 @@ section .text
 
 section .data
 
-@7425integral4$8#:
+@7408integral4$8#:
 	; Initializer SignedInt 8
 	dd 8
 
@@ -1617,10 +1617,10 @@ section .text
 	; PostCall 28
 
  strerror$3:
-	; GetReturnValue £temporary3495
+	; GetReturnValue £temporary3478
 
  strerror$4:
-	; Assign localeConvPtr £temporary3495
+	; Assign localeConvPtr £temporary3478
 	mov [rbp + 28], rbx
 
  strerror$5:
@@ -1629,11 +1629,11 @@ section .text
 	je strerror$15
 
  strerror$6:
-	; Dereference £temporary3497 localeConvPtr 0
+	; Dereference £temporary3480 localeConvPtr 0
 	mov rsi, [rbp + 28]
 
  strerror$7:
-	; Assign messageList £temporary3497.messageList
+	; Assign messageList £temporary3480.messageList
 	mov rax, [rsi + 56]
 	mov [rbp + 36], rax
 
@@ -1643,29 +1643,29 @@ section .text
 	je strerror$15
 
  strerror$9:
-	; Multiply £temporary3499 errno integral4$8#
+	; Multiply £temporary3482 errno integral4$8#
 	mov eax, [rbp + 24]
 	xor edx, edx
-	imul dword [@7425integral4$8#]
+	imul dword [@7408integral4$8#]
 
  strerror$10:
-	; IntegralToIntegral £temporary3500 £temporary3499
+	; IntegralToIntegral £temporary3483 £temporary3482
 	mov rbx, 4294967295
 	and rax, rbx
 
  strerror$11:
-	; Add £temporary3501 messageList £temporary3500
+	; Add £temporary3484 messageList £temporary3483
 	mov rsi, [rbp + 36]
 	add rsi, rax
 
  strerror$12:
-	; Dereference £temporary3502 £temporary3501 0
+	; Dereference £temporary3485 £temporary3484 0
 
  strerror$13:
 	; SetReturnValue
 
  strerror$14:
-	; Return £temporary3502
+	; Return £temporary3485
 	mov rbx, [rsi]
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
@@ -1688,7 +1688,7 @@ section .text
 
 section .data
 
-@7430$token:
+@7413$token:
 	; Initializer Pointer 0
 	dq 0
 
@@ -1700,11 +1700,11 @@ section .text
 	je strtok$42
 
  strtok$1:
-	; Dereference £temporary3509 £temporary3508 0
+	; Dereference £temporary3492 £temporary3491 0
 	mov rsi, [rbp + 24]
 
  strtok$2:
-	; NotEqual 5 £temporary3509 integral1$0#
+	; NotEqual 5 £temporary3492 integral1$0#
 	cmp byte [rsi], 0
 	jne strtok$5
 
@@ -1724,21 +1724,21 @@ section .text
 	mov dword [rbp + 40], 0
 
  strtok$6:
-	; IntegralToIntegral £temporary3513 index
+	; IntegralToIntegral £temporary3496 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$7:
-	; Add £temporary3514 string £temporary3513
+	; Add £temporary3497 string £temporary3496
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strtok$8:
-	; Dereference £temporary3515 £temporary3514 0
+	; Dereference £temporary3498 £temporary3497 0
 
  strtok$9:
-	; Equal 35 £temporary3515 integral1$0#
+	; Equal 35 £temporary3498 integral1$0#
 	cmp byte [rsi], 0
 	je strtok$35
 
@@ -1751,21 +1751,21 @@ section .text
 	mov [rbp + 76], rax
 
  strtok$12:
-	; IntegralToIntegral £temporary3518 index
+	; IntegralToIntegral £temporary3501 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$13:
-	; Add £temporary3519 string £temporary3518
+	; Add £temporary3502 string £temporary3501
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strtok$14:
-	; Dereference £temporary3520 £temporary3519 0
+	; Dereference £temporary3503 £temporary3502 0
 
  strtok$15:
-	; IntegralToIntegral £temporary3521 £temporary3520
+	; IntegralToIntegral £temporary3504 £temporary3503
 	mov al, [rsi]
 	and eax, 255
 	cmp al, 0
@@ -1774,7 +1774,7 @@ section .text
 	neg eax
 
  strtok$16:
-	; Parameter 84 signed int £temporary3521
+	; Parameter 84 signed int £temporary3504
 	mov [rbp + 84], eax
 
  strtok$17:
@@ -1788,55 +1788,55 @@ section .text
 	; PostCall 52
 
  strtok$19:
-	; GetReturnValue £temporary3522
+	; GetReturnValue £temporary3505
 
  strtok$20:
-	; Equal 33 £temporary3522 integral8$0#
+	; Equal 33 £temporary3505 integral8$0#
 	cmp rbx, 0
 	je strtok$33
 
  strtok$21:
-	; IntegralToIntegral £temporary3524 index
+	; IntegralToIntegral £temporary3507 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$22:
-	; Add £temporary3525 string £temporary3524
+	; Add £temporary3508 string £temporary3507
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strtok$23:
-	; Dereference £temporary3526 £temporary3525 0
+	; Dereference £temporary3509 £temporary3508 0
 
  strtok$24:
-	; Assign £temporary3526 integral1$0#
+	; Assign £temporary3509 integral1$0#
 	mov byte [rsi], 0
 
  strtok$25:
-	; Add £temporary3527 index integral4$1#
+	; Add £temporary3510 index integral4$1#
 	mov eax, [rbp + 40]
 	inc eax
 
  strtok$26:
-	; IntegralToIntegral £temporary3528 £temporary3527
+	; IntegralToIntegral £temporary3511 £temporary3510
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$27:
-	; Add £temporary3529 string £temporary3528
+	; Add £temporary3512 string £temporary3511
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strtok$28:
-	; Dereference £temporary3530 £temporary3529 0
+	; Dereference £temporary3513 £temporary3512 0
 
  strtok$29:
-	; Address £temporary3531 £temporary3530
+	; Address £temporary3514 £temporary3513
 
  strtok$30:
-	; Assign token £temporary3531
-	mov [@7430$token], rsi
+	; Assign token £temporary3514
+	mov [@7413$token], rsi
 
  strtok$31:
 	; SetReturnValue
@@ -1858,25 +1858,25 @@ section .text
 	jmp strtok$6
 
  strtok$35:
-	; IntegralToIntegral £temporary3534 index
+	; IntegralToIntegral £temporary3517 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$36:
-	; Add £temporary3535 string £temporary3534
+	; Add £temporary3518 string £temporary3517
 	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strtok$37:
-	; Dereference £temporary3536 £temporary3535 0
+	; Dereference £temporary3519 £temporary3518 0
 
  strtok$38:
-	; Address £temporary3537 £temporary3536
+	; Address £temporary3520 £temporary3519
 
  strtok$39:
-	; Assign token £temporary3537
-	mov [@7430$token], rsi
+	; Assign token £temporary3520
+	mov [@7413$token], rsi
 
  strtok$40:
 	; SetReturnValue
@@ -1891,7 +1891,7 @@ section .text
 
  strtok$42:
 	; NotEqual 45 token integral8$0#
-	cmp qword [@7430$token], 0
+	cmp qword [@7413$token], 0
 	jne strtok$45
 
  strtok$43:
@@ -1906,11 +1906,11 @@ section .text
 	jmp rax
 
  strtok$45:
-	; Dereference £temporary3540 £temporary3539 0
-	mov rsi, [@7430$token]
+	; Dereference £temporary3523 £temporary3522 0
+	mov rsi, [@7413$token]
 
  strtok$46:
-	; NotEqual 49 £temporary3540 integral1$0#
+	; NotEqual 49 £temporary3523 integral1$0#
 	cmp byte [rsi], 0
 	jne strtok$49
 
@@ -1930,21 +1930,21 @@ section .text
 	mov dword [rbp + 40], 0
 
  strtok$50:
-	; IntegralToIntegral £temporary3544 index
+	; IntegralToIntegral £temporary3527 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$51:
-	; Add £temporary3545 token £temporary3544
-	mov rsi, [@7430$token]
+	; Add £temporary3528 token £temporary3527
+	mov rsi, [@7413$token]
 	add rsi, rax
 
  strtok$52:
-	; Dereference £temporary3546 £temporary3545 0
+	; Dereference £temporary3529 £temporary3528 0
 
  strtok$53:
-	; Equal 80 £temporary3546 integral1$0#
+	; Equal 80 £temporary3529 integral1$0#
 	cmp byte [rsi], 0
 	je strtok$80
 
@@ -1957,21 +1957,21 @@ section .text
 	mov [rbp + 76], rax
 
  strtok$56:
-	; IntegralToIntegral £temporary3549 index
+	; IntegralToIntegral £temporary3532 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$57:
-	; Add £temporary3550 token £temporary3549
-	mov rsi, [@7430$token]
+	; Add £temporary3533 token £temporary3532
+	mov rsi, [@7413$token]
 	add rsi, rax
 
  strtok$58:
-	; Dereference £temporary3551 £temporary3550 0
+	; Dereference £temporary3534 £temporary3533 0
 
  strtok$59:
-	; IntegralToIntegral £temporary3552 £temporary3551
+	; IntegralToIntegral £temporary3535 £temporary3534
 	mov al, [rsi]
 	and eax, 255
 	cmp al, 0
@@ -1980,7 +1980,7 @@ section .text
 	neg eax
 
  strtok$60:
-	; Parameter 84 signed int £temporary3552
+	; Parameter 84 signed int £temporary3535
 	mov [rbp + 84], eax
 
  strtok$61:
@@ -1994,60 +1994,60 @@ section .text
 	; PostCall 52
 
  strtok$63:
-	; GetReturnValue £temporary3553
+	; GetReturnValue £temporary3536
 
  strtok$64:
-	; Equal 78 £temporary3553 integral8$0#
+	; Equal 78 £temporary3536 integral8$0#
 	cmp rbx, 0
 	je strtok$78
 
  strtok$65:
 	; Assign tokenStart2 token
-	mov rax, [@7430$token]
+	mov rax, [@7413$token]
 	mov [rbp + 52], rax
 
  strtok$66:
-	; IntegralToIntegral £temporary3555 index
+	; IntegralToIntegral £temporary3538 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$67:
-	; Add £temporary3556 token £temporary3555
-	mov rsi, [@7430$token]
+	; Add £temporary3539 token £temporary3538
+	mov rsi, [@7413$token]
 	add rsi, rax
 
  strtok$68:
-	; Dereference £temporary3557 £temporary3556 0
+	; Dereference £temporary3540 £temporary3539 0
 
  strtok$69:
-	; Assign £temporary3557 integral1$0#
+	; Assign £temporary3540 integral1$0#
 	mov byte [rsi], 0
 
  strtok$70:
-	; Add £temporary3558 index integral4$1#
+	; Add £temporary3541 index integral4$1#
 	mov eax, [rbp + 40]
 	inc eax
 
  strtok$71:
-	; IntegralToIntegral £temporary3559 £temporary3558
+	; IntegralToIntegral £temporary3542 £temporary3541
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$72:
-	; Add £temporary3560 token £temporary3559
-	mov rsi, [@7430$token]
+	; Add £temporary3543 token £temporary3542
+	mov rsi, [@7413$token]
 	add rsi, rax
 
  strtok$73:
-	; Dereference £temporary3561 £temporary3560 0
+	; Dereference £temporary3544 £temporary3543 0
 
  strtok$74:
-	; Address £temporary3562 £temporary3561
+	; Address £temporary3545 £temporary3544
 
  strtok$75:
-	; Assign token £temporary3562
-	mov [@7430$token], rsi
+	; Assign token £temporary3545
+	mov [@7413$token], rsi
 
  strtok$76:
 	; SetReturnValue
@@ -2070,29 +2070,29 @@ section .text
 
  strtok$80:
 	; Assign tokenStart token
-	mov rax, [@7430$token]
+	mov rax, [@7413$token]
 	mov [rbp + 44], rax
 
  strtok$81:
-	; IntegralToIntegral £temporary3565 index
+	; IntegralToIntegral £temporary3548 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$82:
-	; Add £temporary3566 token £temporary3565
-	mov rsi, [@7430$token]
+	; Add £temporary3549 token £temporary3548
+	mov rsi, [@7413$token]
 	add rsi, rax
 
  strtok$83:
-	; Dereference £temporary3567 £temporary3566 0
+	; Dereference £temporary3550 £temporary3549 0
 
  strtok$84:
-	; Address £temporary3568 £temporary3567
+	; Address £temporary3551 £temporary3550
 
  strtok$85:
-	; Assign token £temporary3568
-	mov [@7430$token], rsi
+	; Assign token £temporary3551
+	mov [@7413$token], rsi
 
  strtok$86:
 	; SetReturnValue
@@ -2111,19 +2111,19 @@ section .text
 section .text
 
  memcpy:
-	; IntegralToIntegral £temporary3573 target
+	; IntegralToIntegral £temporary3556 target
 	mov rax, [rbp + 24]
 
  memcpy$1:
-	; Assign charTarget £temporary3573
+	; Assign charTarget £temporary3556
 	mov [rbp + 44], rax
 
  memcpy$2:
-	; IntegralToIntegral £temporary3574 source
+	; IntegralToIntegral £temporary3557 source
 	mov rax, [rbp + 32]
 
  memcpy$3:
-	; Assign charSource £temporary3574
+	; Assign charSource £temporary3557
 	mov [rbp + 52], rax
 
  memcpy$4:
@@ -2137,35 +2137,35 @@ section .text
 	jge memcpy$15
 
  memcpy$6:
-	; IntegralToIntegral £temporary3577 index
+	; IntegralToIntegral £temporary3560 index
 	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcpy$7:
-	; Add £temporary3578 charTarget £temporary3577
+	; Add £temporary3561 charTarget £temporary3560
 	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memcpy$8:
-	; Dereference £temporary3579 £temporary3578 0
+	; Dereference £temporary3562 £temporary3561 0
 
  memcpy$9:
-	; IntegralToIntegral £temporary3580 index
+	; IntegralToIntegral £temporary3563 index
 	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcpy$10:
-	; Add £temporary3581 charSource £temporary3580
+	; Add £temporary3564 charSource £temporary3563
 	mov rdi, [rbp + 52]
 	add rdi, rax
 
  memcpy$11:
-	; Dereference £temporary3582 £temporary3581 0
+	; Dereference £temporary3565 £temporary3564 0
 
  memcpy$12:
-	; Assign £temporary3579 £temporary3582
+	; Assign £temporary3562 £temporary3565
 	mov al, [rdi]
 	mov [rsi], al
 
@@ -2178,14 +2178,14 @@ section .text
 	jmp memcpy$5
 
  memcpy$15:
-	; IntegralToIntegral £temporary3583 target
+	; IntegralToIntegral £temporary3566 target
 	mov rbx, [rbp + 24]
 
  memcpy$16:
 	; SetReturnValue
 
  memcpy$17:
-	; Return £temporary3583
+	; Return £temporary3566
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -2197,19 +2197,19 @@ section .text
 section .text
 
  memmove:
-	; IntegralToIntegral £temporary3584 target
+	; IntegralToIntegral £temporary3567 target
 	mov rax, [rbp + 24]
 
  memmove$1:
-	; Assign charTarget £temporary3584
+	; Assign charTarget £temporary3567
 	mov [rbp + 44], rax
 
  memmove$2:
-	; IntegralToIntegral £temporary3585 source
+	; IntegralToIntegral £temporary3568 source
 	mov rax, [rbp + 32]
 
  memmove$3:
-	; Assign charSource £temporary3585
+	; Assign charSource £temporary3568
 	mov [rbp + 52], rax
 
  memmove$4:
@@ -2230,35 +2230,35 @@ section .text
 	jl memmove$27
 
  memmove$7:
-	; IntegralToIntegral £temporary3590 index
+	; IntegralToIntegral £temporary3573 index
 	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memmove$8:
-	; Add £temporary3591 charTarget £temporary3590
+	; Add £temporary3574 charTarget £temporary3573
 	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memmove$9:
-	; Dereference £temporary3592 £temporary3591 0
+	; Dereference £temporary3575 £temporary3574 0
 
  memmove$10:
-	; IntegralToIntegral £temporary3593 index
+	; IntegralToIntegral £temporary3576 index
 	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memmove$11:
-	; Add £temporary3594 charSource £temporary3593
+	; Add £temporary3577 charSource £temporary3576
 	mov rdi, [rbp + 52]
 	add rdi, rax
 
  memmove$12:
-	; Dereference £temporary3595 £temporary3594 0
+	; Dereference £temporary3578 £temporary3577 0
 
  memmove$13:
-	; Assign £temporary3592 £temporary3595
+	; Assign £temporary3575 £temporary3578
 	mov al, [rdi]
 	mov [rsi], al
 
@@ -2281,35 +2281,35 @@ section .text
 	jge memmove$27
 
  memmove$18:
-	; IntegralToIntegral £temporary3598 index
+	; IntegralToIntegral £temporary3581 index
 	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memmove$19:
-	; Add £temporary3599 charTarget £temporary3598
+	; Add £temporary3582 charTarget £temporary3581
 	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memmove$20:
-	; Dereference £temporary3600 £temporary3599 0
+	; Dereference £temporary3583 £temporary3582 0
 
  memmove$21:
-	; IntegralToIntegral £temporary3601 index
+	; IntegralToIntegral £temporary3584 index
 	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memmove$22:
-	; Add £temporary3602 charSource £temporary3601
+	; Add £temporary3585 charSource £temporary3584
 	mov rdi, [rbp + 52]
 	add rdi, rax
 
  memmove$23:
-	; Dereference £temporary3603 £temporary3602 0
+	; Dereference £temporary3586 £temporary3585 0
 
  memmove$24:
-	; Assign £temporary3600 £temporary3603
+	; Assign £temporary3583 £temporary3586
 	mov al, [rdi]
 	mov [rsi], al
 
@@ -2322,14 +2322,14 @@ section .text
 	jmp memmove$17
 
  memmove$27:
-	; IntegralToIntegral £temporary3606 target
+	; IntegralToIntegral £temporary3589 target
 	mov rbx, [rbp + 24]
 
  memmove$28:
 	; SetReturnValue
 
  memmove$29:
-	; Return £temporary3606
+	; Return £temporary3589
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -2341,19 +2341,19 @@ section .text
 section .text
 
  memcmp:
-	; IntegralToIntegral £temporary3607 left
+	; IntegralToIntegral £temporary3590 left
 	mov rax, [rbp + 24]
 
  memcmp$1:
-	; Assign charLeft £temporary3607
+	; Assign charLeft £temporary3590
 	mov [rbp + 44], rax
 
  memcmp$2:
-	; IntegralToIntegral £temporary3608 right
+	; IntegralToIntegral £temporary3591 right
 	mov rax, [rbp + 32]
 
  memcmp$3:
-	; Assign charRight £temporary3608
+	; Assign charRight £temporary3591
 	mov [rbp + 52], rax
 
  memcmp$4:
@@ -2367,35 +2367,35 @@ section .text
 	jge memcmp$26
 
  memcmp$6:
-	; IntegralToIntegral £temporary3611 index
+	; IntegralToIntegral £temporary3594 index
 	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcmp$7:
-	; Add £temporary3612 charLeft £temporary3611
+	; Add £temporary3595 charLeft £temporary3594
 	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memcmp$8:
-	; Dereference £temporary3613 £temporary3612 0
+	; Dereference £temporary3596 £temporary3595 0
 
  memcmp$9:
-	; IntegralToIntegral £temporary3614 index
+	; IntegralToIntegral £temporary3597 index
 	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcmp$10:
-	; Add £temporary3615 charRight £temporary3614
+	; Add £temporary3598 charRight £temporary3597
 	mov rdi, [rbp + 52]
 	add rdi, rax
 
  memcmp$11:
-	; Dereference £temporary3616 £temporary3615 0
+	; Dereference £temporary3599 £temporary3598 0
 
  memcmp$12:
-	; GreaterThanEqual 15 £temporary3613 £temporary3616
+	; GreaterThanEqual 15 £temporary3596 £temporary3599
 	mov al, [rdi]
 	cmp [rsi], al
 	jge memcmp$15
@@ -2412,35 +2412,35 @@ section .text
 	jmp rax
 
  memcmp$15:
-	; IntegralToIntegral £temporary3618 index
+	; IntegralToIntegral £temporary3601 index
 	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcmp$16:
-	; Add £temporary3619 charLeft £temporary3618
+	; Add £temporary3602 charLeft £temporary3601
 	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memcmp$17:
-	; Dereference £temporary3620 £temporary3619 0
+	; Dereference £temporary3603 £temporary3602 0
 
  memcmp$18:
-	; IntegralToIntegral £temporary3621 index
+	; IntegralToIntegral £temporary3604 index
 	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcmp$19:
-	; Add £temporary3622 charRight £temporary3621
+	; Add £temporary3605 charRight £temporary3604
 	mov rdi, [rbp + 52]
 	add rdi, rax
 
  memcmp$20:
-	; Dereference £temporary3623 £temporary3622 0
+	; Dereference £temporary3606 £temporary3605 0
 
  memcmp$21:
-	; LessThanEqual 24 £temporary3620 £temporary3623
+	; LessThanEqual 24 £temporary3603 £temporary3606
 	mov al, [rdi]
 	cmp [rsi], al
 	jle memcmp$24
@@ -2481,15 +2481,15 @@ section .text
 section .text
 
  memchr:
-	; IntegralToIntegral £temporary3629 block
+	; IntegralToIntegral £temporary3612 block
 	mov rax, [rbp + 24]
 
  memchr$1:
-	; Assign charBlock £temporary3629
+	; Assign charBlock £temporary3612
 	mov [rbp + 44], rax
 
  memchr$2:
-	; IntegralToIntegral £temporary3630 i
+	; IntegralToIntegral £temporary3613 i
 	mov eax, [rbp + 32]
 	cmp eax, 0
 	jge memchr$3
@@ -2497,7 +2497,7 @@ section .text
 	neg al
 
  memchr$3:
-	; Assign c £temporary3630
+	; Assign c £temporary3613
 	mov [rbp + 52], al
 
  memchr$4:
@@ -2511,50 +2511,50 @@ section .text
 	jge memchr$19
 
  memchr$6:
-	; IntegralToIntegral £temporary3633 index
+	; IntegralToIntegral £temporary3616 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memchr$7:
-	; Add £temporary3634 charBlock £temporary3633
+	; Add £temporary3617 charBlock £temporary3616
 	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memchr$8:
-	; Dereference £temporary3635 £temporary3634 0
+	; Dereference £temporary3618 £temporary3617 0
 
  memchr$9:
-	; NotEqual 17 £temporary3635 c
+	; NotEqual 17 £temporary3618 c
 	mov al, [rbp + 52]
 	cmp [rsi], al
 	jne memchr$17
 
  memchr$10:
-	; IntegralToIntegral £temporary3637 index
+	; IntegralToIntegral £temporary3620 index
 	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memchr$11:
-	; Add £temporary3638 charBlock £temporary3637
+	; Add £temporary3621 charBlock £temporary3620
 	mov rbx, [rbp + 44]
 	add rbx, rax
 
  memchr$12:
-	; Dereference £temporary3639 £temporary3638 0
+	; Dereference £temporary3622 £temporary3621 0
 
  memchr$13:
-	; Address £temporary3640 £temporary3639
+	; Address £temporary3623 £temporary3622
 
  memchr$14:
-	; IntegralToIntegral £temporary3641 £temporary3640
+	; IntegralToIntegral £temporary3624 £temporary3623
 
  memchr$15:
 	; SetReturnValue
 
  memchr$16:
-	; Return £temporary3641
+	; Return £temporary3624
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -2585,15 +2585,15 @@ section .text
 section .text
 
  memset:
-	; IntegralToIntegral £temporary3644 block
+	; IntegralToIntegral £temporary3627 block
 	mov rax, [rbp + 24]
 
  memset$1:
-	; Assign charBlock £temporary3644
+	; Assign charBlock £temporary3627
 	mov [rbp + 40], rax
 
  memset$2:
-	; IntegralToIntegral £temporary3645 i
+	; IntegralToIntegral £temporary3628 i
 	mov eax, [rbp + 32]
 	cmp eax, 0
 	jge memset$3
@@ -2601,7 +2601,7 @@ section .text
 	neg al
 
  memset$3:
-	; Assign c £temporary3645
+	; Assign c £temporary3628
 	mov [rbp + 48], al
 
  memset$4:
@@ -2615,21 +2615,21 @@ section .text
 	jge memset$12
 
  memset$6:
-	; IntegralToIntegral £temporary3648 index
+	; IntegralToIntegral £temporary3631 index
 	mov eax, [rbp + 49]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memset$7:
-	; Add £temporary3649 charBlock £temporary3648
+	; Add £temporary3632 charBlock £temporary3631
 	mov rsi, [rbp + 40]
 	add rsi, rax
 
  memset$8:
-	; Dereference £temporary3650 £temporary3649 0
+	; Dereference £temporary3633 £temporary3632 0
 
  memset$9:
-	; Assign £temporary3650 c
+	; Assign £temporary3633 c
 	mov al, [rbp + 48]
 	mov [rsi], al
 

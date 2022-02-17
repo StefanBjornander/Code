@@ -1,0 +1,71 @@
+0: SignedLessThan Assign c 97 size 3
+1: Goto Return 0
+2: Assign c 97
+3: Empty
+4: SignedLessThanEqual UnsignedMultiply £temporary922 size 1 c 122
+5: Goto Return 0
+6: UnsignedMultiply £temporary922 size 1
+7: BinaryAdd £temporary923 name £temporary922
+8: Dereference £temporary921 -> £temporary923 £temporary923 0
+9: Assign £temporary921 -> £temporary923 c
+10: BinaryAdd £temporary924 size 1
+11: UnsignedMultiply £temporary926 £temporary924 1
+12: BinaryAdd £temporary927 name £temporary926
+13: Dereference £temporary925 -> £temporary927 £temporary927 0
+14: Assign £temporary925 -> £temporary927 0
+15: PreCall 13
+16: Parameter 19 pointer name
+17: Call 13 fileexists 0
+18: PostCall 13
+19: GetReturnValue £temporary928
+20: NotEqual PreCall 13 £temporary928 0
+21: Goto Case Return name status 0
+22: Case Return name status 0
+23: Case PreCall 13 status 1
+24: CaseEnd status
+25: Goto PreCall 13
+26: Return name
+27: PreCall 13
+28: Parameter 19 pointer name
+29: Call 13 existsTempName 0
+30: PostCall 13
+31: GetReturnValue £temporary931
+32: NotEqual Goto PreCall 13 £temporary931 0
+33: Goto PreCall 13
+34: PreCall 13
+35: UnsignedMultiply £temporary935 g_tempSize 4
+36: BinaryAdd £temporary936 g_tempArray £temporary935
+37: Dereference £temporary934 -> £temporary936 £temporary936 0
+38: Parameter 19 pointer £temporary934 -> £temporary936
+39: Parameter 21 pointer name
+40: Call 13 strcpy 0
+41: PostCall 13
+42: Assign £temporary938 g_tempSize
+43: BinaryAdd g_tempSize g_tempSize 1
+44: UnsignedMultiply £temporary940 £temporary938 4
+45: BinaryAdd £temporary941 g_tempArray £temporary940
+46: Dereference £temporary939 -> £temporary941 £temporary941 0
+47: Return £temporary939 -> £temporary941
+48: Goto Goto PreCall 13
+49: Goto PreCall 13
+50: Goto PreCall 13
+51: PreCall 13
+52: Parameter 19 pointer name
+53: BinaryAdd £temporary942 size 1
+54: Parameter 21 signedint £temporary942
+55: Parameter 23 signedint status
+56: Call 13 generateTempName 0
+57: PostCall 13
+58: GetReturnValue £temporary943
+59: Assign result £temporary943
+60: NotEqual Return result result 0
+61: Goto Empty
+62: Return result
+63: Goto Empty
+64: Empty
+65: BinaryAdd c c 1
+66: Goto Empty
+67: Goto Return 0
+68: Return 0
+69: Empty
+70: FunctionEnd generateTempName

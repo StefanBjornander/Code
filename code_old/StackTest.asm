@@ -8,13 +8,13 @@
 
 section .data
 
-@11706$i:
+@11687$i:
 	; Initializer SignedInt 0
 	dd 0
 
 section .data
 
-@11707string_25i20#:
+@11688string_25i20#:
 	; Initializer String %i 
 	db "%i ", 0
 
@@ -24,19 +24,19 @@ section .text
 	; PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  stack_test$1:
-	; Parameter 48 pointer string_25i20#
-	mov qword [rbp + 48], @11707string_25i20#
+	; Parameter 48 string string_25i20#
+	mov qword [rbp + 48], @11688string_25i20#
 
  stack_test$2:
-	; Assign £temporary4135 i
-	mov eax, [@11706$i]
+	; Assign £temporary4690 i
+	mov eax, [@11687$i]
 
  stack_test$3:
 	; Add i i integral4$1#
-	inc dword [@11706$i]
+	inc dword [@11687$i]
 
  stack_test$4:
-	; Parameter 56 signed int £temporary4135
+	; Parameter 56 signed int £temporary4690
 	mov [rbp + 56], eax
 
  stack_test$5:
@@ -76,7 +76,7 @@ section .text
 
 section .data
 
-@11719string_102420bytes2Dblock20number3A2025i0A#:
+@11699string_102420bytes2Dblock20number3A2025i0A#:
 	; Initializer String 1024 bytes-block number: %i\n
 	db "1024 bytes-block number: %i", 10, 0
 
@@ -104,10 +104,10 @@ section .text
 	; PostCall 36
 
  heap_test$5:
-	; GetReturnValue £temporary4139
+	; GetReturnValue £temporary4694
 
  heap_test$6:
-	; Assign pointer £temporary4139
+	; Assign pointer £temporary4694
 	mov [rbp + 28], rbx
 
  heap_test$7:
@@ -119,11 +119,11 @@ section .text
 	; PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  heap_test$9:
-	; Parameter 60 pointer string_102420bytes2Dblock20number3A2025i0A#
-	mov qword [rbp + 60], @11719string_102420bytes2Dblock20number3A2025i0A#
+	; Parameter 60 string string_102420bytes2Dblock20number3A2025i0A#
+	mov qword [rbp + 60], @11699string_102420bytes2Dblock20number3A2025i0A#
 
  heap_test$10:
-	; Assign £temporary4142 count
+	; Assign £temporary4696 count
 	mov eax, [rbp + 24]
 
  heap_test$11:
@@ -131,7 +131,7 @@ section .text
 	inc dword [rbp + 24]
 
  heap_test$12:
-	; Parameter 68 signed int £temporary4142
+	; Parameter 68 signed int £temporary4696
 	mov [rbp + 68], eax
 
  heap_test$13:
