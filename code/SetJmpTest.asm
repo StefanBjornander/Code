@@ -69,12 +69,12 @@ section .text
 	mov qword [rbp + 64], @9199string_25lf#
 
  @9195$main$6:
-	; Address £temporary3868 x
+	; Address £temporary3992 x
 	mov rsi, rbp
 	add rsi, 32
 
  @9195$main$7:
-	; Parameter 72 pointer £temporary3868
+	; Parameter 72 pointer £temporary3992
 	mov [rbp + 72], rsi
 
  @9195$main$8:
@@ -107,15 +107,15 @@ section .text
 	; PostCall 40
 
  @9195$main$14:
-	; GetReturnValue £temporary3870
+	; GetReturnValue £temporary3994
 
  @9195$main$15:
-	; IntegralToIntegral £temporary3871 £temporary3870
+	; IntegralToIntegral £temporary3995 £temporary3994
 	mov rax, 4294967295
 	and rbx, rax
 
  @9195$main$16:
-	; Assign message £temporary3871
+	; Assign message £temporary3995
 	mov [rbp + 24], rbx
 
  @9195$main$17:
@@ -160,10 +160,10 @@ section .text
 	; PostCall 80
 
  @9195$main$27:
-	; GetReturnValue £temporary3873
+	; GetReturnValue £temporary3997
 
  @9195$main$28:
-	; Parameter 80 double £temporary3873
+	; Parameter 80 double £temporary3997
 	fstp qword [rbp + 80]
 
  @9195$main$29:
@@ -248,13 +248,13 @@ section .text
 	; PostCall 32
 
  inverse$7:
-	; GetReturnValue £temporary3882
+	; GetReturnValue £temporary4006
 
  inverse$8:
 	; SetReturnValue
 
  inverse$9:
-	; Return £temporary3882
+	; Return £temporary4006
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -295,14 +295,14 @@ section .text
 	fld qword [rbp + 32]
 
  divide$5:
-	; Divide £temporary3886 x y
+	; Divide £temporary4010 x y
 	fdiv
 
  divide$6:
 	; SetReturnValue
 
  divide$7:
-	; Return £temporary3886
+	; Return £temporary4010
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
@@ -316,11 +316,11 @@ section .text
 	mov qword [rbp + 64], buffer
 
  divide$10:
-	; IntegralToIntegral £temporary3887 string_Division20by20Zero2E#
+	; IntegralToIntegral £temporary4011 string_Division20by20Zero2E#
 	mov rax, @9218string_Division20by20Zero2E#
 
  divide$11:
-	; Parameter 72 signed int £temporary3887
+	; Parameter 72 signed int £temporary4011
 	mov [rbp + 72], eax
 
  divide$12:
@@ -382,15 +382,15 @@ section .text
 	; PostCall 40
 
  test$4:
-	; GetReturnValue £temporary3891
+	; GetReturnValue £temporary4015
 
  test$5:
-	; IntegralToIntegral £temporary3892 £temporary3891
+	; IntegralToIntegral £temporary4016 £temporary4015
 	mov rax, 4294967295
 	and rbx, rax
 
  test$6:
-	; Assign message £temporary3892
+	; Assign message £temporary4016
 	mov [rbp + 32], rbx
 
  test$7:
@@ -435,10 +435,10 @@ section .text
 	; PostCall 80
 
  test$17:
-	; GetReturnValue £temporary3894
+	; GetReturnValue £temporary4018
 
  test$18:
-	; Parameter 80 double £temporary3894
+	; Parameter 80 double £temporary4018
 	fstp qword [rbp + 80]
 
  test$19:

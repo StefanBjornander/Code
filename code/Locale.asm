@@ -65,6 +65,7 @@ section .data
 	dq @1434string_Fri#
 	; Initializer Pointer @1435string_Sat#
 	dq @1435string_Sat#
+	; InitializerZero 0
 
 section .data
 
@@ -125,6 +126,7 @@ section .data
 	dq @1442string_Friday#
 	; Initializer Pointer @1443string_Saturday#
 	dq @1443string_Saturday#
+	; InitializerZero 0
 
 section .data
 
@@ -225,6 +227,7 @@ section .data
 	dq @1455string_Nov#
 	; Initializer Pointer @1456string_Dec#
 	dq @1456string_Dec#
+	; InitializerZero 0
 
 section .data
 
@@ -325,6 +328,7 @@ section .data
 	dq @1468string_November#
 	; Initializer Pointer @1469string_December#
 	dq @1469string_December#
+	; InitializerZero 0
 
 section .data
 
@@ -489,6 +493,7 @@ enMessageList:
 	dq @1511string_error20while20removing20file#
 	; Initializer Pointer @1512string_error20while20renaming20file#
 	dq @1512string_error20while20renaming20file#
+	; InitializerZero 0
 
 section .data
 
@@ -523,6 +528,7 @@ section .data
 	dq @1516string_ABCDEFGHIJKLMNOPQRSTUVWXYZ#
 	; Initializer Pointer enMessageList
 	dq enMessageList
+	; InitializerZero 0
 
 section .data
 
@@ -549,14 +555,18 @@ section .data
 	dq @1520string_#
 	; Initializer Pointer @1517$en_US_utf8
 	dq @1517$en_US_utf8
+	; InitializerZero 0
 	; Initializer Pointer @1522string_C#
 	dq @1522string_C#
 	; Initializer Pointer @1517$en_US_utf8
 	dq @1517$en_US_utf8
+	; InitializerZero 0
 	; Initializer Pointer @1524string_US#
 	dq @1524string_US#
 	; Initializer Pointer @1517$en_US_utf8
 	dq @1517$en_US_utf8
+	; InitializerZero 0
+	; InitializerZero 0
 
 section .data
 
@@ -590,11 +600,11 @@ section .text
 	je setlocale$4
 
  setlocale$1:
-	; Dereference £temporary298 g_currStructPtr 0
+	; Dereference £temporary374 g_currStructPtr 0
 	mov rsi, [@1538$g_currStructPtr]
 
  setlocale$2:
-	; Assign £temporary299 £temporary298.name
+	; Assign £temporary375 £temporary374.name
 	mov rax, [rsi]
 
  setlocale$3:
@@ -602,11 +612,11 @@ section .text
 	jmp setlocale$5
 
  setlocale$4:
-	; Assign £temporary299 integral8$0#
+	; Assign £temporary375 integral8$0#
 	mov rax, 0
 
  setlocale$5:
-	; Assign oldName £temporary299
+	; Assign oldName £temporary375
 	mov [rbp + 40], rax
 
  setlocale$6:
@@ -637,26 +647,26 @@ section .text
 	mov [rbp + 72], rax
 
  setlocale$12:
-	; Multiply £temporary303 index integral4$16#
+	; Multiply £temporary379 index integral4$16#
 	mov eax, [rbp + 36]
 	xor edx, edx
 	imul dword [@1554integral4$16#]
 
  setlocale$13:
-	; IntegralToIntegral £temporary304 £temporary303
+	; IntegralToIntegral £temporary380 £temporary379
 	mov rbx, 4294967295
 	and rax, rbx
 
  setlocale$14:
-	; Add £temporary305 g_sArray £temporary304
+	; Add £temporary381 g_sArray £temporary380
 	mov rsi, @1526$g_sArray
 	add rsi, rax
 
  setlocale$15:
-	; Dereference £temporary306 £temporary305 0
+	; Dereference £temporary382 £temporary381 0
 
  setlocale$16:
-	; Parameter 80 pointer £temporary306.name
+	; Parameter 80 pointer £temporary382.name
 	mov rax, [rsi]
 	mov [rbp + 80], rax
 
@@ -671,37 +681,37 @@ section .text
 	; PostCall 48
 
  setlocale$19:
-	; GetReturnValue £temporary307
+	; GetReturnValue £temporary383
 
  setlocale$20:
-	; NotEqual 28 £temporary307 integral4$0#
+	; NotEqual 28 £temporary383 integral4$0#
 	cmp ebx, 0
 	jne setlocale$28
 
  setlocale$21:
-	; Multiply £temporary309 index integral4$16#
+	; Multiply £temporary385 index integral4$16#
 	mov eax, [rbp + 36]
 	xor edx, edx
 	imul dword [@1557integral4$16#]
 
  setlocale$22:
-	; IntegralToIntegral £temporary310 £temporary309
+	; IntegralToIntegral £temporary386 £temporary385
 	mov rbx, 4294967295
 	and rax, rbx
 
  setlocale$23:
-	; Add £temporary311 g_sArray £temporary310
+	; Add £temporary387 g_sArray £temporary386
 	mov rsi, @1526$g_sArray
 	add rsi, rax
 
  setlocale$24:
-	; Dereference £temporary312 £temporary311 0
+	; Dereference £temporary388 £temporary387 0
 
  setlocale$25:
-	; Address £temporary313 £temporary312
+	; Address £temporary389 £temporary388
 
  setlocale$26:
-	; Assign g_currStructPtr £temporary313
+	; Assign g_currStructPtr £temporary389
 	mov [@1538$g_currStructPtr], rsi
 
  setlocale$27:
@@ -738,11 +748,11 @@ section .text
 	je localeconv$4
 
  localeconv$1:
-	; Dereference £temporary319 g_currStructPtr 0
+	; Dereference £temporary395 g_currStructPtr 0
 	mov rsi, [@1538$g_currStructPtr]
 
  localeconv$2:
-	; Assign £temporary320 £temporary319.localePtr
+	; Assign £temporary396 £temporary395.localePtr
 	mov rbx, [rsi + 8]
 
  localeconv$3:
@@ -750,14 +760,14 @@ section .text
 	jmp localeconv$5
 
  localeconv$4:
-	; Assign £temporary320 integral8$0#
+	; Assign £temporary396 integral8$0#
 	mov rbx, 0
 
  localeconv$5:
 	; SetReturnValue
 
  localeconv$6:
-	; Return £temporary320
+	; Return £temporary396
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]

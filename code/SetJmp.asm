@@ -7,48 +7,48 @@
 section .text
 
  setjmp:
-	; InspectRegister £temporary693 rbp
+	; InspectRegister £temporary769 rbp
 
  setjmp$1:
-	; Assign rbp_pointer £temporary693
+	; Assign rbp_pointer £temporary769
 	mov [rbp + 32], rbp
 
  setjmp$2:
-	; Dereference £temporary695 £temporary694 0
+	; Dereference £temporary771 £temporary770 0
 	mov rsi, [rbp + 24]
 
  setjmp$3:
-	; Dereference £temporary697 £temporary696 0
+	; Dereference £temporary773 £temporary772 0
 	mov rdi, [rbp + 32]
 
  setjmp$4:
-	; Assign £temporary695 £temporary697
+	; Assign £temporary771 £temporary773
 	mov rax, [rdi]
 	mov [rsi], rax
 
  setjmp$5:
-	; Dereference £temporary699 £temporary698 0
+	; Dereference £temporary775 £temporary774 0
 	mov rsi, [rbp + 24]
 
  setjmp$6:
-	; Dereference £temporary701 £temporary700 0
+	; Dereference £temporary777 £temporary776 0
 	mov rdi, [rbp + 32]
 
  setjmp$7:
-	; Assign £temporary699 £temporary701
+	; Assign £temporary775 £temporary777
 	mov rax, [rdi + 8]
 	mov [rsi + 8], rax
 
  setjmp$8:
-	; Dereference £temporary703 £temporary702 0
+	; Dereference £temporary779 £temporary778 0
 	mov rsi, [rbp + 24]
 
  setjmp$9:
-	; Dereference £temporary705 £temporary704 0
+	; Dereference £temporary781 £temporary780 0
 	mov rdi, [rbp + 32]
 
  setjmp$10:
-	; Assign £temporary703 £temporary705
+	; Assign £temporary779 £temporary781
 	mov rax, [rdi + 16]
 	mov [rsi + 16], rax
 
@@ -73,27 +73,27 @@ section .text
 	mov ebx, [rbp + 32]
 
  longjmp$1:
-	; Dereference £temporary709 £temporary708 0
+	; Dereference £temporary785 £temporary784 0
 	mov rsi, [rbp + 24]
 
  longjmp$2:
-	; AssignRegister rcx £temporary709
+	; AssignRegister rcx £temporary785
 	mov rcx, [rsi]
 
  longjmp$3:
-	; Dereference £temporary712 £temporary711 0
+	; Dereference £temporary788 £temporary787 0
 	mov rsi, [rbp + 24]
 
  longjmp$4:
-	; AssignRegister rdi £temporary712
+	; AssignRegister rdi £temporary788
 	mov rdi, [rsi + 16]
 
  longjmp$5:
-	; Dereference £temporary715 £temporary714 0
+	; Dereference £temporary791 £temporary790 0
 	mov rsi, [rbp + 24]
 
  longjmp$6:
-	; AssignRegister rbp £temporary715
+	; AssignRegister rbp £temporary791
 	mov rbp, [rsi + 8]
 
  longjmp$7:
