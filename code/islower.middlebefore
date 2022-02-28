@@ -1,33 +1,38 @@
 0: PreCall 8
 1: Call 8 localeconv 0
 2: PostCall 8
-3: GetReturnValue £temporary245
-4: Assign localeConvPtr £temporary245
-5: NotEqual PreCall 10 localeConvPtr 0
-6: Goto SignedGreaterThanEqual SignedLessThanEqual Assign £temporary254 1 c 122 c 97
-7: PreCall 10
-8: Dereference £temporary247 -> localeConvPtr localeConvPtr 0
-9: Parameter 16 pointer £temporary247 -> localeConvPtr
-10: Parameter 18 signedint c
-11: Call 10 strchr 0
-12: PostCall 10
-13: GetReturnValue £temporary248
-14: NotEqual Assign £temporary250 1 £temporary248 0
-15: Goto Assign £temporary250 0
-16: Assign £temporary250 1
-17: Goto Empty
-18: Assign £temporary250 0
-19: Empty
-20: Return £temporary250
-21: Goto Empty
-22: SignedGreaterThanEqual SignedLessThanEqual Assign £temporary254 1 c 122 c 97
-23: Goto Assign £temporary254 0
-24: SignedLessThanEqual Assign £temporary254 1 c 122
-25: Goto Assign £temporary254 0
-26: Assign £temporary254 1
-27: Goto Empty
-28: Assign £temporary254 0
-29: Empty
-30: Return £temporary254
-31: Empty
-32: FunctionEnd islower
+3: GetReturnValue £temporary171
+4: Assign localeConvPtr £temporary171
+5: NotEqual Empty localeConvPtr integral2$0#
+6: Jump Empty
+7: Empty
+8: PreCall 10
+9: Dereference £temporary173 localeConvPtr 0
+10: Parameter 16 pointer £temporary173.lowerCase
+11: Parameter 18 signed int c
+12: Call 10 strchr 0
+13: PostCall 10
+14: GetReturnValue £temporary174
+15: NotEqual Assign £temporary176 integral2$1# £temporary174 integral2$0#
+16: Jump Assign £temporary176 integral2$0#
+17: Assign £temporary176 integral2$1#
+18: Jump Empty
+19: Assign £temporary176 integral2$0#
+20: Empty
+21: SetReturnValue
+22: Return £temporary176
+23: Jump Empty
+24: Empty
+25: GreaterThanEqual LessThanEqual Assign £temporary180 integral2$1# c integral2$122# c integral2$97#
+26: Jump Assign £temporary180 integral2$0#
+27: LessThanEqual Assign £temporary180 integral2$1# c integral2$122#
+28: Jump Assign £temporary180 integral2$0#
+29: Assign £temporary180 integral2$1#
+30: Jump Empty
+31: Assign £temporary180 integral2$0#
+32: Empty
+33: SetReturnValue
+34: Return £temporary180
+35: Empty
+36: Empty
+37: FunctionEnd islower

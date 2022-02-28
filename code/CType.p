@@ -20,6 +20,28 @@ extern int toupper ( int c ) ;
  
 $C:\Users\Stefa\Documents\vagrant\homestead\code\code\CType.c,0$
         
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\ctype.h,0$
+    
+    
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+   
+ 
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\CType.c,1$
+        
 $C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdio.h,0$
     
     
@@ -240,7 +262,7 @@ $C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdio.h,10$
  
    
  
-$C:\Users\Stefa\Documents\vagrant\homestead\code\code\CType.c,1$
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\CType.c,2$
         
 $C:\Users\Stefa\Documents\vagrant\homestead\code\code\locale.h,0$
     
@@ -270,7 +292,7 @@ extern struct lconv * localeconv ( void ) ;
 
    
  
-$C:\Users\Stefa\Documents\vagrant\homestead\code\code\CType.c,2$
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\CType.c,3$
         
 $C:\Users\Stefa\Documents\vagrant\homestead\code\code\string.h,0$
     
@@ -301,7 +323,7 @@ extern void * memset ( void * block , int i , int  size ) ;
 
    
  
-$C:\Users\Stefa\Documents\vagrant\homestead\code\code\CType.c,3$
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\CType.c,4$
         
 $C:\Users\Stefa\Documents\vagrant\homestead\code\code\stddef.h,0$
     
@@ -315,7 +337,7 @@ $C:\Users\Stefa\Documents\vagrant\homestead\code\code\stddef.h,0$
  
    
  
-$C:\Users\Stefa\Documents\vagrant\homestead\code\code\CType.c,4$
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\CType.c,5$
         
 
 int islower ( int c ) {
@@ -414,4 +436,5 @@ return ( c - 32 ) ;
 else {
 return c ;
 }
-} 
+}
+
