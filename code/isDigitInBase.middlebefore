@@ -1,68 +1,81 @@
-0: PreCall 9
-1: IntegralToIntegral £temporary1090 c
-2: Parameter 15 signedint £temporary1090
-3: Call 9 isdigit 0
-4: PostCall 9
-5: GetReturnValue £temporary1091
-6: NotEqual BinarySubtract £temporary1092 c 48 £temporary1091 0
-7: Goto PreCall 9
-8: BinarySubtract £temporary1092 c 48
-9: IntegralToIntegral £temporary1093 £temporary1092
-10: Assign value £temporary1093
-11: SignedGreaterThanEqual SignedLessThan Assign £temporary1097 1 value base value 0
-12: Goto Assign £temporary1097 0
-13: SignedLessThan Assign £temporary1097 1 value base
-14: Goto Assign £temporary1097 0
-15: Assign £temporary1097 1
-16: Goto Empty
-17: Assign £temporary1097 0
-18: Empty
-19: Return £temporary1097
-20: Goto Empty
-21: PreCall 9
-22: IntegralToIntegral £temporary1098 c
-23: Parameter 15 signedint £temporary1098
-24: Call 9 islower 0
-25: PostCall 9
-26: GetReturnValue £temporary1099
-27: NotEqual BinarySubtract £temporary1100 c 97 £temporary1099 0
-28: Goto PreCall 9
-29: BinarySubtract £temporary1100 c 97
-30: IntegralToIntegral £temporary1101 £temporary1100
-31: BinaryAdd £temporary1102 £temporary1101 10
-32: Assign value £temporary1102
-33: SignedGreaterThanEqual SignedLessThan Assign £temporary1106 1 value base value 0
-34: Goto Assign £temporary1106 0
-35: SignedLessThan Assign £temporary1106 1 value base
-36: Goto Assign £temporary1106 0
-37: Assign £temporary1106 1
-38: Goto Empty
-39: Assign £temporary1106 0
-40: Empty
-41: Return £temporary1106
-42: Goto Empty
-43: PreCall 9
-44: IntegralToIntegral £temporary1107 c
-45: Parameter 15 signedint £temporary1107
-46: Call 9 isupper 0
-47: PostCall 9
-48: GetReturnValue £temporary1108
-49: NotEqual BinarySubtract £temporary1109 c 65 £temporary1108 0
-50: Goto Return 0
-51: BinarySubtract £temporary1109 c 65
-52: IntegralToIntegral £temporary1110 £temporary1109
-53: BinaryAdd £temporary1111 £temporary1110 10
-54: Assign value £temporary1111
-55: SignedGreaterThanEqual SignedLessThan Assign £temporary1115 1 value base value 0
-56: Goto Assign £temporary1115 0
-57: SignedLessThan Assign £temporary1115 1 value base
-58: Goto Assign £temporary1115 0
-59: Assign £temporary1115 1
-60: Goto Empty
-61: Assign £temporary1115 0
-62: Empty
-63: Return £temporary1115
-64: Goto Empty
-65: Return 0
-66: Empty
-67: FunctionEnd isDigitInBase
+0: PreCall 29
+1: IntegralToIntegral £temporary1301 c
+2: Parameter 53 signed int £temporary1301
+3: Call 29 isdigit 0
+4: PostCall 29
+5: GetReturnValue £temporary1302
+6: NotEqual < Empty> £temporary1302 integral4$0#
+7: Jump < Empty>
+8: Empty
+9: Subtract £temporary1303 c integral1$48#
+10: IntegralToIntegral £temporary1304 £temporary1303
+11: Assign value £temporary1304
+12: GreaterThanEqual < LessThan < Assign £temporary1308 integral4$1#> value base> value integral4$0#
+13: Jump < Assign £temporary1308 integral4$0#>
+14: LessThan < Assign £temporary1308 integral4$1#> value base
+15: Jump < Assign £temporary1308 integral4$0#>
+16: Assign £temporary1308 integral4$1#
+17: Jump < Empty>
+18: Assign £temporary1308 integral4$0#
+19: Empty
+20: SetReturnValue
+21: Return £temporary1308
+22: Jump < Empty>
+23: Empty
+24: PreCall 29
+25: IntegralToIntegral £temporary1309 c
+26: Parameter 53 signed int £temporary1309
+27: Call 29 islower 0
+28: PostCall 29
+29: GetReturnValue £temporary1310
+30: NotEqual < Empty> £temporary1310 integral4$0#
+31: Jump < Empty>
+32: Empty
+33: Subtract £temporary1311 c integral1$97#
+34: IntegralToIntegral £temporary1313 £temporary1311
+35: Add £temporary1312 £temporary1313 integral4$10#
+36: Assign value £temporary1312
+37: GreaterThanEqual < LessThan < Assign £temporary1317 integral4$1#> value base> value integral4$0#
+38: Jump < Assign £temporary1317 integral4$0#>
+39: LessThan < Assign £temporary1317 integral4$1#> value base
+40: Jump < Assign £temporary1317 integral4$0#>
+41: Assign £temporary1317 integral4$1#
+42: Jump < Empty>
+43: Assign £temporary1317 integral4$0#
+44: Empty
+45: SetReturnValue
+46: Return £temporary1317
+47: Jump < Empty>
+48: Empty
+49: PreCall 29
+50: IntegralToIntegral £temporary1318 c
+51: Parameter 53 signed int £temporary1318
+52: Call 29 isupper 0
+53: PostCall 29
+54: GetReturnValue £temporary1319
+55: NotEqual < Empty> £temporary1319 integral4$0#
+56: Jump < Empty>
+57: Empty
+58: Subtract £temporary1320 c integral1$65#
+59: IntegralToIntegral £temporary1322 £temporary1320
+60: Add £temporary1321 £temporary1322 integral4$10#
+61: Assign value £temporary1321
+62: GreaterThanEqual < LessThan < Assign £temporary1326 integral4$1#> value base> value integral4$0#
+63: Jump < Assign £temporary1326 integral4$0#>
+64: LessThan < Assign £temporary1326 integral4$1#> value base
+65: Jump < Assign £temporary1326 integral4$0#>
+66: Assign £temporary1326 integral4$1#
+67: Jump < Empty>
+68: Assign £temporary1326 integral4$0#
+69: Empty
+70: SetReturnValue
+71: Return £temporary1326
+72: Jump < Empty>
+73: Empty
+74: SetReturnValue
+75: Return integral4$0#
+76: Empty
+77: Empty
+78: Empty
+79: Empty
+80: FunctionEnd isDigitInBase

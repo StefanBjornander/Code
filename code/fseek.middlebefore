@@ -1,22 +1,14 @@
-0: IntegralToIntegral £temporary877 origin
-1: AssignRegister al £temporary877
-2: AssignRegister ah 66
-3: Dereference £temporary880 -> stream stream 0
-4: AssignRegister bx £temporary880 -> stream
-5: AssignRegister cx 0
-6: IntegralToIntegral £temporary883 offset
-7: AssignRegister dx £temporary883
-8: Interrupt 33
-9: Carry Dereference £temporary889 -> stream stream 0
-10: Goto Dereference £temporary886 -> stream stream 0
-11: Dereference £temporary886 -> stream stream 0
-12: InspectRegister £temporary887 ax
-13: Assign £temporary886 -> stream £temporary887
-14: Dereference £temporary888 -> stream stream 0
-15: Return £temporary888 -> stream
-16: Goto Empty
-17: Dereference £temporary889 -> stream stream 0
-18: Assign £temporary889 -> stream 15
-19: Return -1
-20: Empty
-21: FunctionEnd fseek
+0: AssignRegister rax integral8$8#
+1: Dereference £temporary1060 stream 0
+2: IntegralToIntegral £temporary1061 £temporary1060.handle
+3: AssignRegister rdi £temporary1061
+4: IntegralToIntegral £temporary1063 offset
+5: AssignRegister rsi £temporary1063
+6: IntegralToIntegral £temporary1065 origin
+7: AssignRegister rdx £temporary1065
+8: SysCall
+9: InspectRegister £temporary1066 eax
+10: SetReturnValue
+11: Return £temporary1066
+12: Empty
+13: FunctionEnd fseek

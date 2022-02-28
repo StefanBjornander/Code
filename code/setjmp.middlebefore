@@ -1,14 +1,21 @@
-0: InspectRegister £temporary668 bp
-1: Assign bp_pointer £temporary668
-2: Dereference £temporary669 -> buf buf 0
-3: Dereference £temporary670 -> bp_pointer bp_pointer 0
-4: Assign £temporary669 -> buf £temporary670 -> bp_pointer
-5: Dereference £temporary671 -> buf buf 0
-6: Dereference £temporary672 -> bp_pointer bp_pointer 0
-7: Assign £temporary671 -> buf £temporary672 -> bp_pointer
-8: Dereference £temporary673 -> buf buf 0
-9: Dereference £temporary674 -> bp_pointer bp_pointer 0
-10: Assign £temporary673 -> buf £temporary674 -> bp_pointer
-11: Return 0
-12: Empty
-13: FunctionEnd setjmp
+0: InspectRegister £temporary769 rbp
+1: Assign rbp_pointer £temporary769
+2: Add £temporary770 buf integral8$0#
+3: Dereference £temporary771 £temporary770 0
+4: Add £temporary772 rbp_pointer integral8$0#
+5: Dereference £temporary773 £temporary772 0
+6: Assign £temporary771 £temporary773
+7: Add £temporary774 buf integral8$8#
+8: Dereference £temporary775 £temporary774 0
+9: Add £temporary776 rbp_pointer integral8$8#
+10: Dereference £temporary777 £temporary776 0
+11: Assign £temporary775 £temporary777
+12: Add £temporary778 buf integral8$16#
+13: Dereference £temporary779 £temporary778 0
+14: Add £temporary780 rbp_pointer integral8$16#
+15: Dereference £temporary781 £temporary780 0
+16: Assign £temporary779 £temporary781
+17: SetReturnValue
+18: Return integral4$0#
+19: Empty
+20: FunctionEnd setjmp

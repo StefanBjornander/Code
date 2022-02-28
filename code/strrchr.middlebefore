@@ -1,27 +1,32 @@
-0: Assign result 0
-1: IntegralToIntegral £temporary3130 i
-2: Assign c £temporary3130
-3: Assign index 0
+0: Assign result integral8$0#
+1: IntegralToIntegral £temporary3522 i
+2: Assign c £temporary3522
+3: Assign index integral4$0#
 4: Empty
-5: UnsignedMultiply £temporary3132 index 1
-6: BinaryAdd £temporary3133 text £temporary3132
-7: Dereference £temporary3131 -> £temporary3133 £temporary3133 0
-8: NotEqual UnsignedMultiply £temporary3137 index 1 £temporary3131 -> £temporary3133 0
-9: Goto Return result
-10: UnsignedMultiply £temporary3137 index 1
-11: BinaryAdd £temporary3138 text £temporary3137
-12: Dereference £temporary3136 -> £temporary3138 £temporary3138 0
-13: Equal UnsignedMultiply £temporary3141 index 1 £temporary3136 -> £temporary3138 c
-14: Goto Empty
-15: UnsignedMultiply £temporary3141 index 1
-16: BinaryAdd £temporary3142 text £temporary3141
-17: Dereference £temporary3140 -> £temporary3142 £temporary3142 0
-18: Address £temporary3143 £temporary3140 -> £temporary3142
-19: Assign result £temporary3143
-20: Goto Empty
-21: Empty
-22: BinaryAdd index index 1
-23: Goto Empty
-24: Return result
-25: Empty
-26: FunctionEnd strrchr
+5: IntegralToIntegral £temporary3523 index
+6: Add £temporary3524 text £temporary3523
+7: Dereference £temporary3525 £temporary3524 0
+8: NotEqual < IntegralToIntegral £temporary3528 index> £temporary3525 integral1$0#
+9: Jump < SetReturnValue>
+10: IntegralToIntegral £temporary3528 index
+11: Add £temporary3529 text £temporary3528
+12: Dereference £temporary3530 £temporary3529 0
+13: Equal < Empty> £temporary3530 c
+14: Jump < Empty>
+15: Empty
+16: IntegralToIntegral £temporary3532 index
+17: Add £temporary3533 text £temporary3532
+18: Dereference £temporary3534 £temporary3533 0
+19: Address £temporary3535 £temporary3534
+20: Assign result £temporary3535
+21: Jump < Empty>
+22: Empty
+23: Empty
+24: Empty
+25: Add £temporary3527 index integral4$1#
+26: Assign index £temporary3527
+27: Jump < Empty>
+28: SetReturnValue
+29: Return result
+30: Empty
+31: FunctionEnd strrchr

@@ -1,21 +1,24 @@
-0: Assign count 0
-1: PreCall 10
-2: Parameter 16 signedint 1024
-3: Call 10 malloc 0
-4: PostCall 10
-5: GetReturnValue £temporary4189
-6: Assign pointer £temporary4189
-7: NotEqual PreCall 10 pointer 0
-8: Goto Empty
-9: PreCall 10
-10: Parameter 16 pointer "1024 bytes-block number: %i\n"
-11: Assign £temporary4191 count
-12: BinaryAdd count count 1
-13: Parameter 18 signedint £temporary4191
-14: Parameter 20 pointer pointer
-15: Call 10 printf 4
-16: PostCall 10
-17: Goto PreCall 10
-18: Empty
-19: Return
-20: FunctionEnd heap_test
+0: Assign count integral4$0#
+1: Empty
+2: PreCall 36
+3: Parameter 60 signed int integral4$1024#
+4: Call 36 malloc 0
+5: PostCall 36
+6: GetReturnValue £temporary4819
+7: Assign pointer £temporary4819
+8: NotEqual < PreCall 36> pointer integral8$0#
+9: Jump < Empty>
+10: PreCall 36
+11: Parameter 60 string string_102420bytes2Dblock20number3A2025i0A#
+12: Assign £temporary4821 count
+13: Add £temporary4822 count integral4$1#
+14: Assign count £temporary4822
+15: Parameter 68 signed int £temporary4821
+16: Parameter 72 pointer pointer
+17: Call 36 printf 12
+18: PostCall 36
+19: Empty
+20: Jump < Empty>
+21: Empty
+22: Return
+23: FunctionEnd heap_test

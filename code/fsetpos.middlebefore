@@ -1,12 +1,13 @@
-0: PreCall 10
-1: Parameter 16 pointer stream
-2: Dereference £temporary896 -> ptr ptr 0
-3: Parameter 18 signedint £temporary896 -> ptr
-4: Parameter 20 signedint 0
-5: Call 10 fseek 0
-6: PostCall 10
-7: GetReturnValue £temporary897
-8: IntegralToIntegral £temporary898 £temporary897
-9: Return £temporary898
-10: Empty
-11: FunctionEnd fsetpos
+0: PreCall 40
+1: Parameter 64 pointer stream
+2: Dereference £temporary1073 ptr 0
+3: Parameter 72 signed int £temporary1073
+4: Parameter 76 signed int integral4$0#
+5: Call 40 fseek 0
+6: PostCall 40
+7: GetReturnValue £temporary1074
+8: IntegralToIntegral £temporary1075 £temporary1074
+9: SetReturnValue
+10: Return £temporary1075
+11: Empty
+12: FunctionEnd fsetpos

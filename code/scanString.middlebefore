@@ -1,159 +1,200 @@
-0: Assign index 0
-1: PreCall 12
-2: Call 12 scanChar 0
-3: PostCall 12
-4: GetReturnValue £temporary1010
-5: Assign input £temporary1010
-6: Assign found 0
-7: PreCall 15
-8: IntegralToIntegral £temporary1011 input
-9: Parameter 21 signedint £temporary1011
-10: Call 15 isspace 0
-11: PostCall 15
-12: GetReturnValue £temporary1012
-13: NotEqual PreCall 15 £temporary1012 0
-14: Goto NotEqual Equal PreCall 15 precision 0 string 0
-15: PreCall 15
-16: Call 15 scanChar 0
-17: PostCall 15
-18: GetReturnValue £temporary1013
-19: Assign input £temporary1013
-20: Goto PreCall 15
-21: NotEqual Equal PreCall 15 precision 0 string 0
-22: Goto Equal PreCall 15 precision 0
-23: Equal PreCall 15 precision 0
-24: Goto Assign £temporary1036 precision
-25: PreCall 15
-26: IntegralToIntegral £temporary1017 input
-27: Parameter 21 signedint £temporary1017
-28: Call 15 isspace 0
-29: PostCall 15
-30: GetReturnValue £temporary1018
-31: NotEqual UnsignedMultiply £temporary1033 index 1 £temporary1018 0
-32: Goto IntegralToIntegral £temporary1021 input
-33: IntegralToIntegral £temporary1021 input
-34: NotEqual NotEqual Assign £temporary1026 index input 10 £temporary1021 -1
-35: Goto UnsignedMultiply £temporary1033 index 1
-36: NotEqual Assign £temporary1026 index input 10
-37: Goto UnsignedMultiply £temporary1033 index 1
-38: Assign £temporary1026 index
-39: BinaryAdd index index 1
-40: UnsignedMultiply £temporary1028 £temporary1026 1
-41: BinaryAdd £temporary1029 string £temporary1028
-42: Dereference £temporary1027 -> £temporary1029 £temporary1029 0
-43: Assign £temporary1027 -> £temporary1029 input
-44: PreCall 15
-45: Call 15 scanChar 0
-46: PostCall 15
-47: GetReturnValue £temporary1030
-48: Assign input £temporary1030
-49: Assign found 1
-50: BinaryAdd g_inChars g_inChars 1
-51: Goto PreCall 15
-52: UnsignedMultiply £temporary1033 index 1
-53: BinaryAdd £temporary1034 string £temporary1033
-54: Dereference £temporary1032 -> £temporary1034 £temporary1034 0
-55: Assign £temporary1032 -> £temporary1034 0
-56: BinaryAdd g_inChars g_inChars 1
-57: Goto NotEqual BinaryAdd g_inCount g_inCount 1 found 0
-58: Assign £temporary1036 precision
-59: BinarySubtract precision precision 1
-60: SignedGreaterThan PreCall 15 £temporary1036 0
-61: Goto SignedGreaterThan UnsignedMultiply £temporary1056 index 1 precision 0
-62: PreCall 15
-63: IntegralToIntegral £temporary1038 input
-64: Parameter 21 signedint £temporary1038
-65: Call 15 isspace 0
-66: PostCall 15
-67: GetReturnValue £temporary1039
-68: NotEqual SignedGreaterThan UnsignedMultiply £temporary1056 index 1 precision 0 £temporary1039 0
-69: Goto IntegralToIntegral £temporary1042 input
-70: IntegralToIntegral £temporary1042 input
-71: NotEqual NotEqual Assign £temporary1048 index input 10 £temporary1042 -1
-72: Goto SignedGreaterThan UnsignedMultiply £temporary1056 index 1 precision 0
-73: NotEqual Assign £temporary1048 index input 10
-74: Goto SignedGreaterThan UnsignedMultiply £temporary1056 index 1 precision 0
-75: Assign £temporary1048 index
-76: BinaryAdd index index 1
-77: UnsignedMultiply £temporary1050 £temporary1048 1
-78: BinaryAdd £temporary1051 string £temporary1050
-79: Dereference £temporary1049 -> £temporary1051 £temporary1051 0
-80: Assign £temporary1049 -> £temporary1051 input
-81: PreCall 15
-82: Call 15 scanChar 0
-83: PostCall 15
-84: GetReturnValue £temporary1052
-85: Assign input £temporary1052
-86: Assign found 1
-87: BinaryAdd g_inChars g_inChars 1
-88: Goto Assign £temporary1036 precision
-89: SignedGreaterThan UnsignedMultiply £temporary1056 index 1 precision 0
-90: Goto NotEqual BinaryAdd g_inCount g_inCount 1 found 0
-91: UnsignedMultiply £temporary1056 index 1
-92: BinaryAdd £temporary1057 string £temporary1056
-93: Dereference £temporary1055 -> £temporary1057 £temporary1057 0
-94: Assign £temporary1055 -> £temporary1057 0
-95: BinaryAdd g_inChars g_inChars 1
-96: Goto NotEqual BinaryAdd g_inCount g_inCount 1 found 0
-97: Goto NotEqual BinaryAdd g_inCount g_inCount 1 found 0
-98: Equal PreCall 15 precision 0
-99: Goto Assign £temporary1072 precision
-100: PreCall 15
-101: IntegralToIntegral £temporary1060 input
-102: Parameter 21 signedint £temporary1060
-103: Call 15 isspace 0
-104: PostCall 15
-105: GetReturnValue £temporary1061
-106: NotEqual BinaryAdd g_inChars g_inChars 1 £temporary1061 0
-107: Goto IntegralToIntegral £temporary1064 input
-108: IntegralToIntegral £temporary1064 input
-109: NotEqual NotEqual PreCall 15 input 10 £temporary1064 -1
-110: Goto BinaryAdd g_inChars g_inChars 1
-111: NotEqual PreCall 15 input 10
-112: Goto BinaryAdd g_inChars g_inChars 1
-113: PreCall 15
-114: Call 15 scanChar 0
-115: PostCall 15
-116: GetReturnValue £temporary1069
-117: Assign input £temporary1069
-118: Assign found 1
-119: BinaryAdd g_inChars g_inChars 1
-120: Goto PreCall 15
-121: BinaryAdd g_inChars g_inChars 1
-122: Goto NotEqual BinaryAdd g_inCount g_inCount 1 found 0
-123: Assign £temporary1072 precision
-124: BinarySubtract precision precision 1
-125: SignedGreaterThan PreCall 15 £temporary1072 0
-126: Goto SignedGreaterThan BinaryAdd g_inChars g_inChars 1 precision 0
-127: PreCall 15
-128: IntegralToIntegral £temporary1074 input
-129: Parameter 21 signedint £temporary1074
-130: Call 15 isspace 0
-131: PostCall 15
-132: GetReturnValue £temporary1075
-133: NotEqual SignedGreaterThan BinaryAdd g_inChars g_inChars 1 precision 0 £temporary1075 0
-134: Goto IntegralToIntegral £temporary1078 input
-135: IntegralToIntegral £temporary1078 input
-136: NotEqual NotEqual PreCall 15 input 10 £temporary1078 -1
-137: Goto SignedGreaterThan BinaryAdd g_inChars g_inChars 1 precision 0
-138: NotEqual PreCall 15 input 10
-139: Goto SignedGreaterThan BinaryAdd g_inChars g_inChars 1 precision 0
-140: PreCall 15
-141: Call 15 scanChar 0
-142: PostCall 15
-143: GetReturnValue £temporary1084
-144: Assign input £temporary1084
-145: Assign found 1
-146: BinaryAdd g_inChars g_inChars 1
-147: Goto Assign £temporary1072 precision
-148: SignedGreaterThan BinaryAdd g_inChars g_inChars 1 precision 0
-149: Goto NotEqual BinaryAdd g_inCount g_inCount 1 found 0
-150: BinaryAdd g_inChars g_inChars 1
-151: Goto NotEqual BinaryAdd g_inCount g_inCount 1 found 0
-152: NotEqual BinaryAdd g_inCount g_inCount 1 found 0
-153: Goto Empty
-154: BinaryAdd g_inCount g_inCount 1
-155: Goto Empty
-156: Empty
-157: Return
-158: FunctionEnd scanString
+0: Assign index integral4$0#
+1: PreCall 40
+2: Call 40 scanChar 0
+3: PostCall 40
+4: GetReturnValue £temporary1205
+5: Assign input £temporary1205
+6: Assign found integral4$0#
+7: Empty
+8: PreCall 45
+9: IntegralToIntegral £temporary1206 input
+10: Parameter 69 signed int £temporary1206
+11: Call 45 isspace 0
+12: PostCall 45
+13: GetReturnValue £temporary1207
+14: NotEqual < PreCall 45> £temporary1207 integral4$0#
+15: Jump < NotEqual < Empty> string integral8$0#>
+16: PreCall 45
+17: Call 45 scanChar 0
+18: PostCall 45
+19: GetReturnValue £temporary1208
+20: Assign input £temporary1208
+21: Empty
+22: Jump < Empty>
+23: NotEqual < Empty> string integral8$0#
+24: Jump < Empty>
+25: Empty
+26: Equal < Empty> precision integral4$0#
+27: Jump < Empty>
+28: Empty
+29: Empty
+30: PreCall 45
+31: IntegralToIntegral £temporary1212 input
+32: Parameter 69 signed int £temporary1212
+33: Call 45 isspace 0
+34: PostCall 45
+35: GetReturnValue £temporary1213
+36: NotEqual < IntegralToIntegral £temporary1228 index> £temporary1213 integral4$0#
+37: Jump < IntegralToIntegral £temporary1216 input>
+38: IntegralToIntegral £temporary1216 input
+39: NotEqual < NotEqual < Assign £temporary1221 index> input integral1$10#> £temporary1216 integral4$minus1#
+40: Jump < IntegralToIntegral £temporary1228 index>
+41: NotEqual < Assign £temporary1221 index> input integral1$10#
+42: Jump < IntegralToIntegral £temporary1228 index>
+43: Assign £temporary1221 index
+44: Add £temporary1222 index integral4$1#
+45: Assign index £temporary1222
+46: IntegralToIntegral £temporary1223 £temporary1221
+47: Add £temporary1224 string £temporary1223
+48: Dereference £temporary1225 £temporary1224 0
+49: Assign £temporary1225 input
+50: PreCall 45
+51: Call 45 scanChar 0
+52: PostCall 45
+53: GetReturnValue £temporary1226
+54: Assign input £temporary1226
+55: Assign found integral4$1#
+56: Add £temporary1227 g_inChars integral4$1#
+57: Assign g_inChars £temporary1227
+58: Empty
+59: Jump < Empty>
+60: IntegralToIntegral £temporary1228 index
+61: Add £temporary1229 string £temporary1228
+62: Dereference £temporary1230 £temporary1229 0
+63: Assign £temporary1230 integral1$0#
+64: Add £temporary1231 g_inChars integral4$1#
+65: Assign g_inChars £temporary1231
+66: Jump < Empty>
+67: Empty
+68: Empty
+69: Assign £temporary1232 precision
+70: Subtract £temporary1233 precision integral4$1#
+71: Assign precision £temporary1233
+72: GreaterThan < PreCall 45> £temporary1232 integral4$0#
+73: Jump < GreaterThan < Empty> precision integral4$0#>
+74: PreCall 45
+75: IntegralToIntegral £temporary1235 input
+76: Parameter 69 signed int £temporary1235
+77: Call 45 isspace 0
+78: PostCall 45
+79: GetReturnValue £temporary1236
+80: NotEqual < GreaterThan < Empty> precision integral4$0#> £temporary1236 integral4$0#
+81: Jump < IntegralToIntegral £temporary1239 input>
+82: IntegralToIntegral £temporary1239 input
+83: NotEqual < NotEqual < Assign £temporary1245 index> input integral1$10#> £temporary1239 integral4$minus1#
+84: Jump < GreaterThan < Empty> precision integral4$0#>
+85: NotEqual < Assign £temporary1245 index> input integral1$10#
+86: Jump < GreaterThan < Empty> precision integral4$0#>
+87: Assign £temporary1245 index
+88: Add £temporary1246 index integral4$1#
+89: Assign index £temporary1246
+90: IntegralToIntegral £temporary1247 £temporary1245
+91: Add £temporary1248 string £temporary1247
+92: Dereference £temporary1249 £temporary1248 0
+93: Assign £temporary1249 input
+94: PreCall 45
+95: Call 45 scanChar 0
+96: PostCall 45
+97: GetReturnValue £temporary1250
+98: Assign input £temporary1250
+99: Assign found integral4$1#
+100: Add £temporary1251 g_inChars integral4$1#
+101: Assign g_inChars £temporary1251
+102: Empty
+103: Jump < Empty>
+104: GreaterThan < Empty> precision integral4$0#
+105: Jump < Empty>
+106: Empty
+107: IntegralToIntegral £temporary1253 index
+108: Add £temporary1254 string £temporary1253
+109: Dereference £temporary1255 £temporary1254 0
+110: Assign £temporary1255 integral1$0#
+111: Add £temporary1256 g_inChars integral4$1#
+112: Assign g_inChars £temporary1256
+113: Jump < Empty>
+114: Empty
+115: Empty
+116: Empty
+117: Jump < Empty>
+118: Empty
+119: Equal < Empty> precision integral4$0#
+120: Jump < Empty>
+121: Empty
+122: Empty
+123: PreCall 45
+124: IntegralToIntegral £temporary1262 input
+125: Parameter 69 signed int £temporary1262
+126: Call 45 isspace 0
+127: PostCall 45
+128: GetReturnValue £temporary1263
+129: NotEqual < Add £temporary1273 g_inChars integral4$1#> £temporary1263 integral4$0#
+130: Jump < IntegralToIntegral £temporary1266 input>
+131: IntegralToIntegral £temporary1266 input
+132: NotEqual < NotEqual < PreCall 45> input integral1$10#> £temporary1266 integral4$minus1#
+133: Jump < Add £temporary1273 g_inChars integral4$1#>
+134: NotEqual < PreCall 45> input integral1$10#
+135: Jump < Add £temporary1273 g_inChars integral4$1#>
+136: PreCall 45
+137: Call 45 scanChar 0
+138: PostCall 45
+139: GetReturnValue £temporary1271
+140: Assign input £temporary1271
+141: Assign found integral4$1#
+142: Add £temporary1272 g_inChars integral4$1#
+143: Assign g_inChars £temporary1272
+144: Empty
+145: Jump < Empty>
+146: Add £temporary1273 g_inChars integral4$1#
+147: Assign g_inChars £temporary1273
+148: Jump < Empty>
+149: Empty
+150: Empty
+151: Assign £temporary1274 precision
+152: Subtract £temporary1275 precision integral4$1#
+153: Assign precision £temporary1275
+154: GreaterThan < PreCall 45> £temporary1274 integral4$0#
+155: Jump < GreaterThan < Empty> precision integral4$0#>
+156: PreCall 45
+157: IntegralToIntegral £temporary1277 input
+158: Parameter 69 signed int £temporary1277
+159: Call 45 isspace 0
+160: PostCall 45
+161: GetReturnValue £temporary1278
+162: NotEqual < GreaterThan < Empty> precision integral4$0#> £temporary1278 integral4$0#
+163: Jump < IntegralToIntegral £temporary1281 input>
+164: IntegralToIntegral £temporary1281 input
+165: NotEqual < NotEqual < PreCall 45> input integral1$10#> £temporary1281 integral4$minus1#
+166: Jump < GreaterThan < Empty> precision integral4$0#>
+167: NotEqual < PreCall 45> input integral1$10#
+168: Jump < GreaterThan < Empty> precision integral4$0#>
+169: PreCall 45
+170: Call 45 scanChar 0
+171: PostCall 45
+172: GetReturnValue £temporary1287
+173: Assign input £temporary1287
+174: Assign found integral4$1#
+175: Add £temporary1288 g_inChars integral4$1#
+176: Assign g_inChars £temporary1288
+177: Empty
+178: Jump < Empty>
+179: GreaterThan < Empty> precision integral4$0#
+180: Jump < Empty>
+181: Empty
+182: Add £temporary1290 g_inChars integral4$1#
+183: Assign g_inChars £temporary1290
+184: Jump < Empty>
+185: Empty
+186: Empty
+187: Empty
+188: Empty
+189: NotEqual < Empty> found integral4$0#
+190: Jump < Empty>
+191: Empty
+192: Add £temporary1297 g_inCount integral4$1#
+193: Assign g_inCount £temporary1297
+194: Jump < Empty>
+195: Empty
+196: Empty
+197: Empty
+198: Return
+199: FunctionEnd scanString

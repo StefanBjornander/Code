@@ -1,27 +1,33 @@
-0: Assign index 0
+0: Assign index integral4$0#
 1: Empty
-2: UnsignedMultiply £temporary3156 index 1
-3: BinaryAdd £temporary3157 mainString £temporary3156
-4: Dereference £temporary3155 -> £temporary3157 £temporary3157 0
-5: NotEqual PreCall 12 £temporary3155 -> £temporary3157 0
-6: Goto Return -1
-7: PreCall 12
-8: Parameter 18 pointer charSet
-9: UnsignedMultiply £temporary3161 index 1
-10: BinaryAdd £temporary3162 mainString £temporary3161
-11: Dereference £temporary3160 -> £temporary3162 £temporary3162 0
-12: IntegralToIntegral £temporary3163 £temporary3160 -> £temporary3162
-13: Parameter 20 signedint £temporary3163
-14: Call 12 strchr 0
-15: PostCall 12
-16: GetReturnValue £temporary3164
-17: NotEqual Return index £temporary3164 0
-18: Goto Empty
-19: Return index
-20: Goto Empty
-21: Empty
-22: BinaryAdd index index 1
-23: Goto Empty
-24: Return -1
+2: IntegralToIntegral £temporary3551 index
+3: Add £temporary3552 mainString £temporary3551
+4: Dereference £temporary3553 £temporary3552 0
+5: NotEqual < PreCall 44> £temporary3553 integral1$0#
+6: Jump < SetReturnValue>
+7: PreCall 44
+8: Parameter 68 pointer charSet
+9: IntegralToIntegral £temporary3556 index
+10: Add £temporary3557 mainString £temporary3556
+11: Dereference £temporary3558 £temporary3557 0
+12: IntegralToIntegral £temporary3559 £temporary3558
+13: Parameter 76 signed int £temporary3559
+14: Call 44 strchr 0
+15: PostCall 44
+16: GetReturnValue £temporary3560
+17: NotEqual < Empty> £temporary3560 integral8$0#
+18: Jump < Empty>
+19: Empty
+20: SetReturnValue
+21: Return index
+22: Jump < Empty>
+23: Empty
+24: Empty
 25: Empty
-26: FunctionEnd strcspn
+26: Add £temporary3555 index integral4$1#
+27: Assign index £temporary3555
+28: Jump < Empty>
+29: SetReturnValue
+30: Return integral4$minus1#
+31: Empty
+32: FunctionEnd strcspn

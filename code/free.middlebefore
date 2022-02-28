@@ -1,44 +1,61 @@
-0: IntegralToIntegral £temporary186 freeMemoryPtr
-1: BinarySubtract £temporary187 £temporary186 4
-2: IntegralToIntegral £temporary188 £temporary187
-3: Assign freeBlockPtr £temporary188
-4: Assign prevBlockPtr 0
+0: IntegralToIntegral £temporary90 freeMemoryPtr
+1: Subtract £temporary91 £temporary90 integral4$12#
+2: IntegralToIntegral £temporary92 £temporary91
+3: Assign freeBlockPtr £temporary92
+4: Assign prevBlockPtr integral8$0#
 5: Assign currBlockPtr g_firstBlockPtr
-6: Equal Return freeMemoryPtr 0
-7: Goto NotEqual Equal Equal Dereference £temporary193 -> currBlockPtr currBlockPtr 0 prevBlockPtr 0 currBlockPtr freeBlockPtr currBlockPtr 0
-8: Return
-9: Goto NotEqual Equal Equal Dereference £temporary193 -> currBlockPtr currBlockPtr 0 prevBlockPtr 0 currBlockPtr freeBlockPtr currBlockPtr 0
-10: NotEqual Equal Equal Dereference £temporary193 -> currBlockPtr currBlockPtr 0 prevBlockPtr 0 currBlockPtr freeBlockPtr currBlockPtr 0
-11: Goto Empty
-12: Equal Equal Dereference £temporary193 -> currBlockPtr currBlockPtr 0 prevBlockPtr 0 currBlockPtr freeBlockPtr
-13: Goto Assign prevBlockPtr currBlockPtr
-14: Equal Dereference £temporary193 -> currBlockPtr currBlockPtr 0 prevBlockPtr 0
-15: Goto Equal Dereference £temporary197 -> currBlockPtr currBlockPtr 0 prevBlockPtr 0
-16: Dereference £temporary193 -> currBlockPtr currBlockPtr 0
-17: Equal Assign g_firstBlockPtr 0 £temporary193 -> currBlockPtr 0
-18: Goto Equal Dereference £temporary197 -> currBlockPtr currBlockPtr 0 prevBlockPtr 0
-19: Assign g_firstBlockPtr 0
-20: Goto Return
-21: Equal Dereference £temporary197 -> currBlockPtr currBlockPtr 0 prevBlockPtr 0
-22: Goto Dereference £temporary198 -> currBlockPtr currBlockPtr 0
-23: Dereference £temporary197 -> currBlockPtr currBlockPtr 0
-24: Assign g_firstBlockPtr £temporary197 -> currBlockPtr
-25: Goto Return
-26: Dereference £temporary198 -> currBlockPtr currBlockPtr 0
-27: Equal Dereference £temporary200 -> prevBlockPtr prevBlockPtr 0 £temporary198 -> currBlockPtr 0
-28: Goto Dereference £temporary201 -> prevBlockPtr prevBlockPtr 0
-29: Dereference £temporary200 -> prevBlockPtr prevBlockPtr 0
-30: Assign £temporary200 -> prevBlockPtr 0
-31: Goto Return
-32: Dereference £temporary201 -> prevBlockPtr prevBlockPtr 0
-33: Dereference £temporary202 -> currBlockPtr currBlockPtr 0
-34: Assign £temporary201 -> prevBlockPtr £temporary202 -> currBlockPtr
-35: Return
-36: Goto Assign prevBlockPtr currBlockPtr
-37: Assign prevBlockPtr currBlockPtr
-38: Dereference £temporary203 -> currBlockPtr currBlockPtr 0
-39: Assign currBlockPtr £temporary203 -> currBlockPtr
-40: Goto NotEqual Equal Equal Dereference £temporary193 -> currBlockPtr currBlockPtr 0 prevBlockPtr 0 currBlockPtr freeBlockPtr currBlockPtr 0
-41: Empty
-42: Return
-43: FunctionEnd free
+6: Equal < Empty> freeMemoryPtr integral8$0#
+7: Jump < Empty>
+8: Empty
+9: Return
+10: Jump < Empty>
+11: Empty
+12: Empty
+13: Empty
+14: NotEqual < Equal < Empty> currBlockPtr freeBlockPtr> currBlockPtr integral8$0#
+15: Jump < Empty>
+16: Equal < Empty> currBlockPtr freeBlockPtr
+17: Jump < Empty>
+18: Empty
+19: Equal < Dereference £temporary99 currBlockPtr 0> prevBlockPtr integral8$0#
+20: Jump < Empty>
+21: Dereference £temporary99 currBlockPtr 0
+22: Equal < Empty> £temporary99.next integral8$0#
+23: Jump < Empty>
+24: Empty
+25: Assign g_firstBlockPtr integral8$0#
+26: Jump < Empty>
+27: Empty
+28: Equal < Empty> prevBlockPtr integral8$0#
+29: Jump < Empty>
+30: Empty
+31: Dereference £temporary103 currBlockPtr 0
+32: Assign g_firstBlockPtr £temporary103.next
+33: Jump < Empty>
+34: Empty
+35: Dereference £temporary104 currBlockPtr 0
+36: Equal < Empty> £temporary104.next integral8$0#
+37: Jump < Empty>
+38: Empty
+39: Dereference £temporary106 prevBlockPtr 0
+40: Assign £temporary106.next integral8$0#
+41: Jump < Empty>
+42: Empty
+43: Dereference £temporary107 prevBlockPtr 0
+44: Dereference £temporary108 currBlockPtr 0
+45: Assign £temporary107.next £temporary108.next
+46: Empty
+47: Empty
+48: Empty
+49: Return
+50: Jump < Empty>
+51: Empty
+52: Empty
+53: Assign prevBlockPtr currBlockPtr
+54: Dereference £temporary117 currBlockPtr 0
+55: Assign currBlockPtr £temporary117.next
+56: Empty
+57: Jump < Empty>
+58: Empty
+59: Return
+60: FunctionEnd free

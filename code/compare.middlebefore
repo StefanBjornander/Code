@@ -1,23 +1,26 @@
-0: IntegralToIntegral £temporary4246 valuePtr1
-1: Dereference £temporary4247 -> £temporary4246 £temporary4246 0
-2: Assign intValue1 £temporary4247 -> £temporary4246
-3: IntegralToIntegral £temporary4248 valuePtr2
-4: Dereference £temporary4249 -> £temporary4248 £temporary4248 0
-5: Assign intValue2 £temporary4249 -> £temporary4248
-6: SignedLessThan Empty intValue1 intValue2
-7: Goto Equal Empty intValue1 intValue2
+0: IntegralToIntegral £temporary4881 valuePtr1
+1: Dereference £temporary4882 £temporary4881 0
+2: Assign intValue1 £temporary4882
+3: IntegralToIntegral £temporary4883 valuePtr2
+4: Dereference £temporary4884 £temporary4883 0
+5: Assign intValue2 £temporary4884
+6: LessThan < Empty> intValue1 intValue2
+7: Jump < Empty>
 8: Empty
-9: Assign £temporary4253 -1
-10: Goto Empty
-11: Equal Empty intValue1 intValue2
-12: Goto Empty
-13: Empty
-14: Assign £temporary4253 0
-15: Goto Empty
-16: Empty
-17: Assign £temporary4253 1
-18: Empty
+9: Assign £temporary4888 integral4$minus1#
+10: Jump < Empty>
+11: Empty
+12: Equal < Empty> intValue1 intValue2
+13: Jump < Empty>
+14: Empty
+15: Assign £temporary4887 integral4$0#
+16: Jump < Empty>
+17: Empty
+18: Assign £temporary4887 integral4$1#
 19: Empty
-20: Return £temporary4253
+20: Assign £temporary4888 £temporary4887
 21: Empty
-22: FunctionEnd compare
+22: SetReturnValue
+23: Return £temporary4888
+24: Empty
+25: FunctionEnd compare

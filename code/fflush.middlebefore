@@ -1,32 +1,46 @@
-0: Equal Assign index 0 stream 0
-1: Goto Return 0
-2: Assign index 0
-3: Empty
-4: SignedLessThan UnsignedMultiply £temporary767 index 29 index 20
-5: Goto Return 0
-6: UnsignedMultiply £temporary767 index 29
-7: BinaryAdd £temporary768 g_fileArray £temporary767
-8: Dereference £temporary766 -> £temporary768 £temporary768 0
-9: NotEqual PreCall 10 £temporary766.open -> £temporary768 0
-10: Goto Empty
-11: PreCall 10
-12: UnsignedMultiply £temporary770 index 29
-13: BinaryAdd £temporary771 g_fileArray £temporary770
-14: Dereference £temporary769 -> £temporary771 £temporary771 0
-15: Address £temporary772 £temporary769 -> £temporary771
-16: Parameter 16 pointer £temporary772
-17: Call 10 fflush 0
-18: PostCall 10
-19: GetReturnValue £temporary773
-20: Equal Return -1 £temporary773 -1
-21: Goto Empty
-22: Return -1
-23: Goto Empty
-24: Goto Empty
-25: Empty
-26: BinaryAdd index index 1
-27: Goto Empty
-28: Goto Return 0
-29: Return 0
+0: Equal < Empty> stream integral8$0#
+1: Jump < Empty>
+2: Empty
+3: Assign index integral4$0#
+4: Empty
+5: LessThan < Multiply £temporary911 index integral4$41#> index integral4$20#
+6: Jump < SetReturnValue>
+7: Multiply £temporary911 index integral4$41#
+8: IntegralToIntegral £temporary912 £temporary911
+9: Add £temporary913 g_fileArray £temporary912
+10: Dereference £temporary914 £temporary913 0
+11: NotEqual < Empty> £temporary914.open integral4$0#
+12: Jump < Empty>
+13: Empty
+14: PreCall 36
+15: Multiply £temporary915 index integral4$41#
+16: IntegralToIntegral £temporary916 £temporary915
+17: Add £temporary917 g_fileArray £temporary916
+18: Dereference £temporary918 £temporary917 0
+19: Address £temporary919 £temporary918
+20: Parameter 60 pointer £temporary919
+21: Call 36 fflush 0
+22: PostCall 36
+23: GetReturnValue £temporary920
+24: Equal < Empty> £temporary920 integral4$minus1#
+25: Jump < Empty>
+26: Empty
+27: SetReturnValue
+28: Return integral4$minus1#
+29: Jump < Empty>
 30: Empty
-31: FunctionEnd fflush
+31: Empty
+32: Jump < Empty>
+33: Empty
+34: Empty
+35: Empty
+36: Add £temporary910 index integral4$1#
+37: Assign index £temporary910
+38: Jump < Empty>
+39: Jump < Empty>
+40: Empty
+41: Empty
+42: SetReturnValue
+43: Return integral4$0#
+44: Empty
+45: FunctionEnd fflush

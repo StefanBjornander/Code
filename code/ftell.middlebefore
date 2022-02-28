@@ -1,10 +1,11 @@
-0: PreCall 8
-1: Parameter 14 pointer stream
-2: Parameter 16 signedint 0
-3: Parameter 18 signedint 1
-4: Call 8 fseek 0
-5: PostCall 8
-6: GetReturnValue £temporary890
-7: Return £temporary890
-8: Empty
-9: FunctionEnd ftell
+0: PreCall 32
+1: Parameter 56 pointer stream
+2: Parameter 64 signed int integral4$0#
+3: Parameter 68 signed int SEEK_CUR
+4: Call 32 fseek 0
+5: PostCall 32
+6: GetReturnValue £temporary1067
+7: SetReturnValue
+8: Return £temporary1067
+9: Empty
+10: FunctionEnd ftell

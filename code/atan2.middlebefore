@@ -1,125 +1,102 @@
-0: PushFloat x
-1: PushZero
-2: SignedLessThan CallHeader 14 atan x 0
-3: Goto PushFloat x
-4: CheckTrackMapFloatStack
-5: CallHeader 14 atan
+0: PushFloat y
+1: PushFloat floating8$0#
+2: GreaterThan < Empty> y floating8$0#
+3: Jump < Empty>
+4: Empty
+5: PreCall 40
 6: PushFloat x
-7: UnarySubtract £temporary519 x
-8: Parameter 14 £temporary519 6
-9: Call 14 atan 0
-10: PostCall 14
-11: GetReturnValue £temporary520
-12: UnarySubtract £temporary521 £temporary520
-13: SetReturnValue £temporary521
-14: Return £temporary521
-15: Goto Empty
-16: PushFloat x
-17: PushOne
-18: SignedGreaterThan PushFloat 3.14 x 1
-19: Goto PushFloat x
-20: CheckTrackMapFloatStack
-21: PushFloat 3.14
-22: PopFloat
-23: PushFloat 1.57
-24: CallHeader 14 atan
-25: PushOne
-26: PushFloat x
-27: SignedDivide £temporary523 1 x
-28: Parameter 14 £temporary523 6
-29: Call 14 atan 0
-30: PostCall 14
-31: GetReturnValue £temporary524
-32: BinarySubtract £temporary525 1.57 £temporary524
-33: SetReturnValue £temporary525
-34: Return £temporary525
-35: Goto Empty
-36: PushFloat x
-37: PushFloat 0.5
-38: SignedGreaterThan PushFloat 2 x 0.5
-39: Goto PushZero
-40: CheckTrackMapFloatStack
-41: PushFloat 2
-42: CallHeader 14 atan
-43: PushFloat x
-44: PushOne
-45: CallHeader 14 sqrt
-46: PushOne
-47: PushFloat x
-48: PushFloat x
-49: SignedMultiply £temporary527 x x
-50: BinaryAdd £temporary528 1 £temporary527
-51: Parameter 14 £temporary528 14
-52: Call 14 sqrt 0
-53: PostCall 14
-54: GetReturnValue £temporary529
-55: BinaryAdd £temporary530 1 £temporary529
-56: SignedDivide £temporary531 x £temporary530
-57: Parameter 14 £temporary531 6
-58: Call 14 atan 0
-59: PostCall 14
-60: GetReturnValue £temporary532
-61: SignedMultiply £temporary533 2 £temporary532
-62: SetReturnValue £temporary533
-63: Return £temporary533
-64: Goto Empty
-65: PushZero
-66: PopFloat sum
-67: PushOne
-68: PopFloat sign
-69: PushOne
-70: PopFloat denominator
-71: PushFloat x
-72: PopFloat product
-73: PushFloat term
-74: PopFloat
-75: PushFloat sign
-76: PushFloat product
-77: SignedMultiply £temporary534 sign product
-78: PushFloat denominator
-79: SignedDivide £temporary535 £temporary534 denominator
-80: TopFloat term
-81: PopFloat
-82: PushFloat sum
-83: PushFloat term
-84: BinaryAdd £temporary536 sum term
-85: TopFloat sum
-86: PopFloat
-87: PushFloat sign
-88: PopFloat
-89: PushFloat sign
-90: UnarySubtract £temporary537 sign
-91: TopFloat sign
-92: PopFloat
-93: PushFloat product
-94: PushFloat x
-95: PushFloat x
-96: SignedMultiply £temporary538 x x
-97: SignedMultiply £temporary539 product £temporary538
-98: TopFloat product
-99: PopFloat
-100: PushFloat denominator
-101: PushFloat 2
-102: BinaryAdd £temporary540 denominator 2
-103: TopFloat denominator
-104: PopFloat
-105: CallHeader 54 fabs
-106: PushFloat term
-107: Parameter 54 term 6
-108: Call 54 fabs 0
-109: PostCall 54
-110: GetReturnValue £temporary541
-111: PushFloat 0.000000001
-112: SignedGreaterThanEqual PushFloat term £temporary541 0.000000001
-113: Goto PushFloat sum
-114: CheckTrackMapFloatStack
-115: Goto PushFloat term
-116: PushFloat sum
-117: SetReturnValue sum
-118: Return sum
-119: Goto Empty
-120: Goto Empty
-121: Goto Empty
-122: Empty
-123: Return 0
-124: FunctionEnd atan
+7: PushFloat y
+8: Divide £temporary689 x y
+9: Parameter 64 double £temporary689
+10: Call 40 atan 0
+11: PostCall 40
+12: GetReturnValue £temporary690
+13: SetReturnValue
+14: Return £temporary690
+15: Jump < Empty>
+16: Empty
+17: PushFloat x
+18: PushFloat floating8$0#
+19: GreaterThanEqual < PushFloat y> x floating8$0#
+20: Jump < Empty>
+21: PushFloat y
+22: PushFloat floating8$0#
+23: LessThan < Empty> y floating8$0#
+24: Jump < Empty>
+25: Empty
+26: PushFloat floating8$3.14#
+27: PreCall 40
+28: PushFloat x
+29: PushFloat y
+30: Divide £temporary694 x y
+31: Parameter 64 double £temporary694
+32: Call 40 atan 0
+33: PostCall 40
+34: GetReturnValue £temporary695
+35: Add £temporary696 floating8$3.14# £temporary695
+36: SetReturnValue
+37: Return £temporary696
+38: Jump < Empty>
+39: Empty
+40: PushFloat x
+41: PushFloat floating8$0#
+42: LessThan < PushFloat y> x floating8$0#
+43: Jump < Empty>
+44: PushFloat y
+45: PushFloat floating8$0#
+46: LessThan < Empty> y floating8$0#
+47: Jump < Empty>
+48: Empty
+49: PushFloat floating8$minus3.14#
+50: PreCall 40
+51: PushFloat x
+52: PushFloat y
+53: Divide £temporary700 x y
+54: Parameter 64 double £temporary700
+55: Call 40 atan 0
+56: PostCall 40
+57: GetReturnValue £temporary701
+58: Add £temporary702 floating8$minus3.14# £temporary701
+59: SetReturnValue
+60: Return £temporary702
+61: Jump < Empty>
+62: Empty
+63: PushFloat x
+64: PushFloat floating8$0#
+65: GreaterThan < PushFloat y> x floating8$0#
+66: Jump < Empty>
+67: PushFloat y
+68: PushFloat floating8$0#
+69: Equal < Empty> y floating8$0#
+70: Jump < Empty>
+71: Empty
+72: PushFloat floating8$1.57#
+73: SetReturnValue
+74: Return floating8$1.57#
+75: Jump < Empty>
+76: Empty
+77: PushFloat x
+78: PushFloat floating8$0#
+79: LessThan < PushFloat y> x floating8$0#
+80: Jump < Empty>
+81: PushFloat y
+82: PushFloat floating8$0#
+83: Equal < Empty> y floating8$0#
+84: Jump < Empty>
+85: Empty
+86: PushFloat floating8$minus1.57#
+87: SetReturnValue
+88: Return floating8$minus1.57#
+89: Jump < Empty>
+90: Empty
+91: Assign errno EDOM
+92: PushFloat floating8$0#
+93: SetReturnValue
+94: Return floating8$0#
+95: Empty
+96: Empty
+97: Empty
+98: Empty
+99: Empty
+100: Empty
+101: FunctionEnd atan2

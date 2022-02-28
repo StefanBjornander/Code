@@ -1,0 +1,61 @@
+0: Equal 33 s integral8$0#
+1: NotEqual 16 precision integral4$0#
+2: Assign index integral4$0#
+3: IntegralToIntegral £temporary1775 index
+4: Add £temporary1776 s £temporary1775
+5: Dereference £temporary1777 £temporary1776 0
+6: Equal 57 £temporary1777 integral1$0#
+7: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+8: IntegralToIntegral £temporary1780 index
+9: Add £temporary1781 s £temporary1780
+10: Dereference £temporary1782 £temporary1781 0
+11: Parameter 64 signed char £temporary1782
+12: Call 40 printChar 0
+13: PostCall 40
+14: Add index index integral4$1#
+15: Jump 3
+16: Assign index integral4$0#
+
+17: Assign £temporary1784 precision
+18: Subtract precision precision integral4$1#
+19: LessThanEqual 57 £temporary1784 integral4$0#
+
+20: IntegralToIntegral £temporary1787 index
+21: Add £temporary1788 s £temporary1787
+22: Dereference £temporary1789 £temporary1788 0
+23: Equal 57 £temporary1789 integral1$0#
+24: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+25: IntegralToIntegral £temporary1793 index
+26: Add £temporary1794 s £temporary1793
+27: Dereference £temporary1795 £temporary1794 0
+28: Parameter 64 signed char £temporary1795
+29: Call 40 printChar 0
+30: PostCall 40
+31: Add index index integral4$1#
+32: Jump 17
+33: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+34: Parameter 60 signed char integral1$60#
+35: Call 36 printChar 0
+36: PostCall 36
+37: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+38: Parameter 60 signed char integral1$78#
+39: Call 36 printChar 0
+40: PostCall 36
+41: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+42: Parameter 60 signed char integral1$85#
+43: Call 36 printChar 0
+44: PostCall 36
+45: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+46: Parameter 60 signed char integral1$76#
+47: Call 36 printChar 0
+48: PostCall 36
+49: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+50: Parameter 60 signed char integral1$76#
+51: Call 36 printChar 0
+52: PostCall 36
+53: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+54: Parameter 60 signed char integral1$62#
+55: Call 36 printChar 0
+56: PostCall 36
+57: Return
+58: FunctionEnd printString

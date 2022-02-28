@@ -1,11 +1,12 @@
-0: PreCall 8
-1: Parameter 14 pointer s
-2: Parameter 16 pointer 0
-3: Parameter 18 signedint 10
-4: Call 8 strtol 0
-5: PostCall 8
-6: GetReturnValue £temporary1939
-7: IntegralToIntegral £temporary1940 £temporary1939
-8: Return £temporary1940
-9: Empty
-10: FunctionEnd atoi
+0: PreCall 32
+1: Parameter 56 pointer s
+2: Parameter 64 pointer integral8$0#
+3: Parameter 72 signed int integral4$10#
+4: Call 32 strtol 0
+5: PostCall 32
+6: GetReturnValue £temporary2273
+7: IntegralToIntegral £temporary2274 £temporary2273
+8: SetReturnValue
+9: Return £temporary2274
+10: Empty
+11: FunctionEnd atoi

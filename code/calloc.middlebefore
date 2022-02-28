@@ -1,19 +1,23 @@
-0: PreCall 10
-1: SignedMultiply £temporary182 number size
-2: Parameter 16 signedint £temporary182
-3: Call 10 malloc 0
-4: PostCall 10
-5: GetReturnValue £temporary183
-6: Assign pointer £temporary183
-7: NotEqual PreCall 12 pointer 0
-8: Goto Return pointer
-9: PreCall 12
-10: Parameter 18 pointer pointer
-11: Parameter 20 signedint 0
-12: Parameter 22 signedint size
-13: Call 12 memset 0
-14: PostCall 12
-15: Goto Return pointer
-16: Return pointer
+0: PreCall 32
+1: Multiply £temporary84 number size
+2: Parameter 56 signed int £temporary84
+3: Call 32 malloc 0
+4: PostCall 32
+5: GetReturnValue £temporary85
+6: Assign pointer £temporary85
+7: NotEqual < Empty> pointer integral8$0#
+8: Jump < Empty>
+9: Empty
+10: PreCall 40
+11: Parameter 64 pointer pointer
+12: Parameter 72 signed int integral4$0#
+13: Parameter 76 signed int size
+14: Call 40 memset 0
+15: PostCall 40
+16: Jump < Empty>
 17: Empty
-18: FunctionEnd calloc
+18: Empty
+19: SetReturnValue
+20: Return pointer
+21: Empty
+22: FunctionEnd calloc

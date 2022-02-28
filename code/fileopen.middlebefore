@@ -1,13 +1,11 @@
-0: AssignRegister ah 61
-1: AssignRegister al mode
-2: AssignRegister dx name
-3: Interrupt 33
-4: Carry Assign errno 9
-5: Goto InspectRegister £temporary715 ax
-6: Assign errno 9
-7: Return -1
-8: Goto Empty
-9: InspectRegister £temporary715 ax
-10: Return £temporary715
-11: Empty
-12: FunctionEnd fileopen
+0: AssignRegister rax integral8$2#
+1: IntegralToIntegral £temporary831 name
+2: AssignRegister rdi £temporary831
+3: IntegralToIntegral £temporary833 mode
+4: AssignRegister rsi £temporary833
+5: SysCall
+6: InspectRegister £temporary834 eax
+7: SetReturnValue
+8: Return £temporary834
+9: Empty
+10: FunctionEnd fileopen

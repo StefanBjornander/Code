@@ -1,39 +1,48 @@
-0: PreCall 8
-1: Parameter 14 signedint c
-2: Call 8 islower 0
-3: PostCall 8
-4: GetReturnValue £temporary338
-5: NotEqual PreCall 8 £temporary338 0
-6: Goto Return c
-7: PreCall 8
-8: Call 8 localeconv 0
-9: PostCall 8
-10: GetReturnValue £temporary339
-11: Assign localeConvPtr £temporary339
-12: NotEqual Dereference £temporary341 -> localeConvPtr localeConvPtr 0 localeConvPtr 0
-13: Goto BinarySubtract £temporary350 c 32
-14: Dereference £temporary341 -> localeConvPtr localeConvPtr 0
-15: Assign lowerCase £temporary341 -> localeConvPtr
-16: Dereference £temporary342 -> localeConvPtr localeConvPtr 0
-17: Assign upperCase £temporary342 -> localeConvPtr
-18: PreCall 14
-19: Parameter 20 pointer lowerCase
-20: Parameter 22 signedint c
-21: Call 14 strchr 0
-22: PostCall 14
-23: GetReturnValue £temporary343
-24: BinarySubtract £temporary345 £temporary343 lowerCase
-25: UnsignedDivide £temporary344 £temporary345 1
-26: Assign index £temporary344
-27: UnsignedMultiply £temporary347 index 1
-28: BinaryAdd £temporary348 upperCase £temporary347
-29: Dereference £temporary346 -> £temporary348 £temporary348 0
-30: IntegralToIntegral £temporary349 £temporary346 -> £temporary348
-31: Return £temporary349
-32: Goto Empty
-33: BinarySubtract £temporary350 c 32
-34: Return £temporary350
-35: Goto Empty
-36: Return c
-37: Empty
-38: FunctionEnd toupper
+0: PreCall 28
+1: Parameter 52 signed int c
+2: Call 28 islower 0
+3: PostCall 28
+4: GetReturnValue £temporary279
+5: NotEqual < Empty> £temporary279 integral4$0#
+6: Jump < Empty>
+7: Empty
+8: PreCall 28
+9: Call 28 localeconv 0
+10: PostCall 28
+11: GetReturnValue £temporary280
+12: Assign localeConvPtr £temporary280
+13: NotEqual < Empty> localeConvPtr integral8$0#
+14: Jump < Empty>
+15: Empty
+16: Dereference £temporary282 localeConvPtr 0
+17: Assign lowerCase £temporary282.lowerCase
+18: Dereference £temporary283 localeConvPtr 0
+19: Assign upperCase £temporary283.upperCase
+20: PreCall 52
+21: Parameter 76 pointer lowerCase
+22: Parameter 84 signed int c
+23: Call 52 strchr 0
+24: PostCall 52
+25: GetReturnValue £temporary284
+26: Subtract £temporary285 £temporary284 lowerCase
+27: IntegralToIntegral £temporary286 £temporary285
+28: Assign index £temporary286
+29: IntegralToIntegral £temporary287 index
+30: Add £temporary288 upperCase £temporary287
+31: Dereference £temporary289 £temporary288 0
+32: IntegralToIntegral £temporary290 £temporary289
+33: SetReturnValue
+34: Return £temporary290
+35: Jump < Empty>
+36: Empty
+37: Subtract £temporary291 c integral4$32#
+38: SetReturnValue
+39: Return £temporary291
+40: Empty
+41: Jump < Empty>
+42: Empty
+43: SetReturnValue
+44: Return c
+45: Empty
+46: Empty
+47: FunctionEnd toupper

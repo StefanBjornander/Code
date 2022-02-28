@@ -1,54 +1,53 @@
-0: Assign index 0
+0: Assign index integral4$0#
 1: Empty
-2: Goto UnsignedMultiply £temporary3052 index 1
-3: UnsignedMultiply £temporary3052 index 1
-4: BinaryAdd £temporary3053 left £temporary3052
-5: Dereference £temporary3051 -> £temporary3053 £temporary3053 0
-6: Equal UnsignedMultiply £temporary3056 index 1 £temporary3051 -> £temporary3053 0
-7: Goto UnsignedMultiply £temporary3061 index 1
-8: UnsignedMultiply £temporary3056 index 1
-9: BinaryAdd £temporary3057 right £temporary3056
-10: Dereference £temporary3055 -> £temporary3057 £temporary3057 0
-11: Equal Return 0 £temporary3055 -> £temporary3057 0
-12: Goto UnsignedMultiply £temporary3061 index 1
-13: Return 0
-14: Goto Empty
-15: UnsignedMultiply £temporary3061 index 1
-16: BinaryAdd £temporary3062 left £temporary3061
-17: Dereference £temporary3060 -> £temporary3062 £temporary3062 0
-18: Equal Return -1 £temporary3060 -> £temporary3062 0
-19: Goto UnsignedMultiply £temporary3065 index 1
-20: Return -1
-21: Goto Empty
-22: UnsignedMultiply £temporary3065 index 1
-23: BinaryAdd £temporary3066 right £temporary3065
-24: Dereference £temporary3064 -> £temporary3066 £temporary3066 0
-25: Equal Return 1 £temporary3064 -> £temporary3066 0
-26: Goto UnsignedMultiply £temporary3069 index 1
-27: Return 1
-28: Goto Empty
-29: UnsignedMultiply £temporary3069 index 1
-30: BinaryAdd £temporary3070 left £temporary3069
-31: Dereference £temporary3068 -> £temporary3070 £temporary3070 0
-32: UnsignedMultiply £temporary3072 index 1
-33: BinaryAdd £temporary3073 right £temporary3072
-34: Dereference £temporary3071 -> £temporary3073 £temporary3073 0
-35: SignedLessThan Return -1 £temporary3068 -> £temporary3070 £temporary3071 -> £temporary3073
-36: Goto UnsignedMultiply £temporary3076 index 1
-37: Return -1
-38: Goto Empty
-39: UnsignedMultiply £temporary3076 index 1
-40: BinaryAdd £temporary3077 left £temporary3076
-41: Dereference £temporary3075 -> £temporary3077 £temporary3077 0
-42: UnsignedMultiply £temporary3079 index 1
-43: BinaryAdd £temporary3080 right £temporary3079
-44: Dereference £temporary3078 -> £temporary3080 £temporary3080 0
-45: SignedGreaterThan Return 1 £temporary3075 -> £temporary3077 £temporary3078 -> £temporary3080
-46: Goto Empty
-47: Return 1
-48: Goto Empty
-49: Empty
-50: BinaryAdd index index 1
-51: Goto Empty
-52: Empty
-53: FunctionEnd strcmp
+2: Jump < IntegralToIntegral £temporary3445 index>
+3: IntegralToIntegral £temporary3445 index
+4: Add £temporary3446 left £temporary3445
+5: Dereference £temporary3447 £temporary3446 0
+6: Equal < IntegralToIntegral £temporary3449 index> £temporary3447 integral1$0#
+7: Jump < Empty>
+8: IntegralToIntegral £temporary3449 index
+9: Add £temporary3450 right £temporary3449
+10: Dereference £temporary3451 £temporary3450 0
+11: Equal < Empty> £temporary3451 integral1$0#
+12: Jump < Empty>
+13: Empty
+14: SetReturnValue
+15: Return integral4$0#
+16: Jump < Empty>
+17: Empty
+18: IntegralToIntegral £temporary3454 index
+19: Add £temporary3455 left £temporary3454
+20: Dereference £temporary3456 £temporary3455 0
+21: IntegralToIntegral £temporary3457 index
+22: Add £temporary3458 right £temporary3457
+23: Dereference £temporary3459 £temporary3458 0
+24: LessThan < Empty> £temporary3456 £temporary3459
+25: Jump < Empty>
+26: Empty
+27: SetReturnValue
+28: Return integral4$minus1#
+29: Jump < Empty>
+30: Empty
+31: IntegralToIntegral £temporary3461 index
+32: Add £temporary3462 left £temporary3461
+33: Dereference £temporary3463 £temporary3462 0
+34: IntegralToIntegral £temporary3464 index
+35: Add £temporary3465 right £temporary3464
+36: Dereference £temporary3466 £temporary3465 0
+37: GreaterThan < Empty> £temporary3463 £temporary3466
+38: Jump < Empty>
+39: Empty
+40: SetReturnValue
+41: Return integral4$1#
+42: Jump < Empty>
+43: Empty
+44: Empty
+45: Empty
+46: Empty
+47: Empty
+48: Add £temporary3444 index integral4$1#
+49: Assign index £temporary3444
+50: Jump < Empty>
+51: Empty
+52: FunctionEnd strcmp

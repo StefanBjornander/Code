@@ -1,71 +1,80 @@
-0: NotEqual Equal Assign index 0 precision 0 s 0
-1: Goto PreCall 10
-2: Equal Assign index 0 precision 0
-3: Goto Assign index 0
-4: Assign index 0
+0: NotEqual < Empty> s integral8$0#
+1: Jump < Empty>
+2: Empty
+3: Equal < Empty> precision integral4$0#
+4: Jump < Empty>
 5: Empty
-6: UnsignedMultiply £temporary1505 index 1
-7: BinaryAdd £temporary1506 s £temporary1505
-8: Dereference £temporary1504 -> £temporary1506 £temporary1506 0
-9: NotEqual PreCall 12 £temporary1504 -> £temporary1506 0
-10: Goto Empty
-11: PreCall 12
-12: UnsignedMultiply £temporary1510 index 1
-13: BinaryAdd £temporary1511 s £temporary1510
-14: Dereference £temporary1509 -> £temporary1511 £temporary1511 0
-15: Parameter 18 signedchar £temporary1509 -> £temporary1511
-16: Call 12 printChar 0
-17: PostCall 12
-18: Empty
-19: BinaryAdd index index 1
-20: Goto Empty
-21: Goto Empty
-22: Assign index 0
-23: Empty
-24: Assign £temporary1513 precision
-25: BinarySubtract precision precision 1
-26: SignedGreaterThan UnsignedMultiply £temporary1516 index 1 £temporary1513 0
-27: Goto Empty
-28: UnsignedMultiply £temporary1516 index 1
-29: BinaryAdd £temporary1517 s £temporary1516
-30: Dereference £temporary1515 -> £temporary1517 £temporary1517 0
-31: NotEqual PreCall 12 £temporary1515 -> £temporary1517 0
-32: Goto Empty
-33: PreCall 12
-34: UnsignedMultiply £temporary1522 index 1
-35: BinaryAdd £temporary1523 s £temporary1522
-36: Dereference £temporary1521 -> £temporary1523 £temporary1523 0
-37: Parameter 18 signedchar £temporary1521 -> £temporary1523
-38: Call 12 printChar 0
-39: PostCall 12
-40: Empty
-41: BinaryAdd index index 1
-42: Goto Empty
-43: Goto Empty
-44: PreCall 10
-45: Parameter 16 signedchar 60
-46: Call 10 printChar 0
-47: PostCall 10
-48: PreCall 10
-49: Parameter 16 signedchar 78
-50: Call 10 printChar 0
-51: PostCall 10
-52: PreCall 10
-53: Parameter 16 signedchar 85
-54: Call 10 printChar 0
-55: PostCall 10
-56: PreCall 10
-57: Parameter 16 signedchar 76
-58: Call 10 printChar 0
-59: PostCall 10
-60: PreCall 10
-61: Parameter 16 signedchar 76
-62: Call 10 printChar 0
-63: PostCall 10
-64: PreCall 10
-65: Parameter 16 signedchar 62
-66: Call 10 printChar 0
-67: PostCall 10
-68: Empty
-69: Return
-70: FunctionEnd printString
+6: Assign index integral4$0#
+7: Empty
+8: IntegralToIntegral £temporary1775 index
+9: Add £temporary1776 s £temporary1775
+10: Dereference £temporary1777 £temporary1776 0
+11: NotEqual < PreCall 40> £temporary1777 integral1$0#
+12: Jump < Empty>
+13: PreCall 40
+14: IntegralToIntegral £temporary1780 index
+15: Add £temporary1781 s £temporary1780
+16: Dereference £temporary1782 £temporary1781 0
+17: Parameter 64 signed char £temporary1782
+18: Call 40 printChar 0
+19: PostCall 40
+20: Empty
+21: Add £temporary1779 index integral4$1#
+22: Assign index £temporary1779
+23: Jump < Empty>
+24: Jump < Empty>
+25: Empty
+26: Assign index integral4$0#
+27: Empty
+28: Assign £temporary1784 precision
+29: Subtract £temporary1785 precision integral4$1#
+30: Assign precision £temporary1785
+31: GreaterThan < IntegralToIntegral £temporary1787 index> £temporary1784 integral4$0#
+32: Jump < Empty>
+33: IntegralToIntegral £temporary1787 index
+34: Add £temporary1788 s £temporary1787
+35: Dereference £temporary1789 £temporary1788 0
+36: NotEqual < PreCall 40> £temporary1789 integral1$0#
+37: Jump < Empty>
+38: PreCall 40
+39: IntegralToIntegral £temporary1793 index
+40: Add £temporary1794 s £temporary1793
+41: Dereference £temporary1795 £temporary1794 0
+42: Parameter 64 signed char £temporary1795
+43: Call 40 printChar 0
+44: PostCall 40
+45: Empty
+46: Add £temporary1792 index integral4$1#
+47: Assign index £temporary1792
+48: Jump < Empty>
+49: Empty
+50: Jump < Empty>
+51: Empty
+52: PreCall 36
+53: Parameter 60 signed char integral1$60#
+54: Call 36 printChar 0
+55: PostCall 36
+56: PreCall 36
+57: Parameter 60 signed char integral1$78#
+58: Call 36 printChar 0
+59: PostCall 36
+60: PreCall 36
+61: Parameter 60 signed char integral1$85#
+62: Call 36 printChar 0
+63: PostCall 36
+64: PreCall 36
+65: Parameter 60 signed char integral1$76#
+66: Call 36 printChar 0
+67: PostCall 36
+68: PreCall 36
+69: Parameter 60 signed char integral1$76#
+70: Call 36 printChar 0
+71: PostCall 36
+72: PreCall 36
+73: Parameter 60 signed char integral1$62#
+74: Call 36 printChar 0
+75: PostCall 36
+76: Empty
+77: Empty
+78: Return
+79: FunctionEnd printString

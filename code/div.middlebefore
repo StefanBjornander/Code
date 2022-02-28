@@ -1,14 +1,19 @@
-0: Assign result.quot 0
-1: Assign result.rem 0
-2: Equal Assign errno 6 denum 0
-3: Goto SignedDivide £temporary2619 num denum
-4: Assign errno 6
-5: Return result
-6: Goto SignedDivide £temporary2619 num denum
-7: SignedDivide £temporary2619 num denum
-8: Assign result.quot £temporary2619
-9: SignedModulo £temporary2621 num denum
-10: Assign result.rem £temporary2621
-11: Return result
-12: Empty
-13: FunctionEnd div
+0: Assign result.quot integral4$0#
+1: Assign result.rem integral4$0#
+2: Equal < Empty> denum integral4$0#
+3: Jump < Empty>
+4: Empty
+5: Assign errno EDOM
+6: SetReturnValue
+7: Return result
+8: Jump < Empty>
+9: Empty
+10: Empty
+11: Divide £temporary2987 num denum
+12: Assign result.quot £temporary2987
+13: Modulo £temporary2988 num denum
+14: Assign result.rem £temporary2988
+15: SetReturnValue
+16: Return result
+17: Empty
+18: FunctionEnd div

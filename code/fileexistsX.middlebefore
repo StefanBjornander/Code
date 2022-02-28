@@ -1,0 +1,29 @@
+0: PreCall 32
+1: Parameter 56 pointer name
+2: Parameter 64 string string_r#
+3: Call 32 fopen 0
+4: PostCall 32
+5: GetReturnValue £temporary816
+6: Assign filePtr £temporary816
+7: PreCall 40
+8: Parameter 64 string string_0Afileexists2025s2025p0A#
+9: Parameter 72 pointer name
+10: Parameter 80 pointer filePtr
+11: Call 40 printf 16
+12: PostCall 40
+13: NotEqual < Empty> filePtr integral8$0#
+14: Jump < Empty>
+15: Empty
+16: PreCall 40
+17: Parameter 64 pointer filePtr
+18: Call 40 fclose 0
+19: PostCall 40
+20: SetReturnValue
+21: Return integral4$1#
+22: Jump < Empty>
+23: Empty
+24: Empty
+25: SetReturnValue
+26: Return integral4$0#
+27: Empty
+28: FunctionEnd fileexistsX

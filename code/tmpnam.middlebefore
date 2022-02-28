@@ -1,14 +1,19 @@
-0: SignedLessThan PreCall 8 g_tempSize 16
-1: Goto Return 0
-2: PreCall 8
-3: Parameter 14 pointer name
-4: Parameter 16 signedint 0
-5: Parameter 18 signedint 1
-6: Call 8 generateTempName 0
-7: PostCall 8
-8: GetReturnValue £temporary952
-9: Return £temporary952
-10: Goto Return 0
-11: Return 0
-12: Empty
-13: FunctionEnd tmpnam
+0: PreCall 32
+1: Parameter 56 signed int integral4$0#
+2: Parameter 60 pointer name
+3: Parameter 68 signed int integral4$4#
+4: Call 32 generateName 0
+5: PostCall 32
+6: GetReturnValue £temporary1116
+7: NotEqual < Empty> £temporary1116 integral4$0#
+8: Jump < Empty>
+9: Empty
+10: SetReturnValue
+11: Return name
+12: Jump < Empty>
+13: Empty
+14: Empty
+15: SetReturnValue
+16: Return integral8$0#
+17: Empty
+18: FunctionEnd tmpnam

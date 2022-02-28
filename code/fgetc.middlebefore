@@ -1,18 +1,23 @@
-0: Assign c 0
-1: PreCall 9
-2: Address £temporary807 c
-3: Parameter 15 pointer £temporary807
-4: Parameter 17 signedint 1
-5: Parameter 19 signedint 1
-6: Parameter 21 pointer stream
-7: Call 9 fread 0
-8: PostCall 9
-9: GetReturnValue £temporary808
-10: SignedGreaterThan IntegralToIntegral £temporary810 c £temporary808 0
-11: Goto Return -1
-12: IntegralToIntegral £temporary810 c
-13: Return £temporary810
-14: Goto Return -1
-15: Return -1
-16: Empty
-17: FunctionEnd fgetc
+0: Assign c integral1$0#
+1: PreCall 33
+2: Address £temporary970 c
+3: Parameter 57 pointer £temporary970
+4: Parameter 65 signed int integral4$1#
+5: Parameter 69 signed int integral4$1#
+6: Parameter 73 pointer stream
+7: Call 33 fread 0
+8: PostCall 33
+9: GetReturnValue £temporary971
+10: GreaterThan < Empty> £temporary971 integral4$0#
+11: Jump < Empty>
+12: Empty
+13: IntegralToIntegral £temporary973 c
+14: SetReturnValue
+15: Return £temporary973
+16: Jump < Empty>
+17: Empty
+18: Empty
+19: SetReturnValue
+20: Return integral4$minus1#
+21: Empty
+22: FunctionEnd fgetc

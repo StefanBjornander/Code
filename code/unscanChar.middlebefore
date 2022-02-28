@@ -1,11 +1,13 @@
-0: Case BinarySubtract g_inChars g_inChars 1 g_inStatus 0
-1: Case BinarySubtract g_inChars g_inChars 1 g_inStatus 1
+0: Case < Subtract £temporary1146 g_inChars integral4$1#> g_inStatus integral4$0#
+1: Case < Subtract £temporary1147 g_inChars integral4$1#> g_inStatus integral4$1#
 2: CaseEnd g_inStatus
-3: Goto Empty
-4: BinarySubtract g_inChars g_inChars 1
-5: Goto Empty
-6: BinarySubtract g_inChars g_inChars 1
-7: Goto Empty
-8: Empty
-9: Return
-10: FunctionEnd unscanChar
+3: Jump < Empty>
+4: Subtract £temporary1146 g_inChars integral4$1#
+5: Assign g_inChars £temporary1146
+6: Jump < Empty>
+7: Subtract £temporary1147 g_inChars integral4$1#
+8: Assign g_inChars £temporary1147
+9: Jump < Empty>
+10: Empty
+11: Return
+12: FunctionEnd unscanChar

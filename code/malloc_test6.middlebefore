@@ -1,28 +1,30 @@
-0: Assign lowHeapPtr 65534
-1: InspectRegister £temporary4240 bp
-2: Assign stackTop £temporary4240
-3: Assign i 0
-4: Empty
-5: SignedLessThan PreCall 12 i 1000
-6: Goto Empty
-7: PreCall 12
-8: Parameter 18 signedint 96
-9: Call 12 malloc 0
-10: PostCall 12
-11: GetReturnValue £temporary4243
-12: Assign p £temporary4243
-13: PreCall 14
-14: Parameter 20 pointer "Index: %i, Pointer: %u, Stack top: %u, Low Heap: %u\n"
-15: Parameter 22 signedint i
-16: Parameter 24 pointer p
-17: Parameter 26 unsigned int stackTop
-18: Dereference £temporary4244 -> lowHeapPtr lowHeapPtr 0
-19: Parameter 28 unsigned int £temporary4244 -> lowHeapPtr
-20: Call 14 printf 8
-21: PostCall 14
-22: Empty
-23: BinaryAdd i i 1
-24: Goto Empty
-25: Empty
-26: Return
-27: FunctionEnd malloc_test6
+0: Assign lowHeapPtr integral8$65534#
+1: InspectRegister £temporary4874 bp
+2: IntegralToIntegral £temporary4875 £temporary4874
+3: Assign stackTop £temporary4875
+4: Assign i integral4$0#
+5: Empty
+6: LessThan < PreCall 40> i integral4$1000#
+7: Jump < Empty>
+8: PreCall 40
+9: Parameter 64 signed int integral4$96#
+10: Call 40 malloc 0
+11: PostCall 40
+12: GetReturnValue £temporary4878
+13: Assign p £temporary4878
+14: PreCall 48
+15: Parameter 72 string string_Index3A2025i2C20Pointer3A2025u2C20Stack20top3A2025u2C20Low20Heap3A2025u0A#
+16: Parameter 80 signed int i
+17: Parameter 84 pointer p
+18: Parameter 92 unsigned int stackTop
+19: Dereference £temporary4879 lowHeapPtr 0
+20: Parameter 96 unsigned int £temporary4879
+21: Call 48 printf 20
+22: PostCall 48
+23: Empty
+24: Add £temporary4877 i integral4$1#
+25: Assign i £temporary4877
+26: Jump < Empty>
+27: Empty
+28: Return
+29: FunctionEnd malloc_test6

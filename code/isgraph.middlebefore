@@ -1,11 +1,12 @@
-0: SignedGreaterThanEqual SignedLessThanEqual Assign £temporary295 1 c 126 c 32
-1: Goto Assign £temporary295 0
-2: SignedLessThanEqual Assign £temporary295 1 c 126
-3: Goto Assign £temporary295 0
-4: Assign £temporary295 1
-5: Goto Empty
-6: Assign £temporary295 0
+0: GreaterThanEqual < LessThanEqual < Assign £temporary232 integral4$1#> c integral4$126#> c integral4$32#
+1: Jump < Assign £temporary232 integral4$0#>
+2: LessThanEqual < Assign £temporary232 integral4$1#> c integral4$126#
+3: Jump < Assign £temporary232 integral4$0#>
+4: Assign £temporary232 integral4$1#
+5: Jump < Empty>
+6: Assign £temporary232 integral4$0#
 7: Empty
-8: Return £temporary295
-9: Empty
-10: FunctionEnd isgraph
+8: SetReturnValue
+9: Return £temporary232
+10: Empty
+11: FunctionEnd isgraph

@@ -1,18 +1,15 @@
-0: Dereference £temporary859 -> stream stream 0
-1: AssignRegister bx £temporary859 -> stream
-2: SignedMultiply £temporary861 size nobj
-3: AssignRegister cx £temporary861
-4: AssignRegister ah 63
-5: AssignRegister dx ptr
-6: Interrupt 33
-7: Carry Dereference £temporary865 -> stream stream 0
-8: Goto InspectRegister £temporary866 ax
-9: Dereference £temporary865 -> stream stream 0
-10: Assign errno 14
-11: Assign £temporary865 -> stream errno
-12: Return 0
-13: Goto Empty
-14: InspectRegister £temporary866 ax
-15: Return £temporary866
-16: Empty
-17: FunctionEnd fread
+0: Dereference £temporary1039 stream 0
+1: IntegralToIntegral £temporary1040 £temporary1039.handle
+2: AssignRegister rdi £temporary1040
+3: IntegralToIntegral £temporary1042 ptr
+4: AssignRegister rsi £temporary1042
+5: Multiply £temporary1044 size nobj
+6: IntegralToIntegral £temporary1045 £temporary1044
+7: AssignRegister rdx £temporary1045
+8: AssignRegister rax integral8$0#
+9: SysCall
+10: InspectRegister £temporary1047 eax
+11: SetReturnValue
+12: Return £temporary1047
+13: Empty
+14: FunctionEnd fread

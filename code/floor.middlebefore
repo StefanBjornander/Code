@@ -1,20 +1,25 @@
 0: PushFloat x
-1: PushFloat 0
-2: SignedLessThan PreCall 14 x 0
-3: Goto PushFloat x
-4: PreCall 14
-5: PushFloat x
-6: UnarySubtract £temporary645 x
-7: Parameter 20 double £temporary645
-8: Call 14 ceil 0
-9: PostCall 14
-10: GetReturnValue £temporary646
-11: UnarySubtract £temporary647 £temporary646
-12: Return £temporary647
-13: Goto PushFloat x
-14: PushFloat x
-15: FloatingToIntegral £temporary648 x
-16: IntegralToFloating £temporary649 £temporary648
-17: Return £temporary649
-18: Empty
-19: FunctionEnd floor
+1: PushFloat floating8$0#
+2: LessThan < Empty> x floating8$0#
+3: Jump < Empty>
+4: Empty
+5: PreCall 32
+6: PushFloat x
+7: Minus £temporary742 x
+8: Parameter 56 double £temporary742
+9: Call 32 ceil 0
+10: PostCall 32
+11: GetReturnValue £temporary743
+12: Minus £temporary744 £temporary743
+13: SetReturnValue
+14: Return £temporary744
+15: Jump < Empty>
+16: Empty
+17: Empty
+18: PushFloat x
+19: FloatingToIntegral £temporary747 x
+20: IntegralToFloating £temporary748 £temporary747
+21: SetReturnValue
+22: Return £temporary748
+23: Empty
+24: FunctionEnd floor

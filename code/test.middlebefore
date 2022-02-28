@@ -1,0 +1,34 @@
+0: PreCall 40
+1: Parameter 64 array buffer
+2: Call 40 setjmp 0
+3: PostCall 40
+4: GetReturnValue £temporary4015
+5: IntegralToIntegral £temporary4016 £temporary4015
+6: Assign message £temporary4016
+7: Equal < Empty> message integral8$0#
+8: Jump < Empty>
+9: Empty
+10: PreCall 40
+11: Parameter 64 string string_12E0202F2025f203D2025f0A#
+12: PushFloat x
+13: Parameter 72 double x
+14: PreCall 40
+15: PushFloat x
+16: Parameter 104 double x
+17: Call 80 inverse 0
+18: PostCall 80
+19: GetReturnValue £temporary4018
+20: Parameter 80 double £temporary4018
+21: Call 40 printf 16
+22: PostCall 40
+23: Jump < Empty>
+24: Empty
+25: PreCall 40
+26: Parameter 64 string string_25s0A#
+27: Parameter 72 pointer message
+28: Call 40 printf 8
+29: PostCall 40
+30: Empty
+31: Empty
+32: Return
+33: FunctionEnd test

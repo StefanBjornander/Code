@@ -1,50 +1,63 @@
 0: PushFloat x
-1: PushFloat 0
-2: Equal PushFloat 1.57079632679489661923132165 x 0
-3: Goto PushFloat x
-4: PushFloat 1.57079632679489661923132165
-5: Return 1.57079632679489661923132165
-6: Goto Empty
-7: PushFloat x
-8: PushFloat 0
-9: SignedLessThan PushFloat 3.1415926535897932384626433 x 0
-10: Goto PushFloat x
-11: PushFloat 3.1415926535897932384626433
-12: PreCall 14
-13: PushFloat x
-14: UnarySubtract £temporary559 x
-15: Parameter 20 double £temporary559
-16: Call 14 acos 0
-17: PostCall 14
-18: GetReturnValue £temporary560
-19: BinarySubtract £temporary561 3.1415926535897932384626433 £temporary560
-20: Return £temporary561
-21: Goto Empty
-22: PushFloat x
-23: PushFloat 1
-24: SignedLessThanEqual PreCall 14 x 1
-25: Goto Assign errno 6
-26: PreCall 14
-27: PreCall 14
-28: PushFloat 1
-29: PushFloat x
-30: PushFloat x
-31: SignedMultiply £temporary563 x x
-32: BinarySubtract £temporary564 1 £temporary563
-33: Parameter 20 double £temporary564
-34: Call 14 sqrt 0
-35: PostCall 14
-36: GetReturnValue £temporary565
+1: PushFloat floating8$0#
+2: Equal < Empty> x floating8$0#
+3: Jump < Empty>
+4: Empty
+5: PushFloat floating8$1.57#
+6: SetReturnValue
+7: Return floating8$1.57#
+8: Jump < Empty>
+9: Empty
+10: PushFloat x
+11: PushFloat floating8$0#
+12: LessThan < Empty> x floating8$0#
+13: Jump < Empty>
+14: Empty
+15: PushFloat floating8$3.14#
+16: PreCall 32
+17: PushFloat x
+18: Minus £temporary634 x
+19: Parameter 56 double £temporary634
+20: Call 32 acos 0
+21: PostCall 32
+22: GetReturnValue £temporary635
+23: Subtract £temporary636 floating8$3.14# £temporary635
+24: SetReturnValue
+25: Return £temporary636
+26: Jump < Empty>
+27: Empty
+28: PushFloat x
+29: PushFloat floating8$1#
+30: LessThanEqual < Empty> x floating8$1#
+31: Jump < Empty>
+32: Empty
+33: PreCall 32
+34: PreCall 32
+35: PushFloat floating8$1#
+36: PushFloat x
 37: PushFloat x
-38: SignedDivide £temporary566 £temporary565 x
-39: Parameter 20 double £temporary566
-40: Call 14 atan 0
-41: PostCall 14
-42: GetReturnValue £temporary567
-43: Return £temporary567
-44: Goto Empty
-45: Assign errno 6
-46: PushFloat 0
-47: Return 0
-48: Empty
-49: FunctionEnd acos
+38: Multiply £temporary638 x x
+39: Subtract £temporary639 floating8$1# £temporary638
+40: Parameter 56 double £temporary639
+41: Call 32 sqrt 0
+42: PostCall 32
+43: GetReturnValue £temporary640
+44: PushFloat x
+45: Divide £temporary641 £temporary640 x
+46: Parameter 56 double £temporary641
+47: Call 32 atan 0
+48: PostCall 32
+49: GetReturnValue £temporary642
+50: SetReturnValue
+51: Return £temporary642
+52: Jump < Empty>
+53: Empty
+54: Assign errno EDOM
+55: PushFloat floating8$0#
+56: SetReturnValue
+57: Return floating8$0#
+58: Empty
+59: Empty
+60: Empty
+61: Empty
+62: FunctionEnd acos

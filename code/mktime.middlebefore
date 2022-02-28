@@ -1,33 +1,38 @@
-0: NotEqual Dereference £temporary2694 -> tp tp 0 tp 0
-1: Goto Return 0
-2: Dereference £temporary2694 -> tp tp 0
-3: BinarySubtract £temporary2695 £temporary2694 -> tp 69
-4: SignedDivide £temporary2696 £temporary2695 4
-5: IntegralToIntegral £temporary2697 £temporary2696
-6: Assign leapDays £temporary2697
-7: Dereference £temporary2698 -> tp tp 0
-8: BinarySubtract £temporary2699 £temporary2698 -> tp 70
-9: SignedMultiply £temporary2700 365 £temporary2699
-10: IntegralToIntegral £temporary2701 £temporary2700
-11: BinaryAdd £temporary2702 £temporary2701 leapDays
-12: Dereference £temporary2703 -> tp tp 0
-13: IntegralToIntegral £temporary2704 £temporary2703 -> tp
-14: BinaryAdd £temporary2705 £temporary2702 £temporary2704
-15: Assign totalDays £temporary2705
-16: SignedMultiply £temporary2706 86400 totalDays
-17: Dereference £temporary2707 -> tp tp 0
-18: IntegralToIntegral £temporary2708 £temporary2707 -> tp
-19: SignedMultiply £temporary2709 3600 £temporary2708
-20: BinaryAdd £temporary2710 £temporary2706 £temporary2709
-21: Dereference £temporary2711 -> tp tp 0
-22: IntegralToIntegral £temporary2712 £temporary2711 -> tp
-23: SignedMultiply £temporary2713 60 £temporary2712
-24: BinaryAdd £temporary2714 £temporary2710 £temporary2713
-25: Dereference £temporary2715 -> tp tp 0
-26: IntegralToIntegral £temporary2716 £temporary2715 -> tp
-27: BinaryAdd £temporary2717 £temporary2714 £temporary2716
-28: Return £temporary2717
-29: Goto Return 0
-30: Return 0
-31: Empty
-32: FunctionEnd mktime
+0: NotEqual < Empty> tp integral8$0#
+1: Jump < Empty>
+2: Empty
+3: Dereference £temporary3019 tp 0
+4: Subtract £temporary3020 £temporary3019.tm_year integral4$69#
+5: Divide £temporary3021 £temporary3020 integral4$4#
+6: IntegralToIntegral £temporary3022 £temporary3021
+7: Assign leapDays £temporary3022
+8: Dereference £temporary3023 tp 0
+9: Subtract £temporary3024 £temporary3023.tm_year integral4$70#
+10: Multiply £temporary3025 integral4$365# £temporary3024
+11: IntegralToIntegral £temporary3027 £temporary3025
+12: Add £temporary3026 £temporary3027 leapDays
+13: Dereference £temporary3028 tp 0
+14: IntegralToIntegral £temporary3030 £temporary3028.tm_yday
+15: Add £temporary3029 £temporary3026 £temporary3030
+16: Assign totalDays £temporary3029
+17: Multiply £temporary3031 integral8$86400# totalDays
+18: Dereference £temporary3032 tp 0
+19: IntegralToIntegral £temporary3034 £temporary3032.tm_hour
+20: Multiply £temporary3033 integral8$3600# £temporary3034
+21: Add £temporary3035 £temporary3031 £temporary3033
+22: Dereference £temporary3036 tp 0
+23: IntegralToIntegral £temporary3038 £temporary3036.tm_min
+24: Multiply £temporary3037 integral8$60# £temporary3038
+25: Add £temporary3039 £temporary3035 £temporary3037
+26: Dereference £temporary3040 tp 0
+27: IntegralToIntegral £temporary3042 £temporary3040.tm_sec
+28: Add £temporary3041 £temporary3039 £temporary3042
+29: SetReturnValue
+30: Return £temporary3041
+31: Jump < Empty>
+32: Empty
+33: Empty
+34: SetReturnValue
+35: Return integral8$0#
+36: Empty
+37: FunctionEnd mktime

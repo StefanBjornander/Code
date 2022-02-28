@@ -1,25 +1,30 @@
-0: PreCall 12
-1: Parameter 18 pointer name
-2: Parameter 20 signedint 0
-3: Parameter 22 signedint 0
-4: Call 12 generateTempName 0
-5: PostCall 12
-6: GetReturnValue £temporary945
-7: NotEqual PreCall 12 £temporary945 0
-8: Goto Return 0
-9: PreCall 12
-10: Parameter 18 pointer name
-11: Parameter 20 pointer "w"
-12: Call 12 fopen 0
-13: PostCall 12
-14: GetReturnValue £temporary946
-15: Assign stream £temporary946
-16: NotEqual Dereference £temporary950 -> stream stream 0 stream 0
-17: Goto Return 0
-18: Dereference £temporary950 -> stream stream 0
-19: Assign £temporary950 -> stream 1
-20: Return stream
-21: Goto Return 0
-22: Return 0
-23: Empty
-24: FunctionEnd tmpfile
+0: PreCall 36
+1: Parameter 60 signed int integral4$0#
+2: Parameter 64 array name
+3: Parameter 72 signed int integral4$4#
+4: Call 36 generateName 0
+5: PostCall 36
+6: GetReturnValue £temporary1120
+7: NotEqual < PreCall 36> £temporary1120 integral4$0#
+8: Jump < Empty>
+9: PreCall 36
+10: Parameter 60 array name
+11: Parameter 68 string string_w#
+12: Call 36 fopen 0
+13: PostCall 36
+14: GetReturnValue £temporary1121
+15: Assign stream £temporary1121
+16: NotEqual < Empty> stream integral8$0#
+17: Jump < Empty>
+18: Empty
+19: Dereference £temporary1125 stream 0
+20: Assign £temporary1125.temporary integral4$1#
+21: SetReturnValue
+22: Return stream
+23: Jump < Empty>
+24: Empty
+25: Empty
+26: SetReturnValue
+27: Return integral8$0#
+28: Empty
+29: FunctionEnd tmpfile

@@ -1,0 +1,270 @@
+0: PreCall 25
+1: Parameter 49 string string_ascii2025i0A#
+2: IntegralToIntegral £temporary3790 c
+3: Parameter 57 signed int £temporary3790
+4: Call 25 printf 4
+5: PostCall 25
+6: PreCall 25
+7: Parameter 49 string string_islower282725c2729203D2025s0A#
+8: IntegralToIntegral £temporary3792 c
+9: Parameter 57 signed int £temporary3792
+10: PreCall 25
+11: IntegralToIntegral £temporary3793 c
+12: Parameter 85 signed int £temporary3793
+13: Call 61 islower 0
+14: PostCall 61
+15: GetReturnValue £temporary3794
+16: NotEqual < Empty> £temporary3794 integral4$0#
+17: Jump < Empty>
+18: Empty
+19: Assign £temporary3796 string_Yes#
+20: Jump < Empty>
+21: Empty
+22: Assign £temporary3796 string_No#
+23: Empty
+24: Parameter 61 string £temporary3796
+25: Call 25 printf 12
+26: PostCall 25
+27: PreCall 25
+28: Parameter 49 string string_isupper282725c2729203D2025s0A#
+29: IntegralToIntegral £temporary3798 c
+30: Parameter 57 signed int £temporary3798
+31: PreCall 25
+32: IntegralToIntegral £temporary3799 c
+33: Parameter 85 signed int £temporary3799
+34: Call 61 isupper 0
+35: PostCall 61
+36: GetReturnValue £temporary3800
+37: NotEqual < Empty> £temporary3800 integral4$0#
+38: Jump < Empty>
+39: Empty
+40: Assign £temporary3802 string_Yes#
+41: Jump < Empty>
+42: Empty
+43: Assign £temporary3802 string_No#
+44: Empty
+45: Parameter 61 string £temporary3802
+46: Call 25 printf 12
+47: PostCall 25
+48: PreCall 25
+49: Parameter 49 string string_isalpha282725c2729203D2025s0A#
+50: IntegralToIntegral £temporary3804 c
+51: Parameter 57 signed int £temporary3804
+52: PreCall 25
+53: IntegralToIntegral £temporary3805 c
+54: Parameter 85 signed int £temporary3805
+55: Call 61 isalpha 0
+56: PostCall 61
+57: GetReturnValue £temporary3806
+58: NotEqual < Empty> £temporary3806 integral4$0#
+59: Jump < Empty>
+60: Empty
+61: Assign £temporary3808 string_Yes#
+62: Jump < Empty>
+63: Empty
+64: Assign £temporary3808 string_No#
+65: Empty
+66: Parameter 61 string £temporary3808
+67: Call 25 printf 12
+68: PostCall 25
+69: PreCall 25
+70: Parameter 49 string string_isdigit282725c2729203D2025s0A#
+71: IntegralToIntegral £temporary3810 c
+72: Parameter 57 signed int £temporary3810
+73: PreCall 25
+74: IntegralToIntegral £temporary3811 c
+75: Parameter 85 signed int £temporary3811
+76: Call 61 isdigit 0
+77: PostCall 61
+78: GetReturnValue £temporary3812
+79: NotEqual < Empty> £temporary3812 integral4$0#
+80: Jump < Empty>
+81: Empty
+82: Assign £temporary3814 string_Yes#
+83: Jump < Empty>
+84: Empty
+85: Assign £temporary3814 string_No#
+86: Empty
+87: Parameter 61 string £temporary3814
+88: Call 25 printf 12
+89: PostCall 25
+90: PreCall 25
+91: Parameter 49 string string_isalnum282725c2729203D2025s0A#
+92: IntegralToIntegral £temporary3816 c
+93: Parameter 57 signed int £temporary3816
+94: PreCall 25
+95: IntegralToIntegral £temporary3817 c
+96: Parameter 85 signed int £temporary3817
+97: Call 61 isalnum 0
+98: PostCall 61
+99: GetReturnValue £temporary3818
+100: NotEqual < Empty> £temporary3818 integral4$0#
+101: Jump < Empty>
+102: Empty
+103: Assign £temporary3820 string_Yes#
+104: Jump < Empty>
+105: Empty
+106: Assign £temporary3820 string_No#
+107: Empty
+108: Parameter 61 string £temporary3820
+109: Call 25 printf 12
+110: PostCall 25
+111: PreCall 25
+112: Parameter 49 string string_isxdigit282725c2729203D2025s0A#
+113: IntegralToIntegral £temporary3822 c
+114: Parameter 57 signed int £temporary3822
+115: PreCall 25
+116: IntegralToIntegral £temporary3823 c
+117: Parameter 85 signed int £temporary3823
+118: Call 61 isxdigit 0
+119: PostCall 61
+120: GetReturnValue £temporary3824
+121: NotEqual < Empty> £temporary3824 integral4$0#
+122: Jump < Empty>
+123: Empty
+124: Assign £temporary3826 string_Yes#
+125: Jump < Empty>
+126: Empty
+127: Assign £temporary3826 string_No#
+128: Empty
+129: Parameter 61 string £temporary3826
+130: Call 25 printf 12
+131: PostCall 25
+132: PreCall 25
+133: Parameter 49 string string_isgraph282725c2729203D2025s0A#
+134: IntegralToIntegral £temporary3828 c
+135: Parameter 57 signed int £temporary3828
+136: PreCall 25
+137: IntegralToIntegral £temporary3829 c
+138: Parameter 85 signed int £temporary3829
+139: Call 61 isgraph 0
+140: PostCall 61
+141: GetReturnValue £temporary3830
+142: NotEqual < Empty> £temporary3830 integral4$0#
+143: Jump < Empty>
+144: Empty
+145: Assign £temporary3832 string_Yes#
+146: Jump < Empty>
+147: Empty
+148: Assign £temporary3832 string_No#
+149: Empty
+150: Parameter 61 string £temporary3832
+151: Call 25 printf 12
+152: PostCall 25
+153: PreCall 25
+154: Parameter 49 string string_isprint282725c2729203D2025s0A#
+155: IntegralToIntegral £temporary3834 c
+156: Parameter 57 signed int £temporary3834
+157: PreCall 25
+158: IntegralToIntegral £temporary3835 c
+159: Parameter 85 signed int £temporary3835
+160: Call 61 isprint 0
+161: PostCall 61
+162: GetReturnValue £temporary3836
+163: NotEqual < Empty> £temporary3836 integral4$0#
+164: Jump < Empty>
+165: Empty
+166: Assign £temporary3838 string_Yes#
+167: Jump < Empty>
+168: Empty
+169: Assign £temporary3838 string_No#
+170: Empty
+171: Parameter 61 string £temporary3838
+172: Call 25 printf 12
+173: PostCall 25
+174: PreCall 25
+175: Parameter 49 string string_ispunct282725c2729203D2025s0A#
+176: IntegralToIntegral £temporary3840 c
+177: Parameter 57 signed int £temporary3840
+178: PreCall 25
+179: IntegralToIntegral £temporary3841 c
+180: Parameter 85 signed int £temporary3841
+181: Call 61 ispunct 0
+182: PostCall 61
+183: GetReturnValue £temporary3842
+184: NotEqual < Empty> £temporary3842 integral4$0#
+185: Jump < Empty>
+186: Empty
+187: Assign £temporary3844 string_Yes#
+188: Jump < Empty>
+189: Empty
+190: Assign £temporary3844 string_No#
+191: Empty
+192: Parameter 61 string £temporary3844
+193: Call 25 printf 12
+194: PostCall 25
+195: PreCall 25
+196: Parameter 49 string string_iscntrl282725c2729203D2025s0A#
+197: IntegralToIntegral £temporary3846 c
+198: Parameter 57 signed int £temporary3846
+199: PreCall 25
+200: IntegralToIntegral £temporary3847 c
+201: Parameter 85 signed int £temporary3847
+202: Call 61 iscntrl 0
+203: PostCall 61
+204: GetReturnValue £temporary3848
+205: NotEqual < Empty> £temporary3848 integral4$0#
+206: Jump < Empty>
+207: Empty
+208: Assign £temporary3850 string_Yes#
+209: Jump < Empty>
+210: Empty
+211: Assign £temporary3850 string_No#
+212: Empty
+213: Parameter 61 string £temporary3850
+214: Call 25 printf 12
+215: PostCall 25
+216: PreCall 25
+217: Parameter 49 string string_isspace282725c2729203D2025s0A#
+218: IntegralToIntegral £temporary3852 c
+219: Parameter 57 signed int £temporary3852
+220: PreCall 25
+221: IntegralToIntegral £temporary3853 c
+222: Parameter 85 signed int £temporary3853
+223: Call 61 isspace 0
+224: PostCall 61
+225: GetReturnValue £temporary3854
+226: NotEqual < Empty> £temporary3854 integral4$0#
+227: Jump < Empty>
+228: Empty
+229: Assign £temporary3856 string_Yes#
+230: Jump < Empty>
+231: Empty
+232: Assign £temporary3856 string_No#
+233: Empty
+234: Parameter 61 string £temporary3856
+235: Call 25 printf 12
+236: PostCall 25
+237: PreCall 25
+238: Parameter 49 string string_tolower282725c2729203D202725c270A#
+239: IntegralToIntegral £temporary3858 c
+240: Parameter 57 signed int £temporary3858
+241: PreCall 25
+242: IntegralToIntegral £temporary3859 c
+243: Parameter 85 signed int £temporary3859
+244: Call 61 tolower 0
+245: PostCall 61
+246: GetReturnValue £temporary3860
+247: IntegralToIntegral £temporary3861 £temporary3860
+248: IntegralToIntegral £temporary3862 £temporary3861
+249: Parameter 61 signed int £temporary3862
+250: Call 25 printf 8
+251: PostCall 25
+252: PreCall 25
+253: Parameter 49 string string_toupper282725c2729203D202725c270A0A#
+254: IntegralToIntegral £temporary3864 c
+255: Parameter 57 signed int £temporary3864
+256: PreCall 25
+257: IntegralToIntegral £temporary3865 c
+258: Parameter 85 signed int £temporary3865
+259: Call 61 toupper 0
+260: PostCall 61
+261: GetReturnValue £temporary3866
+262: IntegralToIntegral £temporary3867 £temporary3866
+263: IntegralToIntegral £temporary3868 £temporary3867
+264: Parameter 61 signed int £temporary3868
+265: Call 25 printf 8
+266: PostCall 25
+267: Empty
+268: Return
+269: FunctionEnd character_testX

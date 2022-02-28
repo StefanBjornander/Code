@@ -1,108 +1,143 @@
-0: SignedGreaterThanEqual Empty newMemorySize 0
-1: Goto PreCall 10
-2: PreCall 10
-3: Parameter 16 pointer stderr
-4: Parameter 18 pointer "Assertion failed: "%s" in file %s at line %i\n"
-5: Parameter 20 pointer "newMemorySize >= 0"
-6: Parameter 22 pointer "C:\Users\Stefan\Documents\vagrant\homestead\code\code\Malloc.c"
-7: Parameter 24 signedint 259
-8: Call 10 fprintf 6
-9: PostCall 10
-10: PreCall 10
-11: Call 10 abort 0
-12: PostCall 10
-13: Goto Empty
-14: Empty
-15: NotEqual Empty oldMemoryPtr 0
-16: Goto SignedGreaterThan Empty newMemorySize 0
-17: SignedGreaterThan Empty newMemorySize 0
-18: Goto PreCall 10
-19: PreCall 10
-20: Parameter 16 pointer stderr
-21: Parameter 18 pointer "Assertion failed: "%s" in file %s at line %i\n"
-22: Parameter 20 pointer "( oldMemoryPtr != NULL ) || ( newMemorySize > 0 )"
-23: Parameter 22 pointer "C:\Users\Stefan\Documents\vagrant\homestead\code\code\Malloc.c"
-24: Parameter 24 signedint 260
-25: Call 10 fprintf 6
-26: PostCall 10
-27: PreCall 10
-28: Call 10 abort 0
-29: PostCall 10
-30: Goto Empty
-31: Empty
-32: Equal PreCall 10 oldMemoryPtr 0
-33: Goto Equal PreCall 10 newMemorySize 0
-34: PreCall 10
-35: Parameter 16 signedint newMemorySize
-36: Call 10 malloc 0
-37: PostCall 10
-38: GetReturnValue £temporary215
-39: Return £temporary215
-40: Goto Equal PreCall 10 newMemorySize 0
-41: Equal PreCall 10 newMemorySize 0
-42: Goto IntegralToIntegral £temporary218 newMemorySize
-43: PreCall 10
-44: Parameter 16 pointer oldMemoryPtr
-45: Call 10 free 0
-46: PostCall 10
-47: Return 0
-48: Goto IntegralToIntegral £temporary218 newMemorySize
-49: IntegralToIntegral £temporary218 newMemorySize
-50: BinaryAdd £temporary219 £temporary218 4
-51: Assign newBlockSize £temporary219
-52: IntegralToIntegral £temporary220 oldMemoryPtr
-53: BinarySubtract £temporary221 £temporary220 4
-54: IntegralToIntegral £temporary222 £temporary221
-55: Assign oldBlockPtr £temporary222
-56: Dereference £temporary223 -> oldBlockPtr oldBlockPtr 0
-57: UnsignedLessThanEqual Dereference £temporary225 -> oldBlockPtr oldBlockPtr 0 newBlockSize £temporary223 -> oldBlockPtr
-58: Goto Assign lastAddress 65528
-59: Dereference £temporary225 -> oldBlockPtr oldBlockPtr 0
-60: Assign £temporary225 -> oldBlockPtr newBlockSize
-61: Return oldMemoryPtr
-62: Goto Assign lastAddress 65528
-63: Assign lastAddress 65528
-64: Assign currBlockPtr g_firstBlockPtr
-65: NotEqual Equal IntegralToIntegral £temporary228 currBlockPtr currBlockPtr oldBlockPtr currBlockPtr 0
-66: Goto PreCall 14
-67: Equal IntegralToIntegral £temporary228 currBlockPtr currBlockPtr oldBlockPtr
-68: Goto IntegralToIntegral £temporary232 currBlockPtr
-69: IntegralToIntegral £temporary228 currBlockPtr
-70: BinarySubtract £temporary229 lastAddress £temporary228
-71: Assign availableSize £temporary229
-72: UnsignedGreaterThanEqual Dereference £temporary231 -> oldBlockPtr oldBlockPtr 0 availableSize newBlockSize
-73: Goto Goto PreCall 14
-74: Dereference £temporary231 -> oldBlockPtr oldBlockPtr 0
-75: Assign £temporary231 -> oldBlockPtr newBlockSize
-76: Return oldMemoryPtr
-77: Goto IntegralToIntegral £temporary232 currBlockPtr
-78: Goto PreCall 14
-79: Goto IntegralToIntegral £temporary232 currBlockPtr
-80: IntegralToIntegral £temporary232 currBlockPtr
-81: Assign lastAddress £temporary232
-82: Dereference £temporary233 -> currBlockPtr currBlockPtr 0
-83: Assign currBlockPtr £temporary233 -> currBlockPtr
-84: Goto NotEqual Equal IntegralToIntegral £temporary228 currBlockPtr currBlockPtr oldBlockPtr currBlockPtr 0
-85: PreCall 14
-86: Parameter 20 signedint newMemorySize
-87: Call 14 malloc 0
-88: PostCall 14
-89: GetReturnValue £temporary234
-90: Assign newMemoryPtr £temporary234
-91: NotEqual PreCall 16 newMemoryPtr 0
-92: Goto Return 0
-93: PreCall 16
-94: Parameter 22 pointer newMemoryPtr
-95: Parameter 24 pointer oldMemoryPtr
-96: Parameter 26 signedint newMemorySize
-97: Call 16 memcpy 0
-98: PostCall 16
-99: PreCall 16
-100: Parameter 22 pointer oldMemoryPtr
-101: Call 16 free 0
-102: PostCall 16
-103: Return newMemoryPtr
-104: Goto Return 0
-105: Return 0
-106: Empty
-107: FunctionEnd realloc
+0: GreaterThanEqual < Empty> newMemorySize integral4$0#
+1: Jump < Empty>
+2: Empty
+3: PreCall 36
+4: Parameter 60 pointer stderr
+5: Parameter 68 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+6: Parameter 76 string string_newMemorySize203E3D200#
+7: Parameter 84 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
+8: Parameter 92 signed int integral4$259#
+9: Call 36 fprintf 20
+10: PostCall 36
+11: PreCall 36
+12: Call 36 abort 0
+13: PostCall 36
+14: Jump < Empty>
+15: Empty
+16: Empty
+17: Empty
+18: NotEqual < Empty> oldMemoryPtr integral8$0#
+19: Jump < GreaterThan < Empty> newMemorySize integral4$0#>
+20: GreaterThan < Empty> newMemorySize integral4$0#
+21: Jump < Empty>
+22: Empty
+23: PreCall 36
+24: Parameter 60 pointer stderr
+25: Parameter 68 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+26: Parameter 76 string string_2820oldMemoryPtr20213D20NULL2029207C7C202820newMemorySize203E2002029#
+27: Parameter 84 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
+28: Parameter 92 signed int integral4$260#
+29: Call 36 fprintf 20
+30: PostCall 36
+31: PreCall 36
+32: Call 36 abort 0
+33: PostCall 36
+34: Jump < Empty>
+35: Empty
+36: Empty
+37: Empty
+38: Equal < Empty> oldMemoryPtr integral8$0#
+39: Jump < Empty>
+40: Empty
+41: PreCall 36
+42: Parameter 60 signed int newMemorySize
+43: Call 36 malloc 0
+44: PostCall 36
+45: GetReturnValue £temporary133
+46: SetReturnValue
+47: Return £temporary133
+48: Jump < Empty>
+49: Empty
+50: Empty
+51: Equal < Empty> newMemorySize integral4$0#
+52: Jump < Empty>
+53: Empty
+54: PreCall 36
+55: Parameter 60 pointer oldMemoryPtr
+56: Call 36 free 0
+57: PostCall 36
+58: SetReturnValue
+59: Return integral8$0#
+60: Jump < Empty>
+61: Empty
+62: Empty
+63: IntegralToIntegral £temporary140 newMemorySize
+64: Add £temporary141 £temporary140 integral4$12#
+65: Assign newBlockSize £temporary141
+66: IntegralToIntegral £temporary142 oldMemoryPtr
+67: Subtract £temporary143 £temporary142 integral4$12#
+68: IntegralToIntegral £temporary144 £temporary143
+69: Assign oldBlockPtr £temporary144
+70: Dereference £temporary145 oldBlockPtr 0
+71: LessThanEqual < Empty> newBlockSize £temporary145.size
+72: Jump < Empty>
+73: Empty
+74: Dereference £temporary147 oldBlockPtr 0
+75: Assign £temporary147.size newBlockSize
+76: SetReturnValue
+77: Return oldMemoryPtr
+78: Jump < Empty>
+79: Empty
+80: Empty
+81: StackTop £temporary150
+82: Add £temporary151 £temporary150 integral8$1048572#
+83: IntegralToIntegral £temporary152 £temporary151
+84: Assign lastAddress £temporary152
+85: Assign currBlockPtr g_firstBlockPtr
+86: Empty
+87: NotEqual < Equal < Empty> currBlockPtr oldBlockPtr> currBlockPtr integral8$0#
+88: Jump < PreCall 48>
+89: Equal < Empty> currBlockPtr oldBlockPtr
+90: Jump < Empty>
+91: Empty
+92: IntegralToIntegral £temporary155 currBlockPtr
+93: Subtract £temporary156 lastAddress £temporary155
+94: Assign availableSize £temporary156
+95: GreaterThanEqual < Empty> availableSize newBlockSize
+96: Jump < Empty>
+97: Empty
+98: Dereference £temporary158 oldBlockPtr 0
+99: Assign £temporary158.size newBlockSize
+100: SetReturnValue
+101: Return oldMemoryPtr
+102: Jump < Empty>
+103: Empty
+104: Jump < PreCall 48>
+105: Empty
+106: Jump < Empty>
+107: Empty
+108: Empty
+109: IntegralToIntegral £temporary163 currBlockPtr
+110: Assign lastAddress £temporary163
+111: Dereference £temporary164 currBlockPtr 0
+112: Assign currBlockPtr £temporary164.next
+113: Empty
+114: Jump < Empty>
+115: PreCall 48
+116: Parameter 72 signed int newMemorySize
+117: Call 48 malloc 0
+118: PostCall 48
+119: GetReturnValue £temporary165
+120: Assign newMemoryPtr £temporary165
+121: NotEqual < Empty> newMemoryPtr integral8$0#
+122: Jump < Empty>
+123: Empty
+124: PreCall 56
+125: Parameter 80 pointer newMemoryPtr
+126: Parameter 88 pointer oldMemoryPtr
+127: Parameter 96 signed int newMemorySize
+128: Call 56 memcpy 0
+129: PostCall 56
+130: PreCall 56
+131: Parameter 80 pointer oldMemoryPtr
+132: Call 56 free 0
+133: PostCall 56
+134: SetReturnValue
+135: Return newMemoryPtr
+136: Jump < Empty>
+137: Empty
+138: Empty
+139: SetReturnValue
+140: Return integral8$0#
+141: Empty
+142: FunctionEnd realloc

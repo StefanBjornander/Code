@@ -1,92 +1,106 @@
-0: Assign index 0
-1: PreCall 14
-2: Call 14 scanChar 0
-3: PostCall 14
-4: GetReturnValue £temporary969
-5: Assign input £temporary969
-6: PreCall 15
-7: IntegralToIntegral £temporary970 input
-8: Parameter 21 signedint £temporary970
-9: Call 15 isspace 0
-10: PostCall 15
-11: GetReturnValue £temporary971
-12: NotEqual PreCall 15 £temporary971 0
-13: Goto NotEqual NotEqual NotEqual PreCall 15 not 0 not 0 string 0
-14: PreCall 15
-15: Call 15 scanChar 0
-16: PostCall 15
-17: GetReturnValue £temporary972
-18: Assign input £temporary972
-19: Goto PreCall 15
-20: NotEqual NotEqual NotEqual PreCall 15 not 0 not 0 string 0
-21: Goto NotEqual NotEqual PreCall 15 not 0 not 0
-22: NotEqual NotEqual PreCall 15 not 0 not 0
-23: Goto PreCall 15
-24: PreCall 15
-25: Parameter 21 pointer pattern
-26: IntegralToIntegral £temporary977 input
-27: Parameter 23 signedint £temporary977
-28: Call 15 strchr 0
-29: PostCall 15
-30: GetReturnValue £temporary978
-31: NotEqual Assign £temporary988 index £temporary978 0
-32: Goto NotEqual PreCall 15 not 0
-33: NotEqual PreCall 15 not 0
-34: Goto UnsignedMultiply £temporary994 index 1
-35: PreCall 15
-36: Parameter 21 pointer pattern
-37: IntegralToIntegral £temporary981 input
-38: Parameter 23 signedint £temporary981
-39: Call 15 strchr 0
-40: PostCall 15
-41: GetReturnValue £temporary982
-42: NotEqual UnsignedMultiply £temporary994 index 1 £temporary982 0
-43: Goto Assign £temporary988 index
-44: Assign £temporary988 index
-45: BinaryAdd index index 1
-46: UnsignedMultiply £temporary990 £temporary988 1
-47: BinaryAdd £temporary991 string £temporary990
-48: Dereference £temporary989 -> £temporary991 £temporary991 0
-49: Assign £temporary989 -> £temporary991 input
-50: PreCall 15
-51: Call 15 scanChar 0
-52: PostCall 15
-53: GetReturnValue £temporary992
-54: Assign input £temporary992
-55: Goto NotEqual NotEqual PreCall 15 not 0 not 0
-56: UnsignedMultiply £temporary994 index 1
-57: BinaryAdd £temporary995 string £temporary994
-58: Dereference £temporary993 -> £temporary995 £temporary995 0
-59: Assign £temporary993 -> £temporary995 0
-60: Goto Empty
-61: NotEqual NotEqual PreCall 15 not 0 not 0
-62: Goto PreCall 15
-63: PreCall 15
-64: Parameter 21 pointer pattern
-65: IntegralToIntegral £temporary998 input
-66: Parameter 23 signedint £temporary998
-67: Call 15 strchr 0
-68: PostCall 15
-69: GetReturnValue £temporary999
-70: NotEqual PreCall 15 £temporary999 0
-71: Goto NotEqual PreCall 15 not 0
-72: NotEqual PreCall 15 not 0
-73: Goto Empty
-74: PreCall 15
-75: Parameter 21 pointer pattern
-76: IntegralToIntegral £temporary1002 input
-77: Parameter 23 signedint £temporary1002
-78: Call 15 strchr 0
-79: PostCall 15
-80: GetReturnValue £temporary1003
-81: NotEqual Empty £temporary1003 0
-82: Goto PreCall 15
-83: PreCall 15
-84: Call 15 scanChar 0
-85: PostCall 15
-86: GetReturnValue £temporary1009
-87: Assign input £temporary1009
-88: Goto NotEqual NotEqual PreCall 15 not 0 not 0
-89: Empty
-90: Return
-91: FunctionEnd scanPattern
+0: Assign index integral4$0#
+1: PreCall 52
+2: Call 52 scanChar 0
+3: PostCall 52
+4: GetReturnValue £temporary1161
+5: Assign input £temporary1161
+6: Empty
+7: PreCall 53
+8: IntegralToIntegral £temporary1162 input
+9: Parameter 77 signed int £temporary1162
+10: Call 53 isspace 0
+11: PostCall 53
+12: GetReturnValue £temporary1163
+13: NotEqual < PreCall 53> £temporary1163 integral4$0#
+14: Jump < NotEqual < Empty> string integral8$0#>
+15: PreCall 53
+16: Call 53 scanChar 0
+17: PostCall 53
+18: GetReturnValue £temporary1164
+19: Assign input £temporary1164
+20: Empty
+21: Jump < Empty>
+22: NotEqual < Empty> string integral8$0#
+23: Jump < Empty>
+24: Empty
+25: Empty
+26: NotEqual < NotEqual < PreCall 53> not integral4$0#> not integral4$0#
+27: Jump < PreCall 53>
+28: PreCall 53
+29: Parameter 77 pointer pattern
+30: Parameter 85 signed int size
+31: IntegralToIntegral £temporary1169 input
+32: Parameter 89 signed int £temporary1169
+33: Call 53 strnchr 0
+34: PostCall 53
+35: GetReturnValue £temporary1170
+36: NotEqual < Assign £temporary1180 index> £temporary1170 integral4$0#
+37: Jump < NotEqual < PreCall 53> not integral4$0#>
+38: NotEqual < PreCall 53> not integral4$0#
+39: Jump < IntegralToIntegral £temporary1186 index>
+40: PreCall 53
+41: Parameter 77 pointer pattern
+42: Parameter 85 signed int size
+43: IntegralToIntegral £temporary1173 input
+44: Parameter 89 signed int £temporary1173
+45: Call 53 strnchr 0
+46: PostCall 53
+47: GetReturnValue £temporary1174
+48: NotEqual < IntegralToIntegral £temporary1186 index> £temporary1174 integral4$0#
+49: Jump < Assign £temporary1180 index>
+50: Assign £temporary1180 index
+51: Add £temporary1181 index integral4$1#
+52: Assign index £temporary1181
+53: IntegralToIntegral £temporary1182 £temporary1180
+54: Add £temporary1183 string £temporary1182
+55: Dereference £temporary1184 £temporary1183 0
+56: Assign £temporary1184 input
+57: PreCall 53
+58: Call 53 scanChar 0
+59: PostCall 53
+60: GetReturnValue £temporary1185
+61: Assign input £temporary1185
+62: Empty
+63: Jump < Empty>
+64: IntegralToIntegral £temporary1186 index
+65: Add £temporary1187 string £temporary1186
+66: Dereference £temporary1188 £temporary1187 0
+67: Assign £temporary1188 integral1$0#
+68: Jump < Empty>
+69: Empty
+70: Empty
+71: NotEqual < NotEqual < PreCall 53> not integral4$0#> not integral4$0#
+72: Jump < PreCall 53>
+73: PreCall 53
+74: Parameter 77 pointer pattern
+75: Parameter 85 signed int size
+76: IntegralToIntegral £temporary1191 input
+77: Parameter 89 signed int £temporary1191
+78: Call 53 strnchr 0
+79: PostCall 53
+80: GetReturnValue £temporary1192
+81: NotEqual < PreCall 53> £temporary1192 integral4$0#
+82: Jump < NotEqual < PreCall 53> not integral4$0#>
+83: NotEqual < PreCall 53> not integral4$0#
+84: Jump < Empty>
+85: PreCall 53
+86: Parameter 77 pointer pattern
+87: Parameter 85 signed int size
+88: IntegralToIntegral £temporary1195 input
+89: Parameter 89 signed int £temporary1195
+90: Call 53 strnchr 0
+91: PostCall 53
+92: GetReturnValue £temporary1196
+93: NotEqual < Empty> £temporary1196 integral4$0#
+94: Jump < PreCall 53>
+95: PreCall 53
+96: Call 53 scanChar 0
+97: PostCall 53
+98: GetReturnValue £temporary1202
+99: Assign input £temporary1202
+100: Empty
+101: Jump < Empty>
+102: Empty
+103: Empty
+104: Return
+105: FunctionEnd scanPattern

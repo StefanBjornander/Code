@@ -1,16 +1,17 @@
-0: SignedModulo £temporary2718 year 4
-1: Equal SignedModulo £temporary2720 year 100 £temporary2718 0
-2: Goto SignedModulo £temporary2723 year 400
-3: SignedModulo £temporary2720 year 100
-4: NotEqual Assign £temporary2726 1 £temporary2720 0
-5: Goto SignedModulo £temporary2723 year 400
-6: SignedModulo £temporary2723 year 400
-7: Equal Assign £temporary2726 1 £temporary2723 0
-8: Goto Assign £temporary2726 0
-9: Assign £temporary2726 1
-10: Goto Empty
-11: Assign £temporary2726 0
+0: Modulo £temporary3000 year integral4$4#
+1: Equal < Modulo £temporary3002 year integral4$100#> £temporary3000 integral4$0#
+2: Jump < Modulo £temporary3005 year integral4$400#>
+3: Modulo £temporary3002 year integral4$100#
+4: NotEqual < Assign £temporary3008 integral4$1#> £temporary3002 integral4$0#
+5: Jump < Modulo £temporary3005 year integral4$400#>
+6: Modulo £temporary3005 year integral4$400#
+7: Equal < Assign £temporary3008 integral4$1#> £temporary3005 integral4$0#
+8: Jump < Assign £temporary3008 integral4$0#>
+9: Assign £temporary3008 integral4$1#
+10: Jump < Empty>
+11: Assign £temporary3008 integral4$0#
 12: Empty
-13: Return £temporary2726
-14: Empty
-15: FunctionEnd isLeapYear
+13: SetReturnValue
+14: Return £temporary3008
+15: Empty
+16: FunctionEnd isLeapYear

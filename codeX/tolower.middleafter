@@ -1,0 +1,40 @@
+0: PreCall 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 52 signed int c
+2: Call 28 isupper 0
+3: PostCall 28
+4: GetReturnValue £temporary261
+5: Equal 34 £temporary261 integral4$0#
+6: PreCall 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+7: Call 28 localeconv 0
+8: PostCall 28
+9: GetReturnValue £temporary262
+10: Assign localeConvPtr £temporary262
+11: Equal 31 localeConvPtr integral8$0#
+12: Dereference £temporary264 localeConvPtr 0
+13: Assign lowerCase £temporary264.lowerCase
+14: Dereference £temporary265 localeConvPtr 0
+15: Assign upperCase £temporary265.upperCase
+16: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+17: Parameter 76 pointer upperCase
+18: Parameter 84 signed int c
+19: Call 52 strchr 0
+20: PostCall 52
+21: GetReturnValue £temporary266
+22: Subtract £temporary267 £temporary266 upperCase
+23: IntegralToIntegral £temporary268 £temporary267
+24: Assign index £temporary268
+
+
+25: IntegralToIntegral £temporary269 index
+26: Add £temporary270 lowerCase £temporary269
+27: Dereference £temporary271 £temporary270 0
+28: IntegralToIntegral £temporary272 £temporary271
+29: SetReturnValue
+30: Return £temporary272
+
+31: Add £temporary273 c integral4$32#
+32: SetReturnValue
+33: Return £temporary273
+34: SetReturnValue
+35: Return c
+36: FunctionEnd tolower

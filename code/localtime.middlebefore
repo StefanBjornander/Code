@@ -1,39 +1,45 @@
-0: PreCall 8
-1: Parameter 14 pointer timePtr
-2: Call 8 gmtime 0
-3: PostCall 8
-4: GetReturnValue £temporary2827
-5: Assign tmPtr £temporary2827
-6: PreCall 10
-7: Call 10 localeconv 0
-8: PostCall 10
-9: GetReturnValue £temporary2828
-10: Assign localeConvPtr £temporary2828
-11: Assign timeZone 0
-12: NotEqual Dereference £temporary2830 -> tmPtr tmPtr 0 localeConvPtr 0
-13: Goto Dereference £temporary2835 -> timePtr timePtr 0
-14: Dereference £temporary2830 -> tmPtr tmPtr 0
-15: Equal Dereference £temporary2832 -> localeConvPtr localeConvPtr 0 £temporary2830 -> tmPtr 1
-16: Goto Dereference £temporary2833 -> localeConvPtr localeConvPtr 0
-17: Dereference £temporary2832 -> localeConvPtr localeConvPtr 0
-18: Assign £temporary2834 £temporary2832 -> localeConvPtr
-19: Goto Empty
-20: Dereference £temporary2833 -> localeConvPtr localeConvPtr 0
-21: Assign £temporary2834 £temporary2833 -> localeConvPtr
-22: Empty
-23: Assign timeZone £temporary2834
-24: Goto Dereference £temporary2835 -> timePtr timePtr 0
-25: Dereference £temporary2835 -> timePtr timePtr 0
-26: IntegralToIntegral £temporary2836 timeZone
-27: SignedMultiply £temporary2837 3600 £temporary2836
-28: BinaryAdd £temporary2838 £temporary2835 -> timePtr £temporary2837
-29: Assign t £temporary2838
-30: PreCall 18
-31: Address £temporary2839 t
-32: Parameter 24 pointer £temporary2839
-33: Call 18 gmtime 0
-34: PostCall 18
-35: GetReturnValue £temporary2840
-36: Return £temporary2840
-37: Empty
-38: FunctionEnd localtime
+0: PreCall 32
+1: Parameter 56 pointer timePtr
+2: Call 32 gmtime 0
+3: PostCall 32
+4: GetReturnValue £temporary3117
+5: Assign tmPtr £temporary3117
+6: Dereference £temporary3118 timePtr 0
+7: Assign t £temporary3118
+8: PreCall 48
+9: Call 48 localeconv 0
+10: PostCall 48
+11: GetReturnValue £temporary3119
+12: Assign localeConvPtr £temporary3119
+13: NotEqual < Empty> localeConvPtr integral8$0#
+14: Jump < Empty>
+15: Empty
+16: Dereference £temporary3121 tmPtr 0
+17: Equal < Empty> £temporary3121.tm_isdst integral4$1#
+18: Jump < Empty>
+19: Empty
+20: Dereference £temporary3123 localeConvPtr 0
+21: Assign £temporary3125 £temporary3123.summerTimeZone
+22: Jump < Empty>
+23: Empty
+24: Dereference £temporary3124 localeConvPtr 0
+25: Assign £temporary3125 £temporary3124.winterTimeZone
+26: Empty
+27: Assign timeZone £temporary3125
+28: IntegralToIntegral £temporary3127 timeZone
+29: Multiply £temporary3126 integral8$3600# £temporary3127
+30: Add £temporary3128 t £temporary3126
+31: Assign t £temporary3128
+32: Jump < Empty>
+33: Empty
+34: Empty
+35: PreCall 56
+36: Address £temporary3131 t
+37: Parameter 80 pointer £temporary3131
+38: Call 56 gmtime 0
+39: PostCall 56
+40: GetReturnValue £temporary3132
+41: SetReturnValue
+42: Return £temporary3132
+43: Empty
+44: FunctionEnd localtime

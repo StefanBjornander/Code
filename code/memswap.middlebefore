@@ -1,25 +1,26 @@
-0: Assign index 0
+0: Assign index integral4$0#
 1: Empty
-2: SignedLessThan UnsignedMultiply £temporary2580 index 1 index valueSize
-3: Goto Empty
-4: UnsignedMultiply £temporary2580 index 1
-5: BinaryAdd £temporary2581 value1 £temporary2580
-6: Dereference £temporary2579 -> £temporary2581 £temporary2581 0
-7: Assign tempValue £temporary2579 -> £temporary2581
-8: UnsignedMultiply £temporary2583 index 1
-9: BinaryAdd £temporary2584 value1 £temporary2583
-10: Dereference £temporary2582 -> £temporary2584 £temporary2584 0
-11: UnsignedMultiply £temporary2586 index 1
-12: BinaryAdd £temporary2587 value2 £temporary2586
-13: Dereference £temporary2585 -> £temporary2587 £temporary2587 0
-14: Assign £temporary2582 -> £temporary2584 £temporary2585 -> £temporary2587
-15: UnsignedMultiply £temporary2589 index 1
-16: BinaryAdd £temporary2590 value2 £temporary2589
-17: Dereference £temporary2588 -> £temporary2590 £temporary2590 0
-18: Assign £temporary2588 -> £temporary2590 tempValue
+2: LessThan < IntegralToIntegral £temporary2942 index> index valueSize
+3: Jump < Empty>
+4: IntegralToIntegral £temporary2942 index
+5: Add £temporary2943 value1 £temporary2942
+6: Dereference £temporary2944 £temporary2943 0
+7: Assign tempValue £temporary2944
+8: IntegralToIntegral £temporary2945 index
+9: Add £temporary2946 value1 £temporary2945
+10: Dereference £temporary2947 £temporary2946 0
+11: IntegralToIntegral £temporary2948 index
+12: Add £temporary2949 value2 £temporary2948
+13: Dereference £temporary2950 £temporary2949 0
+14: Assign £temporary2947 £temporary2950
+15: IntegralToIntegral £temporary2951 index
+16: Add £temporary2952 value2 £temporary2951
+17: Dereference £temporary2953 £temporary2952 0
+18: Assign £temporary2953 tempValue
 19: Empty
-20: BinaryAdd index index 1
-21: Goto Empty
-22: Empty
-23: Return
-24: FunctionEnd memswap
+20: Add £temporary2941 index integral4$1#
+21: Assign index £temporary2941
+22: Jump < Empty>
+23: Empty
+24: Return
+25: FunctionEnd memswap

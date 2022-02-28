@@ -1,25 +1,27 @@
 0: Assign currBlockPtr g_firstBlockPtr
-1: PreCall 8
-2: Parameter 14 pointer "Heap:\n"
-3: Call 8 printf 0
-4: PostCall 8
-5: NotEqual PreCall 8 currBlockPtr 0
-6: Goto PreCall 8
-7: PreCall 8
-8: Parameter 14 pointer "  Address %u, Size %u\n"
-9: IntegralToIntegral £temporary240 currBlockPtr
-10: Parameter 16 unsigned int £temporary240
-11: Dereference £temporary241 -> currBlockPtr currBlockPtr 0
-12: Parameter 18 unsigned int £temporary241 -> currBlockPtr
-13: Call 8 printf 4
-14: PostCall 8
-15: Dereference £temporary243 -> currBlockPtr currBlockPtr 0
-16: Assign currBlockPtr £temporary243 -> currBlockPtr
-17: Goto NotEqual PreCall 8 currBlockPtr 0
-18: PreCall 8
-19: Parameter 14 pointer "\n"
-20: Call 8 printf 0
-21: PostCall 8
-22: Empty
-23: Return
-24: FunctionEnd print_heap
+1: PreCall 32
+2: Parameter 56 string string_Heap3A0A#
+3: Call 32 printf 0
+4: PostCall 32
+5: Empty
+6: NotEqual < PreCall 32> currBlockPtr integral8$0#
+7: Jump < PreCall 32>
+8: PreCall 32
+9: Parameter 56 string string_2020Address2025u2C20Size2025u0A#
+10: IntegralToIntegral £temporary173 currBlockPtr
+11: Parameter 64 unsigned int £temporary173
+12: Dereference £temporary174 currBlockPtr 0
+13: Parameter 68 unsigned int £temporary174.size
+14: Call 32 printf 8
+15: PostCall 32
+16: Dereference £temporary176 currBlockPtr 0
+17: Assign currBlockPtr £temporary176.next
+18: Empty
+19: Jump < Empty>
+20: PreCall 32
+21: Parameter 56 string string_0A#
+22: Call 32 printf 0
+23: PostCall 32
+24: Empty
+25: Return
+26: FunctionEnd print_heap

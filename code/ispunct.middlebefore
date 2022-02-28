@@ -1,21 +1,22 @@
-0: PreCall 8
-1: Parameter 14 signedint c
-2: Call 8 isgraph 0
-3: PostCall 8
-4: GetReturnValue £temporary301
-5: NotEqual PreCall 8 £temporary301 0
-6: Goto Assign £temporary307 0
-7: PreCall 8
-8: Parameter 14 signedint c
-9: Call 8 isalnum 0
-10: PostCall 8
-11: GetReturnValue £temporary302
-12: NotEqual Assign £temporary307 0 £temporary302 0
-13: Goto Assign £temporary307 1
-14: Assign £temporary307 1
-15: Goto Empty
-16: Assign £temporary307 0
+0: PreCall 28
+1: Parameter 52 signed int c
+2: Call 28 isgraph 0
+3: PostCall 28
+4: GetReturnValue £temporary238
+5: NotEqual < PreCall 28> £temporary238 integral4$0#
+6: Jump < Assign £temporary244 integral4$0#>
+7: PreCall 28
+8: Parameter 52 signed int c
+9: Call 28 isalnum 0
+10: PostCall 28
+11: GetReturnValue £temporary239
+12: NotEqual < Assign £temporary244 integral4$0#> £temporary239 integral4$0#
+13: Jump < Assign £temporary244 integral4$1#>
+14: Assign £temporary244 integral4$1#
+15: Jump < Empty>
+16: Assign £temporary244 integral4$0#
 17: Empty
-18: Return £temporary307
-19: Empty
-20: FunctionEnd ispunct
+18: SetReturnValue
+19: Return £temporary244
+20: Empty
+21: FunctionEnd ispunct

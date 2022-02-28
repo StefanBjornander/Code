@@ -1,19 +1,28 @@
-0: SignedLessThan BinaryAdd £temporary1550 48 digit digit 10
-1: Goto NotEqual BinarySubtract £temporary1552 digit 10 capital 0
-2: BinaryAdd £temporary1550 48 digit
-3: IntegralToIntegral £temporary1551 £temporary1550
-4: Return £temporary1551
-5: Goto Empty
-6: NotEqual BinarySubtract £temporary1552 digit 10 capital 0
-7: Goto BinarySubtract £temporary1555 digit 10
-8: BinarySubtract £temporary1552 digit 10
-9: BinaryAdd £temporary1553 65 £temporary1552
-10: IntegralToIntegral £temporary1554 £temporary1553
-11: Return £temporary1554
-12: Goto Empty
-13: BinarySubtract £temporary1555 digit 10
-14: BinaryAdd £temporary1556 97 £temporary1555
-15: IntegralToIntegral £temporary1557 £temporary1556
-16: Return £temporary1557
-17: Empty
-18: FunctionEnd digitToChar
+0: LessThan < Empty> digit integral4$10#
+1: Jump < Empty>
+2: Empty
+3: Add £temporary1836 integral4$48# digit
+4: IntegralToIntegral £temporary1837 £temporary1836
+5: SetReturnValue
+6: Return £temporary1837
+7: Jump < Empty>
+8: Empty
+9: NotEqual < Empty> capital integral4$0#
+10: Jump < Empty>
+11: Empty
+12: Subtract £temporary1838 digit integral4$10#
+13: Add £temporary1839 integral4$65# £temporary1838
+14: IntegralToIntegral £temporary1840 £temporary1839
+15: SetReturnValue
+16: Return £temporary1840
+17: Jump < Empty>
+18: Empty
+19: Subtract £temporary1841 digit integral4$10#
+20: Add £temporary1842 integral4$97# £temporary1841
+21: IntegralToIntegral £temporary1843 £temporary1842
+22: SetReturnValue
+23: Return £temporary1843
+24: Empty
+25: Empty
+26: Empty
+27: FunctionEnd digitToChar

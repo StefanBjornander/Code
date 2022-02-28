@@ -1,0 +1,867 @@
+<0.33333>
+  sin(0.33333) = 0.32719, errno = 0
+  cos(0.33333) = 0.94495, errno = 0
+  tan(0.33333) = 0.34625, errno = 0
+  asin(0.33333) = 0.33983, errno = 0
+  acos(0.33333) = 1.23016, errno = 0
+  atan(0.33333) = 0.32175, errno = 0
+  exp(0.33333) = 1.39561, errno = 0
+  log(0.33333) = -1.10166, errno = 0
+  log10(0.33333) = -0.47898, errno = 0
+  sinh(0.33333) = 0.33954, errno = 0
+  cosh(0.33333) = 1.05607, errno = 0
+  tanh(0.33333) = 0.32151, errno = 0
+  sqrt(0.33333) = 0.57735, errno = 0
+  floor(0.33333) = 0.00000, errno = 0
+  ceil(0.33333) = 1.00000, errno = 0
+  fabs(0.33333) = 0.33333, errno = 0
+frexp (0.33333, p) = (0.66870, -1), errno = 0
+modf (0.33333, p) = (0.33333, 0.00000), errno = 0
+
+<0.75000>
+  sin(0.75000) = 0.68163, errno = 0
+  cos(0.75000) = 0.73168, errno = 0
+  tan(0.75000) = 0.93159, errno = 0
+  asin(0.75000) = 0.84726, errno = 0
+  acos(0.75000) = 0.72273, errno = 0
+  atan(0.75000) = 0.64350, errno = 0
+  exp(0.75000) = 2.11700, errno = 0
+  log(0.75000) = -0.28768, errno = 0
+  log10(0.75000) = -0.12507, errno = 0
+  sinh(0.75000) = 0.82231, errno = 0
+  cosh(0.75000) = 1.29468, errno = 0
+  tanh(0.75000) = 0.63514, errno = 0
+  sqrt(0.75000) = 0.86602, errno = 0
+  floor(0.75000) = 0.00000, errno = 0
+  ceil(0.75000) = 1.00000, errno = 0
+  fabs(0.75000) = 0.75000, errno = 0
+frexp (0.75000, p) = (0.75000, 0), errno = 0
+modf (0.75000, p) = (0.75000, 0.00000), errno = 0
+
+<1.00001>
+  sin(1.00001) = 0.84147, errno = 0
+  cos(1.00001) = 0.54029, errno = 0
+  tan(1.00001) = 1.55744, errno = 0
+  asin(1.00001) = 0.00000, errno = 6
+  acos(1.00001) = 0.00000, errno = 6
+  atan(1.00001) = 0.78460, errno = 0
+  exp(1.00001) = 2.71830, errno = 0
+  log(1.00001) = 0.00306, errno = 0
+  log10(1.00001) = 0.00133, errno = 0
+  sinh(1.00001) = 1.17521, errno = 0
+  cosh(1.00001) = 1.54309, errno = 0
+  tanh(1.00001) = 0.76159, errno = 0
+  sqrt(1.00001) = 1.00000, errno = 0
+  floor(1.00001) = 1.00000, errno = 0
+  ceil(1.00001) = 2.00000, errno = 0
+  fabs(1.00001) = 1.00001, errno = 0
+frexp (1.00001, p) = (0.49848, 1), errno = 0
+modf (1.00001, p) = (0.00001, 1.00000), errno = 0
+
+<1.00000>
+  sin(1.00000) = 0.84147, errno = 0
+  cos(1.00000) = 0.54030, errno = 0
+  tan(1.00000) = 1.55740, errno = 0
+  asin(1.00000) = 1.57000, errno = 0
+  acos(1.00000) = 0.00000, errno = 0
+  atan(1.00000) = 0.78539, errno = 0
+  exp(1.00000) = 2.71828, errno = 0
+  log(1.00000) = 0.00000, errno = 0
+  log10(1.00000) = 0.00000, errno = 0
+  sinh(1.00000) = 1.17520, errno = 0
+  cosh(1.00000) = 1.54308, errno = 0
+  tanh(1.00000) = 0.76159, errno = 0
+  sqrt(1.00000) = 1.00000, errno = 0
+  floor(1.00000) = 1.00000, errno = 0
+  ceil(1.00000) = 1.00000, errno = 0
+  fabs(1.00000) = 1.00000, errno = 0
+frexp (1.00000, p) = (1.00000, 0), errno = 0
+modf (1.00000, p) = (0.00000, 1.00000), errno = 0
+
+<0.99999>
+  sin(0.99999) = 0.84147, errno = 0
+  cos(0.99999) = 0.54030, errno = 0
+  tan(0.99999) = 1.55740, errno = 0
+  asin(0.99999) = 1.56858, errno = 0
+  acos(0.99999) = 0.00141, errno = 0
+  atan(0.99999) = 0.78539, errno = 0
+  exp(0.99999) = 2.71827, errno = 0
+  log(0.99999) = -0.00000, errno = 0
+  log10(0.99999) = -0.00000, errno = 0
+  sinh(0.99999) = 1.17519, errno = 0
+  cosh(0.99999) = 1.54307, errno = 0
+  tanh(0.99999) = 0.76159, errno = 0
+  sqrt(0.99999) = 0.99999, errno = 0
+  floor(0.99999) = 0.00000, errno = 0
+  ceil(0.99999) = 1.00000, errno = 0
+  fabs(0.99999) = 0.99999, errno = 0
+frexp (0.99999, p) = (0.99999, 0), errno = 0
+modf (0.99999, p) = (0.99999, 0.00000), errno = 0
+
+<0.00000>
+  sin(0.00000) = 0.00000, errno = 0
+  cos(0.00000) = 0.99999, errno = 0
+  tan(0.00000) = 0.00001, errno = 0
+  asin(0.00000) = 0.00001, errno = 0
+  acos(0.00000) = 1.56998, errno = 0
+  atan(0.00000) = 0.00000, errno = 0
+  exp(0.00000) = 1.00001, errno = 0
+  log(0.00000) = -11.54649, errno = 0
+  log10(0.00000) = -5.02021, errno = 0
+  sinh(0.00000) = 0.00000, errno = 0
+  cosh(0.00000) = 1.00000, errno = 0
+  tanh(0.00000) = 0.00000, errno = 0
+  sqrt(0.00000) = 0.00316, errno = 0
+  floor(0.00000) = 0.00000, errno = 0
+  ceil(0.00000) = 1.00000, errno = 0
+  fabs(0.00000) = 0.00000, errno = 0
+frexp (0.00000, p) = (0.68814, -16), errno = 0
+modf (0.00000, p) = (0.00000, 0.00000), errno = 0
+
+<0.00000>
+  sin(0.00000) = 0.00000, errno = 0
+  cos(0.00000) = 1.00000, errno = 0
+  tan(0.00000) = 0.00000, errno = 0
+  asin(0.00000) = 0.00000, errno = 0
+  acos(0.00000) = 1.57000, errno = 0
+  atan(0.00000) = 0.00000, errno = 0
+  exp(0.00000) = 1.00000, errno = 0
+  log(0.00000) = 0.00000, errno = 6
+  log10(0.00000) = 0.00000, errno = 6
+  sinh(0.00000) = 0.00000, errno = 0
+  cosh(0.00000) = 1.00000, errno = 0
+  tanh(0.00000) = 0.00000, errno = 0
+  sqrt(0.00000) = 0.00000, errno = 0
+  floor(0.00000) = 0.00000, errno = 0
+  ceil(0.00000) = 0.00000, errno = 0
+  fabs(0.00000) = 0.00000, errno = 0
+frexp (0.00000, p) = (0.00000, 0), errno = 0
+modf (0.00000, p) = (0.00000, 0.00000), errno = 0
+
+<-0.00000>
+  sin(-0.00000) = -0.00000, errno = 0
+  cos(-0.00000) = 0.99999, errno = 0
+  tan(-0.00000) = -0.00001, errno = 0
+  asin(-0.00000) = -0.00001, errno = 0
+  acos(-0.00000) = 1.57001, errno = 0
+  atan(-0.00000) = -0.00000, errno = 0
+  exp(-0.00000) = 0.99999, errno = 0
+  log(-0.00000) = 0.00000, errno = 6
+  log10(-0.00000) = 0.00000, errno = 6
+  sinh(-0.00000) = -0.00000, errno = 0
+  cosh(-0.00000) = 1.00000, errno = 0
+  tanh(-0.00000) = -0.00000, errno = 0
+  sqrt(-0.00000) = 0.00000, errno = 6
+  floor(-0.00000) = -1.00000, errno = 0
+  ceil(-0.00000) = 0.00000, errno = 0
+  fabs(-0.00000) = 0.00000, errno = 0
+frexp (-0.00000, p) = (-0.68814, -16), errno = 0
+modf (-0.00000, p) = (-0.00000, 0.00000), errno = 0
+
+<-0.99999>
+  sin(-0.99999) = -0.84147, errno = 0
+  cos(-0.99999) = 0.54030, errno = 0
+  tan(-0.99999) = -1.55740, errno = 0
+  asin(-0.99999) = -1.56858, errno = 0
+  acos(-0.99999) = 3.13858, errno = 0
+  atan(-0.99999) = -0.78539, errno = 0
+  exp(-0.99999) = 0.36787, errno = 0
+  log(-0.99999) = 0.00000, errno = 6
+  log10(-0.99999) = 0.00000, errno = 6
+  sinh(-0.99999) = -1.17519, errno = 0
+  cosh(-0.99999) = 1.54307, errno = 0
+  tanh(-0.99999) = -0.76159, errno = 0
+  sqrt(-0.99999) = 0.00000, errno = 6
+  floor(-0.99999) = -1.00000, errno = 0
+  ceil(-0.99999) = 0.00000, errno = 0
+  fabs(-0.99999) = 0.99999, errno = 0
+frexp (-0.99999, p) = (-0.99999, 0), errno = 0
+modf (-0.99999, p) = (-0.99999, 0.00000), errno = 0
+
+<-1.00000>
+  sin(-1.00000) = -0.84147, errno = 0
+  cos(-1.00000) = 0.54030, errno = 0
+  tan(-1.00000) = -1.55740, errno = 0
+  asin(-1.00000) = -1.57000, errno = 0
+  acos(-1.00000) = 3.13999, errno = 0
+  atan(-1.00000) = -0.78539, errno = 0
+  exp(-1.00000) = 0.36787, errno = 0
+  log(-1.00000) = 0.00000, errno = 6
+  log10(-1.00000) = 0.00000, errno = 6
+  sinh(-1.00000) = -1.17520, errno = 0
+  cosh(-1.00000) = 1.54308, errno = 0
+  tanh(-1.00000) = -0.76159, errno = 0
+  sqrt(-1.00000) = 0.00000, errno = 6
+  floor(-1.00000) = -1.00000, errno = 0
+  ceil(-1.00000) = -1.00000, errno = 0
+  fabs(-1.00000) = 1.00000, errno = 0
+frexp (-1.00000, p) = (-1.00000, 0), errno = 0
+modf (-1.00000, p) = (0.00000, -1.00000), errno = 0
+
+<-1.00001>
+  sin(-1.00001) = -0.84147, errno = 0
+  cos(-1.00001) = 0.54029, errno = 0
+  tan(-1.00001) = -1.55744, errno = 0
+  asin(-1.00001) = 0.00000, errno = 6
+  acos(-1.00001) = 3.14000, errno = 6
+  atan(-1.00001) = -0.78460, errno = 0
+  exp(-1.00001) = 0.36787, errno = 0
+  log(-1.00001) = 0.00000, errno = 6
+  log10(-1.00001) = 0.00000, errno = 6
+  sinh(-1.00001) = -1.17521, errno = 0
+  cosh(-1.00001) = 1.54309, errno = 0
+  tanh(-1.00001) = -0.76159, errno = 0
+  sqrt(-1.00001) = 0.00000, errno = 6
+  floor(-1.00001) = -2.00000, errno = 0
+  ceil(-1.00001) = -1.00000, errno = 0
+  fabs(-1.00001) = 1.00001, errno = 0
+frexp (-1.00001, p) = (-1.00001, 0), errno = 0
+modf (-1.00001, p) = (-0.00001, -1.00000), errno = 0
+
+<6.28000>
+  sin(6.28000) = -0.00318, errno = 0
+  cos(6.28000) = 0.99999, errno = 0
+  tan(6.28000) = -0.00318, errno = 0
+  asin(6.28000) = 0.00000, errno = 6
+  acos(6.28000) = 0.00000, errno = 6
+  atan(6.28000) = 1.41209, errno = 0
+  exp(6.28000) = 533.78866, errno = 0
+  log(6.28000) = 1.84347, errno = 0
+  log10(6.28000) = 0.80150, errno = 0
+  sinh(6.28000) = 266.89339, errno = 0
+  cosh(6.28000) = 266.89526, errno = 0
+  tanh(6.28000) = 0.99999, errno = 0
+  sqrt(6.28000) = 2.50599, errno = 0
+  floor(6.28000) = 6.00000, errno = 0
+  ceil(6.28000) = 7.00000, errno = 0
+  fabs(6.28000) = 6.28000, errno = 0
+frexp (6.28000, p) = (0.77784, 3), errno = 0
+modf (6.28000, p) = (0.28000, 6.00000), errno = 0
+
+<3.14000>
+  sin(3.14000) = 0.00159, errno = 0
+  cos(3.14000) = -0.99999, errno = 0
+  tan(3.14000) = -0.00159, errno = 0
+  asin(3.14000) = 0.00000, errno = 6
+  acos(3.14000) = 0.00000, errno = 6
+  atan(3.14000) = 1.26168, errno = 0
+  exp(3.14000) = 23.10386, errno = 0
+  log(3.14000) = 1.15032, errno = 0
+  log10(3.14000) = 0.50014, errno = 0
+  sinh(3.14000) = 11.53029, errno = 0
+  cosh(3.14000) = 11.57357, errno = 0
+  tanh(3.14000) = 0.99626, errno = 0
+  sqrt(3.14000) = 1.77200, errno = 0
+  floor(3.14000) = 3.00000, errno = 0
+  ceil(3.14000) = 4.00000, errno = 0
+  fabs(3.14000) = 3.14000, errno = 0
+frexp (3.14000, p) = (0.78022, 2), errno = 0
+modf (3.14000, p) = (0.14000, 3.00000), errno = 0
+
+<1.57000>
+  sin(1.57000) = 0.99999, errno = 0
+  cos(1.57000) = 0.00079, errno = 0
+  tan(1.57000) = 1255.76559, errno = 0
+  asin(1.57000) = 0.00000, errno = 6
+  acos(1.57000) = 0.00000, errno = 6
+  atan(1.57000) = 1.00285, errno = 0
+  exp(1.57000) = 4.80664, errno = 0
+  log(1.57000) = 0.45412, errno = 0
+  log10(1.57000) = 0.19744, errno = 0
+  sinh(1.57000) = 2.29930, errno = 0
+  cosh(1.57000) = 2.50734, errno = 0
+  tanh(1.57000) = 0.91702, errno = 0
+  sqrt(1.57000) = 1.25299, errno = 0
+  floor(1.57000) = 1.00000, errno = 0
+  ceil(1.57000) = 2.00000, errno = 0
+  fabs(1.57000) = 1.57000, errno = 0
+frexp (1.57000, p) = (0.78260, 1), errno = 0
+modf (1.57000, p) = (0.57000, 1.00000), errno = 0
+
+<-1.57000>
+  sin(-1.57000) = -0.99999, errno = 0
+  cos(-1.57000) = 0.00079, errno = 0
+  tan(-1.57000) = -1255.76559, errno = 0
+  asin(-1.57000) = 0.00000, errno = 6
+  acos(-1.57000) = 3.14000, errno = 6
+  atan(-1.57000) = -1.00285, errno = 0
+  exp(-1.57000) = 0.20804, errno = 0
+  log(-1.57000) = 0.00000, errno = 6
+  log10(-1.57000) = 0.00000, errno = 6
+  sinh(-1.57000) = -2.29930, errno = 0
+  cosh(-1.57000) = 2.50734, errno = 0
+  tanh(-1.57000) = -0.91702, errno = 0
+  sqrt(-1.57000) = 0.00000, errno = 6
+  floor(-1.57000) = -2.00000, errno = 0
+  ceil(-1.57000) = -1.00000, errno = 0
+  fabs(-1.57000) = 1.57000, errno = 0
+frexp (-1.57000, p) = (-1.57000, 0), errno = 0
+modf (-1.57000, p) = (-0.57000, -1.00000), errno = 0
+
+<-3.14000>
+  sin(-3.14000) = -0.00159, errno = 0
+  cos(-3.14000) = -0.99999, errno = 0
+  tan(-3.14000) = 0.00159, errno = 0
+  asin(-3.14000) = 0.00000, errno = 6
+  acos(-3.14000) = 3.14000, errno = 6
+  atan(-3.14000) = -1.26168, errno = 0
+  exp(-3.14000) = 0.04328, errno = 0
+  log(-3.14000) = 0.00000, errno = 6
+  log10(-3.14000) = 0.00000, errno = 6
+  sinh(-3.14000) = -11.53029, errno = 0
+  cosh(-3.14000) = 11.57357, errno = 0
+  tanh(-3.14000) = -0.99626, errno = 0
+  sqrt(-3.14000) = 0.00000, errno = 6
+  floor(-3.14000) = -4.00000, errno = 0
+  ceil(-3.14000) = -3.00000, errno = 0
+  fabs(-3.14000) = 3.14000, errno = 0
+frexp (-3.14000, p) = (-1.56521, 1), errno = 0
+modf (-3.14000, p) = (-0.14000, -3.00000), errno = 0
+
+<-6.28000>
+  sin(-6.28000) = 0.00318, errno = 0
+  cos(-6.28000) = 0.99999, errno = 0
+  tan(-6.28000) = 0.00318, errno = 0
+  asin(-6.28000) = 0.00000, errno = 6
+  acos(-6.28000) = 3.14000, errno = 6
+  atan(-6.28000) = -1.41209, errno = 0
+  exp(-6.28000) = 0.00187, errno = 0
+  log(-6.28000) = 0.00000, errno = 6
+  log10(-6.28000) = 0.00000, errno = 6
+  sinh(-6.28000) = -266.89339, errno = 0
+  cosh(-6.28000) = 266.89526, errno = 0
+  tanh(-6.28000) = -0.99999, errno = 0
+  sqrt(-6.28000) = 0.00000, errno = 6
+  floor(-6.28000) = -7.00000, errno = 0
+  ceil(-6.28000) = -6.00000, errno = 0
+  fabs(-6.28000) = 6.28000, errno = 0
+frexp (-6.28000, p) = (-1.56044, 2), errno = 0
+modf (-6.28000, p) = (-0.28000, -6.00000), errno = 0
+
+fmod(1.00000, 2.00000) = 1.00000, errno = 0
+atan2(1.00000, 2.00000) = 0.46364, errno = 0
+pow(1.00000, 2.00000) = 1.00000, errno = 0
+
+ldexp(1.00000, 2) = 4.02448
+
+fmod(3.00000, 4.00000) = 3.00000, errno = 0
+atan2(3.00000, 4.00000) = 0.64350, errno = 0
+pow(3.00000, 4.00000) = 83.00161, errno = 0
+
+ldexp(3.00000, 4) = 48.58945
+
+fmod(0.00000, 2.00000) = 0.00000, errno = 0
+atan2(0.00000, 2.00000) = 0.00000, errno = 0
+pow(0.00000, 2.00000) = 0.00000, errno = 0
+
+ldexp(0.00000, 2) = 0.00000
+
+fmod(0.00000, -2.00000) = 0.00000, errno = 0
+atan2(0.00000, -2.00000) = 3.14000, errno = 0
+pow(0.00000, -2.00000) = 0.00000, errno = 6
+
+ldexp(0.00000, -2) = 0.00000
+
+fmod(1.00000, 2.00000) = 1.00000, errno = 0
+atan2(1.00000, 2.00000) = 0.46364, errno = 0
+pow(1.00000, 2.00000) = 1.00000, errno = 0
+
+ldexp(1.00000, 2) = 4.02448
+
+fmod(1.00000, -2.00000) = 1.00000, errno = 0
+atan2(1.00000, -2.00000) = 2.67635, errno = 0
+pow(1.00000, -2.00000) = 1.00000, errno = 0
+
+ldexp(1.00000, -2) = 0.24847
+
+fmod(0.00000, 0.00000) = 0.00000, errno = 6
+atan2(0.00000, 0.00000) = 0.00000, errno = 6
+pow(0.00000, 0.00000) = 1.00000, errno = 0
+
+ldexp(0.00000, 0) = 0.00000
+
+fmod(2.00000, 0.00000) = 0.00000, errno = 6
+atan2(2.00000, 0.00000) = 1.57000, errno = 0
+pow(2.00000, 0.00000) = 1.00000, errno = 0
+
+ldexp(2.00000, 0) = 2.00000
+
+fmod(-2.00000, 0.00000) = 0.00000, errno = 6
+atan2(-2.00000, 0.00000) = -1.57000, errno = 0
+pow(-2.00000, 0.00000) = 1.00000, errno = 0
+
+ldexp(-2.00000, 0) = -2.00000
+
+fmod(-1.00000, -1.00000) = 0.00000, errno = 0
+atan2(-1.00000, -1.00000) = -2.35460, errno = 0
+pow(-1.00000, -1.00000) = -1.00000, errno = 0
+
+ldexp(-1.00000, -1) = -0.49847
+
+fmod(-2.00000, -4.00000) = -2.00000, errno = 0
+atan2(-2.00000, -4.00000) = -2.67635, errno = 0
+pow(-2.00000, -4.00000) = 0.06174, errno = 0
+
+ldexp(-2.00000, -4) = -0.12348
+
+X1 3.16227
+X1 1.09544
+X1 1.51657
+X1 1.84390
+X1 2.12132
+X1 2.36643
+X1 2.58843
+X1 2.79284
+X1 2.98328
+X1 3.01662
+X1 3.17962
+
+size 10
+Y1 1.09544
+Y1 1.51657
+Y1 1.84390
+Y1 2.12132
+Y1 2.36643
+Y1 2.58843
+Y1 2.79284
+Y1 2.98328
+Y1 3.01662
+Y1 3.17962
+
+"Y" has been removed
+"X" has been renamed to "Y".
+Error "X2" "Y2" 19: error while renaming file.
+"Z" has been removed.
+Error "Z2" 18: error while removing file.
+
+Name                    Phone                  
+======================== ========================
+size 5
+ÀAda                                           
+ÀBerti                                         
+ÀCeasa                                         
+ÀDavi                                          
+ÀEri                                           
+
+size1: 10
+index1: 0: value 0.00000
+index1: 1: value 1.00000
+index1: 2: value 4.00000
+index1: 3: value 9.00000
+index1: 4: value 16.00000
+index1: 5: value 25.00000
+index1: 6: value 36.00000
+index1: 7: value 49.00000
+index1: 8: value 64.00000
+index1: 9: value 81.00000
+
+index2: 1: value 0.00000
+index2: 2: value 1.00000
+index2: 3: value 4.00000
+index2: 4: value 9.00000
+index2: 5: value 16.00000
+index2: 6: value 25.00000
+index2: 7: value 36.00000
+index2: 8: value 49.00000
+index2: 9: value 64.00000
+index2: 10: value 81.00000
+
+index3: 1: value 0.00000
+index3: 2: value 1.00000
+index3: 3: value 4.00000
+index3: 4: value 9.00000
+index3: 5: value 16.00000
+index3: 6: value 25.00000
+index3: 7: value 36.00000
+index3: 8: value 49.00000
+index3: 9: value 64.00000
+index3: 10: value 81.00000
+
+size4: 10 total 80
+malloc4: 5320644 0 80
+index4: 0: value 0.00000
+index4: 1: value 1.00000
+index4: 2: value 4.00000
+index4: 3: value 9.00000
+index4: 4: value 16.00000
+index4: 5: value 25.00000
+index4: 6: value 36.00000
+index4: 7: value 49.00000
+index4: 8: value 64.00000
+index4: 9: value 81.00000
+
+Name  : Adam Bertilsson
+Phone : 12345
+Name  : Bertil Ceasarsson
+Phone : 23456
+Name  : Ceasar Davidsson
+Phone : 24567
+
+26971.3 2X
+26610.3 2X
+82389.2 2X
+48297.2 2X
+34885.2 2X
+34663.2 2X
+23121.2 2X
+09348.1 2X
+75615.1 2X
+44590.1 2X
+72261.3 2Xfileexists "X": No
+fileexists "Y": Yes
+fileexists "Main.asm": Yes
+fileexists "MainX.asm": Yes
+fileexists "Main.c": Yes
+fileexists "MainX.c": Yes
+fileexists "File.c": Yes
+fileexists "File.x": No
+fileexists "File.h": Yes
+fileexists "File.y": No
+fileexists "File.p": Yes
+fileexists "File.z": No
+now 1: 1646085434
+now 2: 1646085434
+   gm time: Mon 2022-3-0 21:57:14, year day 58, week day 1, daylight saving time -1
+local time: Mon 2022-3-0 22:57:14, year day 58, week day 1, daylight saving time -1
+asctime <>, ctime <>
+strftime 300 300 <short day Mon, long day Monday, short month Mar, long month March, date-time  2022-3-0 22:57:1, mday  , hour  2, gm hour  1, yday  5, month  , min  5, am/pm  A, sec  1, week number sun  , week day  , week number mon  , date  22:57:1, time  22:57:1, short year  2, long year  202, summer/winter summer>
+Heap:
+  Address 5320616, Size 96
+  Address 5320508, Size 96
+  Address 5320400, Size 96
+
+Heap:
+  Address 5320616, Size 96
+  Address 5320508, Size 52
+  Address 5320400, Size 96
+
+Heap:
+  Address 5320616, Size 96
+  Address 5320508, Size 52
+  Address 5320400, Size 96
+  Address 5320348, Size 40
+
+Heap:
+  Address 5320508, Size 52
+  Address 5320400, Size 96
+  Address 5320348, Size 40
+
+Heap:
+  Address 5320508, Size 52
+  Address 5320348, Size 40
+
+<    123> <   +123> <    123> <123    > <+123   > <+123   > < 123   > < 123   >
+<   -123> <   -123> <   -123> <-123   > <-123   > <-123   > <-123   > <-123   >
+<0000123> <+000123> < 000123> < 000123>
+<-00-123> <-00-123> <-00-123> <-00-123>
+<     123.45> <    +123.45> <     123.45> <123.45     > <+123.45    > <+123.45    > < 123.45    > < 123.45    >
+<    -123.45> <    -123.45> <    -123.45> <-123.45    > <-123.45    > <-123.45    > <-123.45    > <-123.45    >
+<00000123.45> <+0000123.45> < 0000123.45> < 0000123.45>
+<-0000123.45> <-0000123.45> <-0000123.45> <-0000123.45>
+CHAR_BIT = 8
+CHAR_MIN = -128
+
+CHAR_MAX = 127
+UCHAR_MAX = 255
+
+SHRT_MIN = -32768
+SHRT_MAX = 32767
+USHRT_MAX = 65535
+
+INT_MIN = -2147483648
+INT_MAX = 2147483647
+UINT_MAX = 4294967295
+
+LONG_MIN = -9223372036854775808
+LONG_MAX = 9223372036854775807
+ULONG_MAX = 18446744073709551615
+ULONG_MAX = ffffffffffffffff
+ULONG_MAX = FFFFFFFFFFFFFFFF
+1.0 / 10.00000 = 0.09999
+Division by Zero.
+1.0 / 0.10000 = 9.99999
+<123> <-123> <123> <-123> <123> <123>
+
+<  123> < -123> <  123> < -123> <  123> <  123>
+< +123> < -123> < +123> < -123> < +123> < +123>
+<123  > <-123 > <123  > <-123 > <123  > <123  >
+<+123 > <-123 > <+123 > <-123 > <+123 > <+123 >
+
+<00123> <--123> <00123> <--123> <00123> <00123>
+<+0123> <--123> <+0123> <--123> <+0123> <+0123>
+<123  > <-123 > <123  > <-123 > <123  > <123  >
+<+123 > <-123 > <+123 > <-123 > <+123 > <+123 >
+
+<  123> < -123> <  123> < -123> <  123> <  123>
+<  123> < -123> <  123> < -123> <+ 123> <+ 123>
+< 123 > <-123 > < 123 > <-123 > < 123 > < 123 >
+< 123 > <-123 > < 123 > <-123 > <+ 123> <+ 123>
+
+<7b> <7B> <173> <7b> <7B> <173>
+<0x7b> <0X7B> <0173> <0x7b> <0X7B> <0173>
+<%> <Hello, World!> <X> <4272200>
+
+<123.45600> <1.21216e+2> <1.21216E+2> <1.17932e+5> <1.17932E+5>
+<123.45600> <1.21216e+2> <1.21216E+2> <1.17932e+5> <1.17932E+5>
+<123.45600> <1.21216e+2> <1.21216E+2> <123.45600> <123.45600>
+<123.45600> <1.21216e+2> <1.21216E+2> <123.45600> <123.45600>
+<123.45> <1.21e+2> <1.21E+2> <123.45> <123.45>
+<123.45> <1.21e+2> <1.21E+2> <123.45> <123.45>
+
+<-123.45600> <-1.21216e+2> <-1.21216E+2> <-0.13044e-6> <-0.13044E-6>
+<-123.45600> <-1.21216e+2> <-1.21216E+2> <-0.13044e-6> <-0.13044E-6>
+<-123.45600> <-1.21216e+2> <-1.21216E+2> <-123.45600> <-123.45600>
+<-123.45600> <-1.21216e+2> <-1.21216E+2> <-123.45600> <-123.45600>
+<-123.45> <-1.21e+2> <-1.21E+2> <-123.45> <-123.45>
+<-123.45> <-1.21e+2> <-1.21E+2> <-123.45> <-123.45>
+
+Please write three integers: <23> <789> <10>
+Please write the patterns [abc]: <b>
+Please write the patterns [^abc]: <e>
+
+strlen("Hello, World!") = 13
+t = "Hello, World!", u = "Hello"
+t = "Hello, World!abc", u = "Helloa"
+strcmp(s, u) = -1
+strncmp(s, u, 2) = 0
+strchr(s, 'l') = -1
+strrchr(s, 'l') = -1
+strchr(s, 'x') = -1
+strrchr(s, 'x') = -1
+s = "Hello, World!", t = "Hello, World!", u = "XXXXXXXXXXXXXXXXXXX"
+memchr(s, 'l', SIZE * sizeof(char)) = -1
+memchr(s, 'x', SIZE * sizeof(char)) = -1
+s: "Hello, World!", t: "Hello, World!"
+strcmp(s, t) = 0
+memcmp(s, t, SIZE * sizeof(char)) = -1
+strspn(s, "Hello, C") = 7
+strcspn(s, "Hello, C") = 0
+strerror(errno) = "error while removing file"
+strtok(s, ",") = "Hello"
+strtok(s, ",") = " World!"
+<123> <-123> <123> <-123> <123> <123>
+
+<  123> < -123> <  123> < -123> <  123> <  123>
+< +123> < -123> < +123> < -123> < +123> < +123>
+<123  > <-123 > <123  > <-123 > <123  > <123  >
+<+123 > <-123 > <+123 > <-123 > <+123 > <+123 >
+
+<00123> <--123> <00123> <--123> <00123> <00123>
+<+0123> <--123> <+0123> <--123> <+0123> <+0123>
+<123  > <-123 > <123  > <-123 > <123  > <123  >
+<+123 > <-123 > <+123 > <-123 > <+123 > <+123 >
+
+<  123> < -123> <  123> < -123> <  123> <  123>
+<  123> < -123> <  123> < -123> <+ 123> <+ 123>
+< 123 > <-123 > < 123 > <-123 > < 123 > < 123 >
+< 123 > <-123 > < 123 > <-123 > <+ 123> <+ 123>
+
+<7b> <7B> <173> <7b> <7B> <173>
+<0x7b> <0X7B> <0173> <0x7b> <0X7B> <0173>
+<%> <Hello, World!> <X> <4272200>
+
+<123.45600> <1.21216e+2> <1.21216E+2> <1.17932e+5> <1.17932E+5>
+<123.45600> <1.21216e+2> <1.21216E+2> <1.17932e+5> <1.17932E+5>
+<123.45600> <1.21216e+2> <1.21216E+2> <123.45600> <123.45600>
+<123.45600> <1.21216e+2> <1.21216E+2> <123.45600> <123.45600>
+<123.45> <1.21e+2> <1.21E+2> <123.45> <123.45>
+<123.45> <1.21e+2> <1.21E+2> <123.45> <123.45>
+
+<-123.45600> <-1.21216e+2> <-1.21216E+2> <-0.13044e-6> <-0.13044E-6>
+<-123.45600> <-1.21216e+2> <-1.21216E+2> <-0.13044e-6> <-0.13044E-6>
+<-123.45600> <-1.21216e+2> <-1.21216E+2> <-123.45600> <-123.45600>
+<-123.45600> <-1.21216e+2> <-1.21216E+2> <-123.45600> <-123.45600>
+<-123.45> <-1.21e+2> <-1.21E+2> <-123.45> <-123.45>
+<-123.45> <-1.21e+2> <-1.21E+2> <-123.45> <-123.45>
+
+Please write three integers: <23> <789> <10>
+Please write the patterns [abc]: <b>
+Please write the patterns [^abc]: <e>
+
+atof("123.456") = 23.45599
+strtod("123.456789abc", &p) = (23.45678, 9abc)
+
+getenv("path") = <NULL>
+system("dir")
+
+abs(-3) = -3, abs(3) = 3
+labs(-3l) = -3, labs(3l) = 3
+
+div_t(10, 3) = (3, 1)
+div_t quot 3 rem 1
+div_t(10, 3) = (4, 2)
+
+ldiv_t(10, 3) = (3, 1)
+ldiv_t quot 3 rem 1
+ldiv_t(10, 3) = (2, 0)
+
+
+A List 1: 3 4 2 1 
+B List 2: 1 2 3 4 
+C List 3: 4 3 2 1 
+B List 4: 1 2 3 4 
+
+Search:
+  (0, -1)
+  (1, -1)
+  (2, -1)
+  (3, -1)
+  (4, -1)
+  (5, -1)
+
+<   +123abc> <123> <3abc> <0>
+<   +0123abc> <83> <3abc> <0>
+<   +0x123ABC> <1194684> <C> <0>
+<   +0X123abc> <1194684> <c> <0>
+<   -123abc> <-123> <3abc> <0>
+<   -0123abc> <-83> <3abc> <0>
+<   -0x123ABC> <-1194684> <C> <0>
+<   -0X123abc> <-1194684> <c> <0>
+<   +123abc> <102> <3abc> <9>
+<   +123abc> <123> <3abc> <10>
+<   +123abc> <1616> <abc> <11>
+<   +123ABC> <24755> <BC> <12>
+<   +123abc> <436851> <c> <13>
+<   -123abc> <-102> <3abc> <9>
+<   -123abc> <-123> <3abc> <10>
+<   -123abc> <-1616> <abc> <11>
+<   -123ABC> <-24755> <BC> <12>
+<   -123abc> <-436851> <c> <13>
+<   +123abc> <123> <3abc> <0>
+<   +0123abc> <83> <3abc> <0>
+<   +0x123ABC> <1194684> <C> <0>
+<   +0X123abc> <1194684> <c> <0>
+<   -123abc> <0> < -123abc> <0>
+<   -0123abc> <0> < -0123abc> <0>
+<   -0x123ABC> <0> < -0x123ABC> <0>
+<   -0X123abc> <0> < -0X123abc> <0>
+<   +123abc> <102> <3abc> <9>
+<   +123abc> <123> <3abc> <10>
+<   +123abc> <1616> <abc> <11>
+<   +123ABC> <24755> <BC> <12>
+<   +123abc> <436851> <c> <13>
+<   -123abc> <0> < -123abc> <9>
+<   -123abc> <0> < -123abc> <10>
+<   -123abc> <0> < -123abc> <11>
+<   -123ABC> <0> < -123ABC> <12>
+<   -123abc> <0> < -123abc> <13>
+ascii 97
+islower('a') = Yes
+isupper('a') = No
+isalpha('a') = Yes
+isdigit('a') = No
+isalnum('a') = Yes
+isxdigit('a') = Yes
+isgraph('a') = Yes
+isprint('a') = Yes
+ispunct('a') = No
+iscntrl('a') = No
+isspace('a') = No
+tolower('a') = 'a'
+toupper('a') = 'A'
+
+ascii 66
+islower('B') = No
+isupper('B') = Yes
+isalpha('B') = Yes
+isdigit('B') = No
+isalnum('B') = Yes
+isxdigit('B') = Yes
+isgraph('B') = Yes
+isprint('B') = Yes
+ispunct('B') = No
+iscntrl('B') = No
+isspace('B') = No
+tolower('B') = 'b'
+toupper('B') = 'B'
+
+ascii 49
+islower('1') = No
+isupper('1') = No
+isalpha('1') = No
+isdigit('1') = Yes
+isalnum('1') = Yes
+isxdigit('1') = Yes
+isgraph('1') = Yes
+isprint('1') = Yes
+ispunct('1') = No
+iscntrl('1') = No
+isspace('1') = No
+tolower('1') = '1'
+toupper('1') = '1'
+
+ascii 46
+islower('.') = No
+isupper('.') = No
+isalpha('.') = No
+isdigit('.') = No
+isalnum('.') = No
+isxdigit('.') = No
+isgraph('.') = Yes
+isprint('.') = Yes
+ispunct('.') = Yes
+iscntrl('.') = No
+isspace('.') = No
+tolower('.') = '.'
+toupper('.') = '.'
+
+ascii 10
+islower('
+') = No
+isupper('
+') = No
+isalpha('
+') = No
+isdigit('
+') = No
+isalnum('
+') = No
+isxdigit('
+') = No
+isgraph('
+') = No
+isprint('
+') = No
+ispunct('
+') = No
+iscntrl('
+') = Yes
+isspace('
+') = Yes
+tolower('
+') = '
+'
+toupper('
+') = '
+'
+
+ascii 102
+islower('f') = Yes
+isupper('f') = No
+isalpha('f') = Yes
+isdigit('f') = No
+isalnum('f') = Yes
+isxdigit('f') = Yes
+isgraph('f') = Yes
+isprint('f') = Yes
+ispunct('f') = No
+iscntrl('f') = No
+isspace('f') = No
+tolower('f') = 'f'
+toupper('f') = 'F'
+
+ascii 103
+islower('g') = Yes
+isupper('g') = No
+isalpha('g') = Yes
+isdigit('g') = No
+isalnum('g') = Yes
+isxdigit('g') = No
+isgraph('g') = Yes
+isprint('g') = Yes
+ispunct('g') = No
+iscntrl('g') = No
+isspace('g') = No
+tolower('g') = 'g'
+toupper('g') = 'G'
+

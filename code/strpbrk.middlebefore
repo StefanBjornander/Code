@@ -1,31 +1,37 @@
-0: Assign index 0
+0: Assign index integral4$0#
 1: Empty
-2: UnsignedMultiply £temporary3167 index 1
-3: BinaryAdd £temporary3168 mainString £temporary3167
-4: Dereference £temporary3166 -> £temporary3168 £temporary3168 0
-5: NotEqual PreCall 12 £temporary3166 -> £temporary3168 0
-6: Goto Return 0
-7: PreCall 12
-8: Parameter 18 pointer charSet
-9: UnsignedMultiply £temporary3172 index 1
-10: BinaryAdd £temporary3173 mainString £temporary3172
-11: Dereference £temporary3171 -> £temporary3173 £temporary3173 0
-12: IntegralToIntegral £temporary3174 £temporary3171 -> £temporary3173
-13: Parameter 20 signedint £temporary3174
-14: Call 12 strchr 0
-15: PostCall 12
-16: GetReturnValue £temporary3175
-17: NotEqual UnsignedMultiply £temporary3178 index 1 £temporary3175 0
-18: Goto Empty
-19: UnsignedMultiply £temporary3178 index 1
-20: BinaryAdd £temporary3179 mainString £temporary3178
-21: Dereference £temporary3177 -> £temporary3179 £temporary3179 0
-22: Address £temporary3180 £temporary3177 -> £temporary3179
-23: Return £temporary3180
-24: Goto Empty
-25: Empty
-26: BinaryAdd index index 1
-27: Goto Empty
-28: Return 0
+2: IntegralToIntegral £temporary3564 index
+3: Add £temporary3565 mainString £temporary3564
+4: Dereference £temporary3566 £temporary3565 0
+5: NotEqual < PreCall 44> £temporary3566 integral1$0#
+6: Jump < SetReturnValue>
+7: PreCall 44
+8: Parameter 68 pointer charSet
+9: IntegralToIntegral £temporary3569 index
+10: Add £temporary3570 mainString £temporary3569
+11: Dereference £temporary3571 £temporary3570 0
+12: IntegralToIntegral £temporary3572 £temporary3571
+13: Parameter 76 signed int £temporary3572
+14: Call 44 strchr 0
+15: PostCall 44
+16: GetReturnValue £temporary3573
+17: NotEqual < Empty> £temporary3573 integral8$0#
+18: Jump < Empty>
+19: Empty
+20: IntegralToIntegral £temporary3575 index
+21: Add £temporary3576 mainString £temporary3575
+22: Dereference £temporary3577 £temporary3576 0
+23: Address £temporary3578 £temporary3577
+24: SetReturnValue
+25: Return £temporary3578
+26: Jump < Empty>
+27: Empty
+28: Empty
 29: Empty
-30: FunctionEnd strpbrk
+30: Add £temporary3568 index integral4$1#
+31: Assign index £temporary3568
+32: Jump < Empty>
+33: SetReturnValue
+34: Return integral8$0#
+35: Empty
+36: FunctionEnd strpbrk

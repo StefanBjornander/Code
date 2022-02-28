@@ -1,13 +1,16 @@
 0: PushFloat x
-1: PushFloat 0
-2: SignedLessThan PushFloat x x 0
-3: Goto PushFloat x
-4: PushFloat x
-5: UnarySubtract £temporary666 x
-6: DecreaseStack
-7: Goto Empty
-8: PushFloat x
+1: PushFloat floating8$0#
+2: LessThan < Empty> x floating8$0#
+3: Jump < Empty>
+4: Empty
+5: PushFloat x
+6: Minus £temporary767 x
+7: DecreaseStack
+8: Jump < Empty>
 9: Empty
-10: Return £temporary667
+10: PushFloat x
 11: Empty
-12: FunctionEnd fabs
+12: SetReturnValue
+13: Return £temporary768
+14: Empty
+15: FunctionEnd fabs
