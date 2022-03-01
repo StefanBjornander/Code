@@ -1,18 +1,18 @@
-0: PreCall 14
-1: Parameter 20 pointer "  acos(%f) = %f, errno = %i\n"
+0: PreCall 32
+1: Parameter 56 string string_2020acos2825f29203D2025f2C20errno203D2025i0A#
 2: PushFloat x
-3: Parameter 22 double x
-4: PreCall 14
+3: Parameter 64 double x
+4: PreCall 32
 5: PushFloat x
-6: Parameter 36 double x
-7: Call 30 acos 0
-8: PostCall 30
-9: GetReturnValue £temporary3578
-10: Parameter 30 double £temporary3578
-11: Parameter 38 signedint errno
-12: Call 14 printf 18
-13: PostCall 14
-14: Assign errno 0
+6: Parameter 96 double x
+7: Call 72 acos 0
+8: PostCall 72
+9: GetReturnValue £temporary4176
+10: Parameter 72 double £temporary4176
+11: Parameter 80 signed int errno
+12: Call 32 printf 20
+13: PostCall 32
+14: Assign errno integral4$0#
 15: Empty
 16: Empty
 17: Return

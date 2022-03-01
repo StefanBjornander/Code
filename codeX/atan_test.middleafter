@@ -7,8 +7,8 @@
 6: Parameter 96 double x
 7: Call 72 atan 0
 8: PostCall 72
-9: GetReturnValue £temporary4055
-10: Parameter 72 double £temporary4055
+9: GetReturnValue £temporary4181
+10: Parameter 72 double £temporary4181
 11: Parameter 80 signed int errno
 12: Call 32 printf 20
 13: PostCall 32

@@ -172,8 +172,8 @@ printChar$2:	; Case 24 g_outStatus 2
 printChar$3:	; CaseEnd g_outStatus
 16:	
 
-printChar$4:	; Goto 26
-17:		jmp printChar$26
+printChar$4:	; Goto 25
+17:		jmp printChar$25
 19:	
 
 printChar$5:	; IntegralToIntegral £temporary1601 g_outDevice
@@ -216,8 +216,8 @@ printChar$14:	; Increment g_outChars
 48:		inc word [g_outChars]
 50:	
 
-printChar$15:	; Goto 26
-51:		jmp printChar$26
+printChar$15:	; Goto 25
+51:		jmp printChar$25
 53:	
 
 printChar$16:	; IntegralToIntegral £temporary1609 g_outDevice
@@ -249,26 +249,22 @@ printChar$22:	; Assign £temporary1612 -> £temporary1613 c
 74:		mov [si], al
 76:	
 
-printChar$23:	; Goto 26
-77:		jmp printChar$26
+printChar$23:	; Goto 25
+77:		jmp printChar$25
 79:	
 
-printChar$24:	; Assign £temporary1614 g_outChars
-80:		mov ax, [g_outChars]
+printChar$24:	; Increment g_outChars
+80:		inc word [g_outChars]
 82:	
 
-printChar$25:	; Increment g_outChars
-83:		inc word [g_outChars]
-85:	
+printChar$25:	; Return 0
+83:		mov ax, [bp]
+84:		mov di, [bp + 4]
+85:		mov bp, [bp + 2]
+86:		jmp ax
+88:	
 
-printChar$26:	; Return 0
-86:		mov ax, [bp]
-87:		mov di, [bp + 4]
-88:		mov bp, [bp + 2]
-89:		jmp ax
-91:	
-
-printChar$27:	; FunctionEnd printChar
+printChar$26:	; FunctionEnd printChar
 1:	
 
 printString:	; Equal 29 s 0

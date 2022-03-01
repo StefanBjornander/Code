@@ -1,46 +1,49 @@
-0: IntegralToIntegral £temporary3691 target
-1: Assign charTarget £temporary3691
-2: IntegralToIntegral £temporary3692 source
-3: Assign charSource £temporary3692
+0: IntegralToIntegral £temporary3805 target
+1: Assign charTarget £temporary3805
+2: IntegralToIntegral £temporary3806 source
+3: Assign charSource £temporary3806
 4: LessThan < Empty> source target
 5: Jump < Empty>
 6: Empty
-7: Subtract £temporary3694 size integral4$1#
-8: Assign index £temporary3694
+7: Subtract £temporary3808 size integral4$1#
+8: Assign index £temporary3808
 9: Empty
-10: GreaterThanEqual < IntegralToIntegral £temporary3697 index> index integral4$0#
-11: Jump < IntegralToIntegral £temporary3713 target>
-12: IntegralToIntegral £temporary3697 index
-13: Add £temporary3698 charTarget £temporary3697
-14: Dereference £temporary3699 £temporary3698 0
-15: IntegralToIntegral £temporary3700 index
-16: Add £temporary3701 charSource £temporary3700
-17: Dereference £temporary3702 £temporary3701 0
-18: Assign £temporary3699 £temporary3702
-19: Empty
-20: Subtract £temporary3696 index integral4$1#
-21: Assign index £temporary3696
-22: Jump < Empty>
-23: Jump < Empty>
-24: Empty
-25: Assign index integral4$0#
+10: GreaterThanEqual < Multiply £temporary3811 index integral4$1#> index integral4$0#
+11: Jump < IntegralToIntegral £temporary3831 target>
+12: Multiply £temporary3811 index integral4$1#
+13: IntegralToIntegral £temporary3812 £temporary3811
+14: Add £temporary3813 charTarget £temporary3812
+15: Dereference £temporary3814 £temporary3813 0
+16: Multiply £temporary3815 index integral4$1#
+17: IntegralToIntegral £temporary3816 £temporary3815
+18: Add £temporary3817 charSource £temporary3816
+19: Dereference £temporary3818 £temporary3817 0
+20: Assign £temporary3814 £temporary3818
+21: Empty
+22: Subtract £temporary3810 index integral4$1#
+23: Assign index £temporary3810
+24: Jump < Empty>
+25: Jump < Empty>
 26: Empty
-27: LessThan < IntegralToIntegral £temporary3705 index> index size
-28: Jump < IntegralToIntegral £temporary3713 target>
-29: IntegralToIntegral £temporary3705 index
-30: Add £temporary3706 charTarget £temporary3705
-31: Dereference £temporary3707 £temporary3706 0
-32: IntegralToIntegral £temporary3708 index
-33: Add £temporary3709 charSource £temporary3708
-34: Dereference £temporary3710 £temporary3709 0
-35: Assign £temporary3707 £temporary3710
-36: Empty
-37: Add £temporary3704 index integral4$1#
-38: Assign index £temporary3704
-39: Jump < Empty>
+27: Assign index integral4$0#
+28: Empty
+29: LessThan < Multiply £temporary3821 index integral4$1#> index size
+30: Jump < IntegralToIntegral £temporary3831 target>
+31: Multiply £temporary3821 index integral4$1#
+32: IntegralToIntegral £temporary3822 £temporary3821
+33: Add £temporary3823 charTarget £temporary3822
+34: Dereference £temporary3824 £temporary3823 0
+35: Multiply £temporary3825 index integral4$1#
+36: IntegralToIntegral £temporary3826 £temporary3825
+37: Add £temporary3827 charSource £temporary3826
+38: Dereference £temporary3828 £temporary3827 0
+39: Assign £temporary3824 £temporary3828
 40: Empty
-41: IntegralToIntegral £temporary3713 target
-42: SetReturnValue
-43: Return £temporary3713
+41: Add £temporary3820 index integral4$1#
+42: Assign index £temporary3820
+43: Jump < Empty>
 44: Empty
-45: FunctionEnd memmove
+45: IntegralToIntegral £temporary3831 target
+46: Return £temporary3831
+47: Empty
+48: FunctionEnd memmove

@@ -1,0 +1,6 @@
+0: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 48 string string_exit20A#
+2: Call 24 printf 0
+3: PostCall 24
+4: Return
+5: FunctionEnd exit_handle2

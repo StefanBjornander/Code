@@ -1,3 +1,2 @@
-0: SetReturnValue
-1: Return integral8$0#
-2: FunctionEnd getenv
+0: Return integral8$0#
+1: FunctionEnd getenv

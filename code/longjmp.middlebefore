@@ -1,14 +1,14 @@
-0: AssignRegister ebx return_value
-1: Add £temporary784 buf integral8$0#
-2: Dereference £temporary785 £temporary784 0
-3: AssignRegister rcx £temporary785
-4: Add £temporary787 buf integral8$16#
-5: Dereference £temporary788 £temporary787 0
-6: AssignRegister rdi £temporary788
-7: Add £temporary790 buf integral8$8#
-8: Dereference £temporary791 £temporary790 0
-9: AssignRegister rbp £temporary791
-10: JumpRegister rcx
+0: AssignRegister bx return_value
+1: Add £temporary777 buf integral2$0#
+2: Dereference £temporary778 £temporary777 0
+3: AssignRegister cx £temporary778
+4: Add £temporary780 buf integral2$4#
+5: Dereference £temporary781 £temporary780 0
+6: AssignRegister di £temporary781
+7: Add £temporary783 buf integral2$2#
+8: Dereference £temporary784 £temporary783 0
+9: AssignRegister bp £temporary784
+10: JumpRegister cx
 11: Empty
 12: Return
 13: FunctionEnd longjmp

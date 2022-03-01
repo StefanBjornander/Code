@@ -1,90 +1,90 @@
 0: NotEqual < Empty> timePtr integral8$0#
 1: Jump < Empty>
 2: Empty
-3: Dereference £temporary3046 timePtr 0
-4: Assign time £temporary3046
-5: Modulo £temporary3047 time integral8$86400#
-6: Assign secondsOfDay £temporary3047
-7: Modulo £temporary3048 secondsOfDay integral8$3600#
-8: Assign secondsOfHour £temporary3048
-9: Divide £temporary3049 secondsOfDay integral8$3600#
-10: IntegralToIntegral £temporary3050 £temporary3049
-11: Assign g_timeStruct.tm_hour £temporary3050
-12: Divide £temporary3051 secondsOfHour integral8$60#
-13: IntegralToIntegral £temporary3052 £temporary3051
-14: Assign g_timeStruct.tm_min £temporary3052
-15: Modulo £temporary3053 secondsOfHour integral8$60#
-16: IntegralToIntegral £temporary3054 £temporary3053
-17: Assign g_timeStruct.tm_sec £temporary3054
-18: Divide £temporary3055 time integral8$86400#
-19: Assign totalDays £temporary3055
+3: Dereference £temporary3099 timePtr 0
+4: Assign time £temporary3099
+5: Modulo £temporary3100 time integral8$86400#
+6: Assign secondsOfDay £temporary3100
+7: Modulo £temporary3101 secondsOfDay integral8$3600#
+8: Assign secondsOfHour £temporary3101
+9: Divide £temporary3102 secondsOfDay integral8$3600#
+10: IntegralToIntegral £temporary3103 £temporary3102
+11: Assign g_timeStruct.tm_hour £temporary3103
+12: Divide £temporary3104 secondsOfHour integral8$60#
+13: IntegralToIntegral £temporary3105 £temporary3104
+14: Assign g_timeStruct.tm_min £temporary3105
+15: Modulo £temporary3106 secondsOfHour integral8$60#
+16: IntegralToIntegral £temporary3107 £temporary3106
+17: Assign g_timeStruct.tm_sec £temporary3107
+18: Divide £temporary3108 time integral8$86400#
+19: Assign totalDays £temporary3108
 20: LessThan < Empty> totalDays integral8$3#
 21: Jump < Empty>
 22: Empty
-23: Add £temporary3057 totalDays integral8$4#
-24: IntegralToIntegral £temporary3058 £temporary3057
-25: Assign g_timeStruct.tm_wday £temporary3058
+23: Add £temporary3110 totalDays integral8$4#
+24: IntegralToIntegral £temporary3111 £temporary3110
+25: Assign g_timeStruct.tm_wday £temporary3111
 26: Jump < Empty>
 27: Empty
-28: Subtract £temporary3059 totalDays integral8$3#
-29: Modulo £temporary3060 £temporary3059 integral8$7#
-30: IntegralToIntegral £temporary3061 £temporary3060
-31: Assign g_timeStruct.tm_wday £temporary3061
+28: Subtract £temporary3112 totalDays integral8$3#
+29: Modulo £temporary3113 £temporary3112 integral8$7#
+30: IntegralToIntegral £temporary3114 £temporary3113
+31: Assign g_timeStruct.tm_wday £temporary3114
 32: Empty
-33: Divide £temporary3064 totalDays integral8$365#
-34: Add £temporary3065 integral8$1970# £temporary3064
-35: IntegralToIntegral £temporary3066 £temporary3065
-36: Assign year £temporary3066
-37: Subtract £temporary3067 year integral4$1969#
-38: Divide £temporary3068 £temporary3067 integral4$4#
-39: Assign leapDays £temporary3068
-40: Modulo £temporary3069 totalDays integral8$365#
-41: Assign totalDays £temporary3069
-42: IntegralToIntegral £temporary3071 leapDays
-43: Subtract £temporary3070 totalDays £temporary3071
-44: Assign totalDays £temporary3070
+33: Divide £temporary3117 totalDays integral8$365#
+34: Add £temporary3118 integral8$1970# £temporary3117
+35: IntegralToIntegral £temporary3119 £temporary3118
+36: Assign year £temporary3119
+37: Subtract £temporary3120 year integral4$1969#
+38: Divide £temporary3121 £temporary3120 integral4$4#
+39: Assign leapDays £temporary3121
+40: Modulo £temporary3122 totalDays integral8$365#
+41: Assign totalDays £temporary3122
+42: IntegralToIntegral £temporary3124 leapDays
+43: Subtract £temporary3123 totalDays £temporary3124
+44: Assign totalDays £temporary3123
 45: LessThan < Empty> totalDays integral8$0#
 46: Jump < Empty>
 47: Empty
-48: Subtract £temporary3073 year integral4$1#
-49: Assign year £temporary3073
+48: Subtract £temporary3126 year integral4$1#
+49: Assign year £temporary3126
 50: PreCall 72
 51: Parameter 96 signed int year
 52: Call 72 isLeapYear 0
 53: PostCall 72
-54: GetReturnValue £temporary3074
-55: NotEqual < Empty> £temporary3074 integral4$0#
+54: GetReturnValue £temporary3127
+55: NotEqual < Empty> £temporary3127 integral4$0#
 56: Jump < Empty>
 57: Empty
-58: Add £temporary3075 totalDays integral8$366#
-59: Assign totalDays £temporary3075
+58: Add £temporary3128 totalDays integral8$366#
+59: Assign totalDays £temporary3128
 60: Jump < Empty>
 61: Empty
-62: Add £temporary3076 totalDays integral8$365#
-63: Assign totalDays £temporary3076
+62: Add £temporary3129 totalDays integral8$365#
+63: Assign totalDays £temporary3129
 64: Empty
 65: Jump < Empty>
 66: Empty
 67: Empty
-68: Subtract £temporary3082 year integral4$1900#
-69: Assign g_timeStruct.tm_year £temporary3082
-70: IntegralToIntegral £temporary3083 totalDays
-71: Assign g_timeStruct.tm_yday £temporary3083
+68: Subtract £temporary3135 year integral4$1900#
+69: Assign g_timeStruct.tm_year £temporary3135
+70: IntegralToIntegral £temporary3136 totalDays
+71: Assign g_timeStruct.tm_yday £temporary3136
 72: Assign daysOfMonths[0] integral4$31#
 73: PreCall 76
 74: Parameter 100 signed int year
 75: Call 76 isLeapYear 0
 76: PostCall 76
-77: GetReturnValue £temporary3084
-78: NotEqual < Empty> £temporary3084 integral4$0#
+77: GetReturnValue £temporary3137
+78: NotEqual < Empty> £temporary3137 integral4$0#
 79: Jump < Empty>
 80: Empty
-81: Assign £temporary3086 integral4$29#
+81: Assign £temporary3139 integral4$29#
 82: Jump < Empty>
 83: Empty
-84: Assign £temporary3086 integral4$28#
+84: Assign £temporary3139 integral4$28#
 85: Empty
-86: Assign daysOfMonths[1] £temporary3086
+86: Assign daysOfMonths[1] £temporary3139
 87: Assign daysOfMonths[2] integral4$31#
 88: Assign daysOfMonths[3] integral4$30#
 89: Assign daysOfMonths[4] integral4$31#
@@ -97,36 +97,34 @@
 96: Assign daysOfMonths[11] integral4$31#
 97: Assign month integral4$0#
 98: Empty
-99: Multiply £temporary3099 month integral4$4#
-100: IntegralToIntegral £temporary3100 £temporary3099
-101: Add £temporary3101 daysOfMonths £temporary3100
-102: Dereference £temporary3102 £temporary3101 0
-103: IntegralToIntegral £temporary3103 £temporary3102
-104: GreaterThanEqual < Assign £temporary3105 month> totalDays £temporary3103
+99: Multiply £temporary3152 month integral4$4#
+100: IntegralToIntegral £temporary3153 £temporary3152
+101: Add £temporary3154 daysOfMonths £temporary3153
+102: Dereference £temporary3155 £temporary3154 0
+103: IntegralToIntegral £temporary3156 £temporary3155
+104: GreaterThanEqual < Assign £temporary3158 month> totalDays £temporary3156
 105: Jump < Assign g_timeStruct.tm_mon month>
-106: Assign £temporary3105 month
-107: Add £temporary3106 month integral4$1#
-108: Assign month £temporary3106
-109: Multiply £temporary3107 £temporary3105 integral4$4#
-110: IntegralToIntegral £temporary3108 £temporary3107
-111: Add £temporary3109 daysOfMonths £temporary3108
-112: Dereference £temporary3110 £temporary3109 0
-113: IntegralToIntegral £temporary3112 £temporary3110
-114: Subtract £temporary3111 totalDays £temporary3112
-115: Assign totalDays £temporary3111
+106: Assign £temporary3158 month
+107: Add £temporary3159 month integral4$1#
+108: Assign month £temporary3159
+109: Multiply £temporary3160 £temporary3158 integral4$4#
+110: IntegralToIntegral £temporary3161 £temporary3160
+111: Add £temporary3162 daysOfMonths £temporary3161
+112: Dereference £temporary3163 £temporary3162 0
+113: IntegralToIntegral £temporary3165 £temporary3163
+114: Subtract £temporary3164 totalDays £temporary3165
+115: Assign totalDays £temporary3164
 116: Empty
 117: Jump < Empty>
 118: Assign g_timeStruct.tm_mon month
-119: Add £temporary3113 totalDays integral8$1#
-120: IntegralToIntegral £temporary3114 £temporary3113
-121: Assign g_timeStruct.tm_mday £temporary3114
+119: Add £temporary3166 totalDays integral8$1#
+120: IntegralToIntegral £temporary3167 £temporary3166
+121: Assign g_timeStruct.tm_mday £temporary3167
 122: Assign g_timeStruct.tm_isdst integral4$minus1#
-123: SetReturnValue
-124: Return StaticAddress_@6574$g_timeStruct_0#
-125: Jump < Empty>
+123: Return StaticAddress_@6781$g_timeStruct_0#
+124: Jump < Empty>
+125: Empty
 126: Empty
-127: Empty
-128: SetReturnValue
-129: Return integral8$0#
-130: Empty
-131: FunctionEnd gmtime
+127: Return integral8$0#
+128: Empty
+129: FunctionEnd gmtime

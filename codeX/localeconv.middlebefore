@@ -1,11 +1,12 @@
-0: NotEqual Dereference £temporary368 -> g_currStructPtr g_currStructPtr 0 g_currStructPtr 0
-1: Goto Empty
-2: Dereference £temporary368 -> g_currStructPtr g_currStructPtr 0
-3: Assign £temporary369 £temporary368 -> g_currStructPtr
-4: Goto Empty
-5: Empty
-6: Assign £temporary369 0
-7: Empty
-8: Return £temporary369
-9: Empty
-10: FunctionEnd localeconv
+0: NotEqual < Empty> g_currStructPtr integral2$0#
+1: Jump < Empty>
+2: Empty
+3: Dereference £temporary388 g_currStructPtr 0
+4: Assign £temporary389 £temporary388.localePtr
+5: Jump < Empty>
+6: Empty
+7: Assign £temporary389 integral2$0#
+8: Empty
+9: Return £temporary389
+10: Empty
+11: FunctionEnd localeconv

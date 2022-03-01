@@ -1,0 +1,132 @@
+0: Assign minus integral4$0#
+1: Assign found integral4$0#
+2: PushFloat floating8$0.0#
+3: PopFloat value
+4: PushFloat floating8$1.0#
+5: PopFloat factor
+6: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+7: Call 48 scanChar 0
+8: PostCall 48
+9: GetReturnValue £temporary1437
+10: Assign input £temporary1437
+11: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+12: IntegralToIntegral £temporary1438 input
+13: Parameter 73 signed int £temporary1438
+14: Call 49 isspace 0
+15: PostCall 49
+16: GetReturnValue £temporary1439
+17: Equal 24 £temporary1439 integral4$0#
+18: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+19: Call 49 scanChar 0
+20: PostCall 49
+21: GetReturnValue £temporary1440
+22: Assign input £temporary1440
+23: Jump 11
+24: NotEqual 31 input integral1$43#
+25: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+26: Call 49 scanChar 0
+27: PostCall 49
+28: GetReturnValue £temporary1443
+29: Assign input £temporary1443
+30: Jump 38
+31: NotEqual 38 input integral1$45#
+32: Assign minus integral4$1#
+33: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+34: Call 49 scanChar 0
+35: PostCall 49
+36: GetReturnValue £temporary1445
+37: Assign input £temporary1445
+38: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+39: IntegralToIntegral £temporary1450 input
+40: Parameter 73 signed int £temporary1450
+41: Call 49 isdigit 0
+42: PostCall 49
+43: GetReturnValue £temporary1451
+44: Equal 60 £temporary1451 integral4$0#
+45: PushFloat floating8$10.0#
+46: PushFloat value
+47: Multiply £temporary1452 floating8$10.0# value
+48: Subtract £temporary1453 input integral1$48#
+49: IntegralToIntegral £temporary1455 £temporary1453
+50: IntegralToFloating £temporary1454 £temporary1455
+51: Add £temporary1456 £temporary1452 £temporary1454
+52: PopFloat value
+53: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+54: Call 49 scanChar 0
+55: PostCall 49
+56: GetReturnValue £temporary1457
+57: Assign input £temporary1457
+58: Assign found integral4$1#
+59: Jump 38
+60: NotEqual 92 input integral1$46#
+61: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+62: Call 49 scanChar 0
+63: PostCall 49
+64: GetReturnValue £temporary1460
+65: Assign input £temporary1460
+66: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+67: IntegralToIntegral £temporary1461 input
+68: Parameter 73 signed int £temporary1461
+69: Call 49 isdigit 0
+70: PostCall 49
+71: GetReturnValue £temporary1462
+72: Equal 92 £temporary1462 integral4$0#
+73: PushFloat factor
+74: PushFloat floating8$10.0#
+75: Divide £temporary1463 factor floating8$10.0#
+76: PopFloat factor
+77: PushFloat value
+78: PushFloat factor
+79: Subtract £temporary1464 input integral1$48#
+80: IntegralToIntegral £temporary1466 £temporary1464
+81: IntegralToFloating £temporary1465 £temporary1466
+82: Multiply £temporary1467 factor £temporary1465
+83: Add £temporary1468 value £temporary1467
+84: PopFloat value
+85: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+86: Call 49 scanChar 0
+87: PostCall 49
+88: GetReturnValue £temporary1469
+89: Assign input £temporary1469
+90: Assign found integral4$1#
+91: Jump 66
+92: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+93: IntegralToIntegral £temporary1473 input
+94: Parameter 73 signed int £temporary1473
+95: Call 49 tolower 0
+96: PostCall 49
+97: GetReturnValue £temporary1474
+98: NotEqual 118 £temporary1474 integral4$101#
+99: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+100: Parameter 73 signed int integral4$10#
+101: Call 49 scanLongInt 0
+102: PostCall 49
+103: GetReturnValue £temporary1476
+104: IntegralToFloating £temporary1477 £temporary1476
+105: PopFloat exponent
+106: PushFloat value
+107: PreCall 57 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
+108: PushFloat floating8$10.0#
+109: Parameter 81 double floating8$10.0#
+110: PushFloat exponent
+111: Parameter 89 double exponent
+112: Call 57 pow 0
+113: PostCall 57
+114: GetReturnValue £temporary1478
+115: Multiply £temporary1479 value £temporary1478
+116: PopFloat value
+117: Jump 122
+118: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+119: Parameter 73 signed char input
+120: Call 49 unscanChar 0
+121: PostCall 49
+122: Equal 126 minus integral4$0#
+123: PushFloat value
+124: Minus £temporary1483 value
+125: PopFloat value
+126: Equal 128 found integral4$0#
+127: Add g_inCount g_inCount integral4$1#
+128: PushFloat value
+129: SetReturnValue
+130: Return value
+131: FunctionEnd scanLongDouble

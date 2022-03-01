@@ -1,56 +1,69 @@
 0: PushFloat x
-1: PushFloat 0
-2: NotEqual PreCall 16 x 0
-3: Goto NotEqual Dereference £temporary460 -> p p 0 p 0
-4: PreCall 16
+1: PushFloat floating8$0#
+2: NotEqual < Empty> x floating8$0#
+3: Jump < Empty>
+4: Empty
 5: PreCall 16
-6: PushFloat x
-7: Parameter 22 double x
-8: Call 16 fabs 0
-9: PostCall 16
-10: GetReturnValue £temporary447
-11: Parameter 22 double £temporary447
-12: Call 16 log2 0
-13: PostCall 16
-14: GetReturnValue £temporary448
-15: IntegralToIntegral £temporary449 £temporary448
-16: Assign exponent £temporary449
-17: PreCall 18
-18: PushFloat 2
-19: Parameter 24 double 2
-20: IntegralToFloating £temporary450 exponent
-21: Parameter 32 double £temporary450
-22: Call 18 pow 0
-23: PostCall 18
-24: GetReturnValue £temporary451
-25: PushFloat x
-26: SignedLessThan BinaryAdd exponent exponent 1 £temporary451 x
-27: Goto NotEqual Dereference £temporary455 -> p p 0 p 0
-28: BinaryAdd exponent exponent 1
-29: Goto NotEqual Dereference £temporary455 -> p p 0 p 0
-30: NotEqual Dereference £temporary455 -> p p 0 p 0
-31: Goto PushFloat x
-32: Dereference £temporary455 -> p p 0
-33: Assign £temporary455 -> p exponent
-34: Goto PushFloat x
-35: PushFloat x
-36: PreCall 18
-37: PushFloat 2
-38: Parameter 24 double 2
-39: IntegralToFloating £temporary456 exponent
-40: Parameter 32 double £temporary456
-41: Call 18 pow 0
-42: PostCall 18
-43: GetReturnValue £temporary457
-44: SignedDivide £temporary458 x £temporary457
-45: Return £temporary458
-46: Goto Empty
-47: NotEqual Dereference £temporary460 -> p p 0 p 0
-48: Goto PushFloat 0
-49: Dereference £temporary460 -> p p 0
-50: Assign £temporary460 -> p 0
-51: Goto PushFloat 0
-52: PushFloat 0
-53: Return 0
-54: Empty
-55: FunctionEnd frexp
+6: PreCall 16
+7: PushFloat x
+8: Parameter 22 double x
+9: Call 16 fabs 0
+10: PostCall 16
+11: GetReturnValue £temporary485
+12: Parameter 22 double £temporary485
+13: Call 16 log2 0
+14: PostCall 16
+15: GetReturnValue £temporary486
+16: IntegralToIntegral £temporary487 £temporary486
+17: Assign exponent £temporary487
+18: PreCall 18
+19: PushFloat floating8$2#
+20: Parameter 24 double floating8$2#
+21: IntegralToFloating £temporary488 exponent
+22: Parameter 32 double £temporary488
+23: Call 18 pow 0
+24: PostCall 18
+25: GetReturnValue £temporary489
+26: PushFloat x
+27: LessThan < Empty> £temporary489 x
+28: Jump < Empty>
+29: Empty
+30: Add £temporary491 exponent integral2$1#
+31: Assign exponent £temporary491
+32: Jump < Empty>
+33: Empty
+34: Empty
+35: NotEqual < Empty> p integral2$0#
+36: Jump < Empty>
+37: Empty
+38: Dereference £temporary495 p 0
+39: Assign £temporary495 exponent
+40: Jump < Empty>
+41: Empty
+42: Empty
+43: PushFloat x
+44: PreCall 18
+45: PushFloat floating8$2#
+46: Parameter 24 double floating8$2#
+47: IntegralToFloating £temporary498 exponent
+48: Parameter 32 double £temporary498
+49: Call 18 pow 0
+50: PostCall 18
+51: GetReturnValue £temporary499
+52: Divide £temporary500 x £temporary499
+53: Return £temporary500
+54: Jump < Empty>
+55: Empty
+56: NotEqual < Empty> p integral2$0#
+57: Jump < Empty>
+58: Empty
+59: Dereference £temporary502 p 0
+60: Assign £temporary502 integral2$0#
+61: Jump < Empty>
+62: Empty
+63: Empty
+64: PushFloat floating8$0#
+65: Return floating8$0#
+66: Empty
+67: Empty
+68: FunctionEnd frexp

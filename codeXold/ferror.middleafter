@@ -1,0 +1,4 @@
+0: Dereference £temporary1085 stream 0
+1: SetReturnValue
+2: Return £temporary1085.errno
+3: FunctionEnd ferror

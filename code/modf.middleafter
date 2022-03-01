@@ -1,20 +1,20 @@
-0: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+0: PreCall 16 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 1: PushFloat x
-2: Parameter 64 double x
-3: Call 40 fabs 0
-4: PostCall 40
-5: GetReturnValue £temporary530
+2: Parameter 22 double x
+3: Call 16 fabs 0
+4: PostCall 16
+5: GetReturnValue £temporary523
 6: PopFloat abs_x
 7: PushFloat abs_x
-8: FloatingToIntegral £temporary531 abs_x
-9: IntegralToFloating £temporary532 £temporary531
+8: FloatingToIntegral £temporary524 abs_x
+9: IntegralToFloating £temporary525 £temporary524
 10: PopFloat integral
 11: PushFloat abs_x
 12: PushFloat integral
-13: Subtract £temporary533 abs_x integral
+13: Subtract £temporary526 abs_x integral
 14: PopFloat fractional
-15: Equal 26 p integral8$0#
-16: Dereference £temporary535 p 0
+15: Equal 26 p integral2$0#
+16: Dereference £temporary528 p 0
 17: PushFloat x
 18: PushFloat floating8$0#
 19: LessThanEqual 23 x floating8$0#
@@ -22,8 +22,8 @@
 21: DecreaseStack
 22: Jump 25
 23: PushFloat integral
-24: Minus £temporary537 integral
-25: PopFloat £temporary535
+24: Minus £temporary530 integral
+25: PopFloat £temporary528
 26: PushFloat x
 27: PushFloat floating8$0#
 28: LessThanEqual 32 x floating8$0#
@@ -31,7 +31,6 @@
 30: DecreaseStack
 31: Jump 34
 32: PushFloat fractional
-33: Minus £temporary542 fractional
-34: SetReturnValue
-35: Return £temporary543
-36: FunctionEnd modf
+33: Minus £temporary535 fractional
+34: Return £temporary536
+35: FunctionEnd modf

@@ -1,30 +1,25 @@
-Main.asm
-Malloc.asm
-CType.asm
-ErrNo.asm
-Locale.asm
-Math.asm
-SetJmp.asm
-Signal.asm
-File.asm
-Temp.asm
-Scanf.asm
-Printf.asm
-StdLib.asm
-Time.asm
-String.asm
-PrintTest.asm
-CharacterTest.asm
-FloatTest.asm
-LimitsTest.asm
-AssertTest.asm
-StringTest.asm
-SetJmpTest.asm
-MathTest.asm
-FileTest.asm
-StdIOTest.asm
-SignalTest.asm
-StackTest.asm
-MallocTest.asm
-StdLibTest.asm
-TimeTest.asm
+522:
+old  <now 1: 1646064817>
+new  <now 1: 1646164268>
+
+523:
+old  <now 2: 1646064817>
+new  <now 2: 1646164268>
+
+524:
+old  <   gm time: Mon 2022-02-28 16:13:37, year day 58, week day 1, daylight saving time -1>
+new  <   gm time: Tue 2022-03-01 19:51:08, year day 59, week day 2, daylight saving time -1>
+
+525:
+old  <local time: Mon 2022-02-28 17:13:37, year day 58, week day 1, daylight saving time -1>
+new  <local time: Tue 2022-03-01 20:51:08, year day 59, week day 2, daylight saving time -1>
+
+526:
+old  <asctime <Mon Feb 28 16:13:37 2022>, ctime <Mon Feb 28 17:13:37 2022>>
+new  <asctime <Tue Mar 1 19:51:08 2022>, ctime <Tue Mar 1 20:51:08 2022>>
+
+527:
+old  <strftime 311 311 <short day Mon, long day Monday, short month Feb, long month February, date-time 2022-02-28 17:13:37, mday 28, hour 17, gm hour 05, yday 058, month 02, min 13, am/pm AM, sec 37, week number sun 09, week day 01, week number mon 09, date 17:13:37, time 17:13:37, short year 22, long year 2022, summer/winter summer>>
+new  <strftime 309 309 <short day Tue, long day Tuesday, short month Mar, long month March, date-time 2022-03-01 20:51:08, mday 01, hour 20, gm hour 08, yday 059, month 03, min 51, am/pm AM, sec 08, week number sun 09, week day 02, week number mon 09, date 20:51:08, time 20:51:08, short year 22, long year 2022, summer/winter summer>>
+
+Log 6

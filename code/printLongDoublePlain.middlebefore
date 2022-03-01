@@ -10,7 +10,7 @@
 9: PushFloat longDoubleValue
 10: PopEmpty
 11: PushFloat longDoubleValue
-12: Minus £temporary1909 longDoubleValue
+12: Minus £temporary1941 longDoubleValue
 13: PopFloat longDoubleValue
 14: Assign plus integral4$0#
 15: Assign space integral4$0#
@@ -18,8 +18,8 @@
 17: Empty
 18: Empty
 19: PushFloat longDoubleValue
-20: FloatingToIntegral £temporary1912 longDoubleValue
-21: Assign longValue £temporary1912
+20: FloatingToIntegral £temporary1944 longDoubleValue
+21: Assign longValue £temporary1944
 22: PreCall 56
 23: Parameter 80 signed long int longValue
 24: Parameter 88 signed int plus
@@ -27,8 +27,8 @@
 26: Call 56 printLongInt 0
 27: PostCall 56
 28: PushFloat longDoubleValue
-29: IntegralToFloating £temporary1914 longValue
-30: Subtract £temporary1915 longDoubleValue £temporary1914
+29: IntegralToFloating £temporary1946 longValue
+30: Subtract £temporary1947 longDoubleValue £temporary1946
 31: PopFloat longDoubleValue
 32: PreCall 56
 33: PushFloat longDoubleValue

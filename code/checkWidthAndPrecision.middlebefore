@@ -1,36 +1,35 @@
-0: NotEqual < Dereference £temporary1949 widthPtr 0> widthPtr integral8$0#
+0: NotEqual < Dereference £temporary1981 widthPtr 0> widthPtr integral8$0#
 1: Jump < Empty>
-2: Dereference £temporary1949 widthPtr 0
-3: Equal < Empty> £temporary1949 integral4$minus1#
+2: Dereference £temporary1981 widthPtr 0
+3: Equal < Empty> £temporary1981 integral4$minus1#
 4: Jump < Empty>
 5: Empty
-6: Dereference £temporary1952 widthPtr 0
-7: Add £temporary1953 arg_list integral8$4#
-8: Assign arg_list £temporary1953
-9: Subtract £temporary1954 arg_list integral8$4#
-10: IntegralToIntegral £temporary1955 £temporary1954
-11: Dereference £temporary1956 £temporary1955 0
-12: Assign £temporary1952 £temporary1956
+6: Dereference £temporary1984 widthPtr 0
+7: Add £temporary1985 arg_list integral8$4#
+8: Assign arg_list £temporary1985
+9: Subtract £temporary1986 arg_list integral8$4#
+10: IntegralToIntegral £temporary1987 £temporary1986
+11: Dereference £temporary1988 £temporary1987 0
+12: Assign £temporary1984 £temporary1988
 13: Jump < Empty>
 14: Empty
 15: Empty
-16: NotEqual < Dereference £temporary1960 precisionPtr 0> precisionPtr integral8$0#
+16: NotEqual < Dereference £temporary1992 precisionPtr 0> precisionPtr integral8$0#
 17: Jump < Empty>
-18: Dereference £temporary1960 precisionPtr 0
-19: Equal < Empty> £temporary1960 integral4$minus1#
+18: Dereference £temporary1992 precisionPtr 0
+19: Equal < Empty> £temporary1992 integral4$minus1#
 20: Jump < Empty>
 21: Empty
-22: Dereference £temporary1963 precisionPtr 0
-23: Add £temporary1964 arg_list integral8$4#
-24: Assign arg_list £temporary1964
-25: Subtract £temporary1965 arg_list integral8$4#
-26: IntegralToIntegral £temporary1966 £temporary1965
-27: Dereference £temporary1967 £temporary1966 0
-28: Assign £temporary1963 £temporary1967
+22: Dereference £temporary1995 precisionPtr 0
+23: Add £temporary1996 arg_list integral8$4#
+24: Assign arg_list £temporary1996
+25: Subtract £temporary1997 arg_list integral8$4#
+26: IntegralToIntegral £temporary1998 £temporary1997
+27: Dereference £temporary1999 £temporary1998 0
+28: Assign £temporary1995 £temporary1999
 29: Jump < Empty>
 30: Empty
 31: Empty
-32: SetReturnValue
-33: Return arg_list
-34: Empty
-35: FunctionEnd checkWidthAndPrecision
+32: Return arg_list
+33: Empty
+34: FunctionEnd checkWidthAndPrecision

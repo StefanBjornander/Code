@@ -1,250 +1,288 @@
-0: PreCall 8
-1: Parameter 14 pointer "atof("123.456") = %f\n"
-2: PreCall 8
-3: Parameter 22 pointer "123.456"
-4: Call 16 atof 0
-5: PostCall 16
-6: GetReturnValue £temporary4289
-7: Parameter 16 double £temporary4289
-8: Call 8 printf 8
-9: PostCall 8
-10: PreCall 8
-11: Parameter 14 pointer "strtod("123.456789abc", &p) = (%f, %s)\n"
-12: PreCall 8
-13: Parameter 22 pointer "123.456789abc"
-14: Address £temporary4291 p
-15: Parameter 24 pointer £temporary4291
-16: Call 16 strtod 0
-17: PostCall 16
-18: GetReturnValue £temporary4292
-19: Parameter 16 double £temporary4292
-20: Parameter 24 pointer p
-21: Call 8 printf 10
-22: PostCall 8
-23: PreCall 6
-24: Parameter 12 pointer "\ngetenv("path") = %s\n"
-25: PreCall 6
-26: Parameter 20 pointer "path"
-27: Call 14 getenv 0
-28: PostCall 14
-29: GetReturnValue £temporary4294
-30: Parameter 14 pointer £temporary4294
-31: Call 6 printf 2
-32: PostCall 6
-33: PreCall 6
-34: Parameter 12 pointer "system("dir")\n"
-35: Call 6 printf 0
-36: PostCall 6
-37: PreCall 6
-38: Parameter 12 pointer "dir"
-39: Call 6 system 0
-40: PostCall 6
-41: PreCall 6
-42: Parameter 12 pointer "\nabs(-3) = %i, abs(3) = %i\n"
-43: PreCall 6
-44: Parameter 20 signedint -3
-45: Call 14 abs 0
-46: PostCall 14
-47: GetReturnValue £temporary4298
-48: Parameter 14 signedint £temporary4298
-49: PreCall 6
-50: Parameter 22 signedint 3
-51: Call 16 abs 0
-52: PostCall 16
-53: GetReturnValue £temporary4299
-54: Parameter 16 signedint £temporary4299
-55: Call 6 printf 4
-56: PostCall 6
-57: PreCall 6
-58: Parameter 12 pointer "labs(-3l) = %li, labs(3l) = %li\n\n"
-59: PreCall 6
-60: Parameter 20 signed long int -3
-61: Call 14 labs 0
-62: PostCall 14
-63: GetReturnValue £temporary4301
-64: Parameter 14 signed long int £temporary4301
-65: PreCall 6
-66: Parameter 24 signed long int 3
-67: Call 18 labs 0
-68: PostCall 18
-69: GetReturnValue £temporary4302
-70: Parameter 18 signed long int £temporary4302
-71: Call 6 printf 8
-72: PostCall 6
-73: PreCall 6
-74: Parameter 12 signedint 10
-75: Parameter 14 signedint 3
-76: Call 6 div 0
-77: PostCall 6
-78: GetReturnValue £temporary4304 -> £temporary4305
-79: AssignInitSize i £temporary4304 -> £temporary4305
-80: Assign i £temporary4304 -> £temporary4305
-81: PreCall 10
-82: Parameter 16 pointer "div_t(10, 3) = (%i, %i)\n"
-83: Parameter 18 signedint i.quot
-84: Parameter 20 signedint i.rem
-85: Call 10 printf 4
-86: PostCall 10
-87: PreCall 10
-88: ParameterInitSize 16 struct i
-89: Parameter 16 struct i
-90: Call 10 print_div 0
-91: PostCall 10
-92: GetReturnValue £temporary4309 -> £temporary4310
-93: AssignInitSize j £temporary4309 -> £temporary4310
-94: Assign j £temporary4309 -> £temporary4310
-95: PreCall 14
-96: Parameter 20 pointer "div_t(10, 3) = (%i, %i)\n\n"
-97: Parameter 22 signedint j.quot
-98: Parameter 24 signedint j.rem
-99: Call 14 printf 4
-100: PostCall 14
-101: PreCall 6
-102: Parameter 12 signed long int 10
-103: Parameter 16 signed long int 3
-104: Call 6 ldiv 0
-105: PostCall 6
-106: GetReturnValue £temporary4314 -> £temporary4315
-107: AssignInitSize li £temporary4314 -> £temporary4315
-108: Assign li £temporary4314 -> £temporary4315
-109: PreCall 14
-110: Parameter 20 pointer "ldiv_t(10, 3) = (%li, %li)\n"
-111: Parameter 22 signed long int li.quot
-112: Parameter 26 signed long int li.rem
-113: Call 14 printf 8
-114: PostCall 14
-115: PreCall 14
-116: ParameterInitSize 20 struct li
-117: Parameter 20 struct li
-118: Call 14 print_ldiv 0
-119: PostCall 14
-120: GetReturnValue £temporary4319 -> £temporary4320
-121: AssignInitSize lj £temporary4319 -> £temporary4320
-122: Assign lj £temporary4319 -> £temporary4320
-123: PreCall 22
-124: Parameter 28 pointer "ldiv_t(10, 3) = (%li, %li)\n\n"
-125: Parameter 30 signed long int lj.quot
-126: Parameter 34 signed long int lj.rem
-127: Call 22 printf 8
-128: PostCall 22
-129: Assign list[0] 3
-130: Assign list[1] 4
-131: Assign list[2] 2
-132: Assign list[3] 1
-133: Assign size 4
-134: PreCall 18
-135: Parameter 24 pointer "\nA List 1: "
-136: Call 18 printf 0
-137: PostCall 18
-138: Assign index 0
+0: PreCall 32
+1: Parameter 56 string string_atof28221232E4562229203D2025f0A#
+2: PreCall 32
+3: Parameter 88 string string_1232E456#
+4: Call 64 atof 0
+5: PostCall 64
+6: GetReturnValue £temporary5044
+7: Parameter 64 double £temporary5044
+8: Call 32 printf 8
+9: PostCall 32
+10: PreCall 32
+11: Parameter 56 string string_strtod28221232E456789abc222C2026p29203D202825f2C2025s290A#
+12: PreCall 32
+13: Parameter 88 string string_1232E456789abc#
+14: Address £temporary5046 p
+15: Parameter 96 pointer £temporary5046
+16: Call 64 strtod 0
+17: PostCall 64
+18: GetReturnValue £temporary5047
+19: Parameter 64 double £temporary5047
+20: Parameter 72 pointer p
+21: Call 32 printf 16
+22: PostCall 32
+23: PreCall 24
+24: Parameter 48 string string_0Agetenv2822path2229203D2025s0A#
+25: PreCall 24
+26: Parameter 80 string string_path#
+27: Call 56 getenv 0
+28: PostCall 56
+29: GetReturnValue £temporary5049
+30: Parameter 56 pointer £temporary5049
+31: Call 24 printf 8
+32: PostCall 24
+33: PreCall 24
+34: Parameter 48 string string_system2822dir22290A#
+35: Call 24 printf 0
+36: PostCall 24
+37: PreCall 24
+38: Parameter 48 string string_dir#
+39: Call 24 system 0
+40: PostCall 24
+41: PreCall 24
+42: Parameter 48 string string_0Aabs282D329203D2025i2C20abs28329203D2025i0A#
+43: PreCall 24
+44: Parameter 80 signed int integral4$minus3#
+45: Call 56 @abs 0
+46: PostCall 56
+47: GetReturnValue £temporary5053
+48: Parameter 56 signed int £temporary5053
+49: PreCall 24
+50: Parameter 84 signed int integral4$3#
+51: Call 60 @abs 0
+52: PostCall 60
+53: GetReturnValue £temporary5054
+54: Parameter 60 signed int £temporary5054
+55: Call 24 printf 8
+56: PostCall 24
+57: PreCall 24
+58: Parameter 48 string string_labs282D3l29203D2025li2C20labs283l29203D2025li0A0A#
+59: PreCall 24
+60: Parameter 80 signed long int integral8$minus3#
+61: Call 56 labs 0
+62: PostCall 56
+63: GetReturnValue £temporary5056
+64: Parameter 56 signed long int £temporary5056
+65: PreCall 24
+66: Parameter 88 signed long int integral8$3#
+67: Call 64 labs 0
+68: PostCall 64
+69: GetReturnValue £temporary5057
+70: Parameter 64 signed long int £temporary5057
+71: Call 24 printf 16
+72: PostCall 24
+73: PreCall 24
+74: Parameter 48 signed int integral4$10#
+75: Parameter 52 signed int integral4$3#
+76: Call 24 div 0
+77: PostCall 24
+78: GetReturnValue £temporary5059
+79: AssignInitSize i £temporary5059
+80: Assign i £temporary5059
+81: PreCall 32
+82: Parameter 56 string string_div_t28102C20329203D202825i2C2025i290A#
+83: Parameter 64 signed int i.quot
+84: Parameter 68 signed int i.rem
+85: Call 32 printf 8
+86: PostCall 32
+87: PreCall 32
+88: ParameterInitSize 56 struct i
+89: Parameter 56 struct i
+90: Call 32 print_div 0
+91: PostCall 32
+92: GetReturnValue £temporary5062
+93: AssignInitSize j £temporary5062
+94: Assign j £temporary5062
+95: PreCall 40
+96: Parameter 64 string string_div_t28102C20329203D202825i2C2025i290A0A#
+97: Parameter 72 signed int j.quot
+98: Parameter 76 signed int j.rem
+99: Call 40 printf 8
+100: PostCall 40
+101: PreCall 24
+102: Parameter 48 signed long int integral8$10#
+103: Parameter 56 signed long int integral8$3#
+104: Call 24 ldiv 0
+105: PostCall 24
+106: GetReturnValue £temporary5065
+107: AssignInitSize li £temporary5065
+108: Assign li £temporary5065
+109: PreCall 40
+110: Parameter 64 string string_ldiv_t28102C20329203D202825li2C2025li290A#
+111: Parameter 72 signed long int li.quot
+112: Parameter 80 signed long int li.rem
+113: Call 40 printf 16
+114: PostCall 40
+115: PreCall 40
+116: ParameterInitSize 64 struct li
+117: Parameter 64 struct li
+118: Call 40 print_ldiv 0
+119: PostCall 40
+120: GetReturnValue £temporary5068
+121: AssignInitSize lj £temporary5068
+122: Assign lj £temporary5068
+123: PreCall 56
+124: Parameter 80 string string_ldiv_t28102C20329203D202825li2C2025li290A0A#
+125: Parameter 88 signed long int lj.quot
+126: Parameter 96 signed long int lj.rem
+127: Call 56 printf 16
+128: PostCall 56
+129: Assign list[0] integral4$3#
+130: Assign list[1] integral4$4#
+131: Assign list[2] integral4$2#
+132: Assign list[3] integral4$1#
+133: Assign size integral4$4#
+134: PreCall 48
+135: Parameter 72 string string_0AA20List2013A20#
+136: Call 48 printf 0
+137: PostCall 48
+138: Assign index integral4$0#
 139: Empty
-140: SignedLessThan PreCall 18 index size
-141: Goto PreCall 18
-142: PreCall 18
-143: Parameter 24 pointer "%i "
-144: UnsignedMultiply £temporary4333 index 2
-145: BinaryAdd £temporary4332 list £temporary4333
-146: Dereference £temporary4334 -> £temporary4332 £temporary4332 0
-147: Parameter 26 signedint £temporary4334 -> £temporary4332
-148: Call 18 printf 2
-149: PostCall 18
-150: Empty
-151: BinaryAdd index index 1
-152: Goto Empty
-153: PreCall 18
-154: Parameter 24 pointer "\nB List 2: "
-155: Call 18 printf 0
-156: PostCall 18
-157: PreCall 18
-158: Parameter 24 pointer list
-159: Parameter 26 signedint size
-160: Parameter 28 signedint 2
-161: Parameter 30 pointer compare
-162: Call 18 qsort 0
-163: PostCall 18
-164: Assign index 0
-165: Empty
-166: SignedLessThan PreCall 18 index size
-167: Goto PreCall 18
-168: PreCall 18
-169: Parameter 24 pointer "%i "
-170: UnsignedMultiply £temporary4342 index 2
-171: BinaryAdd £temporary4341 list £temporary4342
-172: Dereference £temporary4343 -> £temporary4341 £temporary4341 0
-173: Parameter 26 signedint £temporary4343 -> £temporary4341
-174: Call 18 printf 2
-175: PostCall 18
-176: Empty
-177: BinaryAdd index index 1
-178: Goto Empty
-179: PreCall 18
-180: Parameter 24 pointer "\nC List 3: "
-181: Call 18 printf 0
-182: PostCall 18
-183: PreCall 18
-184: Parameter 24 pointer list
-185: Parameter 26 signedint size
-186: Parameter 28 signedint 2
-187: Parameter 30 pointer reverse_compare
-188: Call 18 qsort 0
-189: PostCall 18
-190: Assign index 0
-191: Empty
-192: SignedLessThan PreCall 18 index size
-193: Goto PreCall 18
-194: PreCall 18
-195: Parameter 24 pointer "%i "
-196: UnsignedMultiply £temporary4351 index 2
-197: BinaryAdd £temporary4350 list £temporary4351
-198: Dereference £temporary4352 -> £temporary4350 £temporary4350 0
-199: Parameter 26 signedint £temporary4352 -> £temporary4350
-200: Call 18 printf 2
-201: PostCall 18
-202: Empty
-203: BinaryAdd index index 1
-204: Goto Empty
-205: PreCall 18
-206: Parameter 24 pointer "\n\nSearch:\n"
-207: Call 18 printf 0
-208: PostCall 18
-209: Assign key 0
-210: Empty
-211: SignedLessThan PreCall 18 key 6
-212: Goto PreCall 16
-213: PreCall 18
-214: Address £temporary4357 key
-215: Parameter 24 pointer £temporary4357
-216: Parameter 26 pointer list
-217: Parameter 28 signedint size
-218: Parameter 30 signedint 2
-219: Parameter 32 pointer compare
-220: Call 18 bsearch 0
-221: PostCall 18
-222: GetReturnValue £temporary4359
-223: IntegralToIntegral £temporary4360 £temporary4359
-224: Assign p £temporary4360
-225: NotEqual BinarySubtract £temporary4363 p list p 0
-226: Goto Empty
-227: BinarySubtract £temporary4363 p list
-228: UnsignedDivide £temporary4364 £temporary4363 2
-229: Goto Empty
-230: Empty
-231: Assign £temporary4364 -1
-232: Empty
-233: Assign index £temporary4364
-234: PreCall 22
-235: Parameter 28 pointer "  (%i, %i)\n"
-236: Parameter 30 signedint key
-237: Parameter 32 signedint index
-238: Call 22 printf 4
-239: PostCall 22
-240: Empty
-241: BinaryAdd key key 1
-242: Goto Empty
-243: PreCall 16
-244: Parameter 22 pointer "\n"
-245: Call 16 printf 0
-246: PostCall 16
-247: Empty
-248: Return
-249: FunctionEnd stdlib_test
+140: LessThan < PreCall 48> index size
+141: Jump < PreCall 48>
+142: PreCall 48
+143: Parameter 72 string string_25i20#
+144: Multiply £temporary5080 index integral4$4#
+145: IntegralToIntegral £temporary5081 £temporary5080
+146: Add £temporary5082 list £temporary5081
+147: Dereference £temporary5083 £temporary5082 0
+148: Parameter 80 signed int £temporary5083
+149: Call 48 printf 4
+150: PostCall 48
+151: Empty
+152: Add £temporary5079 index integral4$1#
+153: Assign index £temporary5079
+154: Jump < Empty>
+155: PreCall 48
+156: Parameter 72 string string_0AB20List2023A20#
+157: Call 48 printf 0
+158: PostCall 48
+159: PreCall 48
+160: Parameter 72 array list
+161: Parameter 80 signed int size
+162: Parameter 84 signed int integral4$4#
+163: Parameter 88 function compare
+164: Call 48 qsort 0
+165: PostCall 48
+166: Assign index integral4$0#
+167: Empty
+168: LessThan < PreCall 48> index size
+169: Jump < PreCall 48>
+170: PreCall 48
+171: Parameter 72 string string_25i20#
+172: Multiply £temporary5091 index integral4$4#
+173: IntegralToIntegral £temporary5092 £temporary5091
+174: Add £temporary5093 list £temporary5092
+175: Dereference £temporary5094 £temporary5093 0
+176: Parameter 80 signed int £temporary5094
+177: Call 48 printf 4
+178: PostCall 48
+179: Empty
+180: Add £temporary5090 index integral4$1#
+181: Assign index £temporary5090
+182: Jump < Empty>
+183: PreCall 48
+184: Parameter 72 string string_0AC20List2033A20#
+185: Call 48 printf 0
+186: PostCall 48
+187: PreCall 48
+188: Parameter 72 array list
+189: Parameter 80 signed int size
+190: Parameter 84 signed int integral4$4#
+191: Parameter 88 function reverse_compare
+192: Call 48 qsort 0
+193: PostCall 48
+194: Assign index integral4$0#
+195: Empty
+196: LessThan < PreCall 48> index size
+197: Jump < PreCall 48>
+198: PreCall 48
+199: Parameter 72 string string_25i20#
+200: Multiply £temporary5102 index integral4$4#
+201: IntegralToIntegral £temporary5103 £temporary5102
+202: Add £temporary5104 list £temporary5103
+203: Dereference £temporary5105 £temporary5104 0
+204: Parameter 80 signed int £temporary5105
+205: Call 48 printf 4
+206: PostCall 48
+207: Empty
+208: Add £temporary5101 index integral4$1#
+209: Assign index £temporary5101
+210: Jump < Empty>
+211: PreCall 48
+212: Parameter 72 string string_0AB20List2043A20#
+213: Call 48 printf 0
+214: PostCall 48
+215: PreCall 48
+216: Parameter 72 array list
+217: Parameter 80 signed int size
+218: Parameter 84 signed int integral4$4#
+219: Parameter 88 function compare
+220: Call 48 qsort 0
+221: PostCall 48
+222: Assign index integral4$0#
+223: Empty
+224: LessThan < PreCall 48> index size
+225: Jump < PreCall 48>
+226: PreCall 48
+227: Parameter 72 string string_25i20#
+228: Multiply £temporary5113 index integral4$4#
+229: IntegralToIntegral £temporary5114 £temporary5113
+230: Add £temporary5115 list £temporary5114
+231: Dereference £temporary5116 £temporary5115 0
+232: Parameter 80 signed int £temporary5116
+233: Call 48 printf 4
+234: PostCall 48
+235: Empty
+236: Add £temporary5112 index integral4$1#
+237: Assign index £temporary5112
+238: Jump < Empty>
+239: PreCall 48
+240: Parameter 72 string string_0A0ASearch3A0A#
+241: Call 48 printf 0
+242: PostCall 48
+243: Assign key integral4$0#
+244: Empty
+245: LessThan < PreCall 48> key integral4$6#
+246: Jump < PreCall 44>
+247: PreCall 48
+248: Address £temporary5121 key
+249: Parameter 72 pointer £temporary5121
+250: Parameter 80 array list
+251: Parameter 88 signed int size
+252: Parameter 92 signed int integral4$4#
+253: Parameter 96 function compare
+254: Call 48 bsearch 0
+255: PostCall 48
+256: GetReturnValue £temporary5124
+257: IntegralToIntegral £temporary5125 £temporary5124
+258: Assign p £temporary5125
+259: NotEqual < Empty> p integral8$0#
+260: Jump < Empty>
+261: Empty
+262: Subtract £temporary5127 p list
+263: IntegralToIntegral £temporary5128 £temporary5127
+264: Divide £temporary5129 £temporary5128 integral4$4#
+265: Assign £temporary5130 £temporary5129
+266: Jump < Empty>
+267: Empty
+268: Assign £temporary5130 integral4$minus1#
+269: Empty
+270: Assign index £temporary5130
+271: PreCall 60
+272: Parameter 84 string string_20202825i2C2025i290A#
+273: Parameter 92 signed int key
+274: Parameter 96 signed int index
+275: Call 60 printf 8
+276: PostCall 60
+277: Empty
+278: Add £temporary5120 key integral4$1#
+279: Assign key £temporary5120
+280: Jump < Empty>
+281: PreCall 44
+282: Parameter 68 string string_0A#
+283: Call 44 printf 0
+284: PostCall 44
+285: Empty
+286: Return
+287: FunctionEnd stdlib_test

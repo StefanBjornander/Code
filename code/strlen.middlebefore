@@ -1,16 +1,16 @@
 0: Assign index integral4$0#
 1: Empty
-2: IntegralToIntegral £temporary3597 index
-3: Add £temporary3598 string £temporary3597
-4: Dereference £temporary3599 £temporary3598 0
-5: NotEqual < Empty> £temporary3599 integral1$0#
-6: Jump < SetReturnValue>
-7: Empty
+2: Multiply £temporary3698 index integral4$1#
+3: IntegralToIntegral £temporary3699 £temporary3698
+4: Add £temporary3700 string £temporary3699
+5: Dereference £temporary3701 £temporary3700 0
+6: NotEqual < Empty> £temporary3701 integral1$0#
+7: Jump < Return index>
 8: Empty
-9: Add £temporary3601 index integral4$1#
-10: Assign index £temporary3601
-11: Jump < Empty>
-12: SetReturnValue
+9: Empty
+10: Add £temporary3703 index integral4$1#
+11: Assign index £temporary3703
+12: Jump < Empty>
 13: Return index
 14: Empty
 15: FunctionEnd strlen

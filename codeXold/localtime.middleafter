@@ -1,0 +1,34 @@
+0: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 56 pointer timePtr
+2: Call 32 gmtime 0
+3: PostCall 32
+4: GetReturnValue £temporary3117
+5: Assign tmPtr £temporary3117
+6: Dereference £temporary3118 timePtr 0
+7: Assign t £temporary3118
+8: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: Call 48 localeconv 0
+10: PostCall 48
+11: GetReturnValue £temporary3119
+12: Assign localeConvPtr £temporary3119
+13: Equal 25 localeConvPtr integral8$0#
+14: Dereference £temporary3121 tmPtr 0
+15: NotEqual 19 £temporary3121.tm_isdst integral4$1#
+16: Dereference £temporary3123 localeConvPtr 0
+17: Assign £temporary3125 £temporary3123.summerTimeZone
+18: Jump 21
+19: Dereference £temporary3124 localeConvPtr 0
+20: Assign £temporary3125 £temporary3124.winterTimeZone
+21: Assign timeZone £temporary3125
+22: IntegralToIntegral £temporary3127 timeZone
+23: Multiply £temporary3126 £temporary3127 integral8$3600#
+24: Add t t £temporary3126
+25: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+26: Address £temporary3131 t
+27: Parameter 80 pointer £temporary3131
+28: Call 56 gmtime 0
+29: PostCall 56
+30: GetReturnValue £temporary3132
+31: SetReturnValue
+32: Return £temporary3132
+33: FunctionEnd localtime

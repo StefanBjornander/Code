@@ -1,17 +1,17 @@
-0: LessThanEqual < Empty> count integral4$10#
+0: LessThanEqual < Empty> count integral2$10#
 1: Jump < Empty>
 2: Empty
-3: PreCall 24
-4: Parameter 48 string string_25d20#
+3: PreCall 6
+4: Parameter 12 string string_25d20#
 5: Assign £temporary1 count
-6: Add £temporary2 count integral4$1#
+6: Add £temporary2 count integral2$1#
 7: Assign count £temporary2
-8: Parameter 56 signed int £temporary1
-9: Call 24 printf 4
-10: PostCall 24
-11: PreCall 24
-12: Call 24 mainX 0
-13: PostCall 24
+8: Parameter 14 signed int £temporary1
+9: Call 6 printf 2
+10: PostCall 6
+11: PreCall 6
+12: Call 6 mainX 0
+13: PostCall 6
 14: Jump < Empty>
 15: Empty
 16: Empty

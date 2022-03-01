@@ -1,31 +1,31 @@
 0: Assign index integral4$255#
 1: Empty
-2: GreaterThanEqual < Multiply £temporary2925 index integral4$8#> index integral4$0#
+2: GreaterThanEqual < Multiply £temporary2972 index integral4$8#> index integral4$0#
 3: Jump < AssignRegister rax integral8$60#>
-4: Multiply £temporary2925 index integral4$8#
-5: IntegralToIntegral £temporary2926 £temporary2925
-6: Add £temporary2927 g_funcArray £temporary2926
-7: Dereference £temporary2928 £temporary2927 0
-8: NotEqual < Empty> £temporary2928 integral8$0#
+4: Multiply £temporary2972 index integral4$8#
+5: IntegralToIntegral £temporary2973 £temporary2972
+6: Add £temporary2974 g_funcArray £temporary2973
+7: Dereference £temporary2975 £temporary2974 0
+8: NotEqual < Empty> £temporary2975 integral8$0#
 9: Jump < Empty>
 10: Empty
-11: Multiply £temporary2930 index integral4$8#
-12: IntegralToIntegral £temporary2931 £temporary2930
-13: Add £temporary2932 g_funcArray £temporary2931
-14: Dereference £temporary2933 £temporary2932 0
+11: Multiply £temporary2977 index integral4$8#
+12: IntegralToIntegral £temporary2978 £temporary2977
+13: Add £temporary2979 g_funcArray £temporary2978
+14: Dereference £temporary2980 £temporary2979 0
 15: PreCall 32
-16: Call 32 £temporary2933 0
+16: Call 32 £temporary2980 0
 17: PostCall 32
 18: Jump < Empty>
 19: Empty
 20: Empty
 21: Empty
-22: Subtract £temporary2924 index integral4$1#
-23: Assign index £temporary2924
+22: Subtract £temporary2971 index integral4$1#
+23: Assign index £temporary2971
 24: Jump < Empty>
 25: AssignRegister rax integral8$60#
-26: IntegralToIntegral £temporary2939 status
-27: AssignRegister rdi £temporary2939
+26: IntegralToIntegral £temporary2986 status
+27: AssignRegister rdi £temporary2986
 28: SysCall
 29: Empty
 30: Return

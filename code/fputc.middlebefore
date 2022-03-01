@@ -1,12 +1,11 @@
 0: Assign g_outStatus integral4$0#
-1: IntegralToIntegral £temporary1748 stream
-2: Assign g_outDevice £temporary1748
+1: IntegralToIntegral £temporary1775 stream
+2: Assign g_outDevice £temporary1775
 3: PreCall 36
-4: IntegralToIntegral £temporary1749 i
-5: Parameter 60 signed char £temporary1749
+4: IntegralToIntegral £temporary1776 i
+5: Parameter 60 signed char £temporary1776
 6: Call 36 printChar 0
 7: PostCall 36
-8: SetReturnValue
-9: Return integral4$1#
-10: Empty
-11: FunctionEnd fputc
+8: Return integral4$1#
+9: Empty
+10: FunctionEnd fputc

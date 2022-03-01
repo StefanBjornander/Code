@@ -1,32 +1,38 @@
-0: Assign index 0
+0: Assign index integral4$0#
 1: Empty
-2: SignedLessThan UnsignedMultiply £temporary2996 index 1 index size
-3: Goto Empty
-4: UnsignedMultiply £temporary2996 index 1
-5: BinaryAdd £temporary2997 source £temporary2996
-6: Dereference £temporary2995 -> £temporary2997 £temporary2997 0
-7: NotEqual UnsignedMultiply £temporary3002 index 1 £temporary2995 -> £temporary2997 0
-8: Goto Empty
-9: UnsignedMultiply £temporary3002 index 1
-10: BinaryAdd £temporary3003 target £temporary3002
-11: Dereference £temporary3001 -> £temporary3003 £temporary3003 0
-12: UnsignedMultiply £temporary3005 index 1
-13: BinaryAdd £temporary3006 source £temporary3005
-14: Dereference £temporary3004 -> £temporary3006 £temporary3006 0
-15: Assign £temporary3001 -> £temporary3003 £temporary3004 -> £temporary3006
-16: Empty
-17: BinaryAdd index index 1
-18: Goto Empty
+2: LessThan < Multiply £temporary3450 index integral4$1#> index size
+3: Jump < Empty>
+4: Multiply £temporary3450 index integral4$1#
+5: IntegralToIntegral £temporary3451 £temporary3450
+6: Add £temporary3452 source £temporary3451
+7: Dereference £temporary3453 £temporary3452 0
+8: NotEqual < Multiply £temporary3457 index integral4$1#> £temporary3453 integral1$0#
+9: Jump < Empty>
+10: Multiply £temporary3457 index integral4$1#
+11: IntegralToIntegral £temporary3458 £temporary3457
+12: Add £temporary3459 target £temporary3458
+13: Dereference £temporary3460 £temporary3459 0
+14: Multiply £temporary3461 index integral4$1#
+15: IntegralToIntegral £temporary3462 £temporary3461
+16: Add £temporary3463 source £temporary3462
+17: Dereference £temporary3464 £temporary3463 0
+18: Assign £temporary3460 £temporary3464
 19: Empty
-20: SignedLessThan UnsignedMultiply £temporary3010 index 1 index size
-21: Goto Return target
-22: UnsignedMultiply £temporary3010 index 1
-23: BinaryAdd £temporary3011 target £temporary3010
-24: Dereference £temporary3009 -> £temporary3011 £temporary3011 0
-25: Assign £temporary3009 -> £temporary3011 0
-26: Empty
-27: BinaryAdd index index 1
-28: Goto Empty
-29: Return target
-30: Empty
-31: FunctionEnd strncpy
+20: Add £temporary3456 index integral4$1#
+21: Assign index £temporary3456
+22: Jump < Empty>
+23: Empty
+24: LessThan < Multiply £temporary3467 index integral4$1#> index size
+25: Jump < Return target>
+26: Multiply £temporary3467 index integral4$1#
+27: IntegralToIntegral £temporary3468 £temporary3467
+28: Add £temporary3469 target £temporary3468
+29: Dereference £temporary3470 £temporary3469 0
+30: Assign £temporary3470 integral1$0#
+31: Empty
+32: Add £temporary3466 index integral4$1#
+33: Assign index £temporary3466
+34: Jump < Empty>
+35: Return target
+36: Empty
+37: FunctionEnd strncpy

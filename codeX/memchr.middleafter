@@ -1,22 +1,20 @@
-0: IntegralToIntegral £temporary3736 block
-1: Assign charBlock £temporary3736
-2: IntegralToIntegral £temporary3737 i
-3: Assign c £temporary3737
+0: IntegralToIntegral £temporary3858 block
+1: Assign charBlock £temporary3858
+2: IntegralToIntegral £temporary3859 i
+3: Assign c £temporary3859
 4: Assign index integral4$0#
-5: GreaterThanEqual 19 index size
-6: IntegralToIntegral £temporary3740 index
-7: Add £temporary3741 charBlock £temporary3740
-8: Dereference £temporary3742 £temporary3741 0
-9: NotEqual 17 £temporary3742 c
-10: IntegralToIntegral £temporary3744 index
-11: Add £temporary3745 charBlock £temporary3744
-12: Dereference £temporary3746 £temporary3745 0
-13: Address £temporary3747 £temporary3746
-14: IntegralToIntegral £temporary3748 £temporary3747
-15: SetReturnValue
-16: Return £temporary3748
-17: Add index index integral4$1#
-18: Jump 5
-19: SetReturnValue
-20: Return integral8$0#
-21: FunctionEnd memchr
+5: GreaterThanEqual 18 index size
+6: IntegralToIntegral £temporary3863 index
+7: Add £temporary3864 charBlock £temporary3863
+8: Dereference £temporary3865 £temporary3864 0
+9: NotEqual 16 £temporary3865 c
+10: IntegralToIntegral £temporary3868 index
+11: Add £temporary3869 charBlock £temporary3868
+12: Dereference £temporary3870 £temporary3869 0
+13: Address £temporary3871 £temporary3870
+14: IntegralToIntegral £temporary3872 £temporary3871
+15: Return £temporary3872
+16: Add index index integral4$1#
+17: Jump 5
+18: Return integral8$0#
+19: FunctionEnd memchr

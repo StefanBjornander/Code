@@ -1,6 +1,6 @@
 0: PushFloat x
 1: PushFloat floating8$0#
-2: LessThan 28 x floating8$0#
+2: LessThan 27 x floating8$0#
 3: PushFloat floating8$1#
 4: PopFloat root_i_plus_1
 5: PushFloat root_i_plus_1
@@ -8,26 +8,24 @@
 7: PushFloat root_i
 8: PushFloat x
 9: PushFloat root_i
-10: Divide £temporary521 x root_i
-11: Add £temporary522 root_i £temporary521
+10: Divide £temporary514 x root_i
+11: Add £temporary515 root_i £temporary514
 12: PushFloat floating8$2#
-13: Divide £temporary523 £temporary522 floating8$2#
+13: Divide £temporary516 £temporary515 floating8$2#
 14: PopFloat root_i_plus_1
-15: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+15: PreCall 30 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 16: PushFloat root_i_plus_1
 17: PushFloat root_i
-18: Subtract £temporary524 root_i_plus_1 root_i
-19: Parameter 72 double £temporary524
-20: Call 48 fabs 0
-21: PostCall 48
-22: GetReturnValue £temporary525
+18: Subtract £temporary517 root_i_plus_1 root_i
+19: Parameter 36 double £temporary517
+20: Call 30 fabs 0
+21: PostCall 30
+22: GetReturnValue £temporary518
 23: PushFloat floating8$0.000000001#
-24: GreaterThanEqual 5 £temporary525 floating8$0.000000001#
+24: GreaterThanEqual 5 £temporary518 floating8$0.000000001#
 25: PushFloat root_i_plus_1
-26: SetReturnValue
-27: Return root_i_plus_1
-28: Assign errno EDOM
-29: PushFloat floating8$0#
-30: SetReturnValue
-31: Return floating8$0#
-32: FunctionEnd sqrt
+26: Return root_i_plus_1
+27: Assign errno EDOM
+28: PushFloat floating8$0#
+29: Return floating8$0#
+30: FunctionEnd sqrt

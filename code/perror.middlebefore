@@ -1,14 +1,14 @@
-0: PreCall 32
-1: Parameter 56 string string_25s3A2025s2E0A#
-2: Parameter 64 pointer s
-3: PreCall 32
-4: Parameter 96 signed int errno
-5: Call 72 strerror 0
-6: PostCall 72
-7: GetReturnValue £temporary1086
-8: Parameter 72 pointer £temporary1086
-9: Call 32 printf 16
-10: PostCall 32
+0: PreCall 8
+1: Parameter 14 string string_25s3A2025s2E0A#
+2: Parameter 16 pointer s
+3: PreCall 8
+4: Parameter 24 signed int errno
+5: Call 18 strerror 0
+6: PostCall 18
+7: GetReturnValue £temporary1104
+8: Parameter 18 pointer £temporary1104
+9: Call 8 printf 4
+10: PostCall 8
 11: Empty
 12: Return
 13: FunctionEnd perror

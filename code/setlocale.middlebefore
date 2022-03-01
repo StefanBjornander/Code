@@ -1,52 +1,49 @@
-0: NotEqual < Empty> g_currStructPtr integral8$0#
+0: NotEqual < Empty> g_currStructPtr integral2$0#
 1: Jump < Empty>
 2: Empty
-3: Dereference £temporary374 g_currStructPtr 0
-4: Assign £temporary375 £temporary374.name
+3: Dereference £temporary369 g_currStructPtr 0
+4: Assign £temporary370 £temporary369.name
 5: Jump < Empty>
 6: Empty
-7: Assign £temporary375 integral8$0#
+7: Assign £temporary370 integral2$0#
 8: Empty
-9: Assign oldName £temporary375
-10: Assign g_currStructPtr integral8$0#
-11: NotEqual < Empty> newName integral8$0#
+9: Assign oldName £temporary370
+10: Assign g_currStructPtr integral2$0#
+11: NotEqual < Empty> newName integral2$0#
 12: Jump < Empty>
 13: Empty
-14: Assign index integral4$0#
+14: Assign index integral2$0#
 15: Empty
-16: LessThan < PreCall 48> index g_sSize
-17: Jump < SetReturnValue>
-18: PreCall 48
-19: Parameter 72 pointer newName
-20: Multiply £temporary379 index integral4$16#
-21: IntegralToIntegral £temporary380 £temporary379
-22: Add £temporary381 g_sArray £temporary380
-23: Dereference £temporary382 £temporary381 0
-24: Parameter 80 pointer £temporary382.name
-25: Call 48 strcmp 0
-26: PostCall 48
-27: GetReturnValue £temporary383
-28: Equal < Empty> £temporary383 integral4$0#
-29: Jump < Empty>
-30: Empty
-31: Multiply £temporary385 index integral4$16#
-32: IntegralToIntegral £temporary386 £temporary385
-33: Add £temporary387 g_sArray £temporary386
-34: Dereference £temporary388 £temporary387 0
-35: Address £temporary389 £temporary388
-36: Assign g_currStructPtr £temporary389
-37: Jump < SetReturnValue>
-38: Jump < Empty>
+16: LessThan < PreCall 14> index g_sSize
+17: Jump < Return oldName>
+18: PreCall 14
+19: Parameter 20 pointer newName
+20: Multiply £temporary374 index integral2$4#
+21: Add £temporary375 g_sArray £temporary374
+22: Dereference £temporary376 £temporary375 0
+23: Parameter 22 pointer £temporary376.name
+24: Call 14 strcmp 0
+25: PostCall 14
+26: GetReturnValue £temporary377
+27: Equal < Empty> £temporary377 integral2$0#
+28: Jump < Empty>
+29: Empty
+30: Multiply £temporary379 index integral2$4#
+31: Add £temporary380 g_sArray £temporary379
+32: Dereference £temporary381 £temporary380 0
+33: Address £temporary382 £temporary381
+34: Assign g_currStructPtr £temporary382
+35: Jump < Return oldName>
+36: Jump < Empty>
+37: Empty
+38: Empty
 39: Empty
-40: Empty
-41: Empty
-42: Add £temporary378 index integral4$1#
-43: Assign index £temporary378
-44: Jump < Empty>
-45: Jump < Empty>
-46: Empty
+40: Add £temporary373 index integral2$1#
+41: Assign index £temporary373
+42: Jump < Empty>
+43: Jump < Empty>
+44: Empty
+45: Empty
+46: Return oldName
 47: Empty
-48: SetReturnValue
-49: Return oldName
-50: Empty
-51: FunctionEnd setlocale
+48: FunctionEnd setlocale

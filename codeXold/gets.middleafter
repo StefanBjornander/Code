@@ -1,0 +1,25 @@
+0: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 56 pointer s
+2: Parameter 64 signed int integral4$minus1#
+3: Parameter 68 pointer stdin
+4: Call 32 fgets 0
+5: PostCall 32
+6: GetReturnValue £temporary1014
+7: Equal 22 £temporary1014 integral8$0#
+8: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: Parameter 56 pointer s
+10: Call 32 strlen 0
+11: PostCall 32
+12: GetReturnValue £temporary1016
+13: Assign size £temporary1016
+14: LessThanEqual 20 size integral4$0#
+15: Subtract £temporary1018 size integral4$1#
+16: IntegralToIntegral £temporary1019 £temporary1018
+17: Add £temporary1020 s £temporary1019
+18: Dereference £temporary1021 £temporary1020 0
+19: Assign £temporary1021 integral1$0#
+20: SetReturnValue
+21: Return s
+22: SetReturnValue
+23: Return integral8$0#
+24: FunctionEnd gets

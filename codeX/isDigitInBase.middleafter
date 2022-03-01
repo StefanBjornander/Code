@@ -1,54 +1,50 @@
-0: PreCall 29 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-1: IntegralToIntegral £temporary1301 c
-2: Parameter 53 signed int £temporary1301
-3: Call 29 isdigit 0
-4: PostCall 29
-5: GetReturnValue £temporary1302
-6: Equal 17 £temporary1302 integral4$0#
-7: Subtract £temporary1303 c integral1$48#
-8: IntegralToIntegral £temporary1304 £temporary1303
-9: Assign value £temporary1304
-10: LessThan 14 value integral4$0#
+0: PreCall 9 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: IntegralToIntegral £temporary1316 c
+2: Parameter 15 signed int £temporary1316
+3: Call 9 isdigit 0
+4: PostCall 9
+5: GetReturnValue £temporary1317
+6: Equal 16 £temporary1317 integral2$0#
+7: Subtract £temporary1318 c integral1$48#
+8: IntegralToIntegral £temporary1319 £temporary1318
+9: Assign value £temporary1319
+10: LessThan 14 value integral2$0#
 11: GreaterThanEqual 14 value base
-12: Assign £temporary1308 integral4$1#
+12: Assign £temporary1323 integral2$1#
 13: Jump 15
-14: Assign £temporary1308 integral4$0#
-15: SetReturnValue
-16: Return £temporary1308
-17: PreCall 29 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-18: IntegralToIntegral £temporary1309 c
-19: Parameter 53 signed int £temporary1309
-20: Call 29 islower 0
-21: PostCall 29
-22: GetReturnValue £temporary1310
-23: Equal 34 £temporary1310 integral4$0#
-24: Subtract £temporary1311 c integral1$97#
-25: IntegralToIntegral £temporary1313 £temporary1311
-26: Add value £temporary1313 integral4$10#
-27: LessThan 31 value integral4$0#
-28: GreaterThanEqual 31 value base
-29: Assign £temporary1317 integral4$1#
-30: Jump 32
-31: Assign £temporary1317 integral4$0#
-32: SetReturnValue
-33: Return £temporary1317
-34: PreCall 29 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-35: IntegralToIntegral £temporary1318 c
-36: Parameter 53 signed int £temporary1318
-37: Call 29 isupper 0
-38: PostCall 29
-39: GetReturnValue £temporary1319
-40: Equal 51 £temporary1319 integral4$0#
-41: Subtract £temporary1320 c integral1$65#
-42: IntegralToIntegral £temporary1322 £temporary1320
-43: Add value £temporary1322 integral4$10#
-44: LessThan 48 value integral4$0#
-45: GreaterThanEqual 48 value base
-46: Assign £temporary1326 integral4$1#
-47: Jump 49
-48: Assign £temporary1326 integral4$0#
-49: SetReturnValue
-50: Return £temporary1326
-51: SetReturnValue
-52: Return integral4$0#
-53: FunctionEnd isDigitInBase
+14: Assign £temporary1323 integral2$0#
+15: Return £temporary1323
+16: PreCall 9 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+17: IntegralToIntegral £temporary1324 c
+18: Parameter 15 signed int £temporary1324
+19: Call 9 islower 0
+20: PostCall 9
+21: GetReturnValue £temporary1325
+22: Equal 32 £temporary1325 integral2$0#
+23: Subtract £temporary1326 c integral1$97#
+24: IntegralToIntegral £temporary1328 £temporary1326
+25: Add value £temporary1328 integral2$10#
+26: LessThan 30 value integral2$0#
+27: GreaterThanEqual 30 value base
+28: Assign £temporary1332 integral2$1#
+29: Jump 31
+30: Assign £temporary1332 integral2$0#
+31: Return £temporary1332
+32: PreCall 9 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+33: IntegralToIntegral £temporary1333 c
+34: Parameter 15 signed int £temporary1333
+35: Call 9 isupper 0
+36: PostCall 9
+37: GetReturnValue £temporary1334
+38: Equal 48 £temporary1334 integral2$0#
+39: Subtract £temporary1335 c integral1$65#
+40: IntegralToIntegral £temporary1337 £temporary1335
+41: Add value £temporary1337 integral2$10#
+42: LessThan 46 value integral2$0#
+43: GreaterThanEqual 46 value base
+44: Assign £temporary1341 integral2$1#
+45: Jump 47
+46: Assign £temporary1341 integral2$0#
+47: Return £temporary1341
+48: Return integral2$0#
+49: FunctionEnd isDigitInBase

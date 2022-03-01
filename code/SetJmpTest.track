@@ -35,12 +35,12 @@
 29:	
 
 @10044$main$6:	; address £temporary4488 x
-30:		mov t2576, bp
-31:		add t2576, 8
+30:		mov t2575, bp
+31:		add t2575, 8
 33:	
 
 @10044$main$7:	; Parameter 16 £temporary4488 8
-34:		mov [bp + 24], t2576
+34:		mov [bp + 24], t2575
 36:	
 
 @10044$main$8:	; Call 16 scanf 0
@@ -76,7 +76,7 @@
 61:	
 
 @10044$main$15:	; Assign message £temporary4490
-62:		mov [bp + 6], type2578
+62:		mov [bp + 6], type2577
 64:	
 
 @10044$main$16:	; NotEqual 31 message 0
@@ -151,8 +151,8 @@
 118:	
 
 @10044$main$33:	; Parameter 16 message 8
-119:		mov a2580, [bp + 6]
-120:		mov [bp + 24], a2580
+119:		mov a2579, [bp + 6]
+120:		mov [bp + 24], a2579
 122:	
 
 @10044$main$34:	; Call 16 printf 0
@@ -168,10 +168,10 @@
 132:	
 
 @10044$main$36:	; Return 0
-133:		mov t2582, [bp]
+133:		mov t2581, [bp]
 134:		mov di, [bp + 4]
 135:		mov bp, [bp + 2]
-136:		jmp t2582
+136:		jmp t2581
 138:	
 
 @10044$main$37:	; FunctionEnd main
@@ -213,10 +213,10 @@ inverse$8:	; SetReturnValue £temporary4506
 27:	
 
 inverse$9:	; Return £temporary4506
-28:		mov t2583, [bp]
+28:		mov t2582, [bp]
 29:		mov di, [bp + 4]
 30:		mov bp, [bp + 2]
-31:		jmp t2583
+31:		jmp t2582
 33:	
 
 inverse$10:	; FunctionEnd inverse
@@ -253,10 +253,10 @@ divide$6:	; SetReturnValue £temporary4510
 24:	
 
 divide$7:	; Return £temporary4510
-25:		mov t2584, [bp]
+25:		mov t2583, [bp]
 26:		mov di, [bp + 4]
 27:		mov bp, [bp + 2]
-28:		jmp t2584
+28:		jmp t2583
 30:	
 
 divide$8:	; CallHeader 22 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -288,10 +288,10 @@ divide$14:	; SetReturnValue 0
 51:	
 
 divide$15:	; Return 0
-52:		mov t2585, [bp]
+52:		mov t2584, [bp]
 53:		mov di, [bp + 4]
 54:		mov bp, [bp + 2]
-55:		jmp t2585
+55:		jmp t2584
 57:	
 
 divide$16:	; FunctionEnd divide
@@ -318,7 +318,7 @@ test$4:	; GetReturnValue £temporary4514
 16:	
 
 test$5:	; Assign message £temporary4514
-17:		mov [bp + 14], type2586
+17:		mov [bp + 14], type2585
 19:	
 
 test$6:	; NotEqual 21 message 0
@@ -393,8 +393,8 @@ test$22:	; Parameter 16 string_25s0A# 6
 73:	
 
 test$23:	; Parameter 16 message 8
-74:		mov a2588, [bp + 14]
-75:		mov [bp + 24], a2588
+74:		mov a2587, [bp + 14]
+75:		mov [bp + 24], a2587
 77:	
 
 test$24:	; Call 16 printf 0
@@ -410,10 +410,10 @@ test$25:	; PostCall 16
 87:	
 
 test$26:	; Return 0
-88:		mov t2590, [bp]
+88:		mov t2589, [bp]
 89:		mov di, [bp + 4]
 90:		mov bp, [bp + 2]
-91:		jmp t2590
+91:		jmp t2589
 93:	
 
 test$27:	; FunctionEnd test
@@ -483,10 +483,10 @@ setjmp_test$14:	; PostCall 6
 49:	
 
 setjmp_test$15:	; Return 0
-50:		mov t2591, [bp]
+50:		mov t2590, [bp]
 51:		mov di, [bp + 4]
 52:		mov bp, [bp + 2]
-53:		jmp t2591
+53:		jmp t2590
 55:	
 
 setjmp_test$16:	; FunctionEnd setjmp_test

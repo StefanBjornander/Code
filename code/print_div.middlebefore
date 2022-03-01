@@ -4,12 +4,11 @@
 3: Parameter 68 signed int d.rem
 4: Call 32 printf 8
 5: PostCall 32
-6: Add £temporary4898 d.quot integral4$1#
-7: Assign d.quot £temporary4898
-8: Assign £temporary4899 d.rem
-9: Add £temporary4900 d.rem integral4$1#
-10: Assign d.rem £temporary4900
-11: SetReturnValue
-12: Return d
-13: Empty
-14: FunctionEnd print_div
+6: Add £temporary5024 d.quot integral4$1#
+7: Assign d.quot £temporary5024
+8: Assign £temporary5025 d.rem
+9: Add £temporary5026 d.rem integral4$1#
+10: Assign d.rem £temporary5026
+11: Return d
+12: Empty
+13: FunctionEnd print_div

@@ -1,22 +1,22 @@
 0: Assign lowHeapPtr integral8$65534#
-1: InspectRegister £temporary4874 bp
-2: IntegralToIntegral £temporary4875 £temporary4874
-3: Assign stackTop £temporary4875
+1: InspectRegister £temporary5000 bp
+2: IntegralToIntegral £temporary5001 £temporary5000
+3: Assign stackTop £temporary5001
 4: Assign i integral4$0#
 5: GreaterThanEqual 23 i integral4$1000#
 6: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 7: Parameter 64 signed int integral4$96#
 8: Call 40 malloc 0
 9: PostCall 40
-10: GetReturnValue £temporary4878
-11: Assign p £temporary4878
+10: GetReturnValue £temporary5004
+11: Assign p £temporary5004
 12: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 13: Parameter 72 string string_Index3A2025i2C20Pointer3A2025u2C20Stack20top3A2025u2C20Low20Heap3A2025u0A#
 14: Parameter 80 signed int i
 15: Parameter 84 pointer p
 16: Parameter 92 unsigned int stackTop
-17: Dereference £temporary4879 lowHeapPtr 0
-18: Parameter 96 unsigned int £temporary4879
+17: Dereference £temporary5005 lowHeapPtr 0
+18: Parameter 96 unsigned int £temporary5005
 19: Call 48 printf 20
 20: PostCall 48
 21: Add i i integral4$1#

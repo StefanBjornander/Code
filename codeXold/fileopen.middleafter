@@ -1,0 +1,10 @@
+0: AssignRegister rax integral8$2#
+1: IntegralToIntegral £temporary831 name
+2: AssignRegister rdi £temporary831
+3: IntegralToIntegral £temporary833 mode
+4: AssignRegister rsi £temporary833
+5: SysCall
+6: InspectRegister £temporary834 eax
+7: SetReturnValue
+8: Return £temporary834
+9: FunctionEnd fileopen

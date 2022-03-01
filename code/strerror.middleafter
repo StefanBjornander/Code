@@ -1,18 +1,16 @@
 0: PreCall 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 1: Call 28 localeconv 0
 2: PostCall 28
-3: GetReturnValue £temporary3602
-4: Assign localeConvPtr £temporary3602
-5: Equal 15 localeConvPtr integral8$0#
-6: Dereference £temporary3604 localeConvPtr 0
-7: Assign messageList £temporary3604.messageList
-8: Equal 15 messageList integral8$0#
-9: Multiply £temporary3606 errno integral4$8#
-10: IntegralToIntegral £temporary3607 £temporary3606
-11: Add £temporary3608 messageList £temporary3607
-12: Dereference £temporary3609 £temporary3608 0
-13: SetReturnValue
-14: Return £temporary3609
-15: SetReturnValue
-16: Return integral8$0#
-17: FunctionEnd strerror
+3: GetReturnValue £temporary3704
+4: Assign localeConvPtr £temporary3704
+5: Equal 14 localeConvPtr integral8$0#
+6: Dereference £temporary3706 localeConvPtr 0
+7: Assign messageList £temporary3706.messageList
+8: Equal 14 messageList integral8$0#
+9: Multiply £temporary3708 errno integral4$8#
+10: IntegralToIntegral £temporary3709 £temporary3708
+11: Add £temporary3710 messageList £temporary3709
+12: Dereference £temporary3711 £temporary3710 0
+13: Return £temporary3711
+14: Return integral8$0#
+15: FunctionEnd strerror

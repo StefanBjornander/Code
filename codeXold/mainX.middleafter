@@ -1,0 +1,13 @@
+0: GreaterThan 11 count integral4$10#
+1: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+2: Parameter 48 string string_25d20#
+3: Assign £temporary1 count
+4: Add count count integral4$1#
+5: Parameter 56 signed int £temporary1
+6: Call 24 printf 4
+7: PostCall 24
+8: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: Call 24 mainX 0
+10: PostCall 24
+11: Return
+12: FunctionEnd mainX

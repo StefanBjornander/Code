@@ -11,8 +11,8 @@
 10: Parameter 120 double y
 11: Call 88 fmod 0
 12: PostCall 88
-13: GetReturnValue £temporary4233
-14: Parameter 88 double £temporary4233
+13: GetReturnValue £temporary4359
+14: Parameter 88 double £temporary4359
 15: Parameter 96 signed int errno
 16: Call 40 printf 28
 17: PostCall 40
@@ -31,8 +31,8 @@
 30: Parameter 120 double y
 31: Call 88 atan2 0
 32: PostCall 88
-33: GetReturnValue £temporary4235
-34: Parameter 88 double £temporary4235
+33: GetReturnValue £temporary4361
+34: Parameter 88 double £temporary4361
 35: Parameter 96 signed int errno
 36: Call 40 printf 28
 37: PostCall 40
@@ -51,8 +51,8 @@
 50: Parameter 120 double y
 51: Call 88 pow 0
 52: PostCall 88
-53: GetReturnValue £temporary4237
-54: Parameter 88 double £temporary4237
+53: GetReturnValue £temporary4363
+54: Parameter 88 double £temporary4363
 55: Parameter 96 signed int errno
 56: Call 40 printf 28
 57: PostCall 40
@@ -67,18 +67,18 @@
 66: PushFloat x
 67: Parameter 72 double x
 68: PushFloat y
-69: FloatingToIntegral £temporary4240 y
-70: Parameter 80 signed int £temporary4240
+69: FloatingToIntegral £temporary4366 y
+70: Parameter 80 signed int £temporary4366
 71: PreCall 40
 72: PushFloat x
 73: Parameter 108 double x
 74: PushFloat y
-75: FloatingToIntegral £temporary4241 y
-76: Parameter 116 signed int £temporary4241
+75: FloatingToIntegral £temporary4367 y
+76: Parameter 116 signed int £temporary4367
 77: Call 84 ldexp 0
 78: PostCall 84
-79: GetReturnValue £temporary4242
-80: Parameter 84 double £temporary4242
+79: GetReturnValue £temporary4368
+80: Parameter 84 double £temporary4368
 81: Call 40 printf 20
 82: PostCall 40
 83: Empty

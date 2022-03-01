@@ -1,17 +1,14 @@
-0: GreaterThanEqual 5 digit integral4$10#
-1: Add £temporary1836 digit integral4$48#
-2: IntegralToIntegral £temporary1837 £temporary1836
-3: SetReturnValue
-4: Return £temporary1837
-5: Equal 11 capital integral4$0#
-6: Subtract £temporary1838 digit integral4$10#
-7: Add £temporary1839 £temporary1838 integral4$65#
-8: IntegralToIntegral £temporary1840 £temporary1839
-9: SetReturnValue
-10: Return £temporary1840
-11: Subtract £temporary1841 digit integral4$10#
-12: Add £temporary1842 £temporary1841 integral4$97#
-13: IntegralToIntegral £temporary1843 £temporary1842
-14: SetReturnValue
-15: Return £temporary1843
-16: FunctionEnd digitToChar
+0: GreaterThanEqual 4 digit integral4$10#
+1: Add £temporary1868 digit integral4$48#
+2: IntegralToIntegral £temporary1869 £temporary1868
+3: Return £temporary1869
+4: Equal 9 capital integral4$0#
+5: Subtract £temporary1870 digit integral4$10#
+6: Add £temporary1871 £temporary1870 integral4$65#
+7: IntegralToIntegral £temporary1872 £temporary1871
+8: Return £temporary1872
+9: Subtract £temporary1873 digit integral4$10#
+10: Add £temporary1874 £temporary1873 integral4$97#
+11: IntegralToIntegral £temporary1875 £temporary1874
+12: Return £temporary1875
+13: FunctionEnd digitToChar

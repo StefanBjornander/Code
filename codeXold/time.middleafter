@@ -1,0 +1,11 @@
+0: AssignRegister rax integral8$201#
+1: Address £temporary3011 time
+2: IntegralToIntegral £temporary3012 £temporary3011
+3: AssignRegister rdi £temporary3012
+4: SysCall
+5: Equal 8 timePtr integral8$0#
+6: Dereference £temporary3014 timePtr 0
+7: Assign £temporary3014 time
+8: SetReturnValue
+9: Return time
+10: FunctionEnd time

@@ -1,0 +1,9 @@
+0: Case 4 g_inStatus integral4$0#
+1: Case 6 g_inStatus integral4$1#
+2: CaseEnd g_inStatus
+3: Jump 7
+4: Subtract g_inChars g_inChars integral4$1#
+5: Jump 7
+6: Subtract g_inChars g_inChars integral4$1#
+7: Return
+8: FunctionEnd unscanChar

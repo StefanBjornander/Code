@@ -1,14 +1,13 @@
-0: Address £temporary2253 format
-1: IntegralToIntegral £temporary2254 £temporary2253
-2: Add £temporary2255 £temporary2254 integral8$8#
-3: Assign arg_list £temporary2255
+0: Address £temporary2294 format
+1: IntegralToIntegral £temporary2295 £temporary2294
+2: Add £temporary2296 £temporary2295 integral8$8#
+3: Assign arg_list £temporary2296
 4: PreCall 40
 5: Parameter 64 pointer format
 6: Parameter 72 pointer arg_list
 7: Call 40 vprintf 0
 8: PostCall 40
-9: GetReturnValue £temporary2256
-10: SetReturnValue
-11: Return £temporary2256
-12: Empty
-13: FunctionEnd printf
+9: GetReturnValue £temporary2297
+10: Return £temporary2297
+11: Empty
+12: FunctionEnd printf

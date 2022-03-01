@@ -5,8 +5,6 @@
 4: Call 32 printf 8
 5: PostCall 32
 6: Add d.quot d.quot integral4$1#
-7: Assign £temporary4899 d.rem
-8: Add d.rem d.rem integral4$1#
-9: SetReturnValue
-10: Return d
-11: FunctionEnd print_div
+7: Add d.rem d.rem integral4$1#
+8: Return d
+9: FunctionEnd print_div

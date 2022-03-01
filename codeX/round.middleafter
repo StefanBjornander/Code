@@ -3,14 +3,13 @@
 2: GreaterThanEqual 8 x floating8$0#
 3: PushFloat x
 4: PushFloat floating8$0.5#
-5: Subtract £temporary761 x floating8$0.5#
+5: Subtract £temporary754 x floating8$0.5#
 6: DecreaseStack
 7: Jump 11
 8: PushFloat x
 9: PushFloat floating8$0.5#
-10: Add £temporary762 x floating8$0.5#
-11: FloatingToIntegral £temporary764 £temporary763
-12: IntegralToFloating £temporary765 £temporary764
-13: SetReturnValue
-14: Return £temporary765
-15: FunctionEnd round
+10: Add £temporary755 x floating8$0.5#
+11: FloatingToIntegral £temporary757 £temporary756
+12: IntegralToFloating £temporary758 £temporary757
+13: Return £temporary758
+14: FunctionEnd round

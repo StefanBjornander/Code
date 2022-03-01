@@ -1,10 +1,10 @@
-0: Add £temporary1970 format integral8$0#
-1: Dereference £temporary1971 £temporary1970 0
-2: Assign c £temporary1971
+0: Add £temporary2002 format integral8$0#
+1: Dereference £temporary2003 £temporary2002 0
+2: Assign c £temporary2003
 3: Case < NotEqual < Empty> shortInt integral4$0#> c integral1$100#
 4: Case < NotEqual < Empty> shortInt integral4$0#> c integral1$105#
-5: Case < Add £temporary2007 arg_list integral8$4#> c integral1$99#
-6: Case < Add £temporary2015 arg_list integral8$8#> c integral1$115#
+5: Case < Add £temporary2039 arg_list integral8$4#> c integral1$99#
+6: Case < Add £temporary2047 arg_list integral8$8#> c integral1$115#
 7: Case < Equal < Empty> c integral1$117#> c integral1$88#
 8: Case < Equal < Empty> c integral1$117#> c integral1$120#
 9: Case < Equal < Empty> c integral1$117#> c integral1$98#
@@ -15,55 +15,55 @@
 14: Case < NotEqual < Empty> longDouble integral4$0#> c integral1$69#
 15: Case < NotEqual < Empty> longDouble integral4$0#> c integral1$101#
 16: Case < NotEqual < Empty> longDouble integral4$0#> c integral1$102#
-17: Case < Add £temporary2104 arg_list integral8$8#> c integral1$112#
-18: Case < Add £temporary2112 arg_list integral8$8#> c integral1$110#
+17: Case < Add £temporary2136 arg_list integral8$8#> c integral1$112#
+18: Case < Add £temporary2144 arg_list integral8$8#> c integral1$110#
 19: Case < PreCall 114> c integral1$37#
 20: CaseEnd c
-21: Jump < SetReturnValue>
+21: Jump < Return arg_list>
 22: NotEqual < Empty> shortInt integral4$0#
 23: Jump < Empty>
 24: Empty
-25: Add £temporary1972 arg_list integral8$4#
-26: Assign arg_list £temporary1972
-27: Subtract £temporary1973 arg_list integral8$4#
-28: IntegralToIntegral £temporary1974 £temporary1973
-29: Dereference £temporary1975 £temporary1974 0
-30: IntegralToIntegral £temporary1976 £temporary1975
-31: IntegralToIntegral £temporary1977 £temporary1976
-32: Assign longValue £temporary1977
+25: Add £temporary2004 arg_list integral8$4#
+26: Assign arg_list £temporary2004
+27: Subtract £temporary2005 arg_list integral8$4#
+28: IntegralToIntegral £temporary2006 £temporary2005
+29: Dereference £temporary2007 £temporary2006 0
+30: IntegralToIntegral £temporary2008 £temporary2007
+31: IntegralToIntegral £temporary2009 £temporary2008
+32: Assign longValue £temporary2009
 33: Jump < Empty>
 34: Empty
 35: NotEqual < Empty> longInt integral4$0#
 36: Jump < Empty>
 37: Empty
-38: Add £temporary1978 arg_list integral8$8#
-39: Assign arg_list £temporary1978
-40: Subtract £temporary1979 arg_list integral8$8#
-41: IntegralToIntegral £temporary1980 £temporary1979
-42: Dereference £temporary1981 £temporary1980 0
-43: Assign longValue £temporary1981
+38: Add £temporary2010 arg_list integral8$8#
+39: Assign arg_list £temporary2010
+40: Subtract £temporary2011 arg_list integral8$8#
+41: IntegralToIntegral £temporary2012 £temporary2011
+42: Dereference £temporary2013 £temporary2012 0
+43: Assign longValue £temporary2013
 44: Jump < Empty>
 45: Empty
-46: Add £temporary1982 arg_list integral8$4#
-47: Assign arg_list £temporary1982
-48: Subtract £temporary1983 arg_list integral8$4#
-49: IntegralToIntegral £temporary1984 £temporary1983
-50: Dereference £temporary1985 £temporary1984 0
-51: IntegralToIntegral £temporary1986 £temporary1985
-52: Assign longValue £temporary1986
+46: Add £temporary2014 arg_list integral8$4#
+47: Assign arg_list £temporary2014
+48: Subtract £temporary2015 arg_list integral8$4#
+49: IntegralToIntegral £temporary2016 £temporary2015
+50: Dereference £temporary2017 £temporary2016 0
+51: IntegralToIntegral £temporary2018 £temporary2017
+52: Assign longValue £temporary2018
 53: Empty
 54: Empty
 55: NotEqual < Empty> negativePtr integral8$0#
 56: Jump < Empty>
 57: Empty
-58: Dereference £temporary1994 negativePtr 0
-59: LessThan < Assign £temporary1996 integral4$1#> longValue integral8$0#
-60: Jump < Assign £temporary1996 integral4$0#>
-61: Assign £temporary1996 integral4$1#
+58: Dereference £temporary2026 negativePtr 0
+59: LessThan < Assign £temporary2028 integral4$1#> longValue integral8$0#
+60: Jump < Assign £temporary2028 integral4$0#>
+61: Assign £temporary2028 integral4$1#
 62: Jump < Empty>
-63: Assign £temporary1996 integral4$0#
+63: Assign £temporary2028 integral4$0#
 64: Empty
-65: Assign £temporary1994 £temporary1996
+65: Assign £temporary2026 £temporary2028
 66: Jump < Empty>
 67: Empty
 68: Empty
@@ -74,136 +74,136 @@
 73: Parameter 146 signed long int longValue
 74: Call 122 labs 0
 75: PostCall 122
-76: GetReturnValue £temporary2001
-77: Assign longValue £temporary2001
+76: GetReturnValue £temporary2033
+77: Assign longValue £temporary2033
 78: Jump < Empty>
 79: Empty
 80: Empty
 81: PreCall 122
 82: Parameter 146 pointer arg_list
 83: Parameter 154 pointer widthPtr
-84: Address £temporary2004 precision
-85: Parameter 162 pointer £temporary2004
+84: Address £temporary2036 precision
+85: Parameter 162 pointer £temporary2036
 86: Call 122 checkWidthAndPrecision 0
 87: PostCall 122
-88: GetReturnValue £temporary2005
-89: Assign arg_list £temporary2005
+88: GetReturnValue £temporary2037
+89: Assign arg_list £temporary2037
 90: PreCall 122
 91: Parameter 146 signed long int longValue
 92: Parameter 154 signed int plus
 93: Parameter 158 signed int space
 94: Call 122 printLongInt 0
 95: PostCall 122
-96: Jump < SetReturnValue>
-97: Add £temporary2007 arg_list integral8$4#
-98: Assign arg_list £temporary2007
-99: Subtract £temporary2008 arg_list integral8$4#
-100: IntegralToIntegral £temporary2009 £temporary2008
-101: Dereference £temporary2010 £temporary2009 0
-102: IntegralToIntegral £temporary2011 £temporary2010
-103: Assign charValue £temporary2011
+96: Jump < Return arg_list>
+97: Add £temporary2039 arg_list integral8$4#
+98: Assign arg_list £temporary2039
+99: Subtract £temporary2040 arg_list integral8$4#
+100: IntegralToIntegral £temporary2041 £temporary2040
+101: Dereference £temporary2042 £temporary2041 0
+102: IntegralToIntegral £temporary2043 £temporary2042
+103: Assign charValue £temporary2043
 104: PreCall 114
 105: Parameter 138 pointer arg_list
 106: Parameter 146 pointer widthPtr
-107: Address £temporary2012 precision
-108: Parameter 154 pointer £temporary2012
+107: Address £temporary2044 precision
+108: Parameter 154 pointer £temporary2044
 109: Call 114 checkWidthAndPrecision 0
 110: PostCall 114
-111: GetReturnValue £temporary2013
-112: Assign arg_list £temporary2013
+111: GetReturnValue £temporary2045
+112: Assign arg_list £temporary2045
 113: PreCall 114
 114: Parameter 138 signed char charValue
 115: Call 114 printChar 0
 116: PostCall 114
-117: Jump < SetReturnValue>
-118: Add £temporary2015 arg_list integral8$8#
-119: Assign arg_list £temporary2015
-120: Subtract £temporary2016 arg_list integral8$8#
-121: IntegralToIntegral £temporary2017 £temporary2016
-122: Dereference £temporary2018 £temporary2017 0
-123: Assign stringValue £temporary2018
+117: Jump < Return arg_list>
+118: Add £temporary2047 arg_list integral8$8#
+119: Assign arg_list £temporary2047
+120: Subtract £temporary2048 arg_list integral8$8#
+121: IntegralToIntegral £temporary2049 £temporary2048
+122: Dereference £temporary2050 £temporary2049 0
+123: Assign stringValue £temporary2050
 124: PreCall 122
 125: Parameter 146 pointer arg_list
 126: Parameter 154 pointer widthPtr
-127: Address £temporary2019 precision
-128: Parameter 162 pointer £temporary2019
+127: Address £temporary2051 precision
+128: Parameter 162 pointer £temporary2051
 129: Call 122 checkWidthAndPrecision 0
 130: PostCall 122
-131: GetReturnValue £temporary2020
-132: Assign arg_list £temporary2020
+131: GetReturnValue £temporary2052
+132: Assign arg_list £temporary2052
 133: PreCall 122
 134: Parameter 146 pointer stringValue
 135: Parameter 154 signed int precision
 136: Call 122 printString 0
 137: PostCall 122
-138: Jump < SetReturnValue>
+138: Jump < Return arg_list>
 139: Equal < Empty> c integral1$117#
 140: Jump < Empty>
 141: Empty
-142: Assign £temporary2027 integral8$10#
+142: Assign £temporary2059 integral8$10#
 143: Jump < Empty>
 144: Empty
 145: Equal < Empty> c integral1$111#
 146: Jump < Empty>
 147: Empty
-148: Assign £temporary2026 integral8$8#
+148: Assign £temporary2058 integral8$8#
 149: Jump < Empty>
 150: Empty
 151: Equal < Empty> c integral1$98#
 152: Jump < Empty>
 153: Empty
-154: Assign £temporary2025 integral8$2#
+154: Assign £temporary2057 integral8$2#
 155: Jump < Empty>
 156: Empty
-157: Assign £temporary2025 integral8$16#
+157: Assign £temporary2057 integral8$16#
 158: Empty
-159: Assign £temporary2026 £temporary2025
+159: Assign £temporary2058 £temporary2057
 160: Empty
-161: Assign £temporary2027 £temporary2026
+161: Assign £temporary2059 £temporary2058
 162: Empty
-163: Assign base £temporary2027
+163: Assign base £temporary2059
 164: NotEqual < Empty> shortInt integral4$0#
 165: Jump < Empty>
 166: Empty
-167: Add £temporary2028 arg_list integral8$4#
-168: Assign arg_list £temporary2028
-169: Subtract £temporary2029 arg_list integral8$4#
-170: IntegralToIntegral £temporary2030 £temporary2029
-171: Dereference £temporary2031 £temporary2030 0
-172: IntegralToIntegral £temporary2032 £temporary2031
-173: IntegralToIntegral £temporary2033 £temporary2032
-174: Assign value £temporary2033
+167: Add £temporary2060 arg_list integral8$4#
+168: Assign arg_list £temporary2060
+169: Subtract £temporary2061 arg_list integral8$4#
+170: IntegralToIntegral £temporary2062 £temporary2061
+171: Dereference £temporary2063 £temporary2062 0
+172: IntegralToIntegral £temporary2064 £temporary2063
+173: IntegralToIntegral £temporary2065 £temporary2064
+174: Assign value £temporary2065
 175: Jump < Empty>
 176: Empty
 177: NotEqual < Empty> longInt integral4$0#
 178: Jump < Empty>
 179: Empty
-180: Add £temporary2034 arg_list integral8$8#
-181: Assign arg_list £temporary2034
-182: Subtract £temporary2035 arg_list integral8$8#
-183: IntegralToIntegral £temporary2036 £temporary2035
-184: Dereference £temporary2037 £temporary2036 0
-185: Assign value £temporary2037
+180: Add £temporary2066 arg_list integral8$8#
+181: Assign arg_list £temporary2066
+182: Subtract £temporary2067 arg_list integral8$8#
+183: IntegralToIntegral £temporary2068 £temporary2067
+184: Dereference £temporary2069 £temporary2068 0
+185: Assign value £temporary2069
 186: Jump < Empty>
 187: Empty
-188: Add £temporary2038 arg_list integral8$4#
-189: Assign arg_list £temporary2038
-190: Subtract £temporary2039 arg_list integral8$4#
-191: IntegralToIntegral £temporary2040 £temporary2039
-192: Dereference £temporary2041 £temporary2040 0
-193: IntegralToIntegral £temporary2042 £temporary2041
-194: Assign value £temporary2042
+188: Add £temporary2070 arg_list integral8$4#
+189: Assign arg_list £temporary2070
+190: Subtract £temporary2071 arg_list integral8$4#
+191: IntegralToIntegral £temporary2072 £temporary2071
+192: Dereference £temporary2073 £temporary2072 0
+193: IntegralToIntegral £temporary2074 £temporary2073
+194: Assign value £temporary2074
 195: Empty
 196: Empty
 197: PreCall 130
 198: Parameter 154 pointer arg_list
 199: Parameter 162 pointer widthPtr
-200: Address £temporary2049 precision
-201: Parameter 170 pointer £temporary2049
+200: Address £temporary2081 precision
+201: Parameter 170 pointer £temporary2081
 202: Call 130 checkWidthAndPrecision 0
 203: PostCall 130
-204: GetReturnValue £temporary2050
-205: Assign arg_list £temporary2050
+204: GetReturnValue £temporary2082
+205: Assign arg_list £temporary2082
 206: PreCall 130
 207: Parameter 154 unsigned long int value
 208: Parameter 162 signed int plus
@@ -211,26 +211,26 @@
 210: Parameter 170 signed int grid
 211: Parameter 174 unsigned long int base
 212: PreCall 130
-213: IntegralToIntegral £temporary2051 c
-214: Parameter 206 signed int £temporary2051
+213: IntegralToIntegral £temporary2083 c
+214: Parameter 206 signed int £temporary2083
 215: Call 182 isupper 0
 216: PostCall 182
-217: GetReturnValue £temporary2052
-218: Parameter 182 signed int £temporary2052
+217: GetReturnValue £temporary2084
+218: Parameter 182 signed int £temporary2084
 219: Call 130 printUnsignedLong 0
 220: PostCall 130
-221: Jump < SetReturnValue>
+221: Jump < Return arg_list>
 222: NotEqual < Empty> longDouble integral4$0#
 223: Jump < Empty>
 224: Empty
 225: PushFloat longDoubleValue
 226: PopEmpty
-227: Add £temporary2054 arg_list integral8$8#
-228: Assign arg_list £temporary2054
-229: Subtract £temporary2055 arg_list integral8$8#
-230: IntegralToIntegral £temporary2056 £temporary2055
-231: Dereference £temporary2057 £temporary2056 0
-232: PushFloat £temporary2057
+227: Add £temporary2086 arg_list integral8$8#
+228: Assign arg_list £temporary2086
+229: Subtract £temporary2087 arg_list integral8$8#
+230: IntegralToIntegral £temporary2088 £temporary2087
+231: Dereference £temporary2089 £temporary2088 0
+232: PushFloat £temporary2089
 233: PopFloat longDoubleValue
 234: PreCall 114
 235: PushFloat longDoubleValue
@@ -245,27 +245,27 @@
 244: Empty
 245: PushFloat longDoubleValue
 246: PopEmpty
-247: Add £temporary2059 arg_list integral8$8#
-248: Assign arg_list £temporary2059
-249: Subtract £temporary2060 arg_list integral8$8#
-250: IntegralToIntegral £temporary2061 £temporary2060
-251: Dereference £temporary2062 £temporary2061 0
-252: PushFloat £temporary2062
+247: Add £temporary2091 arg_list integral8$8#
+248: Assign arg_list £temporary2091
+249: Subtract £temporary2092 arg_list integral8$8#
+250: IntegralToIntegral £temporary2093 £temporary2092
+251: Dereference £temporary2094 £temporary2093 0
+252: PushFloat £temporary2094
 253: PopFloat longDoubleValue
 254: Empty
 255: NotEqual < Empty> negativePtr integral8$0#
 256: Jump < Empty>
 257: Empty
-258: Dereference £temporary2068 negativePtr 0
+258: Dereference £temporary2100 negativePtr 0
 259: PushFloat longDoubleValue
 260: PushFloat floating8$0#
-261: LessThan < Assign £temporary2070 integral4$1#> longDoubleValue floating8$0#
-262: Jump < Assign £temporary2070 integral4$0#>
-263: Assign £temporary2070 integral4$1#
+261: LessThan < Assign £temporary2102 integral4$1#> longDoubleValue floating8$0#
+262: Jump < Assign £temporary2102 integral4$0#>
+263: Assign £temporary2102 integral4$1#
 264: Jump < Empty>
-265: Assign £temporary2070 integral4$0#
+265: Assign £temporary2102 integral4$0#
 266: Empty
-267: Assign £temporary2068 £temporary2070
+267: Assign £temporary2100 £temporary2102
 268: Jump < Empty>
 269: Empty
 270: Empty
@@ -279,7 +279,7 @@
 278: Parameter 138 long double longDoubleValue
 279: Call 114 fabs 0
 280: PostCall 114
-281: GetReturnValue £temporary2075
+281: GetReturnValue £temporary2107
 282: PopFloat longDoubleValue
 283: Jump < Empty>
 284: Empty
@@ -287,12 +287,12 @@
 286: PreCall 114
 287: Parameter 138 pointer arg_list
 288: Parameter 146 pointer widthPtr
-289: Address £temporary2078 precision
-290: Parameter 154 pointer £temporary2078
+289: Address £temporary2110 precision
+290: Parameter 154 pointer £temporary2110
 291: Call 114 checkWidthAndPrecision 0
 292: PostCall 114
-293: GetReturnValue £temporary2079
-294: Assign arg_list £temporary2079
+293: GetReturnValue £temporary2111
+294: Assign arg_list £temporary2111
 295: Equal < Empty> c integral1$102#
 296: Jump < Empty>
 297: Empty
@@ -308,12 +308,12 @@
 307: Jump < Empty>
 308: Empty
 309: PreCall 114
-310: IntegralToIntegral £temporary2082 c
-311: Parameter 138 signed int £temporary2082
+310: IntegralToIntegral £temporary2114 c
+311: Parameter 138 signed int £temporary2114
 312: Call 114 tolower 0
 313: PostCall 114
-314: GetReturnValue £temporary2083
-315: Equal < Empty> £temporary2083 integral4$101#
+314: GetReturnValue £temporary2115
+315: Equal < Empty> £temporary2115 integral4$101#
 316: Jump < Empty>
 317: Empty
 318: PreCall 114
@@ -324,12 +324,12 @@
 323: Parameter 154 signed int grid
 324: Parameter 158 signed int precision
 325: PreCall 114
-326: IntegralToIntegral £temporary2085 c
-327: Parameter 186 signed int £temporary2085
+326: IntegralToIntegral £temporary2117 c
+327: Parameter 186 signed int £temporary2117
 328: Call 162 isupper 0
 329: PostCall 162
-330: GetReturnValue £temporary2086
-331: Parameter 162 signed int £temporary2086
+330: GetReturnValue £temporary2118
+331: Parameter 162 signed int £temporary2118
 332: Call 114 printLongDoubleExpo 0
 333: PostCall 114
 334: Jump < Empty>
@@ -340,13 +340,13 @@
 339: Parameter 138 long double longDoubleValue
 340: Call 114 fabs 0
 341: PostCall 114
-342: GetReturnValue £temporary2088
-343: Parameter 138 double £temporary2088
+342: GetReturnValue £temporary2120
+343: Parameter 138 double £temporary2120
 344: Call 114 log10 0
 345: PostCall 114
-346: GetReturnValue £temporary2089
-347: FloatingToIntegral £temporary2090 £temporary2089
-348: Assign expo £temporary2090
+346: GetReturnValue £temporary2121
+347: FloatingToIntegral £temporary2122 £temporary2121
+348: Assign expo £temporary2122
 349: GreaterThanEqual < LessThanEqual < Empty> expo integral4$2#> expo integral4$minus3#
 350: Jump < Empty>
 351: LessThanEqual < Empty> expo integral4$2#
@@ -371,36 +371,36 @@
 370: Parameter 158 signed int grid
 371: Parameter 162 signed int precision
 372: PreCall 118
-373: IntegralToIntegral £temporary2095 c
-374: Parameter 190 signed int £temporary2095
+373: IntegralToIntegral £temporary2127 c
+374: Parameter 190 signed int £temporary2127
 375: Call 166 isupper 0
 376: PostCall 166
-377: GetReturnValue £temporary2096
-378: Parameter 166 signed int £temporary2096
+377: GetReturnValue £temporary2128
+378: Parameter 166 signed int £temporary2128
 379: Call 118 printLongDoubleExpo 0
 380: PostCall 118
 381: Empty
 382: Empty
 383: Empty
-384: Jump < SetReturnValue>
-385: Add £temporary2104 arg_list integral8$8#
-386: Assign arg_list £temporary2104
-387: Subtract £temporary2105 arg_list integral8$8#
-388: IntegralToIntegral £temporary2106 £temporary2105
-389: Dereference £temporary2107 £temporary2106 0
-390: Assign ptrValue £temporary2107
+384: Jump < Return arg_list>
+385: Add £temporary2136 arg_list integral8$8#
+386: Assign arg_list £temporary2136
+387: Subtract £temporary2137 arg_list integral8$8#
+388: IntegralToIntegral £temporary2138 £temporary2137
+389: Dereference £temporary2139 £temporary2138 0
+390: Assign ptrValue £temporary2139
 391: PreCall 114
 392: Parameter 138 pointer arg_list
 393: Parameter 146 pointer widthPtr
-394: Address £temporary2108 precision
-395: Parameter 154 pointer £temporary2108
+394: Address £temporary2140 precision
+395: Parameter 154 pointer £temporary2140
 396: Call 114 checkWidthAndPrecision 0
 397: PostCall 114
-398: GetReturnValue £temporary2109
-399: Assign arg_list £temporary2109
+398: GetReturnValue £temporary2141
+399: Assign arg_list £temporary2141
 400: PreCall 114
-401: IntegralToIntegral £temporary2110 ptrValue
-402: Parameter 138 pointer £temporary2110
+401: IntegralToIntegral £temporary2142 ptrValue
+402: Parameter 138 pointer £temporary2142
 403: Parameter 146 signed int integral4$0#
 404: Parameter 150 signed int integral4$0#
 405: Parameter 154 signed int integral4$0#
@@ -408,46 +408,45 @@
 407: Parameter 166 signed int integral4$0#
 408: Call 114 printUnsignedLong 0
 409: PostCall 114
-410: Jump < SetReturnValue>
-411: Add £temporary2112 arg_list integral8$8#
-412: Assign arg_list £temporary2112
-413: Subtract £temporary2113 arg_list integral8$8#
-414: IntegralToIntegral £temporary2114 £temporary2113
-415: Dereference £temporary2115 £temporary2114 0
-416: Assign ptrValue £temporary2115
-417: Add £temporary2116 arg_list integral8$8#
-418: Assign arg_list £temporary2116
-419: Subtract £temporary2117 arg_list integral8$8#
-420: IntegralToIntegral £temporary2118 £temporary2117
-421: Dereference £temporary2119 £temporary2118 0
-422: Assign intPtr £temporary2119
+410: Jump < Return arg_list>
+411: Add £temporary2144 arg_list integral8$8#
+412: Assign arg_list £temporary2144
+413: Subtract £temporary2145 arg_list integral8$8#
+414: IntegralToIntegral £temporary2146 £temporary2145
+415: Dereference £temporary2147 £temporary2146 0
+416: Assign ptrValue £temporary2147
+417: Add £temporary2148 arg_list integral8$8#
+418: Assign arg_list £temporary2148
+419: Subtract £temporary2149 arg_list integral8$8#
+420: IntegralToIntegral £temporary2150 £temporary2149
+421: Dereference £temporary2151 £temporary2150 0
+422: Assign intPtr £temporary2151
 423: PreCall 114
 424: Parameter 138 pointer arg_list
 425: Parameter 146 pointer widthPtr
-426: Address £temporary2120 precision
-427: Parameter 154 pointer £temporary2120
+426: Address £temporary2152 precision
+427: Parameter 154 pointer £temporary2152
 428: Call 114 checkWidthAndPrecision 0
 429: PostCall 114
-430: GetReturnValue £temporary2121
-431: Assign arg_list £temporary2121
-432: Dereference £temporary2122 intPtr 0
-433: Assign £temporary2122 g_outChars
-434: Jump < SetReturnValue>
+430: GetReturnValue £temporary2153
+431: Assign arg_list £temporary2153
+432: Dereference £temporary2154 intPtr 0
+433: Assign £temporary2154 g_outChars
+434: Jump < Return arg_list>
 435: PreCall 114
 436: Parameter 138 pointer arg_list
 437: Parameter 146 pointer widthPtr
-438: Address £temporary2123 precision
-439: Parameter 154 pointer £temporary2123
+438: Address £temporary2155 precision
+439: Parameter 154 pointer £temporary2155
 440: Call 114 checkWidthAndPrecision 0
 441: PostCall 114
-442: GetReturnValue £temporary2124
-443: Assign arg_list £temporary2124
+442: GetReturnValue £temporary2156
+443: Assign arg_list £temporary2156
 444: PreCall 114
 445: Parameter 138 signed char integral1$37#
 446: Call 114 printChar 0
 447: PostCall 114
-448: Jump < SetReturnValue>
-449: SetReturnValue
-450: Return arg_list
-451: Empty
-452: FunctionEnd printArgument
+448: Jump < Return arg_list>
+449: Return arg_list
+450: Empty
+451: FunctionEnd printArgument

@@ -1,18 +1,16 @@
 0: PushFloat y
 1: PushFloat floating8$0#
-2: Equal 8 y floating8$0#
+2: Equal 7 y floating8$0#
 3: PushFloat x
 4: PushFloat y
-5: Divide £temporary4010 x y
-6: SetReturnValue
-7: Return £temporary4010
-8: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-9: Parameter 64 array buffer
-10: IntegralToIntegral £temporary4011 string_Division20by20Zero2E#
-11: Parameter 72 signed int £temporary4011
-12: Call 40 longjmp 0
-13: PostCall 40
-14: PushFloat floating8$0#
-15: SetReturnValue
-16: Return floating8$0#
-17: FunctionEnd divide
+5: Divide £temporary4136 x y
+6: Return £temporary4136
+7: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+8: Parameter 64 array buffer
+9: IntegralToIntegral £temporary4137 string_Division20by20Zero2E#
+10: Parameter 72 signed int £temporary4137
+11: Call 40 longjmp 0
+12: PostCall 40
+13: PushFloat floating8$0#
+14: Return floating8$0#
+15: FunctionEnd divide

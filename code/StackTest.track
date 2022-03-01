@@ -8,7 +8,7 @@ stack_test$1:	; Parameter 6 string_25i20# 6
 6:	
 
 stack_test$2:	; Assign £temporary5869 i
-7:		mov t3069, [@12804$i]
+7:		mov t3068, [@12804$i]
 9:	
 
 stack_test$3:	; Increment i
@@ -16,7 +16,7 @@ stack_test$3:	; Increment i
 12:	
 
 stack_test$4:	; Parameter 6 £temporary5869 8
-13:		mov [bp + 14], t3069
+13:		mov [bp + 14], t3068
 15:	
 
 stack_test$5:	; Call 6 printf 0
@@ -45,10 +45,10 @@ stack_test$9:	; PostCall 6
 35:	
 
 stack_test$10:	; Return 0
-36:		mov t3071, [bp]
+36:		mov t3070, [bp]
 37:		mov di, [bp + 4]
 38:		mov bp, [bp + 2]
-39:		jmp t3071
+39:		jmp t3070
 41:	
 
 stack_test$11:	; FunctionEnd stack_test
@@ -79,7 +79,7 @@ heap_test$5:	; GetReturnValue £temporary5875
 19:	
 
 heap_test$6:	; Assign pointer £temporary5875
-20:		mov [bp + 8], type3072
+20:		mov [bp + 8], type3071
 22:	
 
 heap_test$7:	; Equal 17 pointer 0
@@ -95,7 +95,7 @@ heap_test$9:	; Parameter 10 string_102420bytes2Dblock20number3A2025i0A# 6
 31:	
 
 heap_test$10:	; Assign £temporary5877 count
-32:		mov t3073, [bp + 6]
+32:		mov t3072, [bp + 6]
 34:	
 
 heap_test$11:	; Increment count
@@ -103,12 +103,12 @@ heap_test$11:	; Increment count
 37:	
 
 heap_test$12:	; Parameter 10 £temporary5877 8
-38:		mov [bp + 18], t3073
+38:		mov [bp + 18], t3072
 40:	
 
 heap_test$13:	; Parameter 10 pointer 10
-41:		mov a3074, [bp + 8]
-42:		mov [bp + 20], a3074
+41:		mov a3073, [bp + 8]
+42:		mov [bp + 20], a3073
 44:	
 
 heap_test$14:	; Call 10 printf 0
@@ -128,10 +128,10 @@ heap_test$16:	; Goto 1
 57:	
 
 heap_test$17:	; Return 0
-58:		mov t3076, [bp]
+58:		mov t3075, [bp]
 59:		mov di, [bp + 4]
 60:		mov bp, [bp + 2]
-61:		jmp t3076
+61:		jmp t3075
 63:	
 
 heap_test$18:	; FunctionEnd heap_test

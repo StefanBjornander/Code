@@ -1,21 +1,27 @@
-0: Assign index 0
+0: Assign index integral4$0#
 1: Empty
-2: SignedLessThan UnsignedMultiply £temporary2558 index 2 index 256
-3: Goto Return -1
-4: UnsignedMultiply £temporary2558 index 2
-5: BinaryAdd £temporary2559 g_funcArray £temporary2558
-6: Dereference £temporary2557 -> £temporary2559 £temporary2559 0
-7: Equal UnsignedMultiply £temporary2562 index 2 £temporary2557 -> £temporary2559 0
-8: Goto Empty
-9: UnsignedMultiply £temporary2562 index 2
-10: BinaryAdd £temporary2563 g_funcArray £temporary2562
-11: Dereference £temporary2561 -> £temporary2563 £temporary2563 0
-12: Assign £temporary2561 -> £temporary2563 fcn
-13: Return 0
-14: Goto Empty
-15: Empty
-16: BinaryAdd index index 1
-17: Goto Empty
-18: Return -1
+2: LessThan < Multiply £temporary2959 index integral4$8#> index integral4$256#
+3: Jump < Return integral4$minus1#>
+4: Multiply £temporary2959 index integral4$8#
+5: IntegralToIntegral £temporary2960 £temporary2959
+6: Add £temporary2961 g_funcArray £temporary2960
+7: Dereference £temporary2962 £temporary2961 0
+8: Equal < Empty> £temporary2962 integral8$0#
+9: Jump < Empty>
+10: Empty
+11: Multiply £temporary2964 index integral4$8#
+12: IntegralToIntegral £temporary2965 £temporary2964
+13: Add £temporary2966 g_funcArray £temporary2965
+14: Dereference £temporary2967 £temporary2966 0
+15: Assign £temporary2967 fcn
+16: Return integral4$0#
+17: Jump < Empty>
+18: Empty
 19: Empty
-20: FunctionEnd atexit
+20: Empty
+21: Add £temporary2958 index integral4$1#
+22: Assign index £temporary2958
+23: Jump < Empty>
+24: Return integral4$minus1#
+25: Empty
+26: FunctionEnd atexit

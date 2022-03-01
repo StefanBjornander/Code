@@ -1,23 +1,23 @@
-0: PreCall 32
+0: PreCall 14
 1: PushFloat x
-2: Parameter 56 double x
-3: Call 32 fabs 0
-4: PostCall 32
-5: GetReturnValue £temporary581
+2: Parameter 20 double x
+3: Call 14 fabs 0
+4: PostCall 14
+5: GetReturnValue £temporary574
 6: PushFloat floating8$6.28#
-7: GreaterThan < Empty> £temporary581 floating8$6.28#
+7: GreaterThan < Empty> £temporary574 floating8$6.28#
 8: Jump < Empty>
 9: Empty
 10: PushFloat x
 11: PopEmpty
-12: PreCall 32
+12: PreCall 14
 13: PushFloat x
-14: Parameter 56 double x
+14: Parameter 20 double x
 15: PushFloat floating8$6.28#
-16: Parameter 64 double floating8$6.28#
-17: Call 32 fmod 0
-18: PostCall 32
-19: GetReturnValue £temporary583
+16: Parameter 28 double floating8$6.28#
+17: Call 14 fmod 0
+18: PostCall 14
+19: GetReturnValue £temporary576
 20: PopFloat x
 21: Jump < Empty>
 22: Empty
@@ -36,47 +36,46 @@
 35: PopEmpty
 36: PushFloat sign
 37: PushFloat power
-38: Multiply £temporary586 sign power
+38: Multiply £temporary579 sign power
 39: PushFloat faculty
-40: Divide £temporary587 £temporary586 faculty
+40: Divide £temporary580 £temporary579 faculty
 41: PopFloat term
 42: PushFloat sum
 43: PushFloat term
-44: Add £temporary588 sum term
+44: Add £temporary581 sum term
 45: PopFloat sum
 46: PushFloat sign
 47: PushFloat floating8$minus1#
-48: Multiply £temporary589 sign floating8$minus1#
+48: Multiply £temporary582 sign floating8$minus1#
 49: PopFloat sign
 50: PushFloat power
 51: PushFloat x
 52: PushFloat x
-53: Multiply £temporary590 x x
-54: Multiply £temporary591 power £temporary590
+53: Multiply £temporary583 x x
+54: Multiply £temporary584 power £temporary583
 55: PopFloat power
 56: PushFloat faculty
 57: PushFloat index
 58: PushOne
-59: Add £temporary593 index £temporary592
+59: Add £temporary586 index £temporary585
 60: TopFloat index
 61: PushFloat index
 62: PushOne
-63: Add £temporary595 index £temporary594
+63: Add £temporary588 index £temporary587
 64: TopFloat index
-65: Multiply £temporary596 index index
-66: Multiply £temporary597 faculty £temporary596
+65: Multiply £temporary589 index index
+66: Multiply £temporary590 faculty £temporary589
 67: PopFloat faculty
-68: PreCall 80
+68: PreCall 62
 69: PushFloat term
-70: Parameter 104 double term
-71: Call 80 fabs 0
-72: PostCall 80
-73: GetReturnValue £temporary598
+70: Parameter 68 double term
+71: Call 62 fabs 0
+72: PostCall 62
+73: GetReturnValue £temporary591
 74: PushFloat floating8$0.000000001#
-75: GreaterThanEqual < PushFloat term> £temporary598 floating8$0.000000001#
+75: GreaterThanEqual < PushFloat term> £temporary591 floating8$0.000000001#
 76: Jump < PushFloat sum>
 77: PushFloat sum
-78: SetReturnValue
-79: Return sum
-80: Empty
-81: FunctionEnd cos
+78: Return sum
+79: Empty
+80: FunctionEnd cos

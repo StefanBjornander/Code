@@ -1,0 +1,14 @@
+0: Dereference £temporary1049 stream 0
+1: IntegralToIntegral £temporary1050 £temporary1049.handle
+2: AssignRegister rdi £temporary1050
+3: IntegralToIntegral £temporary1052 ptr
+4: AssignRegister rsi £temporary1052
+5: Multiply £temporary1054 size nobj
+6: IntegralToIntegral £temporary1055 £temporary1054
+7: AssignRegister rdx £temporary1055
+8: AssignRegister rax integral8$1#
+9: SysCall
+10: InspectRegister £temporary1057 eax
+11: SetReturnValue
+12: Return £temporary1057
+13: FunctionEnd fwrite

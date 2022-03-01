@@ -21,10 +21,10 @@
 20: PostCall 56
 21: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 22: Equal 25 capital integral4$0#
-23: Assign £temporary1873 integral1$88#
+23: Assign £temporary1905 integral1$88#
 24: Jump 26
-25: Assign £temporary1873 integral1$120#
-26: Parameter 80 signed char £temporary1873
+25: Assign £temporary1905 integral1$120#
+26: Parameter 80 signed char £temporary1905
 27: Call 56 printChar 0
 28: PostCall 56
 29: NotEqual 35 unsignedValue integral8$0#

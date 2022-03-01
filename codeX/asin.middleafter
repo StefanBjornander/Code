@@ -1,46 +1,42 @@
 0: PushFloat x
 1: PushFloat floating8$1#
-2: NotEqual 6 x floating8$1#
+2: NotEqual 5 x floating8$1#
 3: PushFloat floating8$1.57#
-4: SetReturnValue
-5: Return floating8$1.57#
-6: PushFloat x
-7: PushFloat floating8$0#
-8: GreaterThanEqual 19 x floating8$0#
-9: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-10: PushFloat x
-11: Minus £temporary614 x
-12: Parameter 56 double £temporary614
-13: Call 32 asin 0
-14: PostCall 32
-15: GetReturnValue £temporary615
-16: Minus £temporary616 £temporary615
-17: SetReturnValue
-18: Return £temporary616
-19: PushFloat x
-20: PushFloat floating8$1#
-21: GreaterThanEqual 41 x floating8$1#
-22: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-23: PushFloat x
-24: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
-25: PushFloat floating8$1#
-26: PushFloat x
-27: PushFloat x
-28: Multiply £temporary618 x x
-29: Subtract £temporary619 floating8$1# £temporary618
-30: Parameter 56 double £temporary619
-31: Call 32 sqrt 0
-32: PostCall 32
-33: GetReturnValue £temporary620
-34: Divide £temporary621 x £temporary620
-35: Parameter 56 double £temporary621
-36: Call 32 atan 0
-37: PostCall 32
-38: GetReturnValue £temporary622
-39: SetReturnValue
-40: Return £temporary622
-41: Assign errno EDOM
-42: PushFloat floating8$0#
-43: SetReturnValue
-44: Return floating8$0#
-45: FunctionEnd asin
+4: Return floating8$1.57#
+5: PushFloat x
+6: PushFloat floating8$0#
+7: GreaterThanEqual 17 x floating8$0#
+8: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: PushFloat x
+10: Minus £temporary607 x
+11: Parameter 20 double £temporary607
+12: Call 14 asin 0
+13: PostCall 14
+14: GetReturnValue £temporary608
+15: Minus £temporary609 £temporary608
+16: Return £temporary609
+17: PushFloat x
+18: PushFloat floating8$1#
+19: GreaterThanEqual 38 x floating8$1#
+20: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+21: PushFloat x
+22: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
+23: PushFloat floating8$1#
+24: PushFloat x
+25: PushFloat x
+26: Multiply £temporary611 x x
+27: Subtract £temporary612 floating8$1# £temporary611
+28: Parameter 20 double £temporary612
+29: Call 14 sqrt 0
+30: PostCall 14
+31: GetReturnValue £temporary613
+32: Divide £temporary614 x £temporary613
+33: Parameter 20 double £temporary614
+34: Call 14 atan 0
+35: PostCall 14
+36: GetReturnValue £temporary615
+37: Return £temporary615
+38: Assign errno EDOM
+39: PushFloat floating8$0#
+40: Return floating8$0#
+41: FunctionEnd asin

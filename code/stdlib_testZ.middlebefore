@@ -1,7 +1,7 @@
 0: PreCall 24
 1: Parameter 48 string string_hello3A2025u0A#
-2: IntegralToIntegral £temporary4914 hello
-3: Parameter 56 unsigned int £temporary4914
+2: IntegralToIntegral £temporary5040 hello
+3: Parameter 56 unsigned int £temporary5040
 4: Call 24 printf 4
 5: PostCall 24
 6: PreCall 24

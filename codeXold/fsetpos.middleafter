@@ -1,0 +1,12 @@
+0: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 64 pointer stream
+2: Dereference £temporary1073 ptr 0
+3: Parameter 72 signed int £temporary1073
+4: Parameter 76 signed int integral4$0#
+5: Call 40 fseek 0
+6: PostCall 40
+7: GetReturnValue £temporary1074
+8: IntegralToIntegral £temporary1075 £temporary1074
+9: SetReturnValue
+10: Return £temporary1075
+11: FunctionEnd fsetpos

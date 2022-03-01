@@ -2,20 +2,20 @@
 1: Parameter 48 signed int integral4$96#
 2: Call 24 malloc 0
 3: PostCall 24
-4: GetReturnValue £temporary4862
-5: Assign b £temporary4862
+4: GetReturnValue £temporary4988
+5: Assign b £temporary4988
 6: PreCall 32
 7: Parameter 56 signed int integral4$96#
 8: Call 32 malloc 0
 9: PostCall 32
-10: GetReturnValue £temporary4863
-11: Assign c £temporary4863
+10: GetReturnValue £temporary4989
+11: Assign c £temporary4989
 12: PreCall 40
 13: Parameter 64 signed int integral4$96#
 14: Call 40 malloc 0
 15: PostCall 40
-16: GetReturnValue £temporary4864
-17: Assign d £temporary4864
+16: GetReturnValue £temporary4990
+17: Assign d £temporary4990
 18: PreCall 48
 19: Call 48 print_heap 0
 20: PostCall 48

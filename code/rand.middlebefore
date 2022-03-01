@@ -1,9 +1,8 @@
-0: Multiply £temporary2904 integral8$1664525# g_randValue
-1: Add £temporary2905 £temporary2904 integral8$1013904223#
-2: Modulo £temporary2906 £temporary2905 integral8$127#
-3: Assign g_randValue £temporary2906
-4: IntegralToIntegral £temporary2907 g_randValue
-5: SetReturnValue
-6: Return £temporary2907
-7: Empty
-8: FunctionEnd rand
+0: Multiply £temporary2951 integral8$1664525# g_randValue
+1: Add £temporary2952 £temporary2951 integral8$1013904223#
+2: Modulo £temporary2953 £temporary2952 integral8$127#
+3: Assign g_randValue £temporary2953
+4: IntegralToIntegral £temporary2954 g_randValue
+5: Return £temporary2954
+6: Empty
+7: FunctionEnd rand

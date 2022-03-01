@@ -7,8 +7,8 @@
 6: Parameter 64 string string_r2B#
 7: Call 32 fopen 0
 8: PostCall 32
-9: GetReturnValue £temporary4662
-10: Assign inOutFilePtr £temporary4662
+9: GetReturnValue £temporary4788
+10: Assign inOutFilePtr £temporary4788
 11: NotEqual 23 inOutFilePtr integral8$0#
 12: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 13: Parameter 64 pointer stderr
@@ -28,8 +28,8 @@
 27: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 28: Call 40 tmpfile 0
 29: PostCall 40
-30: GetReturnValue £temporary4670
-31: Assign tempFilePtr £temporary4670
+30: GetReturnValue £temporary4796
+31: Assign tempFilePtr £temporary4796
 32: NotEqual 44 tempFilePtr integral8$0#
 33: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 34: Parameter 64 pointer stderr
@@ -46,19 +46,19 @@
 45: Parameter 64 pointer inOutFilePtr
 46: Call 40 fgetc 0
 47: PostCall 40
-48: GetReturnValue £temporary4677
-49: IntegralToIntegral £temporary4678 £temporary4677
-50: Assign c £temporary4678
-51: IntegralToIntegral £temporary4679 c
-52: Equal 65 £temporary4679 integral4$minus1#
+48: GetReturnValue £temporary4803
+49: IntegralToIntegral £temporary4804 £temporary4803
+50: Assign c £temporary4804
+51: IntegralToIntegral £temporary4805 c
+52: Equal 65 £temporary4805 integral4$minus1#
 53: PreCall 41 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 54: PreCall 41 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-55: IntegralToIntegral £temporary4683 c
-56: Parameter 65 signed int £temporary4683
+55: IntegralToIntegral £temporary4809 c
+56: Parameter 65 signed int £temporary4809
 57: Call 41 toupper 0
 58: PostCall 41
-59: GetReturnValue £temporary4684
-60: Parameter 65 signed int £temporary4684
+59: GetReturnValue £temporary4810
+60: Parameter 65 signed int £temporary4810
 61: Parameter 69 pointer tempFilePtr
 62: Call 41 putc 0
 63: PostCall 41
@@ -76,14 +76,14 @@
 75: Parameter 64 pointer tempFilePtr
 76: Call 40 fgetc 0
 77: PostCall 40
-78: GetReturnValue £temporary4689
-79: IntegralToIntegral £temporary4690 £temporary4689
-80: Assign c £temporary4690
-81: IntegralToIntegral £temporary4691 c
-82: Equal 90 £temporary4691 integral4$minus1#
+78: GetReturnValue £temporary4815
+79: IntegralToIntegral £temporary4816 £temporary4815
+80: Assign c £temporary4816
+81: IntegralToIntegral £temporary4817 c
+82: Equal 90 £temporary4817 integral4$minus1#
 83: PreCall 41 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-84: IntegralToIntegral £temporary4695 c
-85: Parameter 65 signed int £temporary4695
+84: IntegralToIntegral £temporary4821 c
+85: Parameter 65 signed int £temporary4821
 86: Parameter 69 pointer inOutFilePtr
 87: Call 41 putc 0
 88: PostCall 41

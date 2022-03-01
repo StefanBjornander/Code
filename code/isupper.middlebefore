@@ -1,38 +1,36 @@
-0: PreCall 28
-1: Call 28 localeconv 0
-2: PostCall 28
-3: GetReturnValue £temporary190
-4: Assign localeConvPtr £temporary190
-5: NotEqual < Empty> localeConvPtr integral8$0#
+0: PreCall 8
+1: Call 8 localeconv 0
+2: PostCall 8
+3: GetReturnValue £temporary183
+4: Assign localeConvPtr £temporary183
+5: NotEqual < Empty> localeConvPtr integral2$0#
 6: Jump < Empty>
 7: Empty
-8: PreCall 36
-9: Dereference £temporary192 localeConvPtr 0
-10: Parameter 60 pointer £temporary192.upperCase
-11: Parameter 68 signed int c
-12: Call 36 strchr 0
-13: PostCall 36
-14: GetReturnValue £temporary193
-15: NotEqual < Assign £temporary195 integral4$1#> £temporary193 integral8$0#
-16: Jump < Assign £temporary195 integral4$0#>
-17: Assign £temporary195 integral4$1#
+8: PreCall 10
+9: Dereference £temporary185 localeConvPtr 0
+10: Parameter 16 pointer £temporary185.upperCase
+11: Parameter 18 signed int c
+12: Call 10 strchr 0
+13: PostCall 10
+14: GetReturnValue £temporary186
+15: NotEqual < Assign £temporary188 integral2$1#> £temporary186 integral2$0#
+16: Jump < Assign £temporary188 integral2$0#>
+17: Assign £temporary188 integral2$1#
 18: Jump < Empty>
-19: Assign £temporary195 integral4$0#
+19: Assign £temporary188 integral2$0#
 20: Empty
-21: SetReturnValue
-22: Return £temporary195
-23: Jump < Empty>
-24: Empty
-25: GreaterThanEqual < LessThanEqual < Assign £temporary199 integral4$1#> c integral4$90#> c integral4$65#
-26: Jump < Assign £temporary199 integral4$0#>
-27: LessThanEqual < Assign £temporary199 integral4$1#> c integral4$90#
-28: Jump < Assign £temporary199 integral4$0#>
-29: Assign £temporary199 integral4$1#
-30: Jump < Empty>
-31: Assign £temporary199 integral4$0#
-32: Empty
-33: SetReturnValue
-34: Return £temporary199
-35: Empty
-36: Empty
-37: FunctionEnd isupper
+21: Return £temporary188
+22: Jump < Empty>
+23: Empty
+24: GreaterThanEqual < LessThanEqual < Assign £temporary192 integral2$1#> c integral2$90#> c integral2$65#
+25: Jump < Assign £temporary192 integral2$0#>
+26: LessThanEqual < Assign £temporary192 integral2$1#> c integral2$90#
+27: Jump < Assign £temporary192 integral2$0#>
+28: Assign £temporary192 integral2$1#
+29: Jump < Empty>
+30: Assign £temporary192 integral2$0#
+31: Empty
+32: Return £temporary192
+33: Empty
+34: Empty
+35: FunctionEnd isupper

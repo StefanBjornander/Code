@@ -1,98 +1,102 @@
 0: PushFloat value
-1: PushFloat 0.0
-2: Equal PreCall 24 value 0.0
-3: Goto PushFloat value
-4: PreCall 24
-5: Parameter 30 signedchar 48
-6: Call 24 printChar 0
-7: PostCall 24
-8: PreCall 24
-9: PushFloat 0.0
-10: Parameter 30 longdouble 0.0
-11: Parameter 38 signedint precision
-12: Parameter 40 signedint grid
-13: Call 24 printLongDoubleFraction 0
-14: PostCall 24
-15: PreCall 24
-16: NotEqual Empty capital 0
-17: Goto Empty
-18: Empty
-19: Assign £temporary1611 69
-20: Goto Empty
-21: Empty
-22: Assign £temporary1611 101
-23: Empty
-24: Parameter 30 signedchar £temporary1611
-25: Call 24 printChar 0
-26: PostCall 24
-27: PreCall 24
-28: Parameter 30 signedchar 48
-29: Call 24 printChar 0
-30: PostCall 24
-31: Goto Empty
-32: PushFloat value
-33: PushFloat 0.0
-34: SignedLessThan PreCall 24 value 0.0
-35: Goto PreCall 24
-36: PreCall 24
-37: Parameter 30 signedchar 45
-38: Call 24 printChar 0
-39: PostCall 24
-40: PushFloat value
-41: PopFloat
-42: PushFloat value
-43: UnarySubtract £temporary1616 value
-44: TopFloat value
-45: PopFloat
-46: Goto PreCall 24
-47: PreCall 24
-48: PushFloat value
-49: Parameter 30 double value
-50: Call 24 log10 0
-51: PostCall 24
-52: GetReturnValue £temporary1617
-53: FloatingToIntegral £temporary1618 £temporary1617
-54: Assign expo £temporary1618
-55: PushFloat value
-56: PreCall 26
-57: PushFloat 10.0
-58: Parameter 32 double 10.0
-59: IntegralToFloating £temporary1619 expo
-60: Parameter 40 double £temporary1619
-61: Call 26 pow 0
-62: PostCall 26
-63: GetReturnValue £temporary1620
-64: SignedDivide £temporary1621 value £temporary1620
-65: TopFloat value
-66: PopFloat
-67: PreCall 26
-68: PushFloat value
-69: Parameter 32 longdouble value
-70: Parameter 40 signedint plus
-71: Parameter 42 signedint space
-72: Parameter 44 signedint grid
-73: Parameter 46 signedint precision
-74: Call 26 printLongDoublePlain 0
-75: PostCall 26
-76: PreCall 26
-77: NotEqual Empty capital 0
-78: Goto Empty
-79: Empty
-80: Assign £temporary1624 69
-81: Goto Empty
+1: PushFloat floating8$0.0#
+2: Equal < Empty> value floating8$0.0#
+3: Jump < Empty>
+4: Empty
+5: PreCall 52
+6: Parameter 76 signed char integral1$48#
+7: Call 52 printChar 0
+8: PostCall 52
+9: PreCall 52
+10: PushFloat floating8$0.0#
+11: Parameter 76 long double floating8$0.0#
+12: Parameter 84 signed int precision
+13: Parameter 88 signed int grid
+14: Call 52 printLongDoubleFraction 0
+15: PostCall 52
+16: PreCall 52
+17: NotEqual < Empty> capital integral4$0#
+18: Jump < Empty>
+19: Empty
+20: Assign £temporary1954 integral1$69#
+21: Jump < Empty>
+22: Empty
+23: Assign £temporary1954 integral1$101#
+24: Empty
+25: Parameter 76 signed char £temporary1954
+26: Call 52 printChar 0
+27: PostCall 52
+28: PreCall 52
+29: Parameter 76 signed char integral1$48#
+30: Call 52 printChar 0
+31: PostCall 52
+32: Jump < Empty>
+33: Empty
+34: PushFloat value
+35: PushFloat floating8$0.0#
+36: LessThan < Empty> value floating8$0.0#
+37: Jump < Empty>
+38: Empty
+39: PreCall 52
+40: Parameter 76 signed char integral1$45#
+41: Call 52 printChar 0
+42: PostCall 52
+43: PushFloat value
+44: PopEmpty
+45: PushFloat value
+46: Minus £temporary1959 value
+47: PopFloat value
+48: Jump < Empty>
+49: Empty
+50: Empty
+51: PreCall 52
+52: PushFloat value
+53: Parameter 76 long double value
+54: Call 52 log10 0
+55: PostCall 52
+56: GetReturnValue £temporary1962
+57: FloatingToIntegral £temporary1963 £temporary1962
+58: Assign expo £temporary1963
+59: PushFloat value
+60: PreCall 56
+61: PushFloat floating8$10.0#
+62: Parameter 80 double floating8$10.0#
+63: IntegralToFloating £temporary1964 expo
+64: Parameter 88 double £temporary1964
+65: Call 56 pow 0
+66: PostCall 56
+67: GetReturnValue £temporary1965
+68: Divide £temporary1966 value £temporary1965
+69: PopFloat value
+70: PreCall 56
+71: PushFloat value
+72: Parameter 80 long double value
+73: Parameter 88 signed int plus
+74: Parameter 92 signed int space
+75: Parameter 96 signed int grid
+76: Parameter 100 signed int precision
+77: Call 56 printLongDoublePlain 0
+78: PostCall 56
+79: PreCall 56
+80: NotEqual < Empty> capital integral4$0#
+81: Jump < Empty>
 82: Empty
-83: Assign £temporary1624 101
-84: Empty
-85: Parameter 32 signedchar £temporary1624
-86: Call 26 printChar 0
-87: PostCall 26
-88: PreCall 26
-89: IntegralToIntegral £temporary1626 expo
-90: Parameter 32 signed long int £temporary1626
-91: Parameter 36 signedint 1
-92: Parameter 38 signedint 0
-93: Call 26 printLongInt 0
-94: PostCall 26
-95: Empty
-96: Return
-97: FunctionEnd printLongDoubleExpo
+83: Assign £temporary1969 integral1$69#
+84: Jump < Empty>
+85: Empty
+86: Assign £temporary1969 integral1$101#
+87: Empty
+88: Parameter 80 signed char £temporary1969
+89: Call 56 printChar 0
+90: PostCall 56
+91: PreCall 56
+92: IntegralToIntegral £temporary1971 expo
+93: Parameter 80 signed long int £temporary1971
+94: Parameter 88 signed int integral4$1#
+95: Parameter 92 signed int integral4$0#
+96: Call 56 printLongInt 0
+97: PostCall 56
+98: Empty
+99: Empty
+100: Return
+101: FunctionEnd printLongDoubleExpo

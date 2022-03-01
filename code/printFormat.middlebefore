@@ -15,361 +15,369 @@
 14: Assign g_outChars integral4$0#
 15: Assign index integral4$0#
 16: Empty
-17: IntegralToIntegral £temporary2142 index
-18: Add £temporary2143 format £temporary2142
-19: Dereference £temporary2144 £temporary2143 0
-20: NotEqual < IntegralToIntegral £temporary2147 index> £temporary2144 integral1$0#
-21: Jump < Equal < Empty> g_outStatus integral4$1#>
-22: IntegralToIntegral £temporary2147 index
-23: Add £temporary2148 format £temporary2147
-24: Dereference £temporary2149 £temporary2148 0
-25: Assign c £temporary2149
-26: NotEqual < Empty> percent integral4$0#
-27: Jump < Empty>
-28: Empty
-29: Case < Assign plus integral4$1#> c integral1$43#
-30: Case < Assign minus integral4$1#> c integral1$45#
-31: Case < Assign space integral4$1#> c integral1$32#
-32: Case < Assign zero integral4$1#> c integral1$48#
-33: Case < Assign grid integral4$1#> c integral1$35#
-34: Case < Assign period integral4$1#> c integral1$46#
-35: Case < NotEqual < Empty> period integral4$0#> c integral1$42#
-36: Case < Assign shortInt integral4$1#> c integral1$104#
-37: Case < Assign longInt integral4$1#> c integral1$108#
-38: Case < Assign longDouble integral4$1#> c integral1$76#
-39: Case < NotEqual < Empty> minus integral4$0#> c integral1$37#
-40: Case < NotEqual < Empty> minus integral4$0#> c integral1$110#
-41: Case < NotEqual < Empty> minus integral4$0#> c integral1$112#
-42: Case < NotEqual < Empty> minus integral4$0#> c integral1$71#
-43: Case < NotEqual < Empty> minus integral4$0#> c integral1$103#
-44: Case < NotEqual < Empty> minus integral4$0#> c integral1$69#
-45: Case < NotEqual < Empty> minus integral4$0#> c integral1$101#
-46: Case < NotEqual < Empty> minus integral4$0#> c integral1$102#
-47: Case < NotEqual < Empty> minus integral4$0#> c integral1$115#
-48: Case < NotEqual < Empty> minus integral4$0#> c integral1$99#
-49: Case < NotEqual < Empty> minus integral4$0#> c integral1$88#
-50: Case < NotEqual < Empty> minus integral4$0#> c integral1$120#
-51: Case < NotEqual < Empty> minus integral4$0#> c integral1$111#
-52: Case < NotEqual < Empty> minus integral4$0#> c integral1$98#
-53: Case < NotEqual < Empty> minus integral4$0#> c integral1$117#
-54: Case < NotEqual < Empty> minus integral4$0#> c integral1$100#
-55: Case < NotEqual < Empty> minus integral4$0#> c integral1$105#
-56: CaseEnd c
-57: Jump < Assign value integral4$0#>
-58: Assign plus integral4$1#
-59: Jump < Empty>
-60: Assign minus integral4$1#
+17: Multiply £temporary2174 index integral4$1#
+18: IntegralToIntegral £temporary2175 £temporary2174
+19: Add £temporary2176 format £temporary2175
+20: Dereference £temporary2177 £temporary2176 0
+21: NotEqual < Multiply £temporary2180 index integral4$1#> £temporary2177 integral1$0#
+22: Jump < Equal < Empty> g_outStatus integral4$1#>
+23: Multiply £temporary2180 index integral4$1#
+24: IntegralToIntegral £temporary2181 £temporary2180
+25: Add £temporary2182 format £temporary2181
+26: Dereference £temporary2183 £temporary2182 0
+27: Assign c £temporary2183
+28: NotEqual < Empty> percent integral4$0#
+29: Jump < Empty>
+30: Empty
+31: Case < Assign plus integral4$1#> c integral1$43#
+32: Case < Assign minus integral4$1#> c integral1$45#
+33: Case < Assign space integral4$1#> c integral1$32#
+34: Case < Assign zero integral4$1#> c integral1$48#
+35: Case < Assign grid integral4$1#> c integral1$35#
+36: Case < Assign period integral4$1#> c integral1$46#
+37: Case < NotEqual < Empty> period integral4$0#> c integral1$42#
+38: Case < Assign shortInt integral4$1#> c integral1$104#
+39: Case < Assign longInt integral4$1#> c integral1$108#
+40: Case < Assign longDouble integral4$1#> c integral1$76#
+41: Case < NotEqual < Empty> minus integral4$0#> c integral1$37#
+42: Case < NotEqual < Empty> minus integral4$0#> c integral1$110#
+43: Case < NotEqual < Empty> minus integral4$0#> c integral1$112#
+44: Case < NotEqual < Empty> minus integral4$0#> c integral1$71#
+45: Case < NotEqual < Empty> minus integral4$0#> c integral1$103#
+46: Case < NotEqual < Empty> minus integral4$0#> c integral1$69#
+47: Case < NotEqual < Empty> minus integral4$0#> c integral1$101#
+48: Case < NotEqual < Empty> minus integral4$0#> c integral1$102#
+49: Case < NotEqual < Empty> minus integral4$0#> c integral1$115#
+50: Case < NotEqual < Empty> minus integral4$0#> c integral1$99#
+51: Case < NotEqual < Empty> minus integral4$0#> c integral1$88#
+52: Case < NotEqual < Empty> minus integral4$0#> c integral1$120#
+53: Case < NotEqual < Empty> minus integral4$0#> c integral1$111#
+54: Case < NotEqual < Empty> minus integral4$0#> c integral1$98#
+55: Case < NotEqual < Empty> minus integral4$0#> c integral1$117#
+56: Case < NotEqual < Empty> minus integral4$0#> c integral1$100#
+57: Case < NotEqual < Empty> minus integral4$0#> c integral1$105#
+58: CaseEnd c
+59: Jump < Assign value integral4$0#>
+60: Assign plus integral4$1#
 61: Jump < Empty>
-62: Assign space integral4$1#
+62: Assign minus integral4$1#
 63: Jump < Empty>
-64: Assign zero integral4$1#
+64: Assign space integral4$1#
 65: Jump < Empty>
-66: Assign grid integral4$1#
+66: Assign zero integral4$1#
 67: Jump < Empty>
-68: Assign period integral4$1#
+68: Assign grid integral4$1#
 69: Jump < Empty>
-70: NotEqual < Empty> period integral4$0#
+70: Assign period integral4$1#
 71: Jump < Empty>
-72: Empty
-73: Assign width integral4$minus1#
-74: Jump < Empty>
-75: Empty
-76: Assign precision integral4$minus1#
+72: NotEqual < Empty> period integral4$0#
+73: Jump < Empty>
+74: Empty
+75: Assign width integral4$minus1#
+76: Jump < Empty>
 77: Empty
-78: Jump < Empty>
-79: Assign shortInt integral4$1#
+78: Assign precision integral4$minus1#
+79: Empty
 80: Jump < Empty>
-81: Assign longInt integral4$1#
+81: Assign shortInt integral4$1#
 82: Jump < Empty>
-83: Assign longDouble integral4$1#
+83: Assign longInt integral4$1#
 84: Jump < Empty>
-85: NotEqual < Empty> minus integral4$0#
+85: Assign longDouble integral4$1#
 86: Jump < Empty>
-87: Empty
-88: Assign startChars g_outChars
-89: PreCall 105
-90: IntegralToIntegral £temporary2154 index
-91: Add £temporary2155 format £temporary2154
-92: Dereference £temporary2156 £temporary2155 0
-93: Address £temporary2157 £temporary2156
-94: Parameter 129 pointer £temporary2157
-95: Parameter 137 pointer arg_list
-96: Parameter 145 signed int plus
-97: Parameter 149 signed int space
-98: Parameter 153 signed int grid
-99: Address £temporary2158 width
-100: Parameter 157 pointer £temporary2158
-101: Parameter 165 signed int precision
-102: Parameter 169 signed int shortInt
-103: Parameter 173 signed int longInt
-104: Parameter 177 signed int longDouble
-105: Parameter 181 signed int integral4$1#
-106: Parameter 185 pointer integral8$0#
-107: Call 105 printArgument 0
-108: PostCall 105
-109: GetReturnValue £temporary2159
-110: Assign arg_list £temporary2159
-111: Subtract £temporary2160 g_outChars startChars
-112: Assign field £temporary2160
-113: Empty
-114: Assign £temporary2161 field
-115: Add £temporary2162 field integral4$1#
-116: Assign field £temporary2162
-117: LessThan < PreCall 109> £temporary2161 width
-118: Jump < Assign percent integral4$0#>
-119: PreCall 109
-120: Parameter 133 signed char integral1$32#
-121: Call 109 printChar 0
-122: PostCall 109
-123: Empty
-124: Jump < Empty>
-125: Jump < Empty>
+87: NotEqual < Empty> minus integral4$0#
+88: Jump < Empty>
+89: Empty
+90: Assign startChars g_outChars
+91: PreCall 105
+92: Multiply £temporary2188 index integral4$1#
+93: IntegralToIntegral £temporary2189 £temporary2188
+94: Add £temporary2190 format £temporary2189
+95: Dereference £temporary2191 £temporary2190 0
+96: Address £temporary2192 £temporary2191
+97: Parameter 129 pointer £temporary2192
+98: Parameter 137 pointer arg_list
+99: Parameter 145 signed int plus
+100: Parameter 149 signed int space
+101: Parameter 153 signed int grid
+102: Address £temporary2193 width
+103: Parameter 157 pointer £temporary2193
+104: Parameter 165 signed int precision
+105: Parameter 169 signed int shortInt
+106: Parameter 173 signed int longInt
+107: Parameter 177 signed int longDouble
+108: Parameter 181 signed int integral4$1#
+109: Parameter 185 pointer integral8$0#
+110: Call 105 printArgument 0
+111: PostCall 105
+112: GetReturnValue £temporary2194
+113: Assign arg_list £temporary2194
+114: Subtract £temporary2195 g_outChars startChars
+115: Assign field £temporary2195
+116: Empty
+117: Assign £temporary2196 field
+118: Add £temporary2197 field integral4$1#
+119: Assign field £temporary2197
+120: LessThan < PreCall 109> £temporary2196 width
+121: Jump < Assign percent integral4$0#>
+122: PreCall 109
+123: Parameter 133 signed char integral1$32#
+124: Call 109 printChar 0
+125: PostCall 109
 126: Empty
-127: NotEqual < Empty> zero integral4$0#
+127: Jump < Empty>
 128: Jump < Empty>
 129: Empty
-130: Assign startChars g_outChars
-131: Assign oldOutStatus g_outStatus
-132: Assign negative integral4$0#
-133: Assign g_outStatus integral4$2#
-134: PreCall 113
-135: IntegralToIntegral £temporary2165 index
-136: Add £temporary2166 format £temporary2165
-137: Dereference £temporary2167 £temporary2166 0
-138: Address £temporary2168 £temporary2167
-139: Parameter 137 pointer £temporary2168
-140: Parameter 145 pointer arg_list
-141: Parameter 153 signed int integral4$0#
-142: Parameter 157 signed int integral4$0#
-143: Parameter 161 signed int grid
-144: Address £temporary2169 width
-145: Parameter 165 pointer £temporary2169
-146: Parameter 173 signed int precision
-147: Parameter 177 signed int shortInt
-148: Parameter 181 signed int longInt
-149: Parameter 185 signed int longDouble
-150: Parameter 189 signed int integral4$0#
-151: Address £temporary2170 negative
-152: Parameter 193 pointer £temporary2170
-153: Call 113 printArgument 0
-154: PostCall 113
-155: Assign g_outStatus oldOutStatus
-156: Subtract £temporary2172 g_outChars startChars
-157: Assign field £temporary2172
-158: Assign g_outChars startChars
-159: NotEqual < Empty> negative integral4$0#
-160: Jump < Empty>
-161: Empty
-162: PreCall 117
-163: Parameter 141 signed char integral1$45#
-164: Call 117 printChar 0
-165: PostCall 117
-166: Add £temporary2174 field integral4$1#
-167: Assign field £temporary2174
-168: Jump < Empty>
-169: Empty
-170: NotEqual < Empty> plus integral4$0#
-171: Jump < Empty>
-172: Empty
-173: PreCall 117
-174: Parameter 141 signed char integral1$43#
-175: Call 117 printChar 0
-176: PostCall 117
-177: Add £temporary2176 field integral4$1#
-178: Assign field £temporary2176
-179: Jump < Empty>
-180: Empty
-181: NotEqual < Empty> space integral4$0#
-182: Jump < Empty>
-183: Empty
-184: PreCall 117
-185: Parameter 141 signed char integral1$32#
-186: Call 117 printChar 0
-187: PostCall 117
-188: Add £temporary2178 field integral4$1#
-189: Assign field £temporary2178
-190: Jump < Empty>
-191: Empty
-192: Empty
-193: Empty
-194: Empty
+130: NotEqual < Empty> zero integral4$0#
+131: Jump < Empty>
+132: Empty
+133: Assign startChars g_outChars
+134: Assign oldOutStatus g_outStatus
+135: Assign negative integral4$0#
+136: Assign g_outStatus integral4$2#
+137: PreCall 113
+138: Multiply £temporary2200 index integral4$1#
+139: IntegralToIntegral £temporary2201 £temporary2200
+140: Add £temporary2202 format £temporary2201
+141: Dereference £temporary2203 £temporary2202 0
+142: Address £temporary2204 £temporary2203
+143: Parameter 137 pointer £temporary2204
+144: Parameter 145 pointer arg_list
+145: Parameter 153 signed int integral4$0#
+146: Parameter 157 signed int integral4$0#
+147: Parameter 161 signed int grid
+148: Address £temporary2205 width
+149: Parameter 165 pointer £temporary2205
+150: Parameter 173 signed int precision
+151: Parameter 177 signed int shortInt
+152: Parameter 181 signed int longInt
+153: Parameter 185 signed int longDouble
+154: Parameter 189 signed int integral4$0#
+155: Address £temporary2206 negative
+156: Parameter 193 pointer £temporary2206
+157: Call 113 printArgument 0
+158: PostCall 113
+159: Assign g_outStatus oldOutStatus
+160: Subtract £temporary2208 g_outChars startChars
+161: Assign field £temporary2208
+162: Assign g_outChars startChars
+163: NotEqual < Empty> negative integral4$0#
+164: Jump < Empty>
+165: Empty
+166: PreCall 117
+167: Parameter 141 signed char integral1$45#
+168: Call 117 printChar 0
+169: PostCall 117
+170: Add £temporary2210 field integral4$1#
+171: Assign field £temporary2210
+172: Jump < Empty>
+173: Empty
+174: NotEqual < Empty> plus integral4$0#
+175: Jump < Empty>
+176: Empty
+177: PreCall 117
+178: Parameter 141 signed char integral1$43#
+179: Call 117 printChar 0
+180: PostCall 117
+181: Add £temporary2212 field integral4$1#
+182: Assign field £temporary2212
+183: Jump < Empty>
+184: Empty
+185: NotEqual < Empty> space integral4$0#
+186: Jump < Empty>
+187: Empty
+188: PreCall 117
+189: Parameter 141 signed char integral1$32#
+190: Call 117 printChar 0
+191: PostCall 117
+192: Add £temporary2214 field integral4$1#
+193: Assign field £temporary2214
+194: Jump < Empty>
 195: Empty
-196: Assign £temporary2188 field
-197: Add £temporary2189 field integral4$1#
-198: Assign field £temporary2189
-199: LessThan < PreCall 117> £temporary2188 width
-200: Jump < PreCall 117>
-201: PreCall 117
-202: Parameter 141 signed char integral1$48#
-203: Call 117 printChar 0
-204: PostCall 117
-205: Empty
-206: Jump < Empty>
-207: PreCall 117
-208: IntegralToIntegral £temporary2192 index
-209: Add £temporary2193 format £temporary2192
-210: Dereference £temporary2194 £temporary2193 0
-211: Address £temporary2195 £temporary2194
-212: Parameter 141 pointer £temporary2195
-213: Parameter 149 pointer arg_list
-214: Parameter 157 signed int integral4$0#
-215: Parameter 161 signed int integral4$0#
-216: Parameter 165 signed int grid
-217: Parameter 169 pointer integral8$0#
-218: Parameter 177 signed int precision
-219: Parameter 181 signed int shortInt
-220: Parameter 185 signed int longInt
-221: Parameter 189 signed int longDouble
-222: Parameter 193 signed int integral4$0#
-223: Parameter 197 pointer integral8$0#
-224: Call 117 printArgument 0
-225: PostCall 117
-226: GetReturnValue £temporary2196
-227: Assign arg_list £temporary2196
-228: Jump < Empty>
-229: Empty
-230: Assign startChars g_outChars
-231: Assign oldOutStatus g_outStatus
-232: Assign g_outStatus integral4$2#
-233: PreCall 109
-234: IntegralToIntegral £temporary2197 index
-235: Add £temporary2198 format £temporary2197
-236: Dereference £temporary2199 £temporary2198 0
-237: Address £temporary2200 £temporary2199
-238: Parameter 133 pointer £temporary2200
-239: Parameter 141 pointer arg_list
-240: Parameter 149 signed int plus
-241: Parameter 153 signed int space
-242: Parameter 157 signed int grid
-243: Address £temporary2201 width
-244: Parameter 161 pointer £temporary2201
-245: Parameter 169 signed int precision
-246: Parameter 173 signed int shortInt
-247: Parameter 177 signed int longInt
-248: Parameter 181 signed int longDouble
-249: Parameter 185 signed int integral4$1#
-250: Parameter 189 pointer integral8$0#
-251: Call 109 printArgument 0
-252: PostCall 109
-253: Assign g_outStatus oldOutStatus
-254: Subtract £temporary2203 g_outChars startChars
-255: Assign field £temporary2203
-256: Assign g_outChars startChars
-257: Empty
-258: Assign £temporary2204 field
-259: Add £temporary2205 field integral4$1#
-260: Assign field £temporary2205
-261: LessThan < PreCall 113> £temporary2204 width
-262: Jump < PreCall 113>
-263: PreCall 113
-264: Parameter 137 signed char integral1$32#
-265: Call 113 printChar 0
-266: PostCall 113
-267: Empty
-268: Jump < Empty>
+196: Empty
+197: Empty
+198: Empty
+199: Empty
+200: Assign £temporary2224 field
+201: Add £temporary2225 field integral4$1#
+202: Assign field £temporary2225
+203: LessThan < PreCall 117> £temporary2224 width
+204: Jump < PreCall 117>
+205: PreCall 117
+206: Parameter 141 signed char integral1$48#
+207: Call 117 printChar 0
+208: PostCall 117
+209: Empty
+210: Jump < Empty>
+211: PreCall 117
+212: Multiply £temporary2228 index integral4$1#
+213: IntegralToIntegral £temporary2229 £temporary2228
+214: Add £temporary2230 format £temporary2229
+215: Dereference £temporary2231 £temporary2230 0
+216: Address £temporary2232 £temporary2231
+217: Parameter 141 pointer £temporary2232
+218: Parameter 149 pointer arg_list
+219: Parameter 157 signed int integral4$0#
+220: Parameter 161 signed int integral4$0#
+221: Parameter 165 signed int grid
+222: Parameter 169 pointer integral8$0#
+223: Parameter 177 signed int precision
+224: Parameter 181 signed int shortInt
+225: Parameter 185 signed int longInt
+226: Parameter 189 signed int longDouble
+227: Parameter 193 signed int integral4$0#
+228: Parameter 197 pointer integral8$0#
+229: Call 117 printArgument 0
+230: PostCall 117
+231: GetReturnValue £temporary2233
+232: Assign arg_list £temporary2233
+233: Jump < Empty>
+234: Empty
+235: Assign startChars g_outChars
+236: Assign oldOutStatus g_outStatus
+237: Assign g_outStatus integral4$2#
+238: PreCall 109
+239: Multiply £temporary2234 index integral4$1#
+240: IntegralToIntegral £temporary2235 £temporary2234
+241: Add £temporary2236 format £temporary2235
+242: Dereference £temporary2237 £temporary2236 0
+243: Address £temporary2238 £temporary2237
+244: Parameter 133 pointer £temporary2238
+245: Parameter 141 pointer arg_list
+246: Parameter 149 signed int plus
+247: Parameter 153 signed int space
+248: Parameter 157 signed int grid
+249: Address £temporary2239 width
+250: Parameter 161 pointer £temporary2239
+251: Parameter 169 signed int precision
+252: Parameter 173 signed int shortInt
+253: Parameter 177 signed int longInt
+254: Parameter 181 signed int longDouble
+255: Parameter 185 signed int integral4$1#
+256: Parameter 189 pointer integral8$0#
+257: Call 109 printArgument 0
+258: PostCall 109
+259: Assign g_outStatus oldOutStatus
+260: Subtract £temporary2241 g_outChars startChars
+261: Assign field £temporary2241
+262: Assign g_outChars startChars
+263: Empty
+264: Assign £temporary2242 field
+265: Add £temporary2243 field integral4$1#
+266: Assign field £temporary2243
+267: LessThan < PreCall 113> £temporary2242 width
+268: Jump < PreCall 113>
 269: PreCall 113
-270: IntegralToIntegral £temporary2208 index
-271: Add £temporary2209 format £temporary2208
-272: Dereference £temporary2210 £temporary2209 0
-273: Address £temporary2211 £temporary2210
-274: Parameter 137 pointer £temporary2211
-275: Parameter 145 pointer arg_list
-276: Parameter 153 signed int plus
-277: Parameter 157 signed int space
-278: Parameter 161 signed int grid
-279: Parameter 165 pointer integral8$0#
-280: Parameter 173 signed int precision
-281: Parameter 177 signed int shortInt
-282: Parameter 181 signed int longInt
-283: Parameter 185 signed int longDouble
-284: Parameter 189 signed int integral4$1#
-285: Parameter 193 pointer integral8$0#
-286: Call 113 printArgument 0
-287: PostCall 113
-288: GetReturnValue £temporary2212
-289: Assign arg_list £temporary2212
-290: Empty
-291: Empty
-292: Assign percent integral4$0#
-293: Jump < Empty>
-294: Assign value integral4$0#
-295: Empty
-296: PreCall 105
-297: IntegralToIntegral £temporary2219 c
-298: Parameter 129 signed int £temporary2219
-299: Call 105 isdigit 0
-300: PostCall 105
-301: GetReturnValue £temporary2220
-302: NotEqual < Multiply £temporary2221 integral4$10# value> £temporary2220 integral4$0#
-303: Jump < Subtract £temporary2230 index integral4$1#>
-304: Multiply £temporary2221 integral4$10# value
-305: Subtract £temporary2222 c integral1$48#
-306: IntegralToIntegral £temporary2224 £temporary2222
-307: Add £temporary2223 £temporary2221 £temporary2224
-308: Assign value £temporary2223
-309: Add £temporary2225 index integral4$1#
-310: Assign index £temporary2225
-311: IntegralToIntegral £temporary2226 index
-312: Add £temporary2227 format £temporary2226
-313: Dereference £temporary2228 £temporary2227 0
-314: Assign c £temporary2228
-315: Empty
-316: Jump < Empty>
-317: Subtract £temporary2230 index integral4$1#
-318: Assign index £temporary2230
-319: NotEqual < Empty> period integral4$0#
-320: Jump < Empty>
-321: Empty
-322: Assign width value
-323: Jump < Empty>
-324: Empty
-325: Assign precision value
-326: Empty
-327: Jump < Empty>
+270: Parameter 137 signed char integral1$32#
+271: Call 113 printChar 0
+272: PostCall 113
+273: Empty
+274: Jump < Empty>
+275: PreCall 113
+276: Multiply £temporary2246 index integral4$1#
+277: IntegralToIntegral £temporary2247 £temporary2246
+278: Add £temporary2248 format £temporary2247
+279: Dereference £temporary2249 £temporary2248 0
+280: Address £temporary2250 £temporary2249
+281: Parameter 137 pointer £temporary2250
+282: Parameter 145 pointer arg_list
+283: Parameter 153 signed int plus
+284: Parameter 157 signed int space
+285: Parameter 161 signed int grid
+286: Parameter 165 pointer integral8$0#
+287: Parameter 173 signed int precision
+288: Parameter 177 signed int shortInt
+289: Parameter 181 signed int longInt
+290: Parameter 185 signed int longDouble
+291: Parameter 189 signed int integral4$1#
+292: Parameter 193 pointer integral8$0#
+293: Call 113 printArgument 0
+294: PostCall 113
+295: GetReturnValue £temporary2251
+296: Assign arg_list £temporary2251
+297: Empty
+298: Empty
+299: Assign percent integral4$0#
+300: Jump < Empty>
+301: Assign value integral4$0#
+302: Empty
+303: PreCall 105
+304: IntegralToIntegral £temporary2258 c
+305: Parameter 129 signed int £temporary2258
+306: Call 105 isdigit 0
+307: PostCall 105
+308: GetReturnValue £temporary2259
+309: NotEqual < Multiply £temporary2260 integral4$10# value> £temporary2259 integral4$0#
+310: Jump < Subtract £temporary2270 index integral4$1#>
+311: Multiply £temporary2260 integral4$10# value
+312: Subtract £temporary2261 c integral1$48#
+313: IntegralToIntegral £temporary2263 £temporary2261
+314: Add £temporary2262 £temporary2260 £temporary2263
+315: Assign value £temporary2262
+316: Add £temporary2264 index integral4$1#
+317: Assign index £temporary2264
+318: Multiply £temporary2265 index integral4$1#
+319: IntegralToIntegral £temporary2266 £temporary2265
+320: Add £temporary2267 format £temporary2266
+321: Dereference £temporary2268 £temporary2267 0
+322: Assign c £temporary2268
+323: Empty
+324: Jump < Empty>
+325: Subtract £temporary2270 index integral4$1#
+326: Assign index £temporary2270
+327: NotEqual < Empty> period integral4$0#
 328: Jump < Empty>
 329: Empty
-330: Equal < Empty> c integral1$37#
+330: Assign width value
 331: Jump < Empty>
 332: Empty
-333: Assign percent integral4$1#
-334: Assign plus integral4$0#
-335: Assign minus integral4$0#
-336: Assign space integral4$0#
-337: Assign zero integral4$0#
-338: Assign grid integral4$0#
-339: Assign widthStar integral4$0#
-340: Assign period integral4$0#
-341: Assign precisionStar integral4$0#
-342: Assign shortInt integral4$0#
-343: Assign longInt integral4$0#
-344: Assign longDouble integral4$0#
-345: Assign width integral4$0#
-346: Assign precision integral4$0#
-347: Jump < Empty>
-348: Empty
-349: PreCall 101
-350: Parameter 125 signed char c
-351: Call 101 printChar 0
-352: PostCall 101
-353: Empty
-354: Empty
-355: Empty
-356: Add £temporary2146 index integral4$1#
-357: Assign index £temporary2146
-358: Jump < Empty>
-359: Equal < Empty> g_outStatus integral4$1#
-360: Jump < Empty>
+333: Assign precision value
+334: Empty
+335: Jump < Empty>
+336: Jump < Empty>
+337: Empty
+338: Equal < Empty> c integral1$37#
+339: Jump < Empty>
+340: Empty
+341: Assign percent integral4$1#
+342: Assign plus integral4$0#
+343: Assign minus integral4$0#
+344: Assign space integral4$0#
+345: Assign zero integral4$0#
+346: Assign grid integral4$0#
+347: Assign widthStar integral4$0#
+348: Assign period integral4$0#
+349: Assign precisionStar integral4$0#
+350: Assign shortInt integral4$0#
+351: Assign longInt integral4$0#
+352: Assign longDouble integral4$0#
+353: Assign width integral4$0#
+354: Assign precision integral4$0#
+355: Jump < Empty>
+356: Empty
+357: PreCall 101
+358: Parameter 125 signed char c
+359: Call 101 printChar 0
+360: PostCall 101
 361: Empty
-362: IntegralToIntegral £temporary2243 g_outDevice
-363: Assign outString £temporary2243
-364: IntegralToIntegral £temporary2244 g_outChars
-365: Add £temporary2245 outString £temporary2244
-366: Dereference £temporary2246 £temporary2245 0
-367: Assign £temporary2246 integral1$0#
+362: Empty
+363: Empty
+364: Add £temporary2179 index integral4$1#
+365: Assign index £temporary2179
+366: Jump < Empty>
+367: Equal < Empty> g_outStatus integral4$1#
 368: Jump < Empty>
 369: Empty
-370: Empty
-371: SetReturnValue
-372: Return g_outChars
-373: Empty
-374: FunctionEnd printFormat
+370: IntegralToIntegral £temporary2283 g_outDevice
+371: Assign outString £temporary2283
+372: Multiply £temporary2284 g_outChars integral4$1#
+373: IntegralToIntegral £temporary2285 £temporary2284
+374: Add £temporary2286 outString £temporary2285
+375: Dereference £temporary2287 £temporary2286 0
+376: Assign £temporary2287 integral1$0#
+377: Jump < Empty>
+378: Empty
+379: Empty
+380: Return g_outChars
+381: Empty
+382: FunctionEnd printFormat

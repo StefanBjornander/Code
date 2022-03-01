@@ -1,0 +1,48 @@
+0: PreCall 16
+1: PushFloat x
+2: Parameter 22 double x
+3: Call 16 fabs 0
+4: PostCall 16
+5: GetReturnValue £temporary359
+6: PopFloat abs_x
+7: PushFloat abs_x
+8: FloatingToIntegral £temporary360 abs_x
+9: IntegralToFloating £temporary361 £temporary360
+10: PopFloat integral
+11: PushFloat abs_x
+12: PushFloat integral
+13: Subtract £temporary362 abs_x integral
+14: PopFloat fractional
+15: NotEqual Dereference £temporary364 p 0 p integral2$0#
+16: Jump Empty
+17: Dereference £temporary364 p 0
+18: PushFloat £temporary364
+19: PopEmpty
+20: PushFloat x
+21: PushFloat floating8$0#
+22: GreaterThan PushFloat integral x floating8$0#
+23: Jump PushFloat integral
+24: PushFloat integral
+25: DecreaseStack
+26: Jump Empty
+27: PushFloat integral
+28: Minus £temporary366 integral
+29: Empty
+30: PopFloat £temporary364
+31: Jump PushFloat x
+32: Empty
+33: Jump PushFloat x
+34: PushFloat x
+35: PushFloat floating8$0#
+36: GreaterThan PushFloat fractional x floating8$0#
+37: Jump PushFloat fractional
+38: PushFloat fractional
+39: DecreaseStack
+40: Jump Empty
+41: PushFloat fractional
+42: Minus £temporary369 fractional
+43: Empty
+44: SetReturnValue
+45: Return £temporary370
+46: Empty
+47: FunctionEnd modf

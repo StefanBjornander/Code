@@ -1,35 +1,31 @@
 0: Assign index integral4$0#
-1: GreaterThanEqual 32 index size
-2: IntegralToIntegral £temporary3477 index
-3: Add £temporary3478 left £temporary3477
-4: Dereference £temporary3479 £temporary3478 0
-5: NotEqual 12 £temporary3479 integral1$0#
-6: IntegralToIntegral £temporary3481 index
-7: Add £temporary3482 right £temporary3481
-8: Dereference £temporary3483 £temporary3482 0
-9: NotEqual 12 £temporary3483 integral1$0#
-10: SetReturnValue
-11: Return integral4$0#
-12: IntegralToIntegral £temporary3486 index
-13: Add £temporary3487 left £temporary3486
-14: Dereference £temporary3488 £temporary3487 0
-15: IntegralToIntegral £temporary3489 index
-16: Add £temporary3490 right £temporary3489
-17: Dereference £temporary3491 £temporary3490 0
-18: GreaterThanEqual 21 £temporary3488 £temporary3491
-19: SetReturnValue
-20: Return integral4$minus1#
-21: IntegralToIntegral £temporary3493 index
-22: Add £temporary3494 left £temporary3493
-23: Dereference £temporary3495 £temporary3494 0
-24: IntegralToIntegral £temporary3496 index
-25: Add £temporary3497 right £temporary3496
-26: Dereference £temporary3498 £temporary3497 0
-27: LessThanEqual 30 £temporary3495 £temporary3498
-28: SetReturnValue
-29: Return integral4$1#
-30: Add index index integral4$1#
-31: Jump 1
-32: SetReturnValue
-33: Return integral4$0#
-34: FunctionEnd strncmp
+1: GreaterThanEqual 29 index size
+2: IntegralToIntegral £temporary3557 index
+3: Add £temporary3558 left £temporary3557
+4: Dereference £temporary3559 £temporary3558 0
+5: NotEqual 11 £temporary3559 integral1$0#
+6: IntegralToIntegral £temporary3562 index
+7: Add £temporary3563 right £temporary3562
+8: Dereference £temporary3564 £temporary3563 0
+9: NotEqual 11 £temporary3564 integral1$0#
+10: Return integral4$0#
+11: IntegralToIntegral £temporary3568 index
+12: Add £temporary3569 left £temporary3568
+13: Dereference £temporary3570 £temporary3569 0
+14: IntegralToIntegral £temporary3572 index
+15: Add £temporary3573 right £temporary3572
+16: Dereference £temporary3574 £temporary3573 0
+17: GreaterThanEqual 19 £temporary3570 £temporary3574
+18: Return integral4$minus1#
+19: IntegralToIntegral £temporary3577 index
+20: Add £temporary3578 left £temporary3577
+21: Dereference £temporary3579 £temporary3578 0
+22: IntegralToIntegral £temporary3581 index
+23: Add £temporary3582 right £temporary3581
+24: Dereference £temporary3583 £temporary3582 0
+25: LessThanEqual 27 £temporary3579 £temporary3583
+26: Return integral4$1#
+27: Add index index integral4$1#
+28: Jump 1
+29: Return integral4$0#
+30: FunctionEnd strncmp

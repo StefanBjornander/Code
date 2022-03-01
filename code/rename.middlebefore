@@ -1,20 +1,16 @@
-0: AssignRegister rax integral8$82#
-1: IntegralToIntegral £temporary963 oldName
-2: AssignRegister rdi £temporary963
-3: IntegralToIntegral £temporary965 newName
-4: AssignRegister rsi £temporary965
-5: SysCall
-6: InspectRegister £temporary966 eax
-7: Equal < Empty> £temporary966 integral4$0#
-8: Jump < Empty>
-9: Empty
-10: SetReturnValue
-11: Return integral4$0#
-12: Jump < Empty>
-13: Empty
+0: AssignRegister ah integral1$86#
+1: AssignRegister cl integral1$0#
+2: AssignRegister dx oldName
+3: AssignRegister di newName
+4: Interrupt 33
+5: Carry < Empty>
+6: Jump < Empty>
+7: Empty
+8: Return integral2$0#
+9: Jump < Empty>
+10: Empty
+11: Empty
+12: Assign errno FRENAME
+13: Return integral2$minus1#
 14: Empty
-15: Assign errno FRENAME
-16: SetReturnValue
-17: Return integral4$minus1#
-18: Empty
-19: FunctionEnd rename
+15: FunctionEnd rename

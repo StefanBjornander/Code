@@ -1,19 +1,17 @@
-0: PreCall 32
-1: Parameter 56 signed int integral4$0#
-2: Parameter 60 pointer name
-3: Parameter 68 signed int integral4$4#
-4: Call 32 generateName 0
-5: PostCall 32
-6: GetReturnValue £temporary1116
-7: NotEqual < Empty> £temporary1116 integral4$0#
+0: PreCall 8
+1: Parameter 14 signed int integral2$0#
+2: Parameter 16 pointer name
+3: Parameter 18 signed int integral2$4#
+4: Call 8 generateName 0
+5: PostCall 8
+6: GetReturnValue £temporary1134
+7: NotEqual < Empty> £temporary1134 integral2$0#
 8: Jump < Empty>
 9: Empty
-10: SetReturnValue
-11: Return name
-12: Jump < Empty>
+10: Return name
+11: Jump < Empty>
+12: Empty
 13: Empty
-14: Empty
-15: SetReturnValue
-16: Return integral8$0#
-17: Empty
-18: FunctionEnd tmpnam
+14: Return integral2$0#
+15: Empty
+16: FunctionEnd tmpnam

@@ -1,0 +1,46 @@
+0: PreCall 40
+1: Parameter 64 string string_Please20input20a20value3A20#
+2: Call 40 printf 0
+3: PostCall 40
+4: PreCall 40
+5: Parameter 64 string string_25lf#
+6: PushFloat x
+7: PopEmpty
+8: Address £temporary3992 x
+9: Parameter 72 pointer £temporary3992
+10: Call 40 scanf 8
+11: PostCall 40
+12: PreCall 40
+13: Parameter 64 array buffer
+14: Call 40 setjmp 0
+15: PostCall 40
+16: GetReturnValue £temporary3994
+17: IntegralToIntegral £temporary3995 £temporary3994
+18: Assign message £temporary3995
+19: Equal < Empty> message integral8$0#
+20: Jump < Empty>
+21: Empty
+22: PreCall 40
+23: Parameter 64 string string_12E0202F2025f203D2025f0A#
+24: PushFloat x
+25: Parameter 72 double x
+26: PreCall 40
+27: PushFloat x
+28: Parameter 104 double x
+29: Call 80 inverse 0
+30: PostCall 80
+31: GetReturnValue £temporary3997
+32: Parameter 80 double £temporary3997
+33: Call 40 printf 16
+34: PostCall 40
+35: Jump < Empty>
+36: Empty
+37: PreCall 40
+38: Parameter 64 string string_25s0A#
+39: Parameter 72 pointer message
+40: Call 40 printf 8
+41: PostCall 40
+42: Empty
+43: Empty
+44: Return
+45: FunctionEnd main

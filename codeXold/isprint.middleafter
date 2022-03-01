@@ -1,0 +1,13 @@
+0: PreCall 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 52 signed int c
+2: Call 28 isgraph 0
+3: PostCall 28
+4: GetReturnValue £temporary233
+5: Equal 9 £temporary233 integral4$0#
+6: Equal 9 c integral4$32#
+7: Assign £temporary237 integral4$1#
+8: Jump 10
+9: Assign £temporary237 integral4$0#
+10: SetReturnValue
+11: Return £temporary237
+12: FunctionEnd isprint

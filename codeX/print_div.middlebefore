@@ -1,11 +1,14 @@
-0: PreCall 10
-1: Parameter 16 pointer "div_t quot %i rem %i\n"
-2: Parameter 18 signedint d.quot
-3: Parameter 20 signedint d.rem
-4: Call 10 printf 4
-5: PostCall 10
-6: BinaryAdd d.quot d.quot 1
-7: BinaryAdd d.rem d.rem 1
-8: Return d
-9: Empty
-10: FunctionEnd print_div
+0: PreCall 32
+1: Parameter 56 string string_div_t20quot2025i20rem2025i0A#
+2: Parameter 64 signed int d.quot
+3: Parameter 68 signed int d.rem
+4: Call 32 printf 8
+5: PostCall 32
+6: Add £temporary5024 d.quot integral4$1#
+7: Assign d.quot £temporary5024
+8: Assign £temporary5025 d.rem
+9: Add £temporary5026 d.rem integral4$1#
+10: Assign d.rem £temporary5026
+11: Return d
+12: Empty
+13: FunctionEnd print_div

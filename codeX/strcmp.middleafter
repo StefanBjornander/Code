@@ -1,32 +1,29 @@
 0: Assign index integral4$0#
-1: IntegralToIntegral £temporary3445 index
-2: Add £temporary3446 left £temporary3445
-3: Dereference £temporary3447 £temporary3446 0
-4: NotEqual 11 £temporary3447 integral1$0#
-5: IntegralToIntegral £temporary3449 index
-6: Add £temporary3450 right £temporary3449
-7: Dereference £temporary3451 £temporary3450 0
-8: NotEqual 11 £temporary3451 integral1$0#
-9: SetReturnValue
-10: Return integral4$0#
-11: IntegralToIntegral £temporary3454 index
-12: Add £temporary3455 left £temporary3454
-13: Dereference £temporary3456 £temporary3455 0
-14: IntegralToIntegral £temporary3457 index
-15: Add £temporary3458 right £temporary3457
-16: Dereference £temporary3459 £temporary3458 0
-17: GreaterThanEqual 20 £temporary3456 £temporary3459
-18: SetReturnValue
-19: Return integral4$minus1#
-20: IntegralToIntegral £temporary3461 index
-21: Add £temporary3462 left £temporary3461
-22: Dereference £temporary3463 £temporary3462 0
-23: IntegralToIntegral £temporary3464 index
-24: Add £temporary3465 right £temporary3464
-25: Dereference £temporary3466 £temporary3465 0
-26: LessThanEqual 29 £temporary3463 £temporary3466
-27: SetReturnValue
-28: Return integral4$1#
-29: Add index index integral4$1#
-30: Jump 1
-31: FunctionEnd strcmp
+1: IntegralToIntegral £temporary3519 index
+2: Add £temporary3520 left £temporary3519
+3: Dereference £temporary3521 £temporary3520 0
+4: NotEqual 10 £temporary3521 integral1$0#
+5: IntegralToIntegral £temporary3524 index
+6: Add £temporary3525 right £temporary3524
+7: Dereference £temporary3526 £temporary3525 0
+8: NotEqual 10 £temporary3526 integral1$0#
+9: Return integral4$0#
+10: IntegralToIntegral £temporary3530 index
+11: Add £temporary3531 left £temporary3530
+12: Dereference £temporary3532 £temporary3531 0
+13: IntegralToIntegral £temporary3534 index
+14: Add £temporary3535 right £temporary3534
+15: Dereference £temporary3536 £temporary3535 0
+16: GreaterThanEqual 18 £temporary3532 £temporary3536
+17: Return integral4$minus1#
+18: IntegralToIntegral £temporary3539 index
+19: Add £temporary3540 left £temporary3539
+20: Dereference £temporary3541 £temporary3540 0
+21: IntegralToIntegral £temporary3543 index
+22: Add £temporary3544 right £temporary3543
+23: Dereference £temporary3545 £temporary3544 0
+24: LessThanEqual 26 £temporary3541 £temporary3545
+25: Return integral4$1#
+26: Add index index integral4$1#
+27: Jump 1
+28: FunctionEnd strcmp

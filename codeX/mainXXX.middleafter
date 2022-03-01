@@ -1,5 +1,5 @@
-0: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-1: Call 24 temp_file 0
-2: PostCall 24
+0: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Call 6 temp_file 0
+2: PostCall 6
 3: Return
 4: FunctionEnd mainXXX

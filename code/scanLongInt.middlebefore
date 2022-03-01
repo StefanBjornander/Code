@@ -1,136 +1,135 @@
-0: Assign longValue integral8$0#
-1: Assign minus integral4$0#
-2: Assign found integral4$0#
-3: PreCall 44
-4: Call 44 scanChar 0
-5: PostCall 44
-6: GetReturnValue £temporary1359
-7: Assign input £temporary1359
+0: Assign longValue integral4$0#
+1: Assign minus integral2$0#
+2: Assign found integral2$0#
+3: PreCall 16
+4: Call 16 scanChar 0
+5: PostCall 16
+6: GetReturnValue £temporary1374
+7: Assign input £temporary1374
 8: Empty
-9: PreCall 45
-10: IntegralToIntegral £temporary1360 input
-11: Parameter 69 signed int £temporary1360
-12: Call 45 isspace 0
-13: PostCall 45
-14: GetReturnValue £temporary1361
-15: NotEqual < PreCall 45> £temporary1361 integral4$0#
+9: PreCall 17
+10: IntegralToIntegral £temporary1375 input
+11: Parameter 23 signed int £temporary1375
+12: Call 17 isspace 0
+13: PostCall 17
+14: GetReturnValue £temporary1376
+15: NotEqual < PreCall 17> £temporary1376 integral2$0#
 16: Jump < Equal < Empty> input integral1$43#>
-17: PreCall 45
-18: Call 45 scanChar 0
-19: PostCall 45
-20: GetReturnValue £temporary1362
-21: Assign input £temporary1362
+17: PreCall 17
+18: Call 17 scanChar 0
+19: PostCall 17
+20: GetReturnValue £temporary1377
+21: Assign input £temporary1377
 22: Empty
 23: Jump < Empty>
 24: Equal < Empty> input integral1$43#
 25: Jump < Empty>
 26: Empty
-27: PreCall 45
-28: Call 45 scanChar 0
-29: PostCall 45
-30: GetReturnValue £temporary1365
-31: Assign input £temporary1365
+27: PreCall 17
+28: Call 17 scanChar 0
+29: PostCall 17
+30: GetReturnValue £temporary1380
+31: Assign input £temporary1380
 32: Jump < Empty>
 33: Empty
 34: Equal < Empty> input integral1$45#
 35: Jump < Empty>
 36: Empty
-37: Assign minus integral4$1#
-38: PreCall 45
-39: Call 45 scanChar 0
-40: PostCall 45
-41: GetReturnValue £temporary1367
-42: Assign input £temporary1367
+37: Assign minus integral2$1#
+38: PreCall 17
+39: Call 17 scanChar 0
+40: PostCall 17
+41: GetReturnValue £temporary1382
+42: Assign input £temporary1382
 43: Jump < Empty>
 44: Empty
 45: Empty
 46: Empty
-47: Equal < Empty> base integral4$0#
+47: Equal < Empty> base integral2$0#
 48: Jump < Empty>
 49: Empty
 50: Equal < Empty> input integral1$48#
 51: Jump < Empty>
 52: Empty
-53: PreCall 45
-54: Call 45 scanChar 0
-55: PostCall 45
-56: GetReturnValue £temporary1374
-57: Assign input £temporary1374
-58: PreCall 45
-59: IntegralToIntegral £temporary1375 input
-60: Parameter 69 signed int £temporary1375
-61: Call 45 tolower 0
-62: PostCall 45
-63: GetReturnValue £temporary1376
-64: Equal < Empty> £temporary1376 integral4$120#
+53: PreCall 17
+54: Call 17 scanChar 0
+55: PostCall 17
+56: GetReturnValue £temporary1389
+57: Assign input £temporary1389
+58: PreCall 17
+59: IntegralToIntegral £temporary1390 input
+60: Parameter 23 signed int £temporary1390
+61: Call 17 tolower 0
+62: PostCall 17
+63: GetReturnValue £temporary1391
+64: Equal < Empty> £temporary1391 integral2$120#
 65: Jump < Empty>
 66: Empty
-67: Assign base integral4$16#
-68: PreCall 45
-69: Call 45 scanChar 0
-70: PostCall 45
-71: GetReturnValue £temporary1378
-72: Assign input £temporary1378
+67: Assign base integral2$16#
+68: PreCall 17
+69: Call 17 scanChar 0
+70: PostCall 17
+71: GetReturnValue £temporary1393
+72: Assign input £temporary1393
 73: Jump < Empty>
 74: Empty
-75: Assign base integral4$8#
+75: Assign base integral2$8#
 76: Empty
 77: Jump < Empty>
 78: Empty
-79: Assign base integral4$10#
+79: Assign base integral2$10#
 80: Empty
 81: Jump < Empty>
 82: Empty
 83: Empty
 84: Empty
-85: PreCall 45
-86: Parameter 69 signed char input
-87: Parameter 70 signed int base
-88: Call 45 isDigitInBase 0
-89: PostCall 45
-90: GetReturnValue £temporary1385
-91: NotEqual < IntegralToIntegral £temporary1387 base> £temporary1385 integral4$0#
-92: Jump < NotEqual < Empty> minus integral4$0#>
-93: IntegralToIntegral £temporary1387 base
-94: Multiply £temporary1386 longValue £temporary1387
-95: Assign longValue £temporary1386
-96: PreCall 45
-97: Parameter 69 signed char input
-98: Call 45 digitToValue 0
-99: PostCall 45
-100: GetReturnValue £temporary1388
-101: IntegralToIntegral £temporary1390 £temporary1388
-102: Add £temporary1389 longValue £temporary1390
-103: Assign longValue £temporary1389
-104: PreCall 45
-105: Call 45 scanChar 0
-106: PostCall 45
-107: GetReturnValue £temporary1391
-108: Assign input £temporary1391
-109: Assign found integral4$1#
+85: PreCall 17
+86: Parameter 23 signed char input
+87: Parameter 24 signed int base
+88: Call 17 isDigitInBase 0
+89: PostCall 17
+90: GetReturnValue £temporary1400
+91: NotEqual < IntegralToIntegral £temporary1402 base> £temporary1400 integral2$0#
+92: Jump < NotEqual < Empty> minus integral2$0#>
+93: IntegralToIntegral £temporary1402 base
+94: Multiply £temporary1401 longValue £temporary1402
+95: Assign longValue £temporary1401
+96: PreCall 17
+97: Parameter 23 signed char input
+98: Call 17 digitToValue 0
+99: PostCall 17
+100: GetReturnValue £temporary1403
+101: IntegralToIntegral £temporary1405 £temporary1403
+102: Add £temporary1404 longValue £temporary1405
+103: Assign longValue £temporary1404
+104: PreCall 17
+105: Call 17 scanChar 0
+106: PostCall 17
+107: GetReturnValue £temporary1406
+108: Assign input £temporary1406
+109: Assign found integral2$1#
 110: Empty
 111: Jump < Empty>
-112: NotEqual < Empty> minus integral4$0#
+112: NotEqual < Empty> minus integral2$0#
 113: Jump < Empty>
 114: Empty
-115: Minus £temporary1393 longValue
-116: Assign longValue £temporary1393
+115: Minus £temporary1408 longValue
+116: Assign longValue £temporary1408
 117: Jump < Empty>
 118: Empty
 119: Empty
-120: NotEqual < Empty> found integral4$0#
+120: NotEqual < Empty> found integral2$0#
 121: Jump < Empty>
 122: Empty
-123: Add £temporary1397 g_inCount integral4$1#
-124: Assign g_inCount £temporary1397
+123: Add £temporary1412 g_inCount integral2$1#
+124: Assign g_inCount £temporary1412
 125: Jump < Empty>
 126: Empty
 127: Empty
-128: PreCall 45
-129: Parameter 69 signed char input
-130: Call 45 unscanChar 0
-131: PostCall 45
-132: SetReturnValue
-133: Return longValue
-134: Empty
-135: FunctionEnd scanLongInt
+128: PreCall 17
+129: Parameter 23 signed char input
+130: Call 17 unscanChar 0
+131: PostCall 17
+132: Return longValue
+133: Empty
+134: FunctionEnd scanLongInt

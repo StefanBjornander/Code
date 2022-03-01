@@ -3,46 +3,50 @@
 2: Parameter 22 double x
 3: Call 16 fabs 0
 4: PostCall 16
-5: GetReturnValue £temporary359
+5: GetReturnValue £temporary523
 6: PopFloat abs_x
 7: PushFloat abs_x
-8: FloatingToIntegral £temporary360 abs_x
-9: IntegralToFloating £temporary361 £temporary360
+8: FloatingToIntegral £temporary524 abs_x
+9: IntegralToFloating £temporary525 £temporary524
 10: PopFloat integral
 11: PushFloat abs_x
 12: PushFloat integral
-13: Subtract £temporary362 abs_x integral
+13: Subtract £temporary526 abs_x integral
 14: PopFloat fractional
-15: NotEqual Dereference £temporary364 p 0 p integral2$0#
-16: Jump Empty
-17: Dereference £temporary364 p 0
-18: PushFloat £temporary364
-19: PopEmpty
-20: PushFloat x
-21: PushFloat floating8$0#
-22: GreaterThan PushFloat integral x floating8$0#
-23: Jump PushFloat integral
-24: PushFloat integral
-25: DecreaseStack
-26: Jump Empty
-27: PushFloat integral
-28: Minus £temporary366 integral
+15: NotEqual < Empty> p integral2$0#
+16: Jump < Empty>
+17: Empty
+18: Dereference £temporary528 p 0
+19: PushFloat £temporary528
+20: PopEmpty
+21: PushFloat x
+22: PushFloat floating8$0#
+23: GreaterThan < Empty> x floating8$0#
+24: Jump < Empty>
+25: Empty
+26: PushFloat integral
+27: DecreaseStack
+28: Jump < Empty>
 29: Empty
-30: PopFloat £temporary364
-31: Jump PushFloat x
+30: PushFloat integral
+31: Minus £temporary530 integral
 32: Empty
-33: Jump PushFloat x
-34: PushFloat x
-35: PushFloat floating8$0#
-36: GreaterThan PushFloat fractional x floating8$0#
-37: Jump PushFloat fractional
-38: PushFloat fractional
-39: DecreaseStack
-40: Jump Empty
-41: PushFloat fractional
-42: Minus £temporary369 fractional
-43: Empty
-44: SetReturnValue
-45: Return £temporary370
-46: Empty
-47: FunctionEnd modf
+33: PopFloat £temporary528
+34: Jump < Empty>
+35: Empty
+36: Empty
+37: PushFloat x
+38: PushFloat floating8$0#
+39: GreaterThan < Empty> x floating8$0#
+40: Jump < Empty>
+41: Empty
+42: PushFloat fractional
+43: DecreaseStack
+44: Jump < Empty>
+45: Empty
+46: PushFloat fractional
+47: Minus £temporary535 fractional
+48: Empty
+49: Return £temporary536
+50: Empty
+51: FunctionEnd modf

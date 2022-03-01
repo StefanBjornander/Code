@@ -1,16 +1,15 @@
-0: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+0: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 1: PushFloat x
-2: Parameter 56 double x
-3: Call 32 sinh 0
-4: PostCall 32
-5: GetReturnValue £temporary736
-6: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
+2: Parameter 20 double x
+3: Call 14 sinh 0
+4: PostCall 14
+5: GetReturnValue £temporary729
+6: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
 7: PushFloat x
-8: Parameter 56 double x
-9: Call 32 cosh 0
-10: PostCall 32
-11: GetReturnValue £temporary737
-12: Divide £temporary738 £temporary736 £temporary737
-13: SetReturnValue
-14: Return £temporary738
-15: FunctionEnd tanh
+8: Parameter 20 double x
+9: Call 14 cosh 0
+10: PostCall 14
+11: GetReturnValue £temporary730
+12: Divide £temporary731 £temporary729 £temporary730
+13: Return £temporary731
+14: FunctionEnd tanh

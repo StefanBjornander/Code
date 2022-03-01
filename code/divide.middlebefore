@@ -5,20 +5,18 @@
 4: Empty
 5: PushFloat x
 6: PushFloat y
-7: Divide £temporary4010 x y
-8: SetReturnValue
-9: Return £temporary4010
-10: Jump < Empty>
-11: Empty
-12: PreCall 40
-13: Parameter 64 array buffer
-14: IntegralToIntegral £temporary4011 string_Division20by20Zero2E#
-15: Parameter 72 signed int £temporary4011
-16: Call 40 longjmp 0
-17: PostCall 40
-18: PushFloat floating8$0#
-19: SetReturnValue
-20: Return floating8$0#
-21: Empty
-22: Empty
-23: FunctionEnd divide
+7: Divide £temporary4136 x y
+8: Return £temporary4136
+9: Jump < Empty>
+10: Empty
+11: PreCall 40
+12: Parameter 64 array buffer
+13: IntegralToIntegral £temporary4137 string_Division20by20Zero2E#
+14: Parameter 72 signed int £temporary4137
+15: Call 40 longjmp 0
+16: PostCall 40
+17: PushFloat floating8$0#
+18: Return floating8$0#
+19: Empty
+20: Empty
+21: FunctionEnd divide

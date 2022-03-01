@@ -1,23 +1,21 @@
 0: Assign index integral4$0#
-1: IntegralToIntegral £temporary3538 index
-2: Add £temporary3539 mainString £temporary3538
-3: Dereference £temporary3540 £temporary3539 0
-4: Equal 20 £temporary3540 integral1$0#
+1: IntegralToIntegral £temporary3630 index
+2: Add £temporary3631 mainString £temporary3630
+3: Dereference £temporary3632 £temporary3631 0
+4: Equal 19 £temporary3632 integral1$0#
 5: PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 6: Parameter 68 pointer charSet
-7: IntegralToIntegral £temporary3543 index
-8: Add £temporary3544 mainString £temporary3543
-9: Dereference £temporary3545 £temporary3544 0
-10: IntegralToIntegral £temporary3546 £temporary3545
-11: Parameter 76 signed int £temporary3546
+7: IntegralToIntegral £temporary3636 index
+8: Add £temporary3637 mainString £temporary3636
+9: Dereference £temporary3638 £temporary3637 0
+10: IntegralToIntegral £temporary3639 £temporary3638
+11: Parameter 76 signed int £temporary3639
 12: Call 44 strchr 0
 13: PostCall 44
-14: GetReturnValue £temporary3547
-15: NotEqual 18 £temporary3547 integral8$0#
-16: SetReturnValue
-17: Return index
-18: Add index index integral4$1#
-19: Jump 1
-20: SetReturnValue
-21: Return integral4$minus1#
-22: FunctionEnd strspn
+14: GetReturnValue £temporary3640
+15: NotEqual 17 £temporary3640 integral8$0#
+16: Return index
+17: Add index index integral4$1#
+18: Jump 1
+19: Return integral4$minus1#
+20: FunctionEnd strspn

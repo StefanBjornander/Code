@@ -1,9 +1,9 @@
 0: PreCall 24
 1: Parameter 48 string string_25i20#
-2: Assign £temporary4815 i
-3: Add £temporary4816 i integral4$1#
-4: Assign i £temporary4816
-5: Parameter 56 signed int £temporary4815
+2: Assign £temporary4941 i
+3: Add £temporary4942 i integral4$1#
+4: Assign i £temporary4942
+5: Parameter 56 signed int £temporary4941
 6: Call 24 printf 4
 7: PostCall 24
 8: PreCall 24

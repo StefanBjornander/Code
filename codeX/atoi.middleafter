@@ -4,8 +4,7 @@
 3: Parameter 72 signed int integral4$10#
 4: Call 32 strtol 0
 5: PostCall 32
-6: GetReturnValue £temporary2273
-7: IntegralToIntegral £temporary2274 £temporary2273
-8: SetReturnValue
-9: Return £temporary2274
-10: FunctionEnd atoi
+6: GetReturnValue £temporary2314
+7: IntegralToIntegral £temporary2315 £temporary2314
+8: Return £temporary2315
+9: FunctionEnd atoi

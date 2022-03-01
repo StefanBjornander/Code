@@ -5,12 +5,11 @@
 4: Parameter 68 signed int base
 5: Call 44 scanLongInt 0
 6: PostCall 44
-7: GetReturnValue £temporary2276
-8: Assign value £temporary2276
+7: GetReturnValue £temporary2317
+8: Assign value £temporary2317
 9: Equal 13 endp integral8$0#
-10: Dereference £temporary2278 endp 0
-11: IntegralToIntegral £temporary2279 g_inChars
-12: Add £temporary2278 s £temporary2279
-13: SetReturnValue
-14: Return value
-15: FunctionEnd strtol
+10: Dereference £temporary2319 endp 0
+11: IntegralToIntegral £temporary2321 g_inChars
+12: Add £temporary2319 s £temporary2321
+13: Return value
+14: FunctionEnd strtol

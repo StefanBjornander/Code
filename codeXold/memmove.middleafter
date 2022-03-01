@@ -1,0 +1,31 @@
+0: IntegralToIntegral £temporary3691 target
+1: Assign charTarget £temporary3691
+2: IntegralToIntegral £temporary3692 source
+3: Assign charSource £temporary3692
+4: GreaterThanEqual 16 source target
+5: Subtract index size integral4$1#
+6: LessThan 27 index integral4$0#
+7: IntegralToIntegral £temporary3697 index
+8: Add £temporary3698 charTarget £temporary3697
+9: Dereference £temporary3699 £temporary3698 0
+10: IntegralToIntegral £temporary3700 index
+11: Add £temporary3701 charSource £temporary3700
+12: Dereference £temporary3702 £temporary3701 0
+13: Assign £temporary3699 £temporary3702
+14: Subtract index index integral4$1#
+15: Jump 6
+16: Assign index integral4$0#
+17: GreaterThanEqual 27 index size
+18: IntegralToIntegral £temporary3705 index
+19: Add £temporary3706 charTarget £temporary3705
+20: Dereference £temporary3707 £temporary3706 0
+21: IntegralToIntegral £temporary3708 index
+22: Add £temporary3709 charSource £temporary3708
+23: Dereference £temporary3710 £temporary3709 0
+24: Assign £temporary3707 £temporary3710
+25: Add index index integral4$1#
+26: Jump 17
+27: IntegralToIntegral £temporary3713 target
+28: SetReturnValue
+29: Return £temporary3713
+30: FunctionEnd memmove

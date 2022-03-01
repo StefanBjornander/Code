@@ -5,8 +5,8 @@
 4: PostCall 28
 5: PreCall 28
 6: Parameter 52 string string_25i#
-7: Address £temporary3899 n
-8: Parameter 60 pointer £temporary3899
+7: Address £temporary4024 n
+8: Parameter 60 pointer £temporary4024
 9: Call 28 scanf 8
 10: PostCall 28
 11: NotEqual < Empty> n integral4$6#

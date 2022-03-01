@@ -4,13 +4,12 @@
 3: Jump < Empty>
 4: Empty
 5: PushFloat x
-6: Minus £temporary767 x
+6: Minus £temporary760 x
 7: DecreaseStack
 8: Jump < Empty>
 9: Empty
 10: PushFloat x
 11: Empty
-12: SetReturnValue
-13: Return £temporary768
-14: Empty
-15: FunctionEnd fabs
+12: Return £temporary761
+13: Empty
+14: FunctionEnd fabs

@@ -1,29 +1,27 @@
 0: Assign index integral4$0#
 1: Empty
-2: LessThan < Multiply £temporary2912 index integral4$8#> index integral4$256#
-3: Jump < SetReturnValue>
-4: Multiply £temporary2912 index integral4$8#
-5: IntegralToIntegral £temporary2913 £temporary2912
-6: Add £temporary2914 g_funcArray £temporary2913
-7: Dereference £temporary2915 £temporary2914 0
-8: Equal < Empty> £temporary2915 integral8$0#
+2: LessThan < Multiply £temporary2959 index integral4$8#> index integral4$256#
+3: Jump < Return integral4$minus1#>
+4: Multiply £temporary2959 index integral4$8#
+5: IntegralToIntegral £temporary2960 £temporary2959
+6: Add £temporary2961 g_funcArray £temporary2960
+7: Dereference £temporary2962 £temporary2961 0
+8: Equal < Empty> £temporary2962 integral8$0#
 9: Jump < Empty>
 10: Empty
-11: Multiply £temporary2917 index integral4$8#
-12: IntegralToIntegral £temporary2918 £temporary2917
-13: Add £temporary2919 g_funcArray £temporary2918
-14: Dereference £temporary2920 £temporary2919 0
-15: Assign £temporary2920 fcn
-16: SetReturnValue
-17: Return integral4$0#
-18: Jump < Empty>
+11: Multiply £temporary2964 index integral4$8#
+12: IntegralToIntegral £temporary2965 £temporary2964
+13: Add £temporary2966 g_funcArray £temporary2965
+14: Dereference £temporary2967 £temporary2966 0
+15: Assign £temporary2967 fcn
+16: Return integral4$0#
+17: Jump < Empty>
+18: Empty
 19: Empty
 20: Empty
-21: Empty
-22: Add £temporary2911 index integral4$1#
-23: Assign index £temporary2911
-24: Jump < Empty>
-25: SetReturnValue
-26: Return integral4$minus1#
-27: Empty
-28: FunctionEnd atexit
+21: Add £temporary2958 index integral4$1#
+22: Assign index £temporary2958
+23: Jump < Empty>
+24: Return integral4$minus1#
+25: Empty
+26: FunctionEnd atexit

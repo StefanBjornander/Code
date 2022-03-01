@@ -1,359 +1,386 @@
-0: Assign n 0
-1: Address £temporary4080 n
-2: Assign p £temporary4080
-3: PreCall 10
-4: Parameter 16 pointer "<%i> <%i> <%li> <%li> <%u> <%lu>\n\n"
-5: Parameter 18 signedint 123
-6: Parameter 20 signedint -123
-7: Parameter 22 signed long int 123
-8: Parameter 26 signed long int -123
-9: Parameter 30 signedint 123
-10: Parameter 32 signed long int 123
-11: Call 10 printf 18
-12: PostCall 10
-13: PreCall 10
-14: Parameter 16 pointer "<%6i> <%6i> <%6li> <%6li> <%6u> <%6lu>\n"
-15: Parameter 18 signedint 123
-16: Parameter 20 signedint -123
-17: Parameter 22 signed long int 123
-18: Parameter 26 signed long int -123
-19: Parameter 30 signedint 123
-20: Parameter 32 signed long int 123
-21: Call 10 printf 18
-22: PostCall 10
-23: PreCall 10
-24: Parameter 16 pointer "<%+6i> <%+6i> <%+6li> <%+6li> <%+6u> <%+6lu>\n"
-25: Parameter 18 signedint 123
-26: Parameter 20 signedint -123
-27: Parameter 22 signed long int 123
-28: Parameter 26 signed long int -123
-29: Parameter 30 signedint 123
-30: Parameter 32 signed long int 123
-31: Call 10 printf 18
-32: PostCall 10
-33: PreCall 10
-34: Parameter 16 pointer "<%-6i> <%-6i> <%-6li> <%-6li> <%-6u> <%-6lu>\n"
-35: Parameter 18 signedint 123
-36: Parameter 20 signedint -123
-37: Parameter 22 signed long int 123
-38: Parameter 26 signed long int -123
-39: Parameter 30 signedint 123
-40: Parameter 32 signed long int 123
-41: Call 10 printf 18
-42: PostCall 10
-43: PreCall 10
-44: Parameter 16 pointer "<%+-6i> <%+-6i> <%+-6li> <%+-6li> <%+-6u> <%+-6lu>\n\n"
-45: Parameter 18 signedint 123
-46: Parameter 20 signedint -123
-47: Parameter 22 signed long int 123
-48: Parameter 26 signed long int -123
-49: Parameter 30 signedint 123
-50: Parameter 32 signed long int 123
-51: Call 10 printf 18
-52: PostCall 10
-53: PreCall 10
-54: Parameter 16 pointer "<%06i> <%06i> <%06li> <%06li> <%06u> <%06lu>\n"
-55: Parameter 18 signedint 123
-56: Parameter 20 signedint -123
-57: Parameter 22 signed long int 123
-58: Parameter 26 signed long int -123
-59: Parameter 30 signedint 123
-60: Parameter 32 signed long int 123
-61: Call 10 printf 18
-62: PostCall 10
-63: PreCall 10
-64: Parameter 16 pointer "<%+06i> <%+06i> <%+06li> <%+06li> <%+06u> <%+06lu>\n"
-65: Parameter 18 signedint 123
-66: Parameter 20 signedint -123
-67: Parameter 22 signed long int 123
-68: Parameter 26 signed long int -123
-69: Parameter 30 signedint 123
-70: Parameter 32 signed long int 123
-71: Call 10 printf 18
-72: PostCall 10
-73: PreCall 10
-74: Parameter 16 pointer "<%-06i> <%-06i> <%-06li> <%-06li> <%-06u> <%-06lu>\n"
-75: Parameter 18 signedint 123
-76: Parameter 20 signedint -123
-77: Parameter 22 signed long int 123
-78: Parameter 26 signed long int -123
-79: Parameter 30 signedint 123
-80: Parameter 32 signed long int 123
-81: Call 10 printf 18
-82: PostCall 10
-83: PreCall 10
-84: Parameter 16 pointer "<%+-06i> <%+-06i> <%+-06li> <%+-06li> <%+-06u> <%+-06lu>\n\n"
-85: Parameter 18 signedint 123
-86: Parameter 20 signedint -123
-87: Parameter 22 signed long int 123
-88: Parameter 26 signed long int -123
-89: Parameter 30 signedint 123
-90: Parameter 32 signed long int 123
-91: Call 10 printf 18
-92: PostCall 10
-93: PreCall 10
-94: Parameter 16 pointer "<% 6i> <% 6i> <% 6li> <% 6li> <% 6u> <% 6lu>\n"
-95: Parameter 18 signedint 123
-96: Parameter 20 signedint -123
-97: Parameter 22 signed long int 123
-98: Parameter 26 signed long int -123
-99: Parameter 30 signedint 123
-100: Parameter 32 signed long int 123
-101: Call 10 printf 18
-102: PostCall 10
-103: PreCall 10
-104: Parameter 16 pointer "<%+ 6i> <%+ 6i> <%+ 6li> <%+ 6li> <%+ 6u> <%+ 6lu>\n"
-105: Parameter 18 signedint 123
-106: Parameter 20 signedint -123
-107: Parameter 22 signed long int 123
-108: Parameter 26 signed long int -123
-109: Parameter 30 signedint 123
-110: Parameter 32 signed long int 123
-111: Call 10 printf 18
-112: PostCall 10
-113: PreCall 10
-114: Parameter 16 pointer "<%- 6i> <%- 6i> <%- 6li> <%- 6li> <%- 6u> <%- 6lu>\n"
-115: Parameter 18 signedint 123
-116: Parameter 20 signedint -123
-117: Parameter 22 signed long int 123
-118: Parameter 26 signed long int -123
-119: Parameter 30 signedint 123
-120: Parameter 32 signed long int 123
-121: Call 10 printf 18
-122: PostCall 10
-123: PreCall 10
-124: Parameter 16 pointer "<%+- 6i> <%+- 6i> <%+- 6li> <%+- 6li> <%+- 6u> <%+- 6lu>\n\n"
-125: Parameter 18 signedint 123
-126: Parameter 20 signedint -123
-127: Parameter 22 signed long int 123
-128: Parameter 26 signed long int -123
-129: Parameter 30 signedint 123
-130: Parameter 32 signed long int 123
-131: Call 10 printf 18
-132: PostCall 10
-133: PreCall 10
-134: Parameter 16 pointer "<%x> <%X> <%o> <%lx> <%lX> <%lo>\n"
-135: Parameter 18 signedint 123
-136: Parameter 20 signedint 123
-137: Parameter 22 signedint 123
-138: Parameter 24 signed long int 123
-139: Parameter 28 signed long int 123
-140: Parameter 32 signed long int 123
-141: Call 10 printf 18
-142: PostCall 10
-143: PreCall 10
-144: Parameter 16 pointer "<%#x> <%#X> <%#o> <%#lx> <%#lX> <%#lo>\n"
-145: Parameter 18 signedint 123
-146: Parameter 20 signedint 123
-147: Parameter 22 signedint 123
-148: Parameter 24 signed long int 123
-149: Parameter 28 signed long int 123
-150: Parameter 32 signed long int 123
-151: Call 10 printf 18
-152: PostCall 10
-153: PreCall 10
-154: Parameter 16 pointer "<%%> <%s> <%c> <%p>\n\n"
-155: Parameter 18 pointer "Hello, World!"
-156: Parameter 20 signedint 88
-157: Parameter 22 pointer p
-158: Call 10 printf 6
-159: PostCall 10
-160: PreCall 10
-161: Parameter 16 pointer "<%f> <%e> <%E> <%g> <%G>\n"
-162: PushFloat 123.456
-163: Parameter 18 double 123.456
-164: PushFloat 123.456
-165: Parameter 26 double 123.456
-166: PushFloat 123.456
-167: Parameter 34 double 123.456
-168: PushFloat 123456.1
-169: Parameter 42 double 123456.1
-170: PushFloat 123456.1
-171: Parameter 50 double 123456.1
-172: Call 10 printf 40
-173: PostCall 10
-174: PreCall 10
-175: Parameter 16 pointer "<%lf> <%le> <%lE> <%lg> <%lG>\n"
-176: PushFloat 123.456
-177: Parameter 18 longdouble 123.456
-178: PushFloat 123.456
-179: Parameter 26 longdouble 123.456
-180: PushFloat 123.456
-181: Parameter 34 longdouble 123.456
-182: PushFloat 123456.1
-183: Parameter 42 longdouble 123456.1
-184: PushFloat 123456.1
-185: Parameter 50 longdouble 123456.1
-186: Call 10 printf 40
-187: PostCall 10
-188: PreCall 10
-189: Parameter 16 pointer "<%#f> <%#e> <%#E> <%#g> <%#G>\n"
-190: PushFloat 123.456
-191: Parameter 18 double 123.456
-192: PushFloat 123.456
-193: Parameter 26 double 123.456
-194: PushFloat 123.456
-195: Parameter 34 double 123.456
-196: PushFloat 123.456
-197: Parameter 42 double 123.456
-198: PushFloat 123.456
-199: Parameter 50 double 123.456
-200: Call 10 printf 40
-201: PostCall 10
-202: PreCall 10
-203: Parameter 16 pointer "<%#lf> <%#le> <%#lE> <%#lg> <%#lG>\n"
-204: PushFloat 123.456
-205: Parameter 18 longdouble 123.456
-206: PushFloat 123.456
-207: Parameter 26 longdouble 123.456
-208: PushFloat 123.456
-209: Parameter 34 longdouble 123.456
-210: PushFloat 123.456
-211: Parameter 42 longdouble 123.456
-212: PushFloat 123.456
-213: Parameter 50 longdouble 123.456
-214: Call 10 printf 40
-215: PostCall 10
-216: PreCall 10
-217: Parameter 16 pointer "<%6.3f> <%6.3e> <%6.3E> <%6.3g> <%6.3G>\n"
-218: PushFloat 123.456
-219: Parameter 18 double 123.456
-220: PushFloat 123.456
-221: Parameter 26 double 123.456
-222: PushFloat 123.456
-223: Parameter 34 double 123.456
-224: PushFloat 123.456
-225: Parameter 42 double 123.456
-226: PushFloat 123.456
-227: Parameter 50 double 123.456
-228: Call 10 printf 40
-229: PostCall 10
-230: PreCall 10
-231: Parameter 16 pointer "<%6.3lf> <%6.3le> <%6.3lE> <%6.3lg> <%6.3lG>\n\n"
-232: PushFloat 123.456
-233: Parameter 18 longdouble 123.456
-234: PushFloat 123.456
-235: Parameter 26 longdouble 123.456
-236: PushFloat 123.456
-237: Parameter 34 longdouble 123.456
-238: PushFloat 123.456
-239: Parameter 42 longdouble 123.456
-240: PushFloat 123.456
-241: Parameter 50 longdouble 123.456
-242: Call 10 printf 40
-243: PostCall 10
-244: PreCall 10
-245: Parameter 16 pointer "<%f> <%e> <%E> <%g> <%G>\n"
-246: PushFloat -123.456
-247: Parameter 18 double -123.456
-248: PushFloat -123.456
-249: Parameter 26 double -123.456
-250: PushFloat -123.456
-251: Parameter 34 double -123.456
-252: PushFloat -0.000000123456
-253: Parameter 42 double -0.000000123456
-254: PushFloat -0.000000123456
-255: Parameter 50 double -0.000000123456
-256: Call 10 printf 40
-257: PostCall 10
-258: PreCall 10
-259: Parameter 16 pointer "<%lf> <%le> <%lE> <%lg> <%lG>\n"
-260: PushFloat -123.456
-261: Parameter 18 longdouble -123.456
-262: PushFloat -123.456
-263: Parameter 26 longdouble -123.456
-264: PushFloat -123.456
-265: Parameter 34 longdouble -123.456
-266: PushFloat -0.000000123456
-267: Parameter 42 longdouble -0.000000123456
-268: PushFloat -0.000000123456
-269: Parameter 50 longdouble -0.000000123456
-270: Call 10 printf 40
-271: PostCall 10
-272: PreCall 10
-273: Parameter 16 pointer "<%#f> <%#e> <%#E> <%#g> <%#G>\n"
-274: PushFloat -123.456
-275: Parameter 18 double -123.456
-276: PushFloat -123.456
-277: Parameter 26 double -123.456
-278: PushFloat -123.456
-279: Parameter 34 double -123.456
-280: PushFloat -123.456
-281: Parameter 42 double -123.456
-282: PushFloat -123.456
-283: Parameter 50 double -123.456
-284: Call 10 printf 40
-285: PostCall 10
-286: PreCall 10
-287: Parameter 16 pointer "<%#lf> <%#le> <%#lE> <%#lg> <%#lG>\n"
-288: PushFloat -123.456
-289: Parameter 18 longdouble -123.456
-290: PushFloat -123.456
-291: Parameter 26 longdouble -123.456
-292: PushFloat -123.456
-293: Parameter 34 longdouble -123.456
-294: PushFloat -123.456
-295: Parameter 42 longdouble -123.456
-296: PushFloat -123.456
-297: Parameter 50 longdouble -123.456
-298: Call 10 printf 40
-299: PostCall 10
-300: PreCall 10
-301: Parameter 16 pointer "<%6.3f> <%6.3e> <%6.3E> <%6.3g> <%6.3G>\n"
-302: PushFloat -123.456
-303: Parameter 18 double -123.456
-304: PushFloat -123.456
-305: Parameter 26 double -123.456
-306: PushFloat -123.456
-307: Parameter 34 double -123.456
-308: PushFloat -123.456
-309: Parameter 42 double -123.456
-310: PushFloat -123.456
-311: Parameter 50 double -123.456
-312: Call 10 printf 40
-313: PostCall 10
-314: PreCall 10
-315: Parameter 16 pointer "<%6.3lf> <%6.3le> <%6.3lE> <%6.3lg> <%6.3lG>\n\n"
-316: PushFloat -123.456
-317: Parameter 18 longdouble -123.456
-318: PushFloat -123.456
-319: Parameter 26 longdouble -123.456
-320: PushFloat -123.456
-321: Parameter 34 longdouble -123.456
-322: PushFloat -123.456
-323: Parameter 42 longdouble -123.456
-324: PushFloat -123.456
-325: Parameter 50 longdouble -123.456
-326: Call 10 printf 40
-327: PostCall 10
-328: PreCall 106
-329: Parameter 112 pointer "Please write the patterns [abc]: "
-330: Call 106 printf 0
-331: PostCall 106
-332: PreCall 106
-333: Parameter 112 pointer "%[abc]"
-334: Parameter 114 pointer s
-335: Call 106 scanf 2
-336: PostCall 106
-337: PreCall 106
-338: Parameter 112 pointer "\n<%s>\n"
-339: Parameter 114 pointer s
-340: Call 106 printf 2
-341: PostCall 106
-342: PreCall 106
-343: Parameter 112 pointer "Please write the patterns [^abc]: "
-344: Call 106 printf 0
-345: PostCall 106
-346: PreCall 106
-347: Parameter 112 pointer "%[^abc]"
-348: Parameter 114 pointer s
-349: Call 106 scanf 2
-350: PostCall 106
-351: PreCall 106
-352: Parameter 112 pointer "\n<%s>"
-353: Parameter 114 pointer s
-354: Call 106 printf 2
-355: PostCall 106
-356: Empty
-357: Return
-358: FunctionEnd stdio_test
+0: Assign n integral4$0#
+1: Address £temporary4826 n
+2: Assign p £temporary4826
+3: PreCall 36
+4: Parameter 60 string string_3C25i3E203C25i3E203C25li3E203C25li3E203C25u3E203C25lu3E0A0A#
+5: Parameter 68 signed int integral4$123#
+6: Parameter 72 signed int integral4$minus123#
+7: Parameter 76 signed long int integral8$123#
+8: Parameter 84 signed long int integral8$minus123#
+9: Parameter 92 signed int integral4$123#
+10: Parameter 96 signed long int integral8$123#
+11: Call 36 printf 36
+12: PostCall 36
+13: PreCall 36
+14: Parameter 60 string string_3C256i3E203C256i3E203C256li3E203C256li3E203C256u3E203C256lu3E0A#
+15: Parameter 68 signed int integral4$123#
+16: Parameter 72 signed int integral4$minus123#
+17: Parameter 76 signed long int integral8$123#
+18: Parameter 84 signed long int integral8$minus123#
+19: Parameter 92 signed int integral4$123#
+20: Parameter 96 signed long int integral8$123#
+21: Call 36 printf 36
+22: PostCall 36
+23: PreCall 36
+24: Parameter 60 string string_3C252B6i3E203C252B6i3E203C252B6li3E203C252B6li3E203C252B6u3E203C252B6lu3E0A#
+25: Parameter 68 signed int integral4$123#
+26: Parameter 72 signed int integral4$minus123#
+27: Parameter 76 signed long int integral8$123#
+28: Parameter 84 signed long int integral8$minus123#
+29: Parameter 92 signed int integral4$123#
+30: Parameter 96 signed long int integral8$123#
+31: Call 36 printf 36
+32: PostCall 36
+33: PreCall 36
+34: Parameter 60 string string_3C252D6i3E203C252D6i3E203C252D6li3E203C252D6li3E203C252D6u3E203C252D6lu3E0A#
+35: Parameter 68 signed int integral4$123#
+36: Parameter 72 signed int integral4$minus123#
+37: Parameter 76 signed long int integral8$123#
+38: Parameter 84 signed long int integral8$minus123#
+39: Parameter 92 signed int integral4$123#
+40: Parameter 96 signed long int integral8$123#
+41: Call 36 printf 36
+42: PostCall 36
+43: PreCall 36
+44: Parameter 60 string string_3C252B2D6i3E203C252B2D6i3E203C252B2D6li3E203C252B2D6li3E203C252B2D6u3E203C252B2D6lu3E0A0A#
+45: Parameter 68 signed int integral4$123#
+46: Parameter 72 signed int integral4$minus123#
+47: Parameter 76 signed long int integral8$123#
+48: Parameter 84 signed long int integral8$minus123#
+49: Parameter 92 signed int integral4$123#
+50: Parameter 96 signed long int integral8$123#
+51: Call 36 printf 36
+52: PostCall 36
+53: PreCall 36
+54: Parameter 60 string string_3C2506i3E203C2506i3E203C2506li3E203C2506li3E203C2506u3E203C2506lu3E0A#
+55: Parameter 68 signed int integral4$123#
+56: Parameter 72 signed int integral4$minus123#
+57: Parameter 76 signed long int integral8$123#
+58: Parameter 84 signed long int integral8$minus123#
+59: Parameter 92 signed int integral4$123#
+60: Parameter 96 signed long int integral8$123#
+61: Call 36 printf 36
+62: PostCall 36
+63: PreCall 36
+64: Parameter 60 string string_3C252B06i3E203C252B06i3E203C252B06li3E203C252B06li3E203C252B06u3E203C252B06lu3E0A#
+65: Parameter 68 signed int integral4$123#
+66: Parameter 72 signed int integral4$minus123#
+67: Parameter 76 signed long int integral8$123#
+68: Parameter 84 signed long int integral8$minus123#
+69: Parameter 92 signed int integral4$123#
+70: Parameter 96 signed long int integral8$123#
+71: Call 36 printf 36
+72: PostCall 36
+73: PreCall 36
+74: Parameter 60 string string_3C252D06i3E203C252D06i3E203C252D06li3E203C252D06li3E203C252D06u3E203C252D06lu3E0A#
+75: Parameter 68 signed int integral4$123#
+76: Parameter 72 signed int integral4$minus123#
+77: Parameter 76 signed long int integral8$123#
+78: Parameter 84 signed long int integral8$minus123#
+79: Parameter 92 signed int integral4$123#
+80: Parameter 96 signed long int integral8$123#
+81: Call 36 printf 36
+82: PostCall 36
+83: PreCall 36
+84: Parameter 60 string string_3C252B2D06i3E203C252B2D06i3E203C252B2D06li3E203C252B2D06li3E203C252B2D06u3E203C252B2D06lu3E0A0A#
+85: Parameter 68 signed int integral4$123#
+86: Parameter 72 signed int integral4$minus123#
+87: Parameter 76 signed long int integral8$123#
+88: Parameter 84 signed long int integral8$minus123#
+89: Parameter 92 signed int integral4$123#
+90: Parameter 96 signed long int integral8$123#
+91: Call 36 printf 36
+92: PostCall 36
+93: PreCall 36
+94: Parameter 60 string string_3C25206i3E203C25206i3E203C25206li3E203C25206li3E203C25206u3E203C25206lu3E0A#
+95: Parameter 68 signed int integral4$123#
+96: Parameter 72 signed int integral4$minus123#
+97: Parameter 76 signed long int integral8$123#
+98: Parameter 84 signed long int integral8$minus123#
+99: Parameter 92 signed int integral4$123#
+100: Parameter 96 signed long int integral8$123#
+101: Call 36 printf 36
+102: PostCall 36
+103: PreCall 36
+104: Parameter 60 string string_3C252B206i3E203C252B206i3E203C252B206li3E203C252B206li3E203C252B206u3E203C252B206lu3E0A#
+105: Parameter 68 signed int integral4$123#
+106: Parameter 72 signed int integral4$minus123#
+107: Parameter 76 signed long int integral8$123#
+108: Parameter 84 signed long int integral8$minus123#
+109: Parameter 92 signed int integral4$123#
+110: Parameter 96 signed long int integral8$123#
+111: Call 36 printf 36
+112: PostCall 36
+113: PreCall 36
+114: Parameter 60 string string_3C252D206i3E203C252D206i3E203C252D206li3E203C252D206li3E203C252D206u3E203C252D206lu3E0A#
+115: Parameter 68 signed int integral4$123#
+116: Parameter 72 signed int integral4$minus123#
+117: Parameter 76 signed long int integral8$123#
+118: Parameter 84 signed long int integral8$minus123#
+119: Parameter 92 signed int integral4$123#
+120: Parameter 96 signed long int integral8$123#
+121: Call 36 printf 36
+122: PostCall 36
+123: PreCall 36
+124: Parameter 60 string string_3C252B2D206i3E203C252B2D206i3E203C252B2D206li3E203C252B2D206li3E203C252B2D206u3E203C252B2D206lu3E0A0A#
+125: Parameter 68 signed int integral4$123#
+126: Parameter 72 signed int integral4$minus123#
+127: Parameter 76 signed long int integral8$123#
+128: Parameter 84 signed long int integral8$minus123#
+129: Parameter 92 signed int integral4$123#
+130: Parameter 96 signed long int integral8$123#
+131: Call 36 printf 36
+132: PostCall 36
+133: PreCall 36
+134: Parameter 60 string string_3C25x3E203C25X3E203C25o3E203C25lx3E203C25lX3E203C25lo3E0A#
+135: Parameter 68 signed int integral4$123#
+136: Parameter 72 signed int integral4$123#
+137: Parameter 76 signed int integral4$123#
+138: Parameter 80 signed long int integral8$123#
+139: Parameter 88 signed long int integral8$123#
+140: Parameter 96 signed long int integral8$123#
+141: Call 36 printf 36
+142: PostCall 36
+143: PreCall 36
+144: Parameter 60 string string_3C2523x3E203C2523X3E203C2523o3E203C2523lx3E203C2523lX3E203C2523lo3E0A#
+145: Parameter 68 signed int integral4$123#
+146: Parameter 72 signed int integral4$123#
+147: Parameter 76 signed int integral4$123#
+148: Parameter 80 signed long int integral8$123#
+149: Parameter 88 signed long int integral8$123#
+150: Parameter 96 signed long int integral8$123#
+151: Call 36 printf 36
+152: PostCall 36
+153: PreCall 36
+154: Parameter 60 string string_3C25253E203C25s3E203C25c3E203C25p3E0A0A#
+155: Parameter 68 string string_Hello2C20World21#
+156: Parameter 76 signed int integral4$88#
+157: Parameter 80 pointer p
+158: Call 36 printf 20
+159: PostCall 36
+160: PreCall 36
+161: Parameter 60 string string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#
+162: PushFloat floating8$123.456#
+163: Parameter 68 double floating8$123.456#
+164: PushFloat floating8$123.456#
+165: Parameter 76 double floating8$123.456#
+166: PushFloat floating8$123.456#
+167: Parameter 84 double floating8$123.456#
+168: PushFloat floating8$123456.1#
+169: Parameter 92 double floating8$123456.1#
+170: PushFloat floating8$123456.1#
+171: Parameter 100 double floating8$123456.1#
+172: Call 36 printf 40
+173: PostCall 36
+174: PreCall 36
+175: Parameter 60 string string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#
+176: PushFloat floating8$123.456#
+177: Parameter 68 long double floating8$123.456#
+178: PushFloat floating8$123.456#
+179: Parameter 76 long double floating8$123.456#
+180: PushFloat floating8$123.456#
+181: Parameter 84 long double floating8$123.456#
+182: PushFloat floating8$123456.1#
+183: Parameter 92 long double floating8$123456.1#
+184: PushFloat floating8$123456.1#
+185: Parameter 100 long double floating8$123456.1#
+186: Call 36 printf 40
+187: PostCall 36
+188: PreCall 36
+189: Parameter 60 string string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#
+190: PushFloat floating8$123.456#
+191: Parameter 68 double floating8$123.456#
+192: PushFloat floating8$123.456#
+193: Parameter 76 double floating8$123.456#
+194: PushFloat floating8$123.456#
+195: Parameter 84 double floating8$123.456#
+196: PushFloat floating8$123.456#
+197: Parameter 92 double floating8$123.456#
+198: PushFloat floating8$123.456#
+199: Parameter 100 double floating8$123.456#
+200: Call 36 printf 40
+201: PostCall 36
+202: PreCall 36
+203: Parameter 60 string string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#
+204: PushFloat floating8$123.456#
+205: Parameter 68 long double floating8$123.456#
+206: PushFloat floating8$123.456#
+207: Parameter 76 long double floating8$123.456#
+208: PushFloat floating8$123.456#
+209: Parameter 84 long double floating8$123.456#
+210: PushFloat floating8$123.456#
+211: Parameter 92 long double floating8$123.456#
+212: PushFloat floating8$123.456#
+213: Parameter 100 long double floating8$123.456#
+214: Call 36 printf 40
+215: PostCall 36
+216: PreCall 36
+217: Parameter 60 string string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#
+218: PushFloat floating8$123.456#
+219: Parameter 68 double floating8$123.456#
+220: PushFloat floating8$123.456#
+221: Parameter 76 double floating8$123.456#
+222: PushFloat floating8$123.456#
+223: Parameter 84 double floating8$123.456#
+224: PushFloat floating8$123.456#
+225: Parameter 92 double floating8$123.456#
+226: PushFloat floating8$123.456#
+227: Parameter 100 double floating8$123.456#
+228: Call 36 printf 40
+229: PostCall 36
+230: PreCall 36
+231: Parameter 60 string string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#
+232: PushFloat floating8$123.456#
+233: Parameter 68 long double floating8$123.456#
+234: PushFloat floating8$123.456#
+235: Parameter 76 long double floating8$123.456#
+236: PushFloat floating8$123.456#
+237: Parameter 84 long double floating8$123.456#
+238: PushFloat floating8$123.456#
+239: Parameter 92 long double floating8$123.456#
+240: PushFloat floating8$123.456#
+241: Parameter 100 long double floating8$123.456#
+242: Call 36 printf 40
+243: PostCall 36
+244: PreCall 36
+245: Parameter 60 string string_3C25f3E203C25e3E203C25E3E203C25g3E203C25G3E0A#
+246: PushFloat floating8$minus123.456#
+247: Parameter 68 double floating8$minus123.456#
+248: PushFloat floating8$minus123.456#
+249: Parameter 76 double floating8$minus123.456#
+250: PushFloat floating8$minus123.456#
+251: Parameter 84 double floating8$minus123.456#
+252: PushFloat floating8$minus0.000000123456#
+253: Parameter 92 double floating8$minus0.000000123456#
+254: PushFloat floating8$minus0.000000123456#
+255: Parameter 100 double floating8$minus0.000000123456#
+256: Call 36 printf 40
+257: PostCall 36
+258: PreCall 36
+259: Parameter 60 string string_3C25lf3E203C25le3E203C25lE3E203C25lg3E203C25lG3E0A#
+260: PushFloat floating8$minus123.456#
+261: Parameter 68 long double floating8$minus123.456#
+262: PushFloat floating8$minus123.456#
+263: Parameter 76 long double floating8$minus123.456#
+264: PushFloat floating8$minus123.456#
+265: Parameter 84 long double floating8$minus123.456#
+266: PushFloat floating8$minus0.000000123456#
+267: Parameter 92 long double floating8$minus0.000000123456#
+268: PushFloat floating8$minus0.000000123456#
+269: Parameter 100 long double floating8$minus0.000000123456#
+270: Call 36 printf 40
+271: PostCall 36
+272: PreCall 36
+273: Parameter 60 string string_3C2523f3E203C2523e3E203C2523E3E203C2523g3E203C2523G3E0A#
+274: PushFloat floating8$minus123.456#
+275: Parameter 68 double floating8$minus123.456#
+276: PushFloat floating8$minus123.456#
+277: Parameter 76 double floating8$minus123.456#
+278: PushFloat floating8$minus123.456#
+279: Parameter 84 double floating8$minus123.456#
+280: PushFloat floating8$minus123.456#
+281: Parameter 92 double floating8$minus123.456#
+282: PushFloat floating8$minus123.456#
+283: Parameter 100 double floating8$minus123.456#
+284: Call 36 printf 40
+285: PostCall 36
+286: PreCall 36
+287: Parameter 60 string string_3C2523lf3E203C2523le3E203C2523lE3E203C2523lg3E203C2523lG3E0A#
+288: PushFloat floating8$minus123.456#
+289: Parameter 68 long double floating8$minus123.456#
+290: PushFloat floating8$minus123.456#
+291: Parameter 76 long double floating8$minus123.456#
+292: PushFloat floating8$minus123.456#
+293: Parameter 84 long double floating8$minus123.456#
+294: PushFloat floating8$minus123.456#
+295: Parameter 92 long double floating8$minus123.456#
+296: PushFloat floating8$minus123.456#
+297: Parameter 100 long double floating8$minus123.456#
+298: Call 36 printf 40
+299: PostCall 36
+300: PreCall 36
+301: Parameter 60 string string_3C2562E3f3E203C2562E3e3E203C2562E3E3E203C2562E3g3E203C2562E3G3E0A#
+302: PushFloat floating8$minus123.456#
+303: Parameter 68 double floating8$minus123.456#
+304: PushFloat floating8$minus123.456#
+305: Parameter 76 double floating8$minus123.456#
+306: PushFloat floating8$minus123.456#
+307: Parameter 84 double floating8$minus123.456#
+308: PushFloat floating8$minus123.456#
+309: Parameter 92 double floating8$minus123.456#
+310: PushFloat floating8$minus123.456#
+311: Parameter 100 double floating8$minus123.456#
+312: Call 36 printf 40
+313: PostCall 36
+314: PreCall 36
+315: Parameter 60 string string_3C2562E3lf3E203C2562E3le3E203C2562E3lE3E203C2562E3lg3E203C2562E3lG3E0A0A#
+316: PushFloat floating8$minus123.456#
+317: Parameter 68 long double floating8$minus123.456#
+318: PushFloat floating8$minus123.456#
+319: Parameter 76 long double floating8$minus123.456#
+320: PushFloat floating8$minus123.456#
+321: Parameter 84 long double floating8$minus123.456#
+322: PushFloat floating8$minus123.456#
+323: Parameter 92 long double floating8$minus123.456#
+324: PushFloat floating8$minus123.456#
+325: Parameter 100 long double floating8$minus123.456#
+326: Call 36 printf 40
+327: PostCall 36
+328: Assign a integral4$0#
+329: Assign b integral4$0#
+330: Assign n integral4$0#
+331: PreCall 36
+332: Parameter 60 string string_Please20write20three20integers3A20#
+333: Call 36 printf 0
+334: PostCall 36
+335: PreCall 36
+336: Parameter 60 string string_1232045620789#
+337: Parameter 68 string string_25i20252Ai2025i2025n#
+338: Address £temporary4856 a
+339: Parameter 76 pointer £temporary4856
+340: Address £temporary4857 b
+341: Parameter 84 pointer £temporary4857
+342: Address £temporary4858 n
+343: Parameter 92 pointer £temporary4858
+344: Call 36 sscanf 24
+345: PostCall 36
+346: PreCall 36
+347: Parameter 60 string string_3C25i3E203C25i3E203C25i3E0A#
+348: Parameter 68 signed int a
+349: Parameter 72 signed int b
+350: Parameter 76 signed int n
+351: Call 36 printf 12
+352: PostCall 36
+353: PreCall 124
+354: Parameter 148 string string_Please20write20the20patterns205Babc5D3A20#
+355: Call 124 printf 0
+356: PostCall 124
+357: PreCall 124
+358: Parameter 148 string string_abcdef#
+359: Parameter 156 string string_255Babc5D#
+360: Parameter 164 array s
+361: Call 124 sscanf 8
+362: PostCall 124
+363: PreCall 124
+364: Parameter 148 string string_3C25s3E0A#
+365: Parameter 156 array s
+366: Call 124 printf 8
+367: PostCall 124
+368: PreCall 124
+369: Parameter 148 string string_Please20write20the20patterns205B5Eabc5D3A20#
+370: Call 124 printf 0
+371: PostCall 124
+372: PreCall 124
+373: Parameter 148 string string_defabc#
+374: Parameter 156 string string_255B5Eabc5D#
+375: Parameter 164 array s
+376: Call 124 sscanf 8
+377: PostCall 124
+378: PreCall 124
+379: Parameter 148 string string_3C25s3E0A0A#
+380: Parameter 156 array s
+381: Call 124 printf 8
+382: PostCall 124
+383: Empty
+384: Return
+385: FunctionEnd stdio_test

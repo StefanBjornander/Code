@@ -13,8 +13,8 @@
 12: Parameter 96 double x
 13: Call 72 sin 0
 14: PostCall 72
-15: GetReturnValue £temporary4128
-16: Parameter 72 double £temporary4128
+15: GetReturnValue £temporary4254
+16: Parameter 72 double £temporary4254
 17: Parameter 80 signed int errno
 18: Call 32 printf 20
 19: PostCall 32
@@ -28,8 +28,8 @@
 27: Parameter 96 double x
 28: Call 72 cos 0
 29: PostCall 72
-30: GetReturnValue £temporary4130
-31: Parameter 72 double £temporary4130
+30: GetReturnValue £temporary4256
+31: Parameter 72 double £temporary4256
 32: Parameter 80 signed int errno
 33: Call 32 printf 20
 34: PostCall 32
@@ -43,8 +43,8 @@
 42: Parameter 96 double x
 43: Call 72 tan 0
 44: PostCall 72
-45: GetReturnValue £temporary4132
-46: Parameter 72 double £temporary4132
+45: GetReturnValue £temporary4258
+46: Parameter 72 double £temporary4258
 47: Parameter 80 signed int errno
 48: Call 32 printf 20
 49: PostCall 32
@@ -58,8 +58,8 @@
 57: Parameter 96 double x
 58: Call 72 asin 0
 59: PostCall 72
-60: GetReturnValue £temporary4134
-61: Parameter 72 double £temporary4134
+60: GetReturnValue £temporary4260
+61: Parameter 72 double £temporary4260
 62: Parameter 80 signed int errno
 63: Call 32 printf 20
 64: PostCall 32
@@ -73,8 +73,8 @@
 72: Parameter 96 double x
 73: Call 72 acos 0
 74: PostCall 72
-75: GetReturnValue £temporary4136
-76: Parameter 72 double £temporary4136
+75: GetReturnValue £temporary4262
+76: Parameter 72 double £temporary4262
 77: Parameter 80 signed int errno
 78: Call 32 printf 20
 79: PostCall 32
@@ -88,8 +88,8 @@
 87: Parameter 96 double x
 88: Call 72 atan 0
 89: PostCall 72
-90: GetReturnValue £temporary4138
-91: Parameter 72 double £temporary4138
+90: GetReturnValue £temporary4264
+91: Parameter 72 double £temporary4264
 92: Parameter 80 signed int errno
 93: Call 32 printf 20
 94: PostCall 32
@@ -103,8 +103,8 @@
 102: Parameter 96 double x
 103: Call 72 exp 0
 104: PostCall 72
-105: GetReturnValue £temporary4140
-106: Parameter 72 double £temporary4140
+105: GetReturnValue £temporary4266
+106: Parameter 72 double £temporary4266
 107: Parameter 80 signed int errno
 108: Call 32 printf 20
 109: PostCall 32
@@ -118,8 +118,8 @@
 117: Parameter 96 double x
 118: Call 72 log 0
 119: PostCall 72
-120: GetReturnValue £temporary4142
-121: Parameter 72 double £temporary4142
+120: GetReturnValue £temporary4268
+121: Parameter 72 double £temporary4268
 122: Parameter 80 signed int errno
 123: Call 32 printf 20
 124: PostCall 32
@@ -133,8 +133,8 @@
 132: Parameter 96 double x
 133: Call 72 log10 0
 134: PostCall 72
-135: GetReturnValue £temporary4144
-136: Parameter 72 double £temporary4144
+135: GetReturnValue £temporary4270
+136: Parameter 72 double £temporary4270
 137: Parameter 80 signed int errno
 138: Call 32 printf 20
 139: PostCall 32
@@ -148,8 +148,8 @@
 147: Parameter 96 double x
 148: Call 72 sinh 0
 149: PostCall 72
-150: GetReturnValue £temporary4146
-151: Parameter 72 double £temporary4146
+150: GetReturnValue £temporary4272
+151: Parameter 72 double £temporary4272
 152: Parameter 80 signed int errno
 153: Call 32 printf 20
 154: PostCall 32
@@ -163,8 +163,8 @@
 162: Parameter 96 double x
 163: Call 72 cosh 0
 164: PostCall 72
-165: GetReturnValue £temporary4148
-166: Parameter 72 double £temporary4148
+165: GetReturnValue £temporary4274
+166: Parameter 72 double £temporary4274
 167: Parameter 80 signed int errno
 168: Call 32 printf 20
 169: PostCall 32
@@ -178,8 +178,8 @@
 177: Parameter 96 double x
 178: Call 72 tanh 0
 179: PostCall 72
-180: GetReturnValue £temporary4150
-181: Parameter 72 double £temporary4150
+180: GetReturnValue £temporary4276
+181: Parameter 72 double £temporary4276
 182: Parameter 80 signed int errno
 183: Call 32 printf 20
 184: PostCall 32
@@ -193,8 +193,8 @@
 192: Parameter 96 double x
 193: Call 72 sqrt 0
 194: PostCall 72
-195: GetReturnValue £temporary4152
-196: Parameter 72 double £temporary4152
+195: GetReturnValue £temporary4278
+196: Parameter 72 double £temporary4278
 197: Parameter 80 signed int errno
 198: Call 32 printf 20
 199: PostCall 32
@@ -208,8 +208,8 @@
 207: Parameter 96 double x
 208: Call 72 floor 0
 209: PostCall 72
-210: GetReturnValue £temporary4154
-211: Parameter 72 double £temporary4154
+210: GetReturnValue £temporary4280
+211: Parameter 72 double £temporary4280
 212: Parameter 80 signed int errno
 213: Call 32 printf 20
 214: PostCall 32
@@ -223,8 +223,8 @@
 222: Parameter 96 double x
 223: Call 72 ceil 0
 224: PostCall 72
-225: GetReturnValue £temporary4156
-226: Parameter 72 double £temporary4156
+225: GetReturnValue £temporary4282
+226: Parameter 72 double £temporary4282
 227: Parameter 80 signed int errno
 228: Call 32 printf 20
 229: PostCall 32
@@ -238,8 +238,8 @@
 237: Parameter 96 double x
 238: Call 72 fabs 0
 239: PostCall 72
-240: GetReturnValue £temporary4158
-241: Parameter 72 double £temporary4158
+240: GetReturnValue £temporary4284
+241: Parameter 72 double £temporary4284
 242: Parameter 80 signed int errno
 243: Call 32 printf 20
 244: PostCall 32
@@ -248,11 +248,11 @@
 247: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 248: PushFloat x
 249: Parameter 60 double x
-250: Address £temporary4160 j
-251: Parameter 68 pointer £temporary4160
+250: Address £temporary4286 j
+251: Parameter 68 pointer £temporary4286
 252: Call 36 frexp 0
 253: PostCall 36
-254: GetReturnValue £temporary4161
+254: GetReturnValue £temporary4287
 255: PopFloat z
 256: PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 257: Parameter 68 string string_frexp202825f2C20p29203D202825f2C2025i292C20errno203D2025i0A#
@@ -275,11 +275,11 @@
 274: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 275: PushFloat x
 276: Parameter 64 double x
-277: Address £temporary4167 w
-278: Parameter 72 pointer £temporary4167
+277: Address £temporary4293 w
+278: Parameter 72 pointer £temporary4293
 279: Call 40 modf 0
 280: PostCall 40
-281: GetReturnValue £temporary4168
+281: GetReturnValue £temporary4294
 282: PopFloat z
 283: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 284: Parameter 72 string string_modf202825f2C20p29203D202825f2C2025f292C20errno203D2025i0A#

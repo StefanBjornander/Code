@@ -1,0 +1,12 @@
+0: Equal 6 c integral4$32#
+1: Equal 6 c integral4$12#
+2: Equal 6 c integral4$10#
+3: Equal 6 c integral4$13#
+4: Equal 6 c integral4$9#
+5: NotEqual 8 c integral4$11#
+6: Assign £temporary260 integral4$1#
+7: Jump 9
+8: Assign £temporary260 integral4$0#
+9: SetReturnValue
+10: Return £temporary260
+11: FunctionEnd isspace

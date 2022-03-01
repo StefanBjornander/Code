@@ -1,0 +1,28 @@
+0: Assign func integral8$0#
+1: NotEqual 8 func integral8$0#
+2: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+3: Parameter 60 string string_Raise20default0A#
+4: Call 36 printf 0
+5: PostCall 36
+6: SetReturnValue
+7: Return integral4$1#
+8: NotEqual 15 func integral8$0#
+9: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+10: Parameter 60 string string_Raise20error0A#
+11: Call 36 printf 0
+12: PostCall 36
+13: SetReturnValue
+14: Return integral4$0#
+15: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+16: Parameter 60 string string_Raise20function2C20calling2025i20with2025i0A#
+17: Parameter 68 pointer func
+18: Parameter 76 signed int sig
+19: Call 36 printf 12
+20: PostCall 36
+21: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+22: Parameter 60 signed int sig
+23: Call 36 func 0
+24: PostCall 36
+25: SetReturnValue
+26: Return integral4$1#
+27: FunctionEnd raise

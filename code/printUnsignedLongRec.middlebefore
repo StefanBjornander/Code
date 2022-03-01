@@ -1,12 +1,12 @@
 0: GreaterThan < Empty> unsignedValue integral8$0#
 1: Jump < Empty>
 2: Empty
-3: Modulo £temporary1850 unsignedValue base
-4: IntegralToIntegral £temporary1851 £temporary1850
-5: Assign digit £temporary1851
+3: Modulo £temporary1882 unsignedValue base
+4: IntegralToIntegral £temporary1883 £temporary1882
+5: Assign digit £temporary1883
 6: PreCall 48
-7: Divide £temporary1852 unsignedValue base
-8: Parameter 72 unsigned long int £temporary1852
+7: Divide £temporary1884 unsignedValue base
+8: Parameter 72 unsigned long int £temporary1884
 9: Parameter 80 unsigned long int base
 10: Parameter 88 signed int capital
 11: Call 48 printUnsignedLongRec 0
@@ -16,8 +16,8 @@
 15: Parameter 76 signed int capital
 16: Call 48 digitToChar 0
 17: PostCall 48
-18: GetReturnValue £temporary1854
-19: Assign c £temporary1854
+18: GetReturnValue £temporary1886
+19: Assign c £temporary1886
 20: PreCall 49
 21: Parameter 73 signed char c
 22: Call 49 printChar 0

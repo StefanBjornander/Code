@@ -1,0 +1,38 @@
+0: PreCall 28
+1: Call 28 localeconv 0
+2: PostCall 28
+3: GetReturnValue £temporary178
+4: Assign localeConvPtr £temporary178
+5: NotEqual < Empty> localeConvPtr integral8$0#
+6: Jump < Empty>
+7: Empty
+8: PreCall 36
+9: Dereference £temporary180 localeConvPtr 0
+10: Parameter 60 pointer £temporary180.lowerCase
+11: Parameter 68 signed int c
+12: Call 36 strchr 0
+13: PostCall 36
+14: GetReturnValue £temporary181
+15: NotEqual < Assign £temporary183 integral4$1#> £temporary181 integral8$0#
+16: Jump < Assign £temporary183 integral4$0#>
+17: Assign £temporary183 integral4$1#
+18: Jump < Empty>
+19: Assign £temporary183 integral4$0#
+20: Empty
+21: SetReturnValue
+22: Return £temporary183
+23: Jump < Empty>
+24: Empty
+25: GreaterThanEqual < LessThanEqual < Assign £temporary187 integral4$1#> c integral4$122#> c integral4$97#
+26: Jump < Assign £temporary187 integral4$0#>
+27: LessThanEqual < Assign £temporary187 integral4$1#> c integral4$122#
+28: Jump < Assign £temporary187 integral4$0#>
+29: Assign £temporary187 integral4$1#
+30: Jump < Empty>
+31: Assign £temporary187 integral4$0#
+32: Empty
+33: SetReturnValue
+34: Return £temporary187
+35: Empty
+36: Empty
+37: FunctionEnd islower

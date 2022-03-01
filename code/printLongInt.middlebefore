@@ -1,8 +1,8 @@
 0: LessThan < Empty> longValue integral8$0#
 1: Jump < Empty>
 2: Empty
-3: Minus £temporary1818 longValue
-4: Assign longValue £temporary1818
+3: Minus £temporary1850 longValue
+4: Assign longValue £temporary1850
 5: PreCall 40
 6: Parameter 64 signed char integral1$45#
 7: Call 40 printChar 0

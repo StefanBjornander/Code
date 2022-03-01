@@ -3,12 +3,11 @@
 2: Parameter 56 pointer time
 3: Call 32 localtime 0
 4: PostCall 32
-5: GetReturnValue £temporary3205
-6: Parameter 56 pointer £temporary3205
+5: GetReturnValue £temporary3258
+6: Parameter 56 pointer £temporary3258
 7: Call 32 asctime 0
 8: PostCall 32
-9: GetReturnValue £temporary3206
-10: SetReturnValue
-11: Return £temporary3206
-12: Empty
-13: FunctionEnd ctime
+9: GetReturnValue £temporary3259
+10: Return £temporary3259
+11: Empty
+12: FunctionEnd ctime

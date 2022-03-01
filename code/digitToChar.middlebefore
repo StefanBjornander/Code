@@ -1,28 +1,25 @@
 0: LessThan < Empty> digit integral4$10#
 1: Jump < Empty>
 2: Empty
-3: Add £temporary1836 integral4$48# digit
-4: IntegralToIntegral £temporary1837 £temporary1836
-5: SetReturnValue
-6: Return £temporary1837
-7: Jump < Empty>
-8: Empty
-9: NotEqual < Empty> capital integral4$0#
-10: Jump < Empty>
-11: Empty
-12: Subtract £temporary1838 digit integral4$10#
-13: Add £temporary1839 integral4$65# £temporary1838
-14: IntegralToIntegral £temporary1840 £temporary1839
-15: SetReturnValue
-16: Return £temporary1840
-17: Jump < Empty>
-18: Empty
-19: Subtract £temporary1841 digit integral4$10#
-20: Add £temporary1842 integral4$97# £temporary1841
-21: IntegralToIntegral £temporary1843 £temporary1842
-22: SetReturnValue
-23: Return £temporary1843
-24: Empty
-25: Empty
-26: Empty
-27: FunctionEnd digitToChar
+3: Add £temporary1868 integral4$48# digit
+4: IntegralToIntegral £temporary1869 £temporary1868
+5: Return £temporary1869
+6: Jump < Empty>
+7: Empty
+8: NotEqual < Empty> capital integral4$0#
+9: Jump < Empty>
+10: Empty
+11: Subtract £temporary1870 digit integral4$10#
+12: Add £temporary1871 integral4$65# £temporary1870
+13: IntegralToIntegral £temporary1872 £temporary1871
+14: Return £temporary1872
+15: Jump < Empty>
+16: Empty
+17: Subtract £temporary1873 digit integral4$10#
+18: Add £temporary1874 integral4$97# £temporary1873
+19: IntegralToIntegral £temporary1875 £temporary1874
+20: Return £temporary1875
+21: Empty
+22: Empty
+23: Empty
+24: FunctionEnd digitToChar

@@ -1,0 +1,73 @@
+0: Assign p integral8$0#
+1: Assign r integral8$0#
+2: PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+3: Parameter 68 signed int integral4$96#
+4: Call 44 malloc 0
+5: PostCall 44
+6: GetReturnValue £temporary4824
+7: Assign q £temporary4824
+8: Assign index integral4$0#
+9: GreaterThanEqual 20 index integral4$10#
+10: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+11: Parameter 76 signed int integral4$96#
+12: Call 52 malloc 0
+13: PostCall 52
+14: GetReturnValue £temporary4827
+15: Assign p £temporary4827
+16: NotEqual 18 index integral4$5#
+17: Assign r p
+18: Add index index integral4$1#
+19: Jump 9
+20: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+21: Call 52 print_heap 0
+22: PostCall 52
+23: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+24: Parameter 76 pointer q
+25: Parameter 84 signed int integral4$50#
+26: Call 52 realloc 0
+27: PostCall 52
+28: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+29: Call 52 print_heap 0
+30: PostCall 52
+31: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+32: Parameter 76 pointer r
+33: Parameter 84 signed int integral4$50#
+34: Call 52 realloc 0
+35: PostCall 52
+36: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+37: Call 52 print_heap 0
+38: PostCall 52
+39: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+40: Parameter 76 pointer p
+41: Parameter 84 signed int integral4$50#
+42: Call 52 realloc 0
+43: PostCall 52
+44: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+45: Call 52 print_heap 0
+46: PostCall 52
+47: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+48: Parameter 76 pointer q
+49: Parameter 84 signed int integral4$200#
+50: Call 52 realloc 0
+51: PostCall 52
+52: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+53: Call 52 print_heap 0
+54: PostCall 52
+55: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+56: Parameter 76 pointer r
+57: Parameter 84 signed int integral4$200#
+58: Call 52 realloc 0
+59: PostCall 52
+60: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+61: Call 52 print_heap 0
+62: PostCall 52
+63: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+64: Parameter 76 pointer p
+65: Parameter 84 signed int integral4$200#
+66: Call 52 realloc 0
+67: PostCall 52
+68: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+69: Call 52 print_heap 0
+70: PostCall 52
+71: Return
+72: FunctionEnd malloc_test2

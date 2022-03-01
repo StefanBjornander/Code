@@ -1,12 +1,11 @@
-0: Address £temporary1725 format
-1: IntegralToIntegral £temporary1726 £temporary1725
-2: Add arg_list £temporary1726 integral8$8#
-3: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-4: Parameter 64 pointer format
-5: Parameter 72 pointer arg_list
-6: Call 40 vscanf 0
-7: PostCall 40
-8: GetReturnValue £temporary1728
-9: SetReturnValue
-10: Return £temporary1728
-11: FunctionEnd scanf
+0: Address £temporary1740 format
+1: IntegralToIntegral £temporary1741 £temporary1740
+2: Add arg_list £temporary1741 integral2$2#
+3: PreCall 10 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+4: Parameter 16 pointer format
+5: Parameter 18 pointer arg_list
+6: Call 10 vscanf 0
+7: PostCall 10
+8: GetReturnValue £temporary1743
+9: Return £temporary1743
+10: FunctionEnd scanf

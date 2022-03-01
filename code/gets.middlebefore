@@ -1,36 +1,34 @@
-0: PreCall 32
-1: Parameter 56 pointer s
-2: Parameter 64 signed int integral4$minus1#
-3: Parameter 68 pointer stdin
-4: Call 32 fgets 0
-5: PostCall 32
-6: GetReturnValue £temporary1014
-7: NotEqual < Empty> £temporary1014 integral8$0#
+0: PreCall 8
+1: Parameter 14 pointer s
+2: Parameter 16 signed int integral2$minus1#
+3: Parameter 18 pointer stdin
+4: Call 8 fgets 0
+5: PostCall 8
+6: GetReturnValue £temporary1023
+7: NotEqual < Empty> £temporary1023 integral2$0#
 8: Jump < Empty>
 9: Empty
-10: PreCall 32
-11: Parameter 56 pointer s
-12: Call 32 strlen 0
-13: PostCall 32
-14: GetReturnValue £temporary1016
-15: Assign size £temporary1016
-16: GreaterThan < Empty> size integral4$0#
+10: PreCall 8
+11: Parameter 14 pointer s
+12: Call 8 strlen 0
+13: PostCall 8
+14: GetReturnValue £temporary1025
+15: Assign size £temporary1025
+16: GreaterThan < Empty> size integral2$0#
 17: Jump < Empty>
 18: Empty
-19: Subtract £temporary1018 size integral4$1#
-20: IntegralToIntegral £temporary1019 £temporary1018
-21: Add £temporary1020 s £temporary1019
-22: Dereference £temporary1021 £temporary1020 0
-23: Assign £temporary1021 integral1$0#
+19: Subtract £temporary1027 size integral2$1#
+20: Multiply £temporary1028 £temporary1027 integral2$1#
+21: Add £temporary1029 s £temporary1028
+22: Dereference £temporary1030 £temporary1029 0
+23: Assign £temporary1030 integral1$0#
 24: Jump < Empty>
 25: Empty
 26: Empty
-27: SetReturnValue
-28: Return s
-29: Jump < Empty>
-30: Empty
-31: SetReturnValue
-32: Return integral8$0#
-33: Empty
-34: Empty
-35: FunctionEnd gets
+27: Return s
+28: Jump < Empty>
+29: Empty
+30: Return integral2$0#
+31: Empty
+32: Empty
+33: FunctionEnd gets

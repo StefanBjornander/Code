@@ -1,0 +1,22 @@
+0: Assign result integral8$0#
+1: IntegralToIntegral £temporary3522 i
+2: Assign c £temporary3522
+3: Assign index integral4$0#
+4: IntegralToIntegral £temporary3523 index
+5: Add £temporary3524 text £temporary3523
+6: Dereference £temporary3525 £temporary3524 0
+7: Equal 19 £temporary3525 integral1$0#
+8: IntegralToIntegral £temporary3528 index
+9: Add £temporary3529 text £temporary3528
+10: Dereference £temporary3530 £temporary3529 0
+11: NotEqual 17 £temporary3530 c
+12: IntegralToIntegral £temporary3532 index
+13: Add £temporary3533 text £temporary3532
+14: Dereference £temporary3534 £temporary3533 0
+15: Address £temporary3535 £temporary3534
+16: Assign result £temporary3535
+17: Add index index integral4$1#
+18: Jump 4
+19: SetReturnValue
+20: Return result
+21: FunctionEnd strrchr

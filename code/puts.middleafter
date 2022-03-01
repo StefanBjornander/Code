@@ -1,18 +1,16 @@
-0: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-1: Parameter 56 pointer s
-2: Parameter 64 pointer stdout
-3: Call 32 fputs 0
-4: PostCall 32
-5: GetReturnValue £temporary1026
-6: Equal 15 £temporary1026 integral4$0#
-7: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-8: Parameter 56 signed int integral4$10#
-9: Parameter 60 pointer stdout
-10: Call 32 fputc 0
-11: PostCall 32
-12: GetReturnValue £temporary1028
-13: SetReturnValue
-14: Return £temporary1028
-15: SetReturnValue
-16: Return integral4$minus1#
-17: FunctionEnd puts
+0: PreCall 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 14 pointer s
+2: Parameter 16 pointer stdout
+3: Call 8 fputs 0
+4: PostCall 8
+5: GetReturnValue £temporary1035
+6: Equal 14 £temporary1035 integral2$0#
+7: PreCall 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+8: Parameter 14 signed int integral2$10#
+9: Parameter 16 pointer stdout
+10: Call 8 fputc 0
+11: PostCall 8
+12: GetReturnValue £temporary1037
+13: Return £temporary1037
+14: Return integral2$minus1#
+15: FunctionEnd puts

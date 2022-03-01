@@ -1,54 +1,50 @@
-0: PreCall 25
-1: IntegralToIntegral £temporary1336 c
-2: Parameter 49 signed int £temporary1336
-3: Call 25 isdigit 0
-4: PostCall 25
-5: GetReturnValue £temporary1337
-6: NotEqual < Empty> £temporary1337 integral4$0#
+0: PreCall 7
+1: IntegralToIntegral £temporary1351 c
+2: Parameter 13 signed int £temporary1351
+3: Call 7 isdigit 0
+4: PostCall 7
+5: GetReturnValue £temporary1352
+6: NotEqual < Empty> £temporary1352 integral2$0#
 7: Jump < Empty>
 8: Empty
-9: Subtract £temporary1338 c integral1$48#
-10: IntegralToIntegral £temporary1339 £temporary1338
-11: SetReturnValue
-12: Return £temporary1339
-13: Jump < Empty>
-14: Empty
-15: PreCall 25
-16: IntegralToIntegral £temporary1340 c
-17: Parameter 49 signed int £temporary1340
-18: Call 25 islower 0
-19: PostCall 25
-20: GetReturnValue £temporary1341
-21: NotEqual < Empty> £temporary1341 integral4$0#
-22: Jump < Empty>
-23: Empty
-24: Subtract £temporary1342 c integral1$97#
-25: IntegralToIntegral £temporary1344 £temporary1342
-26: Add £temporary1343 £temporary1344 integral4$10#
-27: SetReturnValue
-28: Return £temporary1343
-29: Jump < Empty>
-30: Empty
-31: PreCall 25
-32: IntegralToIntegral £temporary1345 c
-33: Parameter 49 signed int £temporary1345
-34: Call 25 isupper 0
-35: PostCall 25
-36: GetReturnValue £temporary1346
-37: NotEqual < Empty> £temporary1346 integral4$0#
-38: Jump < Empty>
-39: Empty
-40: Subtract £temporary1347 c integral1$65#
-41: IntegralToIntegral £temporary1349 £temporary1347
-42: Add £temporary1348 £temporary1349 integral4$10#
-43: SetReturnValue
-44: Return £temporary1348
-45: Jump < Empty>
+9: Subtract £temporary1353 c integral1$48#
+10: IntegralToIntegral £temporary1354 £temporary1353
+11: Return £temporary1354
+12: Jump < Empty>
+13: Empty
+14: PreCall 7
+15: IntegralToIntegral £temporary1355 c
+16: Parameter 13 signed int £temporary1355
+17: Call 7 islower 0
+18: PostCall 7
+19: GetReturnValue £temporary1356
+20: NotEqual < Empty> £temporary1356 integral2$0#
+21: Jump < Empty>
+22: Empty
+23: Subtract £temporary1357 c integral1$97#
+24: IntegralToIntegral £temporary1359 £temporary1357
+25: Add £temporary1358 £temporary1359 integral2$10#
+26: Return £temporary1358
+27: Jump < Empty>
+28: Empty
+29: PreCall 7
+30: IntegralToIntegral £temporary1360 c
+31: Parameter 13 signed int £temporary1360
+32: Call 7 isupper 0
+33: PostCall 7
+34: GetReturnValue £temporary1361
+35: NotEqual < Empty> £temporary1361 integral2$0#
+36: Jump < Empty>
+37: Empty
+38: Subtract £temporary1362 c integral1$65#
+39: IntegralToIntegral £temporary1364 £temporary1362
+40: Add £temporary1363 £temporary1364 integral2$10#
+41: Return £temporary1363
+42: Jump < Empty>
+43: Empty
+44: Return integral2$0#
+45: Empty
 46: Empty
-47: SetReturnValue
-48: Return integral4$0#
-49: Empty
-50: Empty
-51: Empty
-52: Empty
-53: FunctionEnd digitToValue
+47: Empty
+48: Empty
+49: FunctionEnd digitToValue

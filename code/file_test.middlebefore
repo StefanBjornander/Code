@@ -3,15 +3,15 @@
 2: Parameter 56 string string_r#
 3: Call 24 fopen 0
 4: PostCall 24
-5: GetReturnValue £temporary4262
-6: Assign inFilePtr £temporary4262
+5: GetReturnValue £temporary4388
+6: Assign inFilePtr £temporary4388
 7: PreCall 32
 8: Parameter 56 string string_outX2Etxt#
 9: Parameter 64 string string_w#
 10: Call 32 fopen 0
 11: PostCall 32
-12: GetReturnValue £temporary4263
-13: Assign outFilePtr £temporary4263
+12: GetReturnValue £temporary4389
+13: Assign outFilePtr £temporary4389
 14: NotEqual < Empty> inFilePtr integral8$0#
 15: Jump < Empty>
 16: Empty
@@ -53,16 +53,16 @@
 52: Parameter 64 pointer inFilePtr
 53: Call 40 feof 0
 54: PostCall 40
-55: GetReturnValue £temporary4276
-56: NotEqual < PreCall 40> £temporary4276 integral4$0#
+55: GetReturnValue £temporary4402
+56: NotEqual < PreCall 40> £temporary4402 integral4$0#
 57: Jump < PreCall 48>
 58: PreCall 48
 59: Parameter 72 pointer inFilePtr
 60: Parameter 80 string string_25lf#
 61: PushFloat value
 62: PopEmpty
-63: Address £temporary4279 value
-64: Parameter 88 pointer £temporary4279
+63: Address £temporary4405 value
+64: Parameter 88 pointer £temporary4405
 65: Call 48 fscanf 8
 66: PostCall 48
 67: PreCall 48
@@ -72,8 +72,8 @@
 71: Parameter 104 double value
 72: Call 80 sqrt 0
 73: PostCall 80
-74: GetReturnValue £temporary4281
-75: Parameter 80 double £temporary4281
+74: GetReturnValue £temporary4407
+75: Parameter 80 double £temporary4407
 76: Call 48 printf 8
 77: PostCall 48
 78: PreCall 48
@@ -84,8 +84,8 @@
 83: Parameter 112 double value
 84: Call 88 sqrt 0
 85: PostCall 88
-86: GetReturnValue £temporary4283
-87: Parameter 88 double £temporary4283
+86: GetReturnValue £temporary4409
+87: Parameter 88 double £temporary4409
 88: Call 48 fprintf 8
 89: PostCall 48
 90: Empty
@@ -107,15 +107,15 @@
 106: Parameter 56 string string_r#
 107: Call 24 fopen 0
 108: PostCall 24
-109: GetReturnValue £temporary4288
-110: Assign inFilePtr £temporary4288
+109: GetReturnValue £temporary4414
+110: Assign inFilePtr £temporary4414
 111: PreCall 32
 112: Parameter 56 string string_outY2Etxt#
 113: Parameter 64 string string_w#
 114: Call 32 fopen 0
 115: PostCall 32
-116: GetReturnValue £temporary4289
-117: Assign outFilePtr £temporary4289
+116: GetReturnValue £temporary4415
+117: Assign outFilePtr £temporary4415
 118: NotEqual < Empty> inFilePtr integral8$0#
 119: Jump < Empty>
 120: Empty
@@ -156,8 +156,8 @@
 155: PreCall 48
 156: Parameter 72 pointer inFilePtr
 157: Parameter 80 string string_25i#
-158: Address £temporary4302 size
-159: Parameter 88 pointer £temporary4302
+158: Address £temporary4428 size
+159: Parameter 88 pointer £temporary4428
 160: Call 48 fscanf 8
 161: PostCall 48
 162: PreCall 48
@@ -180,8 +180,8 @@
 179: Parameter 88 string string_25lf#
 180: PushFloat value
 181: PopEmpty
-182: Address £temporary4308 value
-183: Parameter 96 pointer £temporary4308
+182: Address £temporary4434 value
+183: Parameter 96 pointer £temporary4434
 184: Call 56 fscanf 8
 185: PostCall 56
 186: PreCall 56
@@ -191,8 +191,8 @@
 190: Parameter 112 double value
 191: Call 88 sqrt 0
 192: PostCall 88
-193: GetReturnValue £temporary4310
-194: Parameter 88 double £temporary4310
+193: GetReturnValue £temporary4436
+194: Parameter 88 double £temporary4436
 195: Call 56 printf 8
 196: PostCall 56
 197: PreCall 56
@@ -203,13 +203,13 @@
 202: Parameter 120 double value
 203: Call 96 sqrt 0
 204: PostCall 96
-205: GetReturnValue £temporary4312
-206: Parameter 96 double £temporary4312
+205: GetReturnValue £temporary4438
+206: Parameter 96 double £temporary4438
 207: Call 56 fprintf 8
 208: PostCall 56
 209: Empty
-210: Add £temporary4307 index integral4$1#
-211: Assign index £temporary4307
+210: Add £temporary4433 index integral4$1#
+211: Assign index £temporary4433
 212: Jump < Empty>
 213: PreCall 48
 214: Parameter 72 string string_0A#
@@ -228,8 +228,8 @@
 227: Parameter 56 pointer sourceFile
 228: Call 32 remove 0
 229: PostCall 32
-230: GetReturnValue £temporary4317
-231: Equal < Empty> £temporary4317 integral4$0#
+230: GetReturnValue £temporary4443
+231: Equal < Empty> £temporary4443 integral4$0#
 232: Jump < Empty>
 233: Empty
 234: PreCall 32
@@ -247,8 +247,8 @@
 246: Parameter 100 signed int errno
 247: Call 76 strerror 0
 248: PostCall 76
-249: GetReturnValue £temporary4320
-250: Parameter 76 pointer £temporary4320
+249: GetReturnValue £temporary4446
+250: Parameter 76 pointer £temporary4446
 251: Call 32 printf 20
 252: PostCall 32
 253: Empty
@@ -259,8 +259,8 @@
 258: Parameter 72 string string_w#
 259: Call 40 fopen 0
 260: PostCall 40
-261: GetReturnValue £temporary4324
-262: Assign filePtr £temporary4324
+261: GetReturnValue £temporary4450
+262: Assign filePtr £temporary4450
 263: PreCall 48
 264: Parameter 72 pointer filePtr
 265: Parameter 80 string string_Hello20X#
@@ -275,8 +275,8 @@
 274: Parameter 80 pointer targetFile
 275: Call 48 rename 0
 276: PostCall 48
-277: GetReturnValue £temporary4327
-278: Equal < Empty> £temporary4327 integral4$0#
+277: GetReturnValue £temporary4453
+278: Equal < Empty> £temporary4453 integral4$0#
 279: Jump < Empty>
 280: Empty
 281: PreCall 48
@@ -296,8 +296,8 @@
 295: Parameter 124 signed int errno
 296: Call 100 strerror 0
 297: PostCall 100
-298: GetReturnValue £temporary4330
-299: Parameter 100 pointer £temporary4330
+298: GetReturnValue £temporary4456
+299: Parameter 100 pointer £temporary4456
 300: Call 48 printf 28
 301: PostCall 48
 302: Empty
@@ -308,8 +308,8 @@
 307: Parameter 72 pointer targetFile
 308: Call 40 rename 0
 309: PostCall 40
-310: GetReturnValue £temporary4334
-311: Equal < Empty> £temporary4334 integral4$0#
+310: GetReturnValue £temporary4460
+311: Equal < Empty> £temporary4460 integral4$0#
 312: Jump < Empty>
 313: Empty
 314: PreCall 40
@@ -329,8 +329,8 @@
 328: Parameter 116 signed int errno
 329: Call 92 strerror 0
 330: PostCall 92
-331: GetReturnValue £temporary4337
-332: Parameter 92 pointer £temporary4337
+331: GetReturnValue £temporary4463
+332: Parameter 92 pointer £temporary4463
 333: Call 40 printf 28
 334: PostCall 40
 335: Empty
@@ -340,8 +340,8 @@
 339: Parameter 64 string string_w#
 340: Call 32 fopen 0
 341: PostCall 32
-342: GetReturnValue £temporary4341
-343: Assign filePtr £temporary4341
+342: GetReturnValue £temporary4467
+343: Assign filePtr £temporary4467
 344: PreCall 40
 345: Parameter 64 pointer filePtr
 346: Parameter 72 string string_Hello20Z#
@@ -355,8 +355,8 @@
 354: Parameter 64 pointer targetFile
 355: Call 40 remove 0
 356: PostCall 40
-357: GetReturnValue £temporary4344
-358: Equal < Empty> £temporary4344 integral4$0#
+357: GetReturnValue £temporary4470
+358: Equal < Empty> £temporary4470 integral4$0#
 359: Jump < Empty>
 360: Empty
 361: PreCall 40
@@ -374,8 +374,8 @@
 373: Parameter 108 signed int errno
 374: Call 84 strerror 0
 375: PostCall 84
-376: GetReturnValue £temporary4347
-377: Parameter 84 pointer £temporary4347
+376: GetReturnValue £temporary4473
+377: Parameter 84 pointer £temporary4473
 378: Call 40 printf 20
 379: PostCall 40
 380: Empty
@@ -384,8 +384,8 @@
 383: Parameter 56 pointer targetFile
 384: Call 32 remove 0
 385: PostCall 32
-386: GetReturnValue £temporary4351
-387: Equal < Empty> £temporary4351 integral4$0#
+386: GetReturnValue £temporary4477
+387: Equal < Empty> £temporary4477 integral4$0#
 388: Jump < Empty>
 389: Empty
 390: PreCall 32
@@ -403,8 +403,8 @@
 402: Parameter 100 signed int errno
 403: Call 76 strerror 0
 404: PostCall 76
-405: GetReturnValue £temporary4354
-406: Parameter 76 pointer £temporary4354
+405: GetReturnValue £temporary4480
+406: Parameter 76 pointer £temporary4480
 407: Call 32 printf 20
 408: PostCall 32
 409: Empty
@@ -413,8 +413,8 @@
 412: Parameter 56 string string_r#
 413: Call 24 fopen 0
 414: PostCall 24
-415: GetReturnValue £temporary4358
-416: Assign inFilePtr £temporary4358
+415: GetReturnValue £temporary4484
+416: Assign inFilePtr £temporary4484
 417: NotEqual < Empty> inFilePtr integral8$0#
 418: Jump < Empty>
 419: Empty
@@ -448,8 +448,8 @@
 447: PreCall 40
 448: Parameter 64 pointer inFilePtr
 449: Parameter 72 string string_25i#
-450: Address £temporary4367 size
-451: Parameter 80 pointer £temporary4367
+450: Address £temporary4493 size
+451: Parameter 80 pointer £temporary4493
 452: Call 40 fscanf 8
 453: PostCall 40
 454: PreCall 40
@@ -475,8 +475,8 @@
 474: Call 80 printf 16
 475: PostCall 80
 476: Empty
-477: Add £temporary4371 count integral4$1#
-478: Assign count £temporary4371
+477: Add £temporary4497 count integral4$1#
+478: Assign count £temporary4497
 479: Jump < Empty>
 480: PreCall 32
 481: Parameter 56 string string_0A#
@@ -491,8 +491,8 @@
 490: Parameter 56 string string_w#
 491: Call 24 fopen 0
 492: PostCall 24
-493: GetReturnValue £temporary4376
-494: Assign outFilePtr £temporary4376
+493: GetReturnValue £temporary4502
+494: Assign outFilePtr £temporary4502
 495: NotEqual < Empty> outFilePtr integral8$0#
 496: Jump < Empty>
 497: Empty
@@ -513,8 +513,8 @@
 512: Empty
 513: Assign size integral4$10#
 514: PreCall 40
-515: Address £temporary4383 size
-516: Parameter 64 pointer £temporary4383
+515: Address £temporary4509 size
+516: Parameter 64 pointer £temporary4509
 517: Parameter 72 signed int integral4$4#
 518: Parameter 76 signed int integral4$1#
 519: Parameter 80 pointer outFilePtr
@@ -522,24 +522,24 @@
 521: PostCall 40
 522: Assign index integral4$0#
 523: Empty
-524: LessThan < Multiply £temporary4387 index index> index size
+524: LessThan < Multiply £temporary4513 index index> index size
 525: Jump < PreCall 40>
-526: Multiply £temporary4387 index index
-527: IntegralToFloating £temporary4388 £temporary4387
+526: Multiply £temporary4513 index index
+527: IntegralToFloating £temporary4514 £temporary4513
 528: PopFloat value
 529: PreCall 48
 530: PushFloat value
 531: PopEmpty
-532: Address £temporary4389 value
-533: Parameter 72 pointer £temporary4389
+532: Address £temporary4515 value
+533: Parameter 72 pointer £temporary4515
 534: Parameter 80 signed int integral4$8#
 535: Parameter 84 signed int integral4$1#
 536: Parameter 88 pointer outFilePtr
 537: Call 48 fwrite 0
 538: PostCall 48
 539: Empty
-540: Add £temporary4386 index integral4$1#
-541: Assign index £temporary4386
+540: Add £temporary4512 index integral4$1#
+541: Assign index £temporary4512
 542: Jump < Empty>
 543: PreCall 40
 544: Parameter 64 pointer outFilePtr
@@ -550,8 +550,8 @@
 549: Parameter 56 string string_r#
 550: Call 24 fopen 0
 551: PostCall 24
-552: GetReturnValue £temporary4392
-553: Assign inFilePtr £temporary4392
+552: GetReturnValue £temporary4518
+553: Assign inFilePtr £temporary4518
 554: NotEqual < Empty> inFilePtr integral8$0#
 555: Jump < Empty>
 556: Empty
@@ -571,8 +571,8 @@
 570: Empty
 571: Empty
 572: PreCall 40
-573: Address £temporary4399 size
-574: Parameter 64 pointer £temporary4399
+573: Address £temporary4525 size
+574: Parameter 64 pointer £temporary4525
 575: Parameter 72 signed int integral4$4#
 576: Parameter 76 signed int integral4$1#
 577: Parameter 80 pointer inFilePtr
@@ -590,8 +590,8 @@
 589: PreCall 48
 590: PushFloat value
 591: PopEmpty
-592: Address £temporary4404 value
-593: Parameter 72 pointer £temporary4404
+592: Address £temporary4530 value
+593: Parameter 72 pointer £temporary4530
 594: Parameter 80 signed int integral4$8#
 595: Parameter 84 signed int integral4$1#
 596: Parameter 88 pointer inFilePtr
@@ -605,8 +605,8 @@
 604: Call 48 printf 12
 605: PostCall 48
 606: Empty
-607: Add £temporary4403 index integral4$1#
-608: Assign index £temporary4403
+607: Add £temporary4529 index integral4$1#
+608: Assign index £temporary4529
 609: Jump < Empty>
 610: PreCall 40
 611: Parameter 64 string string_0A#
@@ -621,8 +621,8 @@
 620: Parameter 56 string string_w#
 621: Call 24 fopen 0
 622: PostCall 24
-623: GetReturnValue £temporary4409
-624: Assign outFilePtr £temporary4409
+623: GetReturnValue £temporary4535
+624: Assign outFilePtr £temporary4535
 625: NotEqual < Empty> outFilePtr integral8$0#
 626: Jump < Empty>
 627: Empty
@@ -644,24 +644,24 @@
 643: Assign size integral4$10#
 644: Assign index integral4$0#
 645: Empty
-646: LessThan < Multiply £temporary4418 index index> index size
+646: LessThan < Multiply £temporary4544 index index> index size
 647: Jump < PreCall 40>
-648: Multiply £temporary4418 index index
-649: IntegralToFloating £temporary4419 £temporary4418
+648: Multiply £temporary4544 index index
+649: IntegralToFloating £temporary4545 £temporary4544
 650: PopFloat value
 651: PreCall 48
 652: PushFloat value
 653: PopEmpty
-654: Address £temporary4420 value
-655: Parameter 72 pointer £temporary4420
+654: Address £temporary4546 value
+655: Parameter 72 pointer £temporary4546
 656: Parameter 80 signed int integral4$8#
 657: Parameter 84 signed int integral4$1#
 658: Parameter 88 pointer outFilePtr
 659: Call 48 fwrite 0
 660: PostCall 48
 661: Empty
-662: Add £temporary4417 index integral4$1#
-663: Assign index £temporary4417
+662: Add £temporary4543 index integral4$1#
+663: Assign index £temporary4543
 664: Jump < Empty>
 665: PreCall 40
 666: Parameter 64 pointer outFilePtr
@@ -672,8 +672,8 @@
 671: Parameter 56 string string_r#
 672: Call 24 fopen 0
 673: PostCall 24
-674: GetReturnValue £temporary4423
-675: Assign inFilePtr £temporary4423
+674: GetReturnValue £temporary4549
+675: Assign inFilePtr £temporary4549
 676: NotEqual < Empty> inFilePtr integral8$0#
 677: Jump < Empty>
 678: Empty
@@ -697,22 +697,22 @@
 696: PreCall 44
 697: PushFloat value
 698: PopEmpty
-699: Address £temporary4430 value
-700: Parameter 68 pointer £temporary4430
+699: Address £temporary4556 value
+700: Parameter 68 pointer £temporary4556
 701: Parameter 76 signed int integral4$8#
 702: Parameter 80 signed int integral4$1#
 703: Parameter 84 pointer inFilePtr
 704: Call 44 fread 0
 705: PostCall 44
-706: GetReturnValue £temporary4431
-707: GreaterThan < PreCall 44> £temporary4431 integral4$0#
+706: GetReturnValue £temporary4557
+707: GreaterThan < PreCall 44> £temporary4557 integral4$0#
 708: Jump < PreCall 32>
 709: PreCall 44
 710: Parameter 68 string string_index23A2025i3A20value2025f0A#
-711: Assign £temporary4433 index
-712: Add £temporary4434 index integral4$1#
-713: Assign index £temporary4434
-714: Parameter 76 signed int £temporary4433
+711: Assign £temporary4559 index
+712: Add £temporary4560 index integral4$1#
+713: Assign index £temporary4560
+714: Parameter 76 signed int £temporary4559
 715: PushFloat value
 716: Parameter 80 double value
 717: Call 44 printf 12
@@ -732,8 +732,8 @@
 731: Parameter 56 string string_r#
 732: Call 24 fopen 0
 733: PostCall 24
-734: GetReturnValue £temporary4438
-735: Assign inFilePtr £temporary4438
+734: GetReturnValue £temporary4564
+735: Assign inFilePtr £temporary4564
 736: NotEqual < Empty> inFilePtr integral8$0#
 737: Jump < Empty>
 738: Empty
@@ -758,14 +758,14 @@
 757: Parameter 60 pointer inFilePtr
 758: Call 36 feof 0
 759: PostCall 36
-760: GetReturnValue £temporary4445
-761: NotEqual < PreCall 32> £temporary4445 integral4$0#
+760: GetReturnValue £temporary4571
+761: NotEqual < PreCall 32> £temporary4571 integral4$0#
 762: Jump < PreCall 44>
 763: PreCall 44
 764: PushFloat value
 765: PopEmpty
-766: Address £temporary4448 value
-767: Parameter 68 pointer £temporary4448
+766: Address £temporary4574 value
+767: Parameter 68 pointer £temporary4574
 768: Parameter 76 signed int integral4$8#
 769: Parameter 80 signed int integral4$1#
 770: Parameter 84 pointer inFilePtr
@@ -773,10 +773,10 @@
 772: PostCall 44
 773: PreCall 44
 774: Parameter 68 string string_index33A2025i3A20value2025f0A#
-775: Assign £temporary4450 index
-776: Add £temporary4451 index integral4$1#
-777: Assign index £temporary4451
-778: Parameter 76 signed int £temporary4450
+775: Assign £temporary4576 index
+776: Add £temporary4577 index integral4$1#
+777: Assign index £temporary4577
+778: Parameter 76 signed int £temporary4576
 779: PushFloat value
 780: Parameter 80 double value
 781: Call 44 printf 12
@@ -796,8 +796,8 @@
 795: Parameter 56 string string_r#
 796: Call 24 fopen 0
 797: PostCall 24
-798: GetReturnValue £temporary4455
-799: Assign inFilePtr £temporary4455
+798: GetReturnValue £temporary4581
+799: Assign inFilePtr £temporary4581
 800: NotEqual < Empty> inFilePtr integral8$0#
 801: Jump < Empty>
 802: Empty
@@ -817,8 +817,8 @@
 816: Empty
 817: Empty
 818: PreCall 36
-819: Address £temporary4462 size
-820: Parameter 60 pointer £temporary4462
+819: Address £temporary4588 size
+820: Parameter 60 pointer £temporary4588
 821: Parameter 68 signed int integral4$4#
 822: Parameter 72 signed int integral4$1#
 823: Parameter 76 pointer inFilePtr
@@ -827,22 +827,22 @@
 826: PreCall 36
 827: Parameter 60 string string_size43A2025i20total2025i0A#
 828: Parameter 68 signed int size
-829: Multiply £temporary4464 size integral4$8#
-830: Parameter 72 signed int £temporary4464
+829: Multiply £temporary4590 size integral4$8#
+830: Parameter 72 signed int £temporary4590
 831: Call 36 printf 8
 832: PostCall 36
-833: Multiply £temporary4466 size integral4$8#
-834: Assign total £temporary4466
+833: Multiply £temporary4592 size integral4$8#
+834: Assign total £temporary4592
 835: PreCall 44
 836: Parameter 68 signed int total
 837: Call 44 malloc 0
 838: PostCall 44
-839: GetReturnValue £temporary4467
-840: Assign p £temporary4467
-841: Multiply £temporary4468 size integral4$8#
-842: IntegralToIntegral £temporary4469 £temporary4468
-843: Add £temporary4470 p £temporary4469
-844: Assign endPtr £temporary4470
+839: GetReturnValue £temporary4593
+840: Assign p £temporary4593
+841: Multiply £temporary4594 size integral4$8#
+842: IntegralToIntegral £temporary4595 £temporary4594
+843: Add £temporary4596 p £temporary4595
+844: Assign endPtr £temporary4596
 845: NotEqual < Empty> p integral8$0#
 846: Jump < Empty>
 847: Empty
@@ -882,17 +882,17 @@
 881: PreCall 60
 882: Parameter 84 string string_index43A2025i3A20value2025f0A#
 883: Parameter 92 signed int index
-884: Multiply £temporary4481 index integral4$8#
-885: IntegralToIntegral £temporary4482 £temporary4481
-886: Add £temporary4483 p £temporary4482
-887: Dereference £temporary4484 £temporary4483 0
-888: PushFloat £temporary4484
-889: Parameter 96 double £temporary4484
+884: Multiply £temporary4607 index integral4$8#
+885: IntegralToIntegral £temporary4608 £temporary4607
+886: Add £temporary4609 p £temporary4608
+887: Dereference £temporary4610 £temporary4609 0
+888: PushFloat £temporary4610
+889: Parameter 96 double £temporary4610
 890: Call 60 printf 12
 891: PostCall 60
 892: Empty
-893: Add £temporary4480 index integral4$1#
-894: Assign index £temporary4480
+893: Add £temporary4606 index integral4$1#
+894: Assign index £temporary4606
 895: Jump < Empty>
 896: PreCall 60
 897: Parameter 84 string string_0A#
@@ -965,15 +965,15 @@
 964: Parameter 264 string string_w#
 965: Call 232 fopen 0
 966: PostCall 232
-967: GetReturnValue £temporary4549
-968: Assign outFilePtr £temporary4549
+967: GetReturnValue £temporary4675
+968: Assign outFilePtr £temporary4675
 969: PreCall 240
 970: Parameter 264 string string_Block2Ebin#
 971: Parameter 272 string string_r#
 972: Call 240 fopen 0
 973: PostCall 240
-974: GetReturnValue £temporary4550
-975: Assign inFilePtr £temporary4550
+974: GetReturnValue £temporary4676
+975: Assign inFilePtr £temporary4676
 976: NotEqual < Empty> outFilePtr integral8$0#
 977: Jump < Empty>
 978: Empty
@@ -1026,12 +1026,12 @@
 1025: Parameter 272 pointer inFilePtr
 1026: Call 248 feof 0
 1027: PostCall 248
-1028: GetReturnValue £temporary4565
-1029: NotEqual < PreCall 248> £temporary4565 integral4$0#
+1028: GetReturnValue £temporary4691
+1029: NotEqual < PreCall 248> £temporary4691 integral4$0#
 1030: Jump < PreCall 248>
 1031: PreCall 248
-1032: Address £temporary4568 person
-1033: Parameter 272 pointer £temporary4568
+1032: Address £temporary4694 person
+1033: Parameter 272 pointer £temporary4694
 1034: Parameter 280 signed int integral4$52#
 1035: Parameter 284 signed int integral4$1#
 1036: Parameter 288 pointer inFilePtr
@@ -1058,8 +1058,8 @@
 1057: Parameter 56 string string_r#
 1058: Call 24 fopen 0
 1059: PostCall 24
-1060: GetReturnValue £temporary4573
-1061: Assign inFilePtr £temporary4573
+1060: GetReturnValue £temporary4699
+1061: Assign inFilePtr £temporary4699
 1062: NotEqual < Empty> inFilePtr integral8$0#
 1063: Jump < Empty>
 1064: Empty
@@ -1084,20 +1084,20 @@
 1083: Parameter 68 signed int SEEK_END
 1084: Call 32 fseek 0
 1085: PostCall 32
-1086: GetReturnValue £temporary4580
-1087: Assign size £temporary4580
+1086: GetReturnValue £temporary4706
+1087: Assign size £temporary4706
 1088: Empty
 1089: PreCall 36
 1090: Parameter 60 pointer inFilePtr
 1091: Call 36 ftell 0
 1092: PostCall 36
-1093: GetReturnValue £temporary4581
-1094: GreaterThan < PreCall 36> £temporary4581 integral4$1#
+1093: GetReturnValue £temporary4707
+1094: GreaterThan < PreCall 36> £temporary4707 integral4$1#
 1095: Jump < PreCall 32>
 1096: PreCall 36
 1097: Parameter 60 pointer inFilePtr
-1098: Subtract £temporary4583 size integral4$1#
-1099: Assign size £temporary4583
+1098: Subtract £temporary4709 size integral4$1#
+1099: Assign size £temporary4709
 1100: Parameter 68 signed int size
 1101: Parameter 72 signed int SEEK_SET
 1102: Call 36 fseek 0
@@ -1107,8 +1107,8 @@
 1106: Parameter 60 pointer inFilePtr
 1107: Call 36 fgetc 0
 1108: PostCall 36
-1109: GetReturnValue £temporary4585
-1110: Parameter 60 signed int £temporary4585
+1109: GetReturnValue £temporary4711
+1110: Parameter 60 signed int £temporary4711
 1111: Call 36 putchar 0
 1112: PostCall 36
 1113: Empty
@@ -1123,16 +1123,16 @@
 1122: Parameter 80 string string_X#
 1123: Call 56 fileexists 0
 1124: PostCall 56
-1125: GetReturnValue £temporary4588
-1126: NotEqual < Empty> £temporary4588 integral4$0#
+1125: GetReturnValue £temporary4714
+1126: NotEqual < Empty> £temporary4714 integral4$0#
 1127: Jump < Empty>
 1128: Empty
-1129: Assign £temporary4590 string_Yes#
+1129: Assign £temporary4716 string_Yes#
 1130: Jump < Empty>
 1131: Empty
-1132: Assign £temporary4590 string_No#
+1132: Assign £temporary4716 string_No#
 1133: Empty
-1134: Parameter 56 string £temporary4590
+1134: Parameter 56 string £temporary4716
 1135: Call 24 printf 8
 1136: PostCall 24
 1137: PreCall 24
@@ -1141,16 +1141,16 @@
 1140: Parameter 80 string string_Y#
 1141: Call 56 fileexists 0
 1142: PostCall 56
-1143: GetReturnValue £temporary4592
-1144: NotEqual < Empty> £temporary4592 integral4$0#
+1143: GetReturnValue £temporary4718
+1144: NotEqual < Empty> £temporary4718 integral4$0#
 1145: Jump < Empty>
 1146: Empty
-1147: Assign £temporary4594 string_Yes#
+1147: Assign £temporary4720 string_Yes#
 1148: Jump < Empty>
 1149: Empty
-1150: Assign £temporary4594 string_No#
+1150: Assign £temporary4720 string_No#
 1151: Empty
-1152: Parameter 56 string £temporary4594
+1152: Parameter 56 string £temporary4720
 1153: Call 24 printf 8
 1154: PostCall 24
 1155: PreCall 24
@@ -1159,16 +1159,16 @@
 1158: Parameter 80 string string_Main2Easm#
 1159: Call 56 fileexists 0
 1160: PostCall 56
-1161: GetReturnValue £temporary4596
-1162: NotEqual < Empty> £temporary4596 integral4$0#
+1161: GetReturnValue £temporary4722
+1162: NotEqual < Empty> £temporary4722 integral4$0#
 1163: Jump < Empty>
 1164: Empty
-1165: Assign £temporary4598 string_Yes#
+1165: Assign £temporary4724 string_Yes#
 1166: Jump < Empty>
 1167: Empty
-1168: Assign £temporary4598 string_No#
+1168: Assign £temporary4724 string_No#
 1169: Empty
-1170: Parameter 56 string £temporary4598
+1170: Parameter 56 string £temporary4724
 1171: Call 24 printf 8
 1172: PostCall 24
 1173: PreCall 24
@@ -1177,16 +1177,16 @@
 1176: Parameter 80 string string_MainX2Easm#
 1177: Call 56 fileexists 0
 1178: PostCall 56
-1179: GetReturnValue £temporary4600
-1180: NotEqual < Empty> £temporary4600 integral4$0#
+1179: GetReturnValue £temporary4726
+1180: NotEqual < Empty> £temporary4726 integral4$0#
 1181: Jump < Empty>
 1182: Empty
-1183: Assign £temporary4602 string_Yes#
+1183: Assign £temporary4728 string_Yes#
 1184: Jump < Empty>
 1185: Empty
-1186: Assign £temporary4602 string_No#
+1186: Assign £temporary4728 string_No#
 1187: Empty
-1188: Parameter 56 string £temporary4602
+1188: Parameter 56 string £temporary4728
 1189: Call 24 printf 8
 1190: PostCall 24
 1191: PreCall 24
@@ -1195,16 +1195,16 @@
 1194: Parameter 80 string string_Main2Ec#
 1195: Call 56 fileexists 0
 1196: PostCall 56
-1197: GetReturnValue £temporary4604
-1198: NotEqual < Empty> £temporary4604 integral4$0#
+1197: GetReturnValue £temporary4730
+1198: NotEqual < Empty> £temporary4730 integral4$0#
 1199: Jump < Empty>
 1200: Empty
-1201: Assign £temporary4606 string_Yes#
+1201: Assign £temporary4732 string_Yes#
 1202: Jump < Empty>
 1203: Empty
-1204: Assign £temporary4606 string_No#
+1204: Assign £temporary4732 string_No#
 1205: Empty
-1206: Parameter 56 string £temporary4606
+1206: Parameter 56 string £temporary4732
 1207: Call 24 printf 8
 1208: PostCall 24
 1209: PreCall 24
@@ -1213,16 +1213,16 @@
 1212: Parameter 80 string string_MainX2Ec#
 1213: Call 56 fileexists 0
 1214: PostCall 56
-1215: GetReturnValue £temporary4608
-1216: NotEqual < Empty> £temporary4608 integral4$0#
+1215: GetReturnValue £temporary4734
+1216: NotEqual < Empty> £temporary4734 integral4$0#
 1217: Jump < Empty>
 1218: Empty
-1219: Assign £temporary4610 string_Yes#
+1219: Assign £temporary4736 string_Yes#
 1220: Jump < Empty>
 1221: Empty
-1222: Assign £temporary4610 string_No#
+1222: Assign £temporary4736 string_No#
 1223: Empty
-1224: Parameter 56 string £temporary4610
+1224: Parameter 56 string £temporary4736
 1225: Call 24 printf 8
 1226: PostCall 24
 1227: PreCall 24
@@ -1231,16 +1231,16 @@
 1230: Parameter 80 string string_File2Ec#
 1231: Call 56 fileexists 0
 1232: PostCall 56
-1233: GetReturnValue £temporary4612
-1234: NotEqual < Empty> £temporary4612 integral4$0#
+1233: GetReturnValue £temporary4738
+1234: NotEqual < Empty> £temporary4738 integral4$0#
 1235: Jump < Empty>
 1236: Empty
-1237: Assign £temporary4614 string_Yes#
+1237: Assign £temporary4740 string_Yes#
 1238: Jump < Empty>
 1239: Empty
-1240: Assign £temporary4614 string_No#
+1240: Assign £temporary4740 string_No#
 1241: Empty
-1242: Parameter 56 string £temporary4614
+1242: Parameter 56 string £temporary4740
 1243: Call 24 printf 8
 1244: PostCall 24
 1245: PreCall 24
@@ -1249,16 +1249,16 @@
 1248: Parameter 80 string string_File2Ex#
 1249: Call 56 fileexists 0
 1250: PostCall 56
-1251: GetReturnValue £temporary4616
-1252: NotEqual < Empty> £temporary4616 integral4$0#
+1251: GetReturnValue £temporary4742
+1252: NotEqual < Empty> £temporary4742 integral4$0#
 1253: Jump < Empty>
 1254: Empty
-1255: Assign £temporary4618 string_Yes#
+1255: Assign £temporary4744 string_Yes#
 1256: Jump < Empty>
 1257: Empty
-1258: Assign £temporary4618 string_No#
+1258: Assign £temporary4744 string_No#
 1259: Empty
-1260: Parameter 56 string £temporary4618
+1260: Parameter 56 string £temporary4744
 1261: Call 24 printf 8
 1262: PostCall 24
 1263: PreCall 24
@@ -1267,16 +1267,16 @@
 1266: Parameter 80 string string_File2Eh#
 1267: Call 56 fileexists 0
 1268: PostCall 56
-1269: GetReturnValue £temporary4620
-1270: NotEqual < Empty> £temporary4620 integral4$0#
+1269: GetReturnValue £temporary4746
+1270: NotEqual < Empty> £temporary4746 integral4$0#
 1271: Jump < Empty>
 1272: Empty
-1273: Assign £temporary4622 string_Yes#
+1273: Assign £temporary4748 string_Yes#
 1274: Jump < Empty>
 1275: Empty
-1276: Assign £temporary4622 string_No#
+1276: Assign £temporary4748 string_No#
 1277: Empty
-1278: Parameter 56 string £temporary4622
+1278: Parameter 56 string £temporary4748
 1279: Call 24 printf 8
 1280: PostCall 24
 1281: PreCall 24
@@ -1285,16 +1285,16 @@
 1284: Parameter 80 string string_File2Ey#
 1285: Call 56 fileexists 0
 1286: PostCall 56
-1287: GetReturnValue £temporary4624
-1288: NotEqual < Empty> £temporary4624 integral4$0#
+1287: GetReturnValue £temporary4750
+1288: NotEqual < Empty> £temporary4750 integral4$0#
 1289: Jump < Empty>
 1290: Empty
-1291: Assign £temporary4626 string_Yes#
+1291: Assign £temporary4752 string_Yes#
 1292: Jump < Empty>
 1293: Empty
-1294: Assign £temporary4626 string_No#
+1294: Assign £temporary4752 string_No#
 1295: Empty
-1296: Parameter 56 string £temporary4626
+1296: Parameter 56 string £temporary4752
 1297: Call 24 printf 8
 1298: PostCall 24
 1299: PreCall 24
@@ -1303,16 +1303,16 @@
 1302: Parameter 80 string string_File2Ep#
 1303: Call 56 fileexists 0
 1304: PostCall 56
-1305: GetReturnValue £temporary4628
-1306: NotEqual < Empty> £temporary4628 integral4$0#
+1305: GetReturnValue £temporary4754
+1306: NotEqual < Empty> £temporary4754 integral4$0#
 1307: Jump < Empty>
 1308: Empty
-1309: Assign £temporary4630 string_Yes#
+1309: Assign £temporary4756 string_Yes#
 1310: Jump < Empty>
 1311: Empty
-1312: Assign £temporary4630 string_No#
+1312: Assign £temporary4756 string_No#
 1313: Empty
-1314: Parameter 56 string £temporary4630
+1314: Parameter 56 string £temporary4756
 1315: Call 24 printf 8
 1316: PostCall 24
 1317: PreCall 24
@@ -1321,16 +1321,16 @@
 1320: Parameter 80 string string_File2Ez#
 1321: Call 56 fileexists 0
 1322: PostCall 56
-1323: GetReturnValue £temporary4632
-1324: NotEqual < Empty> £temporary4632 integral4$0#
+1323: GetReturnValue £temporary4758
+1324: NotEqual < Empty> £temporary4758 integral4$0#
 1325: Jump < Empty>
 1326: Empty
-1327: Assign £temporary4634 string_Yes#
+1327: Assign £temporary4760 string_Yes#
 1328: Jump < Empty>
 1329: Empty
-1330: Assign £temporary4634 string_No#
+1330: Assign £temporary4760 string_No#
 1331: Empty
-1332: Parameter 56 string £temporary4634
+1332: Parameter 56 string £temporary4760
 1333: Call 24 printf 8
 1334: PostCall 24
 1335: Empty

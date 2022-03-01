@@ -1,18 +1,15 @@
-0: AssignRegister rax integral8$88#
-1: IntegralToIntegral £temporary956 name
-2: AssignRegister rdi £temporary956
-3: SysCall
-4: InspectRegister £temporary957 ebx
-5: Equal < Empty> £temporary957 integral4$0#
-6: Jump < Empty>
-7: Empty
-8: SetReturnValue
-9: Return integral4$0#
-10: Jump < Empty>
-11: Empty
-12: Empty
-13: Assign errno FREMOVE
-14: SetReturnValue
-15: Return integral4$minus1#
-16: Empty
-17: FunctionEnd remove
+0: AssignRegister ah integral1$65#
+1: AssignRegister cl integral1$0#
+2: AssignRegister dx name
+3: Interrupt 33
+4: Carry < Empty>
+5: Jump < Empty>
+6: Empty
+7: Return integral2$0#
+8: Jump < Empty>
+9: Empty
+10: Empty
+11: Assign errno FREMOVE
+12: Return integral2$minus1#
+13: Empty
+14: FunctionEnd remove

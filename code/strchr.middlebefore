@@ -1,32 +1,33 @@
-0: IntegralToIntegral £temporary3506 i
-1: Assign c £temporary3506
+0: IntegralToIntegral £temporary3591 i
+1: Assign c £temporary3591
 2: Assign index integral4$0#
 3: Empty
-4: IntegralToIntegral £temporary3507 index
-5: Add £temporary3508 text £temporary3507
-6: Dereference £temporary3509 £temporary3508 0
-7: NotEqual < IntegralToIntegral £temporary3512 index> £temporary3509 integral1$0#
-8: Jump < SetReturnValue>
-9: IntegralToIntegral £temporary3512 index
-10: Add £temporary3513 text £temporary3512
-11: Dereference £temporary3514 £temporary3513 0
-12: Equal < Empty> £temporary3514 c
-13: Jump < Empty>
-14: Empty
-15: IntegralToIntegral £temporary3516 index
-16: Add £temporary3517 text £temporary3516
-17: Dereference £temporary3518 £temporary3517 0
-18: Address £temporary3519 £temporary3518
-19: SetReturnValue
-20: Return £temporary3519
-21: Jump < Empty>
-22: Empty
-23: Empty
+4: Multiply £temporary3592 index integral4$1#
+5: IntegralToIntegral £temporary3593 £temporary3592
+6: Add £temporary3594 text £temporary3593
+7: Dereference £temporary3595 £temporary3594 0
+8: NotEqual < Multiply £temporary3598 index integral4$1#> £temporary3595 integral1$0#
+9: Jump < Return integral8$0#>
+10: Multiply £temporary3598 index integral4$1#
+11: IntegralToIntegral £temporary3599 £temporary3598
+12: Add £temporary3600 text £temporary3599
+13: Dereference £temporary3601 £temporary3600 0
+14: Equal < Empty> £temporary3601 c
+15: Jump < Empty>
+16: Empty
+17: Multiply £temporary3603 index integral4$1#
+18: IntegralToIntegral £temporary3604 £temporary3603
+19: Add £temporary3605 text £temporary3604
+20: Dereference £temporary3606 £temporary3605 0
+21: Address £temporary3607 £temporary3606
+22: Return £temporary3607
+23: Jump < Empty>
 24: Empty
-25: Add £temporary3511 index integral4$1#
-26: Assign index £temporary3511
-27: Jump < Empty>
-28: SetReturnValue
-29: Return integral8$0#
-30: Empty
-31: FunctionEnd strchr
+25: Empty
+26: Empty
+27: Add £temporary3597 index integral4$1#
+28: Assign index £temporary3597
+29: Jump < Empty>
+30: Return integral8$0#
+31: Empty
+32: FunctionEnd strchr

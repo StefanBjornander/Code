@@ -1,72 +1,66 @@
 0: PushFloat y
 1: PushFloat floating8$0#
-2: LessThanEqual 13 y floating8$0#
-3: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+2: LessThanEqual 12 y floating8$0#
+3: PreCall 22 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 4: PushFloat x
 5: PushFloat y
-6: Divide £temporary689 x y
-7: Parameter 64 double £temporary689
-8: Call 40 atan 0
-9: PostCall 40
-10: GetReturnValue £temporary690
-11: SetReturnValue
-12: Return £temporary690
-13: PushFloat x
-14: PushFloat floating8$0#
-15: LessThan 31 x floating8$0#
-16: PushFloat y
-17: PushFloat floating8$0#
-18: GreaterThanEqual 31 y floating8$0#
-19: PushFloat floating8$3.14#
-20: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
-21: PushFloat x
-22: PushFloat y
-23: Divide £temporary694 x y
-24: Parameter 64 double £temporary694
-25: Call 40 atan 0
-26: PostCall 40
-27: GetReturnValue £temporary695
-28: Add £temporary696 floating8$3.14# £temporary695
-29: SetReturnValue
-30: Return £temporary696
-31: PushFloat x
-32: PushFloat floating8$0#
-33: GreaterThanEqual 49 x floating8$0#
-34: PushFloat y
-35: PushFloat floating8$0#
-36: GreaterThanEqual 49 y floating8$0#
-37: PushFloat floating8$minus3.14#
-38: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
-39: PushFloat x
-40: PushFloat y
-41: Divide £temporary700 x y
-42: Parameter 64 double £temporary700
-43: Call 40 atan 0
-44: PostCall 40
-45: GetReturnValue £temporary701
-46: Add £temporary702 floating8$minus3.14# £temporary701
-47: SetReturnValue
-48: Return £temporary702
-49: PushFloat x
+6: Divide £temporary682 x y
+7: Parameter 28 double £temporary682
+8: Call 22 atan 0
+9: PostCall 22
+10: GetReturnValue £temporary683
+11: Return £temporary683
+12: PushFloat x
+13: PushFloat floating8$0#
+14: LessThan 29 x floating8$0#
+15: PushFloat y
+16: PushFloat floating8$0#
+17: GreaterThanEqual 29 y floating8$0#
+18: PushFloat floating8$3.14#
+19: PreCall 22 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
+20: PushFloat x
+21: PushFloat y
+22: Divide £temporary687 x y
+23: Parameter 28 double £temporary687
+24: Call 22 atan 0
+25: PostCall 22
+26: GetReturnValue £temporary688
+27: Add £temporary689 floating8$3.14# £temporary688
+28: Return £temporary689
+29: PushFloat x
+30: PushFloat floating8$0#
+31: GreaterThanEqual 46 x floating8$0#
+32: PushFloat y
+33: PushFloat floating8$0#
+34: GreaterThanEqual 46 y floating8$0#
+35: PushFloat floating8$minus3.14#
+36: PreCall 22 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
+37: PushFloat x
+38: PushFloat y
+39: Divide £temporary693 x y
+40: Parameter 28 double £temporary693
+41: Call 22 atan 0
+42: PostCall 22
+43: GetReturnValue £temporary694
+44: Add £temporary695 floating8$minus3.14# £temporary694
+45: Return £temporary695
+46: PushFloat x
+47: PushFloat floating8$0#
+48: LessThanEqual 54 x floating8$0#
+49: PushFloat y
 50: PushFloat floating8$0#
-51: LessThanEqual 58 x floating8$0#
-52: PushFloat y
-53: PushFloat floating8$0#
-54: NotEqual 58 y floating8$0#
-55: PushFloat floating8$1.57#
-56: SetReturnValue
-57: Return floating8$1.57#
-58: PushFloat x
-59: PushFloat floating8$0#
-60: GreaterThanEqual 67 x floating8$0#
-61: PushFloat y
-62: PushFloat floating8$0#
-63: NotEqual 67 y floating8$0#
-64: PushFloat floating8$minus1.57#
-65: SetReturnValue
-66: Return floating8$minus1.57#
-67: Assign errno EDOM
-68: PushFloat floating8$0#
-69: SetReturnValue
-70: Return floating8$0#
-71: FunctionEnd atan2
+51: NotEqual 54 y floating8$0#
+52: PushFloat floating8$1.57#
+53: Return floating8$1.57#
+54: PushFloat x
+55: PushFloat floating8$0#
+56: GreaterThanEqual 62 x floating8$0#
+57: PushFloat y
+58: PushFloat floating8$0#
+59: NotEqual 62 y floating8$0#
+60: PushFloat floating8$minus1.57#
+61: Return floating8$minus1.57#
+62: Assign errno EDOM
+63: PushFloat floating8$0#
+64: Return floating8$0#
+65: FunctionEnd atan2

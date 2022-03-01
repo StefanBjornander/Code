@@ -1,16 +1,15 @@
-0: PreCall 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-1: Parameter 52 signed int c
-2: Call 28 isdigit 0
-3: PostCall 28
-4: GetReturnValue £temporary218
-5: NotEqual 10 £temporary218 integral4$0#
-6: LessThan 8 c integral4$97#
-7: LessThanEqual 10 c integral4$102#
-8: LessThan 12 c integral4$65#
-9: GreaterThan 12 c integral4$70#
-10: Assign £temporary228 integral4$1#
+0: PreCall 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 14 signed int c
+2: Call 8 isdigit 0
+3: PostCall 8
+4: GetReturnValue £temporary211
+5: NotEqual 10 £temporary211 integral2$0#
+6: LessThan 8 c integral2$97#
+7: LessThanEqual 10 c integral2$102#
+8: LessThan 12 c integral2$65#
+9: GreaterThan 12 c integral2$70#
+10: Assign £temporary221 integral2$1#
 11: Jump 13
-12: Assign £temporary228 integral4$0#
-13: SetReturnValue
-14: Return £temporary228
-15: FunctionEnd isxdigit
+12: Assign £temporary221 integral2$0#
+13: Return £temporary221
+14: FunctionEnd isxdigit

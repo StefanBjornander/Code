@@ -1,36 +1,32 @@
-0: Assign index integral4$0#
+0: Assign index integral2$0#
 1: Empty
-2: LessThan < Multiply £temporary837 index integral4$41#> index integral4$20#
-3: Jump < SetReturnValue>
-4: Multiply £temporary837 index integral4$41#
-5: IntegralToIntegral £temporary838 £temporary837
-6: Add £temporary839 g_fileArray £temporary838
-7: Dereference £temporary840 £temporary839 0
-8: NotEqual < Empty> £temporary840.open integral4$0#
-9: Jump < Empty>
-10: Empty
-11: PreCall 44
-12: Parameter 68 pointer name
-13: Parameter 76 pointer mode
-14: Multiply £temporary843 index integral4$41#
-15: IntegralToIntegral £temporary844 £temporary843
-16: Add £temporary845 g_fileArray £temporary844
-17: Dereference £temporary846 £temporary845 0
-18: Address £temporary847 £temporary846
-19: Parameter 84 pointer £temporary847
-20: Call 44 freopen 0
-21: PostCall 44
-22: GetReturnValue £temporary848
-23: SetReturnValue
-24: Return £temporary848
-25: Jump < Empty>
-26: Empty
-27: Empty
-28: Empty
-29: Add £temporary836 index integral4$1#
-30: Assign index £temporary836
-31: Jump < Empty>
-32: SetReturnValue
-33: Return integral8$0#
-34: Empty
-35: FunctionEnd fopen
+2: LessThan < Multiply £temporary844 index integral2$29#> index integral2$20#
+3: Jump < Return integral2$0#>
+4: Multiply £temporary844 index integral2$29#
+5: Add £temporary845 g_fileArray £temporary844
+6: Dereference £temporary846 £temporary845 0
+7: NotEqual < Empty> £temporary846.open integral2$0#
+8: Jump < Empty>
+9: Empty
+10: PreCall 12
+11: Parameter 18 pointer name
+12: Parameter 20 pointer mode
+13: Multiply £temporary849 index integral2$29#
+14: Add £temporary850 g_fileArray £temporary849
+15: Dereference £temporary851 £temporary850 0
+16: Address £temporary852 £temporary851
+17: Parameter 22 pointer £temporary852
+18: Call 12 freopen 0
+19: PostCall 12
+20: GetReturnValue £temporary853
+21: Return £temporary853
+22: Jump < Empty>
+23: Empty
+24: Empty
+25: Empty
+26: Add £temporary843 index integral2$1#
+27: Assign index £temporary843
+28: Jump < Empty>
+29: Return integral2$0#
+30: Empty
+31: FunctionEnd fopen

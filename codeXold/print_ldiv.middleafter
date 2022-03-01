@@ -1,0 +1,12 @@
+0: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 64 string string_ldiv_t20quot2025li20rem2025li0A#
+2: Parameter 72 signed long int ld.quot
+3: Parameter 80 signed long int ld.rem
+4: Call 40 printf 16
+5: PostCall 40
+6: Subtract ld.quot ld.quot integral8$1#
+7: Assign £temporary4904 ld.rem
+8: Subtract ld.rem ld.rem integral8$1#
+9: SetReturnValue
+10: Return ld
+11: FunctionEnd print_ldiv

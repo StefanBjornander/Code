@@ -1,18 +1,18 @@
 0: NotEqual < Empty> longValue integral8$0#
 1: Jump < Empty>
 2: Empty
-3: Modulo £temporary1808 longValue integral8$10#
-4: IntegralToIntegral £temporary1809 £temporary1808
-5: Assign digit £temporary1809
+3: Modulo £temporary1840 longValue integral8$10#
+4: IntegralToIntegral £temporary1841 £temporary1840
+5: Assign digit £temporary1841
 6: PreCall 36
-7: Divide £temporary1810 longValue integral8$10#
-8: Parameter 60 signed long int £temporary1810
+7: Divide £temporary1842 longValue integral8$10#
+8: Parameter 60 signed long int £temporary1842
 9: Call 36 printLongIntRec 0
 10: PostCall 36
 11: PreCall 36
-12: Add £temporary1812 digit integral4$48#
-13: IntegralToIntegral £temporary1813 £temporary1812
-14: Parameter 60 signed char £temporary1813
+12: Add £temporary1844 digit integral4$48#
+13: IntegralToIntegral £temporary1845 £temporary1844
+14: Parameter 60 signed char £temporary1845
 15: Call 36 printChar 0
 16: PostCall 36
 17: Jump < Empty>

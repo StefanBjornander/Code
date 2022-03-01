@@ -1,0 +1,40 @@
+0: Add £temporary1088 index integral4$1#
+1: GreaterThanEqual 32 £temporary1088 max
+2: Add £temporary1090 index integral4$1#
+3: IntegralToIntegral £temporary1091 £temporary1090
+4: Add £temporary1092 name £temporary1091
+5: Dereference £temporary1093 £temporary1092 0
+6: Assign £temporary1093 integral1$0#
+7: Assign c integral1$97#
+8: GreaterThan 37 c integral1$122#
+9: IntegralToIntegral £temporary1096 index
+10: Add £temporary1097 name £temporary1096
+11: Dereference £temporary1098 £temporary1097 0
+12: Assign £temporary1098 c
+13: PreCall 41 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+14: Parameter 65 pointer name
+15: Call 41 fileexists 0
+16: PostCall 41
+17: GetReturnValue £temporary1099
+18: Equal 28 £temporary1099 integral4$0#
+19: PreCall 41 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+20: Add £temporary1102 index integral4$1#
+21: Parameter 65 signed int £temporary1102
+22: Parameter 69 pointer name
+23: Parameter 77 signed int max
+24: Call 41 generateName 0
+25: PostCall 41
+26: GetReturnValue £temporary1103
+27: Equal 30 £temporary1103 integral4$0#
+28: SetReturnValue
+29: Return integral4$1#
+30: Add c c integral1$1#
+31: Jump 8
+32: GreaterThanEqual 37 index max
+33: IntegralToIntegral £temporary1109 index
+34: Add £temporary1110 name £temporary1109
+35: Dereference £temporary1111 £temporary1110 0
+36: Assign £temporary1111 integral1$0#
+37: SetReturnValue
+38: Return integral4$0#
+39: FunctionEnd generateName

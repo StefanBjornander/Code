@@ -1,169 +1,169 @@
-0: Assign handle integral4$minus1#
-1: PreCall 52
-2: Parameter 76 pointer mode
-3: Parameter 84 string string_r#
-4: Call 52 strcmp 0
-5: PostCall 52
-6: GetReturnValue £temporary851
-7: Equal < Empty> £temporary851 integral4$0#
+0: Assign handle integral2$minus1#
+1: PreCall 14
+2: Parameter 20 pointer mode
+3: Parameter 22 string string_r#
+4: Call 14 strcmp 0
+5: PostCall 14
+6: GetReturnValue £temporary856
+7: Equal < Empty> £temporary856 integral2$0#
 8: Jump < Empty>
 9: Empty
-10: PreCall 52
-11: Parameter 76 pointer name
-12: Parameter 84 unsigned short int integral2$0#
-13: Call 52 fileopen 0
-14: PostCall 52
-15: GetReturnValue £temporary853
-16: Assign handle £temporary853
+10: PreCall 14
+11: Parameter 20 pointer name
+12: Parameter 22 unsigned short int integral1$64#
+13: Call 14 fileopen 0
+14: PostCall 14
+15: GetReturnValue £temporary858
+16: Assign handle £temporary858
 17: Jump < Empty>
 18: Empty
-19: PreCall 52
-20: Parameter 76 pointer mode
-21: Parameter 84 string string_w#
-22: Call 52 strcmp 0
-23: PostCall 52
-24: GetReturnValue £temporary854
-25: Equal < Empty> £temporary854 integral4$0#
+19: PreCall 14
+20: Parameter 20 pointer mode
+21: Parameter 22 string string_w#
+22: Call 14 strcmp 0
+23: PostCall 14
+24: GetReturnValue £temporary859
+25: Equal < Empty> £temporary859 integral2$0#
 26: Jump < Empty>
 27: Empty
-28: PreCall 52
-29: Parameter 76 pointer name
-30: Call 52 filecreate 0
-31: PostCall 52
-32: GetReturnValue £temporary856
-33: Assign handle £temporary856
+28: PreCall 14
+29: Parameter 20 pointer name
+30: Call 14 filecreate 0
+31: PostCall 14
+32: GetReturnValue £temporary861
+33: Assign handle £temporary861
 34: Jump < Empty>
 35: Empty
-36: PreCall 52
-37: Parameter 76 pointer mode
-38: Parameter 84 string string_a#
-39: Call 52 strcmp 0
-40: PostCall 52
-41: GetReturnValue £temporary857
-42: Equal < Empty> £temporary857 integral4$0#
+36: PreCall 14
+37: Parameter 20 pointer mode
+38: Parameter 22 string string_a#
+39: Call 14 strcmp 0
+40: PostCall 14
+41: GetReturnValue £temporary862
+42: Equal < Empty> £temporary862 integral2$0#
 43: Jump < Empty>
 44: Empty
-45: PreCall 52
-46: Parameter 76 pointer name
-47: Parameter 84 unsigned short int integral2$1#
-48: Call 52 fileopen 0
-49: PostCall 52
-50: GetReturnValue £temporary859
-51: Assign handle £temporary859
-52: NotEqual < Empty> handle integral4$minus1#
+45: PreCall 14
+46: Parameter 20 pointer name
+47: Parameter 22 unsigned short int integral1$65#
+48: Call 14 fileopen 0
+49: PostCall 14
+50: GetReturnValue £temporary864
+51: Assign handle £temporary864
+52: NotEqual < Empty> handle integral2$minus1#
 53: Jump < Empty>
 54: Empty
-55: PreCall 52
-56: Parameter 76 pointer stream
-57: Parameter 84 signed int integral4$0#
-58: Parameter 88 signed int integral4$2#
-59: Call 52 fseek 0
-60: PostCall 52
+55: PreCall 14
+56: Parameter 20 pointer stream
+57: Parameter 22 signed int integral2$0#
+58: Parameter 24 signed int integral2$2#
+59: Call 14 fseek 0
+60: PostCall 14
 61: Jump < Empty>
 62: Empty
-63: PreCall 52
-64: Parameter 76 pointer name
-65: Call 52 filecreate 0
-66: PostCall 52
-67: GetReturnValue £temporary862
-68: Assign handle £temporary862
+63: PreCall 14
+64: Parameter 20 pointer name
+65: Call 14 filecreate 0
+66: PostCall 14
+67: GetReturnValue £temporary867
+68: Assign handle £temporary867
 69: Empty
 70: Jump < Empty>
 71: Empty
-72: PreCall 52
-73: Parameter 76 pointer mode
-74: Parameter 84 string string_r2B#
-75: Call 52 strcmp 0
-76: PostCall 52
-77: GetReturnValue £temporary865
-78: Equal < Empty> £temporary865 integral4$0#
+72: PreCall 14
+73: Parameter 20 pointer mode
+74: Parameter 22 string string_r2B#
+75: Call 14 strcmp 0
+76: PostCall 14
+77: GetReturnValue £temporary870
+78: Equal < Empty> £temporary870 integral2$0#
 79: Jump < Empty>
 80: Empty
-81: PreCall 52
-82: Parameter 76 string string_r2B10A#
-83: Call 52 printf 0
-84: PostCall 52
-85: PreCall 52
-86: Parameter 76 pointer name
-87: Parameter 84 unsigned short int integral2$3#
-88: Call 52 fileopen 0
-89: PostCall 52
-90: GetReturnValue £temporary868
-91: Assign handle £temporary868
-92: PreCall 52
-93: Parameter 76 string string_r2B20A#
-94: Call 52 printf 0
-95: PostCall 52
+81: PreCall 14
+82: Parameter 20 string string_r2B10A#
+83: Call 14 printf 0
+84: PostCall 14
+85: PreCall 14
+86: Parameter 20 pointer name
+87: Parameter 22 unsigned short int integral1$66#
+88: Call 14 fileopen 0
+89: PostCall 14
+90: GetReturnValue £temporary873
+91: Assign handle £temporary873
+92: PreCall 14
+93: Parameter 20 string string_r2B20A#
+94: Call 14 printf 0
+95: PostCall 14
 96: Jump < Empty>
 97: Empty
-98: PreCall 52
-99: Parameter 76 pointer mode
-100: Parameter 84 string string_w2B#
-101: Call 52 strcmp 0
-102: PostCall 52
-103: GetReturnValue £temporary870
-104: Equal < Empty> £temporary870 integral4$0#
+98: PreCall 14
+99: Parameter 20 pointer mode
+100: Parameter 22 string string_w2B#
+101: Call 14 strcmp 0
+102: PostCall 14
+103: GetReturnValue £temporary875
+104: Equal < Empty> £temporary875 integral2$0#
 105: Jump < Empty>
 106: Empty
-107: PreCall 52
-108: Parameter 76 pointer name
-109: Call 52 fileexists 0
-110: PostCall 52
-111: GetReturnValue £temporary872
-112: NotEqual < Empty> £temporary872 integral4$0#
+107: PreCall 14
+108: Parameter 20 pointer name
+109: Call 14 fileexists 0
+110: PostCall 14
+111: GetReturnValue £temporary877
+112: NotEqual < Empty> £temporary877 integral2$0#
 113: Jump < Empty>
 114: Empty
-115: PreCall 52
-116: Parameter 76 pointer name
-117: Parameter 84 unsigned short int integral2$3#
-118: Call 52 fileopen 0
-119: PostCall 52
-120: GetReturnValue £temporary873
-121: Assign handle £temporary873
+115: PreCall 14
+116: Parameter 20 pointer name
+117: Parameter 22 unsigned short int integral1$66#
+118: Call 14 fileopen 0
+119: PostCall 14
+120: GetReturnValue £temporary878
+121: Assign handle £temporary878
 122: Jump < Empty>
 123: Empty
-124: PreCall 52
-125: Parameter 76 pointer name
-126: Call 52 filecreate 0
-127: PostCall 52
-128: GetReturnValue £temporary874
-129: Assign handle £temporary874
+124: PreCall 14
+125: Parameter 20 pointer name
+126: Call 14 filecreate 0
+127: PostCall 14
+128: GetReturnValue £temporary879
+129: Assign handle £temporary879
 130: Empty
 131: Jump < Empty>
 132: Empty
-133: PreCall 52
-134: Parameter 76 pointer mode
-135: Parameter 84 string string_a2B#
-136: Call 52 strcmp 0
-137: PostCall 52
-138: GetReturnValue £temporary878
-139: Equal < Empty> £temporary878 integral4$0#
+133: PreCall 14
+134: Parameter 20 pointer mode
+135: Parameter 22 string string_a2B#
+136: Call 14 strcmp 0
+137: PostCall 14
+138: GetReturnValue £temporary883
+139: Equal < Empty> £temporary883 integral2$0#
 140: Jump < Empty>
 141: Empty
-142: PreCall 52
-143: Parameter 76 pointer name
-144: Parameter 84 unsigned short int integral2$3#
-145: Call 52 fileopen 0
-146: PostCall 52
-147: GetReturnValue £temporary880
-148: Assign handle £temporary880
-149: NotEqual < Empty> handle integral4$minus1#
+142: PreCall 14
+143: Parameter 20 pointer name
+144: Parameter 22 unsigned short int integral1$66#
+145: Call 14 fileopen 0
+146: PostCall 14
+147: GetReturnValue £temporary885
+148: Assign handle £temporary885
+149: NotEqual < Empty> handle integral2$minus1#
 150: Jump < Empty>
 151: Empty
-152: PreCall 52
-153: Parameter 76 pointer stream
-154: Parameter 84 signed int integral4$0#
-155: Parameter 88 signed int integral4$2#
-156: Call 52 fseek 0
-157: PostCall 52
+152: PreCall 14
+153: Parameter 20 pointer stream
+154: Parameter 22 signed int integral2$0#
+155: Parameter 24 signed int integral2$2#
+156: Call 14 fseek 0
+157: PostCall 14
 158: Jump < Empty>
 159: Empty
-160: PreCall 52
-161: Parameter 76 pointer name
-162: Call 52 filecreate 0
-163: PostCall 52
-164: GetReturnValue £temporary883
-165: Assign handle £temporary883
+160: PreCall 14
+161: Parameter 20 pointer name
+162: Call 14 filecreate 0
+163: PostCall 14
+164: GetReturnValue £temporary888
+165: Assign handle £temporary888
 166: Empty
 167: Jump < Empty>
 168: Empty
@@ -173,31 +173,29 @@
 172: Empty
 173: Empty
 174: Empty
-175: NotEqual < Empty> handle integral4$minus1#
+175: NotEqual < Empty> handle integral2$minus1#
 176: Jump < Empty>
 177: Empty
-178: Dereference £temporary899 stream 0
-179: Assign £temporary899.open integral4$1#
-180: Dereference £temporary900 stream 0
-181: Assign £temporary900.handle handle
-182: Dereference £temporary901 stream 0
-183: Assign £temporary901.size integral4$0#
-184: PreCall 52
-185: Dereference £temporary902 stream 0
-186: Parameter 76 array £temporary902.name
-187: Parameter 84 pointer name
-188: Call 52 strcpy 0
-189: PostCall 52
-190: Dereference £temporary904 stream 0
-191: Assign £temporary904.temporary integral4$0#
-192: SetReturnValue
-193: Return stream
-194: Jump < Empty>
-195: Empty
-196: Dereference £temporary905 stream 0
-197: Assign £temporary905.open integral4$0#
-198: SetReturnValue
-199: Return integral8$0#
-200: Empty
-201: Empty
-202: FunctionEnd freopen
+178: Dereference £temporary904 stream 0
+179: Assign £temporary904.open integral2$1#
+180: Dereference £temporary905 stream 0
+181: Assign £temporary905.handle handle
+182: Dereference £temporary906 stream 0
+183: Assign £temporary906.size integral2$0#
+184: PreCall 14
+185: Dereference £temporary907 stream 0
+186: Parameter 20 array £temporary907.name
+187: Parameter 22 pointer name
+188: Call 14 strcpy 0
+189: PostCall 14
+190: Dereference £temporary909 stream 0
+191: Assign £temporary909.temporary integral2$0#
+192: Return stream
+193: Jump < Empty>
+194: Empty
+195: Dereference £temporary910 stream 0
+196: Assign £temporary910.open integral2$0#
+197: Return integral2$0#
+198: Empty
+199: Empty
+200: FunctionEnd freopen

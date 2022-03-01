@@ -1,18 +1,20 @@
-0: IntegralToIntegral £temporary3323 block
-1: Assign charBlock £temporary3323
-2: IntegralToIntegral £temporary3324 i
-3: Assign c £temporary3324
-4: Assign index 0
+0: IntegralToIntegral £temporary3875 block
+1: Assign charBlock £temporary3875
+2: IntegralToIntegral £temporary3876 i
+3: Assign c £temporary3876
+4: Assign index integral4$0#
 5: Empty
-6: SignedLessThan UnsignedMultiply £temporary3328 index 1 index size
-7: Goto Return block
-8: UnsignedMultiply £temporary3328 index 1
-9: BinaryAdd £temporary3329 charBlock £temporary3328
-10: Dereference £temporary3327 -> £temporary3329 £temporary3329 0
-11: Assign £temporary3327 -> £temporary3329 c
-12: Empty
-13: BinaryAdd index index 1
-14: Goto Empty
-15: Return block
-16: Empty
-17: FunctionEnd memset
+6: LessThan < Multiply £temporary3879 index integral4$1#> index size
+7: Jump < Return block>
+8: Multiply £temporary3879 index integral4$1#
+9: IntegralToIntegral £temporary3880 £temporary3879
+10: Add £temporary3881 charBlock £temporary3880
+11: Dereference £temporary3882 £temporary3881 0
+12: Assign £temporary3882 c
+13: Empty
+14: Add £temporary3878 index integral4$1#
+15: Assign index £temporary3878
+16: Jump < Empty>
+17: Return block
+18: Empty
+19: FunctionEnd memset

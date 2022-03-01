@@ -1,0 +1,8 @@
+0: Equal 4 g_currStructPtr integral8$0#
+1: Dereference £temporary395 g_currStructPtr 0
+2: Assign £temporary396 £temporary395.localePtr
+3: Jump 5
+4: Assign £temporary396 integral8$0#
+5: SetReturnValue
+6: Return £temporary396
+7: FunctionEnd localeconv

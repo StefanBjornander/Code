@@ -1,3 +1,18 @@
-0: Empty
-1: Return
-2: FunctionEnd signal
+0: PreCall 10
+1: Parameter 16 string string_Signal2025i20function2025p0A#
+2: Parameter 18 signed int sig
+3: Parameter 20 pointer func
+4: Call 10 printf 4
+5: PostCall 10
+6: IntegralToIntegral £temporary787 sig
+7: AssignRegister al £temporary787
+8: AssignRegister ah integral1$37#
+9: AssignRegister dx func
+10: Interrupt 33
+11: PreCall 10
+12: Parameter 16 string string_Signal20done0A#
+13: Call 10 printf 0
+14: PostCall 10
+15: Empty
+16: Return
+17: FunctionEnd signal

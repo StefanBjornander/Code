@@ -1,20 +1,19 @@
-0: Equal < Assign £temporary260 integral4$1#> c integral4$32#
-1: Jump < Equal < Assign £temporary260 integral4$1#> c integral4$12#>
-2: Equal < Assign £temporary260 integral4$1#> c integral4$12#
-3: Jump < Equal < Assign £temporary260 integral4$1#> c integral4$10#>
-4: Equal < Assign £temporary260 integral4$1#> c integral4$10#
-5: Jump < Equal < Assign £temporary260 integral4$1#> c integral4$13#>
-6: Equal < Assign £temporary260 integral4$1#> c integral4$13#
-7: Jump < Equal < Assign £temporary260 integral4$1#> c integral4$9#>
-8: Equal < Assign £temporary260 integral4$1#> c integral4$9#
-9: Jump < Equal < Assign £temporary260 integral4$1#> c integral4$11#>
-10: Equal < Assign £temporary260 integral4$1#> c integral4$11#
-11: Jump < Assign £temporary260 integral4$0#>
-12: Assign £temporary260 integral4$1#
+0: Equal < Assign £temporary253 integral2$1#> c integral2$32#
+1: Jump < Equal < Assign £temporary253 integral2$1#> c integral2$12#>
+2: Equal < Assign £temporary253 integral2$1#> c integral2$12#
+3: Jump < Equal < Assign £temporary253 integral2$1#> c integral2$10#>
+4: Equal < Assign £temporary253 integral2$1#> c integral2$10#
+5: Jump < Equal < Assign £temporary253 integral2$1#> c integral2$13#>
+6: Equal < Assign £temporary253 integral2$1#> c integral2$13#
+7: Jump < Equal < Assign £temporary253 integral2$1#> c integral2$9#>
+8: Equal < Assign £temporary253 integral2$1#> c integral2$9#
+9: Jump < Equal < Assign £temporary253 integral2$1#> c integral2$11#>
+10: Equal < Assign £temporary253 integral2$1#> c integral2$11#
+11: Jump < Assign £temporary253 integral2$0#>
+12: Assign £temporary253 integral2$1#
 13: Jump < Empty>
-14: Assign £temporary260 integral4$0#
+14: Assign £temporary253 integral2$0#
 15: Empty
-16: SetReturnValue
-17: Return £temporary260
-18: Empty
-19: FunctionEnd isspace
+16: Return £temporary253
+17: Empty
+18: FunctionEnd isspace

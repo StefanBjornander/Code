@@ -1,37 +1,37 @@
 1:	
 
 compare:	; IntegralToIntegral £temporary5983 valuePtr1
-2:		mov a3129, [bp + 6]
+2:		mov a3128, [bp + 6]
 5:	
 
 compare$1:	; Deref £temporary5984 -> £temporary5983 £temporary5983 0
 7:	
 
 compare$2:	; Assign intValue1 £temporary5984 -> £temporary5983
-8:		mov t3130, [a3129]
-9:		mov [bp + 10], t3130
+8:		mov t3129, [a3128]
+9:		mov [bp + 10], t3129
 11:	
 
 compare$3:	; IntegralToIntegral £temporary5985 valuePtr2
-12:		mov a3131, [bp + 8]
+12:		mov a3130, [bp + 8]
 15:	
 
 compare$4:	; Deref £temporary5986 -> £temporary5985 £temporary5985 0
 17:	
 
 compare$5:	; Assign intValue2 £temporary5986 -> £temporary5985
-18:		mov t3132, [a3131]
-19:		mov [bp + 12], t3132
+18:		mov t3131, [a3130]
+19:		mov [bp + 12], t3131
 21:	
 
 compare$6:	; SignedGreaterThanEqual 9 intValue1 intValue2
-22:		mov a3133, [bp + 12]
-23:		cmp [bp + 10], a3133
+22:		mov a3132, [bp + 12]
+23:		cmp [bp + 10], a3132
 24:		jge compare$9
 26:	
 
 compare$7:	; Assign £temporary5996 -1
-27:		mov t3134, -1
+27:		mov t3133, -1
 29:	
 
 compare$8:	; Goto 14
@@ -39,13 +39,13 @@ compare$8:	; Goto 14
 32:	
 
 compare$9:	; NotEqual 12 intValue1 intValue2
-33:		mov a3135, [bp + 12]
-34:		cmp [bp + 10], a3135
+33:		mov a3134, [bp + 12]
+34:		cmp [bp + 10], a3134
 35:		jne compare$12
 37:	
 
 compare$10:	; Assign £temporary5992 0
-38:		mov t3136, 0
+38:		mov t3135, 0
 40:	
 
 compare$11:	; Goto 13
@@ -53,7 +53,7 @@ compare$11:	; Goto 13
 43:	
 
 compare$12:	; Assign £temporary5992 1
-44:		mov t3137, 1
+44:		mov t3136, 1
 46:	
 
 compare$13:	; Assign £temporary5996 £temporary5992
@@ -63,47 +63,47 @@ compare$14:	; SetReturnValue £temporary5996
 50:	
 
 compare$15:	; Return £temporary5996
-51:		mov t3139, [bp]
+51:		mov t3138, [bp]
 52:		mov di, [bp + 4]
 53:		mov bp, [bp + 2]
-54:		jmp t3139
+54:		jmp t3138
 56:	
 
 compare$16:	; FunctionEnd compare
 1:	
 
 reverse_compare:	; IntegralToIntegral £temporary5997 valuePtr1
-2:		mov a3140, [bp + 6]
+2:		mov a3139, [bp + 6]
 5:	
 
 reverse_compare$1:	; Deref £temporary5998 -> £temporary5997 £temporary5997 0
 7:	
 
 reverse_compare$2:	; Assign intValue1 £temporary5998 -> £temporary5997
-8:		mov t3141, [a3140]
-9:		mov [bp + 10], t3141
+8:		mov t3140, [a3139]
+9:		mov [bp + 10], t3140
 11:	
 
 reverse_compare$3:	; IntegralToIntegral £temporary5999 valuePtr2
-12:		mov a3142, [bp + 8]
+12:		mov a3141, [bp + 8]
 15:	
 
 reverse_compare$4:	; Deref £temporary6000 -> £temporary5999 £temporary5999 0
 17:	
 
 reverse_compare$5:	; Assign intValue2 £temporary6000 -> £temporary5999
-18:		mov t3143, [a3142]
-19:		mov [bp + 12], t3143
+18:		mov t3142, [a3141]
+19:		mov [bp + 12], t3142
 21:	
 
 reverse_compare$6:	; SignedGreaterThanEqual 9 intValue1 intValue2
-22:		mov a3144, [bp + 12]
-23:		cmp [bp + 10], a3144
+22:		mov a3143, [bp + 12]
+23:		cmp [bp + 10], a3143
 24:		jge reverse_compare$9
 26:	
 
 reverse_compare$7:	; Assign £temporary6010 1
-27:		mov t3145, 1
+27:		mov t3144, 1
 29:	
 
 reverse_compare$8:	; Goto 14
@@ -111,13 +111,13 @@ reverse_compare$8:	; Goto 14
 32:	
 
 reverse_compare$9:	; NotEqual 12 intValue1 intValue2
-33:		mov a3146, [bp + 12]
-34:		cmp [bp + 10], a3146
+33:		mov a3145, [bp + 12]
+34:		cmp [bp + 10], a3145
 35:		jne reverse_compare$12
 37:	
 
 reverse_compare$10:	; Assign £temporary6006 0
-38:		mov t3147, 0
+38:		mov t3146, 0
 40:	
 
 reverse_compare$11:	; Goto 13
@@ -125,7 +125,7 @@ reverse_compare$11:	; Goto 13
 43:	
 
 reverse_compare$12:	; Assign £temporary6006 -1
-44:		mov t3148, -1
+44:		mov t3147, -1
 46:	
 
 reverse_compare$13:	; Assign £temporary6010 £temporary6006
@@ -135,10 +135,10 @@ reverse_compare$14:	; SetReturnValue £temporary6010
 50:	
 
 reverse_compare$15:	; Return £temporary6010
-51:		mov t3150, [bp]
+51:		mov t3149, [bp]
 52:		mov di, [bp + 4]
 53:		mov bp, [bp + 2]
-54:		jmp t3150
+54:		jmp t3149
 56:	
 
 reverse_compare$16:	; FunctionEnd reverse_compare
@@ -152,13 +152,13 @@ print_div$1:	; Parameter 10 string_div_t20quot2025i20rem2025i0A# 6
 6:	
 
 print_div$2:	; Parameter 10 d$quot 8
-7:		mov a3151, [bp + 6]
-8:		mov [bp + 18], a3151
+7:		mov a3150, [bp + 6]
+8:		mov [bp + 18], a3150
 10:	
 
 print_div$3:	; Parameter 10 d$rem 10
-11:		mov a3152, [bp + 8]
-12:		mov [bp + 20], a3152
+11:		mov a3151, [bp + 8]
+12:		mov [bp + 20], a3151
 14:	
 
 print_div$4:	; Call 10 printf 0
@@ -177,27 +177,23 @@ print_div$6:	; Increment d$quot
 25:		inc word [bp + 6]
 27:	
 
-print_div$7:	; Assign £temporary6017 d$rem
-28:		mov t3154, [bp + 8]
+print_div$7:	; Increment d$rem
+28:		inc word [bp + 8]
 30:	
 
-print_div$8:	; Increment d$rem
-31:		inc word [bp + 8]
-33:	
+print_div$8:	; SetReturnValue d
+31:		mov t3153, bp
+32:		add t3153, 6
+34:	
 
-print_div$9:	; SetReturnValue d
-34:		mov t3155, bp
-35:		add t3155, 6
-37:	
+print_div$9:	; Return d
+35:		mov t3154, [bp]
+36:		mov di, [bp + 4]
+37:		mov bp, [bp + 2]
+38:		jmp t3154
+40:	
 
-print_div$10:	; Return d
-38:		mov t3156, [bp]
-39:		mov di, [bp + 4]
-40:		mov bp, [bp + 2]
-41:		jmp t3156
-43:	
-
-print_div$11:	; FunctionEnd print_div
+print_div$10:	; FunctionEnd print_div
 1:	
 
 print_ldiv:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -208,13 +204,13 @@ print_ldiv$1:	; Parameter 14 string_ldiv_t20quot2025li20rem2025li0A# 6
 6:	
 
 print_ldiv$2:	; Parameter 14 ld$quot 8
-7:		mov a3157, [bp + 6]
-8:		mov [bp + 22], a3157
+7:		mov a3155, [bp + 6]
+8:		mov [bp + 22], a3155
 10:	
 
 print_ldiv$3:	; Parameter 14 ld$rem 12
-11:		mov a3158, [bp + 10]
-12:		mov [bp + 26], a3158
+11:		mov a3156, [bp + 10]
+12:		mov [bp + 26], a3156
 14:	
 
 print_ldiv$4:	; Call 14 printf 0
@@ -233,27 +229,23 @@ print_ldiv$6:	; Decrement ld$quot
 25:		dec dword [bp + 6]
 27:	
 
-print_ldiv$7:	; Assign £temporary6029 ld$rem
-28:		mov t3160, [bp + 10]
+print_ldiv$7:	; Decrement ld$rem
+28:		dec dword [bp + 10]
 30:	
 
-print_ldiv$8:	; Decrement ld$rem
-31:		dec dword [bp + 10]
-33:	
+print_ldiv$8:	; SetReturnValue ld
+31:		mov t3158, bp
+32:		add t3158, 6
+34:	
 
-print_ldiv$9:	; SetReturnValue ld
-34:		mov t3161, bp
-35:		add t3161, 6
-37:	
+print_ldiv$9:	; Return ld
+35:		mov t3159, [bp]
+36:		mov di, [bp + 4]
+37:		mov bp, [bp + 2]
+38:		jmp t3159
+40:	
 
-print_ldiv$10:	; Return ld
-38:		mov t3162, [bp]
-39:		mov di, [bp + 4]
-40:		mov bp, [bp + 2]
-41:		jmp t3162
-43:	
-
-print_ldiv$11:	; FunctionEnd print_ldiv
+print_ldiv$10:	; FunctionEnd print_ldiv
 1:	
 
 exit_handle1x:	; CallHeader 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -275,10 +267,10 @@ exit_handle1x$3:	; PostCall 6
 15:	
 
 exit_handle1x$4:	; Return 0
-16:		mov t3164, [bp]
+16:		mov t3161, [bp]
 17:		mov di, [bp + 4]
 18:		mov bp, [bp + 2]
-19:		jmp t3164
+19:		jmp t3161
 21:	
 
 exit_handle1x$5:	; FunctionEnd exit_handle1x
@@ -303,10 +295,10 @@ exit_handle2x$3:	; PostCall 6
 15:	
 
 exit_handle2x$4:	; Return 0
-16:		mov t3166, [bp]
+16:		mov t3163, [bp]
 17:		mov di, [bp + 4]
 18:		mov bp, [bp + 2]
-19:		jmp t3166
+19:		jmp t3163
 21:	
 
 exit_handle2x$5:	; FunctionEnd exit_handle2x
@@ -331,10 +323,10 @@ exit_handle3x$3:	; PostCall 6
 15:	
 
 exit_handle3x$4:	; Return 0
-16:		mov t3168, [bp]
+16:		mov t3165, [bp]
 17:		mov di, [bp + 4]
 18:		mov bp, [bp + 2]
-19:		jmp t3168
+19:		jmp t3165
 21:	
 
 exit_handle3x$5:	; FunctionEnd exit_handle3x
@@ -359,10 +351,10 @@ hello$3:	; PostCall 6
 15:	
 
 hello$4:	; Return 0
-16:		mov t3170, [bp]
+16:		mov t3167, [bp]
 17:		mov di, [bp + 4]
 18:		mov bp, [bp + 2]
-19:		jmp t3170
+19:		jmp t3167
 21:	
 
 hello$5:	; FunctionEnd hello
@@ -376,11 +368,11 @@ qtest$1:	; Parameter 8 string_f3A2025u0A# 6
 6:	
 
 qtest$2:	; IntegralToIntegral £temporary6043 f
-7:		mov a3171, [bp + 6]
+7:		mov a3168, [bp + 6]
 10:	
 
 qtest$3:	; Parameter 8 £temporary6043 8
-11:		mov [bp + 16], a3171
+11:		mov [bp + 16], a3168
 13:	
 
 qtest$4:	; Call 8 printf 0
@@ -401,19 +393,19 @@ qtest$6:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 qtest$7:	; Call 8 f 0
 26:		mov word [bp + 8], qtest$8
 27:		mov [bp + 10], bp
-28:		mov a3173, [bp + 6]
+28:		mov a3170, [bp + 6]
 29:		add bp, 8
-30:		jmp a3173 a3173 f 28 30
+30:		jmp a3170 a3170 f 28 30
 32:	
 
 qtest$8:	; PostCall 8
 34:	
 
 qtest$9:	; Return 0
-35:		mov t3174, [bp]
+35:		mov t3171, [bp]
 36:		mov di, [bp + 4]
 37:		mov bp, [bp + 2]
-38:		jmp t3174
+38:		jmp t3171
 40:	
 
 qtest$10:	; FunctionEnd qtest
@@ -427,11 +419,11 @@ stdlib_testZ$1:	; Parameter 6 string_hello3A2025u0A# 6
 6:	
 
 stdlib_testZ$2:	; IntegralToIntegral £temporary6048 hello
-7:		mov a3175, hello
+7:		mov a3172, hello
 10:	
 
 stdlib_testZ$3:	; Parameter 6 £temporary6048 8
-11:		mov [bp + 14], a3175
+11:		mov [bp + 14], a3172
 13:	
 
 stdlib_testZ$4:	; Call 6 printf 0
@@ -482,10 +474,10 @@ stdlib_testZ$13:	; PostCall 6
 50:	
 
 stdlib_testZ$14:	; Return 0
-51:		mov t3178, [bp]
+51:		mov t3175, [bp]
 52:		mov di, [bp + 4]
 53:		mov bp, [bp + 2]
-54:		jmp t3178
+54:		jmp t3175
 56:	
 
 stdlib_testZ$15:	; FunctionEnd stdlib_testZ
@@ -549,12 +541,12 @@ stdlib_test$13:	; Parameter 8 string_1232E456789abc# 14
 44:	
 
 stdlib_test$14:	; address £temporary6058 p
-45:		mov t3180, bp
-46:		add t3180, 6
+45:		mov t3177, bp
+46:		add t3177, 6
 48:	
 
 stdlib_test$15:	; Parameter 8 £temporary6058 16
-49:		mov [bp + 24], t3180
+49:		mov [bp + 24], t3177
 51:	
 
 stdlib_test$16:	; Call 8 strtod 8
@@ -575,8 +567,8 @@ stdlib_test$19:	; Parameter 8 £temporary6059 8
 64:	
 
 stdlib_test$20:	; Parameter 8 p 16
-65:		mov a3181, [bp + 6]
-66:		mov [bp + 24], a3181
+65:		mov a3178, [bp + 6]
+66:		mov [bp + 24], a3178
 68:	
 
 stdlib_test$21:	; Call 8 printf 0
@@ -619,7 +611,7 @@ stdlib_test$29:	; GetReturnValue £temporary6061
 98:	
 
 stdlib_test$30:	; Parameter 6 £temporary6061 8
-99:		mov [bp + 14], type3183
+99:		mov [bp + 14], type3180
 101:	
 
 stdlib_test$31:	; Call 6 printf 0
@@ -697,7 +689,7 @@ stdlib_test$47:	; GetReturnValue £temporary6065
 158:	
 
 stdlib_test$48:	; Parameter 6 £temporary6065 8
-159:		mov [bp + 14], type3187
+159:		mov [bp + 14], type3184
 161:	
 
 stdlib_test$49:	; CallHeader 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -721,7 +713,7 @@ stdlib_test$53:	; GetReturnValue £temporary6066
 176:	
 
 stdlib_test$54:	; Parameter 6 £temporary6066 10
-177:		mov [bp + 16], type3188
+177:		mov [bp + 16], type3185
 179:	
 
 stdlib_test$55:	; Call 6 printf 0
@@ -764,7 +756,7 @@ stdlib_test$63:	; GetReturnValue £temporary6068
 209:	
 
 stdlib_test$64:	; Parameter 6 £temporary6068 8
-210:		mov [bp + 14], type3190
+210:		mov [bp + 14], type3187
 212:	
 
 stdlib_test$65:	; CallHeader 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -788,7 +780,7 @@ stdlib_test$69:	; GetReturnValue £temporary6069
 227:	
 
 stdlib_test$70:	; Parameter 6 £temporary6069 12
-228:		mov [bp + 18], type3191
+228:		mov [bp + 18], type3188
 230:	
 
 stdlib_test$71:	; Call 6 printf 0
@@ -828,18 +820,18 @@ stdlib_test$78:	; GetReturnValue £temporary6071 -> £temporary6072
 258:	
 
 stdlib_test$79:	; Assign i £temporary6071 -> £temporary6072
-259:		mov t3195, bp
-260:		add t3195, 6
-261:		mov t3196, 4
+259:		mov t3192, bp
+260:		add t3192, 6
+261:		mov t3193, 4
 262:	
 
 stdlib_test$79$Loop:
-263:		mov t3197, [t3194]
-264:		mov [t3195], t3197
-265:		inc t3194
-266:		inc t3195
-267:		dec t3196
-268:		cmp t3196, 0
+263:		mov t3194, [t3191]
+264:		mov [t3192], t3194
+265:		inc t3191
+266:		inc t3192
+267:		dec t3193
+268:		cmp t3193, 0
 269:		jne stdlib_test$79$Loop
 271:	
 
@@ -851,13 +843,13 @@ stdlib_test$81:	; Parameter 10 string_div_t28102C20329203D202825i2C2025i290A# 6
 276:	
 
 stdlib_test$82:	; Parameter 10 i$quot 8
-277:		mov a3198, [bp + 6]
-278:		mov [bp + 18], a3198
+277:		mov a3195, [bp + 6]
+278:		mov [bp + 18], a3195
 280:	
 
 stdlib_test$83:	; Parameter 10 i$rem 10
-281:		mov a3199, [bp + 8]
-282:		mov [bp + 20], a3199
+281:		mov a3196, [bp + 8]
+282:		mov [bp + 20], a3196
 284:	
 
 stdlib_test$84:	; Call 10 printf 0
@@ -879,20 +871,20 @@ stdlib_test$87:	; ParameterInitSize
 298:	
 
 stdlib_test$88:	; Parameter 10 i 6
-299:		mov t3201, bp
-300:		add t3201, 6
-301:		mov t3202, bp
-302:		add t3202, 16
-303:		mov t3203, 4
+299:		mov t3198, bp
+300:		add t3198, 6
+301:		mov t3199, bp
+302:		add t3199, 16
+303:		mov t3200, 4
 304:	
 
 stdlib_test$88$Loop:
-305:		mov t3204, [t3201]
-306:		mov [t3202], t3204
-307:		inc t3201
-308:		inc t3202
-309:		dec t3203
-310:		cmp t3203, 0
+305:		mov t3201, [t3198]
+306:		mov [t3199], t3201
+307:		inc t3198
+308:		inc t3199
+309:		dec t3200
+310:		cmp t3200, 0
 311:		jne stdlib_test$88$Loop
 313:	
 
@@ -910,18 +902,18 @@ stdlib_test$91:	; GetReturnValue £temporary6076 -> £temporary6077
 323:	
 
 stdlib_test$92:	; Assign j £temporary6076 -> £temporary6077
-324:		mov t3207, bp
-325:		add t3207, 10
-326:		mov t3208, 4
+324:		mov t3204, bp
+325:		add t3204, 10
+326:		mov t3205, 4
 327:	
 
 stdlib_test$92$Loop:
-328:		mov t3209, [t3206]
-329:		mov [t3207], t3209
-330:		inc t3206
-331:		inc t3207
-332:		dec t3208
-333:		cmp t3208, 0
+328:		mov t3206, [t3203]
+329:		mov [t3204], t3206
+330:		inc t3203
+331:		inc t3204
+332:		dec t3205
+333:		cmp t3205, 0
 334:		jne stdlib_test$92$Loop
 336:	
 
@@ -933,13 +925,13 @@ stdlib_test$94:	; Parameter 14 string_div_t28102C20329203D202825i2C2025i290A0A# 
 341:	
 
 stdlib_test$95:	; Parameter 14 j$quot 8
-342:		mov a3210, [bp + 10]
-343:		mov [bp + 22], a3210
+342:		mov a3207, [bp + 10]
+343:		mov [bp + 22], a3207
 345:	
 
 stdlib_test$96:	; Parameter 14 j$rem 10
-346:		mov a3211, [bp + 12]
-347:		mov [bp + 24], a3211
+346:		mov a3208, [bp + 12]
+347:		mov [bp + 24], a3208
 349:	
 
 stdlib_test$97:	; Call 14 printf 0
@@ -979,18 +971,18 @@ stdlib_test$104:	; GetReturnValue £temporary6081 -> £temporary6082
 377:	
 
 stdlib_test$105:	; Assign li £temporary6081 -> £temporary6082
-378:		mov t3215, bp
-379:		add t3215, 6
-380:		mov t3216, 8
+378:		mov t3212, bp
+379:		add t3212, 6
+380:		mov t3213, 8
 381:	
 
 stdlib_test$105$Loop:
-382:		mov t3217, [t3214]
-383:		mov [t3215], t3217
-384:		inc t3214
-385:		inc t3215
-386:		dec t3216
-387:		cmp t3216, 0
+382:		mov t3214, [t3211]
+383:		mov [t3212], t3214
+384:		inc t3211
+385:		inc t3212
+386:		dec t3213
+387:		cmp t3213, 0
 388:		jne stdlib_test$105$Loop
 390:	
 
@@ -1002,13 +994,13 @@ stdlib_test$107:	; Parameter 14 string_ldiv_t28102C20329203D202825li2C2025li290A
 395:	
 
 stdlib_test$108:	; Parameter 14 li$quot 8
-396:		mov a3218, [bp + 6]
-397:		mov [bp + 22], a3218
+396:		mov a3215, [bp + 6]
+397:		mov [bp + 22], a3215
 399:	
 
 stdlib_test$109:	; Parameter 14 li$rem 12
-400:		mov a3219, [bp + 10]
-401:		mov [bp + 26], a3219
+400:		mov a3216, [bp + 10]
+401:		mov [bp + 26], a3216
 403:	
 
 stdlib_test$110:	; Call 14 printf 0
@@ -1030,20 +1022,20 @@ stdlib_test$113:	; ParameterInitSize
 417:	
 
 stdlib_test$114:	; Parameter 14 li 6
-418:		mov t3221, bp
-419:		add t3221, 6
-420:		mov t3222, bp
-421:		add t3222, 20
-422:		mov t3223, 8
+418:		mov t3218, bp
+419:		add t3218, 6
+420:		mov t3219, bp
+421:		add t3219, 20
+422:		mov t3220, 8
 423:	
 
 stdlib_test$114$Loop:
-424:		mov t3224, [t3221]
-425:		mov [t3222], t3224
-426:		inc t3221
-427:		inc t3222
-428:		dec t3223
-429:		cmp t3223, 0
+424:		mov t3221, [t3218]
+425:		mov [t3219], t3221
+426:		inc t3218
+427:		inc t3219
+428:		dec t3220
+429:		cmp t3220, 0
 430:		jne stdlib_test$114$Loop
 432:	
 
@@ -1061,18 +1053,18 @@ stdlib_test$117:	; GetReturnValue £temporary6086 -> £temporary6087
 442:	
 
 stdlib_test$118:	; Assign lj £temporary6086 -> £temporary6087
-443:		mov t3227, bp
-444:		add t3227, 14
-445:		mov t3228, 8
+443:		mov t3224, bp
+444:		add t3224, 14
+445:		mov t3225, 8
 446:	
 
 stdlib_test$118$Loop:
-447:		mov t3229, [t3226]
-448:		mov [t3227], t3229
-449:		inc t3226
-450:		inc t3227
-451:		dec t3228
-452:		cmp t3228, 0
+447:		mov t3226, [t3223]
+448:		mov [t3224], t3226
+449:		inc t3223
+450:		inc t3224
+451:		dec t3225
+452:		cmp t3225, 0
 453:		jne stdlib_test$118$Loop
 455:	
 
@@ -1084,13 +1076,13 @@ stdlib_test$120:	; Parameter 22 string_ldiv_t28102C20329203D202825li2C2025li290A
 460:	
 
 stdlib_test$121:	; Parameter 22 lj$quot 8
-461:		mov a3230, [bp + 14]
-462:		mov [bp + 30], a3230
+461:		mov a3227, [bp + 14]
+462:		mov [bp + 30], a3227
 464:	
 
 stdlib_test$122:	; Parameter 22 lj$rem 12
-465:		mov a3231, [bp + 18]
-466:		mov [bp + 34], a3231
+465:		mov a3228, [bp + 18]
+466:		mov [bp + 34], a3228
 468:	
 
 stdlib_test$123:	; Call 22 printf 0
@@ -1148,8 +1140,8 @@ stdlib_test$134:	; Assign index 0
 510:	
 
 stdlib_test$135:	; SignedGreaterThanEqual 146 index size
-511:		mov a3234, [bp + 14]
-512:		cmp [bp + 16], a3234
+511:		mov a3231, [bp + 14]
+512:		cmp [bp + 16], a3231
 513:		jge stdlib_test$146
 515:	
 
@@ -1161,23 +1153,23 @@ stdlib_test$137:	; Parameter 18 string_25i20# 6
 520:	
 
 stdlib_test$138:	; SignedMultiply £temporary6099 index 2
-521:		mov a3235, [bp + 16]
+521:		mov a3232, [bp + 16]
 523:		xor dx, dx
 524:		imul word [@13336$int2$2#]
 530:	
 
 stdlib_test$139:	; BinaryAdd £temporary6100 list £temporary6099
-531:		mov a3239, bp
-532:		add a3239, 6
-533:		add a3239, t3238
+531:		mov a3236, bp
+532:		add a3236, 6
+533:		add a3236, t3235
 535:	
 
 stdlib_test$140:	; Deref £temporary6101 -> £temporary6100 £temporary6100 0
 537:	
 
 stdlib_test$141:	; Parameter 18 £temporary6101 -> £temporary6100 8
-538:		mov t3240, [a3239]
-539:		mov [bp + 26], t3240
+538:		mov t3237, [a3236]
+539:		mov [bp + 26], t3237
 541:	
 
 stdlib_test$142:	; Call 18 printf 0
@@ -1227,8 +1219,8 @@ stdlib_test$151:	; Parameter 18 list 6
 577:	
 
 stdlib_test$152:	; Parameter 18 size 8
-578:		mov a3243, [bp + 14]
-579:		mov [bp + 26], a3243
+578:		mov a3240, [bp + 14]
+579:		mov [bp + 26], a3240
 581:	
 
 stdlib_test$153:	; Parameter 18 2 10
@@ -1254,8 +1246,8 @@ stdlib_test$157:	; Assign index 0
 598:	
 
 stdlib_test$158:	; SignedGreaterThanEqual 169 index size
-599:		mov a3244, [bp + 14]
-600:		cmp [bp + 16], a3244
+599:		mov a3241, [bp + 14]
+600:		cmp [bp + 16], a3241
 601:		jge stdlib_test$169
 603:	
 
@@ -1267,23 +1259,23 @@ stdlib_test$160:	; Parameter 18 string_25i20# 6
 608:	
 
 stdlib_test$161:	; SignedMultiply £temporary6108 index 2
-609:		mov a3245, [bp + 16]
+609:		mov a3242, [bp + 16]
 611:		xor dx, dx
 612:		imul word [@13357$int2$2#]
 618:	
 
 stdlib_test$162:	; BinaryAdd £temporary6109 list £temporary6108
-619:		mov a3249, bp
-620:		add a3249, 6
-621:		add a3249, t3248
+619:		mov a3246, bp
+620:		add a3246, 6
+621:		add a3246, t3245
 623:	
 
 stdlib_test$163:	; Deref £temporary6110 -> £temporary6109 £temporary6109 0
 625:	
 
 stdlib_test$164:	; Parameter 18 £temporary6110 -> £temporary6109 8
-626:		mov t3250, [a3249]
-627:		mov [bp + 26], t3250
+626:		mov t3247, [a3246]
+627:		mov [bp + 26], t3247
 629:	
 
 stdlib_test$165:	; Call 18 printf 0
@@ -1333,8 +1325,8 @@ stdlib_test$174:	; Parameter 18 list 6
 665:	
 
 stdlib_test$175:	; Parameter 18 size 8
-666:		mov a3253, [bp + 14]
-667:		mov [bp + 26], a3253
+666:		mov a3250, [bp + 14]
+667:		mov [bp + 26], a3250
 669:	
 
 stdlib_test$176:	; Parameter 18 2 10
@@ -1360,8 +1352,8 @@ stdlib_test$180:	; Assign index 0
 686:	
 
 stdlib_test$181:	; SignedGreaterThanEqual 192 index size
-687:		mov a3254, [bp + 14]
-688:		cmp [bp + 16], a3254
+687:		mov a3251, [bp + 14]
+688:		cmp [bp + 16], a3251
 689:		jge stdlib_test$192
 691:	
 
@@ -1373,23 +1365,23 @@ stdlib_test$183:	; Parameter 18 string_25i20# 6
 696:	
 
 stdlib_test$184:	; SignedMultiply £temporary6117 index 2
-697:		mov a3255, [bp + 16]
+697:		mov a3252, [bp + 16]
 699:		xor dx, dx
 700:		imul word [@13378$int2$2#]
 706:	
 
 stdlib_test$185:	; BinaryAdd £temporary6118 list £temporary6117
-707:		mov a3259, bp
-708:		add a3259, 6
-709:		add a3259, t3258
+707:		mov a3256, bp
+708:		add a3256, 6
+709:		add a3256, t3255
 711:	
 
 stdlib_test$186:	; Deref £temporary6119 -> £temporary6118 £temporary6118 0
 713:	
 
 stdlib_test$187:	; Parameter 18 £temporary6119 -> £temporary6118 8
-714:		mov t3260, [a3259]
-715:		mov [bp + 26], t3260
+714:		mov t3257, [a3256]
+715:		mov [bp + 26], t3257
 717:	
 
 stdlib_test$188:	; Call 18 printf 0
@@ -1439,8 +1431,8 @@ stdlib_test$197:	; Parameter 18 list 6
 753:	
 
 stdlib_test$198:	; Parameter 18 size 8
-754:		mov a3263, [bp + 14]
-755:		mov [bp + 26], a3263
+754:		mov a3260, [bp + 14]
+755:		mov [bp + 26], a3260
 757:	
 
 stdlib_test$199:	; Parameter 18 2 10
@@ -1466,8 +1458,8 @@ stdlib_test$203:	; Assign index 0
 774:	
 
 stdlib_test$204:	; SignedGreaterThanEqual 215 index size
-775:		mov a3264, [bp + 14]
-776:		cmp [bp + 16], a3264
+775:		mov a3261, [bp + 14]
+776:		cmp [bp + 16], a3261
 777:		jge stdlib_test$215
 779:	
 
@@ -1479,23 +1471,23 @@ stdlib_test$206:	; Parameter 18 string_25i20# 6
 784:	
 
 stdlib_test$207:	; SignedMultiply £temporary6126 index 2
-785:		mov a3265, [bp + 16]
+785:		mov a3262, [bp + 16]
 787:		xor dx, dx
 788:		imul word [@13399$int2$2#]
 794:	
 
 stdlib_test$208:	; BinaryAdd £temporary6127 list £temporary6126
-795:		mov a3269, bp
-796:		add a3269, 6
-797:		add a3269, t3268
+795:		mov a3266, bp
+796:		add a3266, 6
+797:		add a3266, t3265
 799:	
 
 stdlib_test$209:	; Deref £temporary6128 -> £temporary6127 £temporary6127 0
 801:	
 
 stdlib_test$210:	; Parameter 18 £temporary6128 -> £temporary6127 8
-802:		mov t3270, [a3269]
-803:		mov [bp + 26], t3270
+802:		mov t3267, [a3266]
+803:		mov [bp + 26], t3267
 805:	
 
 stdlib_test$211:	; Call 18 printf 0
@@ -1549,12 +1541,12 @@ stdlib_test$221:	; CallHeader 18 System.Collections.Generic.HashSet`1[CCompiler.
 844:	
 
 stdlib_test$222:	; address £temporary6133 key
-845:		mov t3273, bp
-846:		add t3273, 16
+845:		mov t3270, bp
+846:		add t3270, 16
 848:	
 
 stdlib_test$223:	; Parameter 18 £temporary6133 6
-849:		mov [bp + 24], t3273
+849:		mov [bp + 24], t3270
 851:	
 
 stdlib_test$224:	; Parameter 18 list 8
@@ -1563,8 +1555,8 @@ stdlib_test$224:	; Parameter 18 list 8
 855:	
 
 stdlib_test$225:	; Parameter 18 size 10
-856:		mov a3274, [bp + 14]
-857:		mov [bp + 28], a3274
+856:		mov a3271, [bp + 14]
+857:		mov [bp + 28], a3271
 859:	
 
 stdlib_test$226:	; Parameter 18 2 12
@@ -1592,7 +1584,7 @@ stdlib_test$231:	; IntegralToIntegral £temporary6136 £temporary6135
 878:	
 
 stdlib_test$232:	; Assign p £temporary6136
-879:		mov [bp + 18], type3275
+879:		mov [bp + 18], type3272
 881:	
 
 stdlib_test$233:	; Equal 237 p 0
@@ -1601,9 +1593,9 @@ stdlib_test$233:	; Equal 237 p 0
 885:	
 
 stdlib_test$234:	; BinarySubtract £temporary6138 p list
-886:		mov a3276, [bp + 18]
-887:		sub a3276, bp
-888:		sub a3276, 6
+886:		mov a3273, [bp + 18]
+887:		sub a3273, bp
+888:		sub a3273, 6
 890:	
 
 stdlib_test$235:	; SignedDivide £temporary6143 £temporary6138 2
@@ -1616,11 +1608,11 @@ stdlib_test$236:	; Goto 238
 902:	
 
 stdlib_test$237:	; Assign £temporary6143 -1
-903:		mov t3280, -1
+903:		mov t3277, -1
 905:	
 
 stdlib_test$238:	; Assign index £temporary6143
-906:		mov [bp + 20], t3280
+906:		mov [bp + 20], t3277
 908:	
 
 stdlib_test$239:	; CallHeader 22 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -1631,13 +1623,13 @@ stdlib_test$240:	; Parameter 22 string_20202825i2C2025i290A# 6
 913:	
 
 stdlib_test$241:	; Parameter 22 key 8
-914:		mov a3281, [bp + 16]
-915:		mov [bp + 30], a3281
+914:		mov a3278, [bp + 16]
+915:		mov [bp + 30], a3278
 917:	
 
 stdlib_test$242:	; Parameter 22 index 10
-918:		mov a3282, [bp + 20]
-919:		mov [bp + 32], a3282
+918:		mov a3279, [bp + 20]
+919:		mov [bp + 32], a3279
 921:	
 
 stdlib_test$243:	; Call 22 printf 0
@@ -1679,10 +1671,10 @@ stdlib_test$250:	; PostCall 16
 951:	
 
 stdlib_test$251:	; Return 0
-952:		mov t3285, [bp]
+952:		mov t3282, [bp]
 953:		mov di, [bp + 4]
 954:		mov bp, [bp + 2]
-955:		jmp t3285
+955:		jmp t3282
 957:	
 
 stdlib_test$252:	; FunctionEnd stdlib_test

@@ -1,0 +1,81 @@
+522:
+old  <now 1: 1646064817>
+new  <now 1: 1646145031>
+
+523:
+old  <now 2: 1646064817>
+new  <now 2: 1646145031>
+
+524:
+old  <   gm time: Mon 2022-02-28 16:13:37, year day 58, week day 1, daylight saving time -1>
+new  <   gm time: Tue 2022-03-01 14:30:31, year day 59, week day 2, daylight saving time -1>
+
+525:
+old  <local time: Mon 2022-02-28 17:13:37, year day 58, week day 1, daylight saving time -1>
+new  <local time: Tue 2022-03-01 15:30:31, year day 59, week day 2, daylight saving time -1>
+
+526:
+old  <asctime <Mon Feb 28 16:13:37 2022>, ctime <Mon Feb 28 17:13:37 2022>>
+new  <asctime <Tue Mar 1 14:30:31 2022>, ctime <Tue Mar 1 15:30:31 2022>>
+
+527:
+old  <strftime 311 311 <short day Mon, long day Monday, short month Feb, long month February, date-time 2022-02-28 17:13:37, mday 28, hour 17, gm hour 05, yday 058, month 02, min 13, am/pm AM, sec 37, week number sun 09, week day 01, week number mon 09, date 17:13:37, time 17:13:37, short year 22, long year 2022, summer/winter summer>>
+new  <strftime 309 309 <short day Tue, long day Tuesday, short month Mar, long month March, date-time 2022-03-01 15:30:31, mday 01, hour 15, gm hour 03, yday 059, month 03, min 30, am/pm AM, sec 31, week number sun 09, week day 02, week number mon 09, date 15:30:31, time 15:30:31, short year 22, long year 2022, summer/winter summer>>
+
+556:
+old  <<-0000123> <-0000123> <-0000123> <-0000123>>
+new  <<-000-123> <-000-123> <-000-123> <-000-123>>
+
+590:
+old  <<000123> <-00123> <000123> <-00123> <000123> <000123>>
+new  <<000123> <-0-123> <000123> <-0-123> <000123> <000123>>
+
+591:
+old  <<+00123> <-00123> <+00123> <-00123> <+00123> <+00123>>
+new  <<+00123> <-0-123> <+00123> <-0-123> <+00123> <+00123>>
+
+627:
+old  <strchr(s, 'l') = 2>
+new  <strchr(s, 'l') = -1>
+
+628:
+old  <strrchr(s, 'l') = 10>
+new  <strrchr(s, 'l') = -1>
+
+632:
+old  <memchr(s, 'l', SIZE * sizeof(char)) = 2>
+new  <memchr(s, 'l', SIZE * sizeof(char)) = -1>
+
+649:
+old  <<000123> <-00123> <000123> <-00123> <000123> <000123>>
+new  <<000123> <-0-123> <000123> <-0-123> <000123> <000123>>
+
+650:
+old  <<+00123> <-00123> <+00123> <-00123> <+00123> <+00123>>
+new  <<+00123> <-0-123> <+00123> <-0-123> <+00123> <+00123>>
+
+687:
+old  <abs(-3) = 3, abs(3) = 3>
+new  <abs(-3) = -3, abs(3) = 3>
+
+688:
+old  <labs(-3l) = 3, labs(3l) = 3>
+new  <labs(-3l) = -3, labs(3l) = 3>
+
+706:
+old  <  (1, 0)>
+new  <  (1, -1)>
+
+707:
+old  <  (2, 1)>
+new  <  (2, -1)>
+
+708:
+old  <  (3, 2)>
+new  <  (3, -1)>
+
+709:
+old  <  (4, 3)>
+new  <  (4, -1)>
+
+Log 20

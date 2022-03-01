@@ -1,0 +1,225 @@
+0: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 49 string string_ascii2025i0A#
+2: IntegralToIntegral £temporary3790 c
+3: Parameter 57 signed int £temporary3790
+4: Call 25 printf 4
+5: PostCall 25
+6: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+7: Parameter 49 string string_islower282725c2729203D2025s0A#
+8: IntegralToIntegral £temporary3792 c
+9: Parameter 57 signed int £temporary3792
+10: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+11: IntegralToIntegral £temporary3793 c
+12: Parameter 85 signed int £temporary3793
+13: Call 61 islower 0
+14: PostCall 61
+15: GetReturnValue £temporary3794
+16: Equal 19 £temporary3794 integral4$0#
+17: Assign £temporary3796 string_Yes#
+18: Jump 20
+19: Assign £temporary3796 string_No#
+20: Parameter 61 string £temporary3796
+21: Call 25 printf 12
+22: PostCall 25
+23: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+24: Parameter 49 string string_isupper282725c2729203D2025s0A#
+25: IntegralToIntegral £temporary3798 c
+26: Parameter 57 signed int £temporary3798
+27: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+28: IntegralToIntegral £temporary3799 c
+29: Parameter 85 signed int £temporary3799
+30: Call 61 isupper 0
+31: PostCall 61
+32: GetReturnValue £temporary3800
+33: Equal 36 £temporary3800 integral4$0#
+34: Assign £temporary3802 string_Yes#
+35: Jump 37
+36: Assign £temporary3802 string_No#
+37: Parameter 61 string £temporary3802
+38: Call 25 printf 12
+39: PostCall 25
+40: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+41: Parameter 49 string string_isalpha282725c2729203D2025s0A#
+42: IntegralToIntegral £temporary3804 c
+43: Parameter 57 signed int £temporary3804
+44: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+45: IntegralToIntegral £temporary3805 c
+46: Parameter 85 signed int £temporary3805
+47: Call 61 isalpha 0
+48: PostCall 61
+49: GetReturnValue £temporary3806
+50: Equal 53 £temporary3806 integral4$0#
+51: Assign £temporary3808 string_Yes#
+52: Jump 54
+53: Assign £temporary3808 string_No#
+54: Parameter 61 string £temporary3808
+55: Call 25 printf 12
+56: PostCall 25
+57: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+58: Parameter 49 string string_isdigit282725c2729203D2025s0A#
+59: IntegralToIntegral £temporary3810 c
+60: Parameter 57 signed int £temporary3810
+61: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+62: IntegralToIntegral £temporary3811 c
+63: Parameter 85 signed int £temporary3811
+64: Call 61 isdigit 0
+65: PostCall 61
+66: GetReturnValue £temporary3812
+67: Equal 70 £temporary3812 integral4$0#
+68: Assign £temporary3814 string_Yes#
+69: Jump 71
+70: Assign £temporary3814 string_No#
+71: Parameter 61 string £temporary3814
+72: Call 25 printf 12
+73: PostCall 25
+74: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+75: Parameter 49 string string_isalnum282725c2729203D2025s0A#
+76: IntegralToIntegral £temporary3816 c
+77: Parameter 57 signed int £temporary3816
+78: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+79: IntegralToIntegral £temporary3817 c
+80: Parameter 85 signed int £temporary3817
+81: Call 61 isalnum 0
+82: PostCall 61
+83: GetReturnValue £temporary3818
+84: Equal 87 £temporary3818 integral4$0#
+85: Assign £temporary3820 string_Yes#
+86: Jump 88
+87: Assign £temporary3820 string_No#
+88: Parameter 61 string £temporary3820
+89: Call 25 printf 12
+90: PostCall 25
+91: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+92: Parameter 49 string string_isxdigit282725c2729203D2025s0A#
+93: IntegralToIntegral £temporary3822 c
+94: Parameter 57 signed int £temporary3822
+95: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+96: IntegralToIntegral £temporary3823 c
+97: Parameter 85 signed int £temporary3823
+98: Call 61 isxdigit 0
+99: PostCall 61
+100: GetReturnValue £temporary3824
+101: Equal 104 £temporary3824 integral4$0#
+102: Assign £temporary3826 string_Yes#
+103: Jump 105
+104: Assign £temporary3826 string_No#
+105: Parameter 61 string £temporary3826
+106: Call 25 printf 12
+107: PostCall 25
+108: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+109: Parameter 49 string string_isgraph282725c2729203D2025s0A#
+110: IntegralToIntegral £temporary3828 c
+111: Parameter 57 signed int £temporary3828
+112: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+113: IntegralToIntegral £temporary3829 c
+114: Parameter 85 signed int £temporary3829
+115: Call 61 isgraph 0
+116: PostCall 61
+117: GetReturnValue £temporary3830
+118: Equal 121 £temporary3830 integral4$0#
+119: Assign £temporary3832 string_Yes#
+120: Jump 122
+121: Assign £temporary3832 string_No#
+122: Parameter 61 string £temporary3832
+123: Call 25 printf 12
+124: PostCall 25
+125: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+126: Parameter 49 string string_isprint282725c2729203D2025s0A#
+127: IntegralToIntegral £temporary3834 c
+128: Parameter 57 signed int £temporary3834
+129: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+130: IntegralToIntegral £temporary3835 c
+131: Parameter 85 signed int £temporary3835
+132: Call 61 isprint 0
+133: PostCall 61
+134: GetReturnValue £temporary3836
+135: Equal 138 £temporary3836 integral4$0#
+136: Assign £temporary3838 string_Yes#
+137: Jump 139
+138: Assign £temporary3838 string_No#
+139: Parameter 61 string £temporary3838
+140: Call 25 printf 12
+141: PostCall 25
+142: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+143: Parameter 49 string string_ispunct282725c2729203D2025s0A#
+144: IntegralToIntegral £temporary3840 c
+145: Parameter 57 signed int £temporary3840
+146: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+147: IntegralToIntegral £temporary3841 c
+148: Parameter 85 signed int £temporary3841
+149: Call 61 ispunct 0
+150: PostCall 61
+151: GetReturnValue £temporary3842
+152: Equal 155 £temporary3842 integral4$0#
+153: Assign £temporary3844 string_Yes#
+154: Jump 156
+155: Assign £temporary3844 string_No#
+156: Parameter 61 string £temporary3844
+157: Call 25 printf 12
+158: PostCall 25
+159: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+160: Parameter 49 string string_iscntrl282725c2729203D2025s0A#
+161: IntegralToIntegral £temporary3846 c
+162: Parameter 57 signed int £temporary3846
+163: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+164: IntegralToIntegral £temporary3847 c
+165: Parameter 85 signed int £temporary3847
+166: Call 61 iscntrl 0
+167: PostCall 61
+168: GetReturnValue £temporary3848
+169: Equal 172 £temporary3848 integral4$0#
+170: Assign £temporary3850 string_Yes#
+171: Jump 173
+172: Assign £temporary3850 string_No#
+173: Parameter 61 string £temporary3850
+174: Call 25 printf 12
+175: PostCall 25
+176: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+177: Parameter 49 string string_isspace282725c2729203D2025s0A#
+178: IntegralToIntegral £temporary3852 c
+179: Parameter 57 signed int £temporary3852
+180: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+181: IntegralToIntegral £temporary3853 c
+182: Parameter 85 signed int £temporary3853
+183: Call 61 isspace 0
+184: PostCall 61
+185: GetReturnValue £temporary3854
+186: Equal 189 £temporary3854 integral4$0#
+187: Assign £temporary3856 string_Yes#
+188: Jump 190
+189: Assign £temporary3856 string_No#
+190: Parameter 61 string £temporary3856
+191: Call 25 printf 12
+192: PostCall 25
+193: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+194: Parameter 49 string string_tolower282725c2729203D202725c270A#
+195: IntegralToIntegral £temporary3858 c
+196: Parameter 57 signed int £temporary3858
+197: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+198: IntegralToIntegral £temporary3859 c
+199: Parameter 85 signed int £temporary3859
+200: Call 61 tolower 0
+201: PostCall 61
+202: GetReturnValue £temporary3860
+203: IntegralToIntegral £temporary3861 £temporary3860
+204: IntegralToIntegral £temporary3862 £temporary3861
+205: Parameter 61 signed int £temporary3862
+206: Call 25 printf 8
+207: PostCall 25
+208: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+209: Parameter 49 string string_toupper282725c2729203D202725c270A0A#
+210: IntegralToIntegral £temporary3864 c
+211: Parameter 57 signed int £temporary3864
+212: PreCall 25 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+213: IntegralToIntegral £temporary3865 c
+214: Parameter 85 signed int £temporary3865
+215: Call 61 toupper 0
+216: PostCall 61
+217: GetReturnValue £temporary3866
+218: IntegralToIntegral £temporary3867 £temporary3866
+219: IntegralToIntegral £temporary3868 £temporary3867
+220: Parameter 61 signed int £temporary3868
+221: Call 25 printf 8
+222: PostCall 25
+223: Return
+224: FunctionEnd character_testX

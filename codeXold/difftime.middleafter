@@ -1,0 +1,5 @@
+0: Subtract £temporary3134 time2 time1
+1: IntegralToFloating £temporary3135 £temporary3134
+2: SetReturnValue
+3: Return £temporary3135
+4: FunctionEnd difftime

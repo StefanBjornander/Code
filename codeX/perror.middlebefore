@@ -1,12 +1,12 @@
 0: PreCall 8
-1: Parameter 14 pointer "%s: %s.\n"
+1: Parameter 14 string string_25s3A2025s2E0A#
 2: Parameter 16 pointer s
 3: PreCall 8
-4: Parameter 24 signedint errno
+4: Parameter 24 signed int errno
 5: Call 18 strerror 0
 6: PostCall 18
-7: GetReturnValue £temporary909
-8: Parameter 18 pointer £temporary909
+7: GetReturnValue £temporary1104
+8: Parameter 18 pointer £temporary1104
 9: Call 8 printf 4
 10: PostCall 8
 11: Empty

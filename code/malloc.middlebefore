@@ -1,131 +1,123 @@
 0: IntegralToIntegral £temporary25 memorySize
-1: Add £temporary26 integral4$12# £temporary25
+1: Add £temporary26 integral2$4# £temporary25
 2: Assign newBlockSize £temporary26
-3: Assign minGap integral4$0#
-4: StackTop £temporary27
-5: Add £temporary28 £temporary27 integral8$1048572#
-6: IntegralToIntegral £temporary29 £temporary28
-7: Assign lastAddress £temporary29
-8: Assign minBlockPtr integral8$0#
-9: Assign minPrevBlockPtr integral8$0#
-10: Assign prevBlockPtr integral8$0#
-11: Assign currBlockPtr g_firstBlockPtr
-12: GreaterThanEqual < Empty> memorySize integral4$0#
-13: Jump < Empty>
-14: Empty
-15: PreCall 72
-16: Parameter 96 pointer stderr
-17: Parameter 104 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-18: Parameter 112 string string_memorySize203E3D200#
-19: Parameter 120 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
-20: Parameter 128 signed int integral4$41#
-21: Call 72 fprintf 20
-22: PostCall 72
-23: PreCall 72
-24: Call 72 abort 0
-25: PostCall 72
-26: Jump < Empty>
-27: Empty
-28: Empty
+3: Assign minGap integral2$0#
+4: Assign lastAddress integral2$65528#
+5: Assign minBlockPtr integral2$0#
+6: Assign minPrevBlockPtr integral2$0#
+7: Assign prevBlockPtr integral2$0#
+8: Assign currBlockPtr g_firstBlockPtr
+9: GreaterThanEqual < Empty> memorySize integral2$0#
+10: Jump < Empty>
+11: Empty
+12: PreCall 22
+13: Parameter 28 pointer stderr
+14: Parameter 30 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+15: Parameter 32 string string_memorySize203E3D200#
+16: Parameter 34 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
+17: Parameter 36 signed int integral2$41#
+18: Call 22 fprintf 6
+19: PostCall 22
+20: PreCall 22
+21: Call 22 abort 0
+22: PostCall 22
+23: Jump < Empty>
+24: Empty
+25: Empty
+26: Empty
+27: Equal < Empty> memorySize integral2$0#
+28: Jump < Empty>
 29: Empty
-30: Equal < Empty> memorySize integral4$0#
+30: Return integral2$0#
 31: Jump < Empty>
 32: Empty
-33: SetReturnValue
-34: Return integral8$0#
-35: Jump < Empty>
-36: Empty
-37: Empty
-38: Empty
-39: NotEqual < IntegralToIntegral £temporary40 currBlockPtr> currBlockPtr integral8$0#
-40: Jump < NotEqual < Empty> minBlockPtr integral8$0#>
-41: IntegralToIntegral £temporary40 currBlockPtr
-42: Assign currAddress £temporary40
-43: Dereference £temporary41 currBlockPtr 0
-44: Add £temporary42 currAddress £temporary41.size
-45: Add £temporary43 £temporary42 integral4$12#
-46: Subtract £temporary44 lastAddress £temporary43
-47: Assign currGap £temporary44
-48: LessThanEqual < Equal < Empty> minGap integral4$0#> newBlockSize currGap
+33: Empty
+34: Empty
+35: NotEqual < IntegralToIntegral £temporary37 currBlockPtr> currBlockPtr integral2$0#
+36: Jump < NotEqual < Empty> minBlockPtr integral2$0#>
+37: IntegralToIntegral £temporary37 currBlockPtr
+38: Assign currAddress £temporary37
+39: Dereference £temporary38 currBlockPtr 0
+40: Add £temporary39 currAddress £temporary38.size
+41: Add £temporary40 £temporary39 integral2$4#
+42: Subtract £temporary41 lastAddress £temporary40
+43: Assign currGap £temporary41
+44: LessThanEqual < Equal < Empty> minGap integral2$0#> newBlockSize currGap
+45: Jump < Empty>
+46: Equal < Empty> minGap integral2$0#
+47: Jump < LessThan < Empty> currGap minGap>
+48: LessThan < Empty> currGap minGap
 49: Jump < Empty>
-50: Equal < Empty> minGap integral4$0#
-51: Jump < LessThan < Empty> currGap minGap>
-52: LessThan < Empty> currGap minGap
-53: Jump < Empty>
-54: Empty
-55: Assign minGap currGap
-56: Assign minBlockPtr currBlockPtr
-57: Assign minPrevBlockPtr prevBlockPtr
-58: Jump < Empty>
-59: Empty
-60: Empty
-61: Assign lastAddress currAddress
-62: Assign prevBlockPtr currBlockPtr
-63: Dereference £temporary52 currBlockPtr 0
-64: Assign currBlockPtr £temporary52.next
+50: Empty
+51: Assign minGap currGap
+52: Assign minBlockPtr currBlockPtr
+53: Assign minPrevBlockPtr prevBlockPtr
+54: Jump < Empty>
+55: Empty
+56: Empty
+57: Assign lastAddress currAddress
+58: Assign prevBlockPtr currBlockPtr
+59: Dereference £temporary49 currBlockPtr 0
+60: Assign currBlockPtr £temporary49.next
+61: Empty
+62: Jump < Empty>
+63: NotEqual < Empty> minBlockPtr integral2$0#
+64: Jump < Empty>
 65: Empty
-66: Jump < Empty>
-67: NotEqual < Empty> minBlockPtr integral8$0#
-68: Jump < Empty>
-69: Empty
-70: IntegralToIntegral £temporary54 minBlockPtr
-71: Dereference £temporary55 minBlockPtr 0
-72: Add £temporary56 £temporary54 £temporary55.size
-73: Add £temporary57 £temporary56 integral4$12#
-74: Assign newAddress £temporary57
-75: IntegralToIntegral £temporary58 newAddress
-76: Assign newBlockPtr £temporary58
-77: Dereference £temporary59 newBlockPtr 0
-78: Assign £temporary59.size memorySize
-79: Dereference £temporary60 newBlockPtr 0
-80: Assign £temporary60.next minBlockPtr
-81: NotEqual < Empty> minPrevBlockPtr integral8$0#
+66: IntegralToIntegral £temporary51 minBlockPtr
+67: Dereference £temporary52 minBlockPtr 0
+68: Add £temporary53 £temporary51 £temporary52.size
+69: Add £temporary54 £temporary53 integral2$4#
+70: Assign newAddress £temporary54
+71: IntegralToIntegral £temporary55 newAddress
+72: Assign newBlockPtr £temporary55
+73: Dereference £temporary56 newBlockPtr 0
+74: Assign £temporary56.size memorySize
+75: Dereference £temporary57 newBlockPtr 0
+76: Assign £temporary57.next minBlockPtr
+77: NotEqual < Empty> minPrevBlockPtr integral2$0#
+78: Jump < Empty>
+79: Empty
+80: Dereference £temporary59 minPrevBlockPtr 0
+81: Assign £temporary59.next newBlockPtr
 82: Jump < Empty>
 83: Empty
-84: Dereference £temporary62 minPrevBlockPtr 0
-85: Assign £temporary62.next newBlockPtr
-86: Jump < Empty>
-87: Empty
-88: Assign g_firstBlockPtr newBlockPtr
-89: Empty
-90: Add £temporary65 newAddress integral4$12#
-91: IntegralToIntegral £temporary66 £temporary65
-92: SetReturnValue
-93: Return £temporary66
-94: Jump < Empty>
-95: Empty
-96: Subtract £temporary67 lastAddress newBlockSize
-97: Assign newAddress £temporary67
-98: InspectRegister £temporary68 rbp
-99: IntegralToIntegral £temporary69 £temporary68
-100: Assign stackTop £temporary69
-101: LessThanEqual < Empty> stackTop newAddress
-102: Jump < Empty>
-103: Empty
-104: IntegralToIntegral £temporary71 newAddress
-105: Assign newBlockPtr £temporary71
-106: Dereference £temporary72 newBlockPtr 0
-107: Assign £temporary72.size memorySize
-108: Dereference £temporary73 newBlockPtr 0
-109: Assign £temporary73.next integral8$0#
-110: NotEqual < Empty> prevBlockPtr integral8$0#
-111: Jump < Empty>
+84: Assign g_firstBlockPtr newBlockPtr
+85: Empty
+86: Add £temporary62 newAddress integral2$4#
+87: IntegralToIntegral £temporary63 £temporary62
+88: Return £temporary63
+89: Jump < Empty>
+90: Empty
+91: Subtract £temporary64 lastAddress newBlockSize
+92: Assign newAddress £temporary64
+93: InspectRegister £temporary65 bp
+94: Assign stackTop £temporary65
+95: LessThanEqual < Empty> stackTop newAddress
+96: Jump < Empty>
+97: Empty
+98: IntegralToIntegral £temporary67 newAddress
+99: Assign newBlockPtr £temporary67
+100: Dereference £temporary68 newBlockPtr 0
+101: Assign £temporary68.size memorySize
+102: Dereference £temporary69 newBlockPtr 0
+103: Assign £temporary69.next integral2$0#
+104: NotEqual < Empty> prevBlockPtr integral2$0#
+105: Jump < Empty>
+106: Empty
+107: Dereference £temporary71 prevBlockPtr 0
+108: Assign £temporary71.next newBlockPtr
+109: Jump < Empty>
+110: Empty
+111: Assign g_firstBlockPtr newBlockPtr
 112: Empty
-113: Dereference £temporary75 prevBlockPtr 0
-114: Assign £temporary75.next newBlockPtr
-115: Jump < Empty>
-116: Empty
-117: Assign g_firstBlockPtr newBlockPtr
+113: Add £temporary74 newAddress integral2$4#
+114: IntegralToIntegral £temporary75 £temporary74
+115: Return £temporary75
+116: Jump < Empty>
+117: Empty
 118: Empty
-119: Add £temporary78 newAddress integral4$12#
-120: IntegralToIntegral £temporary79 £temporary78
-121: SetReturnValue
-122: Return £temporary79
-123: Jump < Empty>
-124: Empty
-125: Empty
-126: Empty
-127: SetReturnValue
-128: Return integral8$0#
-129: Empty
-130: FunctionEnd malloc
+119: Empty
+120: Return integral2$0#
+121: Empty
+122: FunctionEnd malloc

@@ -1,5 +1,5 @@
-0: Dereference £temporary1076 stream 0
-1: Assign errno integral4$0#
-2: Assign £temporary1076.errno errno
+0: Dereference £temporary1094 stream 0
+1: Assign errno integral2$0#
+2: Assign £temporary1094.errno errno
 3: Return
 4: FunctionEnd clearerr

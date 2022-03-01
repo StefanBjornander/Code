@@ -1,0 +1,16 @@
+0: IntegralToIntegral £temporary4889 valuePtr1
+1: Dereference £temporary4890 £temporary4889 0
+2: Assign intValue1 £temporary4890
+3: IntegralToIntegral £temporary4891 valuePtr2
+4: Dereference £temporary4892 £temporary4891 0
+5: Assign intValue2 £temporary4892
+6: GreaterThanEqual 9 intValue1 intValue2
+7: Assign £temporary4896 integral4$1#
+8: Jump 13
+9: NotEqual 12 intValue1 intValue2
+10: Assign £temporary4896 integral4$0#
+11: Jump 13
+12: Assign £temporary4896 integral4$minus1#
+13: SetReturnValue
+14: Return £temporary4896
+15: FunctionEnd reverse_compare

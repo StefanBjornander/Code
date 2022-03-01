@@ -4,8 +4,8 @@
 3: Parameter 68 signed int integral4$96#
 4: Call 44 malloc 0
 5: PostCall 44
-6: GetReturnValue £temporary4824
-7: Assign q £temporary4824
+6: GetReturnValue £temporary4950
+7: Assign q £temporary4950
 8: Assign index integral4$0#
 9: Empty
 10: LessThan < PreCall 52> index integral4$10#
@@ -14,8 +14,8 @@
 13: Parameter 76 signed int integral4$96#
 14: Call 52 malloc 0
 15: PostCall 52
-16: GetReturnValue £temporary4827
-17: Assign p £temporary4827
+16: GetReturnValue £temporary4953
+17: Assign p £temporary4953
 18: Equal < Empty> index integral4$5#
 19: Jump < Empty>
 20: Empty
@@ -24,8 +24,8 @@
 23: Empty
 24: Empty
 25: Empty
-26: Add £temporary4826 index integral4$1#
-27: Assign index £temporary4826
+26: Add £temporary4952 index integral4$1#
+27: Assign index £temporary4952
 28: Jump < Empty>
 29: PreCall 52
 30: Call 52 print_heap 0

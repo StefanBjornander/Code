@@ -1,11 +1,10 @@
 0: Assign g_outStatus integral4$0#
-1: IntegralToIntegral £temporary1745 stream
-2: Assign g_outDevice £temporary1745
+1: IntegralToIntegral £temporary1772 stream
+2: Assign g_outDevice £temporary1772
 3: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-4: IntegralToIntegral £temporary1746 i
-5: Parameter 60 signed char £temporary1746
+4: IntegralToIntegral £temporary1773 i
+5: Parameter 60 signed char £temporary1773
 6: Call 36 printChar 0
 7: PostCall 36
-8: SetReturnValue
-9: Return integral4$1#
-10: FunctionEnd putc
+8: Return integral4$1#
+9: FunctionEnd putc

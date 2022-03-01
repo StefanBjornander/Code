@@ -1,0 +1,11 @@
+0: Dereference £temporary1070 ptr 0
+1: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+2: Parameter 64 pointer stream
+3: Call 40 ftell 0
+4: PostCall 40
+5: GetReturnValue £temporary1071
+6: IntegralToIntegral £temporary1072 £temporary1071
+7: Assign £temporary1070 £temporary1072
+8: SetReturnValue
+9: Return integral4$0#
+10: FunctionEnd fgetpos

@@ -1,0 +1,13 @@
+0: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 56 string string_25s3A2025s2E0A#
+2: Parameter 64 pointer s
+3: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+4: Parameter 96 signed int errno
+5: Call 72 strerror 0
+6: PostCall 72
+7: GetReturnValue £temporary1086
+8: Parameter 72 pointer £temporary1086
+9: Call 32 printf 16
+10: PostCall 32
+11: Return
+12: FunctionEnd perror

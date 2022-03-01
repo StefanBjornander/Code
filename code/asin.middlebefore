@@ -4,59 +4,55 @@
 3: Jump < Empty>
 4: Empty
 5: PushFloat floating8$1.57#
-6: SetReturnValue
-7: Return floating8$1.57#
-8: Jump < Empty>
-9: Empty
-10: PushFloat x
-11: PushFloat floating8$0#
-12: LessThan < Empty> x floating8$0#
-13: Jump < Empty>
-14: Empty
-15: PreCall 32
-16: PushFloat x
-17: Minus £temporary614 x
-18: Parameter 56 double £temporary614
-19: Call 32 asin 0
-20: PostCall 32
-21: GetReturnValue £temporary615
-22: Minus £temporary616 £temporary615
-23: SetReturnValue
-24: Return £temporary616
-25: Jump < Empty>
-26: Empty
-27: PushFloat x
-28: PushFloat floating8$1#
-29: LessThan < Empty> x floating8$1#
-30: Jump < Empty>
-31: Empty
-32: PreCall 32
-33: PushFloat x
-34: PreCall 32
-35: PushFloat floating8$1#
-36: PushFloat x
-37: PushFloat x
-38: Multiply £temporary618 x x
-39: Subtract £temporary619 floating8$1# £temporary618
-40: Parameter 56 double £temporary619
-41: Call 32 sqrt 0
-42: PostCall 32
-43: GetReturnValue £temporary620
-44: Divide £temporary621 x £temporary620
-45: Parameter 56 double £temporary621
-46: Call 32 atan 0
-47: PostCall 32
-48: GetReturnValue £temporary622
-49: SetReturnValue
-50: Return £temporary622
-51: Jump < Empty>
-52: Empty
-53: Assign errno EDOM
-54: PushFloat floating8$0#
-55: SetReturnValue
-56: Return floating8$0#
-57: Empty
-58: Empty
-59: Empty
-60: Empty
-61: FunctionEnd asin
+6: Return floating8$1.57#
+7: Jump < Empty>
+8: Empty
+9: PushFloat x
+10: PushFloat floating8$0#
+11: LessThan < Empty> x floating8$0#
+12: Jump < Empty>
+13: Empty
+14: PreCall 14
+15: PushFloat x
+16: Minus £temporary607 x
+17: Parameter 20 double £temporary607
+18: Call 14 asin 0
+19: PostCall 14
+20: GetReturnValue £temporary608
+21: Minus £temporary609 £temporary608
+22: Return £temporary609
+23: Jump < Empty>
+24: Empty
+25: PushFloat x
+26: PushFloat floating8$1#
+27: LessThan < Empty> x floating8$1#
+28: Jump < Empty>
+29: Empty
+30: PreCall 14
+31: PushFloat x
+32: PreCall 14
+33: PushFloat floating8$1#
+34: PushFloat x
+35: PushFloat x
+36: Multiply £temporary611 x x
+37: Subtract £temporary612 floating8$1# £temporary611
+38: Parameter 20 double £temporary612
+39: Call 14 sqrt 0
+40: PostCall 14
+41: GetReturnValue £temporary613
+42: Divide £temporary614 x £temporary613
+43: Parameter 20 double £temporary614
+44: Call 14 atan 0
+45: PostCall 14
+46: GetReturnValue £temporary615
+47: Return £temporary615
+48: Jump < Empty>
+49: Empty
+50: Assign errno EDOM
+51: PushFloat floating8$0#
+52: Return floating8$0#
+53: Empty
+54: Empty
+55: Empty
+56: Empty
+57: FunctionEnd asin

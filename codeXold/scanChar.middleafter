@@ -1,0 +1,33 @@
+0: Assign c integral1$0#
+1: Case 5 g_inStatus integral4$0#
+2: Case 21 g_inStatus integral4$1#
+3: CaseEnd g_inStatus
+4: Jump 30
+5: IntegralToIntegral £temporary1128 g_inDevice
+6: Assign stream £temporary1128
+7: Dereference £temporary1129 stream 0
+8: Assign handle £temporary1129.handle
+9: AssignRegister rax integral8$0#
+10: Dereference £temporary1132 stream 0
+11: IntegralToIntegral £temporary1133 £temporary1132.handle
+12: AssignRegister rdi £temporary1133
+13: Address £temporary1135 c
+14: IntegralToIntegral £temporary1136 £temporary1135
+15: AssignRegister rsi £temporary1136
+16: AssignRegister rdx integral8$1#
+17: SysCall
+18: Add g_inChars g_inChars integral4$1#
+19: SetReturnValue
+20: Return c
+21: IntegralToIntegral £temporary1139 g_inDevice
+22: Assign inString £temporary1139
+23: Assign £temporary1140 g_inChars
+24: Add g_inChars g_inChars integral4$1#
+25: IntegralToIntegral £temporary1142 £temporary1140
+26: Add £temporary1143 inString £temporary1142
+27: Dereference £temporary1144 £temporary1143 0
+28: SetReturnValue
+29: Return £temporary1144
+30: SetReturnValue
+31: Return integral1$0#
+32: FunctionEnd scanChar

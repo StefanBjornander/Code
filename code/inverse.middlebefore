@@ -5,8 +5,7 @@
 4: Parameter 64 double x
 5: Call 32 divide 0
 6: PostCall 32
-7: GetReturnValue £temporary4006
-8: SetReturnValue
-9: Return £temporary4006
-10: Empty
-11: FunctionEnd inverse
+7: GetReturnValue £temporary4132
+8: Return £temporary4132
+9: Empty
+10: FunctionEnd inverse

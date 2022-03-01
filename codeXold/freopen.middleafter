@@ -1,0 +1,160 @@
+0: Assign handle integral4$minus1#
+1: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+2: Parameter 76 pointer mode
+3: Parameter 84 string string_r#
+4: Call 52 strcmp 0
+5: PostCall 52
+6: GetReturnValue £temporary851
+7: NotEqual 16 £temporary851 integral4$0#
+8: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: Parameter 76 pointer name
+10: Parameter 84 unsigned short int integral2$0#
+11: Call 52 fileopen 0
+12: PostCall 52
+13: GetReturnValue £temporary853
+14: Assign handle £temporary853
+15: Jump 138
+16: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+17: Parameter 76 pointer mode
+18: Parameter 84 string string_w#
+19: Call 52 strcmp 0
+20: PostCall 52
+21: GetReturnValue £temporary854
+22: NotEqual 30 £temporary854 integral4$0#
+23: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+24: Parameter 76 pointer name
+25: Call 52 filecreate 0
+26: PostCall 52
+27: GetReturnValue £temporary856
+28: Assign handle £temporary856
+29: Jump 138
+30: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+31: Parameter 76 pointer mode
+32: Parameter 84 string string_a#
+33: Call 52 strcmp 0
+34: PostCall 52
+35: GetReturnValue £temporary857
+36: NotEqual 59 £temporary857 integral4$0#
+37: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+38: Parameter 76 pointer name
+39: Parameter 84 unsigned short int integral2$1#
+40: Call 52 fileopen 0
+41: PostCall 52
+42: GetReturnValue £temporary859
+43: Assign handle £temporary859
+44: Equal 52 handle integral4$minus1#
+45: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+46: Parameter 76 pointer stream
+47: Parameter 84 signed int integral4$0#
+48: Parameter 88 signed int integral4$2#
+49: Call 52 fseek 0
+50: PostCall 52
+51: Jump 138
+52: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+53: Parameter 76 pointer name
+54: Call 52 filecreate 0
+55: PostCall 52
+56: GetReturnValue £temporary862
+57: Assign handle £temporary862
+58: Jump 138
+59: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+60: Parameter 76 pointer mode
+61: Parameter 84 string string_r2B#
+62: Call 52 strcmp 0
+63: PostCall 52
+64: GetReturnValue £temporary865
+65: NotEqual 82 £temporary865 integral4$0#
+66: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+67: Parameter 76 string string_r2B10A#
+68: Call 52 printf 0
+69: PostCall 52
+70: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+71: Parameter 76 pointer name
+72: Parameter 84 unsigned short int integral2$3#
+73: Call 52 fileopen 0
+74: PostCall 52
+75: GetReturnValue £temporary868
+76: Assign handle £temporary868
+77: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+78: Parameter 76 string string_r2B20A#
+79: Call 52 printf 0
+80: PostCall 52
+81: Jump 138
+82: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+83: Parameter 76 pointer mode
+84: Parameter 84 string string_w2B#
+85: Call 52 strcmp 0
+86: PostCall 52
+87: GetReturnValue £temporary870
+88: NotEqual 110 £temporary870 integral4$0#
+89: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+90: Parameter 76 pointer name
+91: Call 52 fileexists 0
+92: PostCall 52
+93: GetReturnValue £temporary872
+94: Equal 103 £temporary872 integral4$0#
+95: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+96: Parameter 76 pointer name
+97: Parameter 84 unsigned short int integral2$3#
+98: Call 52 fileopen 0
+99: PostCall 52
+100: GetReturnValue £temporary873
+101: Assign handle £temporary873
+102: Jump 138
+103: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+104: Parameter 76 pointer name
+105: Call 52 filecreate 0
+106: PostCall 52
+107: GetReturnValue £temporary874
+108: Assign handle £temporary874
+109: Jump 138
+110: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+111: Parameter 76 pointer mode
+112: Parameter 84 string string_a2B#
+113: Call 52 strcmp 0
+114: PostCall 52
+115: GetReturnValue £temporary878
+116: NotEqual 138 £temporary878 integral4$0#
+117: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+118: Parameter 76 pointer name
+119: Parameter 84 unsigned short int integral2$3#
+120: Call 52 fileopen 0
+121: PostCall 52
+122: GetReturnValue £temporary880
+123: Assign handle £temporary880
+124: Equal 132 handle integral4$minus1#
+125: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+126: Parameter 76 pointer stream
+127: Parameter 84 signed int integral4$0#
+128: Parameter 88 signed int integral4$2#
+129: Call 52 fseek 0
+130: PostCall 52
+131: Jump 138
+132: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+133: Parameter 76 pointer name
+134: Call 52 filecreate 0
+135: PostCall 52
+136: GetReturnValue £temporary883
+137: Assign handle £temporary883
+138: Equal 155 handle integral4$minus1#
+139: Dereference £temporary899 stream 0
+140: Assign £temporary899.open integral4$1#
+141: Dereference £temporary900 stream 0
+142: Assign £temporary900.handle handle
+143: Dereference £temporary901 stream 0
+144: Assign £temporary901.size integral4$0#
+145: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+146: Dereference £temporary902 stream 0
+147: Parameter 76 array £temporary902.name
+148: Parameter 84 pointer name
+149: Call 52 strcpy 0
+150: PostCall 52
+151: Dereference £temporary904 stream 0
+152: Assign £temporary904.temporary integral4$0#
+153: SetReturnValue
+154: Return stream
+155: Dereference £temporary905 stream 0
+156: Assign £temporary905.open integral4$0#
+157: SetReturnValue
+158: Return integral8$0#
+159: FunctionEnd freopen

@@ -42,12 +42,12 @@
 41: NotEqual < Empty> capital integral4$0#
 42: Jump < Empty>
 43: Empty
-44: Assign £temporary1873 integral1$88#
+44: Assign £temporary1905 integral1$88#
 45: Jump < Empty>
 46: Empty
-47: Assign £temporary1873 integral1$120#
+47: Assign £temporary1905 integral1$120#
 48: Empty
-49: Parameter 80 signed char £temporary1873
+49: Parameter 80 signed char £temporary1905
 50: Call 56 printChar 0
 51: PostCall 56
 52: Jump < Empty>

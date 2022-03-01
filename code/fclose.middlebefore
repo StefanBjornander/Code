@@ -1,53 +1,69 @@
-0: NotEqual < Empty> stream integral8$0#
+0: NotEqual < Empty> stream integral2$0#
 1: Jump < Empty>
 2: Empty
-3: AssignRegister rax integral8$3#
-4: Dereference £temporary932 stream 0
-5: IntegralToIntegral £temporary933 £temporary932.handle
-6: AssignRegister rdi £temporary933
-7: SysCall
-8: SetReturnValue
-9: Return integral4$0#
-10: Jump < Empty>
-11: Empty
-12: Assign index integral4$0#
+3: AssignRegister ah integral1$62#
+4: Dereference £temporary935 stream 0
+5: AssignRegister bx £temporary935.handle
+6: Interrupt 33
+7: Carry < Empty>
+8: Jump < Empty>
+9: Empty
+10: Assign errno FCLOSE
+11: Return integral2$minus1#
+12: Jump < Empty>
 13: Empty
-14: LessThan < Multiply £temporary936 index integral4$41#> index integral4$20#
-15: Jump < SetReturnValue>
-16: Multiply £temporary936 index integral4$41#
-17: IntegralToIntegral £temporary937 £temporary936
-18: Add £temporary938 g_fileArray £temporary937
-19: Dereference £temporary939 £temporary938 0
-20: NotEqual < Empty> £temporary939.open integral4$0#
-21: Jump < Empty>
-22: Empty
-23: PreCall 36
-24: Multiply £temporary940 index integral4$41#
-25: IntegralToIntegral £temporary941 £temporary940
-26: Add £temporary942 g_fileArray £temporary941
-27: Dereference £temporary943 £temporary942 0
-28: Address £temporary944 £temporary943
-29: Parameter 60 pointer £temporary944
-30: Call 36 fclose 0
-31: PostCall 36
-32: GetReturnValue £temporary945
-33: Equal < Empty> £temporary945 integral4$minus1#
-34: Jump < Empty>
-35: Empty
-36: SetReturnValue
-37: Return integral4$minus1#
-38: Jump < Empty>
-39: Empty
-40: Empty
-41: Jump < Empty>
-42: Empty
-43: Empty
-44: Empty
-45: Add £temporary935 index integral4$1#
-46: Assign index £temporary935
-47: Jump < Empty>
-48: SetReturnValue
-49: Return integral4$0#
-50: Empty
-51: Empty
-52: FunctionEnd fclose
+14: Empty
+15: Dereference £temporary939 stream 0
+16: NotEqual < Empty> £temporary939.temporary integral2$0#
+17: Jump < Empty>
+18: Empty
+19: PreCall 8
+20: Dereference £temporary940 stream 0
+21: Parameter 14 array £temporary940.name
+22: Call 8 remove 0
+23: PostCall 8
+24: Jump < Empty>
+25: Empty
+26: Empty
+27: Dereference £temporary945 stream 0
+28: Assign £temporary945.open integral2$0#
+29: Return integral2$0#
+30: Jump < Empty>
+31: Empty
+32: Assign index integral2$0#
+33: Empty
+34: LessThan < Multiply £temporary948 index integral2$29#> index integral2$20#
+35: Jump < Return integral2$0#>
+36: Multiply £temporary948 index integral2$29#
+37: Add £temporary949 g_fileArray £temporary948
+38: Dereference £temporary950 £temporary949 0
+39: NotEqual < Empty> £temporary950.open integral2$0#
+40: Jump < Empty>
+41: Empty
+42: PreCall 10
+43: Multiply £temporary951 index integral2$29#
+44: Add £temporary952 g_fileArray £temporary951
+45: Dereference £temporary953 £temporary952 0
+46: Address £temporary954 £temporary953
+47: Parameter 16 pointer £temporary954
+48: Call 10 fclose 0
+49: PostCall 10
+50: GetReturnValue £temporary955
+51: Equal < Empty> £temporary955 integral2$minus1#
+52: Jump < Empty>
+53: Empty
+54: Return integral2$minus1#
+55: Jump < Empty>
+56: Empty
+57: Empty
+58: Jump < Empty>
+59: Empty
+60: Empty
+61: Empty
+62: Add £temporary947 index integral2$1#
+63: Assign index £temporary947
+64: Jump < Empty>
+65: Return integral2$0#
+66: Empty
+67: Empty
+68: FunctionEnd fclose

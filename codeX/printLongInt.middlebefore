@@ -1,37 +1,49 @@
-0: SignedLessThan UnarySubtract £temporary1540 longValue longValue 0
-1: Goto NotEqual PreCall 14 space 0
-2: UnarySubtract £temporary1540 longValue
-3: Assign longValue £temporary1540
-4: PreCall 14
-5: Parameter 20 signedchar 45
-6: Call 14 printChar 0
-7: PostCall 14
-8: Goto Equal PreCall 14 longValue 0
-9: NotEqual PreCall 14 space 0
-10: Goto NotEqual PreCall 14 plus 0
-11: PreCall 14
-12: Parameter 20 signedchar 32
-13: Call 14 printChar 0
-14: PostCall 14
-15: Goto Equal PreCall 14 longValue 0
-16: NotEqual PreCall 14 plus 0
-17: Goto Equal PreCall 14 longValue 0
-18: PreCall 14
-19: Parameter 20 signedchar 43
-20: Call 14 printChar 0
-21: PostCall 14
-22: Goto Equal PreCall 14 longValue 0
-23: Equal PreCall 14 longValue 0
-24: Goto PreCall 14
-25: PreCall 14
-26: Parameter 20 signedchar 48
-27: Call 14 printChar 0
-28: PostCall 14
-29: Goto Empty
-30: PreCall 14
-31: Parameter 20 signed long int longValue
-32: Call 14 printLongIntRec 0
-33: PostCall 14
+0: LessThan < Empty> longValue integral8$0#
+1: Jump < Empty>
+2: Empty
+3: Minus £temporary1850 longValue
+4: Assign longValue £temporary1850
+5: PreCall 40
+6: Parameter 64 signed char integral1$45#
+7: Call 40 printChar 0
+8: PostCall 40
+9: Jump < Empty>
+10: Empty
+11: NotEqual < Empty> space integral4$0#
+12: Jump < Empty>
+13: Empty
+14: PreCall 40
+15: Parameter 64 signed char integral1$32#
+16: Call 40 printChar 0
+17: PostCall 40
+18: Jump < Empty>
+19: Empty
+20: NotEqual < Empty> plus integral4$0#
+21: Jump < Empty>
+22: Empty
+23: PreCall 40
+24: Parameter 64 signed char integral1$43#
+25: Call 40 printChar 0
+26: PostCall 40
+27: Jump < Empty>
+28: Empty
+29: Empty
+30: Empty
+31: Empty
+32: Equal < Empty> longValue integral8$0#
+33: Jump < Empty>
 34: Empty
-35: Return
-36: FunctionEnd printLongInt
+35: PreCall 40
+36: Parameter 64 signed char integral1$48#
+37: Call 40 printChar 0
+38: PostCall 40
+39: Jump < Empty>
+40: Empty
+41: PreCall 40
+42: Parameter 64 signed long int longValue
+43: Call 40 printLongIntRec 0
+44: PostCall 40
+45: Empty
+46: Empty
+47: Return
+48: FunctionEnd printLongInt

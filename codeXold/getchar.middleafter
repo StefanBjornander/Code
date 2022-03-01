@@ -1,0 +1,8 @@
+0: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 48 pointer stdin
+2: Call 24 fgetc 0
+3: PostCall 24
+4: GetReturnValue £temporary1013
+5: SetReturnValue
+6: Return £temporary1013
+7: FunctionEnd getchar

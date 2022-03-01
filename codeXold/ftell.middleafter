@@ -1,0 +1,10 @@
+0: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 56 pointer stream
+2: Parameter 64 signed int integral4$0#
+3: Parameter 68 signed int SEEK_CUR
+4: Call 32 fseek 0
+5: PostCall 32
+6: GetReturnValue £temporary1067
+7: SetReturnValue
+8: Return £temporary1067
+9: FunctionEnd ftell

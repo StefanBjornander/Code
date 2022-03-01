@@ -1,11 +1,16 @@
-0: AssignRegister rax integral8$2#
-1: IntegralToIntegral £temporary831 name
-2: AssignRegister rdi £temporary831
-3: IntegralToIntegral £temporary833 mode
-4: AssignRegister rsi £temporary833
-5: SysCall
-6: InspectRegister £temporary834 eax
-7: SetReturnValue
-8: Return £temporary834
-9: Empty
-10: FunctionEnd fileopen
+0: AssignRegister ah integral1$61#
+1: AssignRegister al mode
+2: AssignRegister dx name
+3: Interrupt 33
+4: Carry < Empty>
+5: Jump < Empty>
+6: Empty
+7: Assign errno FOPEN
+8: Return integral2$minus1#
+9: Jump < Empty>
+10: Empty
+11: InspectRegister £temporary839 ax
+12: Return £temporary839
+13: Empty
+14: Empty
+15: FunctionEnd fileopen

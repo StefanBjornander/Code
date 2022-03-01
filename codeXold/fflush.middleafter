@@ -1,0 +1,26 @@
+0: NotEqual 23 stream integral8$0#
+1: Assign index integral4$0#
+2: GreaterThanEqual 23 index integral4$20#
+3: Multiply £temporary911 index integral4$41#
+4: IntegralToIntegral £temporary912 £temporary911
+5: Add £temporary913 g_fileArray £temporary912
+6: Dereference £temporary914 £temporary913 0
+7: Equal 21 £temporary914.open integral4$0#
+8: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: Multiply £temporary915 index integral4$41#
+10: IntegralToIntegral £temporary916 £temporary915
+11: Add £temporary917 g_fileArray £temporary916
+12: Dereference £temporary918 £temporary917 0
+13: Address £temporary919 £temporary918
+14: Parameter 60 pointer £temporary919
+15: Call 36 fflush 0
+16: PostCall 36
+17: GetReturnValue £temporary920
+18: NotEqual 21 £temporary920 integral4$minus1#
+19: SetReturnValue
+20: Return integral4$minus1#
+21: Add index index integral4$1#
+22: Jump 2
+23: SetReturnValue
+24: Return integral4$0#
+25: FunctionEnd fflush

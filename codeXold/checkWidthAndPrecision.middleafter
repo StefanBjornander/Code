@@ -1,0 +1,21 @@
+0: Equal 9 widthPtr integral8$0#
+1: Dereference £temporary1949 widthPtr 0
+2: NotEqual 9 £temporary1949 integral4$minus1#
+3: Dereference £temporary1952 widthPtr 0
+4: Add arg_list arg_list integral8$4#
+5: Subtract £temporary1954 arg_list integral8$4#
+6: IntegralToIntegral £temporary1955 £temporary1954
+7: Dereference £temporary1956 £temporary1955 0
+8: Assign £temporary1952 £temporary1956
+9: Equal 18 precisionPtr integral8$0#
+10: Dereference £temporary1960 precisionPtr 0
+11: NotEqual 18 £temporary1960 integral4$minus1#
+12: Dereference £temporary1963 precisionPtr 0
+13: Add arg_list arg_list integral8$4#
+14: Subtract £temporary1965 arg_list integral8$4#
+15: IntegralToIntegral £temporary1966 £temporary1965
+16: Dereference £temporary1967 £temporary1966 0
+17: Assign £temporary1963 £temporary1967
+18: SetReturnValue
+19: Return arg_list
+20: FunctionEnd checkWidthAndPrecision

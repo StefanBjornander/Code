@@ -1,0 +1,20 @@
+0: Assign chars integral4$0#
+1: PushFloat floating8$0#
+2: PopFloat value
+3: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+4: Parameter 76 pointer s
+5: Parameter 84 string string_25lf25n#
+6: Address £temporary2291 value
+7: Parameter 92 pointer £temporary2291
+8: Address £temporary2292 chars
+9: Parameter 100 pointer £temporary2292
+10: Call 52 sscanf 16
+11: PostCall 52
+12: Equal 16 endp integral8$0#
+13: Dereference £temporary2295 endp 0
+14: IntegralToIntegral £temporary2296 chars
+15: Add £temporary2295 s £temporary2296
+16: PushFloat value
+17: SetReturnValue
+18: Return value
+19: FunctionEnd strtod

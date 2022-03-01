@@ -1,11 +1,9 @@
 0: Assign result.quot integral4$0#
 1: Assign result.rem integral4$0#
-2: NotEqual 6 denum integral4$0#
+2: NotEqual 5 denum integral4$0#
 3: Assign errno EDOM
-4: SetReturnValue
-5: Return result
-6: Divide result.quot num denum
-7: Modulo result.rem num denum
-8: SetReturnValue
-9: Return result
-10: FunctionEnd div
+4: Return result
+5: Divide result.quot num denum
+6: Modulo result.rem num denum
+7: Return result
+8: FunctionEnd div

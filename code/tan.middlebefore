@@ -1,31 +1,29 @@
-0: PreCall 32
+0: PreCall 14
 1: PushFloat x
-2: Parameter 56 double x
-3: Call 32 cos 0
-4: PostCall 32
-5: GetReturnValue £temporary604
+2: Parameter 20 double x
+3: Call 14 cos 0
+4: PostCall 14
+5: GetReturnValue £temporary597
 6: PopFloat cos_of_x
 7: PushFloat cos_of_x
 8: PushFloat floating8$0#
 9: NotEqual < Empty> cos_of_x floating8$0#
 10: Jump < Empty>
 11: Empty
-12: PreCall 40
+12: PreCall 22
 13: PushFloat x
-14: Parameter 64 double x
-15: Call 40 sin 0
-16: PostCall 40
-17: GetReturnValue £temporary606
+14: Parameter 28 double x
+15: Call 22 sin 0
+16: PostCall 22
+17: GetReturnValue £temporary599
 18: PushFloat cos_of_x
-19: Divide £temporary607 £temporary606 cos_of_x
-20: SetReturnValue
-21: Return £temporary607
-22: Jump < Empty>
-23: Empty
-24: Assign errno EDOM
-25: PushFloat floating8$0#
-26: SetReturnValue
-27: Return floating8$0#
-28: Empty
-29: Empty
-30: FunctionEnd tan
+19: Divide £temporary600 £temporary599 cos_of_x
+20: Return £temporary600
+21: Jump < Empty>
+22: Empty
+23: Assign errno EDOM
+24: PushFloat floating8$0#
+25: Return floating8$0#
+26: Empty
+27: Empty
+28: FunctionEnd tan

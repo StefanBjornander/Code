@@ -1,20 +1,19 @@
-0: PreCall 32
+0: PreCall 14
 1: PushFloat x
-2: Parameter 56 double x
-3: Call 32 exp 0
-4: PostCall 32
-5: GetReturnValue £temporary722
-6: PreCall 32
+2: Parameter 20 double x
+3: Call 14 exp 0
+4: PostCall 14
+5: GetReturnValue £temporary715
+6: PreCall 14
 7: PushFloat x
-8: Minus £temporary723 x
-9: Parameter 56 double £temporary723
-10: Call 32 exp 0
-11: PostCall 32
-12: GetReturnValue £temporary724
-13: Subtract £temporary725 £temporary722 £temporary724
+8: Minus £temporary716 x
+9: Parameter 20 double £temporary716
+10: Call 14 exp 0
+11: PostCall 14
+12: GetReturnValue £temporary717
+13: Subtract £temporary718 £temporary715 £temporary717
 14: PushFloat floating8$2#
-15: Divide £temporary726 £temporary725 floating8$2#
-16: SetReturnValue
-17: Return £temporary726
-18: Empty
-19: FunctionEnd sinh
+15: Divide £temporary719 £temporary718 floating8$2#
+16: Return £temporary719
+17: Empty
+18: FunctionEnd sinh

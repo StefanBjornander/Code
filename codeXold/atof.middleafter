@@ -1,0 +1,9 @@
+0: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 56 pointer s
+2: Parameter 64 pointer integral8$0#
+3: Call 32 strtod 0
+4: PostCall 32
+5: GetReturnValue £temporary2290
+6: SetReturnValue
+7: Return £temporary2290
+8: FunctionEnd atof

@@ -1,0 +1,14 @@
+0: InspectRegister £temporary769 rbp
+1: Assign rbp_pointer £temporary769
+2: Dereference £temporary771 £temporary770 0
+3: Dereference £temporary773 £temporary772 0
+4: Assign £temporary771 £temporary773
+5: Dereference £temporary775 £temporary774 0
+6: Dereference £temporary777 £temporary776 0
+7: Assign £temporary775 £temporary777
+8: Dereference £temporary779 £temporary778 0
+9: Dereference £temporary781 £temporary780 0
+10: Assign £temporary779 £temporary781
+11: SetReturnValue
+12: Return integral4$0#
+13: FunctionEnd setjmp

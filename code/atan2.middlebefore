@@ -3,100 +3,94 @@
 2: GreaterThan < Empty> y floating8$0#
 3: Jump < Empty>
 4: Empty
-5: PreCall 40
+5: PreCall 22
 6: PushFloat x
 7: PushFloat y
-8: Divide £temporary689 x y
-9: Parameter 64 double £temporary689
-10: Call 40 atan 0
-11: PostCall 40
-12: GetReturnValue £temporary690
-13: SetReturnValue
-14: Return £temporary690
-15: Jump < Empty>
-16: Empty
-17: PushFloat x
-18: PushFloat floating8$0#
-19: GreaterThanEqual < PushFloat y> x floating8$0#
-20: Jump < Empty>
-21: PushFloat y
-22: PushFloat floating8$0#
-23: LessThan < Empty> y floating8$0#
-24: Jump < Empty>
-25: Empty
-26: PushFloat floating8$3.14#
-27: PreCall 40
-28: PushFloat x
-29: PushFloat y
-30: Divide £temporary694 x y
-31: Parameter 64 double £temporary694
-32: Call 40 atan 0
-33: PostCall 40
-34: GetReturnValue £temporary695
-35: Add £temporary696 floating8$3.14# £temporary695
-36: SetReturnValue
-37: Return £temporary696
-38: Jump < Empty>
-39: Empty
-40: PushFloat x
-41: PushFloat floating8$0#
-42: LessThan < PushFloat y> x floating8$0#
-43: Jump < Empty>
-44: PushFloat y
-45: PushFloat floating8$0#
-46: LessThan < Empty> y floating8$0#
-47: Jump < Empty>
-48: Empty
-49: PushFloat floating8$minus3.14#
-50: PreCall 40
-51: PushFloat x
-52: PushFloat y
-53: Divide £temporary700 x y
-54: Parameter 64 double £temporary700
-55: Call 40 atan 0
-56: PostCall 40
-57: GetReturnValue £temporary701
-58: Add £temporary702 floating8$minus3.14# £temporary701
-59: SetReturnValue
-60: Return £temporary702
-61: Jump < Empty>
-62: Empty
-63: PushFloat x
-64: PushFloat floating8$0#
-65: GreaterThan < PushFloat y> x floating8$0#
-66: Jump < Empty>
-67: PushFloat y
-68: PushFloat floating8$0#
-69: Equal < Empty> y floating8$0#
-70: Jump < Empty>
-71: Empty
-72: PushFloat floating8$1.57#
-73: SetReturnValue
-74: Return floating8$1.57#
-75: Jump < Empty>
-76: Empty
-77: PushFloat x
+8: Divide £temporary682 x y
+9: Parameter 28 double £temporary682
+10: Call 22 atan 0
+11: PostCall 22
+12: GetReturnValue £temporary683
+13: Return £temporary683
+14: Jump < Empty>
+15: Empty
+16: PushFloat x
+17: PushFloat floating8$0#
+18: GreaterThanEqual < PushFloat y> x floating8$0#
+19: Jump < Empty>
+20: PushFloat y
+21: PushFloat floating8$0#
+22: LessThan < Empty> y floating8$0#
+23: Jump < Empty>
+24: Empty
+25: PushFloat floating8$3.14#
+26: PreCall 22
+27: PushFloat x
+28: PushFloat y
+29: Divide £temporary687 x y
+30: Parameter 28 double £temporary687
+31: Call 22 atan 0
+32: PostCall 22
+33: GetReturnValue £temporary688
+34: Add £temporary689 floating8$3.14# £temporary688
+35: Return £temporary689
+36: Jump < Empty>
+37: Empty
+38: PushFloat x
+39: PushFloat floating8$0#
+40: LessThan < PushFloat y> x floating8$0#
+41: Jump < Empty>
+42: PushFloat y
+43: PushFloat floating8$0#
+44: LessThan < Empty> y floating8$0#
+45: Jump < Empty>
+46: Empty
+47: PushFloat floating8$minus3.14#
+48: PreCall 22
+49: PushFloat x
+50: PushFloat y
+51: Divide £temporary693 x y
+52: Parameter 28 double £temporary693
+53: Call 22 atan 0
+54: PostCall 22
+55: GetReturnValue £temporary694
+56: Add £temporary695 floating8$minus3.14# £temporary694
+57: Return £temporary695
+58: Jump < Empty>
+59: Empty
+60: PushFloat x
+61: PushFloat floating8$0#
+62: GreaterThan < PushFloat y> x floating8$0#
+63: Jump < Empty>
+64: PushFloat y
+65: PushFloat floating8$0#
+66: Equal < Empty> y floating8$0#
+67: Jump < Empty>
+68: Empty
+69: PushFloat floating8$1.57#
+70: Return floating8$1.57#
+71: Jump < Empty>
+72: Empty
+73: PushFloat x
+74: PushFloat floating8$0#
+75: LessThan < PushFloat y> x floating8$0#
+76: Jump < Empty>
+77: PushFloat y
 78: PushFloat floating8$0#
-79: LessThan < PushFloat y> x floating8$0#
+79: Equal < Empty> y floating8$0#
 80: Jump < Empty>
-81: PushFloat y
-82: PushFloat floating8$0#
-83: Equal < Empty> y floating8$0#
+81: Empty
+82: PushFloat floating8$minus1.57#
+83: Return floating8$minus1.57#
 84: Jump < Empty>
 85: Empty
-86: PushFloat floating8$minus1.57#
-87: SetReturnValue
-88: Return floating8$minus1.57#
-89: Jump < Empty>
+86: Assign errno EDOM
+87: PushFloat floating8$0#
+88: Return floating8$0#
+89: Empty
 90: Empty
-91: Assign errno EDOM
-92: PushFloat floating8$0#
-93: SetReturnValue
-94: Return floating8$0#
-95: Empty
-96: Empty
-97: Empty
-98: Empty
-99: Empty
-100: Empty
-101: FunctionEnd atan2
+91: Empty
+92: Empty
+93: Empty
+94: Empty
+95: FunctionEnd atan2

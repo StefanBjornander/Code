@@ -1,0 +1,82 @@
+0: PushFloat value
+1: PushFloat floating8$0.0#
+2: NotEqual 27 value floating8$0.0#
+3: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+4: Parameter 76 signed char integral1$48#
+5: Call 52 printChar 0
+6: PostCall 52
+7: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+8: PushFloat floating8$0.0#
+9: Parameter 76 long double floating8$0.0#
+10: Parameter 84 signed int precision
+11: Parameter 88 signed int grid
+12: Call 52 printLongDoubleFraction 0
+13: PostCall 52
+14: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+15: Equal 18 capital integral4$0#
+16: Assign £temporary1922 integral1$69#
+17: Jump 19
+18: Assign £temporary1922 integral1$101#
+19: Parameter 76 signed char £temporary1922
+20: Call 52 printChar 0
+21: PostCall 52
+22: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+23: Parameter 76 signed char integral1$48#
+24: Call 52 printChar 0
+25: PostCall 52
+26: Jump 80
+27: PushFloat value
+28: PushFloat floating8$0.0#
+29: GreaterThanEqual 37 value floating8$0.0#
+30: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+31: Parameter 76 signed char integral1$45#
+32: Call 52 printChar 0
+33: PostCall 52
+34: PushFloat value
+35: Minus £temporary1927 value
+36: PopFloat value
+37: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+38: PushFloat value
+39: Parameter 76 long double value
+40: Call 52 log10 0
+41: PostCall 52
+42: GetReturnValue £temporary1930
+43: FloatingToIntegral £temporary1931 £temporary1930
+44: Assign expo £temporary1931
+45: PushFloat value
+46: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
+47: PushFloat floating8$10.0#
+48: Parameter 80 double floating8$10.0#
+49: IntegralToFloating £temporary1932 expo
+50: Parameter 88 double £temporary1932
+51: Call 56 pow 0
+52: PostCall 56
+53: GetReturnValue £temporary1933
+54: Divide £temporary1934 value £temporary1933
+55: PopFloat value
+56: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+57: PushFloat value
+58: Parameter 80 long double value
+59: Parameter 88 signed int plus
+60: Parameter 92 signed int space
+61: Parameter 96 signed int grid
+62: Parameter 100 signed int precision
+63: Call 56 printLongDoublePlain 0
+64: PostCall 56
+65: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+66: Equal 69 capital integral4$0#
+67: Assign £temporary1937 integral1$69#
+68: Jump 70
+69: Assign £temporary1937 integral1$101#
+70: Parameter 80 signed char £temporary1937
+71: Call 56 printChar 0
+72: PostCall 56
+73: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+74: IntegralToIntegral £temporary1939 expo
+75: Parameter 80 signed long int £temporary1939
+76: Parameter 88 signed int integral4$1#
+77: Parameter 92 signed int integral4$0#
+78: Call 56 printLongInt 0
+79: PostCall 56
+80: Return
+81: FunctionEnd printLongDoubleExpo

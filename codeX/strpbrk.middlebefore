@@ -1,31 +1,38 @@
-0: Assign index 0
+0: Assign index integral4$0#
 1: Empty
-2: UnsignedMultiply £temporary3167 index 1
-3: BinaryAdd £temporary3168 mainString £temporary3167
-4: Dereference £temporary3166 -> £temporary3168 £temporary3168 0
-5: NotEqual PreCall 12 £temporary3166 -> £temporary3168 0
-6: Goto Return 0
-7: PreCall 12
-8: Parameter 18 pointer charSet
-9: UnsignedMultiply £temporary3172 index 1
-10: BinaryAdd £temporary3173 mainString £temporary3172
-11: Dereference £temporary3171 -> £temporary3173 £temporary3173 0
-12: IntegralToIntegral £temporary3174 £temporary3171 -> £temporary3173
-13: Parameter 20 signedint £temporary3174
-14: Call 12 strchr 0
-15: PostCall 12
-16: GetReturnValue £temporary3175
-17: NotEqual UnsignedMultiply £temporary3178 index 1 £temporary3175 0
-18: Goto Empty
-19: UnsignedMultiply £temporary3178 index 1
-20: BinaryAdd £temporary3179 mainString £temporary3178
-21: Dereference £temporary3177 -> £temporary3179 £temporary3179 0
-22: Address £temporary3180 £temporary3177 -> £temporary3179
-23: Return £temporary3180
-24: Goto Empty
-25: Empty
-26: BinaryAdd index index 1
-27: Goto Empty
-28: Return 0
+2: Multiply £temporary3659 index integral4$1#
+3: IntegralToIntegral £temporary3660 £temporary3659
+4: Add £temporary3661 mainString £temporary3660
+5: Dereference £temporary3662 £temporary3661 0
+6: NotEqual < PreCall 44> £temporary3662 integral1$0#
+7: Jump < Return integral8$0#>
+8: PreCall 44
+9: Parameter 68 pointer charSet
+10: Multiply £temporary3665 index integral4$1#
+11: IntegralToIntegral £temporary3666 £temporary3665
+12: Add £temporary3667 mainString £temporary3666
+13: Dereference £temporary3668 £temporary3667 0
+14: IntegralToIntegral £temporary3669 £temporary3668
+15: Parameter 76 signed int £temporary3669
+16: Call 44 strchr 0
+17: PostCall 44
+18: GetReturnValue £temporary3670
+19: NotEqual < Empty> £temporary3670 integral8$0#
+20: Jump < Empty>
+21: Empty
+22: Multiply £temporary3672 index integral4$1#
+23: IntegralToIntegral £temporary3673 £temporary3672
+24: Add £temporary3674 mainString £temporary3673
+25: Dereference £temporary3675 £temporary3674 0
+26: Address £temporary3676 £temporary3675
+27: Return £temporary3676
+28: Jump < Empty>
 29: Empty
-30: FunctionEnd strpbrk
+30: Empty
+31: Empty
+32: Add £temporary3664 index integral4$1#
+33: Assign index £temporary3664
+34: Jump < Empty>
+35: Return integral8$0#
+36: Empty
+37: FunctionEnd strpbrk

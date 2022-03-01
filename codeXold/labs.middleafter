@@ -1,0 +1,7 @@
+0: GreaterThanEqual 3 value integral8$0#
+1: Minus £temporary2981 value
+2: Jump 4
+3: Assign £temporary2981 value
+4: SetReturnValue
+5: Return £temporary2981
+6: FunctionEnd labs

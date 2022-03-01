@@ -1,18 +1,20 @@
 0: PushFloat x
-1: PushFloat 0
-2: SignedLessThan PushFloat x x 0
-3: Goto PushFloat x
-4: PushFloat x
-5: PushFloat 0.5
-6: BinarySubtract £temporary660 x 0.5
-7: DecreaseStack
-8: Goto Empty
-9: PushFloat x
-10: PushFloat 0.5
-11: BinaryAdd £temporary661 x 0.5
-12: Empty
-13: FloatingToIntegral £temporary663 £temporary662
-14: IntegralToFloating £temporary664 £temporary663
-15: Return £temporary664
-16: Empty
-17: FunctionEnd round
+1: PushFloat floating8$0#
+2: LessThan < Empty> x floating8$0#
+3: Jump < Empty>
+4: Empty
+5: PushFloat x
+6: PushFloat floating8$0.5#
+7: Subtract £temporary754 x floating8$0.5#
+8: DecreaseStack
+9: Jump < Empty>
+10: Empty
+11: PushFloat x
+12: PushFloat floating8$0.5#
+13: Add £temporary755 x floating8$0.5#
+14: Empty
+15: FloatingToIntegral £temporary757 £temporary756
+16: IntegralToFloating £temporary758 £temporary757
+17: Return £temporary758
+18: Empty
+19: FunctionEnd round

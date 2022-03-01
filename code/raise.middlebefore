@@ -1,39 +1,51 @@
-0: Assign func integral8$0#
-1: Equal < Empty> func integral8$0#
-2: Jump < Empty>
-3: Empty
-4: PreCall 36
-5: Parameter 60 string string_Raise20default0A#
-6: Call 36 printf 0
-7: PostCall 36
-8: SetReturnValue
-9: Return integral4$1#
-10: Jump < Empty>
-11: Empty
-12: Equal < Empty> func integral8$0#
-13: Jump < Empty>
-14: Empty
-15: PreCall 36
-16: Parameter 60 string string_Raise20error0A#
-17: Call 36 printf 0
-18: PostCall 36
-19: SetReturnValue
-20: Return integral4$0#
-21: Jump < Empty>
-22: Empty
-23: PreCall 36
-24: Parameter 60 string string_Raise20function2C20calling2025i20with2025i0A#
-25: Parameter 68 pointer func
-26: Parameter 76 signed int sig
-27: Call 36 printf 12
-28: PostCall 36
-29: PreCall 36
-30: Parameter 60 signed int sig
-31: Call 36 func 0
-32: PostCall 36
-33: SetReturnValue
-34: Return integral4$1#
+0: PreCall 8
+1: Parameter 14 string string_0ARaise20signal2025i0A#
+2: Parameter 16 signed int sig
+3: Call 8 printf 2
+4: PostCall 8
+5: IntegralToIntegral £temporary793 sig
+6: AssignRegister al £temporary793
+7: AssignRegister ah integral1$53#
+8: Interrupt 33
+9: InspectRegister £temporary795 bx
+10: Assign func £temporary795
+11: PreCall 10
+12: Parameter 16 string string_Raise20function2025p0A#
+13: Parameter 18 pointer func
+14: Call 10 printf 2
+15: PostCall 10
+16: Equal < Empty> func integral2$0#
+17: Jump < Empty>
+18: Empty
+19: PreCall 10
+20: Parameter 16 string string_Raise20default0A#
+21: Call 10 printf 0
+22: PostCall 10
+23: Return integral2$1#
+24: Jump < Empty>
+25: Empty
+26: Equal < Empty> func integral2$0#
+27: Jump < Empty>
+28: Empty
+29: PreCall 10
+30: Parameter 16 string string_Raise20error0A#
+31: Call 10 printf 0
+32: PostCall 10
+33: Return integral2$0#
+34: Jump < Empty>
 35: Empty
-36: Empty
-37: Empty
-38: FunctionEnd raise
+36: PreCall 10
+37: Parameter 16 string string_Raise20function2C20calling2025i20with2025i0A#
+38: Parameter 18 pointer func
+39: Parameter 20 signed int sig
+40: Call 10 printf 4
+41: PostCall 10
+42: PreCall 10
+43: Parameter 16 signed int sig
+44: Call 10 func 0
+45: PostCall 10
+46: Return integral2$1#
+47: Empty
+48: Empty
+49: Empty
+50: FunctionEnd raise

@@ -1,15 +1,14 @@
-0: Address £temporary1738 format
-1: IntegralToIntegral £temporary1739 £temporary1738
-2: Add £temporary1740 £temporary1739 integral8$8#
-3: Assign arg_list £temporary1740
+0: Address £temporary1765 format
+1: IntegralToIntegral £temporary1766 £temporary1765
+2: Add £temporary1767 £temporary1766 integral8$8#
+3: Assign arg_list £temporary1767
 4: PreCall 48
 5: Parameter 72 pointer inString
 6: Parameter 80 pointer format
 7: Parameter 88 pointer arg_list
 8: Call 48 vsscanf 0
 9: PostCall 48
-10: GetReturnValue £temporary1741
-11: SetReturnValue
-12: Return £temporary1741
-13: Empty
-14: FunctionEnd sscanf
+10: GetReturnValue £temporary1768
+11: Return £temporary1768
+12: Empty
+13: FunctionEnd sscanf

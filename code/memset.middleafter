@@ -1,15 +1,14 @@
-0: IntegralToIntegral £temporary3751 block
-1: Assign charBlock £temporary3751
-2: IntegralToIntegral £temporary3752 i
-3: Assign c £temporary3752
+0: IntegralToIntegral £temporary3875 block
+1: Assign charBlock £temporary3875
+2: IntegralToIntegral £temporary3876 i
+3: Assign c £temporary3876
 4: Assign index integral4$0#
 5: GreaterThanEqual 12 index size
-6: IntegralToIntegral £temporary3755 index
-7: Add £temporary3756 charBlock £temporary3755
-8: Dereference £temporary3757 £temporary3756 0
-9: Assign £temporary3757 c
+6: IntegralToIntegral £temporary3880 index
+7: Add £temporary3881 charBlock £temporary3880
+8: Dereference £temporary3882 £temporary3881 0
+9: Assign £temporary3882 c
 10: Add index index integral4$1#
 11: Jump 5
-12: SetReturnValue
-13: Return block
-14: FunctionEnd memset
+12: Return block
+13: FunctionEnd memset

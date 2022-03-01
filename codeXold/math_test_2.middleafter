@@ -1,0 +1,82 @@
+0: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 64 string string_fmod2825f2C2025f29203D2025f2C20errno203D2025i0A#
+2: PushFloat x
+3: Parameter 72 double x
+4: PushFloat y
+5: Parameter 80 double y
+6: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+7: PushFloat x
+8: Parameter 112 double x
+9: PushFloat y
+10: Parameter 120 double y
+11: Call 88 fmod 0
+12: PostCall 88
+13: GetReturnValue £temporary4233
+14: Parameter 88 double £temporary4233
+15: Parameter 96 signed int errno
+16: Call 40 printf 28
+17: PostCall 40
+18: Assign errno integral4$0#
+19: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+20: Parameter 64 string string_atan22825f2C2025f29203D2025f2C20errno203D2025i0A#
+21: PushFloat x
+22: Parameter 72 double x
+23: PushFloat y
+24: Parameter 80 double y
+25: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+26: PushFloat x
+27: Parameter 112 double x
+28: PushFloat y
+29: Parameter 120 double y
+30: Call 88 atan2 0
+31: PostCall 88
+32: GetReturnValue £temporary4235
+33: Parameter 88 double £temporary4235
+34: Parameter 96 signed int errno
+35: Call 40 printf 28
+36: PostCall 40
+37: Assign errno integral4$0#
+38: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+39: Parameter 64 string string_pow2825f2C2025f29203D2025f2C20errno203D2025i0A#
+40: PushFloat x
+41: Parameter 72 double x
+42: PushFloat y
+43: Parameter 80 double y
+44: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+45: PushFloat x
+46: Parameter 112 double x
+47: PushFloat y
+48: Parameter 120 double y
+49: Call 88 pow 0
+50: PostCall 88
+51: GetReturnValue £temporary4237
+52: Parameter 88 double £temporary4237
+53: Parameter 96 signed int errno
+54: Call 40 printf 28
+55: PostCall 40
+56: Assign errno integral4$0#
+57: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+58: Parameter 64 string string_0A#
+59: Call 40 printf 0
+60: PostCall 40
+61: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+62: Parameter 64 string string_ldexp2825f2C2025i29203D2025f0A0A#
+63: PushFloat x
+64: Parameter 72 double x
+65: PushFloat y
+66: FloatingToIntegral £temporary4240 y
+67: Parameter 80 signed int £temporary4240
+68: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+69: PushFloat x
+70: Parameter 108 double x
+71: PushFloat y
+72: FloatingToIntegral £temporary4241 y
+73: Parameter 116 signed int £temporary4241
+74: Call 84 ldexp 0
+75: PostCall 84
+76: GetReturnValue £temporary4242
+77: Parameter 84 double £temporary4242
+78: Call 40 printf 20
+79: PostCall 40
+80: Return
+81: FunctionEnd math_test_2

@@ -1,17 +1,15 @@
 0: Assign c integral1$0#
-1: PreCall 33 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-2: Address £temporary970 c
-3: Parameter 57 pointer £temporary970
-4: Parameter 65 signed int integral4$1#
-5: Parameter 69 signed int integral4$1#
-6: Parameter 73 pointer stream
-7: Call 33 fread 0
-8: PostCall 33
-9: GetReturnValue £temporary971
-10: LessThanEqual 14 £temporary971 integral4$0#
-11: IntegralToIntegral £temporary973 c
-12: SetReturnValue
-13: Return £temporary973
-14: SetReturnValue
-15: Return integral4$minus1#
-16: FunctionEnd fgetc
+1: PreCall 9 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+2: Address £temporary979 c
+3: Parameter 15 pointer £temporary979
+4: Parameter 17 signed int integral2$1#
+5: Parameter 19 signed int integral2$1#
+6: Parameter 21 pointer stream
+7: Call 9 fread 0
+8: PostCall 9
+9: GetReturnValue £temporary980
+10: LessThanEqual 13 £temporary980 integral2$0#
+11: IntegralToIntegral £temporary982 c
+12: Return £temporary982
+13: Return integral2$minus1#
+14: FunctionEnd fgetc

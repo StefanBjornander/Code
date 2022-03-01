@@ -1,12 +1,11 @@
-0: GreaterThanEqual < LessThanEqual < Assign £temporary211 integral4$1#> c integral4$57#> c integral4$48#
-1: Jump < Assign £temporary211 integral4$0#>
-2: LessThanEqual < Assign £temporary211 integral4$1#> c integral4$57#
-3: Jump < Assign £temporary211 integral4$0#>
-4: Assign £temporary211 integral4$1#
+0: GreaterThanEqual < LessThanEqual < Assign £temporary204 integral2$1#> c integral2$57#> c integral2$48#
+1: Jump < Assign £temporary204 integral2$0#>
+2: LessThanEqual < Assign £temporary204 integral2$1#> c integral2$57#
+3: Jump < Assign £temporary204 integral2$0#>
+4: Assign £temporary204 integral2$1#
 5: Jump < Empty>
-6: Assign £temporary211 integral4$0#
+6: Assign £temporary204 integral2$0#
 7: Empty
-8: SetReturnValue
-9: Return £temporary211
-10: Empty
-11: FunctionEnd isdigit
+8: Return £temporary204
+9: Empty
+10: FunctionEnd isdigit

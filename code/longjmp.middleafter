@@ -1,10 +1,10 @@
-0: AssignRegister ebx return_value
-1: Dereference £temporary785 £temporary784 0
-2: AssignRegister rcx £temporary785
-3: Dereference £temporary788 £temporary787 0
-4: AssignRegister rdi £temporary788
-5: Dereference £temporary791 £temporary790 0
-6: AssignRegister rbp £temporary791
-7: JumpRegister rcx
+0: AssignRegister bx return_value
+1: Dereference £temporary778 £temporary777 0
+2: AssignRegister cx £temporary778
+3: Dereference £temporary781 £temporary780 0
+4: AssignRegister di £temporary781
+5: Dereference £temporary784 £temporary783 0
+6: AssignRegister bp £temporary784
+7: JumpRegister cx
 8: Return
 9: FunctionEnd longjmp

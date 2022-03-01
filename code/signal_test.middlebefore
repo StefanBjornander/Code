@@ -1,7 +1,7 @@
 0: Assign a integral4$1#
 1: Assign b integral4$1#
-2: Divide £temporary4809 a b
-3: Assign c £temporary4809
+2: Divide £temporary4935 a b
+3: Assign c £temporary4935
 4: PreCall 36
 5: Parameter 60 string string_25i0A#
 6: Parameter 68 signed int c

@@ -1,0 +1,3 @@
+24: Assign index £temporary268
+25: IntegralToIntegral £temporary269 index
+26: Add £temporary270 lowerCase £temporary269

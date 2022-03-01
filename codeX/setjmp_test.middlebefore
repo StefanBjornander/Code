@@ -1,3 +1,18 @@
-0: Empty
-1: Return
-2: FunctionEnd setjmp_test
+0: PreCall 24
+1: PushFloat floating8$10#
+2: Parameter 48 double floating8$10#
+3: Call 24 test 0
+4: PostCall 24
+5: PreCall 24
+6: PushFloat floating8$0#
+7: Parameter 48 double floating8$0#
+8: Call 24 test 0
+9: PostCall 24
+10: PreCall 24
+11: PushFloat floating8$0.1#
+12: Parameter 48 double floating8$0.1#
+13: Call 24 test 0
+14: PostCall 24
+15: Empty
+16: Return
+17: FunctionEnd setjmp_test

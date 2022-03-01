@@ -2,28 +2,27 @@
 1: Parameter 68 pointer target
 2: Call 44 strlen 0
 3: PostCall 44
-4: GetReturnValue £temporary3406
-5: Assign targetLength £temporary3406
+4: GetReturnValue £temporary3471
+5: Assign targetLength £temporary3471
 6: Assign index integral4$0#
-7: IntegralToIntegral £temporary3407 index
-8: Add £temporary3408 source £temporary3407
-9: Dereference £temporary3409 £temporary3408 0
-10: Equal 21 £temporary3409 integral1$0#
-11: Add £temporary3412 targetLength index
-12: IntegralToIntegral £temporary3413 £temporary3412
-13: Add £temporary3414 target £temporary3413
-14: Dereference £temporary3415 £temporary3414 0
-15: IntegralToIntegral £temporary3416 index
-16: Add £temporary3417 source £temporary3416
-17: Dereference £temporary3418 £temporary3417 0
-18: Assign £temporary3415 £temporary3418
+7: IntegralToIntegral £temporary3473 index
+8: Add £temporary3474 source £temporary3473
+9: Dereference £temporary3475 £temporary3474 0
+10: Equal 21 £temporary3475 integral1$0#
+11: Add £temporary3479 targetLength index
+12: IntegralToIntegral £temporary3480 £temporary3479
+13: Add £temporary3481 target £temporary3480
+14: Dereference £temporary3482 £temporary3481 0
+15: IntegralToIntegral £temporary3484 index
+16: Add £temporary3485 source £temporary3484
+17: Dereference £temporary3486 £temporary3485 0
+18: Assign £temporary3482 £temporary3486
 19: Add index index integral4$1#
 20: Jump 7
-21: Add £temporary3419 targetLength index
-22: IntegralToIntegral £temporary3420 £temporary3419
-23: Add £temporary3421 target £temporary3420
-24: Dereference £temporary3422 £temporary3421 0
-25: Assign £temporary3422 integral1$0#
-26: SetReturnValue
-27: Return target
-28: FunctionEnd strcat
+21: Add £temporary3488 targetLength index
+22: IntegralToIntegral £temporary3489 £temporary3488
+23: Add £temporary3490 target £temporary3489
+24: Dereference £temporary3491 £temporary3490 0
+25: Assign £temporary3491 integral1$0#
+26: Return target
+27: FunctionEnd strcat

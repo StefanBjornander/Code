@@ -1,23 +1,22 @@
-0: PreCall 28
-1: Parameter 52 signed int c
-2: Call 28 isdigit 0
-3: PostCall 28
-4: GetReturnValue £temporary218
-5: NotEqual < Assign £temporary228 integral4$1#> £temporary218 integral4$0#
-6: Jump < GreaterThanEqual < LessThanEqual < Assign £temporary228 integral4$1#> c integral4$102#> c integral4$97#>
-7: GreaterThanEqual < LessThanEqual < Assign £temporary228 integral4$1#> c integral4$102#> c integral4$97#
-8: Jump < GreaterThanEqual < LessThanEqual < Assign £temporary228 integral4$1#> c integral4$70#> c integral4$65#>
-9: LessThanEqual < Assign £temporary228 integral4$1#> c integral4$102#
-10: Jump < GreaterThanEqual < LessThanEqual < Assign £temporary228 integral4$1#> c integral4$70#> c integral4$65#>
-11: GreaterThanEqual < LessThanEqual < Assign £temporary228 integral4$1#> c integral4$70#> c integral4$65#
-12: Jump < Assign £temporary228 integral4$0#>
-13: LessThanEqual < Assign £temporary228 integral4$1#> c integral4$70#
-14: Jump < Assign £temporary228 integral4$0#>
-15: Assign £temporary228 integral4$1#
+0: PreCall 8
+1: Parameter 14 signed int c
+2: Call 8 isdigit 0
+3: PostCall 8
+4: GetReturnValue £temporary211
+5: NotEqual < Assign £temporary221 integral2$1#> £temporary211 integral2$0#
+6: Jump < GreaterThanEqual < LessThanEqual < Assign £temporary221 integral2$1#> c integral2$102#> c integral2$97#>
+7: GreaterThanEqual < LessThanEqual < Assign £temporary221 integral2$1#> c integral2$102#> c integral2$97#
+8: Jump < GreaterThanEqual < LessThanEqual < Assign £temporary221 integral2$1#> c integral2$70#> c integral2$65#>
+9: LessThanEqual < Assign £temporary221 integral2$1#> c integral2$102#
+10: Jump < GreaterThanEqual < LessThanEqual < Assign £temporary221 integral2$1#> c integral2$70#> c integral2$65#>
+11: GreaterThanEqual < LessThanEqual < Assign £temporary221 integral2$1#> c integral2$70#> c integral2$65#
+12: Jump < Assign £temporary221 integral2$0#>
+13: LessThanEqual < Assign £temporary221 integral2$1#> c integral2$70#
+14: Jump < Assign £temporary221 integral2$0#>
+15: Assign £temporary221 integral2$1#
 16: Jump < Empty>
-17: Assign £temporary228 integral4$0#
+17: Assign £temporary221 integral2$0#
 18: Empty
-19: SetReturnValue
-20: Return £temporary228
-21: Empty
-22: FunctionEnd isxdigit
+19: Return £temporary221
+20: Empty
+21: FunctionEnd isxdigit

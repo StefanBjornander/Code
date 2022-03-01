@@ -1,27 +1,25 @@
-0: PreCall 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-1: Call 28 localeconv 0
-2: PostCall 28
-3: GetReturnValue £temporary190
-4: Assign localeConvPtr £temporary190
-5: Equal 19 localeConvPtr integral8$0#
-6: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-7: Dereference £temporary192 localeConvPtr 0
-8: Parameter 60 pointer £temporary192.upperCase
-9: Parameter 68 signed int c
-10: Call 36 strchr 0
-11: PostCall 36
-12: GetReturnValue £temporary193
-13: Equal 16 £temporary193 integral8$0#
-14: Assign £temporary195 integral4$1#
+0: PreCall 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Call 8 localeconv 0
+2: PostCall 8
+3: GetReturnValue £temporary183
+4: Assign localeConvPtr £temporary183
+5: Equal 18 localeConvPtr integral2$0#
+6: PreCall 10 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+7: Dereference £temporary185 localeConvPtr 0
+8: Parameter 16 pointer £temporary185.upperCase
+9: Parameter 18 signed int c
+10: Call 10 strchr 0
+11: PostCall 10
+12: GetReturnValue £temporary186
+13: Equal 16 £temporary186 integral2$0#
+14: Assign £temporary188 integral2$1#
 15: Jump 17
-16: Assign £temporary195 integral4$0#
-17: SetReturnValue
-18: Return £temporary195
-19: LessThan 23 c integral4$65#
-20: GreaterThan 23 c integral4$90#
-21: Assign £temporary199 integral4$1#
-22: Jump 24
-23: Assign £temporary199 integral4$0#
-24: SetReturnValue
-25: Return £temporary199
-26: FunctionEnd isupper
+16: Assign £temporary188 integral2$0#
+17: Return £temporary188
+18: LessThan 22 c integral2$65#
+19: GreaterThan 22 c integral2$90#
+20: Assign £temporary192 integral2$1#
+21: Jump 23
+22: Assign £temporary192 integral2$0#
+23: Return £temporary192
+24: FunctionEnd isupper

@@ -1,12 +1,12 @@
-0: Case < Subtract £temporary1146 g_inChars integral4$1#> g_inStatus integral4$0#
-1: Case < Subtract £temporary1147 g_inChars integral4$1#> g_inStatus integral4$1#
+0: Case < Subtract £temporary1161 g_inChars integral2$1#> g_inStatus integral2$0#
+1: Case < Subtract £temporary1162 g_inChars integral2$1#> g_inStatus integral2$1#
 2: CaseEnd g_inStatus
 3: Jump < Empty>
-4: Subtract £temporary1146 g_inChars integral4$1#
-5: Assign g_inChars £temporary1146
+4: Subtract £temporary1161 g_inChars integral2$1#
+5: Assign g_inChars £temporary1161
 6: Jump < Empty>
-7: Subtract £temporary1147 g_inChars integral4$1#
-8: Assign g_inChars £temporary1147
+7: Subtract £temporary1162 g_inChars integral2$1#
+8: Assign g_inChars £temporary1162
 9: Jump < Empty>
 10: Empty
 11: Return

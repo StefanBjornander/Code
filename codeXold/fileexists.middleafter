@@ -1,0 +1,13 @@
+0: AssignRegister rax integral8$21#
+1: IntegralToIntegral £temporary824 name
+2: AssignRegister rdi £temporary824
+3: AssignRegister rsi integral8$0#
+4: SysCall
+5: InspectRegister £temporary826 eax
+6: NotEqual 9 £temporary826 integral4$0#
+7: Assign £temporary828 integral4$1#
+8: Jump 10
+9: Assign £temporary828 integral4$0#
+10: SetReturnValue
+11: Return £temporary828
+12: FunctionEnd fileexists

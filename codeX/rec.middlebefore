@@ -1,16 +1,17 @@
-0: Assign lowHeapPtr 65534
-1: InspectRegister £temporary4223 bp
-2: Assign stackTop £temporary4223
-3: PreCall 10
-4: Parameter 16 pointer "Stack Top: %u, Low Heap: %u\n"
-5: Parameter 18 unsigned int stackTop
-6: Dereference £temporary4224 -> lowHeapPtr lowHeapPtr 0
-7: Parameter 20 unsigned int £temporary4224 -> lowHeapPtr
-8: Call 10 printf 4
-9: PostCall 10
-10: PreCall 10
-11: Call 10 rec 0
-12: PostCall 10
-13: Empty
-14: Return
-15: FunctionEnd rec
+0: Assign lowHeapPtr integral8$65534#
+1: InspectRegister £temporary4982 bp
+2: IntegralToIntegral £temporary4983 £temporary4982
+3: Assign stackTop £temporary4983
+4: PreCall 36
+5: Parameter 60 string string_Stack20Top3A2025u2C20Low20Heap3A2025u0A#
+6: Parameter 68 unsigned int stackTop
+7: Dereference £temporary4984 lowHeapPtr 0
+8: Parameter 72 unsigned int £temporary4984
+9: Call 36 printf 8
+10: PostCall 36
+11: PreCall 36
+12: Call 36 rec 0
+13: PostCall 36
+14: Empty
+15: Return
+16: FunctionEnd rec

@@ -1,19 +1,19 @@
-0: Equal Assign £temporary323 1 c 32
-1: Goto Equal Assign £temporary323 1 c 12
-2: Equal Assign £temporary323 1 c 12
-3: Goto Equal Assign £temporary323 1 c 10
-4: Equal Assign £temporary323 1 c 10
-5: Goto Equal Assign £temporary323 1 c 13
-6: Equal Assign £temporary323 1 c 13
-7: Goto Equal Assign £temporary323 1 c 9
-8: Equal Assign £temporary323 1 c 9
-9: Goto Equal Assign £temporary323 1 c 11
-10: Equal Assign £temporary323 1 c 11
-11: Goto Assign £temporary323 0
-12: Assign £temporary323 1
-13: Goto Empty
-14: Assign £temporary323 0
+0: Equal < Assign £temporary253 integral2$1#> c integral2$32#
+1: Jump < Equal < Assign £temporary253 integral2$1#> c integral2$12#>
+2: Equal < Assign £temporary253 integral2$1#> c integral2$12#
+3: Jump < Equal < Assign £temporary253 integral2$1#> c integral2$10#>
+4: Equal < Assign £temporary253 integral2$1#> c integral2$10#
+5: Jump < Equal < Assign £temporary253 integral2$1#> c integral2$13#>
+6: Equal < Assign £temporary253 integral2$1#> c integral2$13#
+7: Jump < Equal < Assign £temporary253 integral2$1#> c integral2$9#>
+8: Equal < Assign £temporary253 integral2$1#> c integral2$9#
+9: Jump < Equal < Assign £temporary253 integral2$1#> c integral2$11#>
+10: Equal < Assign £temporary253 integral2$1#> c integral2$11#
+11: Jump < Assign £temporary253 integral2$0#>
+12: Assign £temporary253 integral2$1#
+13: Jump < Empty>
+14: Assign £temporary253 integral2$0#
 15: Empty
-16: Return £temporary323
+16: Return £temporary253
 17: Empty
 18: FunctionEnd isspace

@@ -13,8 +13,8 @@
 12: Parameter 96 double x
 13: Call 72 sin 0
 14: PostCall 72
-15: GetReturnValue £temporary4128
-16: Parameter 72 double £temporary4128
+15: GetReturnValue £temporary4254
+16: Parameter 72 double £temporary4254
 17: Parameter 80 signed int errno
 18: Call 32 printf 20
 19: PostCall 32
@@ -29,8 +29,8 @@
 28: Parameter 96 double x
 29: Call 72 cos 0
 30: PostCall 72
-31: GetReturnValue £temporary4130
-32: Parameter 72 double £temporary4130
+31: GetReturnValue £temporary4256
+32: Parameter 72 double £temporary4256
 33: Parameter 80 signed int errno
 34: Call 32 printf 20
 35: PostCall 32
@@ -45,8 +45,8 @@
 44: Parameter 96 double x
 45: Call 72 tan 0
 46: PostCall 72
-47: GetReturnValue £temporary4132
-48: Parameter 72 double £temporary4132
+47: GetReturnValue £temporary4258
+48: Parameter 72 double £temporary4258
 49: Parameter 80 signed int errno
 50: Call 32 printf 20
 51: PostCall 32
@@ -61,8 +61,8 @@
 60: Parameter 96 double x
 61: Call 72 asin 0
 62: PostCall 72
-63: GetReturnValue £temporary4134
-64: Parameter 72 double £temporary4134
+63: GetReturnValue £temporary4260
+64: Parameter 72 double £temporary4260
 65: Parameter 80 signed int errno
 66: Call 32 printf 20
 67: PostCall 32
@@ -77,8 +77,8 @@
 76: Parameter 96 double x
 77: Call 72 acos 0
 78: PostCall 72
-79: GetReturnValue £temporary4136
-80: Parameter 72 double £temporary4136
+79: GetReturnValue £temporary4262
+80: Parameter 72 double £temporary4262
 81: Parameter 80 signed int errno
 82: Call 32 printf 20
 83: PostCall 32
@@ -93,8 +93,8 @@
 92: Parameter 96 double x
 93: Call 72 atan 0
 94: PostCall 72
-95: GetReturnValue £temporary4138
-96: Parameter 72 double £temporary4138
+95: GetReturnValue £temporary4264
+96: Parameter 72 double £temporary4264
 97: Parameter 80 signed int errno
 98: Call 32 printf 20
 99: PostCall 32
@@ -109,8 +109,8 @@
 108: Parameter 96 double x
 109: Call 72 exp 0
 110: PostCall 72
-111: GetReturnValue £temporary4140
-112: Parameter 72 double £temporary4140
+111: GetReturnValue £temporary4266
+112: Parameter 72 double £temporary4266
 113: Parameter 80 signed int errno
 114: Call 32 printf 20
 115: PostCall 32
@@ -125,8 +125,8 @@
 124: Parameter 96 double x
 125: Call 72 log 0
 126: PostCall 72
-127: GetReturnValue £temporary4142
-128: Parameter 72 double £temporary4142
+127: GetReturnValue £temporary4268
+128: Parameter 72 double £temporary4268
 129: Parameter 80 signed int errno
 130: Call 32 printf 20
 131: PostCall 32
@@ -141,8 +141,8 @@
 140: Parameter 96 double x
 141: Call 72 log10 0
 142: PostCall 72
-143: GetReturnValue £temporary4144
-144: Parameter 72 double £temporary4144
+143: GetReturnValue £temporary4270
+144: Parameter 72 double £temporary4270
 145: Parameter 80 signed int errno
 146: Call 32 printf 20
 147: PostCall 32
@@ -157,8 +157,8 @@
 156: Parameter 96 double x
 157: Call 72 sinh 0
 158: PostCall 72
-159: GetReturnValue £temporary4146
-160: Parameter 72 double £temporary4146
+159: GetReturnValue £temporary4272
+160: Parameter 72 double £temporary4272
 161: Parameter 80 signed int errno
 162: Call 32 printf 20
 163: PostCall 32
@@ -173,8 +173,8 @@
 172: Parameter 96 double x
 173: Call 72 cosh 0
 174: PostCall 72
-175: GetReturnValue £temporary4148
-176: Parameter 72 double £temporary4148
+175: GetReturnValue £temporary4274
+176: Parameter 72 double £temporary4274
 177: Parameter 80 signed int errno
 178: Call 32 printf 20
 179: PostCall 32
@@ -189,8 +189,8 @@
 188: Parameter 96 double x
 189: Call 72 tanh 0
 190: PostCall 72
-191: GetReturnValue £temporary4150
-192: Parameter 72 double £temporary4150
+191: GetReturnValue £temporary4276
+192: Parameter 72 double £temporary4276
 193: Parameter 80 signed int errno
 194: Call 32 printf 20
 195: PostCall 32
@@ -205,8 +205,8 @@
 204: Parameter 96 double x
 205: Call 72 sqrt 0
 206: PostCall 72
-207: GetReturnValue £temporary4152
-208: Parameter 72 double £temporary4152
+207: GetReturnValue £temporary4278
+208: Parameter 72 double £temporary4278
 209: Parameter 80 signed int errno
 210: Call 32 printf 20
 211: PostCall 32
@@ -221,8 +221,8 @@
 220: Parameter 96 double x
 221: Call 72 floor 0
 222: PostCall 72
-223: GetReturnValue £temporary4154
-224: Parameter 72 double £temporary4154
+223: GetReturnValue £temporary4280
+224: Parameter 72 double £temporary4280
 225: Parameter 80 signed int errno
 226: Call 32 printf 20
 227: PostCall 32
@@ -237,8 +237,8 @@
 236: Parameter 96 double x
 237: Call 72 ceil 0
 238: PostCall 72
-239: GetReturnValue £temporary4156
-240: Parameter 72 double £temporary4156
+239: GetReturnValue £temporary4282
+240: Parameter 72 double £temporary4282
 241: Parameter 80 signed int errno
 242: Call 32 printf 20
 243: PostCall 32
@@ -253,8 +253,8 @@
 252: Parameter 96 double x
 253: Call 72 fabs 0
 254: PostCall 72
-255: GetReturnValue £temporary4158
-256: Parameter 72 double £temporary4158
+255: GetReturnValue £temporary4284
+256: Parameter 72 double £temporary4284
 257: Parameter 80 signed int errno
 258: Call 32 printf 20
 259: PostCall 32
@@ -264,11 +264,11 @@
 263: PreCall 36
 264: PushFloat x
 265: Parameter 60 double x
-266: Address £temporary4160 j
-267: Parameter 68 pointer £temporary4160
+266: Address £temporary4286 j
+267: Parameter 68 pointer £temporary4286
 268: Call 36 frexp 0
 269: PostCall 36
-270: GetReturnValue £temporary4161
+270: GetReturnValue £temporary4287
 271: PopFloat z
 272: PreCall 44
 273: Parameter 68 string string_frexp202825f2C20p29203D202825f2C2025i292C20errno203D2025i0A#
@@ -298,11 +298,11 @@
 297: Parameter 64 double x
 298: PushFloat w
 299: PopEmpty
-300: Address £temporary4167 w
-301: Parameter 72 pointer £temporary4167
+300: Address £temporary4293 w
+301: Parameter 72 pointer £temporary4293
 302: Call 40 modf 0
 303: PostCall 40
-304: GetReturnValue £temporary4168
+304: GetReturnValue £temporary4294
 305: PopFloat z
 306: PreCall 48
 307: Parameter 72 string string_modf202825f2C20p29203D202825f2C2025f292C20errno203D2025i0A#

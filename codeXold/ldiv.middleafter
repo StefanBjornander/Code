@@ -1,0 +1,11 @@
+0: Assign result.quot integral8$0#
+1: Assign result.rem integral8$0#
+2: NotEqual 6 denum integral8$0#
+3: Assign errno EDOM
+4: SetReturnValue
+5: Return result
+6: Divide result.quot num denum
+7: Modulo result.rem num denum
+8: SetReturnValue
+9: Return result
+10: FunctionEnd ldiv

@@ -1,13 +1,12 @@
-0: Address £temporary2259 format
-1: IntegralToIntegral £temporary2260 £temporary2259
-2: Add arg_list £temporary2260 integral8$8#
+0: Address £temporary2300 format
+1: IntegralToIntegral £temporary2301 £temporary2300
+2: Add arg_list £temporary2301 integral8$8#
 3: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 4: Parameter 72 pointer outStream
 5: Parameter 80 pointer format
 6: Parameter 88 pointer arg_list
 7: Call 48 vfprintf 0
 8: PostCall 48
-9: GetReturnValue £temporary2262
-10: SetReturnValue
-11: Return £temporary2262
-12: FunctionEnd fprintf
+9: GetReturnValue £temporary2303
+10: Return £temporary2303
+11: FunctionEnd fprintf

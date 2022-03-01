@@ -1,0 +1,26 @@
+0: Assign index integral4$0#
+1: GreaterThanEqual 23 index integral4$20#
+2: Multiply £temporary837 index integral4$41#
+3: IntegralToIntegral £temporary838 £temporary837
+4: Add £temporary839 g_fileArray £temporary838
+5: Dereference £temporary840 £temporary839 0
+6: NotEqual 21 £temporary840.open integral4$0#
+7: PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+8: Parameter 68 pointer name
+9: Parameter 76 pointer mode
+10: Multiply £temporary843 index integral4$41#
+11: IntegralToIntegral £temporary844 £temporary843
+12: Add £temporary845 g_fileArray £temporary844
+13: Dereference £temporary846 £temporary845 0
+14: Address £temporary847 £temporary846
+15: Parameter 84 pointer £temporary847
+16: Call 44 freopen 0
+17: PostCall 44
+18: GetReturnValue £temporary848
+19: SetReturnValue
+20: Return £temporary848
+21: Add index index integral4$1#
+22: Jump 1
+23: SetReturnValue
+24: Return integral8$0#
+25: FunctionEnd fopen

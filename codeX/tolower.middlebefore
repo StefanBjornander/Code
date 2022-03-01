@@ -1,51 +1,46 @@
-0: PreCall 28
-1: Parameter 52 signed int c
-2: Call 28 isupper 0
-3: PostCall 28
-4: GetReturnValue £temporary261
-5: NotEqual Empty £temporary261 integral4$0#
-6: Jump Empty
+0: PreCall 8
+1: Parameter 14 signed int c
+2: Call 8 isupper 0
+3: PostCall 8
+4: GetReturnValue £temporary254
+5: NotEqual < Empty> £temporary254 integral2$0#
+6: Jump < Empty>
 7: Empty
-8: PreCall 28
-9: Call 28 localeconv 0
-10: PostCall 28
-11: GetReturnValue £temporary262
-12: Assign localeConvPtr £temporary262
-13: NotEqual Empty localeConvPtr integral8$0#
-14: Jump Empty
+8: PreCall 8
+9: Call 8 localeconv 0
+10: PostCall 8
+11: GetReturnValue £temporary255
+12: Assign localeConvPtr £temporary255
+13: NotEqual < Empty> localeConvPtr integral2$0#
+14: Jump < Empty>
 15: Empty
-16: Dereference £temporary264 localeConvPtr 0
-17: Assign lowerCase £temporary264.lowerCase
-18: Dereference £temporary265 localeConvPtr 0
-19: Assign upperCase £temporary265.upperCase
-20: PreCall 52
-21: Parameter 76 pointer upperCase
-22: Parameter 84 signed int c
-23: Call 52 strchr 0
-24: PostCall 52
-25: GetReturnValue £temporary266
-26: Subtract £temporary267 £temporary266 upperCase
-27: IntegralToIntegral £temporary268 £temporary267
-28: Assign index £temporary268
-
-29: Multiply £temporary269 index integral4$1#
-30: IntegralToIntegral £temporary270 £temporary269
-31: Add £temporary271 lowerCase £temporary270
-
-32: Dereference £temporary272 £temporary271 0
-33: IntegralToIntegral £temporary273 £temporary272
-34: SetReturnValue
-35: Return £temporary273
-36: Jump Empty
-37: Empty
-38: Add £temporary274 c integral4$32#
-39: SetReturnValue
-40: Return £temporary274
+16: Dereference £temporary257 localeConvPtr 0
+17: Assign lowerCase £temporary257.lowerCase
+18: Dereference £temporary258 localeConvPtr 0
+19: Assign upperCase £temporary258.upperCase
+20: PreCall 14
+21: Parameter 20 pointer upperCase
+22: Parameter 22 signed int c
+23: Call 14 strchr 0
+24: PostCall 14
+25: GetReturnValue £temporary259
+26: Subtract £temporary260 £temporary259 upperCase
+27: IntegralToIntegral £temporary261 £temporary260
+28: Divide £temporary262 £temporary261 integral2$1#
+29: Assign index £temporary262
+30: Multiply £temporary263 index integral2$1#
+31: Add £temporary264 lowerCase £temporary263
+32: Dereference £temporary265 £temporary264 0
+33: IntegralToIntegral £temporary266 £temporary265
+34: Return £temporary266
+35: Jump < Empty>
+36: Empty
+37: Add £temporary267 c integral2$32#
+38: Return £temporary267
+39: Empty
+40: Jump < Empty>
 41: Empty
-42: Jump Empty
+42: Return c
 43: Empty
-44: SetReturnValue
-45: Return c
-46: Empty
-47: Empty
-48: FunctionEnd tolower
+44: Empty
+45: FunctionEnd tolower

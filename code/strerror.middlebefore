@@ -1,29 +1,27 @@
 0: PreCall 28
 1: Call 28 localeconv 0
 2: PostCall 28
-3: GetReturnValue £temporary3602
-4: Assign localeConvPtr £temporary3602
+3: GetReturnValue £temporary3704
+4: Assign localeConvPtr £temporary3704
 5: NotEqual < Empty> localeConvPtr integral8$0#
 6: Jump < Empty>
 7: Empty
-8: Dereference £temporary3604 localeConvPtr 0
-9: Assign messageList £temporary3604.messageList
+8: Dereference £temporary3706 localeConvPtr 0
+9: Assign messageList £temporary3706.messageList
 10: NotEqual < Empty> messageList integral8$0#
 11: Jump < Empty>
 12: Empty
-13: Multiply £temporary3606 errno integral4$8#
-14: IntegralToIntegral £temporary3607 £temporary3606
-15: Add £temporary3608 messageList £temporary3607
-16: Dereference £temporary3609 £temporary3608 0
-17: SetReturnValue
-18: Return £temporary3609
-19: Jump < Empty>
+13: Multiply £temporary3708 errno integral4$8#
+14: IntegralToIntegral £temporary3709 £temporary3708
+15: Add £temporary3710 messageList £temporary3709
+16: Dereference £temporary3711 £temporary3710 0
+17: Return £temporary3711
+18: Jump < Empty>
+19: Empty
 20: Empty
-21: Empty
-22: Jump < Empty>
+21: Jump < Empty>
+22: Empty
 23: Empty
-24: Empty
-25: SetReturnValue
-26: Return integral8$0#
-27: Empty
-28: FunctionEnd strerror
+24: Return integral8$0#
+25: Empty
+26: FunctionEnd strerror

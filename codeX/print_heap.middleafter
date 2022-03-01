@@ -1,23 +1,23 @@
 0: Assign currBlockPtr g_firstBlockPtr
-1: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-2: Parameter 56 string string_Heap3A0A#
-3: Call 32 printf 0
-4: PostCall 32
-5: Equal 17 currBlockPtr integral8$0#
-6: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-7: Parameter 56 string string_2020Address2025u2C20Size2025u0A#
-8: IntegralToIntegral £temporary173 currBlockPtr
-9: Parameter 64 unsigned int £temporary173
-10: Dereference £temporary174 currBlockPtr 0
-11: Parameter 68 unsigned int £temporary174.size
-12: Call 32 printf 8
-13: PostCall 32
-14: Dereference £temporary176 currBlockPtr 0
-15: Assign currBlockPtr £temporary176.next
+1: PreCall 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+2: Parameter 14 string string_Heap3A0A#
+3: Call 8 printf 0
+4: PostCall 8
+5: Equal 17 currBlockPtr integral2$0#
+6: PreCall 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+7: Parameter 14 string string_2020Address2025u2C20Size2025u0A#
+8: IntegralToIntegral £temporary166 currBlockPtr
+9: Parameter 16 unsigned int £temporary166
+10: Dereference £temporary167 currBlockPtr 0
+11: Parameter 18 unsigned int £temporary167.size
+12: Call 8 printf 4
+13: PostCall 8
+14: Dereference £temporary169 currBlockPtr 0
+15: Assign currBlockPtr £temporary169.next
 16: Jump 5
-17: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-18: Parameter 56 string string_0A#
-19: Call 32 printf 0
-20: PostCall 32
+17: PreCall 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+18: Parameter 14 string string_0A#
+19: Call 8 printf 0
+20: PostCall 8
 21: Return
 22: FunctionEnd print_heap

@@ -1,0 +1,13 @@
+0: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 56 signed int integral4$0#
+2: Parameter 60 pointer name
+3: Parameter 68 signed int integral4$4#
+4: Call 32 generateName 0
+5: PostCall 32
+6: GetReturnValue £temporary1116
+7: Equal 10 £temporary1116 integral4$0#
+8: SetReturnValue
+9: Return name
+10: SetReturnValue
+11: Return integral8$0#
+12: FunctionEnd tmpnam

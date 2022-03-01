@@ -1,8 +1,7 @@
-0: LessThan 4 c integral4$32#
-1: GreaterThan 4 c integral4$126#
-2: Assign £temporary232 integral4$1#
+0: LessThan 4 c integral2$32#
+1: GreaterThan 4 c integral2$126#
+2: Assign £temporary225 integral2$1#
 3: Jump 5
-4: Assign £temporary232 integral4$0#
-5: SetReturnValue
-6: Return £temporary232
-7: FunctionEnd isgraph
+4: Assign £temporary225 integral2$0#
+5: Return £temporary225
+6: FunctionEnd isgraph

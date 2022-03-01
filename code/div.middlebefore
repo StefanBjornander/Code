@@ -4,16 +4,14 @@
 3: Jump < Empty>
 4: Empty
 5: Assign errno EDOM
-6: SetReturnValue
-7: Return result
-8: Jump < Empty>
+6: Return result
+7: Jump < Empty>
+8: Empty
 9: Empty
-10: Empty
-11: Divide £temporary2987 num denum
-12: Assign result.quot £temporary2987
-13: Modulo £temporary2988 num denum
-14: Assign result.rem £temporary2988
-15: SetReturnValue
-16: Return result
-17: Empty
-18: FunctionEnd div
+10: Divide £temporary3040 num denum
+11: Assign result.quot £temporary3040
+12: Modulo £temporary3041 num denum
+13: Assign result.rem £temporary3041
+14: Return result
+15: Empty
+16: FunctionEnd div

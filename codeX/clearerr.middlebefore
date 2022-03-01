@@ -1,6 +1,6 @@
-0: Dereference £temporary899 -> stream stream 0
-1: Assign errno 0
-2: Assign £temporary899 -> stream errno
+0: Dereference £temporary1094 stream 0
+1: Assign errno integral2$0#
+2: Assign £temporary1094.errno errno
 3: Empty
 4: Return
 5: FunctionEnd clearerr

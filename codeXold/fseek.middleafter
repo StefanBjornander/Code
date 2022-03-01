@@ -1,0 +1,13 @@
+0: AssignRegister rax integral8$8#
+1: Dereference £temporary1060 stream 0
+2: IntegralToIntegral £temporary1061 £temporary1060.handle
+3: AssignRegister rdi £temporary1061
+4: IntegralToIntegral £temporary1063 offset
+5: AssignRegister rsi £temporary1063
+6: IntegralToIntegral £temporary1065 origin
+7: AssignRegister rdx £temporary1065
+8: SysCall
+9: InspectRegister £temporary1066 eax
+10: SetReturnValue
+11: Return £temporary1066
+12: FunctionEnd fseek

@@ -1,0 +1,23 @@
+0: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 56 pointer name
+2: Parameter 64 string string_r#
+3: Call 32 fopen 0
+4: PostCall 32
+5: GetReturnValue £temporary816
+6: Assign filePtr £temporary816
+7: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+8: Parameter 64 string string_0Afileexists2025s2025p0A#
+9: Parameter 72 pointer name
+10: Parameter 80 pointer filePtr
+11: Call 40 printf 16
+12: PostCall 40
+13: Equal 20 filePtr integral8$0#
+14: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+15: Parameter 64 pointer filePtr
+16: Call 40 fclose 0
+17: PostCall 40
+18: SetReturnValue
+19: Return integral4$1#
+20: SetReturnValue
+21: Return integral4$0#
+22: FunctionEnd fileexistsX

@@ -1,0 +1,5 @@
+0: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Call 24 rec 0
+2: PostCall 24
+3: Return
+4: FunctionEnd malloc_test4

@@ -1,0 +1,32 @@
+0: PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 68 pointer subString
+2: Call 44 strlen 0
+3: PostCall 44
+4: GetReturnValue £temporary3581
+5: Assign subStringSize £temporary3581
+6: Assign index integral4$0#
+7: IntegralToIntegral £temporary3582 index
+8: Add £temporary3583 mainString £temporary3582
+9: Dereference £temporary3584 £temporary3583 0
+10: Equal 29 £temporary3584 integral1$0#
+11: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+12: IntegralToIntegral £temporary3587 index
+13: Add £temporary3588 mainString £temporary3587
+14: Parameter 72 pointer £temporary3588
+15: Parameter 80 pointer subString
+16: Parameter 88 signed int subStringSize
+17: Call 48 strncmp 0
+18: PostCall 48
+19: GetReturnValue £temporary3589
+20: NotEqual 27 £temporary3589 integral4$0#
+21: IntegralToIntegral £temporary3591 index
+22: Add £temporary3592 mainString £temporary3591
+23: Dereference £temporary3593 £temporary3592 0
+24: Address £temporary3594 £temporary3593
+25: SetReturnValue
+26: Return £temporary3594
+27: Add index index integral4$1#
+28: Jump 7
+29: SetReturnValue
+30: Return integral8$0#
+31: FunctionEnd strstr

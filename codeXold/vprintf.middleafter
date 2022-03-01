@@ -1,0 +1,10 @@
+0: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 64 pointer stdout
+2: Parameter 72 pointer format
+3: Parameter 80 pointer arg_list
+4: Call 40 vfprintf 0
+5: PostCall 40
+6: GetReturnValue £temporary2258
+7: SetReturnValue
+8: Return £temporary2258
+9: FunctionEnd vprintf

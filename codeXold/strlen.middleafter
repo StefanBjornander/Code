@@ -1,0 +1,10 @@
+0: Assign index integral4$0#
+1: IntegralToIntegral £temporary3597 index
+2: Add £temporary3598 string £temporary3597
+3: Dereference £temporary3599 £temporary3598 0
+4: Equal 7 £temporary3599 integral1$0#
+5: Add index index integral4$1#
+6: Jump 1
+7: SetReturnValue
+8: Return index
+9: FunctionEnd strlen

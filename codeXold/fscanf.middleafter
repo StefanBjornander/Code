@@ -1,0 +1,13 @@
+0: Address £temporary1731 format
+1: IntegralToIntegral £temporary1732 £temporary1731
+2: Add arg_list £temporary1732 integral8$8#
+3: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+4: Parameter 72 pointer inStream
+5: Parameter 80 pointer format
+6: Parameter 88 pointer arg_list
+7: Call 48 vfscanf 0
+8: PostCall 48
+9: GetReturnValue £temporary1734
+10: SetReturnValue
+11: Return £temporary1734
+12: FunctionEnd fscanf
