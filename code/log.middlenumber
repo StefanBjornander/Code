@@ -3,7 +3,7 @@
 2: GreaterThan 4 x floating8$0#
 3: Jump 99
 4: Empty
-5: Assign n integral2$0#
+5: Assign n integral4$0#
 6: PushFloat x
 7: PushFloat floating8$1#
 8: GreaterThan 10 x floating8$1#
@@ -16,10 +16,10 @@
 15: Jump 48
 16: PushFloat x
 17: PushFloat floating8$2.71#
-18: Divide £temporary402 x floating8$2.71#
+18: Divide £temporary413 x floating8$2.71#
 19: PopFloat x
-20: Add £temporary403 n integral2$1#
-21: Assign n £temporary403
+20: Add £temporary414 n integral4$1#
+21: Assign n £temporary414
 22: Empty
 23: Jump 11
 24: Jump 47
@@ -36,10 +36,10 @@
 35: Jump 48
 36: PushFloat x
 37: PushFloat floating8$2.71#
-38: Multiply £temporary406 x floating8$2.71#
+38: Multiply £temporary417 x floating8$2.71#
 39: PopFloat x
-40: Subtract £temporary407 n integral2$1#
-41: Assign n £temporary407
+40: Subtract £temporary418 n integral4$1#
+41: Assign n £temporary418
 42: Empty
 43: Jump 31
 44: Jump 46
@@ -54,7 +54,7 @@
 53: PopFloat sign
 54: PushFloat x
 55: PushFloat floating8$1#
-56: Subtract £temporary412 x floating8$1#
+56: Subtract £temporary423 x floating8$1#
 57: PopFloat x_minus_1
 58: PushFloat x_minus_1
 59: PopFloat power
@@ -62,40 +62,40 @@
 61: PopEmpty
 62: PushFloat sign
 63: PushFloat power
-64: Multiply £temporary413 sign power
+64: Multiply £temporary424 sign power
 65: PushFloat index
 66: PushFloat index
 67: PushOne
-68: Add £temporary415 index £temporary414
+68: Add £temporary426 index £temporary425
 69: TopFloat index
 70: PopEmpty
-71: Divide £temporary416 £temporary413 index
+71: Divide £temporary427 £temporary424 index
 72: PopFloat term
 73: PushFloat sum
 74: PushFloat term
-75: Add £temporary417 sum term
+75: Add £temporary428 sum term
 76: PopFloat sum
 77: PushFloat power
 78: PushFloat x_minus_1
-79: Multiply £temporary418 power x_minus_1
+79: Multiply £temporary429 power x_minus_1
 80: PopFloat power
 81: PushFloat sign
 82: PushFloat floating8$minus1.0#
-83: Multiply £temporary419 sign floating8$minus1.0#
+83: Multiply £temporary430 sign floating8$minus1.0#
 84: PopFloat sign
-85: PreCall 64
+85: PreCall 84
 86: PushFloat term
-87: Parameter 70 double term
-88: Call 64 fabs 0
-89: PostCall 64
-90: GetReturnValue £temporary420
+87: Parameter 108 double term
+88: Call 84 fabs 0
+89: PostCall 84
+90: GetReturnValue £temporary431
 91: PushFloat floating8$0.000000001#
-92: GreaterThanEqual 60 £temporary420 floating8$0.000000001#
+92: GreaterThanEqual 60 £temporary431 floating8$0.000000001#
 93: Jump 94
 94: PushFloat sum
-95: IntegralToFloating £temporary423 n
-96: Add £temporary422 sum £temporary423
-97: Return £temporary422
+95: IntegralToFloating £temporary434 n
+96: Add £temporary433 sum £temporary434
+97: Return £temporary433
 98: Jump 103
 99: Empty
 100: Assign errno EDOM
