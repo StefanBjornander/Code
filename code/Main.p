@@ -1,87 +1,13 @@
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stddef.h,1$
-
-
-
-
-
-
-
-
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Main.c,1$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdlib.h,1$
-
-
-
-
-
-
-double atof ( const char * s ) ;
-int atoi ( const char * s ) ;
-long atol ( const char * s ) ;
-
-double strtod ( const char * s , char ** endp ) ;
-long strtol ( const char * s , char ** endp , int base ) ;
-unsigned long strtoul ( const char * s , char ** endp , int base ) ;
-
-int rand ( void ) ;
-void srand ( unsigned int seed ) ;
-
-char * getenv ( const char * name ) ;
-int system ( const char * command ) ;
-
-void abort ( void ) ;
-void exit ( int status ) ;
-
-typedef void ( * FUNC_PTR ) ( void ) ;
-int atexit ( FUNC_PTR fcn ) ;
-
-
-
-
-int abs ( int value ) ;
-long labs ( long value ) ;
-
-void * malloc ( int size ) ;
-void * realloc ( void * ptr , int newSize ) ;
-void * calloc ( int num , int size ) ;
-void free ( void * ptr ) ;
-
-void qsort ( void * valueList , int listSize , int valueSize ,
-int ( * compare ) ( const void * , const void * ) ) ;
-void * bsearch ( const void * key , const void * valueList ,
-int listSize , int valueSize ,
-int ( * compare ) ( const void * , const void * ) ) ;
-
-long labs ( long value ) ;
-int abs ( int value ) ;
-
-typedef struct {
-int quot , rem ;
-} div_t ;
-
-div_t div ( int num , int denum ) ;
-
-typedef struct {
-long quot , rem ;
-} ldiv_t ;
-
-ldiv_t ldiv ( long num , long denum ) ;
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Main.c,2$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdio.h,1$
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\math.h,1$
-
-
-
-
-
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdio.h,0$
+    
+    
+ 
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\math.h,0$
+    
+    
+ 
+     
+     
 
 
 
@@ -116,12 +42,13 @@ extern double ceil ( double x ) ;
 extern double round ( double x ) ;
 extern double fabs ( double x ) ;
 
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdio.h,4$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\ctype.h,1$
-
-
+   
+ 
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdio.h,3$
+        
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\ctype.h,0$
+    
+    
 
 extern int islower ( int c ) ;
 extern int isupper ( int c ) ;
@@ -137,52 +64,54 @@ extern int isspace ( int c ) ;
 extern int tolower ( int c ) ;
 extern int toupper ( int c ) ;
 
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdio.h,5$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdarg.h,1$
-
-
-
-
-
-
-
-
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdio.h,6$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stddef.h,1$
-
-
-
-
-
-
-
-
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdio.h,7$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\file.h,1$
-
-
-
-
-
-
-
-
+   
+ 
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdio.h,4$
+        
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdarg.h,0$
+    
+    
+ 
+      
+                         
+                                    
+      
+ 
+   
+ 
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdio.h,5$
+        
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\stddef.h,0$
+    
+    
+ 
+           
+     
+     
+     
+     
+ 
+   
+ 
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdio.h,6$
+        
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\file.h,0$
+    
+    
+ 
+     
+     
+ 
+     
+     
 
 typedef struct {
-int open ;
+int  open ;
 unsigned int handle ;
-char name [ 16 ] , ungetc ;
+char name [ 16  ] , ungetc ;
 int errno ;
 unsigned int position , size ;
-int temporary ;
+int  temporary ;
 } FILE ;
 
 extern FILE * stdin , * stdout , * stderr ;
@@ -191,16 +120,16 @@ extern enum { EEXIST , ENOENT , EACCES };
 extern enum { SEEK_SET , SEEK_CUR , SEEK_END };
 extern enum { READ , WRITE , READ_WRITE };
 
+         
 
-
-int fileexists ( const char * name ) ;
+int  fileexists ( const char * name ) ;
 FILE * fopen ( const char * filename , const char * mode ) ;
 FILE * freopen ( const char * filename , const char * mode , FILE * stream ) ;
 int fflush ( FILE * stream ) ;
 int fclose ( FILE * stream ) ;
 int remove ( const char * name ) ;
 int rename ( const char * oldName , const char * newName ) ;
-int setvbuf ( FILE * stream , char * buffer , int mode , int size ) ;
+int setvbuf ( FILE * stream , char * buffer , int mode , int  size ) ;
 void setbuf ( FILE * stream , char * buffer ) ;
 int fgetc ( FILE * stream ) ;
 char * fgets ( char * s , int n , FILE * stream ) ;
@@ -211,59 +140,62 @@ char * gets ( char * s ) ;
 int putchar ( int c ) ;
 int puts ( const char * s ) ;
 int ungetc ( int c , FILE * stream ) ;
-int fread ( void * ptr , int size , int nobj , FILE * stream ) ;
-int fwrite ( const void * ptr , int size , int nobj , FILE * stream ) ;
+int  fread ( void * ptr , int  size , int  nobj , FILE * stream ) ;
+int  fwrite ( const void * ptr , int  size , int  nobj , FILE * stream ) ;
 int fseek ( FILE * stream , int offset , int origin ) ;
 int ftell ( FILE * stream ) ;
 void rewind ( FILE * stream ) ;
-int fgetpos ( FILE * stream , int * ptr ) ;
-int fsetpos ( FILE * stream , const int * ptr ) ;
+int fgetpos ( FILE * stream , int  * ptr ) ;
+int fsetpos ( FILE * stream , const int  * ptr ) ;
 void clearerr ( FILE * stream ) ;
-int feof ( FILE * stream ) ;
+int  feof ( FILE * stream ) ;
 int ferror ( FILE * stream ) ;
 void perror ( const char * s ) ;
 
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdio.h,8$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\temp.h,1$
-
-
-
-
-
+   
+ 
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdio.h,7$
+        
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\temp.h,0$
+    
+    
+ 
+     
+     
 
 FILE * tmpfile ( void ) ;
-char * tmpnam ( char name [ 4 ] ) ;
+char * tmpnam ( char name [ 4  ] ) ;
 
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdio.h,9$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\scanf.h,1$
-
-
-
-
-
-
-
+   
+ 
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdio.h,8$
+        
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\scanf.h,0$
+    
+    
+ 
+     
+     
+ 
+     
 
 int scanf ( const char * format , ... ) ;
-int vscanf ( const char * format , char * arg_list ) ;
+int vscanf ( const char * format , char *  arg_list ) ;
 int fscanf ( FILE * inStream , const char * format , ... ) ;
-int vfscanf ( FILE * inStream , const char * format , char * arg_list ) ;
+int vfscanf ( FILE * inStream , const char * format , char *  arg_list ) ;
 int sscanf ( char * inString , const char * format , ... ) ;
-int vsscanf ( char * inString , const char * format , char * arg_list ) ;
+int vsscanf ( char * inString , const char * format , char *  arg_list ) ;
 
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdio.h,10$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\printf.h,1$
-
-
-
-
-
+   
+ 
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdio.h,9$
+        
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\printf.h,0$
+    
+    
+ 
+     
+     
 
 extern int g_outStatus , g_charCount ;
 extern void * g_outDevice ;
@@ -273,430 +205,29 @@ int fputc ( int c , FILE * stream ) ;
 int putchar ( int c ) ;
 
 int printf ( const char * format , ... ) ;
-int vprintf ( const char * format , char * arg_list ) ;
+int vprintf ( const char * format , char *  arg_list ) ;
 int fprintf ( FILE * outStream , const char * format , ... ) ;
-int vfprintf ( FILE * outStream , const char * format , char * arg_list ) ;
+int vfprintf ( FILE * outStream , const char * format , char *  arg_list ) ;
 int sprintf ( char * outString , const char * format , ... ) ;
-int vsprintf ( char * outString , const char * format , char * arg_list ) ;
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdio.h,11$
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Main.c,3$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\math.h,1$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Main.c,4$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\String.h,1$
-
-
-
-
-
-extern char * strcpy ( char * target , const char * source ) ;
-extern char * strncpy ( char * target , const char * source , int size ) ;
-extern char * strcat ( char * target , const char * source ) ;
-extern char * strncat ( char * target , const char * source , int size ) ;
-extern int strcmp ( const char * left , const char * right ) ;
-extern int strncmp ( const char * left , const char * right , int size ) ;
-extern char * strchr ( const char * text , int i ) ;
-extern char * strrchr ( const char * text , int i ) ;
-extern int strspn ( const char * mainString , const char * charSet ) ;
-extern int strcspn ( const char * mainString , const char * charSet ) ;
-extern char * strpbrk ( const char * mainString , const char * charSet ) ;
-extern char * strstr ( const char * mainString , const char * subString ) ;
-extern int strlen ( const char * string ) ;
-extern char * strerror ( int error ) ;
-extern char * strtok ( char * string , const char * charSet ) ;
-extern void * memcpy ( void * target , const void * source , int size ) ;
-extern void * memmove ( void * target , const void * source , int size ) ;
-extern int memcmp ( const void * left , const void * right , int size ) ;
-extern void * memchr ( const void * block , int i , int size ) ;
-extern void * memset ( void * block , int i , int size ) ;
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Main.c,5$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\ErrNo.h,1$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-extern enum { NO_ERROR , NO_FUNCTION , NO_FILE , NO_PATH , NO_HANDLE , NO_ACCESS , EDOM ,
-ERANGE , EILSEQ , FOPEN , FFLUSH , FCLOSE , NO_MODE , FWRITE , FREAD , FSEEK ,
-FTELL , FSIZE , FREMOVE , FRENAME , FTEMPNAME , FTEMPFILE };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-extern int errno ;
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Main.c,6$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Assert.h,1$
-
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdio.h,1$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Assert.h,5$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\stdlib.h,1$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Assert.h,6$
-
-
-
-
-
-
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Main.c,7$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Limits.h,1$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Main.c,8$
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Time.h,1$
-
-
-
-
-
-
-
-struct tm {
-int tm_sec ;
-int tm_min ;
-int tm_hour ;
-int tm_mday ;
-int tm_mon ;
-int tm_year ;
-int tm_wday ;
-int tm_yday ;
-int tm_isdst ;
-};
-
-extern long clock ( void ) ;
-extern unsigned long time ( unsigned long * time ) ;
-extern double difftime ( unsigned long time2 , unsigned long time1 ) ;
-extern unsigned long mktime ( struct tm * timeStruct ) ;
-
-extern char * asctime ( const struct tm * timeStruct ) ;
-extern char * ctime ( const unsigned long * time ) ;
-extern struct tm * gmtime ( const unsigned long * time ) ;
-extern struct tm * localtime ( const unsigned long * time ) ;
-
-extern int strftime ( char * buffer , int size , const char * format ,
-const struct tm * timeStruct ) ;
-
-
-
-$C:\Users\stefa\Documents\vagrant\homestead\code\code\Main.c,9$
-
-void math_test ( ) ;
-void file_test ( ) ;
-void signal_test ( void ) ;
-void time_test ( void ) ;
-void assert_test ( void ) ;
-void malloc_test ( void ) ;
-void print_test ( void ) ;
-void limits_test ( void ) ;
-void float_test ( void ) ;
-void string_test ( void ) ;
-void setjmp_test ( void ) ;
-void stdio_test ( void ) ;
-void stdlib_test ( void ) ;
-void strtol_test ( void ) ;
-void strtoul_test ( void ) ;
-void heap_test ( void ) ;
-void stack_test ( void ) ;
-void character_test ( ) ;
-void locale_test ( void ) ;
-
-struct A ;
-struct B ;
-
-struct A {
-struct A * p ;
-struct B * q ;
-};
-
-struct B {
-struct A * p ;
-struct B * q ;
-};
-
-struct A a ;
-
-
-void mainX ( ) {
-static count = 1 ;
-
-if ( count <= 10 ) {
-printf ( "\045\144\040" , count ++ ) ;
-mainX ( ) ;
-}
-}
-
-void random_access ( void ) ;
-void temp_file ( void ) ;
-
-int generateName ( int index , char * text , int max ) ;
-
-void mainXXX ( void ) {
-temp_file ( ) ;
-}
+int vsprintf ( char * outString , const char * format , char *  arg_list ) ;
+
+   
+ 
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\stdio.h,10$
+        
+ 
+   
+ 
+$C:\Users\Stefa\Documents\vagrant\homestead\code\code\Main.c,0$
+        
 
 void main ( void ) {
-math_test ( ) ;
-file_test ( ) ;
-
-time_test ( ) ;
-assert_test ( ) ;
-malloc_test ( ) ;
-print_test ( ) ;
-limits_test ( ) ;
-float_test ( ) ;
-setjmp_test ( ) ;
-stdio_test ( ) ;
-string_test ( ) ;
-stdio_test ( ) ;
-stdlib_test ( ) ;
-strtol_test ( ) ;
-strtoul_test ( ) ;
-
-
-character_test ( ) ;
-locale_test ( ) ;
-
-
-
-
-
-
-
-
-
-
+int i ;
+double d ;
+char c , s [ 20 ];
+printf ( "Hello!\n" ) ;
+printf ( "Please write a character, a string, an integer, and a double: " ) ;
+scanf ( "%c %s %i %lf" , & c , s , & i , & d ) ;
+printf ( "You wrote the character '%c', the string \"%s\", the integer %i, and the double %f.\n" , c , s , i , d ) ;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 

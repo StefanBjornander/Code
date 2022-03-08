@@ -1,26 +1,26 @@
 1:	
 
 filecreate:	; AssignRegister ah 60
-2:		mov a365, 60
+2:		mov a370, 60
 4:	
 
 filecreate$1:	; AssignRegister cx 0
-5:		mov a366, 0
+5:		mov a371, 0
 7:	
 
 filecreate$2:	; AssignRegister dx name
-8:		mov a367, [bp + 6]
+8:		mov a372, [bp + 6]
 10:	
 
 filecreate$3:	; Interrupt 33
 11:		int 33
 13:	
 
-filecreate$4:	; InspectRegister £temporary680 ax
+filecreate$4:	; InspectRegister £temporary678 ax
 15:	
 
-filecreate$5:	; Assign handle £temporary680
-16:		mov [bp + 8], t368
+filecreate$5:	; Assign handle £temporary678
+16:		mov [bp + 8], t373
 18:	
 
 filecreate$6:	; NotCarry 10
@@ -32,25 +32,25 @@ filecreate$7:	; Assign errno 9
 24:	
 
 filecreate$8:	; SetReturnValue -1
-25:		mov a369, -1
+25:		mov a374, -1
 27:	
 
 filecreate$9:	; Return -1
-28:		mov t370, [bp]
+28:		mov t375, [bp]
 29:		mov di, [bp + 4]
 30:		mov bp, [bp + 2]
-31:		jmp t370
+31:		jmp t375
 33:	
 
 filecreate$10:	; SetReturnValue handle
-34:		mov a371, [bp + 8]
+34:		mov a376, [bp + 8]
 36:	
 
 filecreate$11:	; Return handle
-37:		mov t372, [bp]
+37:		mov t377, [bp]
 38:		mov di, [bp + 4]
 39:		mov bp, [bp + 2]
-40:		jmp t372
+40:		jmp t377
 42:	
 
 filecreate$12:	; FunctionEnd filecreate
@@ -60,12 +60,12 @@ fileexistsX:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 3:	
 
 fileexistsX$1:	; Parameter 8 name 6
-4:		mov a373, [bp + 6]
-5:		mov [bp + 14], a373
+4:		mov a378, [bp + 6]
+5:		mov [bp + 14], a378
 7:	
 
 fileexistsX$2:	; Parameter 8 string_r# 8
-8:		mov word [bp + 16], @1668$string_r#
+8:		mov word [bp + 16], @1649$string_r#
 10:	
 
 fileexistsX$3:	; Call 8 fopen 0
@@ -78,28 +78,28 @@ fileexistsX$3:	; Call 8 fopen 0
 fileexistsX$4:	; PostCall 8
 18:	
 
-fileexistsX$5:	; GetReturnValue £temporary682
+fileexistsX$5:	; GetReturnValue £temporary680
 20:	
 
-fileexistsX$6:	; Assign filePtr £temporary682
-21:		mov [bp + 8], type374
+fileexistsX$6:	; Assign filePtr £temporary680
+21:		mov [bp + 8], type379
 23:	
 
 fileexistsX$7:	; CallHeader 10 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 25:	
 
 fileexistsX$8:	; Parameter 10 string_0Afileexists2025s2025p0A# 6
-26:		mov word [bp + 16], @1671$string_0Afileexists2025s2025p0A#
+26:		mov word [bp + 16], @1652$string_0Afileexists2025s2025p0A#
 28:	
 
 fileexistsX$9:	; Parameter 10 name 8
-29:		mov a375, [bp + 6]
-30:		mov [bp + 18], a375
+29:		mov a380, [bp + 6]
+30:		mov [bp + 18], a380
 32:	
 
 fileexistsX$10:	; Parameter 10 filePtr 10
-33:		mov a376, [bp + 8]
-34:		mov [bp + 20], a376
+33:		mov a381, [bp + 8]
+34:		mov [bp + 20], a381
 36:	
 
 fileexistsX$11:	; Call 10 printf 0
@@ -123,8 +123,8 @@ fileexistsX$14:	; CallHeader 10 System.Collections.Generic.HashSet`1[CCompiler.S
 52:	
 
 fileexistsX$15:	; Parameter 10 filePtr 6
-53:		mov a378, [bp + 8]
-54:		mov [bp + 16], a378
+53:		mov a383, [bp + 8]
+54:		mov [bp + 16], a383
 56:	
 
 fileexistsX$16:	; Call 10 fclose 0
@@ -138,40 +138,40 @@ fileexistsX$17:	; PostCall 10
 64:	
 
 fileexistsX$18:	; SetReturnValue 1
-65:		mov a380, 1
+65:		mov a385, 1
 67:	
 
 fileexistsX$19:	; Return 1
-68:		mov t381, [bp]
+68:		mov t386, [bp]
 69:		mov di, [bp + 4]
 70:		mov bp, [bp + 2]
-71:		jmp t381
+71:		jmp t386
 73:	
 
 fileexistsX$20:	; SetReturnValue 0
-74:		mov a382, 0
+74:		mov a387, 0
 76:	
 
 fileexistsX$21:	; Return 0
-77:		mov t383, [bp]
+77:		mov t388, [bp]
 78:		mov di, [bp + 4]
 79:		mov bp, [bp + 2]
-80:		jmp t383
+80:		jmp t388
 82:	
 
 fileexistsX$22:	; FunctionEnd fileexistsX
 1:	
 
 fileexists:	; AssignRegister ah 67
-2:		mov a384, 67
+2:		mov a389, 67
 4:	
 
 fileexists$1:	; AssignRegister al 0
-5:		mov a385, 0
+5:		mov a390, 0
 7:	
 
 fileexists$2:	; AssignRegister dx name
-8:		mov a386, [bp + 6]
+8:		mov a391, [bp + 6]
 10:	
 
 fileexists$3:	; Interrupt 33
@@ -182,81 +182,81 @@ fileexists$4:	; Carry 7
 14:		jc fileexists$7
 16:	
 
-fileexists$5:	; Assign £temporary697 1
-17:		mov t387, 1
+fileexists$5:	; Assign £temporary695 1
+17:		mov t392, 1
 19:	
 
 fileexists$6:	; Goto 8
 20:		jmp fileexists$8
 22:	
 
-fileexists$7:	; Assign £temporary697 0
-23:		mov t388, 0
+fileexists$7:	; Assign £temporary695 0
+23:		mov t393, 0
 25:	
 
-fileexists$8:	; SetReturnValue £temporary697
+fileexists$8:	; SetReturnValue £temporary695
 27:	
 
-fileexists$9:	; Return £temporary697
-28:		mov t389, [bp]
+fileexists$9:	; Return £temporary695
+28:		mov t394, [bp]
 29:		mov di, [bp + 4]
 30:		mov bp, [bp + 2]
-31:		jmp t389
+31:		jmp t394
 33:	
 
 fileexists$10:	; FunctionEnd fileexists
 1:	
 
-@1702$fileopen:	; AssignRegister ah 61
-2:		mov a390, 61
+@1683$fileopen:	; AssignRegister ah 61
+2:		mov a395, 61
 4:	
 
-@1702$fileopen$1:	; AssignRegister al mode
-5:		mov a391, [bp + 8]
+@1683$fileopen$1:	; AssignRegister al mode
+5:		mov a396, [bp + 8]
 7:	
 
-@1702$fileopen$2:	; AssignRegister dx name
-8:		mov a392, [bp + 6]
+@1683$fileopen$2:	; AssignRegister dx name
+8:		mov a397, [bp + 6]
 10:	
 
-@1702$fileopen$3:	; Interrupt 33
+@1683$fileopen$3:	; Interrupt 33
 11:		int 33
 13:	
 
-@1702$fileopen$4:	; NotCarry 8
-14:		jnc @1702$fileopen$8
+@1683$fileopen$4:	; NotCarry 8
+14:		jnc @1683$fileopen$8
 16:	
 
-@1702$fileopen$5:	; Assign errno 9
+@1683$fileopen$5:	; Assign errno 9
 17:		mov word [errno], 9
 19:	
 
-@1702$fileopen$6:	; SetReturnValue -1
-20:		mov a393, -1
+@1683$fileopen$6:	; SetReturnValue -1
+20:		mov a398, -1
 22:	
 
-@1702$fileopen$7:	; Return -1
-23:		mov t394, [bp]
+@1683$fileopen$7:	; Return -1
+23:		mov t399, [bp]
 24:		mov di, [bp + 4]
 25:		mov bp, [bp + 2]
-26:		jmp t394
+26:		jmp t399
 28:	
 
-@1702$fileopen$8:	; InspectRegister £temporary702 ax
+@1683$fileopen$8:	; InspectRegister £temporary700 ax
 30:	
 
-@1702$fileopen$9:	; SetReturnValue £temporary702
-31:		mov t396, t395
+@1683$fileopen$9:	; SetReturnValue £temporary700
+31:		mov t401, t400
 33:	
 
-@1702$fileopen$10:	; Return £temporary702
-34:		mov t397, [bp]
+@1683$fileopen$10:	; Return £temporary700
+34:		mov t402, [bp]
 35:		mov di, [bp + 4]
 36:		mov bp, [bp + 2]
-37:		jmp t397
+37:		jmp t402
 39:	
 
-@1702$fileopen$11:	; FunctionEnd fileopen
+@1683$fileopen$11:	; FunctionEnd fileopen
 1:	
 
 fopen:	; Assign index 0
@@ -268,22 +268,22 @@ fopen$1:	; SignedGreaterThanEqual 21 index 20
 6:		jge fopen$21
 8:	
 
-fopen$2:	; SignedMultiply £temporary706 index 29
-9:		mov a398, [bp + 10]
+fopen$2:	; SignedMultiply £temporary704 index 29
+9:		mov a403, [bp + 10]
 11:		xor dx, dx
-12:		imul word [@1725$int2$29#]
+12:		imul word [@1706$int2$29#]
 18:	
 
-fopen$3:	; BinaryAdd £temporary707 g_fileArray £temporary706
-19:		mov a402, g_fileArray
-20:		add a402, t401
+fopen$3:	; BinaryAdd £temporary705 g_fileArray £temporary704
+19:		mov a407, g_fileArray
+20:		add a407, t406
 22:	
 
-fopen$4:	; Deref £temporary705 -> £temporary707 £temporary707 0
+fopen$4:	; Deref £temporary703 -> £temporary705 £temporary705 0
 24:	
 
-fopen$5:	; NotEqual 19 £temporary705.open$0 -> £temporary707 0
-25:		cmp word [a402], 0
+fopen$5:	; NotEqual 19 £temporary703.open$0 -> £temporary705 0
+25:		cmp word [a407], 0
 26:		jne fopen$19
 28:	
 
@@ -291,34 +291,34 @@ fopen$6:	; CallHeader 12 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 
 30:	
 
 fopen$7:	; Parameter 12 name 6
-31:		mov a403, [bp + 6]
-32:		mov [bp + 18], a403
+31:		mov a408, [bp + 6]
+32:		mov [bp + 18], a408
 34:	
 
 fopen$8:	; Parameter 12 mode 8
-35:		mov a404, [bp + 8]
-36:		mov [bp + 20], a404
+35:		mov a409, [bp + 8]
+36:		mov [bp + 20], a409
 38:	
 
-fopen$9:	; SignedMultiply £temporary711 index 29
-39:		mov a405, [bp + 10]
+fopen$9:	; SignedMultiply £temporary709 index 29
+39:		mov a410, [bp + 10]
 41:		xor dx, dx
-42:		imul word [@1733$int2$29#]
+42:		imul word [@1714$int2$29#]
 48:	
 
-fopen$10:	; BinaryAdd £temporary712 g_fileArray £temporary711
-49:		mov a409, g_fileArray
-50:		add a409, t408
+fopen$10:	; BinaryAdd £temporary710 g_fileArray £temporary709
+49:		mov a414, g_fileArray
+50:		add a414, t413
 52:	
 
-fopen$11:	; Deref £temporary710 -> £temporary712 £temporary712 0
+fopen$11:	; Deref £temporary708 -> £temporary710 £temporary710 0
 54:	
 
-fopen$12:	; address £temporary713 £temporary710 -> £temporary712
+fopen$12:	; address £temporary711 £temporary708 -> £temporary710
 56:	
 
-fopen$13:	; Parameter 12 £temporary713 10
-57:		mov [bp + 22], a409
+fopen$13:	; Parameter 12 £temporary711 10
+57:		mov [bp + 22], a414
 59:	
 
 fopen$14:	; Call 12 freopen 0
@@ -331,17 +331,17 @@ fopen$14:	; Call 12 freopen 0
 fopen$15:	; PostCall 12
 67:	
 
-fopen$16:	; GetReturnValue £temporary714
+fopen$16:	; GetReturnValue £temporary712
 69:	
 
-fopen$17:	; SetReturnValue £temporary714
+fopen$17:	; SetReturnValue £temporary712
 71:	
 
-fopen$18:	; Return £temporary714
-72:		mov t411, [bp]
+fopen$18:	; Return £temporary712
+72:		mov t416, [bp]
 73:		mov di, [bp + 4]
 74:		mov bp, [bp + 2]
-75:		jmp t411
+75:		jmp t416
 77:	
 
 fopen$19:	; Increment index
@@ -353,14 +353,14 @@ fopen$20:	; Goto 1
 83:	
 
 fopen$21:	; SetReturnValue 0
-84:		mov a412, 0
+84:		mov a417, 0
 86:	
 
 fopen$22:	; Return 0
-87:		mov t413, [bp]
+87:		mov t418, [bp]
 88:		mov di, [bp + 4]
 89:		mov bp, [bp + 2]
-90:		jmp t413
+90:		jmp t418
 92:	
 
 fopen$23:	; FunctionEnd fopen
@@ -374,12 +374,12 @@ freopen$1:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol
 6:	
 
 freopen$2:	; Parameter 14 mode 6
-7:		mov a414, [bp + 8]
-8:		mov [bp + 20], a414
+7:		mov a419, [bp + 8]
+8:		mov [bp + 20], a419
 10:	
 
 freopen$3:	; Parameter 14 string_r# 8
-11:		mov word [bp + 22], @1748$string_r#
+11:		mov word [bp + 22], @1729$string_r#
 13:	
 
 freopen$4:	; Call 14 strcmp 0
@@ -392,11 +392,11 @@ freopen$4:	; Call 14 strcmp 0
 freopen$5:	; PostCall 14
 21:	
 
-freopen$6:	; GetReturnValue £temporary718
+freopen$6:	; GetReturnValue £temporary716
 23:	
 
-freopen$7:	; NotEqual 16 £temporary718 0
-24:		cmp type415, 0
+freopen$7:	; NotEqual 16 £temporary716 0
+24:		cmp type420, 0
 25:		jne freopen$16
 27:	
 
@@ -404,8 +404,8 @@ freopen$8:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol
 29:	
 
 freopen$9:	; Parameter 14 name 6
-30:		mov a416, [bp + 6]
-31:		mov [bp + 20], a416
+30:		mov a421, [bp + 6]
+31:		mov [bp + 20], a421
 33:	
 
 freopen$10:	; Parameter 14 64 8
@@ -416,17 +416,17 @@ freopen$11:	; Call 14 fileopen 0
 37:		mov word [bp + 14], freopen$12
 38:		mov [bp + 16], bp
 39:		add bp, 14
-40:		jmp @1702$fileopen
+40:		jmp @1683$fileopen
 42:	
 
 freopen$12:	; PostCall 14
 44:	
 
-freopen$13:	; GetReturnValue £temporary720
+freopen$13:	; GetReturnValue £temporary718
 46:	
 
-freopen$14:	; Assign handle £temporary720
-47:		mov [bp + 12], type417
+freopen$14:	; Assign handle £temporary718
+47:		mov [bp + 12], type422
 49:	
 
 freopen$15:	; Goto 138
@@ -437,12 +437,12 @@ freopen$16:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 54:	
 
 freopen$17:	; Parameter 14 mode 6
-55:		mov a418, [bp + 8]
-56:		mov [bp + 20], a418
+55:		mov a423, [bp + 8]
+56:		mov [bp + 20], a423
 58:	
 
 freopen$18:	; Parameter 14 string_w# 8
-59:		mov word [bp + 22], @1757$string_w#
+59:		mov word [bp + 22], @1738$string_w#
 61:	
 
 freopen$19:	; Call 14 strcmp 0
@@ -455,11 +455,11 @@ freopen$19:	; Call 14 strcmp 0
 freopen$20:	; PostCall 14
 69:	
 
-freopen$21:	; GetReturnValue £temporary721
+freopen$21:	; GetReturnValue £temporary719
 71:	
 
-freopen$22:	; NotEqual 30 £temporary721 0
-72:		cmp type419, 0
+freopen$22:	; NotEqual 30 £temporary719 0
+72:		cmp type424, 0
 73:		jne freopen$30
 75:	
 
@@ -467,8 +467,8 @@ freopen$23:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 77:	
 
 freopen$24:	; Parameter 14 name 6
-78:		mov a420, [bp + 6]
-79:		mov [bp + 20], a420
+78:		mov a425, [bp + 6]
+79:		mov [bp + 20], a425
 81:	
 
 freopen$25:	; Call 14 filecreate 0
@@ -481,11 +481,11 @@ freopen$25:	; Call 14 filecreate 0
 freopen$26:	; PostCall 14
 89:	
 
-freopen$27:	; GetReturnValue £temporary723
+freopen$27:	; GetReturnValue £temporary721
 91:	
 
-freopen$28:	; Assign handle £temporary723
-92:		mov [bp + 12], type421
+freopen$28:	; Assign handle £temporary721
+92:		mov [bp + 12], type426
 94:	
 
 freopen$29:	; Goto 138
@@ -496,12 +496,12 @@ freopen$30:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 99:	
 
 freopen$31:	; Parameter 14 mode 6
-100:		mov a422, [bp + 8]
-101:		mov [bp + 20], a422
+100:		mov a427, [bp + 8]
+101:		mov [bp + 20], a427
 103:	
 
 freopen$32:	; Parameter 14 string_a# 8
-104:		mov word [bp + 22], @1763$string_a#
+104:		mov word [bp + 22], @1744$string_a#
 106:	
 
 freopen$33:	; Call 14 strcmp 0
@@ -514,11 +514,11 @@ freopen$33:	; Call 14 strcmp 0
 freopen$34:	; PostCall 14
 114:	
 
-freopen$35:	; GetReturnValue £temporary724
+freopen$35:	; GetReturnValue £temporary722
 116:	
 
-freopen$36:	; NotEqual 59 £temporary724 0
-117:		cmp type423, 0
+freopen$36:	; NotEqual 59 £temporary722 0
+117:		cmp type428, 0
 118:		jne freopen$59
 120:	
 
@@ -526,8 +526,8 @@ freopen$37:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 122:	
 
 freopen$38:	; Parameter 14 name 6
-123:		mov a424, [bp + 6]
-124:		mov [bp + 20], a424
+123:		mov a429, [bp + 6]
+124:		mov [bp + 20], a429
 126:	
 
 freopen$39:	; Parameter 14 65 8
@@ -538,17 +538,17 @@ freopen$40:	; Call 14 fileopen 0
 130:		mov word [bp + 14], freopen$41
 131:		mov [bp + 16], bp
 132:		add bp, 14
-133:		jmp @1702$fileopen
+133:		jmp @1683$fileopen
 135:	
 
 freopen$41:	; PostCall 14
 137:	
 
-freopen$42:	; GetReturnValue £temporary726
+freopen$42:	; GetReturnValue £temporary724
 139:	
 
-freopen$43:	; Assign handle £temporary726
-140:		mov [bp + 12], type425
+freopen$43:	; Assign handle £temporary724
+140:		mov [bp + 12], type430
 142:	
 
 freopen$44:	; Equal 52 handle -1
@@ -560,8 +560,8 @@ freopen$45:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 148:	
 
 freopen$46:	; Parameter 14 stream 6
-149:		mov a426, [bp + 10]
-150:		mov [bp + 20], a426
+149:		mov a431, [bp + 10]
+150:		mov [bp + 20], a431
 152:	
 
 freopen$47:	; Parameter 14 0 8
@@ -590,8 +590,8 @@ freopen$52:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 171:	
 
 freopen$53:	; Parameter 14 name 6
-172:		mov a428, [bp + 6]
-173:		mov [bp + 20], a428
+172:		mov a433, [bp + 6]
+173:		mov [bp + 20], a433
 175:	
 
 freopen$54:	; Call 14 filecreate 0
@@ -604,11 +604,11 @@ freopen$54:	; Call 14 filecreate 0
 freopen$55:	; PostCall 14
 183:	
 
-freopen$56:	; GetReturnValue £temporary729
+freopen$56:	; GetReturnValue £temporary727
 185:	
 
-freopen$57:	; Assign handle £temporary729
-186:		mov [bp + 12], type429
+freopen$57:	; Assign handle £temporary727
+186:		mov [bp + 12], type434
 188:	
 
 freopen$58:	; Goto 138
@@ -619,12 +619,12 @@ freopen$59:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 193:	
 
 freopen$60:	; Parameter 14 mode 6
-194:		mov a430, [bp + 8]
-195:		mov [bp + 20], a430
+194:		mov a435, [bp + 8]
+195:		mov [bp + 20], a435
 197:	
 
 freopen$61:	; Parameter 14 string_r2B# 8
-198:		mov word [bp + 22], @1783$string_r2B#
+198:		mov word [bp + 22], @1764$string_r2B#
 200:	
 
 freopen$62:	; Call 14 strcmp 0
@@ -637,11 +637,11 @@ freopen$62:	; Call 14 strcmp 0
 freopen$63:	; PostCall 14
 208:	
 
-freopen$64:	; GetReturnValue £temporary730
+freopen$64:	; GetReturnValue £temporary728
 210:	
 
-freopen$65:	; NotEqual 82 £temporary730 0
-211:		cmp type431, 0
+freopen$65:	; NotEqual 82 £temporary728 0
+211:		cmp type436, 0
 212:		jne freopen$82
 214:	
 
@@ -649,7 +649,7 @@ freopen$66:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 216:	
 
 freopen$67:	; Parameter 14 string_r2B10A# 6
-217:		mov word [bp + 20], @1788$string_r2B10A#
+217:		mov word [bp + 20], @1769$string_r2B10A#
 219:	
 
 freopen$68:	; Call 14 printf 0
@@ -667,8 +667,8 @@ freopen$70:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 230:	
 
 freopen$71:	; Parameter 14 name 6
-231:		mov a433, [bp + 6]
-232:		mov [bp + 20], a433
+231:		mov a438, [bp + 6]
+232:		mov [bp + 20], a438
 234:	
 
 freopen$72:	; Parameter 14 66 8
@@ -679,24 +679,24 @@ freopen$73:	; Call 14 fileopen 0
 238:		mov word [bp + 14], freopen$74
 239:		mov [bp + 16], bp
 240:		add bp, 14
-241:		jmp @1702$fileopen
+241:		jmp @1683$fileopen
 243:	
 
 freopen$74:	; PostCall 14
 245:	
 
-freopen$75:	; GetReturnValue £temporary733
+freopen$75:	; GetReturnValue £temporary731
 247:	
 
-freopen$76:	; Assign handle £temporary733
-248:		mov [bp + 12], type434
+freopen$76:	; Assign handle £temporary731
+248:		mov [bp + 12], type439
 250:	
 
 freopen$77:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 252:	
 
 freopen$78:	; Parameter 14 string_r2B20A# 6
-253:		mov word [bp + 20], @1794$string_r2B20A#
+253:		mov word [bp + 20], @1775$string_r2B20A#
 255:	
 
 freopen$79:	; Call 14 printf 0
@@ -718,12 +718,12 @@ freopen$82:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 269:	
 
 freopen$83:	; Parameter 14 mode 6
-270:		mov a436, [bp + 8]
-271:		mov [bp + 20], a436
+270:		mov a441, [bp + 8]
+271:		mov [bp + 20], a441
 273:	
 
 freopen$84:	; Parameter 14 string_w2B# 8
-274:		mov word [bp + 22], @1796$string_w2B#
+274:		mov word [bp + 22], @1777$string_w2B#
 276:	
 
 freopen$85:	; Call 14 strcmp 0
@@ -736,11 +736,11 @@ freopen$85:	; Call 14 strcmp 0
 freopen$86:	; PostCall 14
 284:	
 
-freopen$87:	; GetReturnValue £temporary735
+freopen$87:	; GetReturnValue £temporary733
 286:	
 
-freopen$88:	; NotEqual 110 £temporary735 0
-287:		cmp type437, 0
+freopen$88:	; NotEqual 110 £temporary733 0
+287:		cmp type442, 0
 288:		jne freopen$110
 290:	
 
@@ -748,8 +748,8 @@ freopen$89:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 292:	
 
 freopen$90:	; Parameter 14 name 6
-293:		mov a438, [bp + 6]
-294:		mov [bp + 20], a438
+293:		mov a443, [bp + 6]
+294:		mov [bp + 20], a443
 296:	
 
 freopen$91:	; Call 14 fileexists 0
@@ -762,11 +762,11 @@ freopen$91:	; Call 14 fileexists 0
 freopen$92:	; PostCall 14
 304:	
 
-freopen$93:	; GetReturnValue £temporary737
+freopen$93:	; GetReturnValue £temporary735
 306:	
 
-freopen$94:	; Equal 103 £temporary737 0
-307:		cmp type439, 0
+freopen$94:	; Equal 103 £temporary735 0
+307:		cmp type444, 0
 308:		je freopen$103
 310:	
 
@@ -774,8 +774,8 @@ freopen$95:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbo
 312:	
 
 freopen$96:	; Parameter 14 name 6
-313:		mov a440, [bp + 6]
-314:		mov [bp + 20], a440
+313:		mov a445, [bp + 6]
+314:		mov [bp + 20], a445
 316:	
 
 freopen$97:	; Parameter 14 66 8
@@ -786,17 +786,17 @@ freopen$98:	; Call 14 fileopen 0
 320:		mov word [bp + 14], freopen$99
 321:		mov [bp + 16], bp
 322:		add bp, 14
-323:		jmp @1702$fileopen
+323:		jmp @1683$fileopen
 325:	
 
 freopen$99:	; PostCall 14
 327:	
 
-freopen$100:	; GetReturnValue £temporary738
+freopen$100:	; GetReturnValue £temporary736
 329:	
 
-freopen$101:	; Assign handle £temporary738
-330:		mov [bp + 12], type441
+freopen$101:	; Assign handle £temporary736
+330:		mov [bp + 12], type446
 332:	
 
 freopen$102:	; Goto 138
@@ -807,8 +807,8 @@ freopen$103:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symb
 337:	
 
 freopen$104:	; Parameter 14 name 6
-338:		mov a442, [bp + 6]
-339:		mov [bp + 20], a442
+338:		mov a447, [bp + 6]
+339:		mov [bp + 20], a447
 341:	
 
 freopen$105:	; Call 14 filecreate 0
@@ -821,11 +821,11 @@ freopen$105:	; Call 14 filecreate 0
 freopen$106:	; PostCall 14
 349:	
 
-freopen$107:	; GetReturnValue £temporary739
+freopen$107:	; GetReturnValue £temporary737
 351:	
 
-freopen$108:	; Assign handle £temporary739
-352:		mov [bp + 12], type443
+freopen$108:	; Assign handle £temporary737
+352:		mov [bp + 12], type448
 354:	
 
 freopen$109:	; Goto 138
@@ -836,12 +836,12 @@ freopen$110:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symb
 359:	
 
 freopen$111:	; Parameter 14 mode 6
-360:		mov a444, [bp + 8]
-361:		mov [bp + 20], a444
+360:		mov a449, [bp + 8]
+361:		mov [bp + 20], a449
 363:	
 
 freopen$112:	; Parameter 14 string_a2B# 8
-364:		mov word [bp + 22], @1809$string_a2B#
+364:		mov word [bp + 22], @1790$string_a2B#
 366:	
 
 freopen$113:	; Call 14 strcmp 0
@@ -854,11 +854,11 @@ freopen$113:	; Call 14 strcmp 0
 freopen$114:	; PostCall 14
 374:	
 
-freopen$115:	; GetReturnValue £temporary741
+freopen$115:	; GetReturnValue £temporary739
 376:	
 
-freopen$116:	; NotEqual 138 £temporary741 0
-377:		cmp type445, 0
+freopen$116:	; NotEqual 138 £temporary739 0
+377:		cmp type450, 0
 378:		jne freopen$138
 380:	
 
@@ -866,8 +866,8 @@ freopen$117:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symb
 382:	
 
 freopen$118:	; Parameter 14 name 6
-383:		mov a446, [bp + 6]
-384:		mov [bp + 20], a446
+383:		mov a451, [bp + 6]
+384:		mov [bp + 20], a451
 386:	
 
 freopen$119:	; Parameter 14 66 8
@@ -878,17 +878,17 @@ freopen$120:	; Call 14 fileopen 0
 390:		mov word [bp + 14], freopen$121
 391:		mov [bp + 16], bp
 392:		add bp, 14
-393:		jmp @1702$fileopen
+393:		jmp @1683$fileopen
 395:	
 
 freopen$121:	; PostCall 14
 397:	
 
-freopen$122:	; GetReturnValue £temporary743
+freopen$122:	; GetReturnValue £temporary741
 399:	
 
-freopen$123:	; Assign handle £temporary743
-400:		mov [bp + 12], type447
+freopen$123:	; Assign handle £temporary741
+400:		mov [bp + 12], type452
 402:	
 
 freopen$124:	; Equal 132 handle -1
@@ -900,8 +900,8 @@ freopen$125:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symb
 408:	
 
 freopen$126:	; Parameter 14 stream 6
-409:		mov a448, [bp + 10]
-410:		mov [bp + 20], a448
+409:		mov a453, [bp + 10]
+410:		mov [bp + 20], a453
 412:	
 
 freopen$127:	; Parameter 14 0 8
@@ -930,8 +930,8 @@ freopen$132:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symb
 431:	
 
 freopen$133:	; Parameter 14 name 6
-432:		mov a450, [bp + 6]
-433:		mov [bp + 20], a450
+432:		mov a455, [bp + 6]
+433:		mov [bp + 20], a455
 435:	
 
 freopen$134:	; Call 14 filecreate 0
@@ -944,11 +944,11 @@ freopen$134:	; Call 14 filecreate 0
 freopen$135:	; PostCall 14
 443:	
 
-freopen$136:	; GetReturnValue £temporary746
+freopen$136:	; GetReturnValue £temporary744
 445:	
 
-freopen$137:	; Assign handle £temporary746
-446:		mov [bp + 12], type451
+freopen$137:	; Assign handle £temporary744
+446:		mov [bp + 12], type456
 448:	
 
 freopen$138:	; Equal 155 handle -1
@@ -956,46 +956,46 @@ freopen$138:	; Equal 155 handle -1
 450:		je freopen$155
 452:	
 
-freopen$139:	; Deref £temporary748 -> stream stream 0
-453:		mov a452, [bp + 10]
+freopen$139:	; Deref £temporary746 -> stream stream 0
+453:		mov a457, [bp + 10]
 455:	
 
-freopen$140:	; Assign £temporary748 -> stream 1
-456:		mov word [a452], 1
+freopen$140:	; Assign £temporary746 -> stream 1
+456:		mov word [a457], 1
 458:	
 
-freopen$141:	; Deref £temporary749 -> stream stream 2
-459:		mov a453, [bp + 10]
+freopen$141:	; Deref £temporary747 -> stream stream 2
+459:		mov a458, [bp + 10]
 461:	
 
-freopen$142:	; Assign £temporary749 -> stream handle
-462:		mov a454, [bp + 12]
-463:		mov [a453 + 2], a454
+freopen$142:	; Assign £temporary747 -> stream handle
+462:		mov a459, [bp + 12]
+463:		mov [a458 + 2], a459
 465:	
 
-freopen$143:	; Deref £temporary750 -> stream stream 25
-466:		mov a455, [bp + 10]
+freopen$143:	; Deref £temporary748 -> stream stream 25
+466:		mov a460, [bp + 10]
 468:	
 
-freopen$144:	; Assign £temporary750 -> stream 0
-469:		mov word [a455 + 25], 0
+freopen$144:	; Assign £temporary748 -> stream 0
+469:		mov word [a460 + 25], 0
 471:	
 
 freopen$145:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 473:	
 
-freopen$146:	; Deref £temporary751 -> stream stream 4
-474:		mov a456, [bp + 10]
+freopen$146:	; Deref £temporary749 -> stream stream 4
+474:		mov a461, [bp + 10]
 476:	
 
-freopen$147:	; Parameter 14 £temporary751 -> stream 6
-477:		mov [bp + 20], a456
+freopen$147:	; Parameter 14 £temporary749 -> stream 6
+477:		mov [bp + 20], a461
 478:		add word [bp + 20], 4
 480:	
 
 freopen$148:	; Parameter 14 name 8
-481:		mov a457, [bp + 6]
-482:		mov [bp + 22], a457
+481:		mov a462, [bp + 6]
+482:		mov [bp + 22], a462
 484:	
 
 freopen$149:	; Call 14 strcpy 0
@@ -1008,42 +1008,42 @@ freopen$149:	; Call 14 strcpy 0
 freopen$150:	; PostCall 14
 492:	
 
-freopen$151:	; Deref £temporary753 -> stream stream 27
-493:		mov a459, [bp + 10]
+freopen$151:	; Deref £temporary751 -> stream stream 27
+493:		mov a464, [bp + 10]
 495:	
 
-freopen$152:	; Assign £temporary753 -> stream 0
-496:		mov word [a459 + 27], 0
+freopen$152:	; Assign £temporary751 -> stream 0
+496:		mov word [a464 + 27], 0
 498:	
 
 freopen$153:	; SetReturnValue stream
-499:		mov a460, [bp + 10]
+499:		mov a465, [bp + 10]
 501:	
 
 freopen$154:	; Return stream
-502:		mov t461, [bp]
+502:		mov t466, [bp]
 503:		mov di, [bp + 4]
 504:		mov bp, [bp + 2]
-505:		jmp t461
+505:		jmp t466
 507:	
 
-freopen$155:	; Deref £temporary754 -> stream stream 0
-508:		mov a462, [bp + 10]
+freopen$155:	; Deref £temporary752 -> stream stream 0
+508:		mov a467, [bp + 10]
 510:	
 
-freopen$156:	; Assign £temporary754 -> stream 0
-511:		mov word [a462], 0
+freopen$156:	; Assign £temporary752 -> stream 0
+511:		mov word [a467], 0
 513:	
 
 freopen$157:	; SetReturnValue 0
-514:		mov a463, 0
+514:		mov a468, 0
 516:	
 
 freopen$158:	; Return 0
-517:		mov t464, [bp]
+517:		mov t469, [bp]
 518:		mov di, [bp + 4]
 519:		mov bp, [bp + 2]
-520:		jmp t464
+520:		jmp t469
 522:	
 
 freopen$159:	; FunctionEnd freopen
@@ -1063,47 +1063,47 @@ fflush$2:	; SignedGreaterThanEqual 21 index 20
 10:		jge fflush$21
 12:	
 
-fflush$3:	; SignedMultiply £temporary796 index 29
-13:		mov a465, [bp + 8]
+fflush$3:	; SignedMultiply £temporary794 index 29
+13:		mov a470, [bp + 8]
 15:		xor dx, dx
-16:		imul word [@1902$int2$29#]
+16:		imul word [@1883$int2$29#]
 22:	
 
-fflush$4:	; BinaryAdd £temporary797 g_fileArray £temporary796
-23:		mov a469, g_fileArray
-24:		add a469, t468
+fflush$4:	; BinaryAdd £temporary795 g_fileArray £temporary794
+23:		mov a474, g_fileArray
+24:		add a474, t473
 26:	
 
-fflush$5:	; Deref £temporary795 -> £temporary797 £temporary797 0
+fflush$5:	; Deref £temporary793 -> £temporary795 £temporary795 0
 28:	
 
-fflush$6:	; Equal 19 £temporary795.open$0 -> £temporary797 0
-29:		cmp word [a469], 0
+fflush$6:	; Equal 19 £temporary793.open$0 -> £temporary795 0
+29:		cmp word [a474], 0
 30:		je fflush$19
 32:	
 
 fflush$7:	; CallHeader 10 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 34:	
 
-fflush$8:	; SignedMultiply £temporary799 index 29
-35:		mov a470, [bp + 8]
+fflush$8:	; SignedMultiply £temporary797 index 29
+35:		mov a475, [bp + 8]
 37:		xor dx, dx
-38:		imul word [@1907$int2$29#]
+38:		imul word [@1888$int2$29#]
 44:	
 
-fflush$9:	; BinaryAdd £temporary800 g_fileArray £temporary799
-45:		mov a474, g_fileArray
-46:		add a474, t473
+fflush$9:	; BinaryAdd £temporary798 g_fileArray £temporary797
+45:		mov a479, g_fileArray
+46:		add a479, t478
 48:	
 
-fflush$10:	; Deref £temporary798 -> £temporary800 £temporary800 0
+fflush$10:	; Deref £temporary796 -> £temporary798 £temporary798 0
 50:	
 
-fflush$11:	; address £temporary801 £temporary798 -> £temporary800
+fflush$11:	; address £temporary799 £temporary796 -> £temporary798
 52:	
 
-fflush$12:	; Parameter 10 £temporary801 6
-53:		mov [bp + 16], a474
+fflush$12:	; Parameter 10 £temporary799 6
+53:		mov [bp + 16], a479
 55:	
 
 fflush$13:	; Call 10 fflush 0
@@ -1116,23 +1116,23 @@ fflush$13:	; Call 10 fflush 0
 fflush$14:	; PostCall 10
 63:	
 
-fflush$15:	; GetReturnValue £temporary802
+fflush$15:	; GetReturnValue £temporary800
 65:	
 
-fflush$16:	; NotEqual 19 £temporary802 -1
-66:		cmp type475, -1
+fflush$16:	; NotEqual 19 £temporary800 -1
+66:		cmp type480, -1
 67:		jne fflush$19
 69:	
 
 fflush$17:	; SetReturnValue -1
-70:		mov a476, -1
+70:		mov a481, -1
 72:	
 
 fflush$18:	; Return -1
-73:		mov t477, [bp]
+73:		mov t482, [bp]
 74:		mov di, [bp + 4]
 75:		mov bp, [bp + 2]
-76:		jmp t477
+76:		jmp t482
 78:	
 
 fflush$19:	; Increment index
@@ -1144,14 +1144,14 @@ fflush$20:	; Goto 2
 84:	
 
 fflush$21:	; SetReturnValue 0
-85:		mov a478, 0
+85:		mov a483, 0
 87:	
 
 fflush$22:	; Return 0
-88:		mov t479, [bp]
+88:		mov t484, [bp]
 89:		mov di, [bp + 4]
 90:		mov bp, [bp + 2]
-91:		jmp t479
+91:		jmp t484
 93:	
 
 fflush$23:	; FunctionEnd fflush
@@ -1163,15 +1163,15 @@ fclose:	; Equal 20 stream 0
 5:	
 
 fclose$1:	; AssignRegister ah 62
-6:		mov a480, 62
+6:		mov a485, 62
 8:	
 
-fclose$2:	; Deref £temporary809 -> stream stream 2
-9:		mov a481, [bp + 6]
+fclose$2:	; Deref £temporary807 -> stream stream 2
+9:		mov a486, [bp + 6]
 11:	
 
-fclose$3:	; AssignRegister bx £temporary809 -> stream
-12:		mov t482, [a481 + 2]
+fclose$3:	; AssignRegister bx £temporary807 -> stream
+12:		mov t487, [a486 + 2]
 14:	
 
 fclose$4:	; Interrupt 33
@@ -1187,34 +1187,34 @@ fclose$6:	; Assign errno 11
 23:	
 
 fclose$7:	; SetReturnValue -1
-24:		mov a483, -1
+24:		mov a488, -1
 26:	
 
 fclose$8:	; Return -1
-27:		mov t484, [bp]
+27:		mov t489, [bp]
 28:		mov di, [bp + 4]
 29:		mov bp, [bp + 2]
-30:		jmp t484
+30:		jmp t489
 32:	
 
-fclose$9:	; Deref £temporary811 -> stream stream 27
-33:		mov a485, [bp + 6]
+fclose$9:	; Deref £temporary809 -> stream stream 27
+33:		mov a490, [bp + 6]
 35:	
 
-fclose$10:	; Equal 16 £temporary811 -> stream 0
-36:		cmp word [a485 + 27], 0
+fclose$10:	; Equal 16 £temporary809 -> stream 0
+36:		cmp word [a490 + 27], 0
 37:		je fclose$16
 39:	
 
 fclose$11:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 41:	
 
-fclose$12:	; Deref £temporary812 -> stream stream 4
-42:		mov a486, [bp + 6]
+fclose$12:	; Deref £temporary810 -> stream stream 4
+42:		mov a491, [bp + 6]
 44:	
 
-fclose$13:	; Parameter 8 £temporary812 -> stream 6
-45:		mov [bp + 14], a486
+fclose$13:	; Parameter 8 £temporary810 -> stream 6
+45:		mov [bp + 14], a491
 46:		add word [bp + 14], 4
 48:	
 
@@ -1228,23 +1228,23 @@ fclose$14:	; Call 8 remove 0
 fclose$15:	; PostCall 8
 56:	
 
-fclose$16:	; Deref £temporary815 -> stream stream 0
-57:		mov a488, [bp + 6]
+fclose$16:	; Deref £temporary813 -> stream stream 0
+57:		mov a493, [bp + 6]
 59:	
 
-fclose$17:	; Assign £temporary815 -> stream 0
-60:		mov word [a488], 0
+fclose$17:	; Assign £temporary813 -> stream 0
+60:		mov word [a493], 0
 62:	
 
 fclose$18:	; SetReturnValue 0
-63:		mov a489, 0
+63:		mov a494, 0
 65:	
 
 fclose$19:	; Return 0
-66:		mov t490, [bp]
+66:		mov t495, [bp]
 67:		mov di, [bp + 4]
 68:		mov bp, [bp + 2]
-69:		jmp t490
+69:		jmp t495
 71:	
 
 fclose$20:	; Assign index 0
@@ -1256,47 +1256,47 @@ fclose$21:	; SignedGreaterThanEqual 40 index 20
 76:		jge fclose$40
 78:	
 
-fclose$22:	; SignedMultiply £temporary819 index 29
-79:		mov a491, [bp + 8]
+fclose$22:	; SignedMultiply £temporary817 index 29
+79:		mov a496, [bp + 8]
 81:		xor dx, dx
-82:		imul word [@1957$int2$29#]
+82:		imul word [@1938$int2$29#]
 88:	
 
-fclose$23:	; BinaryAdd £temporary820 g_fileArray £temporary819
-89:		mov a495, g_fileArray
-90:		add a495, t494
+fclose$23:	; BinaryAdd £temporary818 g_fileArray £temporary817
+89:		mov a500, g_fileArray
+90:		add a500, t499
 92:	
 
-fclose$24:	; Deref £temporary818 -> £temporary820 £temporary820 0
+fclose$24:	; Deref £temporary816 -> £temporary818 £temporary818 0
 94:	
 
-fclose$25:	; Equal 38 £temporary818.open$0 -> £temporary820 0
-95:		cmp word [a495], 0
+fclose$25:	; Equal 38 £temporary816.open$0 -> £temporary818 0
+95:		cmp word [a500], 0
 96:		je fclose$38
 98:	
 
 fclose$26:	; CallHeader 10 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 100:	
 
-fclose$27:	; SignedMultiply £temporary822 index 29
-101:		mov a496, [bp + 8]
+fclose$27:	; SignedMultiply £temporary820 index 29
+101:		mov a501, [bp + 8]
 103:		xor dx, dx
-104:		imul word [@1962$int2$29#]
+104:		imul word [@1943$int2$29#]
 110:	
 
-fclose$28:	; BinaryAdd £temporary823 g_fileArray £temporary822
-111:		mov a500, g_fileArray
-112:		add a500, t499
+fclose$28:	; BinaryAdd £temporary821 g_fileArray £temporary820
+111:		mov a505, g_fileArray
+112:		add a505, t504
 114:	
 
-fclose$29:	; Deref £temporary821 -> £temporary823 £temporary823 0
+fclose$29:	; Deref £temporary819 -> £temporary821 £temporary821 0
 116:	
 
-fclose$30:	; address £temporary824 £temporary821 -> £temporary823
+fclose$30:	; address £temporary822 £temporary819 -> £temporary821
 118:	
 
-fclose$31:	; Parameter 10 £temporary824 6
-119:		mov [bp + 16], a500
+fclose$31:	; Parameter 10 £temporary822 6
+119:		mov [bp + 16], a505
 121:	
 
 fclose$32:	; Call 10 fclose 0
@@ -1309,23 +1309,23 @@ fclose$32:	; Call 10 fclose 0
 fclose$33:	; PostCall 10
 129:	
 
-fclose$34:	; GetReturnValue £temporary825
+fclose$34:	; GetReturnValue £temporary823
 131:	
 
-fclose$35:	; NotEqual 38 £temporary825 -1
-132:		cmp type501, -1
+fclose$35:	; NotEqual 38 £temporary823 -1
+132:		cmp type506, -1
 133:		jne fclose$38
 135:	
 
 fclose$36:	; SetReturnValue -1
-136:		mov a502, -1
+136:		mov a507, -1
 138:	
 
 fclose$37:	; Return -1
-139:		mov t503, [bp]
+139:		mov t508, [bp]
 140:		mov di, [bp + 4]
 141:		mov bp, [bp + 2]
-142:		jmp t503
+142:		jmp t508
 144:	
 
 fclose$38:	; Increment index
@@ -1337,29 +1337,29 @@ fclose$39:	; Goto 21
 150:	
 
 fclose$40:	; SetReturnValue 0
-151:		mov a504, 0
+151:		mov a509, 0
 153:	
 
 fclose$41:	; Return 0
-154:		mov t505, [bp]
+154:		mov t510, [bp]
 155:		mov di, [bp + 4]
 156:		mov bp, [bp + 2]
-157:		jmp t505
+157:		jmp t510
 159:	
 
 fclose$42:	; FunctionEnd fclose
 1:	
 
 remove:	; AssignRegister ah 65
-2:		mov a506, 65
+2:		mov a511, 65
 4:	
 
 remove$1:	; AssignRegister cl 0
-5:		mov a507, 0
+5:		mov a512, 0
 7:	
 
 remove$2:	; AssignRegister dx name
-8:		mov a508, [bp + 6]
+8:		mov a513, [bp + 6]
 10:	
 
 remove$3:	; Interrupt 33
@@ -1371,14 +1371,14 @@ remove$4:	; Carry 7
 16:	
 
 remove$5:	; SetReturnValue 0
-17:		mov a509, 0
+17:		mov a514, 0
 19:	
 
 remove$6:	; Return 0
-20:		mov t510, [bp]
+20:		mov t515, [bp]
 21:		mov di, [bp + 4]
 22:		mov bp, [bp + 2]
-23:		jmp t510
+23:		jmp t515
 25:	
 
 remove$7:	; Assign errno 18
@@ -1386,33 +1386,33 @@ remove$7:	; Assign errno 18
 28:	
 
 remove$8:	; SetReturnValue -1
-29:		mov a511, -1
+29:		mov a516, -1
 31:	
 
 remove$9:	; Return -1
-32:		mov t512, [bp]
+32:		mov t517, [bp]
 33:		mov di, [bp + 4]
 34:		mov bp, [bp + 2]
-35:		jmp t512
+35:		jmp t517
 37:	
 
 remove$10:	; FunctionEnd remove
 1:	
 
 rename:	; AssignRegister ah 86
-2:		mov a513, 86
+2:		mov a518, 86
 4:	
 
 rename$1:	; AssignRegister cl 0
-5:		mov a514, 0
+5:		mov a519, 0
 7:	
 
 rename$2:	; AssignRegister dx oldName
-8:		mov a515, [bp + 6]
+8:		mov a520, [bp + 6]
 10:	
 
 rename$3:	; AssignRegister di newName
-11:		mov a516, [bp + 8]
+11:		mov a521, [bp + 8]
 13:	
 
 rename$4:	; Interrupt 33
@@ -1424,14 +1424,14 @@ rename$5:	; Carry 8
 19:	
 
 rename$6:	; SetReturnValue 0
-20:		mov a517, 0
+20:		mov a522, 0
 22:	
 
 rename$7:	; Return 0
-23:		mov t518, [bp]
+23:		mov t523, [bp]
 24:		mov di, [bp + 4]
 25:		mov bp, [bp + 2]
-26:		jmp t518
+26:		jmp t523
 28:	
 
 rename$8:	; Assign errno 19
@@ -1439,28 +1439,28 @@ rename$8:	; Assign errno 19
 31:	
 
 rename$9:	; SetReturnValue -1
-32:		mov a519, -1
+32:		mov a524, -1
 34:	
 
 rename$10:	; Return -1
-35:		mov t520, [bp]
+35:		mov t525, [bp]
 36:		mov di, [bp + 4]
 37:		mov bp, [bp + 2]
-38:		jmp t520
+38:		jmp t525
 40:	
 
 rename$11:	; FunctionEnd rename
 1:	
 
 setvbuf:	; SetReturnValue 0
-2:		mov a521, 0
+2:		mov a526, 0
 4:	
 
 setvbuf$1:	; Return 0
-5:		mov t522, [bp]
+5:		mov t527, [bp]
 6:		mov di, [bp + 4]
 7:		mov bp, [bp + 2]
-8:		jmp t522
+8:		jmp t527
 10:	
 
 setvbuf$2:	; FunctionEnd setvbuf
@@ -1470,10 +1470,10 @@ setbuf:	; Empty
 3:	
 
 setbuf$1:	; Return 0
-4:		mov t523, [bp]
+4:		mov t528, [bp]
 5:		mov di, [bp + 4]
 6:		mov bp, [bp + 2]
-7:		jmp t523
+7:		jmp t528
 9:	
 
 setbuf$2:	; FunctionEnd setbuf
@@ -1486,13 +1486,13 @@ fgetc:	; Assign c 0
 fgetc$1:	; CallHeader 9 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 6:	
 
-fgetc$2:	; address £temporary841 c
-7:		mov t524, bp
-8:		add t524, 8
+fgetc$2:	; address £temporary839 c
+7:		mov t529, bp
+8:		add t529, 8
 10:	
 
-fgetc$3:	; Parameter 9 £temporary841 6
-11:		mov [bp + 15], t524
+fgetc$3:	; Parameter 9 £temporary839 6
+11:		mov [bp + 15], t529
 13:	
 
 fgetc$4:	; Parameter 9 1 8
@@ -1504,8 +1504,8 @@ fgetc$5:	; Parameter 9 1 10
 19:	
 
 fgetc$6:	; Parameter 9 stream 12
-20:		mov a525, [bp + 6]
-21:		mov [bp + 21], a525
+20:		mov a530, [bp + 6]
+21:		mov [bp + 21], a530
 23:	
 
 fgetc$7:	; Call 9 fread 0
@@ -1518,42 +1518,42 @@ fgetc$7:	; Call 9 fread 0
 fgetc$8:	; PostCall 9
 31:	
 
-fgetc$9:	; GetReturnValue £temporary842
+fgetc$9:	; GetReturnValue £temporary840
 33:	
 
-fgetc$10:	; SignedLessThanEqual 14 £temporary842 0
-34:		cmp type526, 0
+fgetc$10:	; SignedLessThanEqual 14 £temporary840 0
+34:		cmp type531, 0
 35:		jle fgetc$14
 37:	
 
-fgetc$11:	; IntegralToIntegral £temporary844 c
-38:		mov a527, [bp + 8]
-40:		and a527, 255
-42:		cmp a527, 0
+fgetc$11:	; IntegralToIntegral £temporary842 c
+38:		mov a532, [bp + 8]
+40:		and a532, 255
+42:		cmp a532, 0
 43:		jge fgetc$12
-44:		neg a527
-46:		neg a527
+44:		neg a532
+46:		neg a532
 48:	
 
-fgetc$12:	; SetReturnValue £temporary844
+fgetc$12:	; SetReturnValue £temporary842
 50:	
 
-fgetc$13:	; Return £temporary844
-51:		mov t528, [bp]
+fgetc$13:	; Return £temporary842
+51:		mov t533, [bp]
 52:		mov di, [bp + 4]
 53:		mov bp, [bp + 2]
-54:		jmp t528
+54:		jmp t533
 56:	
 
 fgetc$14:	; SetReturnValue -1
-57:		mov a529, -1
+57:		mov a534, -1
 59:	
 
 fgetc$15:	; Return -1
-60:		mov t530, [bp]
+60:		mov t535, [bp]
 61:		mov di, [bp + 4]
 62:		mov bp, [bp + 2]
-63:		jmp t530
+63:		jmp t535
 65:	
 
 fgetc$16:	; FunctionEnd fgetc
@@ -1567,13 +1567,13 @@ fgets$1:	; Assign prevChar 0
 5:		mov byte [bp + 14], 0
 7:	
 
-fgets$2:	; BinarySubtract £temporary850 size 1
-8:		mov a531, [bp + 8]
-9:		sub a531, 1
+fgets$2:	; BinarySubtract £temporary848 size 1
+8:		mov a536, [bp + 8]
+9:		sub a536, 1
 11:	
 
-fgets$3:	; SignedGreaterThanEqual 33 count £temporary850
-12:		cmp [bp + 12], a531
+fgets$3:	; SignedGreaterThanEqual 33 count £temporary848
+12:		cmp [bp + 12], a536
 13:		jge fgets$33
 15:	
 
@@ -1585,21 +1585,21 @@ fgets$5:	; CallHeader 16 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 
 20:	
 
 fgets$6:	; Parameter 16 stream 6
-21:		mov a532, [bp + 10]
-22:		mov [bp + 22], a532
+21:		mov a537, [bp + 10]
+22:		mov [bp + 22], a537
 24:	
 
 fgets$7:	; Parameter 16 string_25c# 8
-25:		mov word [bp + 24], @2050$string_25c#
+25:		mov word [bp + 24], @2031$string_25c#
 27:	
 
-fgets$8:	; address £temporary852 currChar
-28:		mov t533, bp
-29:		add t533, 15
+fgets$8:	; address £temporary850 currChar
+28:		mov t538, bp
+29:		add t538, 15
 31:	
 
-fgets$9:	; Parameter 16 £temporary852 10
-32:		mov [bp + 26], t533
+fgets$9:	; Parameter 16 £temporary850 10
+32:		mov [bp + 26], t538
 34:	
 
 fgets$10:	; Call 16 fscanf 0
@@ -1624,46 +1624,46 @@ fgets$13:	; NotEqual 18 currChar 10
 50:		jne fgets$18
 52:	
 
-fgets$14:	; BinaryAdd £temporary858 text count
-53:		mov a535, [bp + 6]
-54:		add a535, [bp + 12]
+fgets$14:	; BinaryAdd £temporary856 text count
+53:		mov a540, [bp + 6]
+54:		add a540, [bp + 12]
 56:	
 
-fgets$15:	; Deref £temporary857 -> £temporary858 £temporary858 0
+fgets$15:	; Deref £temporary855 -> £temporary856 £temporary856 0
 58:	
 
-fgets$16:	; Assign £temporary857 -> £temporary858 0
-59:		mov byte [a535], 0
+fgets$16:	; Assign £temporary855 -> £temporary856 0
+59:		mov byte [a540], 0
 61:	
 
 fgets$17:	; Goto 33
 62:		jmp fgets$33
 64:	
 
-fgets$18:	; IntegralToIntegral £temporary859 currChar
-65:		mov a536, [bp + 15]
-67:		and a536, 255
-69:		cmp a536, 0
+fgets$18:	; IntegralToIntegral £temporary857 currChar
+65:		mov a541, [bp + 15]
+67:		and a541, 255
+69:		cmp a541, 0
 70:		jge fgets$19
-71:		neg a536
-73:		neg a536
+71:		neg a541
+73:		neg a541
 75:	
 
-fgets$19:	; NotEqual 24 £temporary859 -1
-76:		cmp a536, -1
+fgets$19:	; NotEqual 24 £temporary857 -1
+76:		cmp a541, -1
 77:		jne fgets$24
 79:	
 
-fgets$20:	; BinaryAdd £temporary862 text count
-80:		mov a537, [bp + 6]
-81:		add a537, [bp + 12]
+fgets$20:	; BinaryAdd £temporary860 text count
+80:		mov a542, [bp + 6]
+81:		add a542, [bp + 12]
 83:	
 
-fgets$21:	; Deref £temporary861 -> £temporary862 £temporary862 0
+fgets$21:	; Deref £temporary859 -> £temporary860 £temporary860 0
 85:	
 
-fgets$22:	; Assign £temporary861 -> £temporary862 0
-86:		mov byte [a537], 0
+fgets$22:	; Assign £temporary859 -> £temporary860 0
+86:		mov byte [a542], 0
 88:	
 
 fgets$23:	; Goto 33
@@ -1680,30 +1680,30 @@ fgets$25:	; Equal 31 currChar 10
 97:		je fgets$31
 99:	
 
-fgets$26:	; Assign £temporary866 count
-100:		mov t538, [bp + 12]
+fgets$26:	; Assign £temporary864 count
+100:		mov t543, [bp + 12]
 102:	
 
 fgets$27:	; Increment count
 103:		inc word [bp + 12]
 105:	
 
-fgets$28:	; BinaryAdd £temporary869 text £temporary866
-106:		mov a539, [bp + 6]
-107:		add a539, t538
+fgets$28:	; BinaryAdd £temporary867 text £temporary864
+106:		mov a544, [bp + 6]
+107:		add a544, t543
 109:	
 
-fgets$29:	; Deref £temporary868 -> £temporary869 £temporary869 0
+fgets$29:	; Deref £temporary866 -> £temporary867 £temporary867 0
 111:	
 
-fgets$30:	; Assign £temporary868 -> £temporary869 currChar
-112:		mov a540, [bp + 15]
-113:		mov [a539], a540
+fgets$30:	; Assign £temporary866 -> £temporary867 currChar
+112:		mov a545, [bp + 15]
+113:		mov [a544], a545
 115:	
 
 fgets$31:	; Assign prevChar currChar
-116:		mov a541, [bp + 15]
-117:		mov [bp + 14], a541
+116:		mov a546, [bp + 15]
+117:		mov [bp + 14], a546
 119:	
 
 fgets$32:	; Goto 2
@@ -1711,14 +1711,14 @@ fgets$32:	; Goto 2
 122:	
 
 fgets$33:	; SetReturnValue text
-123:		mov a542, [bp + 6]
+123:		mov a547, [bp + 6]
 125:	
 
 fgets$34:	; Return text
-126:		mov t543, [bp]
+126:		mov t548, [bp]
 127:		mov di, [bp + 4]
 128:		mov bp, [bp + 2]
-129:		jmp t543
+129:		jmp t548
 131:	
 
 fgets$35:	; FunctionEnd fgets
@@ -1728,8 +1728,8 @@ fputs:	; CallHeader 10 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 3:	
 
 fputs$1:	; Parameter 10 s 6
-4:		mov a544, [bp + 6]
-5:		mov [bp + 16], a544
+4:		mov a549, [bp + 6]
+5:		mov [bp + 16], a549
 7:	
 
 fputs$2:	; Call 10 strlen 0
@@ -1742,17 +1742,17 @@ fputs$2:	; Call 10 strlen 0
 fputs$3:	; PostCall 10
 15:	
 
-fputs$4:	; GetReturnValue £temporary874
+fputs$4:	; GetReturnValue £temporary872
 17:	
 
-fputs$5:	; BinaryAdd £temporary875 £temporary874 1
-18:		add type545, 1
+fputs$5:	; BinaryAdd £temporary873 £temporary872 1
+18:		add type550, 1
 20:	
 
-fputs$6:	; SignedMultiply size £temporary875 1
-21:		mov t546, type545
+fputs$6:	; SignedMultiply size £temporary873 1
+21:		mov t551, type550
 23:		xor dx, dx
-24:		imul word [@2095$int2$1#]
+24:		imul word [@2076$int2$1#]
 25:		mov [bp + 10], ax
 27:	
 
@@ -1760,13 +1760,13 @@ fputs$7:	; CallHeader 12 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 
 29:	
 
 fputs$8:	; Parameter 12 s 6
-30:		mov a549, [bp + 6]
-31:		mov [bp + 18], a549
+30:		mov a554, [bp + 6]
+31:		mov [bp + 18], a554
 33:	
 
 fputs$9:	; Parameter 12 size 8
-34:		mov a550, [bp + 10]
-35:		mov [bp + 20], a550
+34:		mov a555, [bp + 10]
+35:		mov [bp + 20], a555
 37:	
 
 fputs$10:	; Parameter 12 1 10
@@ -1774,8 +1774,8 @@ fputs$10:	; Parameter 12 1 10
 40:	
 
 fputs$11:	; Parameter 12 stream 12
-41:		mov a551, [bp + 8]
-42:		mov [bp + 24], a551
+41:		mov a556, [bp + 8]
+42:		mov [bp + 24], a556
 44:	
 
 fputs$12:	; Call 12 fwrite 0
@@ -1788,34 +1788,34 @@ fputs$12:	; Call 12 fwrite 0
 fputs$13:	; PostCall 12
 52:	
 
-fputs$14:	; GetReturnValue £temporary877
+fputs$14:	; GetReturnValue £temporary875
 54:	
 
-fputs$15:	; NotEqual 18 £temporary877 size
-55:		cmp type552, [bp + 10]
+fputs$15:	; NotEqual 18 £temporary875 size
+55:		cmp type557, [bp + 10]
 56:		jne fputs$18
 58:	
 
-fputs$16:	; Assign £temporary882 0
-59:		mov t553, 0
+fputs$16:	; Assign £temporary880 0
+59:		mov t558, 0
 61:	
 
 fputs$17:	; Goto 19
 62:		jmp fputs$19
 64:	
 
-fputs$18:	; Assign £temporary882 -1
-65:		mov t554, -1
+fputs$18:	; Assign £temporary880 -1
+65:		mov t559, -1
 67:	
 
-fputs$19:	; SetReturnValue £temporary882
+fputs$19:	; SetReturnValue £temporary880
 69:	
 
-fputs$20:	; Return £temporary882
-70:		mov t555, [bp]
+fputs$20:	; Return £temporary880
+70:		mov t560, [bp]
 71:		mov di, [bp + 4]
 72:		mov bp, [bp + 2]
-73:		jmp t555
+73:		jmp t560
 75:	
 
 fputs$21:	; FunctionEnd fputs
@@ -1825,8 +1825,8 @@ getchar:	; CallHeader 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 3:	
 
 getchar$1:	; Parameter 6 stdin 6
-4:		mov a556, [stdin]
-5:		mov [bp + 12], a556
+4:		mov a561, [stdin]
+5:		mov [bp + 12], a561
 7:	
 
 getchar$2:	; Call 6 fgetc 0
@@ -1839,17 +1839,17 @@ getchar$2:	; Call 6 fgetc 0
 getchar$3:	; PostCall 6
 15:	
 
-getchar$4:	; GetReturnValue £temporary888
+getchar$4:	; GetReturnValue £temporary886
 17:	
 
-getchar$5:	; SetReturnValue £temporary888
+getchar$5:	; SetReturnValue £temporary886
 19:	
 
-getchar$6:	; Return £temporary888
-20:		mov t558, [bp]
+getchar$6:	; Return £temporary886
+20:		mov t563, [bp]
 21:		mov di, [bp + 4]
 22:		mov bp, [bp + 2]
-23:		jmp t558
+23:		jmp t563
 25:	
 
 getchar$7:	; FunctionEnd getchar
@@ -1859,8 +1859,8 @@ gets:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 3:	
 
 gets$1:	; Parameter 8 s 6
-4:		mov a559, [bp + 6]
-5:		mov [bp + 14], a559
+4:		mov a564, [bp + 6]
+5:		mov [bp + 14], a564
 7:	
 
 gets$2:	; Parameter 8 -1 8
@@ -1868,8 +1868,8 @@ gets$2:	; Parameter 8 -1 8
 10:	
 
 gets$3:	; Parameter 8 stdin 10
-11:		mov a560, [stdin]
-12:		mov [bp + 18], a560
+11:		mov a565, [stdin]
+12:		mov [bp + 18], a565
 14:	
 
 gets$4:	; Call 8 fgets 0
@@ -1882,11 +1882,11 @@ gets$4:	; Call 8 fgets 0
 gets$5:	; PostCall 8
 22:	
 
-gets$6:	; GetReturnValue £temporary890
+gets$6:	; GetReturnValue £temporary888
 24:	
 
-gets$7:	; Equal 21 £temporary890 0
-25:		cmp type561, 0
+gets$7:	; Equal 21 £temporary888 0
+25:		cmp type566, 0
 26:		je gets$21
 28:	
 
@@ -1894,8 +1894,8 @@ gets$8:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 30:	
 
 gets$9:	; Parameter 8 s 6
-31:		mov a562, [bp + 6]
-32:		mov [bp + 14], a562
+31:		mov a567, [bp + 6]
+32:		mov [bp + 14], a567
 34:	
 
 gets$10:	; Call 8 strlen 0
@@ -1908,11 +1908,11 @@ gets$10:	; Call 8 strlen 0
 gets$11:	; PostCall 8
 42:	
 
-gets$12:	; GetReturnValue £temporary892
+gets$12:	; GetReturnValue £temporary890
 44:	
 
-gets$13:	; Assign size £temporary892
-45:		mov [bp + 8], type563
+gets$13:	; Assign size £temporary890
+45:		mov [bp + 8], type568
 47:	
 
 gets$14:	; SignedLessThanEqual 19 size 0
@@ -1920,43 +1920,43 @@ gets$14:	; SignedLessThanEqual 19 size 0
 49:		jle gets$19
 51:	
 
-gets$15:	; BinarySubtract £temporary894 size 1
-52:		mov a564, [bp + 8]
-53:		sub a564, 1
+gets$15:	; BinarySubtract £temporary892 size 1
+52:		mov a569, [bp + 8]
+53:		sub a569, 1
 55:	
 
-gets$16:	; BinaryAdd £temporary896 s £temporary894
-56:		mov a565, [bp + 6]
-57:		add a565, a564
+gets$16:	; BinaryAdd £temporary894 s £temporary892
+56:		mov a570, [bp + 6]
+57:		add a570, a569
 59:	
 
-gets$17:	; Deref £temporary895 -> £temporary896 £temporary896 0
+gets$17:	; Deref £temporary893 -> £temporary894 £temporary894 0
 61:	
 
-gets$18:	; Assign £temporary895 -> £temporary896 0
-62:		mov byte [a565], 0
+gets$18:	; Assign £temporary893 -> £temporary894 0
+62:		mov byte [a570], 0
 64:	
 
 gets$19:	; SetReturnValue s
-65:		mov a566, [bp + 6]
+65:		mov a571, [bp + 6]
 67:	
 
 gets$20:	; Return s
-68:		mov t567, [bp]
+68:		mov t572, [bp]
 69:		mov di, [bp + 4]
 70:		mov bp, [bp + 2]
-71:		jmp t567
+71:		jmp t572
 73:	
 
 gets$21:	; SetReturnValue 0
-74:		mov a568, 0
+74:		mov a573, 0
 76:	
 
 gets$22:	; Return 0
-77:		mov t569, [bp]
+77:		mov t574, [bp]
 78:		mov di, [bp + 4]
 79:		mov bp, [bp + 2]
-80:		jmp t569
+80:		jmp t574
 82:	
 
 gets$23:	; FunctionEnd gets
@@ -1966,13 +1966,13 @@ puts:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 3:	
 
 puts$1:	; Parameter 8 s 6
-4:		mov a570, [bp + 6]
-5:		mov [bp + 14], a570
+4:		mov a575, [bp + 6]
+5:		mov [bp + 14], a575
 7:	
 
 puts$2:	; Parameter 8 stdout 8
-8:		mov a571, [stdout]
-9:		mov [bp + 16], a571
+8:		mov a576, [stdout]
+9:		mov [bp + 16], a576
 11:	
 
 puts$3:	; Call 8 fputs 0
@@ -1985,11 +1985,11 @@ puts$3:	; Call 8 fputs 0
 puts$4:	; PostCall 8
 19:	
 
-puts$5:	; GetReturnValue £temporary901
+puts$5:	; GetReturnValue £temporary899
 21:	
 
-puts$6:	; Equal 15 £temporary901 0
-22:		cmp type572, 0
+puts$6:	; Equal 15 £temporary899 0
+22:		cmp type577, 0
 23:		je puts$15
 25:	
 
@@ -2001,8 +2001,8 @@ puts$8:	; Parameter 8 10 6
 30:	
 
 puts$9:	; Parameter 8 stdout 8
-31:		mov a573, [stdout]
-32:		mov [bp + 16], a573
+31:		mov a578, [stdout]
+32:		mov [bp + 16], a578
 34:	
 
 puts$10:	; Call 8 fputc 0
@@ -2015,105 +2015,105 @@ puts$10:	; Call 8 fputc 0
 puts$11:	; PostCall 8
 42:	
 
-puts$12:	; GetReturnValue £temporary903
+puts$12:	; GetReturnValue £temporary901
 44:	
 
-puts$13:	; SetReturnValue £temporary903
+puts$13:	; SetReturnValue £temporary901
 46:	
 
-puts$14:	; Return £temporary903
-47:		mov t575, [bp]
+puts$14:	; Return £temporary901
+47:		mov t580, [bp]
 48:		mov di, [bp + 4]
 49:		mov bp, [bp + 2]
-50:		jmp t575
+50:		jmp t580
 52:	
 
 puts$15:	; SetReturnValue -1
-53:		mov a576, -1
+53:		mov a581, -1
 55:	
 
 puts$16:	; Return -1
-56:		mov t577, [bp]
+56:		mov t582, [bp]
 57:		mov di, [bp + 4]
 58:		mov bp, [bp + 2]
-59:		jmp t577
+59:		jmp t582
 61:	
 
 puts$17:	; FunctionEnd puts
 1:	
 
-ungetc:	; Deref £temporary908 -> stream stream 20
-2:		mov a578, [bp + 8]
+ungetc:	; Deref £temporary906 -> stream stream 20
+2:		mov a583, [bp + 8]
 4:	
 
-ungetc$1:	; IntegralToIntegral £temporary909 £temporary908 -> stream
-5:		mov t579, [a578 + 20]
-7:		and t579, 255
-9:		cmp t579, 0
+ungetc$1:	; IntegralToIntegral £temporary907 £temporary906 -> stream
+5:		mov t584, [a583 + 20]
+7:		and t584, 255
+9:		cmp t584, 0
 10:		jge ungetc$2
-11:		neg t579
-13:		neg t579
+11:		neg t584
+13:		neg t584
 15:	
 
-ungetc$2:	; Equal 6 £temporary909 -1
-16:		cmp t579, -1
+ungetc$2:	; Equal 6 £temporary907 -1
+16:		cmp t584, -1
 17:		je ungetc$6
 19:	
 
-ungetc$3:	; Deref £temporary911 -> stream stream 20
-20:		mov a580, [bp + 8]
+ungetc$3:	; Deref £temporary909 -> stream stream 20
+20:		mov a585, [bp + 8]
 22:	
 
-ungetc$4:	; IntegralToIntegral £temporary912 c
-23:		mov a581, [bp + 6]
-26:		cmp a581, 0
+ungetc$4:	; IntegralToIntegral £temporary910 c
+23:		mov a586, [bp + 6]
+26:		cmp a586, 0
 27:		jge ungetc$5
-28:		neg a581
-30:		neg a581
+28:		neg a586
+30:		neg a586
 32:	
 
-ungetc$5:	; Assign £temporary911 -> stream £temporary912
-33:		mov [a580 + 20], a581
+ungetc$5:	; Assign £temporary909 -> stream £temporary910
+33:		mov [a585 + 20], a586
 35:	
 
 ungetc$6:	; SetReturnValue c
-36:		mov a582, [bp + 6]
+36:		mov a587, [bp + 6]
 38:	
 
 ungetc$7:	; Return c
-39:		mov t583, [bp]
+39:		mov t588, [bp]
 40:		mov di, [bp + 4]
 41:		mov bp, [bp + 2]
-42:		jmp t583
+42:		jmp t588
 44:	
 
 ungetc$8:	; FunctionEnd ungetc
 1:	
 
-fread:	; Deref £temporary914 -> stream stream 2
-2:		mov a584, [bp + 12]
+fread:	; Deref £temporary912 -> stream stream 2
+2:		mov a589, [bp + 12]
 4:	
 
-fread$1:	; AssignRegister bx £temporary914 -> stream
-5:		mov t585, [a584 + 2]
+fread$1:	; AssignRegister bx £temporary912 -> stream
+5:		mov t590, [a589 + 2]
 7:	
 
-fread$2:	; SignedMultiply £temporary916 size nobj
-8:		mov a586, [bp + 8]
+fread$2:	; SignedMultiply £temporary914 size nobj
+8:		mov a591, [bp + 8]
 10:		xor dx, dx
 11:		imul word [bp + 10]
 17:	
 
-fread$3:	; AssignRegister cx £temporary916
-18:		mov t590, t589
+fread$3:	; AssignRegister cx £temporary914
+18:		mov t595, t594
 20:	
 
 fread$4:	; AssignRegister ah 63
-21:		mov a591, 63
+21:		mov a596, 63
 23:	
 
 fread$5:	; AssignRegister dx ptr
-24:		mov a592, [bp + 6]
+24:		mov a597, [bp + 6]
 26:	
 
 fread$6:	; Interrupt 33
@@ -2124,71 +2124,71 @@ fread$7:	; NotCarry 13
 30:		jnc fread$13
 32:	
 
-fread$8:	; Deref £temporary920 -> stream stream 21
-33:		mov a593, [bp + 12]
+fread$8:	; Deref £temporary918 -> stream stream 21
+33:		mov a598, [bp + 12]
 35:	
 
 fread$9:	; Assign errno 14
 36:		mov word [errno], 14
 38:	
 
-fread$10:	; Assign £temporary920 -> stream errno
-39:		mov a594, [errno]
-40:		mov [a593 + 21], a594
+fread$10:	; Assign £temporary918 -> stream errno
+39:		mov a599, [errno]
+40:		mov [a598 + 21], a599
 42:	
 
 fread$11:	; SetReturnValue 0
-43:		mov a595, 0
+43:		mov a600, 0
 45:	
 
 fread$12:	; Return 0
-46:		mov t596, [bp]
+46:		mov t601, [bp]
 47:		mov di, [bp + 4]
 48:		mov bp, [bp + 2]
-49:		jmp t596
+49:		jmp t601
 51:	
 
-fread$13:	; InspectRegister £temporary921 ax
+fread$13:	; InspectRegister £temporary919 ax
 53:	
 
-fread$14:	; SetReturnValue £temporary921
-54:		mov t598, t597
+fread$14:	; SetReturnValue £temporary919
+54:		mov t603, t602
 56:	
 
-fread$15:	; Return £temporary921
-57:		mov t599, [bp]
+fread$15:	; Return £temporary919
+57:		mov t604, [bp]
 58:		mov di, [bp + 4]
 59:		mov bp, [bp + 2]
-60:		jmp t599
+60:		jmp t604
 62:	
 
 fread$16:	; FunctionEnd fread
 1:	
 
-fwrite:	; Deref £temporary923 -> stream stream 2
-2:		mov a600, [bp + 12]
+fwrite:	; Deref £temporary921 -> stream stream 2
+2:		mov a605, [bp + 12]
 4:	
 
-fwrite$1:	; AssignRegister bx £temporary923 -> stream
-5:		mov t601, [a600 + 2]
+fwrite$1:	; AssignRegister bx £temporary921 -> stream
+5:		mov t606, [a605 + 2]
 7:	
 
-fwrite$2:	; SignedMultiply £temporary925 size nobj
-8:		mov a602, [bp + 8]
+fwrite$2:	; SignedMultiply £temporary923 size nobj
+8:		mov a607, [bp + 8]
 10:		xor dx, dx
 11:		imul word [bp + 10]
 17:	
 
-fwrite$3:	; AssignRegister cx £temporary925
-18:		mov t606, t605
+fwrite$3:	; AssignRegister cx £temporary923
+18:		mov t611, t610
 20:	
 
 fwrite$4:	; AssignRegister ah 64
-21:		mov a607, 64
+21:		mov a612, 64
 23:	
 
 fwrite$5:	; AssignRegister dx ptr
-24:		mov a608, [bp + 6]
+24:		mov a613, [bp + 6]
 26:	
 
 fwrite$6:	; Interrupt 33
@@ -2199,79 +2199,79 @@ fwrite$7:	; NotCarry 13
 30:		jnc fwrite$13
 32:	
 
-fwrite$8:	; Deref £temporary929 -> stream stream 21
-33:		mov a609, [bp + 12]
+fwrite$8:	; Deref £temporary927 -> stream stream 21
+33:		mov a614, [bp + 12]
 35:	
 
 fwrite$9:	; Assign errno 13
 36:		mov word [errno], 13
 38:	
 
-fwrite$10:	; Assign £temporary929 -> stream errno
-39:		mov a610, [errno]
-40:		mov [a609 + 21], a610
+fwrite$10:	; Assign £temporary927 -> stream errno
+39:		mov a615, [errno]
+40:		mov [a614 + 21], a615
 42:	
 
 fwrite$11:	; SetReturnValue 0
-43:		mov a611, 0
+43:		mov a616, 0
 45:	
 
 fwrite$12:	; Return 0
-46:		mov t612, [bp]
+46:		mov t617, [bp]
 47:		mov di, [bp + 4]
 48:		mov bp, [bp + 2]
-49:		jmp t612
+49:		jmp t617
 51:	
 
-fwrite$13:	; InspectRegister £temporary930 ax
+fwrite$13:	; InspectRegister £temporary928 ax
 53:	
 
-fwrite$14:	; SetReturnValue £temporary930
-54:		mov t614, t613
+fwrite$14:	; SetReturnValue £temporary928
+54:		mov t619, t618
 56:	
 
-fwrite$15:	; Return £temporary930
-57:		mov t615, [bp]
+fwrite$15:	; Return £temporary928
+57:		mov t620, [bp]
 58:		mov di, [bp + 4]
 59:		mov bp, [bp + 2]
-60:		jmp t615
+60:		jmp t620
 62:	
 
 fwrite$16:	; FunctionEnd fwrite
 1:	
 
-fseek:	; IntegralToIntegral £temporary932 origin
-2:		mov a616, [bp + 10]
-5:		cmp a616, 0
+fseek:	; IntegralToIntegral £temporary930 origin
+2:		mov a621, [bp + 10]
+5:		cmp a621, 0
 6:		jge fseek$1
-7:		neg a616
-9:		neg a616
+7:		neg a621
+9:		neg a621
 11:	
 
-fseek$1:	; AssignRegister al £temporary932
+fseek$1:	; AssignRegister al £temporary930
 13:	
 
 fseek$2:	; AssignRegister ah 66
-14:		mov a617, 66
+14:		mov a622, 66
 16:	
 
-fseek$3:	; Deref £temporary935 -> stream stream 2
-17:		mov a618, [bp + 6]
+fseek$3:	; Deref £temporary933 -> stream stream 2
+17:		mov a623, [bp + 6]
 19:	
 
-fseek$4:	; AssignRegister bx £temporary935 -> stream
-20:		mov t619, [a618 + 2]
+fseek$4:	; AssignRegister bx £temporary933 -> stream
+20:		mov t624, [a623 + 2]
 22:	
 
 fseek$5:	; AssignRegister cx 0
-23:		mov a620, 0
+23:		mov a625, 0
 25:	
 
-fseek$6:	; IntegralToIntegral £temporary938 offset
-26:		mov a621, [bp + 8]
+fseek$6:	; IntegralToIntegral £temporary936 offset
+26:		mov a626, [bp + 8]
 29:	
 
-fseek$7:	; AssignRegister dx £temporary938
+fseek$7:	; AssignRegister dx £temporary936
 31:	
 
 fseek$8:	; Interrupt 33
@@ -2282,49 +2282,49 @@ fseek$9:	; Carry 16
 35:		jc fseek$16
 37:	
 
-fseek$10:	; Deref £temporary941 -> stream stream 23
-38:		mov a622, [bp + 6]
+fseek$10:	; Deref £temporary939 -> stream stream 23
+38:		mov a627, [bp + 6]
 40:	
 
-fseek$11:	; InspectRegister £temporary942 ax
+fseek$11:	; InspectRegister £temporary940 ax
 42:	
 
-fseek$12:	; Assign £temporary941 -> stream £temporary942
-43:		mov [a622 + 23], t623
+fseek$12:	; Assign £temporary939 -> stream £temporary940
+43:		mov [a627 + 23], t628
 45:	
 
-fseek$13:	; Deref £temporary943 -> stream stream 23
-46:		mov a624, [bp + 6]
+fseek$13:	; Deref £temporary941 -> stream stream 23
+46:		mov a629, [bp + 6]
 48:	
 
-fseek$14:	; SetReturnValue £temporary943 -> stream
-49:		mov t625, [a624 + 23]
+fseek$14:	; SetReturnValue £temporary941 -> stream
+49:		mov t630, [a629 + 23]
 51:	
 
-fseek$15:	; Return £temporary943 -> stream
-52:		mov t626, [bp]
+fseek$15:	; Return £temporary941 -> stream
+52:		mov t631, [bp]
 53:		mov di, [bp + 4]
 54:		mov bp, [bp + 2]
-55:		jmp t626
+55:		jmp t631
 57:	
 
-fseek$16:	; Deref £temporary944 -> stream stream 21
-58:		mov a627, [bp + 6]
+fseek$16:	; Deref £temporary942 -> stream stream 21
+58:		mov a632, [bp + 6]
 60:	
 
-fseek$17:	; Assign £temporary944 -> stream 15
-61:		mov word [a627 + 21], 15
+fseek$17:	; Assign £temporary942 -> stream 15
+61:		mov word [a632 + 21], 15
 63:	
 
 fseek$18:	; SetReturnValue -1
-64:		mov a628, -1
+64:		mov a633, -1
 66:	
 
 fseek$19:	; Return -1
-67:		mov t629, [bp]
+67:		mov t634, [bp]
 68:		mov di, [bp + 4]
 69:		mov bp, [bp + 2]
-70:		jmp t629
+70:		jmp t634
 72:	
 
 fseek$20:	; FunctionEnd fseek
@@ -2334,8 +2334,8 @@ ftell:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 3:	
 
 ftell$1:	; Parameter 8 stream 6
-4:		mov a630, [bp + 6]
-5:		mov [bp + 14], a630
+4:		mov a635, [bp + 6]
+5:		mov [bp + 14], a635
 7:	
 
 ftell$2:	; Parameter 8 0 8
@@ -2356,17 +2356,17 @@ ftell$4:	; Call 8 fseek 0
 ftell$5:	; PostCall 8
 21:	
 
-ftell$6:	; GetReturnValue £temporary945
+ftell$6:	; GetReturnValue £temporary943
 23:	
 
-ftell$7:	; SetReturnValue £temporary945
+ftell$7:	; SetReturnValue £temporary943
 25:	
 
-ftell$8:	; Return £temporary945
-26:		mov t632, [bp]
+ftell$8:	; Return £temporary943
+26:		mov t637, [bp]
 27:		mov di, [bp + 4]
 28:		mov bp, [bp + 2]
-29:		jmp t632
+29:		jmp t637
 31:	
 
 ftell$9:	; FunctionEnd ftell
@@ -2376,8 +2376,8 @@ rewind:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 3:	
 
 rewind$1:	; Parameter 8 stream 6
-4:		mov a633, [bp + 6]
-5:		mov [bp + 14], a633
+4:		mov a638, [bp + 6]
+5:		mov [bp + 14], a638
 7:	
 
 rewind$2:	; Parameter 8 0 8
@@ -2399,26 +2399,26 @@ rewind$5:	; PostCall 8
 21:	
 
 rewind$6:	; Return 0
-22:		mov t635, [bp]
+22:		mov t640, [bp]
 23:		mov di, [bp + 4]
 24:		mov bp, [bp + 2]
-25:		jmp t635
+25:		jmp t640
 27:	
 
 rewind$7:	; FunctionEnd rewind
 1:	
 
-fgetpos:	; Deref £temporary954 -> ptr ptr 0
-2:		mov a636, [bp + 8]
+fgetpos:	; Deref £temporary952 -> ptr ptr 0
+2:		mov a641, [bp + 8]
 4:	
 
 fgetpos$1:	; CallHeader 10 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-5:		mov [bp + 10], a636
+5:		mov [bp + 10], a641
 7:	
 
 fgetpos$2:	; Parameter 10 stream 6
-8:		mov a637, [bp + 6]
-9:		mov [bp + 18], a637
+8:		mov a642, [bp + 6]
+9:		mov [bp + 18], a642
 11:	
 
 fgetpos$3:	; Call 10 ftell 0
@@ -2429,28 +2429,28 @@ fgetpos$3:	; Call 10 ftell 0
 17:	
 
 fgetpos$4:	; PostCall 10
-18:		mov a636, [bp + 10]
+18:		mov a641, [bp + 10]
 20:	
 
-fgetpos$5:	; GetReturnValue £temporary955
+fgetpos$5:	; GetReturnValue £temporary953
 22:	
 
-fgetpos$6:	; IntegralToIntegral £temporary956 £temporary955
+fgetpos$6:	; IntegralToIntegral £temporary954 £temporary953
 25:	
 
-fgetpos$7:	; Assign £temporary954 -> ptr £temporary956
-26:		mov [a636], type638
+fgetpos$7:	; Assign £temporary952 -> ptr £temporary954
+26:		mov [a641], type643
 28:	
 
 fgetpos$8:	; SetReturnValue 0
-29:		mov a639, 0
+29:		mov a644, 0
 31:	
 
 fgetpos$9:	; Return 0
-32:		mov t640, [bp]
+32:		mov t645, [bp]
 33:		mov di, [bp + 4]
 34:		mov bp, [bp + 2]
-35:		jmp t640
+35:		jmp t645
 37:	
 
 fgetpos$10:	; FunctionEnd fgetpos
@@ -2460,17 +2460,17 @@ fsetpos:	; CallHeader 10 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 
 3:	
 
 fsetpos$1:	; Parameter 10 stream 6
-4:		mov a641, [bp + 6]
-5:		mov [bp + 16], a641
+4:		mov a646, [bp + 6]
+5:		mov [bp + 16], a646
 7:	
 
-fsetpos$2:	; Deref £temporary958 -> ptr ptr 0
-8:		mov a642, [bp + 8]
+fsetpos$2:	; Deref £temporary956 -> ptr ptr 0
+8:		mov a647, [bp + 8]
 10:	
 
-fsetpos$3:	; Parameter 10 £temporary958 -> ptr 8
-11:		mov t643, [a642]
-12:		mov [bp + 18], t643
+fsetpos$3:	; Parameter 10 £temporary956 -> ptr 8
+11:		mov t648, [a647]
+12:		mov [bp + 18], t648
 14:	
 
 fsetpos$4:	; Parameter 10 0 10
@@ -2487,43 +2487,43 @@ fsetpos$5:	; Call 10 fseek 0
 fsetpos$6:	; PostCall 10
 25:	
 
-fsetpos$7:	; GetReturnValue £temporary959
+fsetpos$7:	; GetReturnValue £temporary957
 27:	
 
-fsetpos$8:	; IntegralToIntegral £temporary960 £temporary959
+fsetpos$8:	; IntegralToIntegral £temporary958 £temporary957
 30:	
 
-fsetpos$9:	; SetReturnValue £temporary960
+fsetpos$9:	; SetReturnValue £temporary958
 32:	
 
-fsetpos$10:	; Return £temporary960
-33:		mov t645, [bp]
+fsetpos$10:	; Return £temporary958
+33:		mov t650, [bp]
 34:		mov di, [bp + 4]
 35:		mov bp, [bp + 2]
-36:		jmp t645
+36:		jmp t650
 38:	
 
 fsetpos$11:	; FunctionEnd fsetpos
 1:	
 
-clearerr:	; Deref £temporary964 -> stream stream 21
-2:		mov a646, [bp + 6]
+clearerr:	; Deref £temporary962 -> stream stream 21
+2:		mov a651, [bp + 6]
 4:	
 
 clearerr$1:	; Assign errno 0
 5:		mov word [errno], 0
 7:	
 
-clearerr$2:	; Assign £temporary964 -> stream errno
-8:		mov a647, [errno]
-9:		mov [a646 + 21], a647
+clearerr$2:	; Assign £temporary962 -> stream errno
+8:		mov a652, [errno]
+9:		mov [a651 + 21], a652
 11:	
 
 clearerr$3:	; Return 0
-12:		mov t648, [bp]
+12:		mov t653, [bp]
 13:		mov di, [bp + 4]
 14:		mov bp, [bp + 2]
-15:		jmp t648
+15:		jmp t653
 17:	
 
 clearerr$4:	; FunctionEnd clearerr
@@ -2533,8 +2533,8 @@ feof:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 3:	
 
 feof$1:	; Parameter 8 stream 6
-4:		mov a649, [bp + 6]
-5:		mov [bp + 14], a649
+4:		mov a654, [bp + 6]
+5:		mov [bp + 14], a654
 7:	
 
 feof$2:	; Parameter 8 0 8
@@ -2555,23 +2555,23 @@ feof$4:	; Call 8 fseek 0
 feof$5:	; PostCall 8
 21:	
 
-feof$6:	; GetReturnValue £temporary965
+feof$6:	; GetReturnValue £temporary963
 23:	
 
-feof$7:	; IntegralToIntegral £temporary966 £temporary965
-25:		and type650, 65535
+feof$7:	; IntegralToIntegral £temporary964 £temporary963
+25:		and type655, 65535
 27:	
 
-feof$8:	; Assign currPosition £temporary966
-28:		mov [bp + 8], type650
+feof$8:	; Assign currPosition £temporary964
+28:		mov [bp + 8], type655
 30:	
 
 feof$9:	; CallHeader 12 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 32:	
 
 feof$10:	; Parameter 12 stream 6
-33:		mov a651, [bp + 6]
-34:		mov [bp + 18], a651
+33:		mov a656, [bp + 6]
+34:		mov [bp + 18], a656
 36:	
 
 feof$11:	; Parameter 12 0 8
@@ -2592,31 +2592,31 @@ feof$13:	; Call 12 fseek 0
 feof$14:	; PostCall 12
 50:	
 
-feof$15:	; GetReturnValue £temporary967
+feof$15:	; GetReturnValue £temporary965
 52:	
 
-feof$16:	; IntegralToIntegral £temporary968 £temporary967
-54:		and type652, 65535
+feof$16:	; IntegralToIntegral £temporary966 £temporary965
+54:		and type657, 65535
 56:	
 
-feof$17:	; Assign lastPosition £temporary968
-57:		mov [bp + 12], type652
+feof$17:	; Assign lastPosition £temporary966
+57:		mov [bp + 12], type657
 59:	
 
 feof$18:	; CallHeader 16 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 61:	
 
 feof$19:	; Parameter 16 stream 6
-62:		mov a653, [bp + 6]
-63:		mov [bp + 22], a653
+62:		mov a658, [bp + 6]
+63:		mov [bp + 22], a658
 65:	
 
-feof$20:	; IntegralToIntegral £temporary969 currPosition
-66:		mov a654, [bp + 8]
+feof$20:	; IntegralToIntegral £temporary967 currPosition
+66:		mov a659, [bp + 8]
 69:	
 
-feof$21:	; Parameter 16 £temporary969 8
-70:		mov [bp + 24], a654
+feof$21:	; Parameter 16 £temporary967 8
+70:		mov [bp + 24], a659
 72:	
 
 feof$22:	; Parameter 16 0 10
@@ -2634,54 +2634,54 @@ feof$24:	; PostCall 16
 83:	
 
 feof$25:	; NotEqual 28 currPosition lastPosition
-84:		mov a656, [bp + 12]
-85:		cmp [bp + 8], a656
+84:		mov a661, [bp + 12]
+85:		cmp [bp + 8], a661
 86:		jne feof$28
 88:	
 
-feof$26:	; Assign £temporary972 1
-89:		mov t657, 1
+feof$26:	; Assign £temporary970 1
+89:		mov t662, 1
 91:	
 
 feof$27:	; Goto 29
 92:		jmp feof$29
 94:	
 
-feof$28:	; Assign £temporary972 0
-95:		mov t658, 0
+feof$28:	; Assign £temporary970 0
+95:		mov t663, 0
 97:	
 
-feof$29:	; Assign endOfFile £temporary972
-98:		mov [bp + 16], t658
+feof$29:	; Assign endOfFile £temporary970
+98:		mov [bp + 16], t663
 100:	
 
 feof$30:	; SetReturnValue endOfFile
-101:		mov a659, [bp + 16]
+101:		mov a664, [bp + 16]
 103:	
 
 feof$31:	; Return endOfFile
-104:		mov t660, [bp]
+104:		mov t665, [bp]
 105:		mov di, [bp + 4]
 106:		mov bp, [bp + 2]
-107:		jmp t660
+107:		jmp t665
 109:	
 
 feof$32:	; FunctionEnd feof
 1:	
 
-ferror:	; Deref £temporary982 -> stream stream 21
-2:		mov a661, [bp + 6]
+ferror:	; Deref £temporary980 -> stream stream 21
+2:		mov a666, [bp + 6]
 4:	
 
-ferror$1:	; SetReturnValue £temporary982 -> stream
-5:		mov t662, [a661 + 21]
+ferror$1:	; SetReturnValue £temporary980 -> stream
+5:		mov t667, [a666 + 21]
 7:	
 
-ferror$2:	; Return £temporary982 -> stream
-8:		mov t663, [bp]
+ferror$2:	; Return £temporary980 -> stream
+8:		mov t668, [bp]
 9:		mov di, [bp + 4]
 10:		mov bp, [bp + 2]
-11:		jmp t663
+11:		jmp t668
 13:	
 
 ferror$3:	; FunctionEnd ferror
@@ -2691,20 +2691,20 @@ perror:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 3:	
 
 perror$1:	; Parameter 8 string_25s3A2025s2E0A# 6
-4:		mov word [bp + 14], @2309$string_25s3A2025s2E0A#
+4:		mov word [bp + 14], @2290$string_25s3A2025s2E0A#
 6:	
 
 perror$2:	; Parameter 8 s 8
-7:		mov a664, [bp + 6]
-8:		mov [bp + 16], a664
+7:		mov a669, [bp + 6]
+8:		mov [bp + 16], a669
 10:	
 
 perror$3:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 12:	
 
 perror$4:	; Parameter 8 errno 16
-13:		mov a665, [errno]
-14:		mov [bp + 24], a665
+13:		mov a670, [errno]
+14:		mov [bp + 24], a670
 16:	
 
 perror$5:	; Call 8 strerror 10
@@ -2717,11 +2717,11 @@ perror$5:	; Call 8 strerror 10
 perror$6:	; PostCall 8
 24:	
 
-perror$7:	; GetReturnValue £temporary983
+perror$7:	; GetReturnValue £temporary981
 26:	
 
-perror$8:	; Parameter 8 £temporary983 10
-27:		mov [bp + 18], type666
+perror$8:	; Parameter 8 £temporary981 10
+27:		mov [bp + 18], type671
 29:	
 
 perror$9:	; Call 8 printf 0
@@ -2737,10 +2737,10 @@ perror$10:	; PostCall 8
 39:	
 
 perror$11:	; Return 0
-40:		mov t668, [bp]
+40:		mov t673, [bp]
 41:		mov di, [bp + 4]
 42:		mov bp, [bp + 2]
-43:		jmp t668
+43:		jmp t673
 45:	
 
 perror$12:	; FunctionEnd perror
