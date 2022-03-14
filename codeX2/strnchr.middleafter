@@ -1,0 +1,15 @@
+0: IntegralToIntegral £temporary1163 i
+1: Assign c £temporary1163
+2: Assign index integral2$0#
+3: GreaterThanEqual 13 index size
+4: Add £temporary1167 text index
+5: Dereference £temporary1168 £temporary1167 0
+6: NotEqual 11 £temporary1168 c
+7: Add £temporary1171 text index
+8: Dereference £temporary1172 £temporary1171 0
+9: Address £temporary1173 £temporary1172
+10: Return £temporary1173
+11: Add index index integral2$1#
+12: Jump 3
+13: Return integral2$0#
+14: FunctionEnd strnchr

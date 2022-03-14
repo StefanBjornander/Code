@@ -1,0 +1,107 @@
+0: PreCall 24
+1: Parameter 48 string string_3C258i3E203C252B8i3E203C25208i3E203C252D8i3E203C252B2D8i3E203C252D2B8i3E203C25202D8i3E203C252D208i3E0A#
+2: Parameter 56 signed int integral4$123#
+3: Parameter 60 signed int integral4$123#
+4: Parameter 64 signed int integral4$123#
+5: Parameter 68 signed int integral4$123#
+6: Parameter 72 signed int integral4$123#
+7: Parameter 76 signed int integral4$123#
+8: Parameter 80 signed int integral4$123#
+9: Parameter 84 signed int integral4$123#
+10: Call 24 printf 32
+11: PostCall 24
+12: PreCall 24
+13: Parameter 48 string string_3C258i3E203C252B8i3E203C25208i3E203C252D8i3E203C252B2D8i3E203C252D2B8i3E203C25202D8i3E203C252D208i3E0A#
+14: Parameter 56 signed int integral4$minus123#
+15: Parameter 60 signed int integral4$minus123#
+16: Parameter 64 signed int integral4$minus123#
+17: Parameter 68 signed int integral4$minus123#
+18: Parameter 72 signed int integral4$minus123#
+19: Parameter 76 signed int integral4$minus123#
+20: Parameter 80 signed int integral4$minus123#
+21: Parameter 84 signed int integral4$minus123#
+22: Call 24 printf 32
+23: PostCall 24
+24: PreCall 24
+25: Parameter 48 string string_3C2508i3E203C252B08i3E203C252008i3E203C250208i3E0A#
+26: Parameter 56 signed int integral4$123#
+27: Parameter 60 signed int integral4$123#
+28: Parameter 64 signed int integral4$123#
+29: Parameter 68 signed int integral4$123#
+30: Call 24 printf 16
+31: PostCall 24
+32: PreCall 24
+33: Parameter 48 string string_3C2508i3E203C252B08i3E203C252008i3E203C250208i3E0A#
+34: Parameter 56 signed int integral4$minus123#
+35: Parameter 60 signed int integral4$minus123#
+36: Parameter 64 signed int integral4$minus123#
+37: Parameter 68 signed int integral4$minus123#
+38: Call 24 printf 16
+39: PostCall 24
+40: PreCall 24
+41: Parameter 48 string string_3C25122E3f3E203C252B122E3f3E203C2520122E3f3E203C252D122E3f3E203C252B2D122E3f3E203C252D2B122E3f3E203C25202D122E3f3E203C252D20122E3f3E0A#
+42: PushFloat floating8$123.456#
+43: Parameter 56 double floating8$123.456#
+44: PushFloat floating8$123.456#
+45: Parameter 64 double floating8$123.456#
+46: PushFloat floating8$123.456#
+47: Parameter 72 double floating8$123.456#
+48: PushFloat floating8$123.456#
+49: Parameter 80 double floating8$123.456#
+50: PushFloat floating8$123.456#
+51: Parameter 88 double floating8$123.456#
+52: PushFloat floating8$123.456#
+53: Parameter 96 double floating8$123.456#
+54: PushFloat floating8$123.456#
+55: Parameter 104 double floating8$123.456#
+56: PushFloat floating8$123.456#
+57: Parameter 112 double floating8$123.456#
+58: Call 24 printf 64
+59: PostCall 24
+60: PreCall 24
+61: Parameter 48 string string_3C25122E3f3E203C252B122E3f3E203C2520122E3f3E203C252D122E3f3E203C252B2D122E3f3E203C252D2B122E3f3E203C25202D122E3f3E203C252D20122E3f3E0A#
+62: PushFloat floating8$minus123.456#
+63: Parameter 56 double floating8$minus123.456#
+64: PushFloat floating8$minus123.456#
+65: Parameter 64 double floating8$minus123.456#
+66: PushFloat floating8$minus123.456#
+67: Parameter 72 double floating8$minus123.456#
+68: PushFloat floating8$minus123.456#
+69: Parameter 80 double floating8$minus123.456#
+70: PushFloat floating8$minus123.456#
+71: Parameter 88 double floating8$minus123.456#
+72: PushFloat floating8$minus123.456#
+73: Parameter 96 double floating8$minus123.456#
+74: PushFloat floating8$minus123.456#
+75: Parameter 104 double floating8$minus123.456#
+76: PushFloat floating8$minus123.456#
+77: Parameter 112 double floating8$minus123.456#
+78: Call 24 printf 64
+79: PostCall 24
+80: PreCall 24
+81: Parameter 48 string string_3C250122E3f3E203C252B0122E3f3E203C25200122E3f3E203C25020122E3f3E0A#
+82: PushFloat floating8$123.456#
+83: Parameter 56 double floating8$123.456#
+84: PushFloat floating8$123.456#
+85: Parameter 64 double floating8$123.456#
+86: PushFloat floating8$123.456#
+87: Parameter 72 double floating8$123.456#
+88: PushFloat floating8$123.456#
+89: Parameter 80 double floating8$123.456#
+90: Call 24 printf 32
+91: PostCall 24
+92: PreCall 24
+93: Parameter 48 string string_3C250122E3f3E203C252B0122E3f3E203C25200122E3f3E203C25020122E3f3E0A#
+94: PushFloat floating8$minus123.456#
+95: Parameter 56 double floating8$minus123.456#
+96: PushFloat floating8$minus123.456#
+97: Parameter 64 double floating8$minus123.456#
+98: PushFloat floating8$minus123.456#
+99: Parameter 72 double floating8$minus123.456#
+100: PushFloat floating8$minus123.456#
+101: Parameter 80 double floating8$minus123.456#
+102: Call 24 printf 32
+103: PostCall 24
+104: Empty
+105: Return
+106: FunctionEnd print_test

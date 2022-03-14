@@ -1,0 +1,56 @@
+0: Assign index integral4$0#
+1: Empty
+2: Jump < Multiply £temporary3518 index integral4$1#>
+3: Multiply £temporary3518 index integral4$1#
+4: IntegralToIntegral £temporary3519 £temporary3518
+5: Add £temporary3520 left £temporary3519
+6: Dereference £temporary3521 £temporary3520 0
+7: Equal < Multiply £temporary3523 index integral4$1#> £temporary3521 integral1$0#
+8: Jump < Empty>
+9: Multiply £temporary3523 index integral4$1#
+10: IntegralToIntegral £temporary3524 £temporary3523
+11: Add £temporary3525 right £temporary3524
+12: Dereference £temporary3526 £temporary3525 0
+13: Equal < Empty> £temporary3526 integral1$0#
+14: Jump < Empty>
+15: Empty
+16: Return integral4$0#
+17: Jump < Empty>
+18: Empty
+19: Multiply £temporary3529 index integral4$1#
+20: IntegralToIntegral £temporary3530 £temporary3529
+21: Add £temporary3531 left £temporary3530
+22: Dereference £temporary3532 £temporary3531 0
+23: Multiply £temporary3533 index integral4$1#
+24: IntegralToIntegral £temporary3534 £temporary3533
+25: Add £temporary3535 right £temporary3534
+26: Dereference £temporary3536 £temporary3535 0
+27: LessThan < Empty> £temporary3532 £temporary3536
+28: Jump < Empty>
+29: Empty
+30: Return integral4$minus1#
+31: Jump < Empty>
+32: Empty
+33: Multiply £temporary3538 index integral4$1#
+34: IntegralToIntegral £temporary3539 £temporary3538
+35: Add £temporary3540 left £temporary3539
+36: Dereference £temporary3541 £temporary3540 0
+37: Multiply £temporary3542 index integral4$1#
+38: IntegralToIntegral £temporary3543 £temporary3542
+39: Add £temporary3544 right £temporary3543
+40: Dereference £temporary3545 £temporary3544 0
+41: GreaterThan < Empty> £temporary3541 £temporary3545
+42: Jump < Empty>
+43: Empty
+44: Return integral4$1#
+45: Jump < Empty>
+46: Empty
+47: Empty
+48: Empty
+49: Empty
+50: Empty
+51: Add £temporary3517 index integral4$1#
+52: Assign index £temporary3517
+53: Jump < Empty>
+54: Empty
+55: FunctionEnd strcmp

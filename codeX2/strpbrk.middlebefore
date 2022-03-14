@@ -1,0 +1,38 @@
+0: Assign index integral4$0#
+1: Empty
+2: Multiply £temporary3659 index integral4$1#
+3: IntegralToIntegral £temporary3660 £temporary3659
+4: Add £temporary3661 mainString £temporary3660
+5: Dereference £temporary3662 £temporary3661 0
+6: NotEqual < PreCall 44> £temporary3662 integral1$0#
+7: Jump < Return integral8$0#>
+8: PreCall 44
+9: Parameter 68 pointer charSet
+10: Multiply £temporary3665 index integral4$1#
+11: IntegralToIntegral £temporary3666 £temporary3665
+12: Add £temporary3667 mainString £temporary3666
+13: Dereference £temporary3668 £temporary3667 0
+14: IntegralToIntegral £temporary3669 £temporary3668
+15: Parameter 76 signed int £temporary3669
+16: Call 44 strchr 0
+17: PostCall 44
+18: GetReturnValue £temporary3670
+19: NotEqual < Empty> £temporary3670 integral8$0#
+20: Jump < Empty>
+21: Empty
+22: Multiply £temporary3672 index integral4$1#
+23: IntegralToIntegral £temporary3673 £temporary3672
+24: Add £temporary3674 mainString £temporary3673
+25: Dereference £temporary3675 £temporary3674 0
+26: Address £temporary3676 £temporary3675
+27: Return £temporary3676
+28: Jump < Empty>
+29: Empty
+30: Empty
+31: Empty
+32: Add £temporary3664 index integral4$1#
+33: Assign index £temporary3664
+34: Jump < Empty>
+35: Return integral8$0#
+36: Empty
+37: FunctionEnd strpbrk

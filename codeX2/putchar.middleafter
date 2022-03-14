@@ -1,0 +1,10 @@
+0: Assign g_outStatus integral4$0#
+1: IntegralToIntegral £temporary1778 stdout
+2: Assign g_outDevice £temporary1778
+3: PreCall 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+4: IntegralToIntegral £temporary1779 i
+5: Parameter 52 signed char £temporary1779
+6: Call 28 printChar 0
+7: PostCall 28
+8: Return integral4$1#
+9: FunctionEnd putchar

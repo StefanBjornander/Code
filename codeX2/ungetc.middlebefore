@@ -1,0 +1,14 @@
+0: Dereference £temporary1040 stream 0
+1: IntegralToIntegral £temporary1041 £temporary1040.ungetc
+2: NotEqual < Empty> £temporary1041 integral2$minus1#
+3: Jump < Empty>
+4: Empty
+5: Dereference £temporary1043 stream 0
+6: IntegralToIntegral £temporary1044 c
+7: Assign £temporary1043.ungetc £temporary1044
+8: Jump < Empty>
+9: Empty
+10: Empty
+11: Return c
+12: Empty
+13: FunctionEnd ungetc

@@ -1,0 +1,49 @@
+0: LessThan < Empty> longValue integral8$0#
+1: Jump < Empty>
+2: Empty
+3: Minus £temporary1850 longValue
+4: Assign longValue £temporary1850
+5: PreCall 40
+6: Parameter 64 signed char integral1$45#
+7: Call 40 printChar 0
+8: PostCall 40
+9: Jump < Empty>
+10: Empty
+11: NotEqual < Empty> space integral4$0#
+12: Jump < Empty>
+13: Empty
+14: PreCall 40
+15: Parameter 64 signed char integral1$32#
+16: Call 40 printChar 0
+17: PostCall 40
+18: Jump < Empty>
+19: Empty
+20: NotEqual < Empty> plus integral4$0#
+21: Jump < Empty>
+22: Empty
+23: PreCall 40
+24: Parameter 64 signed char integral1$43#
+25: Call 40 printChar 0
+26: PostCall 40
+27: Jump < Empty>
+28: Empty
+29: Empty
+30: Empty
+31: Empty
+32: Equal < Empty> longValue integral8$0#
+33: Jump < Empty>
+34: Empty
+35: PreCall 40
+36: Parameter 64 signed char integral1$48#
+37: Call 40 printChar 0
+38: PostCall 40
+39: Jump < Empty>
+40: Empty
+41: PreCall 40
+42: Parameter 64 signed long int longValue
+43: Call 40 printLongIntRec 0
+44: PostCall 40
+45: Empty
+46: Empty
+47: Return
+48: FunctionEnd printLongInt

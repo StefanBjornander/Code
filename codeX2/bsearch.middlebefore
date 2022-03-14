@@ -1,0 +1,101 @@
+0: Assign firstIndex integral4$0#
+1: Subtract £temporary2908 listSize integral4$1#
+2: Assign lastIndex £temporary2908
+3: Equal < Empty> listSize integral4$0#
+4: Jump < Empty>
+5: Empty
+6: Return integral8$0#
+7: Jump < Empty>
+8: Empty
+9: Empty
+10: Empty
+11: Jump < IntegralToIntegral £temporary2912 valueList>
+12: IntegralToIntegral £temporary2912 valueList
+13: Multiply £temporary2913 firstIndex valueSize
+14: Multiply £temporary2914 £temporary2913 integral4$1#
+15: IntegralToIntegral £temporary2915 £temporary2914
+16: Add £temporary2916 £temporary2912 £temporary2915
+17: Assign firstValuePtr £temporary2916
+18: PreCall 72
+19: Parameter 96 pointer keyPtr
+20: Parameter 104 pointer firstValuePtr
+21: Call 72 compare 0
+22: PostCall 72
+23: GetReturnValue £temporary2917
+24: Assign firstCompare £temporary2917
+25: LessThan < Empty> firstCompare integral4$0#
+26: Jump < Empty>
+27: Empty
+28: Return integral8$0#
+29: Jump < Empty>
+30: Empty
+31: Equal < Empty> firstCompare integral4$0#
+32: Jump < Empty>
+33: Empty
+34: Return firstValuePtr
+35: Jump < Empty>
+36: Empty
+37: Empty
+38: Empty
+39: IntegralToIntegral £temporary2924 valueList
+40: Multiply £temporary2925 lastIndex valueSize
+41: Multiply £temporary2926 £temporary2925 integral4$1#
+42: IntegralToIntegral £temporary2927 £temporary2926
+43: Add £temporary2928 £temporary2924 £temporary2927
+44: Assign lastValuePtr £temporary2928
+45: PreCall 72
+46: Parameter 96 pointer keyPtr
+47: Parameter 104 pointer lastValuePtr
+48: Call 72 compare 0
+49: PostCall 72
+50: GetReturnValue £temporary2929
+51: Assign lastCompare £temporary2929
+52: GreaterThan < Empty> lastCompare integral4$0#
+53: Jump < Empty>
+54: Empty
+55: Return integral8$0#
+56: Jump < Empty>
+57: Empty
+58: Equal < Empty> lastCompare integral4$0#
+59: Jump < Empty>
+60: Empty
+61: Return lastValuePtr
+62: Jump < Empty>
+63: Empty
+64: Empty
+65: Empty
+66: Add £temporary2936 firstIndex lastIndex
+67: Divide £temporary2937 £temporary2936 integral4$2#
+68: Assign middleIndex £temporary2937
+69: IntegralToIntegral £temporary2938 valueList
+70: Multiply £temporary2939 middleIndex valueSize
+71: Multiply £temporary2940 £temporary2939 integral4$1#
+72: IntegralToIntegral £temporary2941 £temporary2940
+73: Add £temporary2942 £temporary2938 £temporary2941
+74: Assign middleValuePtr £temporary2942
+75: PreCall 76
+76: Parameter 100 pointer keyPtr
+77: Parameter 108 pointer middleValuePtr
+78: Call 76 compare 0
+79: PostCall 76
+80: GetReturnValue £temporary2943
+81: Assign middleCompare £temporary2943
+82: LessThan < Empty> middleCompare integral4$0#
+83: Jump < Empty>
+84: Empty
+85: Assign lastIndex middleIndex
+86: Jump < Empty>
+87: Empty
+88: GreaterThan < Empty> middleCompare integral4$0#
+89: Jump < Empty>
+90: Empty
+91: Assign firstIndex middleIndex
+92: Jump < Empty>
+93: Empty
+94: Return middleValuePtr
+95: Empty
+96: Empty
+97: Empty
+98: Jump < Empty>
+99: Empty
+100: FunctionEnd bsearch

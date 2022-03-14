@@ -1,0 +1,10 @@
+0: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 56 string string_div_t20quot2025i20rem2025i0A#
+2: Parameter 64 signed int d.quot
+3: Parameter 68 signed int d.rem
+4: Call 32 printf 8
+5: PostCall 32
+6: Add d.quot d.quot integral4$1#
+7: Add d.rem d.rem integral4$1#
+8: Return d
+9: FunctionEnd print_div

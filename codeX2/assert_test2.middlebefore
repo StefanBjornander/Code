@@ -1,0 +1,21 @@
+0: NotEqual < Empty> n integral4$7#
+1: Jump < Empty>
+2: Empty
+3: PreCall 28
+4: Parameter 52 pointer stderr
+5: Parameter 60 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+6: Parameter 68 string string_n20213D207#
+7: Parameter 76 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CAssertTest2Ec#
+8: Parameter 84 signed int integral4$21#
+9: Call 28 fprintf 20
+10: PostCall 28
+11: PreCall 28
+12: Call 28 abort 0
+13: PostCall 28
+14: Jump < Empty>
+15: Empty
+16: Empty
+17: Empty
+18: Empty
+19: Return
+20: FunctionEnd assert_test2

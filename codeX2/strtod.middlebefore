@@ -1,0 +1,29 @@
+0: Assign chars integral4$0#
+1: PushFloat floating8$0#
+2: PopFloat value
+3: PreCall 52
+4: Parameter 76 pointer s
+5: Parameter 84 string string_25lf25n#
+6: PushFloat value
+7: PopEmpty
+8: Address £temporary2334 value
+9: Parameter 92 pointer £temporary2334
+10: Address £temporary2335 chars
+11: Parameter 100 pointer £temporary2335
+12: Call 52 sscanf 16
+13: PostCall 52
+14: NotEqual < Empty> endp integral8$0#
+15: Jump < Empty>
+16: Empty
+17: Dereference £temporary2338 endp 0
+18: Multiply £temporary2339 chars integral4$1#
+19: IntegralToIntegral £temporary2340 £temporary2339
+20: Add £temporary2341 s £temporary2340
+21: Assign £temporary2338 £temporary2341
+22: Jump < Empty>
+23: Empty
+24: Empty
+25: PushFloat value
+26: Return value
+27: Empty
+28: FunctionEnd strtod

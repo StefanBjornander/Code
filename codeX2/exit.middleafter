@@ -1,0 +1,22 @@
+0: Assign index integral4$255#
+1: LessThan 16 index integral4$0#
+2: Multiply £temporary2972 index integral4$8#
+3: IntegralToIntegral £temporary2973 £temporary2972
+4: Add £temporary2974 g_funcArray £temporary2973
+5: Dereference £temporary2975 £temporary2974 0
+6: Equal 14 £temporary2975 integral8$0#
+7: Multiply £temporary2977 index integral4$8#
+8: IntegralToIntegral £temporary2978 £temporary2977
+9: Add £temporary2979 g_funcArray £temporary2978
+10: Dereference £temporary2980 £temporary2979 0
+11: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+12: Call 32 £temporary2980 0
+13: PostCall 32
+14: Subtract index index integral4$1#
+15: Jump 1
+16: AssignRegister rax integral8$60#
+17: IntegralToIntegral £temporary2986 status
+18: AssignRegister rdi £temporary2986
+19: SysCall
+20: Return
+21: FunctionEnd exit

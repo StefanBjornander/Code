@@ -1,0 +1,10 @@
+0: PushFloat x
+1: PushFloat floating8$0#
+2: GreaterThanEqual 7 x floating8$0#
+3: PushFloat x
+4: Minus £temporary760 x
+5: DecreaseStack
+6: Jump 8
+7: PushFloat x
+8: Return £temporary761
+9: FunctionEnd fabs

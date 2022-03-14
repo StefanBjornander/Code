@@ -1,0 +1,40 @@
+0: Dereference £temporary3260 tp 0
+1: Subtract £temporary3261 £temporary3260.tm_year integral4$69#
+2: Divide £temporary3262 £temporary3261 integral4$4#
+3: IntegralToIntegral £temporary3263 £temporary3262
+4: Assign leapDays £temporary3263
+5: Dereference £temporary3264 tp 0
+6: Subtract £temporary3265 £temporary3264.tm_year integral4$70#
+7: Multiply £temporary3266 integral4$365# £temporary3265
+8: IntegralToIntegral £temporary3268 £temporary3266
+9: Add £temporary3267 £temporary3268 leapDays
+10: IntegralToIntegral £temporary3269 £temporary3267
+11: Assign totalDays £temporary3269
+12: LessThan < Empty> totalDays integral4$3#
+13: Jump < Empty>
+14: Empty
+15: Add £temporary3271 totalDays integral4$4#
+16: Assign weekDayJanuaryFirst £temporary3271
+17: Jump < Empty>
+18: Empty
+19: Subtract £temporary3272 totalDays integral4$3#
+20: Modulo £temporary3273 £temporary3272 integral4$7#
+21: Assign weekDayJanuaryFirst £temporary3273
+22: Empty
+23: Subtract £temporary3276 integral4$7# weekDayJanuaryFirst
+24: Assign firstWeekSize £temporary3276
+25: Dereference £temporary3277 tp 0
+26: LessThan < Empty> £temporary3277.tm_yday firstWeekSize
+27: Jump < Empty>
+28: Empty
+29: Return integral4$0#
+30: Jump < Empty>
+31: Empty
+32: Dereference £temporary3279 tp 0
+33: Subtract £temporary3280 £temporary3279.tm_yday firstWeekSize
+34: Divide £temporary3281 £temporary3280 integral4$7#
+35: Add £temporary3282 £temporary3281 integral4$1#
+36: Return £temporary3282
+37: Empty
+38: Empty
+39: FunctionEnd getWeekNumber

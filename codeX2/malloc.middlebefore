@@ -1,0 +1,123 @@
+0: IntegralToIntegral £temporary25 memorySize
+1: Add £temporary26 integral2$4# £temporary25
+2: Assign newBlockSize £temporary26
+3: Assign minGap integral2$0#
+4: Assign lastAddress integral2$65528#
+5: Assign minBlockPtr integral2$0#
+6: Assign minPrevBlockPtr integral2$0#
+7: Assign prevBlockPtr integral2$0#
+8: Assign currBlockPtr g_firstBlockPtr
+9: GreaterThanEqual < Empty> memorySize integral2$0#
+10: Jump < Empty>
+11: Empty
+12: PreCall 22
+13: Parameter 28 pointer stderr
+14: Parameter 30 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+15: Parameter 32 string string_memorySize203E3D200#
+16: Parameter 34 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
+17: Parameter 36 signed int integral2$41#
+18: Call 22 fprintf 6
+19: PostCall 22
+20: PreCall 22
+21: Call 22 abort 0
+22: PostCall 22
+23: Jump < Empty>
+24: Empty
+25: Empty
+26: Empty
+27: Equal < Empty> memorySize integral2$0#
+28: Jump < Empty>
+29: Empty
+30: Return integral2$0#
+31: Jump < Empty>
+32: Empty
+33: Empty
+34: Empty
+35: NotEqual < IntegralToIntegral £temporary37 currBlockPtr> currBlockPtr integral2$0#
+36: Jump < NotEqual < Empty> minBlockPtr integral2$0#>
+37: IntegralToIntegral £temporary37 currBlockPtr
+38: Assign currAddress £temporary37
+39: Dereference £temporary38 currBlockPtr 0
+40: Add £temporary39 currAddress £temporary38.size
+41: Add £temporary40 £temporary39 integral2$4#
+42: Subtract £temporary41 lastAddress £temporary40
+43: Assign currGap £temporary41
+44: LessThanEqual < Equal < Empty> minGap integral2$0#> newBlockSize currGap
+45: Jump < Empty>
+46: Equal < Empty> minGap integral2$0#
+47: Jump < LessThan < Empty> currGap minGap>
+48: LessThan < Empty> currGap minGap
+49: Jump < Empty>
+50: Empty
+51: Assign minGap currGap
+52: Assign minBlockPtr currBlockPtr
+53: Assign minPrevBlockPtr prevBlockPtr
+54: Jump < Empty>
+55: Empty
+56: Empty
+57: Assign lastAddress currAddress
+58: Assign prevBlockPtr currBlockPtr
+59: Dereference £temporary49 currBlockPtr 0
+60: Assign currBlockPtr £temporary49.next
+61: Empty
+62: Jump < Empty>
+63: NotEqual < Empty> minBlockPtr integral2$0#
+64: Jump < Empty>
+65: Empty
+66: IntegralToIntegral £temporary51 minBlockPtr
+67: Dereference £temporary52 minBlockPtr 0
+68: Add £temporary53 £temporary51 £temporary52.size
+69: Add £temporary54 £temporary53 integral2$4#
+70: Assign newAddress £temporary54
+71: IntegralToIntegral £temporary55 newAddress
+72: Assign newBlockPtr £temporary55
+73: Dereference £temporary56 newBlockPtr 0
+74: Assign £temporary56.size memorySize
+75: Dereference £temporary57 newBlockPtr 0
+76: Assign £temporary57.next minBlockPtr
+77: NotEqual < Empty> minPrevBlockPtr integral2$0#
+78: Jump < Empty>
+79: Empty
+80: Dereference £temporary59 minPrevBlockPtr 0
+81: Assign £temporary59.next newBlockPtr
+82: Jump < Empty>
+83: Empty
+84: Assign g_firstBlockPtr newBlockPtr
+85: Empty
+86: Add £temporary62 newAddress integral2$4#
+87: IntegralToIntegral £temporary63 £temporary62
+88: Return £temporary63
+89: Jump < Empty>
+90: Empty
+91: Subtract £temporary64 lastAddress newBlockSize
+92: Assign newAddress £temporary64
+93: InspectRegister £temporary65 bp
+94: Assign stackTop £temporary65
+95: LessThanEqual < Empty> stackTop newAddress
+96: Jump < Empty>
+97: Empty
+98: IntegralToIntegral £temporary67 newAddress
+99: Assign newBlockPtr £temporary67
+100: Dereference £temporary68 newBlockPtr 0
+101: Assign £temporary68.size memorySize
+102: Dereference £temporary69 newBlockPtr 0
+103: Assign £temporary69.next integral2$0#
+104: NotEqual < Empty> prevBlockPtr integral2$0#
+105: Jump < Empty>
+106: Empty
+107: Dereference £temporary71 prevBlockPtr 0
+108: Assign £temporary71.next newBlockPtr
+109: Jump < Empty>
+110: Empty
+111: Assign g_firstBlockPtr newBlockPtr
+112: Empty
+113: Add £temporary74 newAddress integral2$4#
+114: IntegralToIntegral £temporary75 £temporary74
+115: Return £temporary75
+116: Jump < Empty>
+117: Empty
+118: Empty
+119: Empty
+120: Return integral2$0#
+121: Empty
+122: FunctionEnd malloc

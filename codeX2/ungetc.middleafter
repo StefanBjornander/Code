@@ -1,0 +1,8 @@
+0: Dereference £temporary1040 stream 0
+1: IntegralToIntegral £temporary1041 £temporary1040.ungetc
+2: Equal 6 £temporary1041 integral2$minus1#
+3: Dereference £temporary1043 stream 0
+4: IntegralToIntegral £temporary1044 c
+5: Assign £temporary1043.ungetc £temporary1044
+6: Return c
+7: FunctionEnd ungetc

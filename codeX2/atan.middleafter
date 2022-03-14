@@ -1,0 +1,93 @@
+0: PushFloat x
+1: PushFloat floating8$0#
+2: GreaterThanEqual 12 x floating8$0#
+3: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+4: PushFloat x
+5: Minus £temporary646 x
+6: Parameter 20 double £temporary646
+7: Call 14 atan 0
+8: PostCall 14
+9: GetReturnValue £temporary647
+10: Minus £temporary648 £temporary647
+11: Return £temporary648
+12: PushFloat x
+13: PushFloat floating8$1#
+14: LessThanEqual 26 x floating8$1#
+15: PushFloat floating8$1.57#
+16: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
+17: PushFloat floating8$1#
+18: PushFloat x
+19: Divide £temporary650 floating8$1# x
+20: Parameter 20 double £temporary650
+21: Call 14 atan 0
+22: PostCall 14
+23: GetReturnValue £temporary651
+24: Subtract £temporary652 floating8$1.57# £temporary651
+25: Return £temporary652
+26: PushFloat x
+27: PushFloat floating8$0.5#
+28: LessThanEqual 51 x floating8$0.5#
+29: PushFloat floating8$2#
+30: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
+31: PushFloat x
+32: PushFloat floating8$1#
+33: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 3
+34: PushFloat floating8$1#
+35: PushFloat x
+36: PushFloat x
+37: Multiply £temporary654 x x
+38: Add £temporary655 floating8$1# £temporary654
+39: Parameter 20 double £temporary655
+40: Call 14 sqrt 0
+41: PostCall 14
+42: GetReturnValue £temporary656
+43: Add £temporary657 floating8$1# £temporary656
+44: Divide £temporary658 x £temporary657
+45: Parameter 20 double £temporary658
+46: Call 14 atan 0
+47: PostCall 14
+48: GetReturnValue £temporary659
+49: Multiply £temporary660 floating8$2# £temporary659
+50: Return £temporary660
+51: PushFloat floating8$0#
+52: PopFloat sum
+53: PushFloat floating8$1#
+54: PopFloat sign
+55: PushFloat floating8$1#
+56: PopFloat denominator
+57: PushFloat x
+58: PopFloat product
+59: PushFloat sign
+60: PushFloat product
+61: Multiply £temporary661 sign product
+62: PushFloat denominator
+63: Divide £temporary662 £temporary661 denominator
+64: PopFloat term
+65: PushFloat sum
+66: PushFloat term
+67: Add £temporary663 sum term
+68: PopFloat sum
+69: PushFloat sign
+70: Minus £temporary664 sign
+71: PopFloat sign
+72: PushFloat product
+73: PushFloat x
+74: PushFloat x
+75: Multiply £temporary665 x x
+76: Multiply £temporary666 product £temporary665
+77: PopFloat product
+78: PushFloat denominator
+79: PushFloat floating8$2#
+80: Add £temporary667 denominator floating8$2#
+81: PopFloat denominator
+82: PreCall 54 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+83: PushFloat term
+84: Parameter 60 double term
+85: Call 54 fabs 0
+86: PostCall 54
+87: GetReturnValue £temporary668
+88: PushFloat floating8$0.000000001#
+89: GreaterThanEqual 59 £temporary668 floating8$0.000000001#
+90: PushFloat sum
+91: Return sum
+92: FunctionEnd atan

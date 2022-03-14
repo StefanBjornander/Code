@@ -1,0 +1,61 @@
+0: IntegralToIntegral £temporary86 freeMemoryPtr
+1: Subtract £temporary87 £temporary86 integral2$4#
+2: IntegralToIntegral £temporary88 £temporary87
+3: Assign freeBlockPtr £temporary88
+4: Assign prevBlockPtr integral2$0#
+5: Assign currBlockPtr g_firstBlockPtr
+6: Equal < Empty> freeMemoryPtr integral2$0#
+7: Jump < Empty>
+8: Empty
+9: Return
+10: Jump < Empty>
+11: Empty
+12: Empty
+13: Empty
+14: NotEqual < Equal < Empty> currBlockPtr freeBlockPtr> currBlockPtr integral2$0#
+15: Jump < Empty>
+16: Equal < Empty> currBlockPtr freeBlockPtr
+17: Jump < Empty>
+18: Empty
+19: Equal < Dereference £temporary95 currBlockPtr 0> prevBlockPtr integral2$0#
+20: Jump < Empty>
+21: Dereference £temporary95 currBlockPtr 0
+22: Equal < Empty> £temporary95.next integral2$0#
+23: Jump < Empty>
+24: Empty
+25: Assign g_firstBlockPtr integral2$0#
+26: Jump < Empty>
+27: Empty
+28: Equal < Empty> prevBlockPtr integral2$0#
+29: Jump < Empty>
+30: Empty
+31: Dereference £temporary99 currBlockPtr 0
+32: Assign g_firstBlockPtr £temporary99.next
+33: Jump < Empty>
+34: Empty
+35: Dereference £temporary100 currBlockPtr 0
+36: Equal < Empty> £temporary100.next integral2$0#
+37: Jump < Empty>
+38: Empty
+39: Dereference £temporary102 prevBlockPtr 0
+40: Assign £temporary102.next integral2$0#
+41: Jump < Empty>
+42: Empty
+43: Dereference £temporary103 prevBlockPtr 0
+44: Dereference £temporary104 currBlockPtr 0
+45: Assign £temporary103.next £temporary104.next
+46: Empty
+47: Empty
+48: Empty
+49: Return
+50: Jump < Empty>
+51: Empty
+52: Empty
+53: Assign prevBlockPtr currBlockPtr
+54: Dereference £temporary113 currBlockPtr 0
+55: Assign currBlockPtr £temporary113.next
+56: Empty
+57: Jump < Empty>
+58: Empty
+59: Return
+60: FunctionEnd free

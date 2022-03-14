@@ -1,0 +1,83 @@
+0: Assign p integral8$0#
+1: Assign r integral8$0#
+2: PreCall 44
+3: Parameter 68 signed int integral4$96#
+4: Call 44 malloc 0
+5: PostCall 44
+6: GetReturnValue £temporary4950
+7: Assign q £temporary4950
+8: Assign index integral4$0#
+9: Empty
+10: LessThan < PreCall 52> index integral4$10#
+11: Jump < PreCall 52>
+12: PreCall 52
+13: Parameter 76 signed int integral4$96#
+14: Call 52 malloc 0
+15: PostCall 52
+16: GetReturnValue £temporary4953
+17: Assign p £temporary4953
+18: Equal < Empty> index integral4$5#
+19: Jump < Empty>
+20: Empty
+21: Assign r p
+22: Jump < Empty>
+23: Empty
+24: Empty
+25: Empty
+26: Add £temporary4952 index integral4$1#
+27: Assign index £temporary4952
+28: Jump < Empty>
+29: PreCall 52
+30: Call 52 print_heap 0
+31: PostCall 52
+32: PreCall 52
+33: Parameter 76 pointer q
+34: Parameter 84 signed int integral4$50#
+35: Call 52 realloc 0
+36: PostCall 52
+37: PreCall 52
+38: Call 52 print_heap 0
+39: PostCall 52
+40: PreCall 52
+41: Parameter 76 pointer r
+42: Parameter 84 signed int integral4$50#
+43: Call 52 realloc 0
+44: PostCall 52
+45: PreCall 52
+46: Call 52 print_heap 0
+47: PostCall 52
+48: PreCall 52
+49: Parameter 76 pointer p
+50: Parameter 84 signed int integral4$50#
+51: Call 52 realloc 0
+52: PostCall 52
+53: PreCall 52
+54: Call 52 print_heap 0
+55: PostCall 52
+56: PreCall 52
+57: Parameter 76 pointer q
+58: Parameter 84 signed int integral4$200#
+59: Call 52 realloc 0
+60: PostCall 52
+61: PreCall 52
+62: Call 52 print_heap 0
+63: PostCall 52
+64: PreCall 52
+65: Parameter 76 pointer r
+66: Parameter 84 signed int integral4$200#
+67: Call 52 realloc 0
+68: PostCall 52
+69: PreCall 52
+70: Call 52 print_heap 0
+71: PostCall 52
+72: PreCall 52
+73: Parameter 76 pointer p
+74: Parameter 84 signed int integral4$200#
+75: Call 52 realloc 0
+76: PostCall 52
+77: PreCall 52
+78: Call 52 print_heap 0
+79: PostCall 52
+80: Empty
+81: Return
+82: FunctionEnd malloc_test2

@@ -1,0 +1,15 @@
+0: Assign g_inStatus integral4$1#
+1: Assign g_inDevice s
+2: Assign g_inChars integral4$0#
+3: PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+4: Parameter 68 signed int base
+5: Call 44 scanLongInt 0
+6: PostCall 44
+7: GetReturnValue £temporary2317
+8: Assign value £temporary2317
+9: Equal 13 endp integral8$0#
+10: Dereference £temporary2319 endp 0
+11: IntegralToIntegral £temporary2321 g_inChars
+12: Add £temporary2319 s £temporary2321
+13: Return value
+14: FunctionEnd strtol

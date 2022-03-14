@@ -1,0 +1,48 @@
+0: PreCall 24
+1: PushFloat floating8$minus6.28#
+2: Parameter 48 double floating8$minus6.28#
+3: Call 24 math_test_1 0
+4: PostCall 24
+5: PreCall 24
+6: PushFloat floating8$minus3.14#
+7: Parameter 48 double floating8$minus3.14#
+8: Call 24 math_test_1 0
+9: PostCall 24
+10: PreCall 24
+11: PushFloat floating8$minus1.57#
+12: Parameter 48 double floating8$minus1.57#
+13: Call 24 math_test_1 0
+14: PostCall 24
+15: PreCall 24
+16: PushFloat floating8$minus1#
+17: Parameter 48 double floating8$minus1#
+18: Call 24 math_test_1 0
+19: PostCall 24
+20: PreCall 24
+21: PushFloat floating8$0#
+22: Parameter 48 double floating8$0#
+23: Call 24 math_test_1 0
+24: PostCall 24
+25: PreCall 24
+26: PushFloat floating8$1#
+27: Parameter 48 double floating8$1#
+28: Call 24 math_test_1 0
+29: PostCall 24
+30: PreCall 24
+31: PushFloat floating8$1.57#
+32: Parameter 48 double floating8$1.57#
+33: Call 24 math_test_1 0
+34: PostCall 24
+35: PreCall 24
+36: PushFloat floating8$3.14#
+37: Parameter 48 double floating8$3.14#
+38: Call 24 math_test_1 0
+39: PostCall 24
+40: PreCall 24
+41: PushFloat floating8$6.28#
+42: Parameter 48 double floating8$6.28#
+43: Call 24 math_test_1 0
+44: PostCall 24
+45: Empty
+46: Return
+47: FunctionEnd math_test_1x

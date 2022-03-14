@@ -1,0 +1,41 @@
+0: PushFloat y
+1: PushFloat floating8$0#
+2: NotEqual < Empty> y floating8$0#
+3: Jump < Empty>
+4: Empty
+5: PreCall 22
+6: PushFloat x
+7: PushFloat y
+8: PushFloat x
+9: PushFloat y
+10: Divide £temporary539 x y
+11: FloatingToIntegral £temporary540 £temporary539
+12: IntegralToFloating £temporary542 £temporary540
+13: Multiply £temporary541 y £temporary542
+14: Subtract £temporary543 x £temporary541
+15: Parameter 28 double £temporary543
+16: Call 22 fabs 0
+17: PostCall 22
+18: GetReturnValue £temporary544
+19: PopFloat remainder
+20: PushFloat x
+21: PushFloat floating8$0#
+22: GreaterThan < Empty> x floating8$0#
+23: Jump < Empty>
+24: Empty
+25: PushFloat remainder
+26: DecreaseStack
+27: Jump < Empty>
+28: Empty
+29: PushFloat remainder
+30: Minus £temporary546 remainder
+31: Empty
+32: Return £temporary547
+33: Jump < Empty>
+34: Empty
+35: Assign errno EDOM
+36: PushFloat floating8$0#
+37: Return floating8$0#
+38: Empty
+39: Empty
+40: FunctionEnd fmod

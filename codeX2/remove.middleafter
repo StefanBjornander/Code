@@ -1,0 +1,9 @@
+0: AssignRegister ah integral1$65#
+1: AssignRegister cl integral1$0#
+2: AssignRegister dx name
+3: Interrupt 33
+4: Carry 6
+5: Return integral2$0#
+6: Assign errno FREMOVE
+7: Return integral2$minus1#
+8: FunctionEnd remove

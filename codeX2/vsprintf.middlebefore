@@ -1,0 +1,12 @@
+0: Assign g_outStatus integral4$1#
+1: IntegralToIntegral £temporary2312 outString
+2: Assign g_outDevice £temporary2312
+3: PreCall 48
+4: Parameter 72 pointer format
+5: Parameter 80 pointer arg_list
+6: Call 48 printFormat 0
+7: PostCall 48
+8: GetReturnValue £temporary2313
+9: Return £temporary2313
+10: Empty
+11: FunctionEnd vsprintf

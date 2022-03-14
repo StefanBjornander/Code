@@ -1,0 +1,3 @@
+0: Dereference £temporary1103 stream 0
+1: Return £temporary1103.errno
+2: FunctionEnd ferror

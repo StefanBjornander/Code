@@ -1,0 +1,26 @@
+0: IntegralToIntegral £temporary3832 left
+1: Assign charLeft £temporary3832
+2: IntegralToIntegral £temporary3833 right
+3: Assign charRight £temporary3833
+4: Assign index integral4$0#
+5: GreaterThanEqual 24 index size
+6: IntegralToIntegral £temporary3837 index
+7: Add £temporary3838 charLeft £temporary3837
+8: Dereference £temporary3839 £temporary3838 0
+9: IntegralToIntegral £temporary3841 index
+10: Add £temporary3842 charRight £temporary3841
+11: Dereference £temporary3843 £temporary3842 0
+12: GreaterThanEqual 14 £temporary3839 £temporary3843
+13: Return integral4$minus1#
+14: IntegralToIntegral £temporary3846 index
+15: Add £temporary3847 charLeft £temporary3846
+16: Dereference £temporary3848 £temporary3847 0
+17: IntegralToIntegral £temporary3850 index
+18: Add £temporary3851 charRight £temporary3850
+19: Dereference £temporary3852 £temporary3851 0
+20: LessThanEqual 22 £temporary3848 £temporary3852
+21: Return integral4$1#
+22: Add index index integral4$1#
+23: Jump 5
+24: Return integral4$0#
+25: FunctionEnd memcmp

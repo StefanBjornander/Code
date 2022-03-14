@@ -1,0 +1,17 @@
+0: AssignRegister ah integral1$60#
+1: AssignRegister cx integral2$0#
+2: AssignRegister dx name
+3: Interrupt 33
+4: InspectRegister £temporary819 ax
+5: Assign handle £temporary819
+6: Carry < Empty>
+7: Jump < Empty>
+8: Empty
+9: Assign errno FOPEN
+10: Return integral2$minus1#
+11: Jump < Empty>
+12: Empty
+13: Empty
+14: Return handle
+15: Empty
+16: FunctionEnd filecreate

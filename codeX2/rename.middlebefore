@@ -1,0 +1,16 @@
+0: AssignRegister ah integral1$86#
+1: AssignRegister cl integral1$0#
+2: AssignRegister dx oldName
+3: AssignRegister di newName
+4: Interrupt 33
+5: Carry < Empty>
+6: Jump < Empty>
+7: Empty
+8: Return integral2$0#
+9: Jump < Empty>
+10: Empty
+11: Empty
+12: Assign errno FRENAME
+13: Return integral2$minus1#
+14: Empty
+15: FunctionEnd rename

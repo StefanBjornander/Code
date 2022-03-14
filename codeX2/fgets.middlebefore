@@ -1,0 +1,60 @@
+0: Assign count integral2$0#
+1: Assign prevChar integral1$0#
+2: Empty
+3: Subtract £temporary986 size integral2$1#
+4: LessThan < Assign currChar integral1$0#> count £temporary986
+5: Jump < Return text>
+6: Assign currChar integral1$0#
+7: PreCall 16
+8: Parameter 22 pointer stream
+9: Parameter 24 string string_25c#
+10: Address £temporary988 currChar
+11: Parameter 26 pointer £temporary988
+12: Call 16 fscanf 2
+13: PostCall 16
+14: Equal < Equal < Empty> currChar integral1$10#> prevChar integral1$13#
+15: Jump < Empty>
+16: Equal < Empty> currChar integral1$10#
+17: Jump < Empty>
+18: Empty
+19: Multiply £temporary993 count integral2$1#
+20: Add £temporary994 text £temporary993
+21: Dereference £temporary995 £temporary994 0
+22: Assign £temporary995 integral1$0#
+23: Jump < Return text>
+24: Jump < Empty>
+25: Empty
+26: Empty
+27: IntegralToIntegral £temporary998 currChar
+28: Equal < Empty> £temporary998 integral2$minus1#
+29: Jump < Empty>
+30: Empty
+31: Multiply £temporary1000 count integral2$1#
+32: Add £temporary1001 text £temporary1000
+33: Dereference £temporary1002 £temporary1001 0
+34: Assign £temporary1002 integral1$0#
+35: Jump < Return text>
+36: Jump < Empty>
+37: Empty
+38: Empty
+39: NotEqual < NotEqual < Empty> currChar integral1$10#> currChar integral1$13#
+40: Jump < Empty>
+41: NotEqual < Empty> currChar integral1$10#
+42: Jump < Empty>
+43: Empty
+44: Assign £temporary1008 count
+45: Add £temporary1009 count integral2$1#
+46: Assign count £temporary1009
+47: Multiply £temporary1010 £temporary1008 integral2$1#
+48: Add £temporary1011 text £temporary1010
+49: Dereference £temporary1012 £temporary1011 0
+50: Assign £temporary1012 currChar
+51: Jump < Empty>
+52: Empty
+53: Empty
+54: Assign prevChar currChar
+55: Empty
+56: Jump < Empty>
+57: Return text
+58: Empty
+59: FunctionEnd fgets

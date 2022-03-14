@@ -1,0 +1,335 @@
+0: PreCall 32
+1: Parameter 56 string string_3C25f3E0A#
+2: PushFloat x
+3: Parameter 64 double x
+4: Call 32 printf 8
+5: PostCall 32
+6: PreCall 32
+7: Parameter 56 string string_2020sin2825f29203D2025f2C20errno203D2025i0A#
+8: PushFloat x
+9: Parameter 64 double x
+10: PreCall 32
+11: PushFloat x
+12: Parameter 96 double x
+13: Call 72 sin 0
+14: PostCall 72
+15: GetReturnValue £temporary4254
+16: Parameter 72 double £temporary4254
+17: Parameter 80 signed int errno
+18: Call 32 printf 20
+19: PostCall 32
+20: Assign errno integral4$0#
+21: Empty
+22: PreCall 32
+23: Parameter 56 string string_2020cos2825f29203D2025f2C20errno203D2025i0A#
+24: PushFloat x
+25: Parameter 64 double x
+26: PreCall 32
+27: PushFloat x
+28: Parameter 96 double x
+29: Call 72 cos 0
+30: PostCall 72
+31: GetReturnValue £temporary4256
+32: Parameter 72 double £temporary4256
+33: Parameter 80 signed int errno
+34: Call 32 printf 20
+35: PostCall 32
+36: Assign errno integral4$0#
+37: Empty
+38: PreCall 32
+39: Parameter 56 string string_2020tan2825f29203D2025f2C20errno203D2025i0A#
+40: PushFloat x
+41: Parameter 64 double x
+42: PreCall 32
+43: PushFloat x
+44: Parameter 96 double x
+45: Call 72 tan 0
+46: PostCall 72
+47: GetReturnValue £temporary4258
+48: Parameter 72 double £temporary4258
+49: Parameter 80 signed int errno
+50: Call 32 printf 20
+51: PostCall 32
+52: Assign errno integral4$0#
+53: Empty
+54: PreCall 32
+55: Parameter 56 string string_2020asin2825f29203D2025f2C20errno203D2025i0A#
+56: PushFloat x
+57: Parameter 64 double x
+58: PreCall 32
+59: PushFloat x
+60: Parameter 96 double x
+61: Call 72 asin 0
+62: PostCall 72
+63: GetReturnValue £temporary4260
+64: Parameter 72 double £temporary4260
+65: Parameter 80 signed int errno
+66: Call 32 printf 20
+67: PostCall 32
+68: Assign errno integral4$0#
+69: Empty
+70: PreCall 32
+71: Parameter 56 string string_2020acos2825f29203D2025f2C20errno203D2025i0A#
+72: PushFloat x
+73: Parameter 64 double x
+74: PreCall 32
+75: PushFloat x
+76: Parameter 96 double x
+77: Call 72 acos 0
+78: PostCall 72
+79: GetReturnValue £temporary4262
+80: Parameter 72 double £temporary4262
+81: Parameter 80 signed int errno
+82: Call 32 printf 20
+83: PostCall 32
+84: Assign errno integral4$0#
+85: Empty
+86: PreCall 32
+87: Parameter 56 string string_2020atan2825f29203D2025f2C20errno203D2025i0A#
+88: PushFloat x
+89: Parameter 64 double x
+90: PreCall 32
+91: PushFloat x
+92: Parameter 96 double x
+93: Call 72 atan 0
+94: PostCall 72
+95: GetReturnValue £temporary4264
+96: Parameter 72 double £temporary4264
+97: Parameter 80 signed int errno
+98: Call 32 printf 20
+99: PostCall 32
+100: Assign errno integral4$0#
+101: Empty
+102: PreCall 32
+103: Parameter 56 string string_2020exp2825f29203D2025f2C20errno203D2025i0A#
+104: PushFloat x
+105: Parameter 64 double x
+106: PreCall 32
+107: PushFloat x
+108: Parameter 96 double x
+109: Call 72 exp 0
+110: PostCall 72
+111: GetReturnValue £temporary4266
+112: Parameter 72 double £temporary4266
+113: Parameter 80 signed int errno
+114: Call 32 printf 20
+115: PostCall 32
+116: Assign errno integral4$0#
+117: Empty
+118: PreCall 32
+119: Parameter 56 string string_2020log2825f29203D2025f2C20errno203D2025i0A#
+120: PushFloat x
+121: Parameter 64 double x
+122: PreCall 32
+123: PushFloat x
+124: Parameter 96 double x
+125: Call 72 log 0
+126: PostCall 72
+127: GetReturnValue £temporary4268
+128: Parameter 72 double £temporary4268
+129: Parameter 80 signed int errno
+130: Call 32 printf 20
+131: PostCall 32
+132: Assign errno integral4$0#
+133: Empty
+134: PreCall 32
+135: Parameter 56 string string_2020log102825f29203D2025f2C20errno203D2025i0A#
+136: PushFloat x
+137: Parameter 64 double x
+138: PreCall 32
+139: PushFloat x
+140: Parameter 96 double x
+141: Call 72 log10 0
+142: PostCall 72
+143: GetReturnValue £temporary4270
+144: Parameter 72 double £temporary4270
+145: Parameter 80 signed int errno
+146: Call 32 printf 20
+147: PostCall 32
+148: Assign errno integral4$0#
+149: Empty
+150: PreCall 32
+151: Parameter 56 string string_2020sinh2825f29203D2025f2C20errno203D2025i0A#
+152: PushFloat x
+153: Parameter 64 double x
+154: PreCall 32
+155: PushFloat x
+156: Parameter 96 double x
+157: Call 72 sinh 0
+158: PostCall 72
+159: GetReturnValue £temporary4272
+160: Parameter 72 double £temporary4272
+161: Parameter 80 signed int errno
+162: Call 32 printf 20
+163: PostCall 32
+164: Assign errno integral4$0#
+165: Empty
+166: PreCall 32
+167: Parameter 56 string string_2020cosh2825f29203D2025f2C20errno203D2025i0A#
+168: PushFloat x
+169: Parameter 64 double x
+170: PreCall 32
+171: PushFloat x
+172: Parameter 96 double x
+173: Call 72 cosh 0
+174: PostCall 72
+175: GetReturnValue £temporary4274
+176: Parameter 72 double £temporary4274
+177: Parameter 80 signed int errno
+178: Call 32 printf 20
+179: PostCall 32
+180: Assign errno integral4$0#
+181: Empty
+182: PreCall 32
+183: Parameter 56 string string_2020tanh2825f29203D2025f2C20errno203D2025i0A#
+184: PushFloat x
+185: Parameter 64 double x
+186: PreCall 32
+187: PushFloat x
+188: Parameter 96 double x
+189: Call 72 tanh 0
+190: PostCall 72
+191: GetReturnValue £temporary4276
+192: Parameter 72 double £temporary4276
+193: Parameter 80 signed int errno
+194: Call 32 printf 20
+195: PostCall 32
+196: Assign errno integral4$0#
+197: Empty
+198: PreCall 32
+199: Parameter 56 string string_2020sqrt2825f29203D2025f2C20errno203D2025i0A#
+200: PushFloat x
+201: Parameter 64 double x
+202: PreCall 32
+203: PushFloat x
+204: Parameter 96 double x
+205: Call 72 sqrt 0
+206: PostCall 72
+207: GetReturnValue £temporary4278
+208: Parameter 72 double £temporary4278
+209: Parameter 80 signed int errno
+210: Call 32 printf 20
+211: PostCall 32
+212: Assign errno integral4$0#
+213: Empty
+214: PreCall 32
+215: Parameter 56 string string_2020floor2825f29203D2025f2C20errno203D2025i0A#
+216: PushFloat x
+217: Parameter 64 double x
+218: PreCall 32
+219: PushFloat x
+220: Parameter 96 double x
+221: Call 72 floor 0
+222: PostCall 72
+223: GetReturnValue £temporary4280
+224: Parameter 72 double £temporary4280
+225: Parameter 80 signed int errno
+226: Call 32 printf 20
+227: PostCall 32
+228: Assign errno integral4$0#
+229: Empty
+230: PreCall 32
+231: Parameter 56 string string_2020ceil2825f29203D2025f2C20errno203D2025i0A#
+232: PushFloat x
+233: Parameter 64 double x
+234: PreCall 32
+235: PushFloat x
+236: Parameter 96 double x
+237: Call 72 ceil 0
+238: PostCall 72
+239: GetReturnValue £temporary4282
+240: Parameter 72 double £temporary4282
+241: Parameter 80 signed int errno
+242: Call 32 printf 20
+243: PostCall 32
+244: Assign errno integral4$0#
+245: Empty
+246: PreCall 32
+247: Parameter 56 string string_2020fabs2825f29203D2025f2C20errno203D2025i0A#
+248: PushFloat x
+249: Parameter 64 double x
+250: PreCall 32
+251: PushFloat x
+252: Parameter 96 double x
+253: Call 72 fabs 0
+254: PostCall 72
+255: GetReturnValue £temporary4284
+256: Parameter 72 double £temporary4284
+257: Parameter 80 signed int errno
+258: Call 32 printf 20
+259: PostCall 32
+260: Assign errno integral4$0#
+261: Empty
+262: Assign j integral4$0#
+263: PreCall 36
+264: PushFloat x
+265: Parameter 60 double x
+266: Address £temporary4286 j
+267: Parameter 68 pointer £temporary4286
+268: Call 36 frexp 0
+269: PostCall 36
+270: GetReturnValue £temporary4287
+271: PopFloat z
+272: PreCall 44
+273: Parameter 68 string string_frexp202825f2C20p29203D202825f2C2025i292C20errno203D2025i0A#
+274: PushFloat x
+275: Parameter 76 double x
+276: PushFloat z
+277: Parameter 84 double z
+278: Parameter 92 signed int j
+279: Parameter 96 signed int errno
+280: Call 44 printf 24
+281: PostCall 44
+282: NotEqual < Empty> errno integral4$0#
+283: Jump < Empty>
+284: Empty
+285: PreCall 44
+286: Parameter 68 string string_Error20message3A#
+287: Call 44 perror 0
+288: PostCall 44
+289: Assign errno integral4$0#
+290: Jump < Empty>
+291: Empty
+292: Empty
+293: PushFloat floating8$0#
+294: PopFloat w
+295: PreCall 40
+296: PushFloat x
+297: Parameter 64 double x
+298: PushFloat w
+299: PopEmpty
+300: Address £temporary4293 w
+301: Parameter 72 pointer £temporary4293
+302: Call 40 modf 0
+303: PostCall 40
+304: GetReturnValue £temporary4294
+305: PopFloat z
+306: PreCall 48
+307: Parameter 72 string string_modf202825f2C20p29203D202825f2C2025f292C20errno203D2025i0A#
+308: PushFloat x
+309: Parameter 80 double x
+310: PushFloat z
+311: Parameter 88 double z
+312: PushFloat w
+313: Parameter 96 double w
+314: Parameter 104 signed int errno
+315: Call 48 printf 28
+316: PostCall 48
+317: NotEqual < Empty> errno integral4$0#
+318: Jump < Empty>
+319: Empty
+320: PreCall 48
+321: Parameter 72 string string_Error20message3A#
+322: Call 48 perror 0
+323: PostCall 48
+324: Assign errno integral4$0#
+325: Jump < Empty>
+326: Empty
+327: Empty
+328: PreCall 32
+329: Parameter 56 string string_0A#
+330: Call 32 printf 0
+331: PostCall 32
+332: Empty
+333: Return
+334: FunctionEnd math_test_1

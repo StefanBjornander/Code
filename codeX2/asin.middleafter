@@ -1,0 +1,42 @@
+0: PushFloat x
+1: PushFloat floating8$1#
+2: NotEqual 5 x floating8$1#
+3: PushFloat floating8$1.57#
+4: Return floating8$1.57#
+5: PushFloat x
+6: PushFloat floating8$0#
+7: GreaterThanEqual 17 x floating8$0#
+8: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: PushFloat x
+10: Minus £temporary607 x
+11: Parameter 20 double £temporary607
+12: Call 14 asin 0
+13: PostCall 14
+14: GetReturnValue £temporary608
+15: Minus £temporary609 £temporary608
+16: Return £temporary609
+17: PushFloat x
+18: PushFloat floating8$1#
+19: GreaterThanEqual 38 x floating8$1#
+20: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+21: PushFloat x
+22: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
+23: PushFloat floating8$1#
+24: PushFloat x
+25: PushFloat x
+26: Multiply £temporary611 x x
+27: Subtract £temporary612 floating8$1# £temporary611
+28: Parameter 20 double £temporary612
+29: Call 14 sqrt 0
+30: PostCall 14
+31: GetReturnValue £temporary613
+32: Divide £temporary614 x £temporary613
+33: Parameter 20 double £temporary614
+34: Call 14 atan 0
+35: PostCall 14
+36: GetReturnValue £temporary615
+37: Return £temporary615
+38: Assign errno EDOM
+39: PushFloat floating8$0#
+40: Return floating8$0#
+41: FunctionEnd asin

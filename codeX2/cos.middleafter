@@ -1,0 +1,70 @@
+0: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: PushFloat x
+2: Parameter 20 double x
+3: Call 14 fabs 0
+4: PostCall 14
+5: GetReturnValue £temporary574
+6: PushFloat floating8$6.28#
+7: LessThanEqual 17 £temporary574 floating8$6.28#
+8: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: PushFloat x
+10: Parameter 20 double x
+11: PushFloat floating8$6.28#
+12: Parameter 28 double floating8$6.28#
+13: Call 14 fmod 0
+14: PostCall 14
+15: GetReturnValue £temporary576
+16: PopFloat x
+17: PushFloat floating8$0#
+18: PopFloat index
+19: PushFloat floating8$0#
+20: PopFloat sum
+21: PushFloat floating8$1#
+22: PopFloat sign
+23: PushFloat floating8$1#
+24: PopFloat power
+25: PushFloat floating8$1#
+26: PopFloat faculty
+27: PushFloat sign
+28: PushFloat power
+29: Multiply £temporary579 sign power
+30: PushFloat faculty
+31: Divide £temporary580 £temporary579 faculty
+32: PopFloat term
+33: PushFloat sum
+34: PushFloat term
+35: Add £temporary581 sum term
+36: PopFloat sum
+37: PushFloat sign
+38: PushFloat floating8$minus1#
+39: Multiply £temporary582 sign floating8$minus1#
+40: PopFloat sign
+41: PushFloat power
+42: PushFloat x
+43: PushFloat x
+44: Multiply £temporary583 x x
+45: Multiply £temporary584 power £temporary583
+46: PopFloat power
+47: PushFloat faculty
+48: PushFloat index
+49: PushOne
+50: Add £temporary586 index £temporary585
+51: TopFloat index
+52: PushFloat index
+53: PushOne
+54: Add £temporary588 index £temporary587
+55: TopFloat index
+56: Multiply £temporary589 index index
+57: Multiply £temporary590 faculty £temporary589
+58: PopFloat faculty
+59: PreCall 62 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+60: PushFloat term
+61: Parameter 68 double term
+62: Call 62 fabs 0
+63: PostCall 62
+64: GetReturnValue £temporary591
+65: PushFloat floating8$0.000000001#
+66: GreaterThanEqual 27 £temporary591 floating8$0.000000001#
+67: PushFloat sum
+68: Return sum
+69: FunctionEnd cos

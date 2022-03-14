@@ -1,0 +1,12 @@
+0: LessThan < Empty> value integral8$0#
+1: Jump < Empty>
+2: Empty
+3: Minus £temporary3033 value
+4: Assign £temporary3034 £temporary3033
+5: Jump < Empty>
+6: Empty
+7: Assign £temporary3034 value
+8: Empty
+9: Return £temporary3034
+10: Empty
+11: FunctionEnd labs

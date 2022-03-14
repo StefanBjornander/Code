@@ -1,0 +1,83 @@
+0: Assign index integral2$0#
+1: PreCall 16 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+2: Call 16 scanChar 0
+3: PostCall 16
+4: GetReturnValue £temporary1176
+5: Assign input £temporary1176
+6: PreCall 17 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+7: IntegralToIntegral £temporary1177 input
+8: Parameter 23 signed int £temporary1177
+9: Call 17 isspace 0
+10: PostCall 17
+11: GetReturnValue £temporary1178
+12: Equal 19 £temporary1178 integral2$0#
+13: PreCall 17 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+14: Call 17 scanChar 0
+15: PostCall 17
+16: GetReturnValue £temporary1179
+17: Assign input £temporary1179
+18: Jump 6
+19: Equal 55 string integral2$0#
+20: NotEqual 30 not integral2$0#
+21: PreCall 17 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+22: Parameter 23 pointer pattern
+23: Parameter 25 signed int size
+24: IntegralToIntegral £temporary1184 input
+25: Parameter 27 signed int £temporary1184
+26: Call 17 strnchr 0
+27: PostCall 17
+28: GetReturnValue £temporary1185
+29: NotEqual 40 £temporary1185 integral2$0#
+30: Equal 51 not integral2$0#
+31: PreCall 17 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+32: Parameter 23 pointer pattern
+33: Parameter 25 signed int size
+34: IntegralToIntegral £temporary1188 input
+35: Parameter 27 signed int £temporary1188
+36: Call 17 strnchr 0
+37: PostCall 17
+38: GetReturnValue £temporary1189
+39: NotEqual 51 £temporary1189 integral2$0#
+40: Assign £temporary1197 index
+41: Add index index integral2$1#
+42: Add £temporary1198 string £temporary1197
+43: Dereference £temporary1199 £temporary1198 0
+44: Assign £temporary1199 input
+45: PreCall 17 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+46: Call 17 scanChar 0
+47: PostCall 17
+48: GetReturnValue £temporary1200
+49: Assign input £temporary1200
+50: Jump 20
+51: Add £temporary1202 string index
+52: Dereference £temporary1203 £temporary1202 0
+53: Assign £temporary1203 integral1$0#
+54: Jump 81
+55: NotEqual 65 not integral2$0#
+56: PreCall 17 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+57: Parameter 23 pointer pattern
+58: Parameter 25 signed int size
+59: IntegralToIntegral £temporary1206 input
+60: Parameter 27 signed int £temporary1206
+61: Call 17 strnchr 0
+62: PostCall 17
+63: GetReturnValue £temporary1207
+64: NotEqual 75 £temporary1207 integral2$0#
+65: Equal 81 not integral2$0#
+66: PreCall 17 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+67: Parameter 23 pointer pattern
+68: Parameter 25 signed int size
+69: IntegralToIntegral £temporary1210 input
+70: Parameter 27 signed int £temporary1210
+71: Call 17 strnchr 0
+72: PostCall 17
+73: GetReturnValue £temporary1211
+74: NotEqual 81 £temporary1211 integral2$0#
+75: PreCall 17 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+76: Call 17 scanChar 0
+77: PostCall 17
+78: GetReturnValue £temporary1217
+79: Assign input £temporary1217
+80: Jump 55
+81: Return
+82: FunctionEnd scanPattern

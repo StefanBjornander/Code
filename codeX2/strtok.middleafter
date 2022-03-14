@@ -1,0 +1,82 @@
+0: Equal 39 string integral8$0#
+1: Dereference £temporary3718 £temporary3717 0
+2: NotEqual 4 £temporary3718 integral1$0#
+3: Return integral8$0#
+4: Assign index integral4$0#
+5: IntegralToIntegral £temporary3723 index
+6: Add £temporary3724 string £temporary3723
+7: Dereference £temporary3725 £temporary3724 0
+8: Equal 33 £temporary3725 integral1$0#
+9: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+10: Parameter 76 pointer charSet
+11: IntegralToIntegral £temporary3729 index
+12: Add £temporary3730 string £temporary3729
+13: Dereference £temporary3731 £temporary3730 0
+14: IntegralToIntegral £temporary3732 £temporary3731
+15: Parameter 84 signed int £temporary3732
+16: Call 52 strchr 0
+17: PostCall 52
+18: GetReturnValue £temporary3733
+19: Equal 31 £temporary3733 integral8$0#
+20: IntegralToIntegral £temporary3736 index
+21: Add £temporary3737 string £temporary3736
+22: Dereference £temporary3738 £temporary3737 0
+23: Assign £temporary3738 integral1$0#
+24: Add £temporary3740 index integral4$1#
+25: IntegralToIntegral £temporary3741 £temporary3740
+26: Add £temporary3742 string £temporary3741
+27: Dereference £temporary3743 £temporary3742 0
+28: Address £temporary3744 £temporary3743
+29: Assign token £temporary3744
+30: Return string
+31: Add index index integral4$1#
+32: Jump 5
+33: IntegralToIntegral £temporary3748 index
+34: Add £temporary3749 string £temporary3748
+35: Dereference £temporary3750 £temporary3749 0
+36: Address £temporary3751 £temporary3750
+37: Assign token £temporary3751
+38: Return string
+39: NotEqual 41 token integral8$0#
+40: Return integral8$0#
+41: Dereference £temporary3754 £temporary3753 0
+42: NotEqual 44 £temporary3754 integral1$0#
+43: Return integral8$0#
+44: Assign index integral4$0#
+45: IntegralToIntegral £temporary3759 index
+46: Add £temporary3760 token £temporary3759
+47: Dereference £temporary3761 £temporary3760 0
+48: Equal 74 £temporary3761 integral1$0#
+49: PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+50: Parameter 76 pointer charSet
+51: IntegralToIntegral £temporary3765 index
+52: Add £temporary3766 token £temporary3765
+53: Dereference £temporary3767 £temporary3766 0
+54: IntegralToIntegral £temporary3768 £temporary3767
+55: Parameter 84 signed int £temporary3768
+56: Call 52 strchr 0
+57: PostCall 52
+58: GetReturnValue £temporary3769
+59: Equal 72 £temporary3769 integral8$0#
+60: Assign tokenStart2 token
+61: IntegralToIntegral £temporary3772 index
+62: Add £temporary3773 token £temporary3772
+63: Dereference £temporary3774 £temporary3773 0
+64: Assign £temporary3774 integral1$0#
+65: Add £temporary3776 index integral4$1#
+66: IntegralToIntegral £temporary3777 £temporary3776
+67: Add £temporary3778 token £temporary3777
+68: Dereference £temporary3779 £temporary3778 0
+69: Address £temporary3780 £temporary3779
+70: Assign token £temporary3780
+71: Return tokenStart2
+72: Add index index integral4$1#
+73: Jump 45
+74: Assign tokenStart token
+75: IntegralToIntegral £temporary3784 index
+76: Add £temporary3785 token £temporary3784
+77: Dereference £temporary3786 £temporary3785 0
+78: Address £temporary3787 £temporary3786
+79: Assign token £temporary3787
+80: Return tokenStart
+81: FunctionEnd strtok

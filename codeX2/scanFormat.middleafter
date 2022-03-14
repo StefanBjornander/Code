@@ -1,0 +1,331 @@
+0: Assign percent integral2$0#
+1: Assign shortInt integral2$0#
+2: Assign longIntOrDouble integral2$0#
+3: Assign longDouble integral2$0#
+4: Assign star integral2$0#
+5: Assign g_inCount integral2$0#
+6: Assign g_inChars integral2$0#
+7: Assign index integral2$0#
+8: Add £temporary1509 format index
+9: Dereference £temporary1510 £temporary1509 0
+10: Equal 329 £temporary1510 integral1$0#
+11: Add £temporary1514 format index
+12: Dereference £temporary1515 £temporary1514 0
+13: Assign c £temporary1515
+14: IntegralToIntegral £temporary1517 c
+15: Add d £temporary1517 integral2$1#
+16: Equal 321 percent integral2$0#
+17: Subtract £temporary1518 d integral2$1#
+18: Case 36 £temporary1518 integral2$104#
+19: Case 38 £temporary1518 integral2$108#
+20: Case 40 £temporary1518 integral2$76#
+21: Case 42 £temporary1518 integral2$42#
+22: Case 44 £temporary1518 integral2$99#
+23: Case 62 £temporary1518 integral2$115#
+24: Case 81 £temporary1518 integral2$100#
+25: Case 81 £temporary1518 integral2$105#
+26: Case 117 £temporary1518 integral2$111#
+27: Case 153 £temporary1518 integral2$120#
+28: Case 189 £temporary1518 integral2$117#
+29: Case 225 £temporary1518 integral2$103#
+30: Case 225 £temporary1518 integral2$102#
+31: Case 225 £temporary1518 integral2$101#
+32: Case 261 £temporary1518 integral2$91#
+33: Case 312 £temporary1518 integral2$110#
+34: CaseEnd £temporary1518
+35: Jump 327
+36: Assign shortInt integral2$1#
+37: Jump 327
+38: Assign longIntOrDouble integral2$1#
+39: Jump 327
+40: Assign longDouble integral2$1#
+41: Jump 327
+42: Assign star integral2$1#
+43: Jump 327
+44: PreCall 57 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+45: Call 57 scanChar 0
+46: PostCall 57
+47: GetReturnValue £temporary1519
+48: Assign charValue £temporary1519
+49: NotEqual 57 star integral2$0#
+50: Add arg_list arg_list integral2$2#
+51: Subtract £temporary1523 arg_list integral2$2#
+52: IntegralToIntegral £temporary1524 £temporary1523
+53: Dereference £temporary1525 £temporary1524 0
+54: Assign charPtr £temporary1525
+55: Dereference £temporary1526 charPtr 0
+56: Assign £temporary1526 charValue
+57: Assign percent integral2$0#
+58: IntegralToIntegral £temporary1529 charValue
+59: Equal 327 £temporary1529 integral2$minus1#
+60: Add g_inCount g_inCount integral2$1#
+61: Jump 327
+62: NotEqual 74 star integral2$0#
+63: Add arg_list arg_list integral2$2#
+64: Subtract £temporary1537 arg_list integral2$2#
+65: IntegralToIntegral £temporary1538 £temporary1537
+66: Dereference £temporary1539 £temporary1538 0
+67: Assign charPtr £temporary1539
+68: PreCall 57 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+69: Parameter 63 pointer charPtr
+70: Parameter 65 signed int integral2$0#
+71: Call 57 scanString 0
+72: PostCall 57
+73: Jump 79
+74: PreCall 57 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+75: Parameter 63 pointer integral2$0#
+76: Parameter 65 signed int integral2$0#
+77: Call 57 scanString 0
+78: PostCall 57
+79: Assign percent integral2$0#
+80: Jump 327
+81: PreCall 57 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+82: Parameter 63 signed int integral2$10#
+83: Call 57 scanLongInt 0
+84: PostCall 57
+85: GetReturnValue £temporary1544
+86: Assign longValue £temporary1544
+87: NotEqual 115 star integral2$0#
+88: Equal 98 shortInt integral2$0#
+89: Add arg_list arg_list integral2$2#
+90: Subtract £temporary1548 arg_list integral2$2#
+91: IntegralToIntegral £temporary1549 £temporary1548
+92: Dereference £temporary1550 £temporary1549 0
+93: Assign shortPtr £temporary1550
+94: Dereference £temporary1551 shortPtr 0
+95: IntegralToIntegral £temporary1552 longValue
+96: Assign £temporary1551 £temporary1552
+97: Jump 115
+98: NotEqual 108 longIntOrDouble integral2$0#
+99: Add arg_list arg_list integral2$2#
+100: Subtract £temporary1556 arg_list integral2$2#
+101: IntegralToIntegral £temporary1557 £temporary1556
+102: Dereference £temporary1558 £temporary1557 0
+103: Assign intPtr £temporary1558
+104: Dereference £temporary1559 intPtr 0
+105: IntegralToIntegral £temporary1560 longValue
+106: Assign £temporary1559 £temporary1560
+107: Jump 115
+108: Add arg_list arg_list integral2$2#
+109: Subtract £temporary1562 arg_list integral2$2#
+110: IntegralToIntegral £temporary1563 £temporary1562
+111: Dereference £temporary1564 £temporary1563 0
+112: Assign longPtr £temporary1564
+113: Dereference £temporary1565 longPtr 0
+114: Assign £temporary1565 longValue
+115: Assign percent integral2$0#
+116: Jump 327
+117: PreCall 57 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+118: Parameter 63 signed int integral2$8#
+119: Call 57 scanUnsignedLongInt 0
+120: PostCall 57
+121: GetReturnValue £temporary1573
+122: Assign unsignedLongValue £temporary1573
+123: NotEqual 151 star integral2$0#
+124: Equal 134 shortInt integral2$0#
+125: Add arg_list arg_list integral2$2#
+126: Subtract £temporary1577 arg_list integral2$2#
+127: IntegralToIntegral £temporary1578 £temporary1577
+128: Dereference £temporary1579 £temporary1578 0
+129: Assign unsignedShortPtr £temporary1579
+130: Dereference £temporary1580 unsignedShortPtr 0
+131: IntegralToIntegral £temporary1581 unsignedLongValue
+132: Assign £temporary1580 £temporary1581
+133: Jump 151
+134: NotEqual 144 longIntOrDouble integral2$0#
+135: Add arg_list arg_list integral2$2#
+136: Subtract £temporary1585 arg_list integral2$2#
+137: IntegralToIntegral £temporary1586 £temporary1585
+138: Dereference £temporary1587 £temporary1586 0
+139: Assign unsignedIntPtr £temporary1587
+140: Dereference £temporary1588 unsignedIntPtr 0
+141: IntegralToIntegral £temporary1589 unsignedLongValue
+142: Assign £temporary1588 £temporary1589
+143: Jump 151
+144: Add arg_list arg_list integral2$2#
+145: Subtract £temporary1591 arg_list integral2$2#
+146: IntegralToIntegral £temporary1592 £temporary1591
+147: Dereference £temporary1593 £temporary1592 0
+148: Assign unsignedLongPtr £temporary1593
+149: Dereference £temporary1594 unsignedLongPtr 0
+150: Assign £temporary1594 unsignedLongValue
+151: Assign percent integral2$0#
+152: Jump 327
+153: PreCall 57 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+154: Parameter 63 signed int integral2$16#
+155: Call 57 scanUnsignedLongInt 0
+156: PostCall 57
+157: GetReturnValue £temporary1602
+158: Assign unsignedLongValue £temporary1602
+159: NotEqual 187 star integral2$0#
+160: Equal 170 shortInt integral2$0#
+161: Add arg_list arg_list integral2$2#
+162: Subtract £temporary1606 arg_list integral2$2#
+163: IntegralToIntegral £temporary1607 £temporary1606
+164: Dereference £temporary1608 £temporary1607 0
+165: Assign unsignedShortPtr £temporary1608
+166: Dereference £temporary1609 unsignedShortPtr 0
+167: IntegralToIntegral £temporary1610 unsignedLongValue
+168: Assign £temporary1609 £temporary1610
+169: Jump 187
+170: NotEqual 180 longIntOrDouble integral2$0#
+171: Add arg_list arg_list integral2$2#
+172: Subtract £temporary1614 arg_list integral2$2#
+173: IntegralToIntegral £temporary1615 £temporary1614
+174: Dereference £temporary1616 £temporary1615 0
+175: Assign unsignedIntPtr £temporary1616
+176: Dereference £temporary1617 unsignedIntPtr 0
+177: IntegralToIntegral £temporary1618 unsignedLongValue
+178: Assign £temporary1617 £temporary1618
+179: Jump 187
+180: Add arg_list arg_list integral2$2#
+181: Subtract £temporary1620 arg_list integral2$2#
+182: IntegralToIntegral £temporary1621 £temporary1620
+183: Dereference £temporary1622 £temporary1621 0
+184: Assign unsignedLongPtr £temporary1622
+185: Dereference £temporary1623 unsignedLongPtr 0
+186: Assign £temporary1623 unsignedLongValue
+187: Assign percent integral2$0#
+188: Jump 327
+189: PreCall 57 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+190: Parameter 63 signed int integral2$0#
+191: Call 57 scanUnsignedLongInt 0
+192: PostCall 57
+193: GetReturnValue £temporary1631
+194: Assign unsignedLongValue £temporary1631
+195: NotEqual 223 star integral2$0#
+196: Equal 206 shortInt integral2$0#
+197: Add arg_list arg_list integral2$2#
+198: Subtract £temporary1635 arg_list integral2$2#
+199: IntegralToIntegral £temporary1636 £temporary1635
+200: Dereference £temporary1637 £temporary1636 0
+201: Assign unsignedShortPtr £temporary1637
+202: Dereference £temporary1638 unsignedShortPtr 0
+203: IntegralToIntegral £temporary1639 unsignedLongValue
+204: Assign £temporary1638 £temporary1639
+205: Jump 223
+206: NotEqual 216 longIntOrDouble integral2$0#
+207: Add arg_list arg_list integral2$2#
+208: Subtract £temporary1643 arg_list integral2$2#
+209: IntegralToIntegral £temporary1644 £temporary1643
+210: Dereference £temporary1645 £temporary1644 0
+211: Assign unsignedIntPtr £temporary1645
+212: Dereference £temporary1646 unsignedIntPtr 0
+213: IntegralToIntegral £temporary1647 unsignedLongValue
+214: Assign £temporary1646 £temporary1647
+215: Jump 223
+216: Add arg_list arg_list integral2$2#
+217: Subtract £temporary1649 arg_list integral2$2#
+218: IntegralToIntegral £temporary1650 £temporary1649
+219: Dereference £temporary1651 £temporary1650 0
+220: Assign unsignedLongPtr £temporary1651
+221: Dereference £temporary1652 unsignedLongPtr 0
+222: Assign £temporary1652 unsignedLongValue
+223: Assign percent integral2$0#
+224: Jump 327
+225: PreCall 57 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+226: Call 57 scanLongDouble 0
+227: PostCall 57
+228: GetReturnValue £temporary1660
+229: PopFloat longDoubleValue
+230: NotEqual 259 star integral2$0#
+231: Equal 241 longIntOrDouble integral2$0#
+232: Add arg_list arg_list integral2$2#
+233: Subtract £temporary1664 arg_list integral2$2#
+234: IntegralToIntegral £temporary1665 £temporary1664
+235: Dereference £temporary1666 £temporary1665 0
+236: Assign doublePtr £temporary1666
+237: Dereference £temporary1667 doublePtr 0
+238: PushFloat longDoubleValue
+239: PopFloat £temporary1667
+240: Jump 259
+241: Equal 251 longDouble integral2$0#
+242: Add arg_list arg_list integral2$2#
+243: Subtract £temporary1670 arg_list integral2$2#
+244: IntegralToIntegral £temporary1671 £temporary1670
+245: Dereference £temporary1672 £temporary1671 0
+246: Assign longDoublePtr £temporary1672
+247: Dereference £temporary1673 longDoublePtr 0
+248: PushFloat longDoubleValue
+249: PopFloat £temporary1673
+250: Jump 259
+251: Add arg_list arg_list integral2$2#
+252: Subtract £temporary1675 arg_list integral2$2#
+253: IntegralToIntegral £temporary1676 £temporary1675
+254: Dereference £temporary1677 £temporary1676 0
+255: Assign floatPtr £temporary1677
+256: Dereference £temporary1678 floatPtr 0
+257: PushFloat longDoubleValue
+258: PopFloat £temporary1678
+259: Assign percent integral2$0#
+260: Jump 327
+261: Assign not integral2$0#
+262: Add index index integral2$1#
+263: Add £temporary1690 format index
+264: Dereference £temporary1691 £temporary1690 0
+265: NotEqual 268 £temporary1691 integral1$94#
+266: Assign not integral2$1#
+267: Add index index integral2$1#
+268: Assign startIndex index
+269: Add £temporary1697 format index
+270: Dereference £temporary1698 £temporary1697 0
+271: Equal 274 £temporary1698 integral1$93#
+272: Add index index integral2$1#
+273: Jump 269
+274: Subtract size index startIndex
+275: Add £temporary1703 format index
+276: Dereference £temporary1704 £temporary1703 0
+277: Assign c £temporary1704
+278: Add £temporary1706 format index
+279: Dereference £temporary1707 £temporary1706 0
+280: Assign £temporary1707 integral1$0#
+281: NotEqual 298 star integral2$0#
+282: Add arg_list arg_list integral2$2#
+283: Subtract £temporary1711 arg_list integral2$2#
+284: IntegralToIntegral £temporary1712 £temporary1711
+285: Dereference £temporary1713 £temporary1712 0
+286: Assign string £temporary1713
+287: PreCall 66 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+288: Parameter 72 pointer string
+289: Add £temporary1715 format startIndex
+290: Dereference £temporary1716 £temporary1715 0
+291: Address £temporary1717 £temporary1716
+292: Parameter 74 pointer £temporary1717
+293: Parameter 76 signed int size
+294: Parameter 78 signed int not
+295: Call 66 scanPattern 0
+296: PostCall 66
+297: Jump 308
+298: PreCall 64 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+299: Parameter 70 pointer integral2$0#
+300: Add £temporary1720 format startIndex
+301: Dereference £temporary1721 £temporary1720 0
+302: Address £temporary1722 £temporary1721
+303: Parameter 72 pointer £temporary1722
+304: Parameter 74 signed int size
+305: Parameter 76 signed int not
+306: Call 64 scanPattern 0
+307: PostCall 64
+308: Add £temporary1727 format index
+309: Dereference £temporary1728 £temporary1727 0
+310: Assign £temporary1728 c
+311: Jump 327
+312: Add arg_list arg_list integral2$2#
+313: Subtract £temporary1730 arg_list integral2$2#
+314: IntegralToIntegral £temporary1731 £temporary1730
+315: Dereference £temporary1732 £temporary1731 0
+316: Assign charsPtr £temporary1732
+317: Dereference £temporary1733 charsPtr 0
+318: Assign £temporary1733 g_inChars
+319: Assign percent integral2$0#
+320: Jump 327
+321: NotEqual 327 c integral1$37#
+322: Assign percent integral2$1#
+323: Assign shortInt integral2$0#
+324: Assign longIntOrDouble integral2$0#
+325: Assign longDouble integral2$0#
+326: Assign star integral2$0#
+327: Add index index integral2$1#
+328: Jump 8
+329: Return g_inCount
+330: FunctionEnd scanFormat

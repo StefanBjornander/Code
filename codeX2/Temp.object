@@ -1,0 +1,326 @@
+1:	
+
+generateName:	; BinaryAdd £temporary989 index 1
+2:		mov ax, [bp + 6]
+3:		add ax, 1
+5:	
+
+generateName$1:	; SignedGreaterThanEqual 30 £temporary989 max
+6:		cmp ax, [bp + 10]
+7:		jge generateName$30
+9:	
+
+generateName$2:	; BinaryAdd £temporary991 index 1
+10:		mov ax, [bp + 6]
+11:		add ax, 1
+13:	
+
+generateName$3:	; BinaryAdd £temporary993 name £temporary991
+14:		mov si, [bp + 8]
+15:		add si, ax
+17:	
+
+generateName$4:	; Deref £temporary992 -> £temporary993 £temporary993 0
+19:	
+
+generateName$5:	; Assign £temporary992 -> £temporary993 0
+20:		mov byte [si], 0
+22:	
+
+generateName$6:	; Assign c 97
+23:		mov byte [bp + 12], 97
+25:	
+
+generateName$7:	; SignedGreaterThan 34 c 122
+26:		cmp byte [bp + 12], 122
+27:		jg generateName$34
+29:	
+
+generateName$8:	; BinaryAdd £temporary997 name index
+30:		mov si, [bp + 8]
+31:		add si, [bp + 6]
+33:	
+
+generateName$9:	; Deref £temporary996 -> £temporary997 £temporary997 0
+35:	
+
+generateName$10:	; Assign £temporary996 -> £temporary997 c
+36:		mov al, [bp + 12]
+37:		mov [si], al
+39:	
+
+generateName$11:	; CallHeader 13 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+41:	
+
+generateName$12:	; Parameter 13 name 6
+42:		mov ax, [bp + 8]
+43:		mov [bp + 19], ax
+45:	
+
+generateName$13:	; Call 13 fileexists 0
+46:		mov word [bp + 13], generateName$14
+47:		mov [bp + 15], bp
+48:		add bp, 13
+49:		jmp fileexists
+51:	
+
+generateName$14:	; PostCall 13
+53:	
+
+generateName$15:	; GetReturnValue £temporary998
+55:	
+
+generateName$16:	; Equal 26 £temporary998 0
+56:		cmp bx, 0
+57:		je generateName$26
+59:	
+
+generateName$17:	; CallHeader 13 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+61:	
+
+generateName$18:	; BinaryAdd £temporary1001 index 1
+62:		mov ax, [bp + 6]
+63:		add ax, 1
+65:	
+
+generateName$19:	; Parameter 13 £temporary1001 6
+66:		mov [bp + 19], ax
+68:	
+
+generateName$20:	; Parameter 13 name 8
+69:		mov ax, [bp + 8]
+70:		mov [bp + 21], ax
+72:	
+
+generateName$21:	; Parameter 13 max 10
+73:		mov ax, [bp + 10]
+74:		mov [bp + 23], ax
+76:	
+
+generateName$22:	; Call 13 generateName 0
+77:		mov word [bp + 13], generateName$23
+78:		mov [bp + 15], bp
+79:		add bp, 13
+80:		jmp generateName
+82:	
+
+generateName$23:	; PostCall 13
+84:	
+
+generateName$24:	; GetReturnValue £temporary1002
+86:	
+
+generateName$25:	; Equal 28 £temporary1002 0
+87:		cmp bx, 0
+88:		je generateName$28
+90:	
+
+generateName$26:	; SetReturnValue 1
+91:		mov bx, 1
+93:	
+
+generateName$27:	; Return 1
+94:		mov ax, [bp]
+95:		mov di, [bp + 4]
+96:		mov bp, [bp + 2]
+97:		jmp ax
+99:	
+
+generateName$28:	; Increment c
+100:		inc byte [bp + 12]
+102:	
+
+generateName$29:	; Goto 7
+103:		jmp generateName$7
+105:	
+
+generateName$30:	; SignedGreaterThanEqual 34 index max
+106:		mov ax, [bp + 10]
+107:		cmp [bp + 6], ax
+108:		jge generateName$34
+110:	
+
+generateName$31:	; BinaryAdd £temporary1007 name index
+111:		mov si, [bp + 8]
+112:		add si, [bp + 6]
+114:	
+
+generateName$32:	; Deref £temporary1006 -> £temporary1007 £temporary1007 0
+116:	
+
+generateName$33:	; Assign £temporary1006 -> £temporary1007 0
+117:		mov byte [si], 0
+119:	
+
+generateName$34:	; SetReturnValue 0
+120:		mov bx, 0
+122:	
+
+generateName$35:	; Return 0
+123:		mov ax, [bp]
+124:		mov di, [bp + 4]
+125:		mov bp, [bp + 2]
+126:		jmp ax
+128:	
+
+generateName$36:	; FunctionEnd generateName
+1:	
+
+tmpnam:	; CallHeader 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+3:	
+
+tmpnam$1:	; Parameter 8 0 6
+4:		mov word [bp + 14], 0
+6:	
+
+tmpnam$2:	; Parameter 8 name 8
+7:		mov ax, [bp + 6]
+8:		mov [bp + 16], ax
+10:	
+
+tmpnam$3:	; Parameter 8 4 10
+11:		mov word [bp + 18], 4
+13:	
+
+tmpnam$4:	; Call 8 generateName 0
+14:		mov word [bp + 8], tmpnam$5
+15:		mov [bp + 10], bp
+16:		add bp, 8
+17:		jmp generateName
+19:	
+
+tmpnam$5:	; PostCall 8
+21:	
+
+tmpnam$6:	; GetReturnValue £temporary1012
+23:	
+
+tmpnam$7:	; Equal 10 £temporary1012 0
+24:		cmp bx, 0
+25:		je tmpnam$10
+27:	
+
+tmpnam$8:	; SetReturnValue name
+28:		mov bx, [bp + 6]
+30:	
+
+tmpnam$9:	; Return name
+31:		mov ax, [bp]
+32:		mov di, [bp + 4]
+33:		mov bp, [bp + 2]
+34:		jmp ax
+36:	
+
+tmpnam$10:	; SetReturnValue 0
+37:		mov bx, 0
+39:	
+
+tmpnam$11:	; Return 0
+40:		mov ax, [bp]
+41:		mov di, [bp + 4]
+42:		mov bp, [bp + 2]
+43:		jmp ax
+45:	
+
+tmpnam$12:	; FunctionEnd tmpnam
+1:	
+
+tmpfile:	; CallHeader 12 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+3:	
+
+tmpfile$1:	; Parameter 12 0 6
+4:		mov word [bp + 18], 0
+6:	
+
+tmpfile$2:	; Parameter 12 name 8
+7:		mov [bp + 20], bp
+8:		add word [bp + 20], 8
+10:	
+
+tmpfile$3:	; Parameter 12 4 10
+11:		mov word [bp + 22], 4
+13:	
+
+tmpfile$4:	; Call 12 generateName 0
+14:		mov word [bp + 12], tmpfile$5
+15:		mov [bp + 14], bp
+16:		add bp, 12
+17:		jmp generateName
+19:	
+
+tmpfile$5:	; PostCall 12
+21:	
+
+tmpfile$6:	; GetReturnValue £temporary1017
+23:	
+
+tmpfile$7:	; Equal 20 £temporary1017 0
+24:		cmp bx, 0
+25:		je tmpfile$20
+27:	
+
+tmpfile$8:	; CallHeader 12 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+29:	
+
+tmpfile$9:	; Parameter 12 name 6
+30:		mov [bp + 18], bp
+31:		add word [bp + 18], 8
+33:	
+
+tmpfile$10:	; Parameter 12 string_w# 8
+34:		mov word [bp + 20], @2413$string_w#
+36:	
+
+tmpfile$11:	; Call 12 fopen 0
+37:		mov word [bp + 12], tmpfile$12
+38:		mov [bp + 14], bp
+39:		add bp, 12
+40:		jmp fopen
+42:	
+
+tmpfile$12:	; PostCall 12
+44:	
+
+tmpfile$13:	; GetReturnValue £temporary1018
+46:	
+
+tmpfile$14:	; Assign stream £temporary1018
+47:		mov [bp + 6], bx
+49:	
+
+tmpfile$15:	; Equal 20 stream 0
+50:		cmp word [bp + 6], 0
+51:		je tmpfile$20
+53:	
+
+tmpfile$16:	; Deref £temporary1022 -> stream stream 27
+54:		mov si, [bp + 6]
+56:	
+
+tmpfile$17:	; Assign £temporary1022 -> stream 1
+57:		mov word [si + 27], 1
+59:	
+
+tmpfile$18:	; SetReturnValue stream
+60:		mov bx, [bp + 6]
+62:	
+
+tmpfile$19:	; Return stream
+63:		mov ax, [bp]
+64:		mov di, [bp + 4]
+65:		mov bp, [bp + 2]
+66:		jmp ax
+68:	
+
+tmpfile$20:	; SetReturnValue 0
+69:		mov bx, 0
+71:	
+
+tmpfile$21:	; Return 0
+72:		mov ax, [bp]
+73:		mov di, [bp + 4]
+74:		mov bp, [bp + 2]
+75:		jmp ax
+77:	
+
+tmpfile$22:	; FunctionEnd tmpfile

@@ -1,0 +1,17 @@
+0: Assign index integral4$0#
+1: GreaterThanEqual 15 index integral4$256#
+2: Multiply £temporary2959 index integral4$8#
+3: IntegralToIntegral £temporary2960 £temporary2959
+4: Add £temporary2961 g_funcArray £temporary2960
+5: Dereference £temporary2962 £temporary2961 0
+6: NotEqual 13 £temporary2962 integral8$0#
+7: Multiply £temporary2964 index integral4$8#
+8: IntegralToIntegral £temporary2965 £temporary2964
+9: Add £temporary2966 g_funcArray £temporary2965
+10: Dereference £temporary2967 £temporary2966 0
+11: Assign £temporary2967 fcn
+12: Return integral4$0#
+13: Add index index integral4$1#
+14: Jump 1
+15: Return integral4$minus1#
+16: FunctionEnd atexit

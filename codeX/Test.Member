@@ -871,15 +871,15 @@
 47: Empty
 48: Return 0
 49: FunctionEnd exp
-0: PushFloat x
-1: PushZero
-2: SignedGreaterThan 5 x 0
+0: PushZero
+1: PushFloat x
+2: SignedLessThan 5 0 x
 3: Goto 102
 4: CheckTrackMapFloatStack
 5: Assign n 0
-6: PushFloat x
-7: PushOne
-8: SignedGreaterThan 11 x 1
+6: PushOne
+7: PushFloat x
+8: SignedLessThan 11 1 x
 9: Goto 25
 10: CheckTrackMapFloatStack
 11: PushFloat x
@@ -896,14 +896,14 @@
 22: Assign n £temporary323
 23: Goto 11
 24: Goto 45
-25: PushFloat x
-26: PushFloat 0.368
-27: SignedLessThan 30 x 0.368
+25: PushFloat 0.368
+26: PushFloat x
+27: SignedGreaterThan 30 0.368 x
 28: Goto 45
 29: CheckTrackMapFloatStack
-30: PushFloat x
-31: PushFloat 0.368
-32: SignedLessThan 35 x 0.368
+30: PushFloat 0.368
+31: PushFloat x
+32: SignedGreaterThan 35 0.368 x
 33: Goto 45
 34: CheckTrackMapFloatStack
 35: PushFloat x
@@ -956,14 +956,14 @@
 82: SignedMultiply £temporary334 sign -1.0
 83: TopFloat sign
 84: PopFloat
-85: CallHeader 64 fabs
-86: PushFloat term
-87: Parameter 64 term 6
-88: Call 64 fabs 0
-89: PostCall 64
-90: GetReturnValue £temporary335
-91: PushFloat 0.000000001
-92: SignedGreaterThanEqual 57 £temporary335 0.000000001
+85: PushFloat 0.000000001
+86: CallHeader 64 fabs
+87: PushFloat term
+88: Parameter 64 term 6
+89: Call 64 fabs 0
+90: PostCall 64
+91: GetReturnValue £temporary335
+92: SignedLessThanEqual 57 0.000000001 £temporary335
 93: Goto 96
 94: CheckTrackMapFloatStack
 95: Goto 57

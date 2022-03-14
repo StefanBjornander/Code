@@ -1,0 +1,174 @@
+0: Assign minus integral2$0#
+1: Assign found integral2$0#
+2: PushFloat floating8$0.0#
+3: PopFloat value
+4: PushFloat floating8$1.0#
+5: PopFloat factor
+6: PreCall 26
+7: Call 26 scanChar 0
+8: PostCall 26
+9: GetReturnValue £temporary1452
+10: Assign input £temporary1452
+11: Empty
+12: PreCall 27
+13: IntegralToIntegral £temporary1453 input
+14: Parameter 33 signed int £temporary1453
+15: Call 27 isspace 0
+16: PostCall 27
+17: GetReturnValue £temporary1454
+18: NotEqual < PreCall 27> £temporary1454 integral2$0#
+19: Jump < Equal < Empty> input integral1$43#>
+20: PreCall 27
+21: Call 27 scanChar 0
+22: PostCall 27
+23: GetReturnValue £temporary1455
+24: Assign input £temporary1455
+25: Empty
+26: Jump < Empty>
+27: Equal < Empty> input integral1$43#
+28: Jump < Empty>
+29: Empty
+30: PreCall 27
+31: Call 27 scanChar 0
+32: PostCall 27
+33: GetReturnValue £temporary1458
+34: Assign input £temporary1458
+35: Jump < Empty>
+36: Empty
+37: Equal < Empty> input integral1$45#
+38: Jump < Empty>
+39: Empty
+40: Assign minus integral2$1#
+41: PreCall 27
+42: Call 27 scanChar 0
+43: PostCall 27
+44: GetReturnValue £temporary1460
+45: Assign input £temporary1460
+46: Jump < Empty>
+47: Empty
+48: Empty
+49: Empty
+50: Empty
+51: PreCall 27
+52: IntegralToIntegral £temporary1465 input
+53: Parameter 33 signed int £temporary1465
+54: Call 27 isdigit 0
+55: PostCall 27
+56: GetReturnValue £temporary1466
+57: NotEqual < PushFloat value> £temporary1466 integral2$0#
+58: Jump < Equal < Empty> input integral1$46#>
+59: PushFloat value
+60: PopEmpty
+61: PushFloat floating8$10.0#
+62: PushFloat value
+63: Multiply £temporary1467 floating8$10.0# value
+64: Subtract £temporary1468 input integral1$48#
+65: IntegralToIntegral £temporary1470 £temporary1468
+66: IntegralToFloating £temporary1469 £temporary1470
+67: Add £temporary1471 £temporary1467 £temporary1469
+68: PopFloat value
+69: PreCall 27
+70: Call 27 scanChar 0
+71: PostCall 27
+72: GetReturnValue £temporary1472
+73: Assign input £temporary1472
+74: Assign found integral2$1#
+75: Empty
+76: Jump < Empty>
+77: Equal < Empty> input integral1$46#
+78: Jump < Empty>
+79: Empty
+80: PreCall 27
+81: Call 27 scanChar 0
+82: PostCall 27
+83: GetReturnValue £temporary1475
+84: Assign input £temporary1475
+85: Empty
+86: PreCall 27
+87: IntegralToIntegral £temporary1476 input
+88: Parameter 33 signed int £temporary1476
+89: Call 27 isdigit 0
+90: PostCall 27
+91: GetReturnValue £temporary1477
+92: NotEqual < PushFloat factor> £temporary1477 integral2$0#
+93: Jump < PreCall 27>
+94: PushFloat factor
+95: PushFloat floating8$10.0#
+96: Divide £temporary1478 factor floating8$10.0#
+97: PopFloat factor
+98: PushFloat value
+99: PushFloat factor
+100: Subtract £temporary1479 input integral1$48#
+101: IntegralToIntegral £temporary1481 £temporary1479
+102: IntegralToFloating £temporary1480 £temporary1481
+103: Multiply £temporary1482 factor £temporary1480
+104: Add £temporary1483 value £temporary1482
+105: PopFloat value
+106: PreCall 27
+107: Call 27 scanChar 0
+108: PostCall 27
+109: GetReturnValue £temporary1484
+110: Assign input £temporary1484
+111: Assign found integral2$1#
+112: Empty
+113: Jump < Empty>
+114: Jump < Empty>
+115: Empty
+116: Empty
+117: PreCall 27
+118: IntegralToIntegral £temporary1488 input
+119: Parameter 33 signed int £temporary1488
+120: Call 27 tolower 0
+121: PostCall 27
+122: GetReturnValue £temporary1489
+123: Equal < Empty> £temporary1489 integral2$101#
+124: Jump < Empty>
+125: Empty
+126: PreCall 27
+127: Parameter 33 signed int integral2$10#
+128: Call 27 scanLongInt 0
+129: PostCall 27
+130: GetReturnValue £temporary1491
+131: IntegralToFloating £temporary1492 £temporary1491
+132: PopFloat exponent
+133: PushFloat value
+134: PreCall 35
+135: PushFloat floating8$10.0#
+136: Parameter 41 double floating8$10.0#
+137: PushFloat exponent
+138: Parameter 49 double exponent
+139: Call 35 pow 0
+140: PostCall 35
+141: GetReturnValue £temporary1493
+142: Multiply £temporary1494 value £temporary1493
+143: PopFloat value
+144: Jump < Empty>
+145: Empty
+146: PreCall 27
+147: Parameter 33 signed char input
+148: Call 27 unscanChar 0
+149: PostCall 27
+150: Empty
+151: NotEqual < Empty> minus integral2$0#
+152: Jump < Empty>
+153: Empty
+154: PushFloat value
+155: PopEmpty
+156: PushFloat value
+157: Minus £temporary1498 value
+158: PopFloat value
+159: Jump < Empty>
+160: Empty
+161: Empty
+162: NotEqual < Empty> found integral2$0#
+163: Jump < Empty>
+164: Empty
+165: Add £temporary1502 g_inCount integral2$1#
+166: Assign g_inCount £temporary1502
+167: Jump < Empty>
+168: Empty
+169: Empty
+170: PushFloat value
+171: Return value
+172: Empty
+173: FunctionEnd scanLongDouble

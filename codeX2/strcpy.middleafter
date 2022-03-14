@@ -1,0 +1,20 @@
+0: Assign index integral4$0#
+1: IntegralToIntegral £temporary3432 index
+2: Add £temporary3433 source £temporary3432
+3: Dereference £temporary3434 £temporary3433 0
+4: Equal 14 £temporary3434 integral1$0#
+5: IntegralToIntegral £temporary3438 index
+6: Add £temporary3439 target £temporary3438
+7: Dereference £temporary3440 £temporary3439 0
+8: IntegralToIntegral £temporary3442 index
+9: Add £temporary3443 source £temporary3442
+10: Dereference £temporary3444 £temporary3443 0
+11: Assign £temporary3440 £temporary3444
+12: Add index index integral4$1#
+13: Jump 1
+14: IntegralToIntegral £temporary3446 index
+15: Add £temporary3447 target £temporary3446
+16: Dereference £temporary3448 £temporary3447 0
+17: Assign £temporary3448 integral1$0#
+18: Return target
+19: FunctionEnd strcpy

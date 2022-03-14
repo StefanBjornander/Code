@@ -1,0 +1,31 @@
+0: PushFloat y
+1: PushFloat floating8$0#
+2: Equal 27 y floating8$0#
+3: PreCall 22 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+4: PushFloat x
+5: PushFloat y
+6: PushFloat x
+7: PushFloat y
+8: Divide £temporary539 x y
+9: FloatingToIntegral £temporary540 £temporary539
+10: IntegralToFloating £temporary542 £temporary540
+11: Multiply £temporary541 y £temporary542
+12: Subtract £temporary543 x £temporary541
+13: Parameter 28 double £temporary543
+14: Call 22 fabs 0
+15: PostCall 22
+16: GetReturnValue £temporary544
+17: PopFloat remainder
+18: PushFloat x
+19: PushFloat floating8$0#
+20: LessThanEqual 24 x floating8$0#
+21: PushFloat remainder
+22: DecreaseStack
+23: Jump 26
+24: PushFloat remainder
+25: Minus £temporary546 remainder
+26: Return £temporary547
+27: Assign errno EDOM
+28: PushFloat floating8$0#
+29: Return floating8$0#
+30: FunctionEnd fmod

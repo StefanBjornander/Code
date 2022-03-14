@@ -1,0 +1,10 @@
+0: AssignRegister ah integral1$61#
+1: AssignRegister al mode
+2: AssignRegister dx name
+3: Interrupt 33
+4: NotCarry 7
+5: Assign errno FOPEN
+6: Return integral2$minus1#
+7: InspectRegister £temporary839 ax
+8: Return £temporary839
+9: FunctionEnd fileopen

@@ -1,0 +1,39 @@
+0: Equal 18 stream integral2$0#
+1: AssignRegister ah integral1$62#
+2: Dereference £temporary935 stream 0
+3: AssignRegister bx £temporary935.handle
+4: Interrupt 33
+5: NotCarry 8
+6: Assign errno FCLOSE
+7: Return integral2$minus1#
+8: Dereference £temporary939 stream 0
+9: Equal 15 £temporary939.temporary integral2$0#
+10: PreCall 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+11: Dereference £temporary940 stream 0
+12: Parameter 14 array £temporary940.name
+13: Call 8 remove 0
+14: PostCall 8
+15: Dereference £temporary945 stream 0
+16: Assign £temporary945.open integral2$0#
+17: Return integral2$0#
+18: Assign index integral2$0#
+19: GreaterThanEqual 37 index integral2$20#
+20: Multiply £temporary948 index integral2$29#
+21: Add £temporary949 g_fileArray £temporary948
+22: Dereference £temporary950 £temporary949 0
+23: Equal 35 £temporary950.open integral2$0#
+24: PreCall 10 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+25: Multiply £temporary951 index integral2$29#
+26: Add £temporary952 g_fileArray £temporary951
+27: Dereference £temporary953 £temporary952 0
+28: Address £temporary954 £temporary953
+29: Parameter 16 pointer £temporary954
+30: Call 10 fclose 0
+31: PostCall 10
+32: GetReturnValue £temporary955
+33: NotEqual 35 £temporary955 integral2$minus1#
+34: Return integral2$minus1#
+35: Add index index integral2$1#
+36: Jump 19
+37: Return integral2$0#
+38: FunctionEnd fclose

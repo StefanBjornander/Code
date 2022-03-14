@@ -1,0 +1,43 @@
+0: PreCall 44
+1: Parameter 68 pointer subString
+2: Call 44 strlen 0
+3: PostCall 44
+4: GetReturnValue £temporary3679
+5: Assign subStringSize £temporary3679
+6: Assign index integral4$0#
+7: Empty
+8: Multiply £temporary3680 index integral4$1#
+9: IntegralToIntegral £temporary3681 £temporary3680
+10: Add £temporary3682 mainString £temporary3681
+11: Dereference £temporary3683 £temporary3682 0
+12: NotEqual < PreCall 48> £temporary3683 integral1$0#
+13: Jump < Return integral8$0#>
+14: PreCall 48
+15: Multiply £temporary3686 index integral4$1#
+16: IntegralToIntegral £temporary3687 £temporary3686
+17: Add £temporary3688 mainString £temporary3687
+18: Parameter 72 pointer £temporary3688
+19: Parameter 80 pointer subString
+20: Parameter 88 signed int subStringSize
+21: Call 48 strncmp 0
+22: PostCall 48
+23: GetReturnValue £temporary3689
+24: Equal < Empty> £temporary3689 integral4$0#
+25: Jump < Empty>
+26: Empty
+27: Multiply £temporary3691 index integral4$1#
+28: IntegralToIntegral £temporary3692 £temporary3691
+29: Add £temporary3693 mainString £temporary3692
+30: Dereference £temporary3694 £temporary3693 0
+31: Address £temporary3695 £temporary3694
+32: Return £temporary3695
+33: Jump < Empty>
+34: Empty
+35: Empty
+36: Empty
+37: Add £temporary3685 index integral4$1#
+38: Assign index £temporary3685
+39: Jump < Empty>
+40: Return integral8$0#
+41: Empty
+42: FunctionEnd strstr

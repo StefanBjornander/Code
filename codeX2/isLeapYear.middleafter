@@ -1,0 +1,11 @@
+0: Modulo £temporary3053 year integral4$4#
+1: NotEqual 4 £temporary3053 integral4$0#
+2: Modulo £temporary3055 year integral4$100#
+3: NotEqual 6 £temporary3055 integral4$0#
+4: Modulo £temporary3058 year integral4$400#
+5: NotEqual 8 £temporary3058 integral4$0#
+6: Assign £temporary3061 integral4$1#
+7: Jump 9
+8: Assign £temporary3061 integral4$0#
+9: Return £temporary3061
+10: FunctionEnd isLeapYear

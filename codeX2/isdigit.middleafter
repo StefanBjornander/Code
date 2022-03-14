@@ -1,0 +1,7 @@
+0: LessThan 4 c integral2$48#
+1: GreaterThan 4 c integral2$57#
+2: Assign £temporary204 integral2$1#
+3: Jump 5
+4: Assign £temporary204 integral2$0#
+5: Return £temporary204
+6: FunctionEnd isdigit

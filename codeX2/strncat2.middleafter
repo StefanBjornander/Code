@@ -1,0 +1,28 @@
+0: CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 14 target 6
+2: Call 14 strlen 0
+3: PostCall 14
+4: GetReturnValue £temporary3908
+5: Assign targetLength £temporary3908
+6: Assign index 0
+7: BinarySubtract £temporary3909 size 1
+8: SignedGreaterThanEqual 20 index £temporary3909
+9: BinaryAdd £temporary3912 source index
+10: Deref £temporary3911 -> £temporary3912 £temporary3912 0
+11: Equal 20 £temporary3911 -> £temporary3912 0
+12: BinaryAdd £temporary3916 targetLength index
+13: BinaryAdd £temporary3918 target £temporary3916
+14: Deref £temporary3917 -> £temporary3918 £temporary3918 0
+15: BinaryAdd £temporary3920 source index
+16: Deref £temporary3919 -> £temporary3920 £temporary3920 0
+17: Assign £temporary3917 -> £temporary3918 £temporary3919 -> £temporary3920
+18: Increment index
+19: Goto 7
+20: BinaryAdd £temporary3921 targetLength size
+21: BinarySubtract £temporary3922 £temporary3921 1
+22: BinaryAdd £temporary3924 target £temporary3922
+23: Deref £temporary3923 -> £temporary3924 £temporary3924 0
+24: Assign £temporary3923 -> £temporary3924 0
+25: SetReturnValue target
+26: Return target
+27: FunctionEnd strncat

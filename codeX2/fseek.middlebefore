@@ -1,0 +1,25 @@
+0: IntegralToIntegral £temporary1070 origin
+1: AssignRegister al £temporary1070
+2: AssignRegister ah integral1$66#
+3: Dereference £temporary1073 stream 0
+4: AssignRegister bx £temporary1073.handle
+5: AssignRegister cx integral2$0#
+6: IntegralToIntegral £temporary1076 offset
+7: AssignRegister dx £temporary1076
+8: Interrupt 33
+9: Carry < Empty>
+10: Jump < Empty>
+11: Empty
+12: Dereference £temporary1079 stream 0
+13: InspectRegister £temporary1080 ax
+14: Assign £temporary1079.position £temporary1080
+15: Dereference £temporary1081 stream 0
+16: Return £temporary1081.position
+17: Jump < Empty>
+18: Empty
+19: Dereference £temporary1082 stream 0
+20: Assign £temporary1082.errno FSEEK
+21: Return integral2$minus1#
+22: Empty
+23: Empty
+24: FunctionEnd fseek

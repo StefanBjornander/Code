@@ -1,0 +1,42 @@
+0: Equal < Empty> stream integral2$0#
+1: Jump < Empty>
+2: Empty
+3: Assign index integral2$0#
+4: Empty
+5: LessThan < Multiply £temporary916 index integral2$29#> index integral2$20#
+6: Jump < Return integral2$0#>
+7: Multiply £temporary916 index integral2$29#
+8: Add £temporary917 g_fileArray £temporary916
+9: Dereference £temporary918 £temporary917 0
+10: NotEqual < Empty> £temporary918.open integral2$0#
+11: Jump < Empty>
+12: Empty
+13: PreCall 10
+14: Multiply £temporary919 index integral2$29#
+15: Add £temporary920 g_fileArray £temporary919
+16: Dereference £temporary921 £temporary920 0
+17: Address £temporary922 £temporary921
+18: Parameter 16 pointer £temporary922
+19: Call 10 fflush 0
+20: PostCall 10
+21: GetReturnValue £temporary923
+22: Equal < Empty> £temporary923 integral2$minus1#
+23: Jump < Empty>
+24: Empty
+25: Return integral2$minus1#
+26: Jump < Empty>
+27: Empty
+28: Empty
+29: Jump < Empty>
+30: Empty
+31: Empty
+32: Empty
+33: Add £temporary915 index integral2$1#
+34: Assign index £temporary915
+35: Jump < Empty>
+36: Jump < Empty>
+37: Empty
+38: Empty
+39: Return integral2$0#
+40: Empty
+41: FunctionEnd fflush

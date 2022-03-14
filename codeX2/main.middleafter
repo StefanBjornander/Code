@@ -1,0 +1,54 @@
+0: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Call 6 math_test 0
+2: PostCall 6
+3: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+4: Call 6 file_test 0
+5: PostCall 6
+6: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+7: Call 6 time_test 0
+8: PostCall 6
+9: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+10: Call 6 assert_test 0
+11: PostCall 6
+12: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+13: Call 6 malloc_test 0
+14: PostCall 6
+15: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+16: Call 6 print_test 0
+17: PostCall 6
+18: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+19: Call 6 limits_test 0
+20: PostCall 6
+21: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+22: Call 6 float_test 0
+23: PostCall 6
+24: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+25: Call 6 setjmp_test 0
+26: PostCall 6
+27: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+28: Call 6 stdio_test 0
+29: PostCall 6
+30: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+31: Call 6 string_test 0
+32: PostCall 6
+33: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+34: Call 6 stdio_test 0
+35: PostCall 6
+36: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+37: Call 6 stdlib_test 0
+38: PostCall 6
+39: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+40: Call 6 strtol_test 0
+41: PostCall 6
+42: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+43: Call 6 strtoul_test 0
+44: PostCall 6
+45: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+46: Call 6 character_test 0
+47: PostCall 6
+48: PreCall 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+49: Call 6 locale_test 0
+50: PostCall 6
+51: Return
+52: Exit
+53: FunctionEnd main

@@ -1,0 +1,28 @@
+0: PreCall 12
+1: Parameter 18 signed int integral2$0#
+2: Parameter 20 array name
+3: Parameter 22 signed int integral2$4#
+4: Call 12 generateName 0
+5: PostCall 12
+6: GetReturnValue £temporary1138
+7: NotEqual < PreCall 12> £temporary1138 integral2$0#
+8: Jump < Empty>
+9: PreCall 12
+10: Parameter 18 array name
+11: Parameter 20 string string_w#
+12: Call 12 fopen 0
+13: PostCall 12
+14: GetReturnValue £temporary1139
+15: Assign stream £temporary1139
+16: NotEqual < Empty> stream integral2$0#
+17: Jump < Empty>
+18: Empty
+19: Dereference £temporary1143 stream 0
+20: Assign £temporary1143.temporary integral2$1#
+21: Return stream
+22: Jump < Empty>
+23: Empty
+24: Empty
+25: Return integral2$0#
+26: Empty
+27: FunctionEnd tmpfile

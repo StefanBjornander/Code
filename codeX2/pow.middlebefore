@@ -1,0 +1,118 @@
+0: PushFloat x
+1: PushFloat floating8$0#
+2: GreaterThan < Empty> x floating8$0#
+3: Jump < Empty>
+4: Empty
+5: PreCall 22
+6: PushFloat y
+7: PreCall 22
+8: PushFloat x
+9: Parameter 28 double x
+10: Call 22 log 0
+11: PostCall 22
+12: GetReturnValue £temporary431
+13: Multiply £temporary432 y £temporary431
+14: Parameter 28 double £temporary432
+15: Call 22 exp 0
+16: PostCall 22
+17: GetReturnValue £temporary433
+18: Return £temporary433
+19: Jump < Empty>
+20: Empty
+21: PushFloat x
+22: PushFloat floating8$0#
+23: Equal < PushFloat y> x floating8$0#
+24: Jump < Empty>
+25: PushFloat y
+26: PushFloat floating8$0#
+27: Equal < Empty> y floating8$0#
+28: Jump < Empty>
+29: Empty
+30: PushFloat floating8$1#
+31: Return floating8$1#
+32: Jump < Empty>
+33: Empty
+34: PushFloat x
+35: PushFloat floating8$0#
+36: Equal < PushFloat y> x floating8$0#
+37: Jump < Empty>
+38: PushFloat y
+39: PushFloat floating8$0#
+40: GreaterThan < Empty> y floating8$0#
+41: Jump < Empty>
+42: Empty
+43: PushFloat floating8$0#
+44: Return floating8$0#
+45: Jump < Empty>
+46: Empty
+47: PushFloat x
+48: PushFloat floating8$0#
+49: LessThan < PreCall 22> x floating8$0#
+50: Jump < Empty>
+51: PreCall 22
+52: PushFloat y
+53: Parameter 28 double y
+54: Call 22 floor 0
+55: PostCall 22
+56: GetReturnValue £temporary441
+57: PreCall 22
+58: PushFloat y
+59: Parameter 28 double y
+60: Call 22 ceil 0
+61: PostCall 22
+62: GetReturnValue £temporary442
+63: Equal < Empty> £temporary441 £temporary442
+64: Jump < Empty>
+65: Empty
+66: PushFloat y
+67: FloatingToIntegral £temporary445 y
+68: Assign long_y £temporary445
+69: Modulo £temporary446 long_y integral4$2#
+70: Equal < Empty> £temporary446 integral4$0#
+71: Jump < Empty>
+72: Empty
+73: PreCall 26
+74: PushFloat y
+75: PreCall 26
+76: PushFloat x
+77: Minus £temporary448 x
+78: Parameter 32 double £temporary448
+79: Call 26 log 0
+80: PostCall 26
+81: GetReturnValue £temporary449
+82: Multiply £temporary450 y £temporary449
+83: Parameter 32 double £temporary450
+84: Call 26 exp 0
+85: PostCall 26
+86: GetReturnValue £temporary451
+87: Return £temporary451
+88: Jump < Empty>
+89: Empty
+90: PreCall 26
+91: PushFloat y
+92: PreCall 26
+93: PushFloat x
+94: Minus £temporary452 x
+95: Parameter 32 double £temporary452
+96: Call 26 log 0
+97: PostCall 26
+98: GetReturnValue £temporary453
+99: Multiply £temporary454 y £temporary453
+100: Parameter 32 double £temporary454
+101: Call 26 exp 0
+102: PostCall 26
+103: GetReturnValue £temporary455
+104: Minus £temporary456 £temporary455
+105: Return £temporary456
+106: Empty
+107: Jump < Empty>
+108: Empty
+109: Assign errno EDOM
+110: PushFloat floating8$0#
+111: Return floating8$0#
+112: Empty
+113: Empty
+114: Empty
+115: Empty
+116: Empty
+117: FunctionEnd pow

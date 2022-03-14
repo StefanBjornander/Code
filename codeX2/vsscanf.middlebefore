@@ -1,0 +1,12 @@
+0: Assign g_inStatus integral4$1#
+1: IntegralToIntegral £temporary1770 inString
+2: Assign g_inDevice £temporary1770
+3: PreCall 48
+4: Parameter 72 pointer format
+5: Parameter 80 pointer arg_list
+6: Call 48 scanFormat 0
+7: PostCall 48
+8: GetReturnValue £temporary1771
+9: Return £temporary1771
+10: Empty
+11: FunctionEnd vsscanf

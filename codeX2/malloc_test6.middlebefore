@@ -1,0 +1,30 @@
+0: Assign lowHeapPtr integral8$65534#
+1: InspectRegister £temporary5000 bp
+2: IntegralToIntegral £temporary5001 £temporary5000
+3: Assign stackTop £temporary5001
+4: Assign i integral4$0#
+5: Empty
+6: LessThan < PreCall 40> i integral4$1000#
+7: Jump < Empty>
+8: PreCall 40
+9: Parameter 64 signed int integral4$96#
+10: Call 40 malloc 0
+11: PostCall 40
+12: GetReturnValue £temporary5004
+13: Assign p £temporary5004
+14: PreCall 48
+15: Parameter 72 string string_Index3A2025i2C20Pointer3A2025u2C20Stack20top3A2025u2C20Low20Heap3A2025u0A#
+16: Parameter 80 signed int i
+17: Parameter 84 pointer p
+18: Parameter 92 unsigned int stackTop
+19: Dereference £temporary5005 lowHeapPtr 0
+20: Parameter 96 unsigned int £temporary5005
+21: Call 48 printf 20
+22: PostCall 48
+23: Empty
+24: Add £temporary5003 i integral4$1#
+25: Assign i £temporary5003
+26: Jump < Empty>
+27: Empty
+28: Return
+29: FunctionEnd malloc_test6

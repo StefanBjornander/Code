@@ -1,0 +1,27 @@
+0: PreCall 10
+1: Parameter 16 pointer s
+2: Call 10 strlen 0
+3: PostCall 10
+4: GetReturnValue £temporary1016
+5: Add £temporary1017 £temporary1016 integral2$1#
+6: Multiply £temporary1018 £temporary1017 integral2$1#
+7: Assign size £temporary1018
+8: PreCall 12
+9: Parameter 18 pointer s
+10: Parameter 20 signed int size
+11: Parameter 22 signed int integral2$1#
+12: Parameter 24 pointer stream
+13: Call 12 fwrite 0
+14: PostCall 12
+15: GetReturnValue £temporary1019
+16: Equal < Empty> £temporary1019 size
+17: Jump < Empty>
+18: Empty
+19: Assign £temporary1021 integral2$0#
+20: Jump < Empty>
+21: Empty
+22: Assign £temporary1021 integral2$minus1#
+23: Empty
+24: Return £temporary1021
+25: Empty
+26: FunctionEnd fputs

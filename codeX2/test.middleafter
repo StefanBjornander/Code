@@ -1,0 +1,29 @@
+0: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 64 array buffer
+2: Call 40 setjmp 0
+3: PostCall 40
+4: GetReturnValue £temporary4141
+5: IntegralToIntegral £temporary4142 £temporary4141
+6: Assign message £temporary4142
+7: NotEqual 22 message integral8$0#
+8: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: Parameter 64 string string_12E0202F2025f203D2025f0A#
+10: PushFloat x
+11: Parameter 72 double x
+12: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+13: PushFloat x
+14: Parameter 104 double x
+15: Call 80 inverse 0
+16: PostCall 80
+17: GetReturnValue £temporary4144
+18: Parameter 80 double £temporary4144
+19: Call 40 printf 16
+20: PostCall 40
+21: Jump 27
+22: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+23: Parameter 64 string string_25s0A#
+24: Parameter 72 pointer message
+25: Call 40 printf 8
+26: PostCall 40
+27: Return
+28: FunctionEnd test

@@ -1,12 +1,12 @@
-0: PushFloat x
-1: PushFloat floating8$0#
-2: GreaterThan 4 x floating8$0#
+0: PushFloat floating8$0#
+1: PushFloat x
+2: LessThan 4 floating8$0# x
 3: Jump 99
 4: Empty
 5: Assign n integral4$0#
-6: PushFloat x
-7: PushFloat floating8$1#
-8: GreaterThan 10 x floating8$1#
+6: PushFloat floating8$1#
+7: PushFloat x
+8: LessThan 10 floating8$1# x
 9: Jump 25
 10: Empty
 11: Empty
@@ -24,15 +24,15 @@
 23: Jump 11
 24: Jump 47
 25: Empty
-26: PushFloat x
-27: PushFloat floating8$0.368#
-28: LessThan 30 x floating8$0.368#
+26: PushFloat floating8$0.368#
+27: PushFloat x
+28: GreaterThan 30 floating8$0.368# x
 29: Jump 45
 30: Empty
 31: Empty
-32: PushFloat x
-33: PushFloat floating8$0.368#
-34: LessThan 36 x floating8$0.368#
+32: PushFloat floating8$0.368#
+33: PushFloat x
+34: GreaterThan 36 floating8$0.368# x
 35: Jump 48
 36: PushFloat x
 37: PushFloat floating8$2.71#
@@ -83,14 +83,14 @@
 82: PushFloat floating8$minus1.0#
 83: Multiply £temporary430 sign floating8$minus1.0#
 84: PopFloat sign
-85: PreCall 84
-86: PushFloat term
-87: Parameter 108 double term
-88: Call 84 fabs 0
-89: PostCall 84
-90: GetReturnValue £temporary431
-91: PushFloat floating8$0.000000001#
-92: GreaterThanEqual 60 £temporary431 floating8$0.000000001#
+85: PushFloat floating8$0.000000001#
+86: PreCall 84
+87: PushFloat term
+88: Parameter 108 double term
+89: Call 84 fabs 0
+90: PostCall 84
+91: GetReturnValue £temporary431
+92: LessThanEqual 60 floating8$0.000000001# £temporary431
 93: Jump 94
 94: PushFloat sum
 95: IntegralToFloating £temporary434 n

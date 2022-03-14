@@ -1,0 +1,23 @@
+0: PushFloat x
+1: PushFloat floating8$0#
+2: LessThan < Empty> x floating8$0#
+3: Jump < Empty>
+4: Empty
+5: PreCall 14
+6: PushFloat x
+7: Minus £temporary735 x
+8: Parameter 20 double £temporary735
+9: Call 14 ceil 0
+10: PostCall 14
+11: GetReturnValue £temporary736
+12: Minus £temporary737 £temporary736
+13: Return £temporary737
+14: Jump < Empty>
+15: Empty
+16: Empty
+17: PushFloat x
+18: FloatingToIntegral £temporary740 x
+19: IntegralToFloating £temporary741 £temporary740
+20: Return £temporary741
+21: Empty
+22: FunctionEnd floor

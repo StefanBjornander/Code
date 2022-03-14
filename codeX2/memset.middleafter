@@ -1,0 +1,14 @@
+0: IntegralToIntegral £temporary3875 block
+1: Assign charBlock £temporary3875
+2: IntegralToIntegral £temporary3876 i
+3: Assign c £temporary3876
+4: Assign index integral4$0#
+5: GreaterThanEqual 12 index size
+6: IntegralToIntegral £temporary3880 index
+7: Add £temporary3881 charBlock £temporary3880
+8: Dereference £temporary3882 £temporary3881 0
+9: Assign £temporary3882 c
+10: Add index index integral4$1#
+11: Jump 5
+12: Return block
+13: FunctionEnd memset

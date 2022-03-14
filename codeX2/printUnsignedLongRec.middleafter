@@ -1,0 +1,24 @@
+0: LessThanEqual 22 unsignedValue integral8$0#
+1: Modulo £temporary1882 unsignedValue base
+2: IntegralToIntegral £temporary1883 £temporary1882
+3: Assign digit £temporary1883
+4: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+5: Divide £temporary1884 unsignedValue base
+6: Parameter 72 unsigned long int £temporary1884
+7: Parameter 80 unsigned long int base
+8: Parameter 88 signed int capital
+9: Call 48 printUnsignedLongRec 0
+10: PostCall 48
+11: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+12: Parameter 72 signed int digit
+13: Parameter 76 signed int capital
+14: Call 48 digitToChar 0
+15: PostCall 48
+16: GetReturnValue £temporary1886
+17: Assign c £temporary1886
+18: PreCall 49 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+19: Parameter 73 signed char c
+20: Call 49 printChar 0
+21: PostCall 49
+22: Return
+23: FunctionEnd printUnsignedLongRec

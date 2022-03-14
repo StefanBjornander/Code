@@ -1,0 +1,37 @@
+0: Case < IntegralToIntegral £temporary1781 g_outDevice> g_outStatus integral4$0#
+1: Case < IntegralToIntegral £temporary1791 g_outDevice> g_outStatus integral4$1#
+2: Case < Assign £temporary1798 g_outChars> g_outStatus integral4$2#
+3: CaseEnd g_outStatus
+4: Jump < Empty>
+5: IntegralToIntegral £temporary1781 g_outDevice
+6: Assign stream £temporary1781
+7: AssignRegister rax integral8$1#
+8: Dereference £temporary1784 stream 0
+9: IntegralToIntegral £temporary1785 £temporary1784.handle
+10: AssignRegister rdi £temporary1785
+11: Address £temporary1787 c
+12: IntegralToIntegral £temporary1788 £temporary1787
+13: AssignRegister rsi £temporary1788
+14: AssignRegister rdx integral8$1#
+15: SysCall
+16: Add £temporary1790 g_outChars integral4$1#
+17: Assign g_outChars £temporary1790
+18: Jump < Empty>
+19: IntegralToIntegral £temporary1791 g_outDevice
+20: Assign outString £temporary1791
+21: Assign £temporary1792 g_outChars
+22: Add £temporary1793 g_outChars integral4$1#
+23: Assign g_outChars £temporary1793
+24: Multiply £temporary1794 £temporary1792 integral4$1#
+25: IntegralToIntegral £temporary1795 £temporary1794
+26: Add £temporary1796 outString £temporary1795
+27: Dereference £temporary1797 £temporary1796 0
+28: Assign £temporary1797 c
+29: Jump < Empty>
+30: Assign £temporary1798 g_outChars
+31: Add £temporary1799 g_outChars integral4$1#
+32: Assign g_outChars £temporary1799
+33: Jump < Empty>
+34: Empty
+35: Return
+36: FunctionEnd printChar

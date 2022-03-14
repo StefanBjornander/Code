@@ -1,0 +1,334 @@
+0: Assign s string_Hello2C20World21#
+1: PreCall 244
+2: Parameter 268 string string_strlen282225s2229203D2025i0A#
+3: Parameter 276 pointer s
+4: PreCall 244
+5: Parameter 308 pointer s
+6: Call 284 strlen 0
+7: PostCall 284
+8: GetReturnValue £temporary4040
+9: Parameter 284 signed int £temporary4040
+10: Call 244 printf 12
+11: PostCall 244
+12: PreCall 244
+13: Parameter 268 array t
+14: Parameter 276 pointer s
+15: Call 244 strcpy 0
+16: PostCall 244
+17: PreCall 244
+18: Parameter 268 array u
+19: Parameter 276 pointer s
+20: Parameter 284 signed int integral4$5#
+21: Call 244 strncpy 0
+22: PostCall 244
+23: Add £temporary4044 u integral8$5#
+24: Dereference £temporary4045 £temporary4044 0
+25: Assign £temporary4045 integral1$0#
+26: PreCall 244
+27: Parameter 268 string string_t203D202225s222C20u203D202225s220A#
+28: Parameter 276 array t
+29: Parameter 284 array u
+30: Call 244 printf 16
+31: PostCall 244
+32: PreCall 244
+33: Parameter 268 array t
+34: Parameter 276 string string_abc#
+35: Call 244 strcat 0
+36: PostCall 244
+37: PreCall 244
+38: Parameter 268 array u
+39: Call 244 strlen 0
+40: PostCall 244
+41: GetReturnValue £temporary4048
+42: Assign i £temporary4048
+43: PreCall 244
+44: Parameter 268 array u
+45: Parameter 276 string string_abc#
+46: Parameter 284 signed int integral4$2#
+47: Call 244 strncat 0
+48: PostCall 244
+49: Add £temporary4050 i integral4$2#
+50: Multiply £temporary4051 £temporary4050 integral4$1#
+51: IntegralToIntegral £temporary4052 £temporary4051
+52: Add £temporary4053 u £temporary4052
+53: Dereference £temporary4054 £temporary4053 0
+54: Assign £temporary4054 integral1$0#
+55: PreCall 244
+56: Parameter 268 string string_t203D202225s222C20u203D202225s220A#
+57: Parameter 276 array t
+58: Parameter 284 array u
+59: Call 244 printf 16
+60: PostCall 244
+61: PreCall 244
+62: Parameter 268 string string_strcmp28s2C20u29203D2025i0A#
+63: PreCall 244
+64: Parameter 300 pointer s
+65: Parameter 308 array u
+66: Call 276 strcmp 0
+67: PostCall 276
+68: GetReturnValue £temporary4056
+69: Parameter 276 signed int £temporary4056
+70: Call 244 printf 4
+71: PostCall 244
+72: PreCall 244
+73: Parameter 268 string string_strncmp28s2C20u2C20229203D2025i0A#
+74: PreCall 244
+75: Parameter 300 pointer s
+76: Parameter 308 array u
+77: Parameter 316 signed int integral4$2#
+78: Call 276 strncmp 0
+79: PostCall 276
+80: GetReturnValue £temporary4058
+81: Parameter 276 signed int £temporary4058
+82: Call 244 printf 4
+83: PostCall 244
+84: PreCall 244
+85: Parameter 268 pointer s
+86: Parameter 276 signed int integral4$108#
+87: Call 244 strchr 0
+88: PostCall 244
+89: GetReturnValue £temporary4060
+90: Assign p £temporary4060
+91: PreCall 244
+92: Parameter 268 string string_strchr28s2C2027l2729203D2025i0A#
+93: NotEqual < Empty> p integral8$0#
+94: Jump < Empty>
+95: Empty
+96: Subtract £temporary4062 p s
+97: IntegralToIntegral £temporary4063 £temporary4062
+98: Assign £temporary4064 £temporary4063
+99: Jump < Empty>
+100: Empty
+101: Assign £temporary4064 integral4$minus1#
+102: Empty
+103: Parameter 276 signed int £temporary4064
+104: Call 244 printf 4
+105: PostCall 244
+106: PreCall 244
+107: Parameter 268 pointer s
+108: Parameter 276 signed int integral4$108#
+109: Call 244 strrchr 0
+110: PostCall 244
+111: GetReturnValue £temporary4066
+112: Assign p £temporary4066
+113: PreCall 244
+114: Parameter 268 string string_strrchr28s2C2027l2729203D2025i0A#
+115: NotEqual < Empty> p integral8$0#
+116: Jump < Empty>
+117: Empty
+118: Subtract £temporary4068 p s
+119: IntegralToIntegral £temporary4069 £temporary4068
+120: Assign £temporary4070 £temporary4069
+121: Jump < Empty>
+122: Empty
+123: Assign £temporary4070 integral4$minus1#
+124: Empty
+125: Parameter 276 signed int £temporary4070
+126: Call 244 printf 4
+127: PostCall 244
+128: PreCall 244
+129: Parameter 268 pointer s
+130: Parameter 276 signed int integral4$120#
+131: Call 244 strchr 0
+132: PostCall 244
+133: GetReturnValue £temporary4072
+134: Assign p £temporary4072
+135: PreCall 244
+136: Parameter 268 string string_strchr28s2C2027x2729203D2025i0A#
+137: NotEqual < Empty> p integral8$0#
+138: Jump < Empty>
+139: Empty
+140: Subtract £temporary4074 p s
+141: IntegralToIntegral £temporary4075 £temporary4074
+142: Assign £temporary4076 £temporary4075
+143: Jump < Empty>
+144: Empty
+145: Assign £temporary4076 integral4$minus1#
+146: Empty
+147: Parameter 276 signed int £temporary4076
+148: Call 244 printf 4
+149: PostCall 244
+150: PreCall 244
+151: Parameter 268 pointer s
+152: Parameter 276 signed int integral4$120#
+153: Call 244 strrchr 0
+154: PostCall 244
+155: GetReturnValue £temporary4078
+156: Assign p £temporary4078
+157: PreCall 244
+158: Parameter 268 string string_strrchr28s2C2027x2729203D2025i0A#
+159: NotEqual < Empty> p integral8$0#
+160: Jump < Empty>
+161: Empty
+162: Subtract £temporary4080 p s
+163: IntegralToIntegral £temporary4081 £temporary4080
+164: Assign £temporary4082 £temporary4081
+165: Jump < Empty>
+166: Empty
+167: Assign £temporary4082 integral4$minus1#
+168: Empty
+169: Parameter 276 signed int £temporary4082
+170: Call 244 printf 4
+171: PostCall 244
+172: PreCall 244
+173: Parameter 268 pointer s
+174: Parameter 276 string string_Hello2C20World21#
+175: Parameter 284 signed int integral4$20#
+176: Call 244 memcpy 0
+177: PostCall 244
+178: PreCall 244
+179: Parameter 268 array t
+180: Parameter 276 string string_Hello2C20World21#
+181: Parameter 284 signed int integral4$20#
+182: Call 244 memmove 0
+183: PostCall 244
+184: PreCall 244
+185: Parameter 268 array u
+186: Parameter 276 signed int integral4$88#
+187: Parameter 280 signed int integral4$20#
+188: Call 244 memset 0
+189: PostCall 244
+190: Add £temporary4087 u integral8$19#
+191: Dereference £temporary4088 £temporary4087 0
+192: Assign £temporary4088 integral1$0#
+193: PreCall 244
+194: Parameter 268 string string_s203D202225s222C20t203D202225s222C20u203D202225s220A#
+195: Parameter 276 pointer s
+196: Parameter 284 array t
+197: Parameter 292 array u
+198: Call 244 printf 24
+199: PostCall 244
+200: PreCall 244
+201: Parameter 268 pointer s
+202: Parameter 276 signed int integral4$108#
+203: Parameter 280 signed int integral4$20#
+204: Call 244 memchr 0
+205: PostCall 244
+206: GetReturnValue £temporary4090
+207: Assign p £temporary4090
+208: PreCall 244
+209: Parameter 268 string string_memchr28s2C2027l272C20SIZE202A20sizeof28char2929203D2025i0A#
+210: NotEqual < Empty> p integral8$0#
+211: Jump < Empty>
+212: Empty
+213: Subtract £temporary4092 p s
+214: IntegralToIntegral £temporary4093 £temporary4092
+215: Assign £temporary4094 £temporary4093
+216: Jump < Empty>
+217: Empty
+218: Assign £temporary4094 integral4$minus1#
+219: Empty
+220: Parameter 276 signed int £temporary4094
+221: Call 244 printf 4
+222: PostCall 244
+223: PreCall 244
+224: Parameter 268 pointer s
+225: Parameter 276 signed int integral4$120#
+226: Parameter 280 signed int integral4$20#
+227: Call 244 memchr 0
+228: PostCall 244
+229: GetReturnValue £temporary4096
+230: Assign p £temporary4096
+231: PreCall 244
+232: Parameter 268 string string_memchr28s2C2027x272C20SIZE202A20sizeof28char2929203D2025i0A#
+233: NotEqual < Empty> p integral8$0#
+234: Jump < Empty>
+235: Empty
+236: Subtract £temporary4098 p s
+237: IntegralToIntegral £temporary4099 £temporary4098
+238: Assign £temporary4100 £temporary4099
+239: Jump < Empty>
+240: Empty
+241: Assign £temporary4100 integral4$minus1#
+242: Empty
+243: Parameter 276 signed int £temporary4100
+244: Call 244 printf 4
+245: PostCall 244
+246: PreCall 244
+247: Parameter 268 string string_s3A202225s222C20t3A202225s220A#
+248: Parameter 276 pointer s
+249: Parameter 284 array t
+250: Call 244 printf 16
+251: PostCall 244
+252: PreCall 244
+253: Parameter 268 string string_strcmp28s2C20t29203D2025i0A#
+254: PreCall 244
+255: Parameter 300 pointer s
+256: Parameter 308 array t
+257: Call 276 strcmp 0
+258: PostCall 276
+259: GetReturnValue £temporary4103
+260: Parameter 276 signed int £temporary4103
+261: Call 244 printf 4
+262: PostCall 244
+263: PreCall 244
+264: Parameter 268 string string_memcmp28s2C20t2C20SIZE202A20sizeof28char2929203D2025i0A#
+265: PreCall 244
+266: Parameter 300 pointer s
+267: Parameter 308 array t
+268: Parameter 316 signed int integral4$20#
+269: Call 276 memcmp 0
+270: PostCall 276
+271: GetReturnValue £temporary4105
+272: Parameter 276 signed int £temporary4105
+273: Call 244 printf 4
+274: PostCall 244
+275: PreCall 244
+276: Parameter 268 string string_strspn28s2C2022Hello2C20C2229203D2025i0A#
+277: PreCall 244
+278: Parameter 300 pointer s
+279: Parameter 308 string string_Hello2C20C#
+280: Call 276 strspn 0
+281: PostCall 276
+282: GetReturnValue £temporary4107
+283: Parameter 276 signed int £temporary4107
+284: Call 244 printf 4
+285: PostCall 244
+286: PreCall 244
+287: Parameter 268 string string_strcspn28s2C2022Hello2C20C2229203D2025i0A#
+288: PreCall 244
+289: Parameter 300 pointer s
+290: Parameter 308 string string_Hello2C20C#
+291: Call 276 strcspn 0
+292: PostCall 276
+293: GetReturnValue £temporary4109
+294: Parameter 276 signed int £temporary4109
+295: Call 244 printf 4
+296: PostCall 244
+297: PreCall 244
+298: Parameter 268 string string_strerror28errno29203D202225s220A#
+299: PreCall 244
+300: Parameter 300 signed int errno
+301: Call 276 strerror 0
+302: PostCall 276
+303: GetReturnValue £temporary4111
+304: Parameter 276 pointer £temporary4111
+305: Call 244 printf 8
+306: PostCall 244
+307: PreCall 244
+308: Parameter 268 pointer s
+309: Parameter 276 string string_2C#
+310: Call 244 strtok 0
+311: PostCall 244
+312: GetReturnValue £temporary4113
+313: Assign p £temporary4113
+314: Empty
+315: NotEqual < PreCall 244> p integral8$0#
+316: Jump < Empty>
+317: PreCall 244
+318: Parameter 268 string string_strtok28s2C20222C2229203D202225s220A#
+319: Parameter 276 pointer p
+320: Call 244 printf 8
+321: PostCall 244
+322: PreCall 244
+323: Parameter 268 pointer integral8$0#
+324: Parameter 276 string string_2C#
+325: Call 244 strtok 0
+326: PostCall 244
+327: GetReturnValue £temporary4116
+328: Assign p £temporary4116
+329: Empty
+330: Jump < Empty>
+331: Empty
+332: Return
+333: FunctionEnd string_test

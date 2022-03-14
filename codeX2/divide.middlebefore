@@ -1,0 +1,22 @@
+0: PushFloat y
+1: PushFloat floating8$0#
+2: NotEqual < Empty> y floating8$0#
+3: Jump < Empty>
+4: Empty
+5: PushFloat x
+6: PushFloat y
+7: Divide £temporary4136 x y
+8: Return £temporary4136
+9: Jump < Empty>
+10: Empty
+11: PreCall 40
+12: Parameter 64 array buffer
+13: IntegralToIntegral £temporary4137 string_Division20by20Zero2E#
+14: Parameter 72 signed int £temporary4137
+15: Call 40 longjmp 0
+16: PostCall 40
+17: PushFloat floating8$0#
+18: Return floating8$0#
+19: Empty
+20: Empty
+21: FunctionEnd divide

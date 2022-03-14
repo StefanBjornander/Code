@@ -1,0 +1,262 @@
+0: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 56 string string_atof28221232E4562229203D2025f0A#
+2: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+3: Parameter 88 string string_1232E456#
+4: Call 64 atof 0
+5: PostCall 64
+6: GetReturnValue £temporary5044
+7: Parameter 64 double £temporary5044
+8: Call 32 printf 8
+9: PostCall 32
+10: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+11: Parameter 56 string string_strtod28221232E456789abc222C2026p29203D202825f2C2025s290A#
+12: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+13: Parameter 88 string string_1232E456789abc#
+14: Address £temporary5046 p
+15: Parameter 96 pointer £temporary5046
+16: Call 64 strtod 0
+17: PostCall 64
+18: GetReturnValue £temporary5047
+19: Parameter 64 double £temporary5047
+20: Parameter 72 pointer p
+21: Call 32 printf 16
+22: PostCall 32
+23: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+24: Parameter 48 string string_0Agetenv2822path2229203D2025s0A#
+25: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+26: Parameter 80 string string_path#
+27: Call 56 getenv 0
+28: PostCall 56
+29: GetReturnValue £temporary5049
+30: Parameter 56 pointer £temporary5049
+31: Call 24 printf 8
+32: PostCall 24
+33: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+34: Parameter 48 string string_system2822dir22290A#
+35: Call 24 printf 0
+36: PostCall 24
+37: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+38: Parameter 48 string string_dir#
+39: Call 24 system 0
+40: PostCall 24
+41: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+42: Parameter 48 string string_0Aabs282D329203D2025i2C20abs28329203D2025i0A#
+43: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+44: Parameter 80 signed int integral4$minus3#
+45: Call 56 @abs 0
+46: PostCall 56
+47: GetReturnValue £temporary5053
+48: Parameter 56 signed int £temporary5053
+49: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+50: Parameter 84 signed int integral4$3#
+51: Call 60 @abs 0
+52: PostCall 60
+53: GetReturnValue £temporary5054
+54: Parameter 60 signed int £temporary5054
+55: Call 24 printf 8
+56: PostCall 24
+57: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+58: Parameter 48 string string_labs282D3l29203D2025li2C20labs283l29203D2025li0A0A#
+59: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+60: Parameter 80 signed long int integral8$minus3#
+61: Call 56 labs 0
+62: PostCall 56
+63: GetReturnValue £temporary5056
+64: Parameter 56 signed long int £temporary5056
+65: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+66: Parameter 88 signed long int integral8$3#
+67: Call 64 labs 0
+68: PostCall 64
+69: GetReturnValue £temporary5057
+70: Parameter 64 signed long int £temporary5057
+71: Call 24 printf 16
+72: PostCall 24
+73: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+74: Parameter 48 signed int integral4$10#
+75: Parameter 52 signed int integral4$3#
+76: Call 24 div 0
+77: PostCall 24
+78: GetReturnValue £temporary5059
+79: AssignInitSize i £temporary5059
+80: Assign i £temporary5059
+81: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+82: Parameter 56 string string_div_t28102C20329203D202825i2C2025i290A#
+83: Parameter 64 signed int i.quot
+84: Parameter 68 signed int i.rem
+85: Call 32 printf 8
+86: PostCall 32
+87: PreCall 32 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+88: ParameterInitSize 56 struct i
+89: Parameter 56 struct i
+90: Call 32 print_div 0
+91: PostCall 32
+92: GetReturnValue £temporary5062
+93: AssignInitSize j £temporary5062
+94: Assign j £temporary5062
+95: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+96: Parameter 64 string string_div_t28102C20329203D202825i2C2025i290A0A#
+97: Parameter 72 signed int j.quot
+98: Parameter 76 signed int j.rem
+99: Call 40 printf 8
+100: PostCall 40
+101: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+102: Parameter 48 signed long int integral8$10#
+103: Parameter 56 signed long int integral8$3#
+104: Call 24 ldiv 0
+105: PostCall 24
+106: GetReturnValue £temporary5065
+107: AssignInitSize li £temporary5065
+108: Assign li £temporary5065
+109: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+110: Parameter 64 string string_ldiv_t28102C20329203D202825li2C2025li290A#
+111: Parameter 72 signed long int li.quot
+112: Parameter 80 signed long int li.rem
+113: Call 40 printf 16
+114: PostCall 40
+115: PreCall 40 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+116: ParameterInitSize 64 struct li
+117: Parameter 64 struct li
+118: Call 40 print_ldiv 0
+119: PostCall 40
+120: GetReturnValue £temporary5068
+121: AssignInitSize lj £temporary5068
+122: Assign lj £temporary5068
+123: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+124: Parameter 80 string string_ldiv_t28102C20329203D202825li2C2025li290A0A#
+125: Parameter 88 signed long int lj.quot
+126: Parameter 96 signed long int lj.rem
+127: Call 56 printf 16
+128: PostCall 56
+129: Assign list[0] integral4$3#
+130: Assign list[1] integral4$4#
+131: Assign list[2] integral4$2#
+132: Assign list[3] integral4$1#
+133: Assign size integral4$4#
+134: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+135: Parameter 72 string string_0AA20List2013A20#
+136: Call 48 printf 0
+137: PostCall 48
+138: Assign index integral4$0#
+139: GreaterThanEqual 151 index size
+140: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+141: Parameter 72 string string_25i20#
+142: Multiply £temporary5080 index integral4$4#
+143: IntegralToIntegral £temporary5081 £temporary5080
+144: Add £temporary5082 list £temporary5081
+145: Dereference £temporary5083 £temporary5082 0
+146: Parameter 80 signed int £temporary5083
+147: Call 48 printf 4
+148: PostCall 48
+149: Add index index integral4$1#
+150: Jump 139
+151: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+152: Parameter 72 string string_0AB20List2023A20#
+153: Call 48 printf 0
+154: PostCall 48
+155: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+156: Parameter 72 array list
+157: Parameter 80 signed int size
+158: Parameter 84 signed int integral4$4#
+159: Parameter 88 function compare
+160: Call 48 qsort 0
+161: PostCall 48
+162: Assign index integral4$0#
+163: GreaterThanEqual 175 index size
+164: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+165: Parameter 72 string string_25i20#
+166: Multiply £temporary5091 index integral4$4#
+167: IntegralToIntegral £temporary5092 £temporary5091
+168: Add £temporary5093 list £temporary5092
+169: Dereference £temporary5094 £temporary5093 0
+170: Parameter 80 signed int £temporary5094
+171: Call 48 printf 4
+172: PostCall 48
+173: Add index index integral4$1#
+174: Jump 163
+175: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+176: Parameter 72 string string_0AC20List2033A20#
+177: Call 48 printf 0
+178: PostCall 48
+179: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+180: Parameter 72 array list
+181: Parameter 80 signed int size
+182: Parameter 84 signed int integral4$4#
+183: Parameter 88 function reverse_compare
+184: Call 48 qsort 0
+185: PostCall 48
+186: Assign index integral4$0#
+187: GreaterThanEqual 199 index size
+188: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+189: Parameter 72 string string_25i20#
+190: Multiply £temporary5102 index integral4$4#
+191: IntegralToIntegral £temporary5103 £temporary5102
+192: Add £temporary5104 list £temporary5103
+193: Dereference £temporary5105 £temporary5104 0
+194: Parameter 80 signed int £temporary5105
+195: Call 48 printf 4
+196: PostCall 48
+197: Add index index integral4$1#
+198: Jump 187
+199: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+200: Parameter 72 string string_0AB20List2043A20#
+201: Call 48 printf 0
+202: PostCall 48
+203: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+204: Parameter 72 array list
+205: Parameter 80 signed int size
+206: Parameter 84 signed int integral4$4#
+207: Parameter 88 function compare
+208: Call 48 qsort 0
+209: PostCall 48
+210: Assign index integral4$0#
+211: GreaterThanEqual 223 index size
+212: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+213: Parameter 72 string string_25i20#
+214: Multiply £temporary5113 index integral4$4#
+215: IntegralToIntegral £temporary5114 £temporary5113
+216: Add £temporary5115 list £temporary5114
+217: Dereference £temporary5116 £temporary5115 0
+218: Parameter 80 signed int £temporary5116
+219: Call 48 printf 4
+220: PostCall 48
+221: Add index index integral4$1#
+222: Jump 211
+223: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+224: Parameter 72 string string_0A0ASearch3A0A#
+225: Call 48 printf 0
+226: PostCall 48
+227: Assign key integral4$0#
+228: GreaterThanEqual 256 key integral4$6#
+229: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+230: Address £temporary5121 key
+231: Parameter 72 pointer £temporary5121
+232: Parameter 80 array list
+233: Parameter 88 signed int size
+234: Parameter 92 signed int integral4$4#
+235: Parameter 96 function compare
+236: Call 48 bsearch 0
+237: PostCall 48
+238: GetReturnValue £temporary5124
+239: IntegralToIntegral £temporary5125 £temporary5124
+240: Assign p £temporary5125
+241: Equal 246 p integral8$0#
+242: Subtract £temporary5127 p list
+243: IntegralToIntegral £temporary5128 £temporary5127
+244: Divide £temporary5130 £temporary5128 integral4$4#
+245: Jump 247
+246: Assign £temporary5130 integral4$minus1#
+247: Assign index £temporary5130
+248: PreCall 60 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+249: Parameter 84 string string_20202825i2C2025i290A#
+250: Parameter 92 signed int key
+251: Parameter 96 signed int index
+252: Call 60 printf 8
+253: PostCall 60
+254: Add key key integral4$1#
+255: Jump 228
+256: PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+257: Parameter 68 string string_0A#
+258: Call 44 printf 0
+259: PostCall 44
+260: Return
+261: FunctionEnd stdlib_test

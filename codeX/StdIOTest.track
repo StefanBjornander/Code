@@ -5,12 +5,12 @@ stdio_test:	; Assign n 0
 4:	
 
 stdio_test$1:	; address £temporary5600 n
-5:		mov t3005, bp
-6:		add t3005, 6
+5:		mov t3004, bp
+6:		add t3004, 6
 8:	
 
 stdio_test$2:	; Assign p £temporary5600
-9:		mov [bp + 8], t3005
+9:		mov [bp + 8], t3004
 11:	
 
 stdio_test$3:	; CallHeader 10 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -674,8 +674,8 @@ stdio_test$156:	; Parameter 10 88 10
 517:	
 
 stdio_test$157:	; Parameter 10 p 12
-518:		mov a3021, [bp + 8]
-519:		mov [bp + 22], a3021
+518:		mov a3020, [bp + 8]
+519:		mov [bp + 22], a3020
 521:	
 
 stdio_test$158:	; Call 10 printf 0
@@ -1440,30 +1440,30 @@ stdio_test$337:	; Parameter 12 string_25i20252Ai2025i2025n# 8
 1102:	
 
 stdio_test$338:	; address £temporary5630 a
-1103:		mov t3036, bp
-1104:		add t3036, 6
+1103:		mov t3035, bp
+1104:		add t3035, 6
 1106:	
 
 stdio_test$339:	; Parameter 12 £temporary5630 10
-1107:		mov [bp + 22], t3036
+1107:		mov [bp + 22], t3035
 1109:	
 
 stdio_test$340:	; address £temporary5631 b
-1110:		mov t3037, bp
-1111:		add t3037, 8
+1110:		mov t3036, bp
+1111:		add t3036, 8
 1113:	
 
 stdio_test$341:	; Parameter 12 £temporary5631 12
-1114:		mov [bp + 24], t3037
+1114:		mov [bp + 24], t3036
 1116:	
 
 stdio_test$342:	; address £temporary5632 n
-1117:		mov t3038, bp
-1118:		add t3038, 10
+1117:		mov t3037, bp
+1118:		add t3037, 10
 1120:	
 
 stdio_test$343:	; Parameter 12 £temporary5632 14
-1121:		mov [bp + 26], t3038
+1121:		mov [bp + 26], t3037
 1123:	
 
 stdio_test$344:	; Call 12 sscanf 0
@@ -1486,18 +1486,18 @@ stdio_test$347:	; Parameter 12 string_3C25i3E203C25i3E203C25i3E0A# 6
 1138:	
 
 stdio_test$348:	; Parameter 12 a 8
-1139:		mov a3040, [bp + 6]
-1140:		mov [bp + 20], a3040
+1139:		mov a3039, [bp + 6]
+1140:		mov [bp + 20], a3039
 1142:	
 
 stdio_test$349:	; Parameter 12 b 10
-1143:		mov a3041, [bp + 8]
-1144:		mov [bp + 22], a3041
+1143:		mov a3040, [bp + 8]
+1144:		mov [bp + 22], a3040
 1146:	
 
 stdio_test$350:	; Parameter 12 n 12
-1147:		mov a3042, [bp + 10]
-1148:		mov [bp + 24], a3042
+1147:		mov a3041, [bp + 10]
+1148:		mov [bp + 24], a3041
 1150:	
 
 stdio_test$351:	; Call 12 printf 0
@@ -1653,10 +1653,10 @@ stdio_test$382:	; PostCall 106
 1270:	
 
 stdio_test$383:	; Return 0
-1271:		mov t3050, [bp]
+1271:		mov t3049, [bp]
 1272:		mov di, [bp + 4]
 1273:		mov bp, [bp + 2]
-1274:		jmp t3050
+1274:		jmp t3049
 1276:	
 
 stdio_test$384:	; FunctionEnd stdio_test

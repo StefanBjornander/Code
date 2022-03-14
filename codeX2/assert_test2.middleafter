@@ -1,0 +1,14 @@
+0: NotEqual 12 n integral4$7#
+1: PreCall 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+2: Parameter 52 pointer stderr
+3: Parameter 60 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+4: Parameter 68 string string_n20213D207#
+5: Parameter 76 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CAssertTest2Ec#
+6: Parameter 84 signed int integral4$21#
+7: Call 28 fprintf 20
+8: PostCall 28
+9: PreCall 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+10: Call 28 abort 0
+11: PostCall 28
+12: Return
+13: FunctionEnd assert_test2

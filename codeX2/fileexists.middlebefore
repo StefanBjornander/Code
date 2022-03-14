@@ -1,0 +1,13 @@
+0: AssignRegister ah integral1$67#
+1: AssignRegister al integral1$0#
+2: AssignRegister dx name
+3: Interrupt 33
+4: Carry < Assign £temporary834 integral2$0#>
+5: Jump < Assign £temporary834 integral2$1#>
+6: Assign £temporary834 integral2$1#
+7: Jump < Empty>
+8: Assign £temporary834 integral2$0#
+9: Empty
+10: Return £temporary834
+11: Empty
+12: FunctionEnd fileexists

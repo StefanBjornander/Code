@@ -1,0 +1,55 @@
+0: Assign firstIndex integral4$0#
+1: Subtract lastIndex listSize integral4$1#
+2: NotEqual 4 listSize integral4$0#
+3: Return integral8$0#
+4: IntegralToIntegral £temporary2912 valueList
+5: Multiply £temporary2914 firstIndex valueSize
+6: IntegralToIntegral £temporary2915 £temporary2914
+7: Add firstValuePtr £temporary2912 £temporary2915
+8: PreCall 72 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: Parameter 96 pointer keyPtr
+10: Parameter 104 pointer firstValuePtr
+11: Call 72 compare 0
+12: PostCall 72
+13: GetReturnValue £temporary2917
+14: Assign firstCompare £temporary2917
+15: GreaterThanEqual 17 firstCompare integral4$0#
+16: Return integral8$0#
+17: NotEqual 19 firstCompare integral4$0#
+18: Return firstValuePtr
+19: IntegralToIntegral £temporary2924 valueList
+20: Multiply £temporary2926 lastIndex valueSize
+21: IntegralToIntegral £temporary2927 £temporary2926
+22: Add lastValuePtr £temporary2924 £temporary2927
+23: PreCall 72 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+24: Parameter 96 pointer keyPtr
+25: Parameter 104 pointer lastValuePtr
+26: Call 72 compare 0
+27: PostCall 72
+28: GetReturnValue £temporary2929
+29: Assign lastCompare £temporary2929
+30: LessThanEqual 32 lastCompare integral4$0#
+31: Return integral8$0#
+32: NotEqual 34 lastCompare integral4$0#
+33: Return lastValuePtr
+34: Add £temporary2936 firstIndex lastIndex
+35: Divide middleIndex £temporary2936 integral4$2#
+36: IntegralToIntegral £temporary2938 valueList
+37: Multiply £temporary2940 middleIndex valueSize
+38: IntegralToIntegral £temporary2941 £temporary2940
+39: Add middleValuePtr £temporary2938 £temporary2941
+40: PreCall 76 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+41: Parameter 100 pointer keyPtr
+42: Parameter 108 pointer middleValuePtr
+43: Call 76 compare 0
+44: PostCall 76
+45: GetReturnValue £temporary2943
+46: Assign middleCompare £temporary2943
+47: GreaterThanEqual 50 middleCompare integral4$0#
+48: Assign lastIndex middleIndex
+49: Jump 4
+50: LessThanEqual 53 middleCompare integral4$0#
+51: Assign firstIndex middleIndex
+52: Jump 4
+53: Return middleValuePtr
+54: FunctionEnd bsearch

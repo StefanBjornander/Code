@@ -1,0 +1,9 @@
+0: PreCall 8
+1: Parameter 14 pointer stream
+2: Parameter 16 signed int integral2$0#
+3: Parameter 18 signed int SEEK_SET
+4: Call 8 fseek 0
+5: PostCall 8
+6: Empty
+7: Return
+8: FunctionEnd rewind

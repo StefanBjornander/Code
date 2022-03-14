@@ -1,0 +1,49 @@
+0: NotEqual < Empty> g_currStructPtr integral2$0#
+1: Jump < Empty>
+2: Empty
+3: Dereference £temporary369 g_currStructPtr 0
+4: Assign £temporary370 £temporary369.name
+5: Jump < Empty>
+6: Empty
+7: Assign £temporary370 integral2$0#
+8: Empty
+9: Assign oldName £temporary370
+10: Assign g_currStructPtr integral2$0#
+11: NotEqual < Empty> newName integral2$0#
+12: Jump < Empty>
+13: Empty
+14: Assign index integral2$0#
+15: Empty
+16: LessThan < PreCall 14> index g_sSize
+17: Jump < Return oldName>
+18: PreCall 14
+19: Parameter 20 pointer newName
+20: Multiply £temporary374 index integral2$4#
+21: Add £temporary375 g_sArray £temporary374
+22: Dereference £temporary376 £temporary375 0
+23: Parameter 22 pointer £temporary376.name
+24: Call 14 strcmp 0
+25: PostCall 14
+26: GetReturnValue £temporary377
+27: Equal < Empty> £temporary377 integral2$0#
+28: Jump < Empty>
+29: Empty
+30: Multiply £temporary379 index integral2$4#
+31: Add £temporary380 g_sArray £temporary379
+32: Dereference £temporary381 £temporary380 0
+33: Address £temporary382 £temporary381
+34: Assign g_currStructPtr £temporary382
+35: Jump < Return oldName>
+36: Jump < Empty>
+37: Empty
+38: Empty
+39: Empty
+40: Add £temporary373 index integral2$1#
+41: Assign index £temporary373
+42: Jump < Empty>
+43: Jump < Empty>
+44: Empty
+45: Empty
+46: Return oldName
+47: Empty
+48: FunctionEnd setlocale

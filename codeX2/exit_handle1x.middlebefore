@@ -1,0 +1,7 @@
+0: PreCall 24
+1: Parameter 48 string string_exit10A#
+2: Call 24 printf 0
+3: PostCall 24
+4: Empty
+5: Return
+6: FunctionEnd exit_handle1x

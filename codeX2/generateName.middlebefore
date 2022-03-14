@@ -1,0 +1,59 @@
+0: Add £temporary1106 index integral2$1#
+1: LessThan < Empty> £temporary1106 max
+2: Jump < Empty>
+3: Empty
+4: Add £temporary1108 index integral2$1#
+5: Multiply £temporary1109 £temporary1108 integral2$1#
+6: Add £temporary1110 name £temporary1109
+7: Dereference £temporary1111 £temporary1110 0
+8: Assign £temporary1111 integral1$0#
+9: Assign c integral1$97#
+10: Empty
+11: LessThanEqual < Multiply £temporary1114 index integral2$1#> c integral1$122#
+12: Jump < Return integral2$0#>
+13: Multiply £temporary1114 index integral2$1#
+14: Add £temporary1115 name £temporary1114
+15: Dereference £temporary1116 £temporary1115 0
+16: Assign £temporary1116 c
+17: PreCall 13
+18: Parameter 19 pointer name
+19: Call 13 fileexists 0
+20: PostCall 13
+21: GetReturnValue £temporary1117
+22: NotEqual < PreCall 13> £temporary1117 integral2$0#
+23: Jump < Empty>
+24: PreCall 13
+25: Add £temporary1120 index integral2$1#
+26: Parameter 19 signed int £temporary1120
+27: Parameter 21 pointer name
+28: Parameter 23 signed int max
+29: Call 13 generateName 0
+30: PostCall 13
+31: GetReturnValue £temporary1121
+32: NotEqual < Empty> £temporary1121 integral2$0#
+33: Jump < Empty>
+34: Empty
+35: Return integral2$1#
+36: Jump < Empty>
+37: Empty
+38: Empty
+39: Empty
+40: Add £temporary1113 c integral1$1#
+41: Assign c £temporary1113
+42: Jump < Empty>
+43: Jump < Empty>
+44: Empty
+45: LessThan < Empty> index max
+46: Jump < Empty>
+47: Empty
+48: Multiply £temporary1127 index integral2$1#
+49: Add £temporary1128 name £temporary1127
+50: Dereference £temporary1129 £temporary1128 0
+51: Assign £temporary1129 integral1$0#
+52: Jump < Empty>
+53: Empty
+54: Empty
+55: Empty
+56: Return integral2$0#
+57: Empty
+58: FunctionEnd generateName

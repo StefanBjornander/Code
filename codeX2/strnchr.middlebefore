@@ -1,0 +1,27 @@
+0: IntegralToIntegral £temporary1163 i
+1: Assign c £temporary1163
+2: Assign index integral2$0#
+3: Empty
+4: LessThan < Multiply £temporary1166 index integral2$1#> index size
+5: Jump < Return integral2$0#>
+6: Multiply £temporary1166 index integral2$1#
+7: Add £temporary1167 text £temporary1166
+8: Dereference £temporary1168 £temporary1167 0
+9: Equal < Empty> £temporary1168 c
+10: Jump < Empty>
+11: Empty
+12: Multiply £temporary1170 index integral2$1#
+13: Add £temporary1171 text £temporary1170
+14: Dereference £temporary1172 £temporary1171 0
+15: Address £temporary1173 £temporary1172
+16: Return £temporary1173
+17: Jump < Empty>
+18: Empty
+19: Empty
+20: Empty
+21: Add £temporary1165 index integral2$1#
+22: Assign index £temporary1165
+23: Jump < Empty>
+24: Return integral2$0#
+25: Empty
+26: FunctionEnd strnchr

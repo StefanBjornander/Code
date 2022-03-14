@@ -1,0 +1,30 @@
+0: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 48 signed char integral1$97#
+2: Call 24 character_testX 0
+3: PostCall 24
+4: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+5: Parameter 48 signed char integral1$66#
+6: Call 24 character_testX 0
+7: PostCall 24
+8: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: Parameter 48 signed char integral1$49#
+10: Call 24 character_testX 0
+11: PostCall 24
+12: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+13: Parameter 48 signed char integral1$46#
+14: Call 24 character_testX 0
+15: PostCall 24
+16: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+17: Parameter 48 signed char integral1$10#
+18: Call 24 character_testX 0
+19: PostCall 24
+20: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+21: Parameter 48 signed char integral1$102#
+22: Call 24 character_testX 0
+23: PostCall 24
+24: PreCall 24 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+25: Parameter 48 signed char integral1$103#
+26: Call 24 character_testX 0
+27: PostCall 24
+28: Return
+29: FunctionEnd character_test

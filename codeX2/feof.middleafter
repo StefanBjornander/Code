@@ -1,0 +1,32 @@
+0: PreCall 8 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 14 pointer stream
+2: Parameter 16 signed int integral2$0#
+3: Parameter 18 signed int integral2$1#
+4: Call 8 fseek 0
+5: PostCall 8
+6: GetReturnValue £temporary1095
+7: IntegralToIntegral £temporary1096 £temporary1095
+8: Assign currPosition £temporary1096
+9: PreCall 12 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+10: Parameter 18 pointer stream
+11: Parameter 20 signed int integral2$0#
+12: Parameter 22 signed int integral2$2#
+13: Call 12 fseek 0
+14: PostCall 12
+15: GetReturnValue £temporary1097
+16: IntegralToIntegral £temporary1098 £temporary1097
+17: Assign lastPosition £temporary1098
+18: PreCall 16 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+19: Parameter 22 pointer stream
+20: IntegralToIntegral £temporary1099 currPosition
+21: Parameter 24 signed int £temporary1099
+22: Parameter 26 signed int integral2$0#
+23: Call 16 fseek 0
+24: PostCall 16
+25: NotEqual 28 currPosition lastPosition
+26: Assign £temporary1102 integral2$1#
+27: Jump 29
+28: Assign £temporary1102 integral2$0#
+29: Assign endOfFile £temporary1102
+30: Return endOfFile
+31: FunctionEnd feof

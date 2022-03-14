@@ -1,0 +1,22 @@
+0: PreCall 8
+1: Parameter 14 signed int c
+2: Call 8 isdigit 0
+3: PostCall 8
+4: GetReturnValue £temporary211
+5: NotEqual < Assign £temporary221 integral2$1#> £temporary211 integral2$0#
+6: Jump < GreaterThanEqual < LessThanEqual < Assign £temporary221 integral2$1#> c integral2$102#> c integral2$97#>
+7: GreaterThanEqual < LessThanEqual < Assign £temporary221 integral2$1#> c integral2$102#> c integral2$97#
+8: Jump < GreaterThanEqual < LessThanEqual < Assign £temporary221 integral2$1#> c integral2$70#> c integral2$65#>
+9: LessThanEqual < Assign £temporary221 integral2$1#> c integral2$102#
+10: Jump < GreaterThanEqual < LessThanEqual < Assign £temporary221 integral2$1#> c integral2$70#> c integral2$65#>
+11: GreaterThanEqual < LessThanEqual < Assign £temporary221 integral2$1#> c integral2$70#> c integral2$65#
+12: Jump < Assign £temporary221 integral2$0#>
+13: LessThanEqual < Assign £temporary221 integral2$1#> c integral2$70#
+14: Jump < Assign £temporary221 integral2$0#>
+15: Assign £temporary221 integral2$1#
+16: Jump < Empty>
+17: Assign £temporary221 integral2$0#
+18: Empty
+19: Return £temporary221
+20: Empty
+21: FunctionEnd isxdigit

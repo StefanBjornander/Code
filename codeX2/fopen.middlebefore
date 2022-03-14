@@ -1,0 +1,32 @@
+0: Assign index integral2$0#
+1: Empty
+2: LessThan < Multiply £temporary844 index integral2$29#> index integral2$20#
+3: Jump < Return integral2$0#>
+4: Multiply £temporary844 index integral2$29#
+5: Add £temporary845 g_fileArray £temporary844
+6: Dereference £temporary846 £temporary845 0
+7: NotEqual < Empty> £temporary846.open integral2$0#
+8: Jump < Empty>
+9: Empty
+10: PreCall 12
+11: Parameter 18 pointer name
+12: Parameter 20 pointer mode
+13: Multiply £temporary849 index integral2$29#
+14: Add £temporary850 g_fileArray £temporary849
+15: Dereference £temporary851 £temporary850 0
+16: Address £temporary852 £temporary851
+17: Parameter 22 pointer £temporary852
+18: Call 12 freopen 0
+19: PostCall 12
+20: GetReturnValue £temporary853
+21: Return £temporary853
+22: Jump < Empty>
+23: Empty
+24: Empty
+25: Empty
+26: Add £temporary843 index integral2$1#
+27: Assign index £temporary843
+28: Jump < Empty>
+29: Return integral2$0#
+30: Empty
+31: FunctionEnd fopen

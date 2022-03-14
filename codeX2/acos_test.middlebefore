@@ -1,0 +1,19 @@
+0: PreCall 32
+1: Parameter 56 string string_2020acos2825f29203D2025f2C20errno203D2025i0A#
+2: PushFloat x
+3: Parameter 64 double x
+4: PreCall 32
+5: PushFloat x
+6: Parameter 96 double x
+7: Call 72 acos 0
+8: PostCall 72
+9: GetReturnValue £temporary4176
+10: Parameter 72 double £temporary4176
+11: Parameter 80 signed int errno
+12: Call 32 printf 20
+13: PostCall 32
+14: Assign errno integral4$0#
+15: Empty
+16: Empty
+17: Return
+18: FunctionEnd acos_test

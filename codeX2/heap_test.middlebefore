@@ -1,0 +1,24 @@
+0: Assign count integral4$0#
+1: Empty
+2: PreCall 36
+3: Parameter 60 signed int integral4$1024#
+4: Call 36 malloc 0
+5: PostCall 36
+6: GetReturnValue £temporary4945
+7: Assign pointer £temporary4945
+8: NotEqual < PreCall 36> pointer integral8$0#
+9: Jump < Empty>
+10: PreCall 36
+11: Parameter 60 string string_102420bytes2Dblock20number3A2025i0A#
+12: Assign £temporary4947 count
+13: Add £temporary4948 count integral4$1#
+14: Assign count £temporary4948
+15: Parameter 68 signed int £temporary4947
+16: Parameter 72 pointer pointer
+17: Call 36 printf 12
+18: PostCall 36
+19: Empty
+20: Jump < Empty>
+21: Empty
+22: Return
+23: FunctionEnd heap_test

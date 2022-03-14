@@ -1,0 +1,15 @@
+0: Dereference £temporary1048 stream 0
+1: AssignRegister bx £temporary1048.handle
+2: Multiply £temporary1050 size nobj
+3: AssignRegister cx £temporary1050
+4: AssignRegister ah integral1$63#
+5: AssignRegister dx ptr
+6: Interrupt 33
+7: NotCarry 12
+8: Dereference £temporary1054 stream 0
+9: Assign errno FREAD
+10: Assign £temporary1054.errno errno
+11: Return integral2$0#
+12: InspectRegister £temporary1055 ax
+13: Return £temporary1055
+14: FunctionEnd fread

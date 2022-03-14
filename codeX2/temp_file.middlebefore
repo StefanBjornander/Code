@@ -1,0 +1,131 @@
+0: PreCall 24
+1: Parameter 48 string string_Hello0A#
+2: Call 24 printf 0
+3: PostCall 24
+4: PreCall 32
+5: Parameter 56 string string_PBookX2Etxt#
+6: Parameter 64 string string_r2B#
+7: Call 32 fopen 0
+8: PostCall 32
+9: GetReturnValue £temporary4788
+10: Assign inOutFilePtr £temporary4788
+11: NotEqual < Empty> inOutFilePtr integral8$0#
+12: Jump < Empty>
+13: Empty
+14: PreCall 40
+15: Parameter 64 pointer stderr
+16: Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+17: Parameter 80 string string_inOutFilePtr20213D20NULL#
+18: Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+19: Parameter 96 signed int integral4$369#
+20: Call 40 fprintf 20
+21: PostCall 40
+22: PreCall 40
+23: Call 40 abort 0
+24: PostCall 40
+25: Jump < Empty>
+26: Empty
+27: Empty
+28: Empty
+29: PreCall 40
+30: Parameter 64 string string_Temp0A#
+31: Call 40 printf 0
+32: PostCall 40
+33: PreCall 40
+34: Call 40 tmpfile 0
+35: PostCall 40
+36: GetReturnValue £temporary4796
+37: Assign tempFilePtr £temporary4796
+38: NotEqual < Empty> tempFilePtr integral8$0#
+39: Jump < Empty>
+40: Empty
+41: PreCall 40
+42: Parameter 64 pointer stderr
+43: Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+44: Parameter 80 string string_tempFilePtr20213D20NULL#
+45: Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+46: Parameter 96 signed int integral4$372#
+47: Call 40 fprintf 20
+48: PostCall 40
+49: PreCall 40
+50: Call 40 abort 0
+51: PostCall 40
+52: Jump < Empty>
+53: Empty
+54: Empty
+55: Empty
+56: Empty
+57: Jump < PreCall 40>
+58: PreCall 40
+59: Parameter 64 pointer inOutFilePtr
+60: Call 40 fgetc 0
+61: PostCall 40
+62: GetReturnValue £temporary4803
+63: IntegralToIntegral £temporary4804 £temporary4803
+64: Assign c £temporary4804
+65: IntegralToIntegral £temporary4805 c
+66: Equal < Empty> £temporary4805 integral4$minus1#
+67: Jump < Empty>
+68: Empty
+69: Jump < PreCall 40>
+70: Jump < Empty>
+71: Empty
+72: Empty
+73: PreCall 41
+74: PreCall 41
+75: IntegralToIntegral £temporary4809 c
+76: Parameter 65 signed int £temporary4809
+77: Call 41 toupper 0
+78: PostCall 41
+79: GetReturnValue £temporary4810
+80: Parameter 65 signed int £temporary4810
+81: Parameter 69 pointer tempFilePtr
+82: Call 41 putc 0
+83: PostCall 41
+84: Empty
+85: Jump < Empty>
+86: PreCall 40
+87: Parameter 64 pointer tempFilePtr
+88: Call 40 rewind 0
+89: PostCall 40
+90: PreCall 40
+91: Parameter 64 pointer inOutFilePtr
+92: Parameter 72 string string_0A2D2D2D2D2D2D2D2D2D2D2D2D0A#
+93: Call 40 fprintf 0
+94: PostCall 40
+95: Empty
+96: Jump < PreCall 40>
+97: PreCall 40
+98: Parameter 64 pointer tempFilePtr
+99: Call 40 fgetc 0
+100: PostCall 40
+101: GetReturnValue £temporary4815
+102: IntegralToIntegral £temporary4816 £temporary4815
+103: Assign c £temporary4816
+104: IntegralToIntegral £temporary4817 c
+105: Equal < Empty> £temporary4817 integral4$minus1#
+106: Jump < Empty>
+107: Empty
+108: Jump < PreCall 40>
+109: Jump < Empty>
+110: Empty
+111: Empty
+112: PreCall 41
+113: IntegralToIntegral £temporary4821 c
+114: Parameter 65 signed int £temporary4821
+115: Parameter 69 pointer inOutFilePtr
+116: Call 41 putc 0
+117: PostCall 41
+118: Empty
+119: Jump < Empty>
+120: PreCall 40
+121: Parameter 64 pointer inOutFilePtr
+122: Call 40 fclose 0
+123: PostCall 40
+124: PreCall 40
+125: Parameter 64 pointer tempFilePtr
+126: Call 40 fclose 0
+127: PostCall 40
+128: Empty
+129: Return
+130: FunctionEnd temp_file

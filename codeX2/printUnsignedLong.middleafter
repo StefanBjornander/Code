@@ -1,0 +1,43 @@
+0: Equal 5 plus integral4$0#
+1: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+2: Parameter 80 signed char integral1$43#
+3: Call 56 printChar 0
+4: PostCall 56
+5: Equal 10 space integral4$0#
+6: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+7: Parameter 80 signed char integral1$32#
+8: Call 56 printChar 0
+9: PostCall 56
+10: Equal 29 grid integral4$0#
+11: NotEqual 16 base integral8$8#
+12: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+13: Parameter 80 signed char integral1$48#
+14: Call 56 printChar 0
+15: PostCall 56
+16: NotEqual 29 base integral8$16#
+17: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+18: Parameter 80 signed char integral1$48#
+19: Call 56 printChar 0
+20: PostCall 56
+21: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+22: Equal 25 capital integral4$0#
+23: Assign £temporary1905 integral1$88#
+24: Jump 26
+25: Assign £temporary1905 integral1$120#
+26: Parameter 80 signed char £temporary1905
+27: Call 56 printChar 0
+28: PostCall 56
+29: NotEqual 35 unsignedValue integral8$0#
+30: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+31: Parameter 80 signed char integral1$48#
+32: Call 56 printChar 0
+33: PostCall 56
+34: Jump 41
+35: PreCall 56 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+36: Parameter 80 unsigned long int unsignedValue
+37: Parameter 88 unsigned long int base
+38: Parameter 96 signed int capital
+39: Call 56 printUnsignedLongRec 0
+40: PostCall 56
+41: Return
+42: FunctionEnd printUnsignedLong

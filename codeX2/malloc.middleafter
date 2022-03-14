@@ -1,0 +1,79 @@
+0: IntegralToIntegral £temporary25 memorySize
+1: Add newBlockSize £temporary25 integral2$4#
+2: Assign minGap integral2$0#
+3: Assign lastAddress integral2$65528#
+4: Assign minBlockPtr integral2$0#
+5: Assign minPrevBlockPtr integral2$0#
+6: Assign prevBlockPtr integral2$0#
+7: Assign currBlockPtr g_firstBlockPtr
+8: GreaterThanEqual 20 memorySize integral2$0#
+9: PreCall 22 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+10: Parameter 28 pointer stderr
+11: Parameter 30 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+12: Parameter 32 string string_memorySize203E3D200#
+13: Parameter 34 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CMalloc2Ec#
+14: Parameter 36 signed int integral2$41#
+15: Call 22 fprintf 6
+16: PostCall 22
+17: PreCall 22 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+18: Call 22 abort 0
+19: PostCall 22
+20: NotEqual 22 memorySize integral2$0#
+21: Return integral2$0#
+22: Equal 40 currBlockPtr integral2$0#
+23: IntegralToIntegral £temporary37 currBlockPtr
+24: Assign currAddress £temporary37
+25: Dereference £temporary38 currBlockPtr 0
+26: Add £temporary39 currAddress £temporary38.size
+27: Add £temporary40 £temporary39 integral2$4#
+28: Subtract currGap lastAddress £temporary40
+29: GreaterThan 35 newBlockSize currGap
+30: Equal 32 minGap integral2$0#
+31: GreaterThanEqual 35 currGap minGap
+32: Assign minGap currGap
+33: Assign minBlockPtr currBlockPtr
+34: Assign minPrevBlockPtr prevBlockPtr
+35: Assign lastAddress currAddress
+36: Assign prevBlockPtr currBlockPtr
+37: Dereference £temporary49 currBlockPtr 0
+38: Assign currBlockPtr £temporary49.next
+39: Jump 22
+40: Equal 59 minBlockPtr integral2$0#
+41: IntegralToIntegral £temporary51 minBlockPtr
+42: Dereference £temporary52 minBlockPtr 0
+43: Add £temporary53 £temporary51 £temporary52.size
+44: Add newAddress £temporary53 integral2$4#
+45: IntegralToIntegral £temporary55 newAddress
+46: Assign newBlockPtr £temporary55
+47: Dereference £temporary56 newBlockPtr 0
+48: Assign £temporary56.size memorySize
+49: Dereference £temporary57 newBlockPtr 0
+50: Assign £temporary57.next minBlockPtr
+51: Equal 55 minPrevBlockPtr integral2$0#
+52: Dereference £temporary59 minPrevBlockPtr 0
+53: Assign £temporary59.next newBlockPtr
+54: Jump 56
+55: Assign g_firstBlockPtr newBlockPtr
+56: Add £temporary62 newAddress integral2$4#
+57: IntegralToIntegral £temporary63 £temporary62
+58: Return £temporary63
+59: Subtract newAddress lastAddress newBlockSize
+60: InspectRegister £temporary65 bp
+61: Assign stackTop £temporary65
+62: GreaterThan 77 stackTop newAddress
+63: IntegralToIntegral £temporary67 newAddress
+64: Assign newBlockPtr £temporary67
+65: Dereference £temporary68 newBlockPtr 0
+66: Assign £temporary68.size memorySize
+67: Dereference £temporary69 newBlockPtr 0
+68: Assign £temporary69.next integral2$0#
+69: Equal 73 prevBlockPtr integral2$0#
+70: Dereference £temporary71 prevBlockPtr 0
+71: Assign £temporary71.next newBlockPtr
+72: Jump 74
+73: Assign g_firstBlockPtr newBlockPtr
+74: Add £temporary74 newAddress integral2$4#
+75: IntegralToIntegral £temporary75 £temporary74
+76: Return £temporary75
+77: Return integral2$0#
+78: FunctionEnd malloc

@@ -1,0 +1,13 @@
+0: InspectRegister £temporary762 bp
+1: Assign bp_pointer £temporary762
+2: Dereference £temporary764 £temporary763 0
+3: Dereference £temporary766 £temporary765 0
+4: Assign £temporary764 £temporary766
+5: Dereference £temporary768 £temporary767 0
+6: Dereference £temporary770 £temporary769 0
+7: Assign £temporary768 £temporary770
+8: Dereference £temporary772 £temporary771 0
+9: Dereference £temporary774 £temporary773 0
+10: Assign £temporary772 £temporary774
+11: Return integral2$0#
+12: FunctionEnd setjmp

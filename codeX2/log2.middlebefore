@@ -1,0 +1,12 @@
+0: PreCall 14
+1: PushFloat x
+2: Parameter 20 double x
+3: Call 14 log 0
+4: PostCall 14
+5: GetReturnValue £temporary480
+6: PushFloat floating8$0.693#
+7: Divide £temporary481 £temporary480 floating8$0.693#
+8: FloatingToIntegral £temporary482 £temporary481
+9: Return £temporary482
+10: Empty
+11: FunctionEnd log2

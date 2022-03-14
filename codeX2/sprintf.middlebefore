@@ -1,0 +1,14 @@
+0: Address £temporary2307 format
+1: IntegralToIntegral £temporary2308 £temporary2307
+2: Add £temporary2309 £temporary2308 integral8$8#
+3: Assign arg_list £temporary2309
+4: PreCall 48
+5: Parameter 72 pointer outString
+6: Parameter 80 pointer format
+7: Parameter 88 pointer arg_list
+8: Call 48 vsprintf 0
+9: PostCall 48
+10: GetReturnValue £temporary2310
+11: Return £temporary2310
+12: Empty
+13: FunctionEnd sprintf

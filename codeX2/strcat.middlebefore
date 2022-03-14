@@ -1,0 +1,37 @@
+0: PreCall 44
+1: Parameter 68 pointer target
+2: Call 44 strlen 0
+3: PostCall 44
+4: GetReturnValue £temporary3471
+5: Assign targetLength £temporary3471
+6: Assign index integral4$0#
+7: Empty
+8: Multiply £temporary3472 index integral4$1#
+9: IntegralToIntegral £temporary3473 £temporary3472
+10: Add £temporary3474 source £temporary3473
+11: Dereference £temporary3475 £temporary3474 0
+12: NotEqual < Add £temporary3478 targetLength index> £temporary3475 integral1$0#
+13: Jump < Add £temporary3487 targetLength index>
+14: Add £temporary3478 targetLength index
+15: Multiply £temporary3479 £temporary3478 integral4$1#
+16: IntegralToIntegral £temporary3480 £temporary3479
+17: Add £temporary3481 target £temporary3480
+18: Dereference £temporary3482 £temporary3481 0
+19: Multiply £temporary3483 index integral4$1#
+20: IntegralToIntegral £temporary3484 £temporary3483
+21: Add £temporary3485 source £temporary3484
+22: Dereference £temporary3486 £temporary3485 0
+23: Assign £temporary3482 £temporary3486
+24: Empty
+25: Add £temporary3477 index integral4$1#
+26: Assign index £temporary3477
+27: Jump < Empty>
+28: Add £temporary3487 targetLength index
+29: Multiply £temporary3488 £temporary3487 integral4$1#
+30: IntegralToIntegral £temporary3489 £temporary3488
+31: Add £temporary3490 target £temporary3489
+32: Dereference £temporary3491 £temporary3490 0
+33: Assign £temporary3491 integral1$0#
+34: Return target
+35: Empty
+36: FunctionEnd strcat

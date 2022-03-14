@@ -1,0 +1,11 @@
+0: GreaterThanEqual < LessThanEqual < Assign £temporary225 integral2$1#> c integral2$126#> c integral2$32#
+1: Jump < Assign £temporary225 integral2$0#>
+2: LessThanEqual < Assign £temporary225 integral2$1#> c integral2$126#
+3: Jump < Assign £temporary225 integral2$0#>
+4: Assign £temporary225 integral2$1#
+5: Jump < Empty>
+6: Assign £temporary225 integral2$0#
+7: Empty
+8: Return £temporary225
+9: Empty
+10: FunctionEnd isgraph

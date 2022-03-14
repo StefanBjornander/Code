@@ -177,27 +177,23 @@ print_div$6:	; Increment d$quot
 25:		inc word [bp + 6]
 27:	
 
-print_div$7:	; Assign £temporary6017 d$rem
-28:		mov ax, [bp + 8]
+print_div$7:	; Increment d$rem
+28:		inc word [bp + 8]
 30:	
 
-print_div$8:	; Increment d$rem
-31:		inc word [bp + 8]
-33:	
+print_div$8:	; SetReturnValue d
+31:		mov bx, bp
+32:		add bx, 6
+34:	
 
-print_div$9:	; SetReturnValue d
-34:		mov bx, bp
-35:		add bx, 6
-37:	
+print_div$9:	; Return d
+35:		mov ax, [bp]
+36:		mov di, [bp + 4]
+37:		mov bp, [bp + 2]
+38:		jmp ax
+40:	
 
-print_div$10:	; Return d
-38:		mov ax, [bp]
-39:		mov di, [bp + 4]
-40:		mov bp, [bp + 2]
-41:		jmp ax
-43:	
-
-print_div$11:	; FunctionEnd print_div
+print_div$10:	; FunctionEnd print_div
 1:	
 
 print_ldiv:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -233,27 +229,23 @@ print_ldiv$6:	; Decrement ld$quot
 25:		dec dword [bp + 6]
 27:	
 
-print_ldiv$7:	; Assign £temporary6029 ld$rem
-28:		mov eax, [bp + 10]
+print_ldiv$7:	; Decrement ld$rem
+28:		dec dword [bp + 10]
 30:	
 
-print_ldiv$8:	; Decrement ld$rem
-31:		dec dword [bp + 10]
-33:	
+print_ldiv$8:	; SetReturnValue ld
+31:		mov bx, bp
+32:		add bx, 6
+34:	
 
-print_ldiv$9:	; SetReturnValue ld
-34:		mov bx, bp
-35:		add bx, 6
-37:	
+print_ldiv$9:	; Return ld
+35:		mov ax, [bp]
+36:		mov di, [bp + 4]
+37:		mov bp, [bp + 2]
+38:		jmp ax
+40:	
 
-print_ldiv$10:	; Return ld
-38:		mov ax, [bp]
-39:		mov di, [bp + 4]
-40:		mov bp, [bp + 2]
-41:		jmp ax
-43:	
-
-print_ldiv$11:	; FunctionEnd print_ldiv
+print_ldiv$10:	; FunctionEnd print_ldiv
 1:	
 
 exit_handle1x:	; CallHeader 6 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0

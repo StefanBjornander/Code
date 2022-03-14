@@ -230,38 +230,38 @@ section .data
 section .text
 
  log:
-	; PushFloat x
-	fld qword [rbp + 24]
-
- log$1:
 	; PushFloat floating8$0#
 	fldz
 
+ log$1:
+	; PushFloat x
+	fld qword [rbp + 24]
+
  log$2:
-	; LessThanEqual 74 x floating8$0#
+	; GreaterThanEqual 74 floating8$0# x
 	fcompp
 	fstsw ax
 	sahf
-	jae log$74
+	jbe log$74
 
  log$3:
 	; Assign n integral4$0#
 	mov dword [rbp + 32], 0
 
  log$4:
-	; PushFloat x
-	fld qword [rbp + 24]
-
- log$5:
 	; PushFloat floating8$1#
 	fld1
 
+ log$5:
+	; PushFloat x
+	fld qword [rbp + 24]
+
  log$6:
-	; LessThanEqual 16 x floating8$1#
+	; GreaterThanEqual 16 floating8$1# x
 	fcompp
 	fstsw ax
 	sahf
-	jae log$16
+	jbe log$16
 
  log$7:
 	; PushFloat x
@@ -303,34 +303,34 @@ section .text
 	jmp log$7
 
  log$16:
-	; PushFloat x
-	fld qword [rbp + 24]
-
- log$17:
 	; PushFloat floating8$0.368#
 	fld qword [@1703floating8$0.368#]
 
- log$18:
-	; GreaterThanEqual 28 x floating8$0.368#
-	fcompp
-	fstsw ax
-	sahf
-	jbe log$28
-
- log$19:
+ log$17:
 	; PushFloat x
 	fld qword [rbp + 24]
 
- log$20:
-	; PushFloat floating8$0.368#
-	fld qword [@1704floating8$0.368#]
-
- log$21:
-	; GreaterThanEqual 28 x floating8$0.368#
+ log$18:
+	; LessThanEqual 28 floating8$0.368# x
 	fcompp
 	fstsw ax
 	sahf
-	jbe log$28
+	jae log$28
+
+ log$19:
+	; PushFloat floating8$0.368#
+	fld qword [@1704floating8$0.368#]
+
+ log$20:
+	; PushFloat x
+	fld qword [rbp + 24]
+
+ log$21:
+	; LessThanEqual 28 floating8$0.368# x
+	fcompp
+	fstsw ax
+	sahf
+	jae log$28
 
  log$22:
 	; PushFloat x
@@ -493,39 +493,43 @@ section .text
 	fstp qword [rbp + 60]
 
  log$62:
-	; PreCall 84 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-
- log$63:
-	; PushFloat term
-	fld qword [rbp + 44]
-
- log$64:
-	; Parameter 108 double term
-	fstp qword [rbp + 108]
-
- log$65:
-	; Call 84 fabs 0
-	mov qword [rbp + 84], log$66
-	mov [rbp + 92], rbp
-	add rbp, 84
-	jmp fabs
-
- log$66:
-	; PostCall 84
-
- log$67:
-	; GetReturnValue £temporary431
-
- log$68:
 	; PushFloat floating8$0.000000001#
 	fld qword [@1722floating8$0.000000001#]
 
+ log$63:
+	; PreCall 84 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
+	fstp qword [rbp + 84]
+
+ log$64:
+	; PushFloat term
+	fld qword [rbp + 44]
+
+ log$65:
+	; Parameter 108 double term
+	fstp qword [rbp + 116]
+
+ log$66:
+	; Call 84 fabs 0
+	mov qword [rbp + 92], log$67
+	mov [rbp + 100], rbp
+	add rbp, 92
+	jmp fabs
+
+ log$67:
+	; PostCall 84
+	fstp qword [rbp + 92]
+	fld qword [rbp + 84]
+	fld qword [rbp + 92]
+
+ log$68:
+	; GetReturnValue £temporary431
+
  log$69:
-	; GreaterThanEqual 40 £temporary431 floating8$0.000000001#
+	; LessThanEqual 40 floating8$0.000000001# £temporary431
 	fcompp
 	fstsw ax
 	sahf
-	jbe log$40
+	jae log$40
 
  log$70:
 	; PushFloat sum

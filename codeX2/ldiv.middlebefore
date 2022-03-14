@@ -1,0 +1,17 @@
+0: Assign result.quot integral8$0#
+1: Assign result.rem integral8$0#
+2: Equal < Empty> denum integral8$0#
+3: Jump < Empty>
+4: Empty
+5: Assign errno EDOM
+6: Return result
+7: Jump < Empty>
+8: Empty
+9: Empty
+10: Divide £temporary3049 num denum
+11: Assign result.quot £temporary3049
+12: Modulo £temporary3050 num denum
+13: Assign result.rem £temporary3050
+14: Return result
+15: Empty
+16: FunctionEnd ldiv

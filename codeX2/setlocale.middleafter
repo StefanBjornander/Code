@@ -1,0 +1,30 @@
+0: Equal 4 g_currStructPtr integral2$0#
+1: Dereference £temporary369 g_currStructPtr 0
+2: Assign £temporary370 £temporary369.name
+3: Jump 5
+4: Assign £temporary370 integral2$0#
+5: Assign oldName £temporary370
+6: Assign g_currStructPtr integral2$0#
+7: Equal 28 newName integral2$0#
+8: Assign index integral2$0#
+9: GreaterThanEqual 28 index g_sSize
+10: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+11: Parameter 20 pointer newName
+12: Multiply £temporary374 index integral2$4#
+13: Add £temporary375 g_sArray £temporary374
+14: Dereference £temporary376 £temporary375 0
+15: Parameter 22 pointer £temporary376.name
+16: Call 14 strcmp 0
+17: PostCall 14
+18: GetReturnValue £temporary377
+19: NotEqual 26 £temporary377 integral2$0#
+20: Multiply £temporary379 index integral2$4#
+21: Add £temporary380 g_sArray £temporary379
+22: Dereference £temporary381 £temporary380 0
+23: Address £temporary382 £temporary381
+24: Assign g_currStructPtr £temporary382
+25: Jump 28
+26: Add index index integral2$1#
+27: Jump 9
+28: Return oldName
+29: FunctionEnd setlocale

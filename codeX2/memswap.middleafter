@@ -1,0 +1,21 @@
+0: Assign index integral4$0#
+1: GreaterThanEqual 19 index valueSize
+2: IntegralToIntegral £temporary2990 index
+3: Add £temporary2991 value1 £temporary2990
+4: Dereference £temporary2992 £temporary2991 0
+5: Assign tempValue £temporary2992
+6: IntegralToIntegral £temporary2994 index
+7: Add £temporary2995 value1 £temporary2994
+8: Dereference £temporary2996 £temporary2995 0
+9: IntegralToIntegral £temporary2998 index
+10: Add £temporary2999 value2 £temporary2998
+11: Dereference £temporary3000 £temporary2999 0
+12: Assign £temporary2996 £temporary3000
+13: IntegralToIntegral £temporary3002 index
+14: Add £temporary3003 value2 £temporary3002
+15: Dereference £temporary3004 £temporary3003 0
+16: Assign £temporary3004 tempValue
+17: Add index index integral4$1#
+18: Jump 1
+19: Return
+20: FunctionEnd memswap

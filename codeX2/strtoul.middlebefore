@@ -1,0 +1,23 @@
+0: Assign g_inStatus integral4$1#
+1: Assign g_inDevice s
+2: Assign g_inChars integral4$0#
+3: PreCall 44
+4: Parameter 68 signed int base
+5: Call 44 scanUnsignedLongInt 0
+6: PostCall 44
+7: GetReturnValue £temporary2325
+8: Assign unsignedLongValue £temporary2325
+9: NotEqual < Empty> endp integral8$0#
+10: Jump < Empty>
+11: Empty
+12: Dereference £temporary2327 endp 0
+13: Multiply £temporary2328 g_inChars integral4$1#
+14: IntegralToIntegral £temporary2329 £temporary2328
+15: Add £temporary2330 s £temporary2329
+16: Assign £temporary2327 £temporary2330
+17: Jump < Empty>
+18: Empty
+19: Empty
+20: Return unsignedLongValue
+21: Empty
+22: FunctionEnd strtoul

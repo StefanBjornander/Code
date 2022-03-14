@@ -1,0 +1,84 @@
+0: NotEqual < Empty> s integral8$0#
+1: Jump < Empty>
+2: Empty
+3: Equal < Empty> precision integral4$0#
+4: Jump < Empty>
+5: Empty
+6: Assign index integral4$0#
+7: Empty
+8: Multiply £temporary1803 index integral4$1#
+9: IntegralToIntegral £temporary1804 £temporary1803
+10: Add £temporary1805 s £temporary1804
+11: Dereference £temporary1806 £temporary1805 0
+12: NotEqual < PreCall 40> £temporary1806 integral1$0#
+13: Jump < Empty>
+14: PreCall 40
+15: Multiply £temporary1809 index integral4$1#
+16: IntegralToIntegral £temporary1810 £temporary1809
+17: Add £temporary1811 s £temporary1810
+18: Dereference £temporary1812 £temporary1811 0
+19: Parameter 64 signed char £temporary1812
+20: Call 40 printChar 0
+21: PostCall 40
+22: Empty
+23: Add £temporary1808 index integral4$1#
+24: Assign index £temporary1808
+25: Jump < Empty>
+26: Jump < Empty>
+27: Empty
+28: Assign index integral4$0#
+29: Empty
+30: Assign £temporary1814 precision
+31: Subtract £temporary1815 precision integral4$1#
+32: Assign precision £temporary1815
+33: GreaterThan < Multiply £temporary1817 index integral4$1#> £temporary1814 integral4$0#
+34: Jump < Empty>
+35: Multiply £temporary1817 index integral4$1#
+36: IntegralToIntegral £temporary1818 £temporary1817
+37: Add £temporary1819 s £temporary1818
+38: Dereference £temporary1820 £temporary1819 0
+39: NotEqual < PreCall 40> £temporary1820 integral1$0#
+40: Jump < Empty>
+41: PreCall 40
+42: Multiply £temporary1824 index integral4$1#
+43: IntegralToIntegral £temporary1825 £temporary1824
+44: Add £temporary1826 s £temporary1825
+45: Dereference £temporary1827 £temporary1826 0
+46: Parameter 64 signed char £temporary1827
+47: Call 40 printChar 0
+48: PostCall 40
+49: Empty
+50: Add £temporary1823 index integral4$1#
+51: Assign index £temporary1823
+52: Jump < Empty>
+53: Empty
+54: Jump < Empty>
+55: Empty
+56: PreCall 36
+57: Parameter 60 signed char integral1$60#
+58: Call 36 printChar 0
+59: PostCall 36
+60: PreCall 36
+61: Parameter 60 signed char integral1$78#
+62: Call 36 printChar 0
+63: PostCall 36
+64: PreCall 36
+65: Parameter 60 signed char integral1$85#
+66: Call 36 printChar 0
+67: PostCall 36
+68: PreCall 36
+69: Parameter 60 signed char integral1$76#
+70: Call 36 printChar 0
+71: PostCall 36
+72: PreCall 36
+73: Parameter 60 signed char integral1$76#
+74: Call 36 printChar 0
+75: PostCall 36
+76: PreCall 36
+77: Parameter 60 signed char integral1$62#
+78: Call 36 printChar 0
+79: PostCall 36
+80: Empty
+81: Empty
+82: Return
+83: FunctionEnd printString

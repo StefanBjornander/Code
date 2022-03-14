@@ -1,0 +1,31 @@
+0: PreCall 48 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+1: Parameter 72 pointer target
+2: Call 48 strlen 0
+3: PostCall 48
+4: GetReturnValue £temporary3492
+5: Assign targetLength £temporary3492
+6: Assign index integral4$0#
+7: Subtract £temporary3493 size integral4$1#
+8: GreaterThanEqual 23 index £temporary3493
+9: IntegralToIntegral £temporary3496 index
+10: Add £temporary3497 source £temporary3496
+11: Dereference £temporary3498 £temporary3497 0
+12: Equal 23 £temporary3498 integral1$0#
+13: Add £temporary3503 targetLength index
+14: IntegralToIntegral £temporary3504 £temporary3503
+15: Add £temporary3505 target £temporary3504
+16: Dereference £temporary3506 £temporary3505 0
+17: IntegralToIntegral £temporary3508 index
+18: Add £temporary3509 source £temporary3508
+19: Dereference £temporary3510 £temporary3509 0
+20: Assign £temporary3506 £temporary3510
+21: Add index index integral4$1#
+22: Jump 7
+23: Add £temporary3511 targetLength size
+24: Subtract £temporary3513 £temporary3511 integral4$1#
+25: IntegralToIntegral £temporary3514 £temporary3513
+26: Add £temporary3515 target £temporary3514
+27: Dereference £temporary3516 £temporary3515 0
+28: Assign £temporary3516 integral1$0#
+29: Return target
+30: FunctionEnd strncat

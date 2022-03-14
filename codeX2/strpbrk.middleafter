@@ -1,0 +1,25 @@
+0: Assign index integral4$0#
+1: IntegralToIntegral £temporary3660 index
+2: Add £temporary3661 mainString £temporary3660
+3: Dereference £temporary3662 £temporary3661 0
+4: Equal 23 £temporary3662 integral1$0#
+5: PreCall 44 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+6: Parameter 68 pointer charSet
+7: IntegralToIntegral £temporary3666 index
+8: Add £temporary3667 mainString £temporary3666
+9: Dereference £temporary3668 £temporary3667 0
+10: IntegralToIntegral £temporary3669 £temporary3668
+11: Parameter 76 signed int £temporary3669
+12: Call 44 strchr 0
+13: PostCall 44
+14: GetReturnValue £temporary3670
+15: Equal 21 £temporary3670 integral8$0#
+16: IntegralToIntegral £temporary3673 index
+17: Add £temporary3674 mainString £temporary3673
+18: Dereference £temporary3675 £temporary3674 0
+19: Address £temporary3676 £temporary3675
+20: Return £temporary3676
+21: Add index index integral4$1#
+22: Jump 1
+23: Return integral8$0#
+24: FunctionEnd strpbrk

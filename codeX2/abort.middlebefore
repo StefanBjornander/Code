@@ -1,0 +1,6 @@
+0: AssignRegister rax integral8$60#
+1: AssignRegister rdi integral8$18446744073709551615#
+2: SysCall
+3: Empty
+4: Return
+5: FunctionEnd abort

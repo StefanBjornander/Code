@@ -1,0 +1,17 @@
+0: Equal 15 longValue integral8$0#
+1: Modulo £temporary1840 longValue integral8$10#
+2: IntegralToIntegral £temporary1841 £temporary1840
+3: Assign digit £temporary1841
+4: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+5: Divide £temporary1842 longValue integral8$10#
+6: Parameter 60 signed long int £temporary1842
+7: Call 36 printLongIntRec 0
+8: PostCall 36
+9: PreCall 36 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+10: Add £temporary1844 digit integral4$48#
+11: IntegralToIntegral £temporary1845 £temporary1844
+12: Parameter 60 signed char £temporary1845
+13: Call 36 printChar 0
+14: PostCall 36
+15: Return
+16: FunctionEnd printLongIntRec

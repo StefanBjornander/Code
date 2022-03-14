@@ -1,0 +1,17 @@
+0: Assign lowHeapPtr integral8$65534#
+1: InspectRegister £temporary4982 bp
+2: IntegralToIntegral £temporary4983 £temporary4982
+3: Assign stackTop £temporary4983
+4: PreCall 36
+5: Parameter 60 string string_Stack20Top3A2025u2C20Low20Heap3A2025u0A#
+6: Parameter 68 unsigned int stackTop
+7: Dereference £temporary4984 lowHeapPtr 0
+8: Parameter 72 unsigned int £temporary4984
+9: Call 36 printf 8
+10: PostCall 36
+11: PreCall 36
+12: Call 36 rec 0
+13: PostCall 36
+14: Empty
+15: Return
+16: FunctionEnd rec
