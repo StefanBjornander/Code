@@ -25,169 +25,169 @@
 
 section .data
 
-@8969string_Hello2C20World21#:
+@9124string_Hello2C20World21#:
 	; Initializer String Hello, World!
 	db "Hello, World!", 0
 
 section .data
 
-@8978string_strlen282225s2229203D2025i0A#:
+@9133string_strlen282225s2229203D2025i0A#:
 	; Initializer String strlen("%s") = %i\n
 	db "strlen(", 34, "%s", 34, ") = %i", 10, 0
 
 section .data
 
-@8985string_t203D202225s222C20u203D202225s220A#:
+@9140string_t203D202225s222C20u203D202225s220A#:
 	; Initializer String t = "%s", u = "%s"\n
 	db "t = ", 34, "%s", 34, ", u = ", 34, "%s", 34, 10, 0
 
 section .data
 
-@8986string_abc#:
+@9141string_abc#:
 	; Initializer String abc
 	db "abc", 0
 
 section .data
 
-@8987string_abc#:
+@9142string_abc#:
 	; Initializer String abc
 	db "abc", 0
 
 section .data
 
-@8992string_t203D202225s222C20u203D202225s220A#:
+@9147string_t203D202225s222C20u203D202225s220A#:
 	; Initializer String t = "%s", u = "%s"\n
 	db "t = ", 34, "%s", 34, ", u = ", 34, "%s", 34, 10, 0
 
 section .data
 
-@8993string_strcmp28s2C20u29203D2025i0A#:
+@9148string_strcmp28s2C20u29203D2025i0A#:
 	; Initializer String strcmp(s, u) = %i\n
 	db "strcmp(s, u) = %i", 10, 0
 
 section .data
 
-@8994string_strncmp28s2C20u2C20229203D2025i0A#:
+@9149string_strncmp28s2C20u2C20229203D2025i0A#:
 	; Initializer String strncmp(s, u, 2) = %i\n
 	db "strncmp(s, u, 2) = %i", 10, 0
 
 section .data
 
-@8998string_strchr28s2C2027l2729203D2025i0A#:
+@9153string_strchr28s2C2027l2729203D2025i0A#:
 	; Initializer String strchr(s, 'l') = %i\n
 	db "strchr(s, ", 39, "l", 39, ") = %i", 10, 0
 
 section .data
 
-@9005string_strrchr28s2C2027l2729203D2025i0A#:
+@9160string_strrchr28s2C2027l2729203D2025i0A#:
 	; Initializer String strrchr(s, 'l') = %i\n
 	db "strrchr(s, ", 39, "l", 39, ") = %i", 10, 0
 
 section .data
 
-@9012string_strchr28s2C2027x2729203D2025i0A#:
+@9167string_strchr28s2C2027x2729203D2025i0A#:
 	; Initializer String strchr(s, 'x') = %i\n
 	db "strchr(s, ", 39, "x", 39, ") = %i", 10, 0
 
 section .data
 
-@9019string_strrchr28s2C2027x2729203D2025i0A#:
+@9174string_strrchr28s2C2027x2729203D2025i0A#:
 	; Initializer String strrchr(s, 'x') = %i\n
 	db "strrchr(s, ", 39, "x", 39, ") = %i", 10, 0
 
 section .data
 
-@9024string_Hello2C20World21#:
+@9179string_Hello2C20World21#:
 	; Initializer String Hello, World!
 	db "Hello, World!", 0
 
 section .data
 
-@9028string_Hello2C20World21#:
+@9183string_Hello2C20World21#:
 	; Initializer String Hello, World!
 	db "Hello, World!", 0
 
 section .data
 
-@9044string_s203D202225s222C20t203D202225s222C20u203D202225s220A#:
+@9199string_s203D202225s222C20t203D202225s222C20u203D202225s220A#:
 	; Initializer String s = "%s", t = "%s", u = "%s"\n
 	db "s = ", 34, "%s", 34, ", t = ", 34, "%s", 34, ", u = ", 34, "%s", 34, 10, 0
 
 section .data
 
-@9050string_memchr28s2C2027l272C20SIZE202A20sizeof28char2929203D2025i0A#:
+@9205string_memchr28s2C2027l272C20SIZE202A20sizeof28char2929203D2025i0A#:
 	; Initializer String memchr(s, 'l', SIZE * sizeof(char)) = %i\n
 	db "memchr(s, ", 39, "l", 39, ", SIZE * sizeof(char)) = %i", 10, 0
 
 section .data
 
-@9060string_memchr28s2C2027x272C20SIZE202A20sizeof28char2929203D2025i0A#:
+@9215string_memchr28s2C2027x272C20SIZE202A20sizeof28char2929203D2025i0A#:
 	; Initializer String memchr(s, 'x', SIZE * sizeof(char)) = %i\n
 	db "memchr(s, ", 39, "x", 39, ", SIZE * sizeof(char)) = %i", 10, 0
 
 section .data
 
-@9065string_s3A202225s222C20t3A202225s220A#:
+@9220string_s3A202225s222C20t3A202225s220A#:
 	; Initializer String s: "%s", t: "%s"\n
 	db "s: ", 34, "%s", 34, ", t: ", 34, "%s", 34, 10, 0
 
 section .data
 
-@9066string_strcmp28s2C20t29203D2025i0A#:
+@9221string_strcmp28s2C20t29203D2025i0A#:
 	; Initializer String strcmp(s, t) = %i\n
 	db "strcmp(s, t) = %i", 10, 0
 
 section .data
 
-@9067string_memcmp28s2C20t2C20SIZE202A20sizeof28char2929203D2025i0A#:
+@9222string_memcmp28s2C20t2C20SIZE202A20sizeof28char2929203D2025i0A#:
 	; Initializer String memcmp(s, t, SIZE * sizeof(char)) = %i\n
 	db "memcmp(s, t, SIZE * sizeof(char)) = %i", 10, 0
 
 section .data
 
-@9071string_strspn28s2C2022Hello2C20C2229203D2025i0A#:
+@9226string_strspn28s2C2022Hello2C20C2229203D2025i0A#:
 	; Initializer String strspn(s, "Hello, C") = %i\n
 	db "strspn(s, ", 34, "Hello, C", 34, ") = %i", 10, 0
 
 section .data
 
-@9072string_Hello2C20C#:
+@9227string_Hello2C20C#:
 	; Initializer String Hello, C
 	db "Hello, C", 0
 
 section .data
 
-@9073string_strcspn28s2C2022Hello2C20C2229203D2025i0A#:
+@9228string_strcspn28s2C2022Hello2C20C2229203D2025i0A#:
 	; Initializer String strcspn(s, "Hello, C") = %i\n
 	db "strcspn(s, ", 34, "Hello, C", 34, ") = %i", 10, 0
 
 section .data
 
-@9074string_Hello2C20C#:
+@9229string_Hello2C20C#:
 	; Initializer String Hello, C
 	db "Hello, C", 0
 
 section .data
 
-@9075string_strerror28errno29203D202225s220A#:
+@9230string_strerror28errno29203D202225s220A#:
 	; Initializer String strerror(errno) = "%s"\n
 	db "strerror(errno) = ", 34, "%s", 34, 10, 0
 
 section .data
 
-@9076string_2C#:
+@9231string_2C#:
 	; Initializer String ,
 	db ",", 0
 
 section .data
 
-@9079string_strtok28s2C20222C2229203D202225s220A#:
+@9234string_strtok28s2C20222C2229203D202225s220A#:
 	; Initializer String strtok(s, ",") = "%s"\n
 	db "strtok(s, ", 34, ",", 34, ") = ", 34, "%s", 34, 10, 0
 
 section .data
 
-@9082string_2C#:
+@9237string_2C#:
 	; Initializer String ,
 	db ",", 0
 
@@ -195,14 +195,14 @@ section .text
 
  string_test:
 	; Assign s string_Hello2C20World21#
-	mov qword [rbp + 28], @8969string_Hello2C20World21#
+	mov qword [rbp + 28], @9124string_Hello2C20World21#
 
  string_test$1:
 	; PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
  string_test$2:
 	; Parameter 268 string string_strlen282225s2229203D2025i0A#
-	mov qword [rbp + 268], @8978string_strlen282225s2229203D2025i0A#
+	mov qword [rbp + 268], @9133string_strlen282225s2229203D2025i0A#
 
  string_test$3:
 	; Parameter 276 pointer s
@@ -228,10 +228,10 @@ section .text
 	; PostCall 284
 
  string_test$8:
-	; GetReturnValue £temporary4029
+	; GetReturnValue £temporary4042
 
  string_test$9:
-	; Parameter 284 signed int £temporary4029
+	; Parameter 284 signed int £temporary4042
 	mov [rbp + 284], ebx
 
  string_test$10:
@@ -297,12 +297,12 @@ section .text
 	; PostCall 244
 
  string_test$23:
-	; Dereference £temporary4034 £temporary4033 0
+	; Dereference £temporary4047 £temporary4046 0
 	mov rsi, rbp
 	add rsi, 136
 
  string_test$24:
-	; Assign £temporary4034 integral1$0#
+	; Assign £temporary4047 integral1$0#
 	mov byte [rsi + 5], 0
 
  string_test$25:
@@ -310,7 +310,7 @@ section .text
 
  string_test$26:
 	; Parameter 268 string string_t203D202225s222C20u203D202225s220A#
-	mov qword [rbp + 268], @8985string_t203D202225s222C20u203D202225s220A#
+	mov qword [rbp + 268], @9140string_t203D202225s222C20u203D202225s220A#
 
  string_test$27:
 	; Parameter 276 array t
@@ -344,7 +344,7 @@ section .text
 
  string_test$33:
 	; Parameter 276 string string_abc#
-	mov qword [rbp + 276], @8986string_abc#
+	mov qword [rbp + 276], @9141string_abc#
 
  string_test$34:
 	; Call 244 strcat 0
@@ -375,10 +375,10 @@ section .text
 	; PostCall 244
 
  string_test$40:
-	; GetReturnValue £temporary4037
+	; GetReturnValue £temporary4050
 
  string_test$41:
-	; Assign i £temporary4037
+	; Assign i £temporary4050
 	mov [rbp + 24], ebx
 
  string_test$42:
@@ -391,7 +391,7 @@ section .text
 
  string_test$44:
 	; Parameter 276 string string_abc#
-	mov qword [rbp + 276], @8987string_abc#
+	mov qword [rbp + 276], @9142string_abc#
 
  string_test$45:
 	; Parameter 284 signed int integral4$2#
@@ -408,26 +408,26 @@ section .text
 	; PostCall 244
 
  string_test$48:
-	; Add £temporary4040 i integral4$2#
+	; Add £temporary4053 i integral4$2#
 	mov eax, [rbp + 24]
 	add eax, 2
 
  string_test$49:
-	; IntegralToIntegral £temporary4041 £temporary4040
+	; IntegralToIntegral £temporary4054 £temporary4053
 	mov rbx, 4294967295
 	and rax, rbx
 
  string_test$50:
-	; Add £temporary4042 u £temporary4041
+	; Add £temporary4055 u £temporary4054
 	mov rsi, rbp
 	add rsi, 136
 	add rsi, rax
 
  string_test$51:
-	; Dereference £temporary4043 £temporary4042 0
+	; Dereference £temporary4056 £temporary4055 0
 
  string_test$52:
-	; Assign £temporary4043 integral1$0#
+	; Assign £temporary4056 integral1$0#
 	mov byte [rsi], 0
 
  string_test$53:
@@ -435,7 +435,7 @@ section .text
 
  string_test$54:
 	; Parameter 268 string string_t203D202225s222C20u203D202225s220A#
-	mov qword [rbp + 268], @8992string_t203D202225s222C20u203D202225s220A#
+	mov qword [rbp + 268], @9147string_t203D202225s222C20u203D202225s220A#
 
  string_test$55:
 	; Parameter 276 array t
@@ -464,7 +464,7 @@ section .text
 
  string_test$60:
 	; Parameter 268 string string_strcmp28s2C20u29203D2025i0A#
-	mov qword [rbp + 268], @8993string_strcmp28s2C20u29203D2025i0A#
+	mov qword [rbp + 268], @9148string_strcmp28s2C20u29203D2025i0A#
 
  string_test$61:
 	; PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -490,10 +490,10 @@ section .text
 	; PostCall 276
 
  string_test$66:
-	; GetReturnValue £temporary4045
+	; GetReturnValue £temporary4058
 
  string_test$67:
-	; Parameter 276 signed int £temporary4045
+	; Parameter 276 signed int £temporary4058
 	mov [rbp + 276], ebx
 
  string_test$68:
@@ -513,7 +513,7 @@ section .text
 
  string_test$71:
 	; Parameter 268 string string_strncmp28s2C20u2C20229203D2025i0A#
-	mov qword [rbp + 268], @8994string_strncmp28s2C20u2C20229203D2025i0A#
+	mov qword [rbp + 268], @9149string_strncmp28s2C20u2C20229203D2025i0A#
 
  string_test$72:
 	; PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -543,10 +543,10 @@ section .text
 	; PostCall 276
 
  string_test$78:
-	; GetReturnValue £temporary4047
+	; GetReturnValue £temporary4060
 
  string_test$79:
-	; Parameter 276 signed int £temporary4047
+	; Parameter 276 signed int £temporary4060
 	mov [rbp + 276], ebx
 
  string_test$80:
@@ -584,10 +584,10 @@ section .text
 	; PostCall 244
 
  string_test$87:
-	; GetReturnValue £temporary4049
+	; GetReturnValue £temporary4062
 
  string_test$88:
-	; Assign p £temporary4049
+	; Assign p £temporary4062
 	mov [rbp + 236], rbx
 
  string_test$89:
@@ -595,7 +595,7 @@ section .text
 
  string_test$90:
 	; Parameter 268 string string_strchr28s2C2027l2729203D2025i0A#
-	mov qword [rbp + 268], @8998string_strchr28s2C2027l2729203D2025i0A#
+	mov qword [rbp + 268], @9153string_strchr28s2C2027l2729203D2025i0A#
 
  string_test$91:
 	; Equal 95 p integral8$0#
@@ -603,23 +603,23 @@ section .text
 	je string_test$95
 
  string_test$92:
-	; Subtract £temporary4051 p s
+	; Subtract £temporary4064 p s
 	mov rax, [rbp + 236]
 	sub rax, [rbp + 28]
 
  string_test$93:
-	; IntegralToIntegral £temporary4054 £temporary4051
+	; IntegralToIntegral £temporary4067 £temporary4064
 
  string_test$94:
 	; Jump 96
 	jmp string_test$96
 
  string_test$95:
-	; Assign £temporary4054 integral4$minus1#
+	; Assign £temporary4067 integral4$minus1#
 	mov eax, -1
 
  string_test$96:
-	; Parameter 276 signed int £temporary4054
+	; Parameter 276 signed int £temporary4067
 	mov [rbp + 276], eax
 
  string_test$97:
@@ -657,10 +657,10 @@ section .text
 	; PostCall 244
 
  string_test$104:
-	; GetReturnValue £temporary4056
+	; GetReturnValue £temporary4069
 
  string_test$105:
-	; Assign p £temporary4056
+	; Assign p £temporary4069
 	mov [rbp + 236], rbx
 
  string_test$106:
@@ -668,7 +668,7 @@ section .text
 
  string_test$107:
 	; Parameter 268 string string_strrchr28s2C2027l2729203D2025i0A#
-	mov qword [rbp + 268], @9005string_strrchr28s2C2027l2729203D2025i0A#
+	mov qword [rbp + 268], @9160string_strrchr28s2C2027l2729203D2025i0A#
 
  string_test$108:
 	; Equal 112 p integral8$0#
@@ -676,23 +676,23 @@ section .text
 	je string_test$112
 
  string_test$109:
-	; Subtract £temporary4058 p s
+	; Subtract £temporary4071 p s
 	mov rax, [rbp + 236]
 	sub rax, [rbp + 28]
 
  string_test$110:
-	; IntegralToIntegral £temporary4061 £temporary4058
+	; IntegralToIntegral £temporary4074 £temporary4071
 
  string_test$111:
 	; Jump 113
 	jmp string_test$113
 
  string_test$112:
-	; Assign £temporary4061 integral4$minus1#
+	; Assign £temporary4074 integral4$minus1#
 	mov eax, -1
 
  string_test$113:
-	; Parameter 276 signed int £temporary4061
+	; Parameter 276 signed int £temporary4074
 	mov [rbp + 276], eax
 
  string_test$114:
@@ -730,10 +730,10 @@ section .text
 	; PostCall 244
 
  string_test$121:
-	; GetReturnValue £temporary4063
+	; GetReturnValue £temporary4076
 
  string_test$122:
-	; Assign p £temporary4063
+	; Assign p £temporary4076
 	mov [rbp + 236], rbx
 
  string_test$123:
@@ -741,7 +741,7 @@ section .text
 
  string_test$124:
 	; Parameter 268 string string_strchr28s2C2027x2729203D2025i0A#
-	mov qword [rbp + 268], @9012string_strchr28s2C2027x2729203D2025i0A#
+	mov qword [rbp + 268], @9167string_strchr28s2C2027x2729203D2025i0A#
 
  string_test$125:
 	; Equal 129 p integral8$0#
@@ -749,23 +749,23 @@ section .text
 	je string_test$129
 
  string_test$126:
-	; Subtract £temporary4065 p s
+	; Subtract £temporary4078 p s
 	mov rax, [rbp + 236]
 	sub rax, [rbp + 28]
 
  string_test$127:
-	; IntegralToIntegral £temporary4068 £temporary4065
+	; IntegralToIntegral £temporary4081 £temporary4078
 
  string_test$128:
 	; Jump 130
 	jmp string_test$130
 
  string_test$129:
-	; Assign £temporary4068 integral4$minus1#
+	; Assign £temporary4081 integral4$minus1#
 	mov eax, -1
 
  string_test$130:
-	; Parameter 276 signed int £temporary4068
+	; Parameter 276 signed int £temporary4081
 	mov [rbp + 276], eax
 
  string_test$131:
@@ -803,10 +803,10 @@ section .text
 	; PostCall 244
 
  string_test$138:
-	; GetReturnValue £temporary4070
+	; GetReturnValue £temporary4083
 
  string_test$139:
-	; Assign p £temporary4070
+	; Assign p £temporary4083
 	mov [rbp + 236], rbx
 
  string_test$140:
@@ -814,7 +814,7 @@ section .text
 
  string_test$141:
 	; Parameter 268 string string_strrchr28s2C2027x2729203D2025i0A#
-	mov qword [rbp + 268], @9019string_strrchr28s2C2027x2729203D2025i0A#
+	mov qword [rbp + 268], @9174string_strrchr28s2C2027x2729203D2025i0A#
 
  string_test$142:
 	; Equal 146 p integral8$0#
@@ -822,23 +822,23 @@ section .text
 	je string_test$146
 
  string_test$143:
-	; Subtract £temporary4072 p s
+	; Subtract £temporary4085 p s
 	mov rax, [rbp + 236]
 	sub rax, [rbp + 28]
 
  string_test$144:
-	; IntegralToIntegral £temporary4075 £temporary4072
+	; IntegralToIntegral £temporary4088 £temporary4085
 
  string_test$145:
 	; Jump 147
 	jmp string_test$147
 
  string_test$146:
-	; Assign £temporary4075 integral4$minus1#
+	; Assign £temporary4088 integral4$minus1#
 	mov eax, -1
 
  string_test$147:
-	; Parameter 276 signed int £temporary4075
+	; Parameter 276 signed int £temporary4088
 	mov [rbp + 276], eax
 
  string_test$148:
@@ -863,7 +863,7 @@ section .text
 
  string_test$152:
 	; Parameter 276 string string_Hello2C20World21#
-	mov qword [rbp + 276], @9024string_Hello2C20World21#
+	mov qword [rbp + 276], @9179string_Hello2C20World21#
 
  string_test$153:
 	; Parameter 284 signed int integral4$20#
@@ -889,7 +889,7 @@ section .text
 
  string_test$158:
 	; Parameter 276 string string_Hello2C20World21#
-	mov qword [rbp + 276], @9028string_Hello2C20World21#
+	mov qword [rbp + 276], @9183string_Hello2C20World21#
 
  string_test$159:
 	; Parameter 284 signed int integral4$20#
@@ -932,12 +932,12 @@ section .text
 	; PostCall 244
 
  string_test$168:
-	; Dereference £temporary4081 £temporary4080 0
+	; Dereference £temporary4094 £temporary4093 0
 	mov rsi, rbp
 	add rsi, 136
 
  string_test$169:
-	; Assign £temporary4081 integral1$0#
+	; Assign £temporary4094 integral1$0#
 	mov byte [rsi + 19], 0
 
  string_test$170:
@@ -945,7 +945,7 @@ section .text
 
  string_test$171:
 	; Parameter 268 string string_s203D202225s222C20t203D202225s222C20u203D202225s220A#
-	mov qword [rbp + 268], @9044string_s203D202225s222C20t203D202225s222C20u203D202225s220A#
+	mov qword [rbp + 268], @9199string_s203D202225s222C20t203D202225s222C20u203D202225s220A#
 
  string_test$172:
 	; Parameter 276 pointer s
@@ -1001,10 +1001,10 @@ section .text
 	; PostCall 244
 
  string_test$183:
-	; GetReturnValue £temporary4083
+	; GetReturnValue £temporary4096
 
  string_test$184:
-	; Assign p £temporary4083
+	; Assign p £temporary4096
 	mov [rbp + 236], rbx
 
  string_test$185:
@@ -1012,7 +1012,7 @@ section .text
 
  string_test$186:
 	; Parameter 268 string string_memchr28s2C2027l272C20SIZE202A20sizeof28char2929203D2025i0A#
-	mov qword [rbp + 268], @9050string_memchr28s2C2027l272C20SIZE202A20sizeof28char2929203D2025i0A#
+	mov qword [rbp + 268], @9205string_memchr28s2C2027l272C20SIZE202A20sizeof28char2929203D2025i0A#
 
  string_test$187:
 	; Equal 191 p integral8$0#
@@ -1020,23 +1020,23 @@ section .text
 	je string_test$191
 
  string_test$188:
-	; Subtract £temporary4085 p s
+	; Subtract £temporary4098 p s
 	mov rax, [rbp + 236]
 	sub rax, [rbp + 28]
 
  string_test$189:
-	; IntegralToIntegral £temporary4088 £temporary4085
+	; IntegralToIntegral £temporary4101 £temporary4098
 
  string_test$190:
 	; Jump 192
 	jmp string_test$192
 
  string_test$191:
-	; Assign £temporary4088 integral4$minus1#
+	; Assign £temporary4101 integral4$minus1#
 	mov eax, -1
 
  string_test$192:
-	; Parameter 276 signed int £temporary4088
+	; Parameter 276 signed int £temporary4101
 	mov [rbp + 276], eax
 
  string_test$193:
@@ -1078,10 +1078,10 @@ section .text
 	; PostCall 244
 
  string_test$201:
-	; GetReturnValue £temporary4090
+	; GetReturnValue £temporary4103
 
  string_test$202:
-	; Assign p £temporary4090
+	; Assign p £temporary4103
 	mov [rbp + 236], rbx
 
  string_test$203:
@@ -1089,7 +1089,7 @@ section .text
 
  string_test$204:
 	; Parameter 268 string string_memchr28s2C2027x272C20SIZE202A20sizeof28char2929203D2025i0A#
-	mov qword [rbp + 268], @9060string_memchr28s2C2027x272C20SIZE202A20sizeof28char2929203D2025i0A#
+	mov qword [rbp + 268], @9215string_memchr28s2C2027x272C20SIZE202A20sizeof28char2929203D2025i0A#
 
  string_test$205:
 	; Equal 209 p integral8$0#
@@ -1097,23 +1097,23 @@ section .text
 	je string_test$209
 
  string_test$206:
-	; Subtract £temporary4092 p s
+	; Subtract £temporary4105 p s
 	mov rax, [rbp + 236]
 	sub rax, [rbp + 28]
 
  string_test$207:
-	; IntegralToIntegral £temporary4095 £temporary4092
+	; IntegralToIntegral £temporary4108 £temporary4105
 
  string_test$208:
 	; Jump 210
 	jmp string_test$210
 
  string_test$209:
-	; Assign £temporary4095 integral4$minus1#
+	; Assign £temporary4108 integral4$minus1#
 	mov eax, -1
 
  string_test$210:
-	; Parameter 276 signed int £temporary4095
+	; Parameter 276 signed int £temporary4108
 	mov [rbp + 276], eax
 
  string_test$211:
@@ -1133,7 +1133,7 @@ section .text
 
  string_test$214:
 	; Parameter 268 string string_s3A202225s222C20t3A202225s220A#
-	mov qword [rbp + 268], @9065string_s3A202225s222C20t3A202225s220A#
+	mov qword [rbp + 268], @9220string_s3A202225s222C20t3A202225s220A#
 
  string_test$215:
 	; Parameter 276 pointer s
@@ -1162,7 +1162,7 @@ section .text
 
  string_test$220:
 	; Parameter 268 string string_strcmp28s2C20t29203D2025i0A#
-	mov qword [rbp + 268], @9066string_strcmp28s2C20t29203D2025i0A#
+	mov qword [rbp + 268], @9221string_strcmp28s2C20t29203D2025i0A#
 
  string_test$221:
 	; PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -1188,10 +1188,10 @@ section .text
 	; PostCall 276
 
  string_test$226:
-	; GetReturnValue £temporary4098
+	; GetReturnValue £temporary4111
 
  string_test$227:
-	; Parameter 276 signed int £temporary4098
+	; Parameter 276 signed int £temporary4111
 	mov [rbp + 276], ebx
 
  string_test$228:
@@ -1211,7 +1211,7 @@ section .text
 
  string_test$231:
 	; Parameter 268 string string_memcmp28s2C20t2C20SIZE202A20sizeof28char2929203D2025i0A#
-	mov qword [rbp + 268], @9067string_memcmp28s2C20t2C20SIZE202A20sizeof28char2929203D2025i0A#
+	mov qword [rbp + 268], @9222string_memcmp28s2C20t2C20SIZE202A20sizeof28char2929203D2025i0A#
 
  string_test$232:
 	; PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -1241,10 +1241,10 @@ section .text
 	; PostCall 276
 
  string_test$238:
-	; GetReturnValue £temporary4100
+	; GetReturnValue £temporary4113
 
  string_test$239:
-	; Parameter 276 signed int £temporary4100
+	; Parameter 276 signed int £temporary4113
 	mov [rbp + 276], ebx
 
  string_test$240:
@@ -1264,7 +1264,7 @@ section .text
 
  string_test$243:
 	; Parameter 268 string string_strspn28s2C2022Hello2C20C2229203D2025i0A#
-	mov qword [rbp + 268], @9071string_strspn28s2C2022Hello2C20C2229203D2025i0A#
+	mov qword [rbp + 268], @9226string_strspn28s2C2022Hello2C20C2229203D2025i0A#
 
  string_test$244:
 	; PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -1276,7 +1276,7 @@ section .text
 
  string_test$246:
 	; Parameter 308 string string_Hello2C20C#
-	mov qword [rbp + 308], @9072string_Hello2C20C#
+	mov qword [rbp + 308], @9227string_Hello2C20C#
 
  string_test$247:
 	; Call 276 strspn 0
@@ -1289,10 +1289,10 @@ section .text
 	; PostCall 276
 
  string_test$249:
-	; GetReturnValue £temporary4102
+	; GetReturnValue £temporary4115
 
  string_test$250:
-	; Parameter 276 signed int £temporary4102
+	; Parameter 276 signed int £temporary4115
 	mov [rbp + 276], ebx
 
  string_test$251:
@@ -1312,7 +1312,7 @@ section .text
 
  string_test$254:
 	; Parameter 268 string string_strcspn28s2C2022Hello2C20C2229203D2025i0A#
-	mov qword [rbp + 268], @9073string_strcspn28s2C2022Hello2C20C2229203D2025i0A#
+	mov qword [rbp + 268], @9228string_strcspn28s2C2022Hello2C20C2229203D2025i0A#
 
  string_test$255:
 	; PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -1324,7 +1324,7 @@ section .text
 
  string_test$257:
 	; Parameter 308 string string_Hello2C20C#
-	mov qword [rbp + 308], @9074string_Hello2C20C#
+	mov qword [rbp + 308], @9229string_Hello2C20C#
 
  string_test$258:
 	; Call 276 strcspn 0
@@ -1337,10 +1337,10 @@ section .text
 	; PostCall 276
 
  string_test$260:
-	; GetReturnValue £temporary4104
+	; GetReturnValue £temporary4117
 
  string_test$261:
-	; Parameter 276 signed int £temporary4104
+	; Parameter 276 signed int £temporary4117
 	mov [rbp + 276], ebx
 
  string_test$262:
@@ -1360,7 +1360,7 @@ section .text
 
  string_test$265:
 	; Parameter 268 string string_strerror28errno29203D202225s220A#
-	mov qword [rbp + 268], @9075string_strerror28errno29203D202225s220A#
+	mov qword [rbp + 268], @9230string_strerror28errno29203D202225s220A#
 
  string_test$266:
 	; PreCall 244 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -1381,10 +1381,10 @@ section .text
 	; PostCall 276
 
  string_test$270:
-	; GetReturnValue £temporary4106
+	; GetReturnValue £temporary4119
 
  string_test$271:
-	; Parameter 276 pointer £temporary4106
+	; Parameter 276 pointer £temporary4119
 	mov [rbp + 276], rbx
 
  string_test$272:
@@ -1409,7 +1409,7 @@ section .text
 
  string_test$276:
 	; Parameter 276 string string_2C#
-	mov qword [rbp + 276], @9076string_2C#
+	mov qword [rbp + 276], @9231string_2C#
 
  string_test$277:
 	; Call 244 strtok 0
@@ -1422,10 +1422,10 @@ section .text
 	; PostCall 244
 
  string_test$279:
-	; GetReturnValue £temporary4108
+	; GetReturnValue £temporary4121
 
  string_test$280:
-	; Assign p £temporary4108
+	; Assign p £temporary4121
 	mov [rbp + 236], rbx
 
  string_test$281:
@@ -1438,7 +1438,7 @@ section .text
 
  string_test$283:
 	; Parameter 268 string string_strtok28s2C20222C2229203D202225s220A#
-	mov qword [rbp + 268], @9079string_strtok28s2C20222C2229203D202225s220A#
+	mov qword [rbp + 268], @9234string_strtok28s2C20222C2229203D202225s220A#
 
  string_test$284:
 	; Parameter 276 pointer p
@@ -1466,7 +1466,7 @@ section .text
 
  string_test$289:
 	; Parameter 276 string string_2C#
-	mov qword [rbp + 276], @9082string_2C#
+	mov qword [rbp + 276], @9237string_2C#
 
  string_test$290:
 	; Call 244 strtok 0
@@ -1479,10 +1479,10 @@ section .text
 	; PostCall 244
 
  string_test$292:
-	; GetReturnValue £temporary4111
+	; GetReturnValue £temporary4124
 
  string_test$293:
-	; Assign p £temporary4111
+	; Assign p £temporary4124
 	mov [rbp + 236], rbx
 
  string_test$294:

@@ -1,49 +1,49 @@
 0: CallHeader 14 localeconv
 1: Call 14 localeconv 0
 2: PostCall 14
-3: GetReturnValue £temporary3492
-4: Assign localeConvPtr £temporary3492
-5: NotEqual Deref £temporary3494 -> localeConvPtr localeConvPtr 4 localeConvPtr 0
+3: GetReturnValue £temporary3494
+4: Assign localeConvPtr £temporary3494
+5: NotEqual Deref £temporary3496 -> localeConvPtr localeConvPtr 4 localeConvPtr 0
 6: Goto Assign shortDayList g_shortDayList
-7: Deref £temporary3494 -> localeConvPtr localeConvPtr 4
-8: NotEqual Deref £temporary3497 -> localeConvPtr localeConvPtr 4 £temporary3494 -> localeConvPtr 0
+7: Deref £temporary3496 -> localeConvPtr localeConvPtr 4
+8: NotEqual Deref £temporary3499 -> localeConvPtr localeConvPtr 4 £temporary3496 -> localeConvPtr 0
 9: Goto Assign shortDayList g_shortDayList
 10: CheckTrackMapFloatStack
-11: Deref £temporary3497 -> localeConvPtr localeConvPtr 4
-12: Assign shortDayList £temporary3497 -> localeConvPtr
-13: Goto NotEqual Deref £temporary3499 -> localeConvPtr localeConvPtr 6 localeConvPtr 0
+11: Deref £temporary3499 -> localeConvPtr localeConvPtr 4
+12: Assign shortDayList £temporary3499 -> localeConvPtr
+13: Goto NotEqual Deref £temporary3501 -> localeConvPtr localeConvPtr 6 localeConvPtr 0
 14: Assign shortDayList g_shortDayList
-15: Goto NotEqual Deref £temporary3499 -> localeConvPtr localeConvPtr 6 localeConvPtr 0
-16: NotEqual Deref £temporary3499 -> localeConvPtr localeConvPtr 6 localeConvPtr 0
+15: Goto NotEqual Deref £temporary3501 -> localeConvPtr localeConvPtr 6 localeConvPtr 0
+16: NotEqual Deref £temporary3501 -> localeConvPtr localeConvPtr 6 localeConvPtr 0
 17: Goto Assign longDayList g_longDayList
-18: Deref £temporary3499 -> localeConvPtr localeConvPtr 6
-19: NotEqual Deref £temporary3502 -> localeConvPtr localeConvPtr 6 £temporary3499 -> localeConvPtr 0
+18: Deref £temporary3501 -> localeConvPtr localeConvPtr 6
+19: NotEqual Deref £temporary3504 -> localeConvPtr localeConvPtr 6 £temporary3501 -> localeConvPtr 0
 20: Goto Assign longDayList g_longDayList
 21: CheckTrackMapFloatStack
-22: Deref £temporary3502 -> localeConvPtr localeConvPtr 6
-23: Assign longDayList £temporary3502 -> localeConvPtr
-24: Goto NotEqual Deref £temporary3504 -> localeConvPtr localeConvPtr 8 localeConvPtr 0
+22: Deref £temporary3504 -> localeConvPtr localeConvPtr 6
+23: Assign longDayList £temporary3504 -> localeConvPtr
+24: Goto NotEqual Deref £temporary3506 -> localeConvPtr localeConvPtr 8 localeConvPtr 0
 25: Assign longDayList g_longDayList
-26: Goto NotEqual Deref £temporary3504 -> localeConvPtr localeConvPtr 8 localeConvPtr 0
-27: NotEqual Deref £temporary3504 -> localeConvPtr localeConvPtr 8 localeConvPtr 0
+26: Goto NotEqual Deref £temporary3506 -> localeConvPtr localeConvPtr 8 localeConvPtr 0
+27: NotEqual Deref £temporary3506 -> localeConvPtr localeConvPtr 8 localeConvPtr 0
 28: Goto Assign shortMonthList g_shortMonthList
-29: Deref £temporary3504 -> localeConvPtr localeConvPtr 8
-30: NotEqual Deref £temporary3507 -> localeConvPtr localeConvPtr 8 £temporary3504 -> localeConvPtr 0
+29: Deref £temporary3506 -> localeConvPtr localeConvPtr 8
+30: NotEqual Deref £temporary3509 -> localeConvPtr localeConvPtr 8 £temporary3506 -> localeConvPtr 0
 31: Goto Assign shortMonthList g_shortMonthList
 32: CheckTrackMapFloatStack
-33: Deref £temporary3507 -> localeConvPtr localeConvPtr 8
-34: Assign shortMonthList £temporary3507 -> localeConvPtr
-35: Goto NotEqual Deref £temporary3509 -> localeConvPtr localeConvPtr 10 localeConvPtr 0
+33: Deref £temporary3509 -> localeConvPtr localeConvPtr 8
+34: Assign shortMonthList £temporary3509 -> localeConvPtr
+35: Goto NotEqual Deref £temporary3511 -> localeConvPtr localeConvPtr 10 localeConvPtr 0
 36: Assign shortMonthList g_shortMonthList
-37: Goto NotEqual Deref £temporary3509 -> localeConvPtr localeConvPtr 10 localeConvPtr 0
-38: NotEqual Deref £temporary3509 -> localeConvPtr localeConvPtr 10 localeConvPtr 0
+37: Goto NotEqual Deref £temporary3511 -> localeConvPtr localeConvPtr 10 localeConvPtr 0
+38: NotEqual Deref £temporary3511 -> localeConvPtr localeConvPtr 10 localeConvPtr 0
 39: Goto Assign longMonthList g_longMonthList
-40: Deref £temporary3509 -> localeConvPtr localeConvPtr 10
-41: NotEqual Deref £temporary3512 -> localeConvPtr localeConvPtr 10 £temporary3509 -> localeConvPtr 0
+40: Deref £temporary3511 -> localeConvPtr localeConvPtr 10
+41: NotEqual Deref £temporary3514 -> localeConvPtr localeConvPtr 10 £temporary3511 -> localeConvPtr 0
 42: Goto Assign longMonthList g_longMonthList
 43: CheckTrackMapFloatStack
-44: Deref £temporary3512 -> localeConvPtr localeConvPtr 10
-45: Assign longMonthList £temporary3512 -> localeConvPtr
+44: Deref £temporary3514 -> localeConvPtr localeConvPtr 10
+45: Assign longMonthList £temporary3514 -> localeConvPtr
 46: Goto CallHeader 24 strcpy
 47: Assign longMonthList g_longMonthList
 48: Goto CallHeader 24 strcpy
@@ -56,164 +56,164 @@
 55: Parameter 26 tp 6
 56: Call 26 getWeekNumber 0
 57: PostCall 26
-58: GetReturnValue £temporary3514
-59: Assign weekNumberStartSunday £temporary3514
+58: GetReturnValue £temporary3516
+59: Assign weekNumberStartSunday £temporary3516
 60: Assign weekNumberStartMonday weekNumberStartSunday
-61: Deref £temporary3515 -> tp tp 6
-62: Equal BinarySubtract £temporary3517 weekNumberStartMonday 1 £temporary3515 -> tp 0
+61: Deref £temporary3517 -> tp tp 6
+62: Equal BinarySubtract £temporary3519 weekNumberStartMonday 1 £temporary3517 -> tp 0
 63: Goto Assign index 0
 64: CheckTrackMapFloatStack
-65: BinarySubtract £temporary3517 weekNumberStartMonday 1
-66: Assign weekNumberStartMonday £temporary3517
+65: BinarySubtract £temporary3519 weekNumberStartMonday 1
+66: Assign weekNumberStartMonday £temporary3519
 67: Goto Assign index 0
 68: Assign index 0
 69: Empty
-70: BinaryAdd £temporary3519 format index
-71: Deref £temporary3518 -> £temporary3519 £temporary3519 0
-72: NotEqual Empty £temporary3518 -> £temporary3519 0
+70: BinaryAdd £temporary3521 format index
+71: Deref £temporary3520 -> £temporary3521 £temporary3521 0
+72: NotEqual Empty £temporary3520 -> £temporary3521 0
 73: Goto CallHeader 24 strlen
 74: CheckTrackMapFloatStack
 75: Empty
-76: BinaryAdd £temporary3523 format index
-77: Deref £temporary3522 -> £temporary3523 £temporary3523 0
-78: Equal BinaryAdd £temporary3525 index 1 £temporary3522 -> £temporary3523 37
-79: Goto Deref £temporary3606 -> add add 0
+76: BinaryAdd £temporary3525 format index
+77: Deref £temporary3524 -> £temporary3525 £temporary3525 0
+78: Equal BinaryAdd £temporary3527 index 1 £temporary3524 -> £temporary3525 37
+79: Goto Deref £temporary3608 -> add add 0
 80: CheckTrackMapFloatStack
-81: BinaryAdd £temporary3525 index 1
-82: Assign index £temporary3525
-83: BinaryAdd £temporary3527 format index
-84: Deref £temporary3526 -> £temporary3527 £temporary3527 0
-85: Case CallHeader 50 strcpy £temporary3526 -> £temporary3527 97
-86: Case CallHeader 50 strcpy £temporary3526 -> £temporary3527 65
-87: Case CallHeader 50 strcpy £temporary3526 -> £temporary3527 98
-88: Case CallHeader 50 strcpy £temporary3526 -> £temporary3527 66
-89: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 99
-90: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 100
-91: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 72
-92: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 73
-93: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 106
-94: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 109
-95: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 77
-96: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 112
-97: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 83
-98: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 85
-99: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 119
-100: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 87
-101: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 120
-102: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 88
-103: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 121
-104: Case CallHeader 50 sprintf £temporary3526 -> £temporary3527 89
-105: Case CallHeader 50 strcpy £temporary3526 -> £temporary3527 90
-106: Case CallHeader 50 strcpy £temporary3526 -> £temporary3527 37
-107: CaseEnd £temporary3526 -> £temporary3527
+81: BinaryAdd £temporary3527 index 1
+82: Assign index £temporary3527
+83: BinaryAdd £temporary3529 format index
+84: Deref £temporary3528 -> £temporary3529 £temporary3529 0
+85: Case CallHeader 50 strcpy £temporary3528 -> £temporary3529 97
+86: Case CallHeader 50 strcpy £temporary3528 -> £temporary3529 65
+87: Case CallHeader 50 strcpy £temporary3528 -> £temporary3529 98
+88: Case CallHeader 50 strcpy £temporary3528 -> £temporary3529 66
+89: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 99
+90: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 100
+91: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 72
+92: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 73
+93: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 106
+94: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 109
+95: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 77
+96: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 112
+97: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 83
+98: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 85
+99: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 119
+100: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 87
+101: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 120
+102: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 88
+103: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 121
+104: Case CallHeader 50 sprintf £temporary3528 -> £temporary3529 89
+105: Case CallHeader 50 strcpy £temporary3528 -> £temporary3529 90
+106: Case CallHeader 50 strcpy £temporary3528 -> £temporary3529 37
+107: CaseEnd £temporary3528 -> £temporary3529
 108: Goto CallHeader 50 strcpy
 109: CallHeader 50 strcpy
 110: Parameter 50 add 6
-111: Deref £temporary3528 -> tp tp 12
-112: SignedMultiply £temporary3530 £temporary3528 -> tp 2
-113: BinaryAdd £temporary3531 shortDayList £temporary3530
-114: Deref £temporary3529 -> £temporary3531 £temporary3531 0
-115: Parameter 50 £temporary3529 -> £temporary3531 8
+111: Deref £temporary3530 -> tp tp 12
+112: SignedMultiply £temporary3532 £temporary3530 -> tp 2
+113: BinaryAdd £temporary3533 shortDayList £temporary3532
+114: Deref £temporary3531 -> £temporary3533 £temporary3533 0
+115: Parameter 50 £temporary3531 -> £temporary3533 8
 116: Call 50 strcpy 0
 117: PostCall 50
 118: Goto CallHeader 50 strlen
 119: CallHeader 50 strcpy
 120: Parameter 50 add 6
-121: Deref £temporary3533 -> tp tp 12
-122: SignedMultiply £temporary3535 £temporary3533 -> tp 2
-123: BinaryAdd £temporary3536 longDayList £temporary3535
-124: Deref £temporary3534 -> £temporary3536 £temporary3536 0
-125: Parameter 50 £temporary3534 -> £temporary3536 8
+121: Deref £temporary3535 -> tp tp 12
+122: SignedMultiply £temporary3537 £temporary3535 -> tp 2
+123: BinaryAdd £temporary3538 longDayList £temporary3537
+124: Deref £temporary3536 -> £temporary3538 £temporary3538 0
+125: Parameter 50 £temporary3536 -> £temporary3538 8
 126: Call 50 strcpy 0
 127: PostCall 50
 128: Goto CallHeader 50 strlen
 129: CallHeader 50 strcpy
 130: Parameter 50 add 6
-131: Deref £temporary3538 -> tp tp 8
-132: SignedMultiply £temporary3540 £temporary3538 -> tp 2
-133: BinaryAdd £temporary3541 shortMonthList £temporary3540
-134: Deref £temporary3539 -> £temporary3541 £temporary3541 0
-135: Parameter 50 £temporary3539 -> £temporary3541 8
+131: Deref £temporary3540 -> tp tp 8
+132: SignedMultiply £temporary3542 £temporary3540 -> tp 2
+133: BinaryAdd £temporary3543 shortMonthList £temporary3542
+134: Deref £temporary3541 -> £temporary3543 £temporary3543 0
+135: Parameter 50 £temporary3541 -> £temporary3543 8
 136: Call 50 strcpy 0
 137: PostCall 50
 138: Goto CallHeader 50 strlen
 139: CallHeader 50 strcpy
 140: Parameter 50 add 6
-141: Deref £temporary3543 -> tp tp 8
-142: SignedMultiply £temporary3545 £temporary3543 -> tp 2
-143: BinaryAdd £temporary3546 longMonthList £temporary3545
-144: Deref £temporary3544 -> £temporary3546 £temporary3546 0
-145: Parameter 50 £temporary3544 -> £temporary3546 8
+141: Deref £temporary3545 -> tp tp 8
+142: SignedMultiply £temporary3547 £temporary3545 -> tp 2
+143: BinaryAdd £temporary3548 longMonthList £temporary3547
+144: Deref £temporary3546 -> £temporary3548 £temporary3548 0
+145: Parameter 50 £temporary3546 -> £temporary3548 8
 146: Call 50 strcpy 0
 147: PostCall 50
 148: Goto CallHeader 50 strlen
 149: CallHeader 50 sprintf
 150: Parameter 50 add 6
 151: Parameter 50 string_2502i2D2502i2D2502i202502i3A2502i3A2502i# 8
-152: Deref £temporary3548 -> tp tp 10
-153: BinaryAdd £temporary3549 1900 £temporary3548 -> tp
-154: Parameter 50 £temporary3549 10
-155: Deref £temporary3550 -> tp tp 8
-156: BinaryAdd £temporary3551 £temporary3550 -> tp 1
-157: Parameter 50 £temporary3551 12
-158: Deref £temporary3552 -> tp tp 6
-159: Parameter 50 £temporary3552 -> tp 14
-160: Deref £temporary3553 -> tp tp 4
-161: Parameter 50 £temporary3553 -> tp 16
-162: Deref £temporary3554 -> tp tp 2
-163: Parameter 50 £temporary3554 -> tp 18
-164: Deref £temporary3555 -> tp tp 0
-165: Parameter 50 £temporary3555 -> tp 20
+152: Deref £temporary3550 -> tp tp 10
+153: BinaryAdd £temporary3551 1900 £temporary3550 -> tp
+154: Parameter 50 £temporary3551 10
+155: Deref £temporary3552 -> tp tp 8
+156: BinaryAdd £temporary3553 £temporary3552 -> tp 1
+157: Parameter 50 £temporary3553 12
+158: Deref £temporary3554 -> tp tp 6
+159: Parameter 50 £temporary3554 -> tp 14
+160: Deref £temporary3555 -> tp tp 4
+161: Parameter 50 £temporary3555 -> tp 16
+162: Deref £temporary3556 -> tp tp 2
+163: Parameter 50 £temporary3556 -> tp 18
+164: Deref £temporary3557 -> tp tp 0
+165: Parameter 50 £temporary3557 -> tp 20
 166: Call 50 sprintf 0
 167: PostCall 50
 168: Goto CallHeader 50 strlen
 169: CallHeader 50 sprintf
 170: Parameter 50 add 6
 171: Parameter 50 string_2502i# 8
-172: Deref £temporary3557 -> tp tp 6
-173: Parameter 50 £temporary3557 -> tp 10
+172: Deref £temporary3559 -> tp tp 6
+173: Parameter 50 £temporary3559 -> tp 10
 174: Call 50 sprintf 0
 175: PostCall 50
 176: Goto CallHeader 50 strlen
 177: CallHeader 50 sprintf
 178: Parameter 50 add 6
 179: Parameter 50 string_2502i# 8
-180: Deref £temporary3559 -> tp tp 4
-181: Parameter 50 £temporary3559 -> tp 10
+180: Deref £temporary3561 -> tp tp 4
+181: Parameter 50 £temporary3561 -> tp 10
 182: Call 50 sprintf 0
 183: PostCall 50
 184: Goto CallHeader 50 strlen
 185: CallHeader 50 sprintf
 186: Parameter 50 add 6
 187: Parameter 50 string_2502i# 8
-188: Deref £temporary3561 -> tp tp 4
-189: SignedModulo £temporary3562 £temporary3561 -> tp 12
-190: Parameter 50 £temporary3562 10
+188: Deref £temporary3563 -> tp tp 4
+189: SignedModulo £temporary3564 £temporary3563 -> tp 12
+190: Parameter 50 £temporary3564 10
 191: Call 50 sprintf 0
 192: PostCall 50
 193: Goto CallHeader 50 strlen
 194: CallHeader 50 sprintf
 195: Parameter 50 add 6
 196: Parameter 50 string_2503i# 8
-197: Deref £temporary3564 -> tp tp 14
-198: Parameter 50 £temporary3564 -> tp 10
+197: Deref £temporary3566 -> tp tp 14
+198: Parameter 50 £temporary3566 -> tp 10
 199: Call 50 sprintf 0
 200: PostCall 50
 201: Goto CallHeader 50 strlen
 202: CallHeader 50 sprintf
 203: Parameter 50 add 6
 204: Parameter 50 string_2502i# 8
-205: Deref £temporary3566 -> tp tp 8
-206: BinaryAdd £temporary3567 £temporary3566 -> tp 1
-207: Parameter 50 £temporary3567 10
+205: Deref £temporary3568 -> tp tp 8
+206: BinaryAdd £temporary3569 £temporary3568 -> tp 1
+207: Parameter 50 £temporary3569 10
 208: Call 50 sprintf 0
 209: PostCall 50
 210: Goto CallHeader 50 strlen
 211: CallHeader 50 sprintf
 212: Parameter 50 add 6
 213: Parameter 50 string_2502i# 8
-214: Deref £temporary3569 -> tp tp 2
-215: Parameter 50 £temporary3569 -> tp 10
+214: Deref £temporary3571 -> tp tp 2
+215: Parameter 50 £temporary3571 -> tp 10
 216: Call 50 sprintf 0
 217: PostCall 50
 218: Goto CallHeader 50 strlen
@@ -223,20 +223,20 @@
 222: NotEqual Empty index 0
 223: Goto Empty
 224: Empty
-225: Assign £temporary3575 string_AM#
+225: Assign £temporary3577 string_AM#
 226: Goto Empty
 227: Empty
-228: Assign £temporary3575 string_PM#
+228: Assign £temporary3577 string_PM#
 229: Empty
-230: Parameter 50 £temporary3575 10
+230: Parameter 50 £temporary3577 10
 231: Call 50 sprintf 0
 232: PostCall 50
 233: Goto CallHeader 50 strlen
 234: CallHeader 50 sprintf
 235: Parameter 50 add 6
 236: Parameter 50 string_2502i# 8
-237: Deref £temporary3577 -> tp tp 0
-238: Parameter 50 £temporary3577 -> tp 10
+237: Deref £temporary3579 -> tp tp 0
+238: Parameter 50 £temporary3579 -> tp 10
 239: Call 50 sprintf 0
 240: PostCall 50
 241: Goto CallHeader 50 strlen
@@ -250,8 +250,8 @@
 249: CallHeader 50 sprintf
 250: Parameter 50 add 6
 251: Parameter 50 string_2502i# 8
-252: Deref £temporary3580 -> tp tp 12
-253: Parameter 50 £temporary3580 -> tp 10
+252: Deref £temporary3582 -> tp tp 12
+253: Parameter 50 £temporary3582 -> tp 10
 254: Call 50 sprintf 0
 255: PostCall 50
 256: Goto CallHeader 50 strlen
@@ -265,57 +265,57 @@
 264: CallHeader 50 sprintf
 265: Parameter 50 add 6
 266: Parameter 50 string_2502i3A2502i3A2502i# 8
-267: Deref £temporary3583 -> tp tp 4
-268: Parameter 50 £temporary3583 -> tp 10
-269: Deref £temporary3584 -> tp tp 2
-270: Parameter 50 £temporary3584 -> tp 12
-271: Deref £temporary3585 -> tp tp 0
-272: Parameter 50 £temporary3585 -> tp 14
+267: Deref £temporary3585 -> tp tp 4
+268: Parameter 50 £temporary3585 -> tp 10
+269: Deref £temporary3586 -> tp tp 2
+270: Parameter 50 £temporary3586 -> tp 12
+271: Deref £temporary3587 -> tp tp 0
+272: Parameter 50 £temporary3587 -> tp 14
 273: Call 50 sprintf 0
 274: PostCall 50
 275: Goto CallHeader 50 strlen
 276: CallHeader 50 sprintf
 277: Parameter 50 add 6
 278: Parameter 50 string_2502i3A2502i3A2502i# 8
-279: Deref £temporary3587 -> tp tp 4
-280: Parameter 50 £temporary3587 -> tp 10
-281: Deref £temporary3588 -> tp tp 2
-282: Parameter 50 £temporary3588 -> tp 12
-283: Deref £temporary3589 -> tp tp 0
-284: Parameter 50 £temporary3589 -> tp 14
+279: Deref £temporary3589 -> tp tp 4
+280: Parameter 50 £temporary3589 -> tp 10
+281: Deref £temporary3590 -> tp tp 2
+282: Parameter 50 £temporary3590 -> tp 12
+283: Deref £temporary3591 -> tp tp 0
+284: Parameter 50 £temporary3591 -> tp 14
 285: Call 50 sprintf 0
 286: PostCall 50
 287: Goto CallHeader 50 strlen
 288: CallHeader 50 sprintf
 289: Parameter 50 add 6
 290: Parameter 50 string_2502i# 8
-291: Deref £temporary3591 -> tp tp 10
-292: SignedModulo £temporary3592 £temporary3591 -> tp 100
-293: Parameter 50 £temporary3592 10
+291: Deref £temporary3593 -> tp tp 10
+292: SignedModulo £temporary3594 £temporary3593 -> tp 100
+293: Parameter 50 £temporary3594 10
 294: Call 50 sprintf 0
 295: PostCall 50
 296: Goto CallHeader 50 strlen
 297: CallHeader 50 sprintf
 298: Parameter 50 add 6
 299: Parameter 50 string_2502i# 8
-300: Deref £temporary3594 -> tp tp 10
-301: BinaryAdd £temporary3595 1900 £temporary3594 -> tp
-302: Parameter 50 £temporary3595 10
+300: Deref £temporary3596 -> tp tp 10
+301: BinaryAdd £temporary3597 1900 £temporary3596 -> tp
+302: Parameter 50 £temporary3597 10
 303: Call 50 sprintf 0
 304: PostCall 50
 305: Goto CallHeader 50 strlen
 306: CallHeader 50 strcpy
 307: Parameter 50 add 6
-308: Deref £temporary3597 -> tp tp 16
-309: NotEqual Empty £temporary3597 -> tp 0
+308: Deref £temporary3599 -> tp tp 16
+309: NotEqual Empty £temporary3599 -> tp 0
 310: Goto Empty
 311: Empty
-312: Assign £temporary3602 string_summer#
+312: Assign £temporary3604 string_summer#
 313: Goto Empty
 314: Empty
-315: Assign £temporary3602 string_winter#
+315: Assign £temporary3604 string_winter#
 316: Empty
-317: Parameter 50 £temporary3602 8
+317: Parameter 50 £temporary3604 8
 318: Call 50 strcpy 0
 319: PostCall 50
 320: Goto CallHeader 50 strlen
@@ -331,25 +331,25 @@
 330: PostCall 50
 331: Goto CallHeader 50 strlen
 332: Goto CallHeader 50 strlen
-333: Deref £temporary3606 -> add add 0
-334: BinaryAdd £temporary3608 format index
-335: Deref £temporary3607 -> £temporary3608 £temporary3608 0
-336: Assign £temporary3606 -> add £temporary3607 -> £temporary3608
-337: Deref £temporary3609 -> add add 1
-338: Assign £temporary3609 -> add 0
+333: Deref £temporary3608 -> add add 0
+334: BinaryAdd £temporary3610 format index
+335: Deref £temporary3609 -> £temporary3610 £temporary3610 0
+336: Assign £temporary3608 -> add £temporary3609 -> £temporary3610
+337: Deref £temporary3611 -> add add 1
+338: Assign £temporary3611 -> add 0
 339: Goto CallHeader 50 strlen
 340: CallHeader 50 strlen
 341: Parameter 50 result 6
 342: Call 50 strlen 0
 343: PostCall 50
-344: GetReturnValue £temporary3610
+344: GetReturnValue £temporary3612
 345: CallHeader 50 strlen
 346: Parameter 50 add 6
 347: Call 50 strlen 0
 348: PostCall 50
-349: GetReturnValue £temporary3611
-350: BinaryAdd £temporary3612 £temporary3610 £temporary3611
-351: SignedLessThan CallHeader 50 strcat £temporary3612 maxSize
+349: GetReturnValue £temporary3613
+350: BinaryAdd £temporary3614 £temporary3612 £temporary3613
+351: SignedLessThan CallHeader 50 strcat £temporary3614 maxSize
 352: Goto Goto CallHeader 24 strlen
 353: CheckTrackMapFloatStack
 354: CallHeader 50 strcat
@@ -361,16 +361,16 @@
 360: Goto CallHeader 24 strlen
 361: Goto Empty
 362: Empty
-363: BinaryAdd £temporary3521 index 1
-364: Assign index £temporary3521
+363: BinaryAdd £temporary3523 index 1
+364: Assign index £temporary3523
 365: Goto Empty
 366: CallHeader 24 strlen
 367: Parameter 24 result 6
 368: Call 24 strlen 0
 369: PostCall 24
-370: GetReturnValue £temporary3615
-371: SetReturnValue £temporary3615
-372: Return £temporary3615
+370: GetReturnValue £temporary3617
+371: SetReturnValue £temporary3617
+372: Return £temporary3617
 373: Empty
 374: Return 0
 375: FunctionEnd strftime
