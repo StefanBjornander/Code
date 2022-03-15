@@ -12,7 +12,7 @@ int islower(int c) {
     return (strchr(localeConvPtr->lowerCase, c) != NULL);
   }
   else {
-    return ((c >= 'a') && (c <= 'z'));
+    return (('a' <= c) && ('z' >= c));
   }
 }
 

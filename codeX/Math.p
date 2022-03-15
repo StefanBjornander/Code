@@ -204,17 +204,17 @@ return sum ;
 }
 
 double log ( double x ) {
-if ( 0 < x ) {
+if ( x > 0 ) {
 int n = 0 ;
 
-if ( 1 < x ) {
+if ( x > 1 ) {
 while ( x > 1 ) {
 x /= 2.71  ;
 ++ n ;
 }
 }
-else if ( 0.368  > x ) {
-while ( 0.368  > x ) {
+else if ( x < 0.368  ) {
+while ( x < 0.368  ) {
 x *= 2.71  ;
 -- n ;
 }
@@ -228,7 +228,7 @@ term = sign * power / index ++;
 sum += term ;
 power *= x_minus_1 ;
 sign *= -1.0 ;
-} while ( 1e-9  <= fabs ( term ) ) ;
+} while ( fabs ( term ) >= 1e-9  ) ;
 
 return sum + n ;
 }

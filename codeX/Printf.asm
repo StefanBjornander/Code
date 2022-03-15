@@ -1307,9 +1307,9 @@ section .text
 	dec dword [rbp + 36]
 
  printLongDoubleFraction$16:
-	; LessThanEqual 35 £temporary1931 integral4$0#
+	; LessThanEqual 34 £temporary1931 integral4$0#
 	cmp eax, 0
-	jle printLongDoubleFraction$35
+	jle printLongDoubleFraction$34
 
  printLongDoubleFraction$17:
 	; PushFloat floating8$10.0#
@@ -1324,79 +1324,75 @@ section .text
 	fmul
 
  printLongDoubleFraction$20:
-	; PopFloat longDoubleValue10
-	fstp qword [rbp + 40]
+	; TopFloat longDoubleValue10
+	fst qword [rbp + 40]
 
  printLongDoubleFraction$21:
-	; PushFloat longDoubleValue10
-	fld qword [rbp + 40]
-
- printLongDoubleFraction$22:
 	; FloatingToIntegral £temporary1935 longDoubleValue10
 	fistp dword [container4bytes#]
 	mov eax, [container4bytes#]
 
- printLongDoubleFraction$23:
+ printLongDoubleFraction$22:
 	; Assign digitValue £temporary1935
 	mov [rbp + 48], eax
 
- printLongDoubleFraction$24:
+ printLongDoubleFraction$23:
 	; PreCall 52 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
 
- printLongDoubleFraction$25:
+ printLongDoubleFraction$24:
 	; Add £temporary1936 digitValue integral4$48#
 	mov eax, [rbp + 48]
 	add eax, 48
 
- printLongDoubleFraction$26:
+ printLongDoubleFraction$25:
 	; IntegralToIntegral £temporary1937 £temporary1936
 	cmp eax, 0
-	jge printLongDoubleFraction$27
+	jge printLongDoubleFraction$26
 	neg eax
 	neg al
 
- printLongDoubleFraction$27:
+ printLongDoubleFraction$26:
 	; Parameter 76 signed char £temporary1937
 	mov [rbp + 76], al
 
- printLongDoubleFraction$28:
+ printLongDoubleFraction$27:
 	; Call 52 printChar 0
-	mov qword [rbp + 52], printLongDoubleFraction$29
+	mov qword [rbp + 52], printLongDoubleFraction$28
 	mov [rbp + 60], rbp
 	add rbp, 52
 	jmp printChar
 
- printLongDoubleFraction$29:
+ printLongDoubleFraction$28:
 	; PostCall 52
 
- printLongDoubleFraction$30:
+ printLongDoubleFraction$29:
 	; PushFloat longDoubleValue10
 	fld qword [rbp + 40]
 
- printLongDoubleFraction$31:
+ printLongDoubleFraction$30:
 	; IntegralToFloating £temporary1939 digitValue
 	fild dword [rbp + 48]
 
- printLongDoubleFraction$32:
+ printLongDoubleFraction$31:
 	; Subtract £temporary1940 longDoubleValue10 £temporary1939
 	fsub
 
- printLongDoubleFraction$33:
+ printLongDoubleFraction$32:
 	; PopFloat longDoubleValue
 	fstp qword [rbp + 24]
 
- printLongDoubleFraction$34:
+ printLongDoubleFraction$33:
 	; Jump 14
 	jmp printLongDoubleFraction$14
 
- printLongDoubleFraction$35:
+ printLongDoubleFraction$34:
 	; Return
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
 	jmp rax
 
- printLongDoubleFraction$36:
+ printLongDoubleFraction$35:
 	; FunctionEnd printLongDoubleFraction
 
 section .text

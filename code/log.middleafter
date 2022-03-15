@@ -1,6 +1,6 @@
 0: PushFloat x
 1: PushFloat floating8$0#
-2: LessThanEqual 74 x floating8$0#
+2: LessThanEqual 73 x floating8$0#
 3: Assign n integral2$0#
 4: PushFloat x
 5: PushFloat floating8$1#
@@ -35,44 +35,43 @@
 34: PushFloat x
 35: PushFloat floating8$1#
 36: Subtract £temporary412 x floating8$1#
-37: PopFloat x_minus_1
-38: PushFloat x_minus_1
-39: PopFloat power
-40: PushFloat sign
-41: PushFloat power
-42: Multiply £temporary413 sign power
+37: TopFloat x_minus_1
+38: PopFloat power
+39: PushFloat sign
+40: PushFloat power
+41: Multiply £temporary413 sign power
+42: PushFloat index
 43: PushFloat index
-44: PushFloat index
-45: PushOne
-46: Add £temporary415 index £temporary414
-47: PopFloat index
-48: Divide £temporary416 £temporary413 index
-49: PopFloat term
-50: PushFloat sum
-51: PushFloat term
-52: Add £temporary417 sum term
-53: PopFloat sum
-54: PushFloat power
-55: PushFloat x_minus_1
-56: Multiply £temporary418 power x_minus_1
-57: PopFloat power
-58: PushFloat sign
-59: PushFloat floating8$minus1.0#
-60: Multiply £temporary419 sign floating8$minus1.0#
-61: PopFloat sign
-62: PreCall 64 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-63: PushFloat term
-64: Parameter 70 double term
-65: Call 64 fabs 0
-66: PostCall 64
-67: GetReturnValue £temporary420
-68: PushFloat floating8$0.000000001#
-69: GreaterThanEqual 40 £temporary420 floating8$0.000000001#
-70: PushFloat sum
-71: IntegralToFloating £temporary423 n
-72: Add £temporary422 sum £temporary423
-73: Return £temporary422
-74: Assign errno EDOM
-75: PushFloat floating8$0#
-76: Return floating8$0#
-77: FunctionEnd log
+44: PushOne
+45: Add £temporary415 index £temporary414
+46: PopFloat index
+47: Divide £temporary416 £temporary413 index
+48: PopFloat term
+49: PushFloat sum
+50: PushFloat term
+51: Add £temporary417 sum term
+52: PopFloat sum
+53: PushFloat power
+54: PushFloat x_minus_1
+55: Multiply £temporary418 power x_minus_1
+56: PopFloat power
+57: PushFloat sign
+58: PushFloat floating8$minus1.0#
+59: Multiply £temporary419 sign floating8$minus1.0#
+60: PopFloat sign
+61: PreCall 64 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+62: PushFloat term
+63: Parameter 70 double term
+64: Call 64 fabs 0
+65: PostCall 64
+66: GetReturnValue £temporary420
+67: PushFloat floating8$0.000000001#
+68: GreaterThanEqual 39 £temporary420 floating8$0.000000001#
+69: PushFloat sum
+70: IntegralToFloating £temporary423 n
+71: Add £temporary422 sum £temporary423
+72: Return £temporary422
+73: Assign errno EDOM
+74: PushFloat floating8$0#
+75: Return floating8$0#
+76: FunctionEnd log

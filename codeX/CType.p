@@ -347,7 +347,7 @@ if ( localeConvPtr != ( ( void * ) 0 )  ) {
 return ( strchr ( localeConvPtr -> lowerCase , c ) != ( ( void * ) 0 )  ) ;
 }
 else {
-return ( ( c >= 'a' ) && ( c <= 'z' ) ) ;
+return ( ( 'a' <= c ) && ( 'z' >= c ) ) ;
 }
 }
 

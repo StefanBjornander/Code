@@ -160,38 +160,38 @@ exp$37:	; Return sum
 exp$38:	; FunctionEnd exp
 1:	
 
-log:	; PushZero
-2:		fldz
+log:	; PushFloat x
+2:		fld qword [bp + 6]
 4:	
 
-log$1:	; PushFloat x
-5:		fld qword [bp + 6]
+log$1:	; PushZero
+5:		fldz
 7:	
 
-log$2:	; SignedGreaterThanEqual 75 0 x
+log$2:	; SignedLessThanEqual 74 x 0
 8:		fcompp
 9:		fstsw ax
 10:		sahf
-11:		jbe log$75
+11:		jae log$74
 13:	
 
 log$3:	; Assign n 0
 14:		mov word [bp + 14], 0
 16:	
 
-log$4:	; PushOne
-17:		fld1
+log$4:	; PushFloat x
+17:		fld qword [bp + 6]
 19:	
 
-log$5:	; PushFloat x
-20:		fld qword [bp + 6]
+log$5:	; PushOne
+20:		fld1
 22:	
 
-log$6:	; SignedGreaterThanEqual 16 1 x
+log$6:	; SignedLessThanEqual 16 x 1
 23:		fcompp
 24:		fstsw ax
 25:		sahf
-26:		jbe log$16
+26:		jae log$16
 28:	
 
 log$7:	; PushFloat x
@@ -233,34 +233,34 @@ log$15:	; Goto 7
 56:		jmp log$7
 58:	
 
-log$16:	; PushFloat 0.368
-59:		fld qword [@878$float8$0.368#]
+log$16:	; PushFloat x
+59:		fld qword [bp + 6]
 61:	
 
-log$17:	; PushFloat x
-62:		fld qword [bp + 6]
+log$17:	; PushFloat 0.368
+62:		fld qword [@878$float8$0.368#]
 64:	
 
-log$18:	; SignedLessThanEqual 28 0.368 x
+log$18:	; SignedGreaterThanEqual 28 x 0.368
 65:		fcompp
 66:		fstsw ax
 67:		sahf
-68:		jae log$28
+68:		jbe log$28
 70:	
 
-log$19:	; PushFloat 0.368
-71:		fld qword [@881$float8$0.368#]
+log$19:	; PushFloat x
+71:		fld qword [bp + 6]
 73:	
 
-log$20:	; PushFloat x
-74:		fld qword [bp + 6]
+log$20:	; PushFloat 0.368
+74:		fld qword [@881$float8$0.368#]
 76:	
 
-log$21:	; SignedLessThanEqual 28 0.368 x
+log$21:	; SignedGreaterThanEqual 28 x 0.368
 77:		fcompp
 78:		fstsw ax
 79:		sahf
-80:		jae log$28
+80:		jbe log$28
 82:	
 
 log$22:	; PushFloat x
@@ -323,186 +323,178 @@ log$36:	; BinarySubtract £temporary328 x 1
 125:		fsub
 127:	
 
-log$37:	; PopFloat x_minus_1
-128:		fstp qword [bp + 48]
+log$37:	; TopFloat x_minus_1
+128:		fst qword [bp + 48]
 130:	
 
-log$38:	; PushFloat x_minus_1
-131:		fld qword [bp + 48]
+log$38:	; PopFloat power
+131:		fstp qword [bp + 56]
 133:	
 
-log$39:	; PopFloat power
-134:		fstp qword [bp + 56]
+log$39:	; PushFloat sign
+134:		fld qword [bp + 40]
 136:	
 
-log$40:	; PushFloat sign
-137:		fld qword [bp + 40]
+log$40:	; PushFloat power
+137:		fld qword [bp + 56]
 139:	
 
-log$41:	; PushFloat power
-140:		fld qword [bp + 56]
+log$41:	; SignedMultiply £temporary329 sign power
+140:		fmul
 142:	
 
-log$42:	; SignedMultiply £temporary329 sign power
-143:		fmul
+log$42:	; PushFloat index
+143:		fld qword [bp + 16]
 145:	
 
 log$43:	; PushFloat index
 146:		fld qword [bp + 16]
 148:	
 
-log$44:	; PushFloat index
-149:		fld qword [bp + 16]
+log$44:	; PushOne
+149:		fld1
 151:	
 
-log$45:	; PushOne
-152:		fld1
+log$45:	; BinaryAdd index index 1
+152:		fadd
 154:	
 
-log$46:	; BinaryAdd index index 1
-155:		fadd
+log$46:	; PopFloat index
+155:		fstp qword [bp + 16]
 157:	
 
-log$47:	; PopFloat index
-158:		fstp qword [bp + 16]
+log$47:	; SignedDivide £temporary331 £temporary329 £temporary330
+158:		fdiv
 160:	
 
-log$48:	; SignedDivide £temporary331 £temporary329 £temporary330
-161:		fdiv
+log$48:	; PopFloat term
+161:		fstp qword [bp + 24]
 163:	
 
-log$49:	; PopFloat term
-164:		fstp qword [bp + 24]
+log$49:	; PushFloat sum
+164:		fld qword [bp + 32]
 166:	
 
-log$50:	; PushFloat sum
-167:		fld qword [bp + 32]
+log$50:	; PushFloat term
+167:		fld qword [bp + 24]
 169:	
 
-log$51:	; PushFloat term
-170:		fld qword [bp + 24]
+log$51:	; BinaryAdd £temporary332 sum term
+170:		fadd
 172:	
 
-log$52:	; BinaryAdd £temporary332 sum term
-173:		fadd
+log$52:	; PopFloat sum
+173:		fstp qword [bp + 32]
 175:	
 
-log$53:	; PopFloat sum
-176:		fstp qword [bp + 32]
+log$53:	; PushFloat power
+176:		fld qword [bp + 56]
 178:	
 
-log$54:	; PushFloat power
-179:		fld qword [bp + 56]
+log$54:	; PushFloat x_minus_1
+179:		fld qword [bp + 48]
 181:	
 
-log$55:	; PushFloat x_minus_1
-182:		fld qword [bp + 48]
+log$55:	; SignedMultiply £temporary333 power x_minus_1
+182:		fmul
 184:	
 
-log$56:	; SignedMultiply £temporary333 power x_minus_1
-185:		fmul
+log$56:	; PopFloat power
+185:		fstp qword [bp + 56]
 187:	
 
-log$57:	; PopFloat power
-188:		fstp qword [bp + 56]
+log$57:	; PushFloat sign
+188:		fld qword [bp + 40]
 190:	
 
-log$58:	; PushFloat sign
-191:		fld qword [bp + 40]
+log$58:	; PushFloat -1.0
+191:		fld qword [@911$float8$minus1.0#]
 193:	
 
-log$59:	; PushFloat -1.0
-194:		fld qword [@911$float8$minus1.0#]
+log$59:	; SignedMultiply £temporary334 sign -1.0
+194:		fmul
 196:	
 
-log$60:	; SignedMultiply £temporary334 sign -1.0
-197:		fmul
+log$60:	; PopFloat sign
+197:		fstp qword [bp + 40]
 199:	
 
-log$61:	; PopFloat sign
-200:		fstp qword [bp + 40]
-202:	
+log$61:	; CallHeader 64 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+201:	
 
-log$62:	; PushFloat 0.000000001
-203:		fld qword [@914$float8$0.000000001#]
-205:	
+log$62:	; PushFloat term
+202:		fld qword [bp + 24]
+204:	
 
-log$63:	; CallHeader 64 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
-206:		fstp qword [bp + 64]
-208:	
+log$63:	; Parameter 64 term 6
+205:		fstp qword [bp + 70]
+207:	
 
-log$64:	; PushFloat term
-209:		fld qword [bp + 24]
-211:	
+log$64:	; Call 64 fabs 0
+208:		mov word [bp + 64], log$65
+209:		mov [bp + 66], bp
+210:		add bp, 64
+211:		jmp fabs
+213:	
 
-log$65:	; Parameter 64 term 6
-212:		fstp qword [bp + 78]
-214:	
+log$65:	; PostCall 64
+215:	
 
-log$66:	; Call 64 fabs 0
-215:		mov word [bp + 72], log$67
-216:		mov [bp + 74], bp
-217:		add bp, 72
-218:		jmp fabs
+log$66:	; GetReturnValue £temporary335
+217:	
+
+log$67:	; PushFloat 0.000000001
+218:		fld qword [@915$float8$0.000000001#]
 220:	
 
-log$67:	; PostCall 64
-221:		fstp qword [bp + 72]
-222:		fld qword [bp + 64]
-223:		fld qword [bp + 72]
-225:	
+log$68:	; SignedGreaterThanEqual 39 £temporary335 0.000000001
+221:		fcompp
+222:		fstsw ax
+223:		sahf
+224:		jbe log$39
+226:	
 
-log$68:	; GetReturnValue £temporary335
-227:	
+log$69:	; PushFloat sum
+227:		fld qword [bp + 32]
+229:	
 
-log$69:	; SignedLessThanEqual 40 0.000000001 £temporary335
-228:		fcompp
-229:		fstsw ax
-230:		sahf
-231:		jae log$40
-233:	
+log$70:	; IntegralToFloating £temporary337 n
+230:		fild word [bp + 14]
+232:	
 
-log$70:	; PushFloat sum
-234:		fld qword [bp + 32]
-236:	
+log$71:	; BinaryAdd £temporary338 sum £temporary337
+233:		fadd
+235:	
 
-log$71:	; IntegralToFloating £temporary337 n
-237:		fild word [bp + 14]
-239:	
+log$72:	; SetReturnValue £temporary338
+237:	
 
-log$72:	; BinaryAdd £temporary338 sum £temporary337
-240:		fadd
-242:	
+log$73:	; Return £temporary338
+238:		mov ax, [bp]
+239:		mov di, [bp + 4]
+240:		mov bp, [bp + 2]
+241:		jmp ax
+243:	
 
-log$73:	; SetReturnValue £temporary338
-244:	
+log$74:	; Assign errno 6
+244:		mov word [errno], 6
+246:	
 
-log$74:	; Return £temporary338
-245:		mov ax, [bp]
-246:		mov di, [bp + 4]
-247:		mov bp, [bp + 2]
-248:		jmp ax
-250:	
+log$75:	; PushZero
+247:		fldz
+249:	
 
-log$75:	; Assign errno 6
-251:		mov word [errno], 6
-253:	
+log$76:	; SetReturnValue 0
+251:	
 
-log$76:	; PushZero
-254:		fldz
-256:	
+log$77:	; Return 0
+252:		mov ax, [bp]
+253:		mov di, [bp + 4]
+254:		mov bp, [bp + 2]
+255:		jmp ax
+257:	
 
-log$77:	; SetReturnValue 0
-258:	
-
-log$78:	; Return 0
-259:		mov ax, [bp]
-260:		mov di, [bp + 4]
-261:		mov bp, [bp + 2]
-262:		jmp ax
-264:	
-
-log$79:	; FunctionEnd log
+log$78:	; FunctionEnd log
 1:	
 
 log10:	; CallHeader 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -1308,11 +1300,11 @@ sqrt$1:	; PushZero
 5:		fldz
 7:	
 
-sqrt$2:	; SignedLessThan 28 x 0
+sqrt$2:	; SignedLessThan 27 x 0
 8:		fcompp
 9:		fstsw ax
 10:		sahf
-11:		ja sqrt$28
+11:		ja sqrt$27
 13:	
 
 sqrt$3:	; PushOne
@@ -1327,118 +1319,114 @@ sqrt$5:	; PushFloat root_i_plus_1
 20:		fld qword [bp + 22]
 22:	
 
-sqrt$6:	; PopFloat root_i
-23:		fstp qword [bp + 14]
+sqrt$6:	; TopFloat root_i
+23:		fst qword [bp + 14]
 25:	
 
-sqrt$7:	; PushFloat root_i
-26:		fld qword [bp + 14]
+sqrt$7:	; PushFloat x
+26:		fld qword [bp + 6]
 28:	
 
-sqrt$8:	; PushFloat x
-29:		fld qword [bp + 6]
+sqrt$8:	; PushFloat root_i
+29:		fld qword [bp + 14]
 31:	
 
-sqrt$9:	; PushFloat root_i
-32:		fld qword [bp + 14]
+sqrt$9:	; SignedDivide £temporary409 x root_i
+32:		fdiv
 34:	
 
-sqrt$10:	; SignedDivide £temporary409 x root_i
-35:		fdiv
+sqrt$10:	; BinaryAdd £temporary410 root_i £temporary409
+35:		fadd
 37:	
 
-sqrt$11:	; BinaryAdd £temporary410 root_i £temporary409
-38:		fadd
+sqrt$11:	; PushFloat 2
+38:		fld qword [@1061$float8$2#]
 40:	
 
-sqrt$12:	; PushFloat 2
-41:		fld qword [@1061$float8$2#]
+sqrt$12:	; SignedDivide £temporary411 £temporary410 2
+41:		fdiv
 43:	
 
-sqrt$13:	; SignedDivide £temporary411 £temporary410 2
-44:		fdiv
+sqrt$13:	; PopFloat root_i_plus_1
+44:		fstp qword [bp + 22]
 46:	
 
-sqrt$14:	; PopFloat root_i_plus_1
-47:		fstp qword [bp + 22]
-49:	
+sqrt$14:	; CallHeader 30 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+48:	
 
-sqrt$15:	; CallHeader 30 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+sqrt$15:	; PushFloat root_i_plus_1
+49:		fld qword [bp + 22]
 51:	
 
-sqrt$16:	; PushFloat root_i_plus_1
-52:		fld qword [bp + 22]
+sqrt$16:	; PushFloat root_i
+52:		fld qword [bp + 14]
 54:	
 
-sqrt$17:	; PushFloat root_i
-55:		fld qword [bp + 14]
+sqrt$17:	; BinarySubtract £temporary412 root_i_plus_1 root_i
+55:		fsub
 57:	
 
-sqrt$18:	; BinarySubtract £temporary412 root_i_plus_1 root_i
-58:		fsub
+sqrt$18:	; Parameter 30 £temporary412 6
+58:		fstp qword [bp + 36]
 60:	
 
-sqrt$19:	; Parameter 30 £temporary412 6
-61:		fstp qword [bp + 36]
-63:	
+sqrt$19:	; Call 30 fabs 0
+61:		mov word [bp + 30], sqrt$20
+62:		mov [bp + 32], bp
+63:		add bp, 30
+64:		jmp fabs
+66:	
 
-sqrt$20:	; Call 30 fabs 0
-64:		mov word [bp + 30], sqrt$21
-65:		mov [bp + 32], bp
-66:		add bp, 30
-67:		jmp fabs
-69:	
+sqrt$20:	; PostCall 30
+68:	
 
-sqrt$21:	; PostCall 30
-71:	
+sqrt$21:	; GetReturnValue £temporary413
+70:	
 
-sqrt$22:	; GetReturnValue £temporary413
+sqrt$22:	; PushFloat 0.000000001
+71:		fld qword [@1065$float8$0.000000001#]
 73:	
 
-sqrt$23:	; PushFloat 0.000000001
-74:		fld qword [@1065$float8$0.000000001#]
-76:	
+sqrt$23:	; SignedGreaterThanEqual 5 £temporary413 0.000000001
+74:		fcompp
+75:		fstsw ax
+76:		sahf
+77:		jbe sqrt$5
+79:	
 
-sqrt$24:	; SignedGreaterThanEqual 5 £temporary413 0.000000001
-77:		fcompp
-78:		fstsw ax
-79:		sahf
-80:		jbe sqrt$5
+sqrt$24:	; PushFloat root_i_plus_1
+80:		fld qword [bp + 22]
 82:	
 
-sqrt$25:	; PushFloat root_i_plus_1
-83:		fld qword [bp + 22]
-85:	
+sqrt$25:	; SetReturnValue root_i_plus_1
+84:	
 
-sqrt$26:	; SetReturnValue root_i_plus_1
-87:	
+sqrt$26:	; Return root_i_plus_1
+85:		mov ax, [bp]
+86:		mov di, [bp + 4]
+87:		mov bp, [bp + 2]
+88:		jmp ax
+90:	
 
-sqrt$27:	; Return root_i_plus_1
-88:		mov ax, [bp]
-89:		mov di, [bp + 4]
-90:		mov bp, [bp + 2]
-91:		jmp ax
+sqrt$27:	; Assign errno 6
+91:		mov word [errno], 6
 93:	
 
-sqrt$28:	; Assign errno 6
-94:		mov word [errno], 6
+sqrt$28:	; PushZero
+94:		fldz
 96:	
 
-sqrt$29:	; PushZero
-97:		fldz
-99:	
+sqrt$29:	; SetReturnValue 0
+98:	
 
-sqrt$30:	; SetReturnValue 0
-101:	
+sqrt$30:	; Return 0
+99:		mov ax, [bp]
+100:		mov di, [bp + 4]
+101:		mov bp, [bp + 2]
+102:		jmp ax
+104:	
 
-sqrt$31:	; Return 0
-102:		mov ax, [bp]
-103:		mov di, [bp + 4]
-104:		mov bp, [bp + 2]
-105:		jmp ax
-107:	
-
-sqrt$32:	; FunctionEnd sqrt
+sqrt$31:	; FunctionEnd sqrt
 1:	
 
 modf:	; CallHeader 16 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
@@ -1465,136 +1453,132 @@ modf$4:	; PostCall 16
 modf$5:	; GetReturnValue £temporary416
 19:	
 
-modf$6:	; PopFloat abs_x
-20:		fstp qword [bp + 16]
+modf$6:	; TopFloat abs_x
+20:		fst qword [bp + 16]
 22:	
 
-modf$7:	; PushFloat abs_x
-23:		fld qword [bp + 16]
-25:	
+modf$7:	; FloatingToIntegral £temporary417 abs_x
+23:		fistp dword [container4bytes#]
+24:		mov eax, [container4bytes#]
+26:	
 
-modf$8:	; FloatingToIntegral £temporary417 abs_x
-26:		fistp dword [container4bytes#]
-27:		mov eax, [container4bytes#]
-29:	
+modf$8:	; IntegralToFloating £temporary418 £temporary417
+27:		mov [container4bytes#], eax
+28:		fild dword [container4bytes#]
+30:	
 
-modf$9:	; IntegralToFloating £temporary418 £temporary417
-30:		mov [container4bytes#], eax
-31:		fild dword [container4bytes#]
+modf$9:	; PopFloat integral
+31:		fstp qword [bp + 24]
 33:	
 
-modf$10:	; PopFloat integral
-34:		fstp qword [bp + 24]
+modf$10:	; PushFloat abs_x
+34:		fld qword [bp + 16]
 36:	
 
-modf$11:	; PushFloat abs_x
-37:		fld qword [bp + 16]
+modf$11:	; PushFloat integral
+37:		fld qword [bp + 24]
 39:	
 
-modf$12:	; PushFloat integral
-40:		fld qword [bp + 24]
+modf$12:	; BinarySubtract £temporary419 abs_x integral
+40:		fsub
 42:	
 
-modf$13:	; BinarySubtract £temporary419 abs_x integral
-43:		fsub
+modf$13:	; PopFloat fractional
+43:		fstp qword [bp + 32]
 45:	
 
-modf$14:	; PopFloat fractional
-46:		fstp qword [bp + 32]
-48:	
+modf$14:	; Equal 25 p 0
+46:		cmp word [bp + 14], 0
+47:		je modf$25
+49:	
 
-modf$15:	; Equal 26 p 0
-49:		cmp word [bp + 14], 0
-50:		je modf$26
+modf$15:	; Deref £temporary421 -> p p 0
+50:		mov si, [bp + 14]
 52:	
 
-modf$16:	; Deref £temporary421 -> p p 0
-53:		mov si, [bp + 14]
+modf$16:	; PushFloat x
+53:		fld qword [bp + 6]
 55:	
 
-modf$17:	; PushFloat x
-56:		fld qword [bp + 6]
+modf$17:	; PushZero
+56:		fldz
 58:	
 
-modf$18:	; PushZero
-59:		fldz
-61:	
+modf$18:	; SignedLessThanEqual 22 x 0
+59:		fcompp
+60:		fstsw ax
+61:		sahf
+62:		jae modf$22
+64:	
 
-modf$19:	; SignedLessThanEqual 23 x 0
-62:		fcompp
-63:		fstsw ax
-64:		sahf
-65:		jae modf$23
+modf$19:	; PushFloat integral
+65:		fld qword [bp + 24]
 67:	
 
-modf$20:	; PushFloat integral
-68:		fld qword [bp + 24]
-70:	
+modf$20:	; DecreaseStack
+69:	
 
-modf$21:	; DecreaseStack
+modf$21:	; Goto 24
+70:		jmp modf$24
 72:	
 
-modf$22:	; Goto 25
-73:		jmp modf$25
+modf$22:	; PushFloat integral
+73:		fld qword [bp + 24]
 75:	
 
-modf$23:	; PushFloat integral
-76:		fld qword [bp + 24]
+modf$23:	; UnarySubtract £temporary423 integral
+76:		fchs
 78:	
 
-modf$24:	; UnarySubtract £temporary423 integral
-79:		fchs
+modf$24:	; PopFloat £temporary421 -> p
+79:		fstp qword [si]
 81:	
 
-modf$25:	; PopFloat £temporary421 -> p
-82:		fstp qword [si]
+modf$25:	; PushFloat x
+82:		fld qword [bp + 6]
 84:	
 
-modf$26:	; PushFloat x
-85:		fld qword [bp + 6]
+modf$26:	; PushZero
+85:		fldz
 87:	
 
-modf$27:	; PushZero
-88:		fldz
-90:	
+modf$27:	; SignedLessThanEqual 31 x 0
+88:		fcompp
+89:		fstsw ax
+90:		sahf
+91:		jae modf$31
+93:	
 
-modf$28:	; SignedLessThanEqual 32 x 0
-91:		fcompp
-92:		fstsw ax
-93:		sahf
-94:		jae modf$32
+modf$28:	; PushFloat fractional
+94:		fld qword [bp + 32]
 96:	
 
-modf$29:	; PushFloat fractional
-97:		fld qword [bp + 32]
-99:	
+modf$29:	; DecreaseStack
+98:	
 
-modf$30:	; DecreaseStack
+modf$30:	; Goto 33
+99:		jmp modf$33
 101:	
 
-modf$31:	; Goto 34
-102:		jmp modf$34
+modf$31:	; PushFloat fractional
+102:		fld qword [bp + 32]
 104:	
 
-modf$32:	; PushFloat fractional
-105:		fld qword [bp + 32]
+modf$32:	; UnarySubtract £temporary429 fractional
+105:		fchs
 107:	
 
-modf$33:	; UnarySubtract £temporary429 fractional
-108:		fchs
-110:	
+modf$33:	; SetReturnValue £temporary433
+109:	
 
-modf$34:	; SetReturnValue £temporary433
-112:	
+modf$34:	; Return £temporary433
+110:		mov ax, [bp]
+111:		mov di, [bp + 4]
+112:		mov bp, [bp + 2]
+113:		jmp ax
+115:	
 
-modf$35:	; Return £temporary433
-113:		mov ax, [bp]
-114:		mov di, [bp + 4]
-115:		mov bp, [bp + 2]
-116:		jmp ax
-118:	
-
-modf$36:	; FunctionEnd modf
+modf$35:	; FunctionEnd modf
 1:	
 
 fmod:	; PushFloat y
@@ -2345,86 +2329,82 @@ tan$4:	; PostCall 14
 tan$5:	; GetReturnValue £temporary491
 19:	
 
-tan$6:	; PopFloat cos_of_x
-20:		fstp qword [bp + 14]
+tan$6:	; TopFloat cos_of_x
+20:		fst qword [bp + 14]
 22:	
 
-tan$7:	; PushFloat cos_of_x
-23:		fld qword [bp + 14]
+tan$7:	; PushZero
+23:		fldz
 25:	
 
-tan$8:	; PushZero
-26:		fldz
-28:	
+tan$8:	; Equal 19 cos_of_x 0
+26:		fcompp
+27:		fstsw ax
+28:		sahf
+29:		je tan$19
+31:	
 
-tan$9:	; Equal 20 cos_of_x 0
-29:		fcompp
-30:		fstsw ax
-31:		sahf
-32:		je tan$20
-34:	
+tan$9:	; CallHeader 22 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+33:	
 
-tan$10:	; CallHeader 22 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+tan$10:	; PushFloat x
+34:		fld qword [bp + 6]
 36:	
 
-tan$11:	; PushFloat x
-37:		fld qword [bp + 6]
+tan$11:	; Parameter 22 x 6
+37:		fstp qword [bp + 28]
 39:	
 
-tan$12:	; Parameter 22 x 6
-40:		fstp qword [bp + 28]
-42:	
+tan$12:	; Call 22 sin 0
+40:		mov word [bp + 22], tan$13
+41:		mov [bp + 24], bp
+42:		add bp, 22
+43:		jmp sin
+45:	
 
-tan$13:	; Call 22 sin 0
-43:		mov word [bp + 22], tan$14
-44:		mov [bp + 24], bp
-45:		add bp, 22
-46:		jmp sin
-48:	
+tan$13:	; PostCall 22
+47:	
 
-tan$14:	; PostCall 22
-50:	
+tan$14:	; GetReturnValue £temporary493
+49:	
 
-tan$15:	; GetReturnValue £temporary493
+tan$15:	; PushFloat cos_of_x
+50:		fld qword [bp + 14]
 52:	
 
-tan$16:	; PushFloat cos_of_x
-53:		fld qword [bp + 14]
+tan$16:	; SignedDivide £temporary494 £temporary493 cos_of_x
+53:		fdiv
 55:	
 
-tan$17:	; SignedDivide £temporary494 £temporary493 cos_of_x
-56:		fdiv
-58:	
+tan$17:	; SetReturnValue £temporary494
+57:	
 
-tan$18:	; SetReturnValue £temporary494
-60:	
+tan$18:	; Return £temporary494
+58:		mov ax, [bp]
+59:		mov di, [bp + 4]
+60:		mov bp, [bp + 2]
+61:		jmp ax
+63:	
 
-tan$19:	; Return £temporary494
-61:		mov ax, [bp]
-62:		mov di, [bp + 4]
-63:		mov bp, [bp + 2]
-64:		jmp ax
+tan$19:	; Assign errno 6
+64:		mov word [errno], 6
 66:	
 
-tan$20:	; Assign errno 6
-67:		mov word [errno], 6
+tan$20:	; PushZero
+67:		fldz
 69:	
 
-tan$21:	; PushZero
-70:		fldz
-72:	
+tan$21:	; SetReturnValue 0
+71:	
 
-tan$22:	; SetReturnValue 0
-74:	
+tan$22:	; Return 0
+72:		mov ax, [bp]
+73:		mov di, [bp + 4]
+74:		mov bp, [bp + 2]
+75:		jmp ax
+77:	
 
-tan$23:	; Return 0
-75:		mov ax, [bp]
-76:		mov di, [bp + 4]
-77:		mov bp, [bp + 2]
-78:		jmp ax
-80:	
-
-tan$24:	; FunctionEnd tan
+tan$23:	; FunctionEnd tan
 1:	
 
 asin:	; PushFloat x

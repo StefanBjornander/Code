@@ -160,38 +160,38 @@ exp$37:	; Return sum
 exp$38:	; FunctionEnd exp
 1:	
 
-log:	; PushZero
-2:		fldz
+log:	; PushFloat x
+2:		fld qword [bp + 6]
 4:	
 
-log$1:	; PushFloat x
-5:		fld qword [bp + 6]
+log$1:	; PushZero
+5:		fldz
 7:	
 
-log$2:	; SignedGreaterThanEqual 75 0 x
+log$2:	; SignedLessThanEqual 75 x 0
 8:		fcompp
 9:		fstsw ax
 10:		sahf
-11:		jbe log$75
+11:		jae log$75
 13:	
 
 log$3:	; Assign n 0
 14:		mov word [bp + 14], 0
 16:	
 
-log$4:	; PushOne
-17:		fld1
+log$4:	; PushFloat x
+17:		fld qword [bp + 6]
 19:	
 
-log$5:	; PushFloat x
-20:		fld qword [bp + 6]
+log$5:	; PushOne
+20:		fld1
 22:	
 
-log$6:	; SignedGreaterThanEqual 16 1 x
+log$6:	; SignedLessThanEqual 16 x 1
 23:		fcompp
 24:		fstsw ax
 25:		sahf
-26:		jbe log$16
+26:		jae log$16
 28:	
 
 log$7:	; PushFloat x
@@ -233,34 +233,34 @@ log$15:	; Goto 7
 56:		jmp log$7
 58:	
 
-log$16:	; PushFloat 0.368
-59:		fld qword [@878$float8$0.368#]
+log$16:	; PushFloat x
+59:		fld qword [bp + 6]
 61:	
 
-log$17:	; PushFloat x
-62:		fld qword [bp + 6]
+log$17:	; PushFloat 0.368
+62:		fld qword [@878$float8$0.368#]
 64:	
 
-log$18:	; SignedLessThanEqual 28 0.368 x
+log$18:	; SignedGreaterThanEqual 28 x 0.368
 65:		fcompp
 66:		fstsw ax
 67:		sahf
-68:		jae log$28
+68:		jbe log$28
 70:	
 
-log$19:	; PushFloat 0.368
-71:		fld qword [@881$float8$0.368#]
+log$19:	; PushFloat x
+71:		fld qword [bp + 6]
 73:	
 
-log$20:	; PushFloat x
-74:		fld qword [bp + 6]
+log$20:	; PushFloat 0.368
+74:		fld qword [@881$float8$0.368#]
 76:	
 
-log$21:	; SignedLessThanEqual 28 0.368 x
+log$21:	; SignedGreaterThanEqual 28 x 0.368
 77:		fcompp
 78:		fstsw ax
 79:		sahf
-80:		jae log$28
+80:		jbe log$28
 82:	
 
 log$22:	; PushFloat x
@@ -423,84 +423,80 @@ log$61:	; PopFloat sign
 200:		fstp qword [bp + 40]
 202:	
 
-log$62:	; PushFloat 0.000000001
-203:		fld qword [@914$float8$0.000000001#]
-205:	
+log$62:	; CallHeader 64 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+204:	
 
-log$63:	; CallHeader 64 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 1
-206:		fstp qword [bp + 64]
-208:	
+log$63:	; PushFloat term
+205:		fld qword [bp + 24]
+207:	
 
-log$64:	; PushFloat term
-209:		fld qword [bp + 24]
-211:	
+log$64:	; Parameter 64 term 6
+208:		fstp qword [bp + 70]
+210:	
 
-log$65:	; Parameter 64 term 6
-212:		fstp qword [bp + 78]
-214:	
+log$65:	; Call 64 fabs 0
+211:		mov word [bp + 64], log$66
+212:		mov [bp + 66], bp
+213:		add bp, 64
+214:		jmp fabs
+216:	
 
-log$66:	; Call 64 fabs 0
-215:		mov word [bp + 72], log$67
-216:		mov [bp + 74], bp
-217:		add bp, 72
-218:		jmp fabs
+log$66:	; PostCall 64
+218:	
+
+log$67:	; GetReturnValue £temporary335
 220:	
 
-log$67:	; PostCall 64
-221:		fstp qword [bp + 72]
-222:		fld qword [bp + 64]
-223:		fld qword [bp + 72]
-225:	
+log$68:	; PushFloat 0.000000001
+221:		fld qword [@915$float8$0.000000001#]
+223:	
 
-log$68:	; GetReturnValue £temporary335
-227:	
-
-log$69:	; SignedLessThanEqual 40 0.000000001 £temporary335
-228:		fcompp
-229:		fstsw ax
-230:		sahf
-231:		jae log$40
-233:	
+log$69:	; SignedGreaterThanEqual 40 £temporary335 0.000000001
+224:		fcompp
+225:		fstsw ax
+226:		sahf
+227:		jbe log$40
+229:	
 
 log$70:	; PushFloat sum
-234:		fld qword [bp + 32]
-236:	
+230:		fld qword [bp + 32]
+232:	
 
 log$71:	; IntegralToFloating £temporary337 n
-237:		fild word [bp + 14]
-239:	
+233:		fild word [bp + 14]
+235:	
 
 log$72:	; BinaryAdd £temporary338 sum £temporary337
-240:		fadd
-242:	
+236:		fadd
+238:	
 
 log$73:	; SetReturnValue £temporary338
-244:	
+240:	
 
 log$74:	; Return £temporary338
-245:		mov t253, [bp]
-246:		mov di, [bp + 4]
-247:		mov bp, [bp + 2]
-248:		jmp t253
-250:	
+241:		mov t253, [bp]
+242:		mov di, [bp + 4]
+243:		mov bp, [bp + 2]
+244:		jmp t253
+246:	
 
 log$75:	; Assign errno 6
-251:		mov word [errno], 6
-253:	
+247:		mov word [errno], 6
+249:	
 
 log$76:	; PushZero
-254:		fldz
-256:	
+250:		fldz
+252:	
 
 log$77:	; SetReturnValue 0
-258:	
+254:	
 
 log$78:	; Return 0
-259:		mov t254, [bp]
-260:		mov di, [bp + 4]
-261:		mov bp, [bp + 2]
-262:		jmp t254
-264:	
+255:		mov t254, [bp]
+256:		mov di, [bp + 4]
+257:		mov bp, [bp + 2]
+258:		jmp t254
+260:	
 
 log$79:	; FunctionEnd log
 1:	

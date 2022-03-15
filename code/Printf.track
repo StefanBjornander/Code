@@ -1182,9 +1182,9 @@ printLongDoubleFraction$15:	; Decrement precision
 53:		dec word [bp + 16]
 55:	
 
-printLongDoubleFraction$16:	; SignedLessThanEqual 35 £temporary1734 0
+printLongDoubleFraction$16:	; SignedLessThanEqual 34 £temporary1734 0
 56:		cmp t1089, 0
-57:		jle printLongDoubleFraction$35
+57:		jle printLongDoubleFraction$34
 59:	
 
 printLongDoubleFraction$17:	; PushFloat 10.0
@@ -1199,80 +1199,76 @@ printLongDoubleFraction$19:	; SignedMultiply £temporary1737 10.0 longDoubleValu
 66:		fmul
 68:	
 
-printLongDoubleFraction$20:	; PopFloat longDoubleValue10
-69:		fstp qword [bp + 18]
+printLongDoubleFraction$20:	; TopFloat longDoubleValue10
+69:		fst qword [bp + 18]
 71:	
 
-printLongDoubleFraction$21:	; PushFloat longDoubleValue10
-72:		fld qword [bp + 18]
-74:	
+printLongDoubleFraction$21:	; FloatingToIntegral £temporary1738 longDoubleValue10
+72:		fistp word [container2bytes#]
+73:		mov t1090, [container2bytes#]
+75:	
 
-printLongDoubleFraction$22:	; FloatingToIntegral £temporary1738 longDoubleValue10
-75:		fistp word [container2bytes#]
-76:		mov t1090, [container2bytes#]
+printLongDoubleFraction$22:	; Assign digitValue £temporary1738
+76:		mov [bp + 26], t1090
 78:	
 
-printLongDoubleFraction$23:	; Assign digitValue £temporary1738
-79:		mov [bp + 26], t1090
-81:	
+printLongDoubleFraction$23:	; CallHeader 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+80:	
 
-printLongDoubleFraction$24:	; CallHeader 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
-83:	
+printLongDoubleFraction$24:	; BinaryAdd £temporary1739 digitValue 48
+81:		mov a1091, [bp + 26]
+82:		add a1091, 48
+84:	
 
-printLongDoubleFraction$25:	; BinaryAdd £temporary1739 digitValue 48
-84:		mov a1091, [bp + 26]
-85:		add a1091, 48
-87:	
+printLongDoubleFraction$25:	; IntegralToIntegral £temporary1740 £temporary1739
+87:		cmp a1091, 0
+88:		jge printLongDoubleFraction$26
+89:		neg a1091
+91:		neg a1091
+93:	
 
-printLongDoubleFraction$26:	; IntegralToIntegral £temporary1740 £temporary1739
-90:		cmp a1091, 0
-91:		jge printLongDoubleFraction$27
-92:		neg a1091
-94:		neg a1091
+printLongDoubleFraction$26:	; Parameter 28 £temporary1740 6
+94:		mov [bp + 34], a1091
 96:	
 
-printLongDoubleFraction$27:	; Parameter 28 £temporary1740 6
-97:		mov [bp + 34], a1091
-99:	
+printLongDoubleFraction$27:	; Call 28 printChar 0
+97:		mov word [bp + 28], printLongDoubleFraction$28
+98:		mov [bp + 30], bp
+99:		add bp, 28
+100:		jmp printChar
+102:	
 
-printLongDoubleFraction$28:	; Call 28 printChar 0
-100:		mov word [bp + 28], printLongDoubleFraction$29
-101:		mov [bp + 30], bp
-102:		add bp, 28
-103:		jmp printChar
-105:	
+printLongDoubleFraction$28:	; PostCall 28
+104:	
 
-printLongDoubleFraction$29:	; PostCall 28
+printLongDoubleFraction$29:	; PushFloat longDoubleValue10
+105:		fld qword [bp + 18]
 107:	
 
-printLongDoubleFraction$30:	; PushFloat longDoubleValue10
-108:		fld qword [bp + 18]
+printLongDoubleFraction$30:	; IntegralToFloating £temporary1742 digitValue
+108:		fild word [bp + 26]
 110:	
 
-printLongDoubleFraction$31:	; IntegralToFloating £temporary1742 digitValue
-111:		fild word [bp + 26]
+printLongDoubleFraction$31:	; BinarySubtract £temporary1743 longDoubleValue10 £temporary1742
+111:		fsub
 113:	
 
-printLongDoubleFraction$32:	; BinarySubtract £temporary1743 longDoubleValue10 £temporary1742
-114:		fsub
+printLongDoubleFraction$32:	; PopFloat longDoubleValue
+114:		fstp qword [bp + 6]
 116:	
 
-printLongDoubleFraction$33:	; PopFloat longDoubleValue
-117:		fstp qword [bp + 6]
+printLongDoubleFraction$33:	; Goto 14
+117:		jmp printLongDoubleFraction$14
 119:	
 
-printLongDoubleFraction$34:	; Goto 14
-120:		jmp printLongDoubleFraction$14
-122:	
+printLongDoubleFraction$34:	; Return 0
+120:		mov t1092, [bp]
+121:		mov di, [bp + 4]
+122:		mov bp, [bp + 2]
+123:		jmp t1092
+125:	
 
-printLongDoubleFraction$35:	; Return 0
-123:		mov t1092, [bp]
-124:		mov di, [bp + 4]
-125:		mov bp, [bp + 2]
-126:		jmp t1092
-128:	
-
-printLongDoubleFraction$36:	; FunctionEnd printLongDoubleFraction
+printLongDoubleFraction$35:	; FunctionEnd printLongDoubleFraction
 1:	
 
 printLongDoublePlain:	; PushFloat longDoubleValue

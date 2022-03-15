@@ -21,17 +21,17 @@ double exp(double x) {
 }
 
 double log(double x) {
-  if (0 < x) {
+  if (x > 0) {
     int n = 0;
 
-    if (1 < x) {
+    if (x > 1) {
       while (x > 1) {
         x /= E;
         ++n;
       }
     }
-    else if (E_INVERSE > x) {
-      while (E_INVERSE > x) {
+    else if (x < E_INVERSE) {
+      while (x < E_INVERSE) {
         x *= E;
         --n;
       }
@@ -45,7 +45,7 @@ double log(double x) {
         sum += term;
         power *= x_minus_1;
         sign *= -1.0;
-      } while (EPSILON <= fabs(term));
+      } while (fabs(term) >= EPSILON);
 
       return sum + n;
     }
