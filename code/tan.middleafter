@@ -1,4 +1,4 @@
-0: PreCall 14 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+0: PreCall 14
 1: PushFloat x
 2: Parameter 20 double x
 3: Call 14 cos 0
@@ -7,7 +7,7 @@
 6: TopFloat cos_of_x
 7: PushFloat floating8$0#
 8: Equal 18 cos_of_x floating8$0#
-9: PreCall 22 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+9: PreCall 22
 10: PushFloat x
 11: Parameter 28 double x
 12: Call 22 sin 0

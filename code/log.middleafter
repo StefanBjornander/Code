@@ -59,7 +59,7 @@
 58: PushFloat floating8$minus1.0#
 59: Multiply £temporary419 sign floating8$minus1.0#
 60: PopFloat sign
-61: PreCall 64 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+61: PreCall 64
 62: PushFloat term
 63: Parameter 70 double term
 64: Call 64 fabs 0

@@ -8,7 +8,7 @@
 7: Assign precision integral2$6#
 8: NotEqual 10 grid integral2$0#
 9: LessThanEqual 14 precision integral2$0#
-10: PreCall 18 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+10: PreCall 18
 11: Parameter 24 signed char integral1$46#
 12: Call 18 printChar 0
 13: PostCall 18
@@ -21,7 +21,7 @@
 20: TopFloat longDoubleValue10
 21: FloatingToIntegral £temporary1914 longDoubleValue10
 22: Assign digitValue £temporary1914
-23: PreCall 28 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+23: PreCall 28
 24: Add £temporary1915 digitValue integral2$48#
 25: IntegralToIntegral £temporary1916 £temporary1915
 26: Parameter 34 signed char £temporary1916

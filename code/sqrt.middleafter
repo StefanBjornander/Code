@@ -12,7 +12,7 @@
 11: PushFloat floating8$2#
 12: Divide £temporary516 £temporary515 floating8$2#
 13: PopFloat root_i_plus_1
-14: PreCall 30 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+14: PreCall 30
 15: PushFloat root_i_plus_1
 16: PushFloat root_i
 17: Subtract £temporary517 root_i_plus_1 root_i

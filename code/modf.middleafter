@@ -1,4 +1,4 @@
-0: PreCall 16 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+0: PreCall 16
 1: PushFloat x
 2: Parameter 22 double x
 3: Call 16 fabs 0

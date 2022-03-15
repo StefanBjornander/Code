@@ -25,7 +25,7 @@
 24: TopFloat index
 25: Multiply £temporary395 faculty index
 26: PopFloat faculty
-27: PreCall 54 System.Collections.Generic.HashSet`1[CCompiler.Symbol] 0
+27: PreCall 54
 28: PushFloat term
 29: Parameter 60 double term
 30: Call 54 fabs 0
