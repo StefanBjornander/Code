@@ -14,21 +14,21 @@
 13: PushFloat root_i
 14: PushFloat x
 15: PushFloat root_i
-16: Divide £temporary514 x root_i
-17: Add £temporary515 root_i £temporary514
+16: Divide £temporary501 x root_i
+17: Add £temporary502 root_i £temporary501
 18: PushFloat floating8$2#
-19: Divide £temporary516 £temporary515 floating8$2#
+19: Divide £temporary503 £temporary502 floating8$2#
 20: PopFloat root_i_plus_1
 21: PreCall 30
 22: PushFloat root_i_plus_1
 23: PushFloat root_i
-24: Subtract £temporary517 root_i_plus_1 root_i
-25: Parameter 36 double £temporary517
+24: Subtract £temporary504 root_i_plus_1 root_i
+25: Parameter 36 double £temporary504
 26: Call 30 fabs 0
 27: PostCall 30
-28: GetReturnValue £temporary518
+28: GetReturnValue £temporary505
 29: PushFloat floating8$0.000000001#
-30: GreaterThanEqual < PushFloat root_i> £temporary518 floating8$0.000000001#
+30: GreaterThanEqual < PushFloat root_i> £temporary505 floating8$0.000000001#
 31: Jump < PushFloat root_i_plus_1>
 32: PushFloat root_i_plus_1
 33: Return root_i_plus_1

@@ -1,133 +1,34 @@
-	global a
-	global mainX
-	global mainXXX
 	global main
 
 	extern printf
-	extern temp_file
-	extern math_test
-	extern file_test
-	extern time_test
-	extern assert_test
-	extern malloc_test
-	extern print_test
-	extern limits_test
-	extern float_test
-	extern setjmp_test
-	extern stdio_test
-	extern string_test
-	extern stdlib_test
-	extern strtol_test
-	extern strtoul_test
-	extern character_test
-	extern locale_test
+	extern scanf
 	global _start
 	global $StackTop
 
 
 section .data
 
-a:
-	; InitializerZero 16
-	times 16 db 0
+@156string_Hello210A#:
+	; Initializer String Hello!\n
+	db "Hello!", 10, 0
 
 section .data
 
-@313$count:
-	; Initializer SignedInt 1
-	dd 1
+@157string_Please20write20a20character2C20a20string2C20an20integer2C20and20a20double3A20#:
+	; Initializer String Please write a character, a string, an integer, and a double: 
+	db "Please write a character, a string, an integer, and a double: ", 0
 
 section .data
 
-@315string_25d20#:
-	; Initializer String %d 
-	db "%d ", 0
+@158string_25c2025s2025i2025lf#:
+	; Initializer String %c %s %i %lf
+	db "%c %s %i %lf", 0
 
-section .text
+section .data
 
- mainX:
-	; GreaterThan 11 count integral4$10#
-	cmp dword [@313$count], 10
-	jg mainX$11
-
- mainX$1:
-	; PreCall 24
-
- mainX$2:
-	; Parameter 48 string string_25d20#
-	mov qword [rbp + 48], @315string_25d20#
-
- mainX$3:
-	; Assign £temporary1 count
-	mov eax, [@313$count]
-
- mainX$4:
-	; Add count count integral4$1#
-	inc dword [@313$count]
-
- mainX$5:
-	; Parameter 56 signed int £temporary1
-	mov [rbp + 56], eax
-
- mainX$6:
-	; Call 24 printf 4
-	mov qword [rbp + 24], mainX$7
-	mov [rbp + 32], rbp
-	add rbp, 24
-	mov rdi, rbp
-	add rdi, 4
-	jmp printf
-
- mainX$7:
-	; PostCall 24
-
- mainX$8:
-	; PreCall 24
-
- mainX$9:
-	; Call 24 mainX 0
-	mov qword [rbp + 24], mainX$10
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp mainX
-
- mainX$10:
-	; PostCall 24
-
- mainX$11:
-	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
-	jmp rax
-
- mainX$12:
-	; FunctionEnd mainX
-
-section .text
-
- mainXXX:
-	; PreCall 24
-
- mainXXX$1:
-	; Call 24 temp_file 0
-	mov qword [rbp + 24], mainXXX$2
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp temp_file
-
- mainXXX$2:
-	; PostCall 24
-
- mainXXX$3:
-	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
-	jmp rax
-
- mainXXX$4:
-	; FunctionEnd mainXXX
+@159string_You20wrote20the20character202725c272C20the20string202225s222C20the20integer2025i2C20and20the20double2025f2E0A#:
+	; Initializer String You wrote the character '%c', the string "%s", the integer %i, and the double %f.\n
+	db "You wrote the character ", 39, "%c", 39, ", the string ", 34, "%s", 34, ", the integer %i, and the double %f.", 10, 0
 
 section .text
 
@@ -144,242 +45,158 @@ section .text
 	mov qword [$StackTop], 0
 
  main:
-	; PreCall 24
+	; PreCall 57
 
  main$1:
-	; Call 24 math_test 0
-	mov qword [rbp + 24], main$2
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp math_test
+	; Parameter 81 string string_Hello210A#
+	mov qword [rbp + 81], @156string_Hello210A#
 
  main$2:
-	; PostCall 24
+	; Call 57 printf 0
+	mov qword [rbp + 57], main$3
+	mov [rbp + 65], rbp
+	add rbp, 57
+	mov rdi, rbp
+	jmp printf
 
  main$3:
-	; PreCall 24
+	; PostCall 57
 
  main$4:
-	; Call 24 file_test 0
-	mov qword [rbp + 24], main$5
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp file_test
+	; PreCall 57
 
  main$5:
-	; PostCall 24
+	; Parameter 81 string string_Please20write20a20character2C20a20string2C20an20integer2C20and20a20double3A20#
+	mov qword [rbp + 81], @157string_Please20write20a20character2C20a20string2C20an20integer2C20and20a20double3A20#
 
  main$6:
-	; PreCall 24
+	; Call 57 printf 0
+	mov qword [rbp + 57], main$7
+	mov [rbp + 65], rbp
+	add rbp, 57
+	mov rdi, rbp
+	jmp printf
 
  main$7:
-	; Call 24 time_test 0
-	mov qword [rbp + 24], main$8
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp time_test
+	; PostCall 57
 
  main$8:
-	; PostCall 24
+	; PreCall 57
 
  main$9:
-	; PreCall 24
+	; Parameter 81 string string_25c2025s2025i2025lf#
+	mov qword [rbp + 81], @158string_25c2025s2025i2025lf#
 
  main$10:
-	; Call 24 assert_test 0
-	mov qword [rbp + 24], main$11
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp assert_test
+	; Address £temporary2 c
+	mov rsi, rbp
+	add rsi, 36
 
  main$11:
-	; PostCall 24
+	; Parameter 89 pointer £temporary2
+	mov [rbp + 89], rsi
 
  main$12:
-	; PreCall 24
+	; Parameter 97 array s
+	mov [rbp + 97], rbp
+	add qword [rbp + 97], 37
 
  main$13:
-	; Call 24 malloc_test 0
-	mov qword [rbp + 24], main$14
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp malloc_test
+	; Address £temporary3 i
+	mov rsi, rbp
+	add rsi, 24
 
  main$14:
-	; PostCall 24
+	; Parameter 105 pointer £temporary3
+	mov [rbp + 105], rsi
 
  main$15:
-	; PreCall 24
+	; Address £temporary4 d
+	mov rsi, rbp
+	add rsi, 28
 
  main$16:
-	; Call 24 print_test 0
-	mov qword [rbp + 24], main$17
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp print_test
+	; Parameter 113 pointer £temporary4
+	mov [rbp + 113], rsi
 
  main$17:
-	; PostCall 24
+	; Call 57 scanf 32
+	mov qword [rbp + 57], main$18
+	mov [rbp + 65], rbp
+	add rbp, 57
+	mov rdi, rbp
+	add rdi, 32
+	jmp scanf
 
  main$18:
-	; PreCall 24
+	; PostCall 57
 
  main$19:
-	; Call 24 limits_test 0
-	mov qword [rbp + 24], main$20
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp limits_test
+	; PreCall 57
 
  main$20:
-	; PostCall 24
+	; Parameter 81 string string_You20wrote20the20character202725c272C20the20string202225s222C20the20integer2025i2C20and20the20double2025f2E0A#
+	mov qword [rbp + 81], @159string_You20wrote20the20character202725c272C20the20string202225s222C20the20integer2025i2C20and20the20double2025f2E0A#
 
  main$21:
-	; PreCall 24
+	; IntegralToIntegral £temporary6 c
+	mov al, [rbp + 36]
+	and eax, 255
+	cmp al, 0
+	jge main$22
+	neg al
+	neg eax
 
  main$22:
-	; Call 24 float_test 0
-	mov qword [rbp + 24], main$23
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp float_test
+	; Parameter 89 signed int £temporary6
+	mov [rbp + 89], eax
 
  main$23:
-	; PostCall 24
+	; Parameter 93 array s
+	mov [rbp + 93], rbp
+	add qword [rbp + 93], 37
 
  main$24:
-	; PreCall 24
+	; Parameter 101 signed int i
+	mov eax, [rbp + 24]
+	mov [rbp + 101], eax
 
  main$25:
-	; Call 24 setjmp_test 0
-	mov qword [rbp + 24], main$26
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp setjmp_test
+	; PushFloat d
+	fld qword [rbp + 28]
 
  main$26:
-	; PostCall 24
+	; Parameter 105 double d
+	fstp qword [rbp + 105]
 
  main$27:
-	; PreCall 24
+	; Call 57 printf 24
+	mov qword [rbp + 57], main$28
+	mov [rbp + 65], rbp
+	add rbp, 57
+	mov rdi, rbp
+	add rdi, 24
+	jmp printf
 
  main$28:
-	; Call 24 stdio_test 0
-	mov qword [rbp + 24], main$29
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp stdio_test
+	; PostCall 57
 
  main$29:
-	; PostCall 24
-
- main$30:
-	; PreCall 24
-
- main$31:
-	; Call 24 string_test 0
-	mov qword [rbp + 24], main$32
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp string_test
-
- main$32:
-	; PostCall 24
-
- main$33:
-	; PreCall 24
-
- main$34:
-	; Call 24 stdio_test 0
-	mov qword [rbp + 24], main$35
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp stdio_test
-
- main$35:
-	; PostCall 24
-
- main$36:
-	; PreCall 24
-
- main$37:
-	; Call 24 stdlib_test 0
-	mov qword [rbp + 24], main$38
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp stdlib_test
-
- main$38:
-	; PostCall 24
-
- main$39:
-	; PreCall 24
-
- main$40:
-	; Call 24 strtol_test 0
-	mov qword [rbp + 24], main$41
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp strtol_test
-
- main$41:
-	; PostCall 24
-
- main$42:
-	; PreCall 24
-
- main$43:
-	; Call 24 strtoul_test 0
-	mov qword [rbp + 24], main$44
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp strtoul_test
-
- main$44:
-	; PostCall 24
-
- main$45:
-	; PreCall 24
-
- main$46:
-	; Call 24 character_test 0
-	mov qword [rbp + 24], main$47
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp character_test
-
- main$47:
-	; PostCall 24
-
- main$48:
-	; PreCall 24
-
- main$49:
-	; Call 24 locale_test 0
-	mov qword [rbp + 24], main$50
-	mov [rbp + 32], rbp
-	add rbp, 24
-	jmp locale_test
-
- main$50:
-	; PostCall 24
-
- main$51:
 	; Return
 	cmp qword [rbp], 0
-	je main$52
+	je main$30
 	mov rax, [rbp]
 	mov rdi, [rbp + 16]
 	mov rbp, [rbp + 8]
 	jmp rax
 
- main$52:
+ main$30:
 	; Exit
 	mov rdi, 0
 	mov rax, 60
 	syscall
 
- main$53:
+ main$31:
 	; FunctionEnd main
 
 section .data
