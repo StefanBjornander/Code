@@ -1,8 +1,8 @@
 0: PushFloat longDoubleValue
 1: PushFloat longDoubleValue
-2: FloatingToIntegral £temporary1885 longDoubleValue
-3: IntegralToFloating £temporary1887 £temporary1885
-4: Subtract £temporary1886 longDoubleValue £temporary1887
+2: FloatingToIntegral £temporary1898 longDoubleValue
+3: IntegralToFloating £temporary1900 £temporary1898
+4: Subtract £temporary1899 longDoubleValue £temporary1900
 5: PopFloat longDoubleValue
 6: NotEqual 8 precision integral2$0#
 7: Assign precision integral2$6#
@@ -12,24 +12,24 @@
 11: Parameter 24 signed char integral1$46#
 12: Call 18 printChar 0
 13: PostCall 18
-14: Assign £temporary1897 precision
+14: Assign £temporary1910 precision
 15: Subtract precision precision integral2$1#
-16: LessThanEqual 34 £temporary1897 integral2$0#
+16: LessThanEqual 34 £temporary1910 integral2$0#
 17: PushFloat floating8$10.0#
 18: PushFloat longDoubleValue
-19: Multiply £temporary1900 floating8$10.0# longDoubleValue
+19: Multiply £temporary1913 floating8$10.0# longDoubleValue
 20: TopFloat longDoubleValue10
-21: FloatingToIntegral £temporary1901 longDoubleValue10
-22: Assign digitValue £temporary1901
+21: FloatingToIntegral £temporary1914 longDoubleValue10
+22: Assign digitValue £temporary1914
 23: PreCall 28
-24: Add £temporary1902 digitValue integral2$48#
-25: IntegralToIntegral £temporary1903 £temporary1902
-26: Parameter 34 signed char £temporary1903
+24: Add £temporary1915 digitValue integral2$48#
+25: IntegralToIntegral £temporary1916 £temporary1915
+26: Parameter 34 signed char £temporary1916
 27: Call 28 printChar 0
 28: PostCall 28
 29: PushFloat longDoubleValue10
-30: IntegralToFloating £temporary1905 digitValue
-31: Subtract £temporary1906 longDoubleValue10 £temporary1905
+30: IntegralToFloating £temporary1918 digitValue
+31: Subtract £temporary1919 longDoubleValue10 £temporary1918
 32: PopFloat longDoubleValue
 33: Jump 14
 34: Return

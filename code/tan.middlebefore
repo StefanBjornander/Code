@@ -3,7 +3,7 @@
 2: Parameter 20 double x
 3: Call 14 cos 0
 4: PostCall 14
-5: GetReturnValue £temporary584
+5: GetReturnValue £temporary597
 6: PopFloat cos_of_x
 7: PushFloat cos_of_x
 8: PushFloat floating8$0#
@@ -15,10 +15,10 @@
 14: Parameter 28 double x
 15: Call 22 sin 0
 16: PostCall 22
-17: GetReturnValue £temporary586
+17: GetReturnValue £temporary599
 18: PushFloat cos_of_x
-19: Divide £temporary587 £temporary586 cos_of_x
-20: Return £temporary587
+19: Divide £temporary600 £temporary599 cos_of_x
+20: Return £temporary600
 21: Jump < Empty>
 22: Empty
 23: Assign errno EDOM
