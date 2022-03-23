@@ -8,31 +8,31 @@
 7: PopFloat power
 8: PushFloat power
 9: PushFloat faculty
-10: Divide £temporary390 power faculty
+10: Divide £temporary401 power faculty
 11: PopFloat term
 12: PushFloat sum
 13: PushFloat term
-14: Add £temporary391 sum term
+14: Add £temporary402 sum term
 15: PopFloat sum
 16: PushFloat power
 17: PushFloat x
-18: Multiply £temporary392 power x
+18: Multiply £temporary403 power x
 19: PopFloat power
 20: PushFloat faculty
 21: PushFloat index
 22: PushOne
-23: Add £temporary394 index £temporary393
+23: Add £temporary405 index £temporary404
 24: TopFloat index
-25: Multiply £temporary395 faculty index
+25: Multiply £temporary406 faculty index
 26: PopFloat faculty
-27: PreCall 54
+27: PreCall 72
 28: PushFloat term
-29: Parameter 60 double term
-30: Call 54 fabs 0
-31: PostCall 54
-32: GetReturnValue £temporary396
+29: Parameter 96 double term
+30: Call 72 fabs 0
+31: PostCall 72
+32: GetReturnValue £temporary407
 33: PushFloat floating8$0.000000001#
-34: GreaterThanEqual 8 £temporary396 floating8$0.000000001#
+34: GreaterThanEqual 8 £temporary407 floating8$0.000000001#
 35: PushFloat sum
 36: Return sum
 37: FunctionEnd exp
