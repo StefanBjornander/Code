@@ -48,12 +48,12 @@ section .text
 
  @9495$main$1:
 	; Parameter 64 string string_Please20input20a20value3A20#
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], @9498string_Please20input20a20value3A20#
 
  @9495$main$2:
 	; Call 40 printf 0
 	mov qword [rbp + 40], @9495$main$3
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	mov rdi, rbp
 	jmp printf
@@ -66,7 +66,7 @@ section .text
 
  @9495$main$5:
 	; Parameter 64 string string_25lf#
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], @9499string_25lf#
 
  @9495$main$6:
 	; Address £temporary4126 x
@@ -75,12 +75,12 @@ section .text
 
  @9495$main$7:
 	; Parameter 72 pointer £temporary4126
-	mov [rbp + 72], {operand2}
+	mov [rbp + 72], rsi
 
  @9495$main$8:
 	; Call 40 scanf 8
 	mov qword [rbp + 40], @9495$main$9
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 8
@@ -94,12 +94,12 @@ section .text
 
  @9495$main$11:
 	; Parameter 64 array buffer
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], buffer
 
  @9495$main$12:
 	; Call 40 setjmp 0
 	mov qword [rbp + 40], @9495$main$13
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp setjmp
 
@@ -116,11 +116,11 @@ section .text
 
  @9495$main$16:
 	; Assign message £temporary4129
-	mov [rbp + 24], {operand2}
+	mov [rbp + 24], rbx
 
  @9495$main$17:
 	; NotEqual 32 message integral8$0#
-	cmp qword [rbp + 24], {operand2}
+	cmp qword [rbp + 24], 0
 	jne @9495$main$32
 
  @9495$main$18:
@@ -128,7 +128,7 @@ section .text
 
  @9495$main$19:
 	; Parameter 64 string string_12E0202F2025f203D2025f0A#
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], @9502string_12E0202F2025f203D2025f0A#
 
  @9495$main$20:
 	; PushFloat x
@@ -152,7 +152,7 @@ section .text
  @9495$main$25:
 	; Call 80 inverse 0
 	mov qword [rbp + 80], @9495$main$26
-	mov [rbp + 88], {operand2}
+	mov [rbp + 88], rbp
 	add rbp, 80
 	jmp inverse
 
@@ -169,7 +169,7 @@ section .text
  @9495$main$29:
 	; Call 40 printf 16
 	mov qword [rbp + 40], @9495$main$30
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 16
@@ -187,17 +187,17 @@ section .text
 
  @9495$main$33:
 	; Parameter 64 string string_25s0A#
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], @9503string_25s0A#
 
  @9495$main$34:
 	; Parameter 72 pointer message
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 72], {operand2}
+	mov rax, [rbp + 24]
+	mov [rbp + 72], rax
 
  @9495$main$35:
 	; Call 40 printf 8
 	mov qword [rbp + 40], @9495$main$36
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 8
@@ -208,9 +208,9 @@ section .text
 
  @9495$main$37:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  @9495$main$38:
@@ -240,7 +240,7 @@ section .text
  inverse$5:
 	; Call 32 divide 0
 	mov qword [rbp + 32], inverse$6
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp divide
 
@@ -252,9 +252,9 @@ section .text
 
  inverse$8:
 	; Return £temporary4140
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  inverse$9:
@@ -297,9 +297,9 @@ section .text
 
  divide$6:
 	; Return £temporary4144
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  divide$7:
@@ -307,7 +307,7 @@ section .text
 
  divide$8:
 	; Parameter 64 array buffer
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], buffer
 
  divide$9:
 	; IntegralToIntegral £temporary4145 string_Division20by20Zero2E#
@@ -315,12 +315,12 @@ section .text
 
  divide$10:
 	; Parameter 72 signed int £temporary4145
-	mov [rbp + 72], {operand2}
+	mov [rbp + 72], eax
 
  divide$11:
 	; Call 40 longjmp 0
 	mov qword [rbp + 40], divide$12
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp longjmp
 
@@ -333,9 +333,9 @@ section .text
 
  divide$14:
 	; Return floating8$0#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  divide$15:
@@ -360,12 +360,12 @@ section .text
 
  test$1:
 	; Parameter 64 array buffer
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], buffer
 
  test$2:
 	; Call 40 setjmp 0
 	mov qword [rbp + 40], test$3
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp setjmp
 
@@ -382,11 +382,11 @@ section .text
 
  test$6:
 	; Assign message £temporary4150
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbx
 
  test$7:
 	; NotEqual 22 message integral8$0#
-	cmp qword [rbp + 32], {operand2}
+	cmp qword [rbp + 32], 0
 	jne test$22
 
  test$8:
@@ -394,7 +394,7 @@ section .text
 
  test$9:
 	; Parameter 64 string string_12E0202F2025f203D2025f0A#
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], @9527string_12E0202F2025f203D2025f0A#
 
  test$10:
 	; PushFloat x
@@ -418,7 +418,7 @@ section .text
  test$15:
 	; Call 80 inverse 0
 	mov qword [rbp + 80], test$16
-	mov [rbp + 88], {operand2}
+	mov [rbp + 88], rbp
 	add rbp, 80
 	jmp inverse
 
@@ -435,7 +435,7 @@ section .text
  test$19:
 	; Call 40 printf 16
 	mov qword [rbp + 40], test$20
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 16
@@ -453,17 +453,17 @@ section .text
 
  test$23:
 	; Parameter 64 string string_25s0A#
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], @9528string_25s0A#
 
  test$24:
 	; Parameter 72 pointer message
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 72], {operand2}
+	mov rax, [rbp + 32]
+	mov [rbp + 72], rax
 
  test$25:
 	; Call 40 printf 8
 	mov qword [rbp + 40], test$26
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 8
@@ -474,9 +474,9 @@ section .text
 
  test$27:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  test$28:
@@ -510,7 +510,7 @@ section .text
  setjmp_test$3:
 	; Call 24 test 0
 	mov qword [rbp + 24], setjmp_test$4
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp test
 
@@ -531,7 +531,7 @@ section .text
  setjmp_test$8:
 	; Call 24 test 0
 	mov qword [rbp + 24], setjmp_test$9
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp test
 
@@ -552,7 +552,7 @@ section .text
  setjmp_test$13:
 	; Call 24 test 0
 	mov qword [rbp + 24], setjmp_test$14
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp test
 
@@ -561,9 +561,9 @@ section .text
 
  setjmp_test$15:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  setjmp_test$16:

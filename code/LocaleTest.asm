@@ -7,9 +7,9 @@ section .text
 
  locale_test:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  locale_test$1:

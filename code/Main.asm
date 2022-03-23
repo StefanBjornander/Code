@@ -47,7 +47,7 @@ section .text
 
  mainX:
 	; GreaterThan 11 count integral4$10#
-	cmp dword [@313$count], {operand2}
+	cmp dword [@313$count], 10
 	jg mainX$11
 
  mainX$1:
@@ -55,11 +55,11 @@ section .text
 
  mainX$2:
 	; Parameter 48 string string_25d20#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @315string_25d20#
 
  mainX$3:
 	; Assign £temporary1 count
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [@313$count]
 
  mainX$4:
 	; Add count count integral4$1#
@@ -67,12 +67,12 @@ section .text
 
  mainX$5:
 	; Parameter 56 signed int £temporary1
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], eax
 
  mainX$6:
 	; Call 24 printf 4
 	mov qword [rbp + 24], mainX$7
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 4
@@ -87,7 +87,7 @@ section .text
  mainX$9:
 	; Call 24 mainX 0
 	mov qword [rbp + 24], mainX$10
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp mainX
 
@@ -96,9 +96,9 @@ section .text
 
  mainX$11:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  mainX$12:
@@ -112,7 +112,7 @@ section .text
  mainXXX$1:
 	; Call 24 temp_file 0
 	mov qword [rbp + 24], mainXXX$2
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp temp_file
 
@@ -121,9 +121,9 @@ section .text
 
  mainXXX$3:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  mainXXX$4:
@@ -135,13 +135,13 @@ section .text
 	; Initializerialize Stack Pointer
 	mov rbp, $StackTop
 	; Initializerialize Heap Pointer
-	mov dword [$StackTop + 65534], {operand2}
-	add dword [$StackTop + 65534], {operand2}
+	mov dword [$StackTop + 65534], $StackTop
+	add dword [$StackTop + 65534], 65534
 	; Initializerialize FPU Control Word, truncate mode => set bit 10 and 11.
 	fstcw [rbp]
-	or word [rbp], {operand2}
+	or word [rbp], 3072
 	fldcw [rbp]
-	mov qword [$StackTop], {operand2}
+	mov qword [$StackTop], 0
 
  main:
 	; PreCall 24
@@ -149,7 +149,7 @@ section .text
  main$1:
 	; Call 24 math_test 0
 	mov qword [rbp + 24], main$2
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test
 
@@ -162,7 +162,7 @@ section .text
  main$4:
 	; Call 24 file_test 0
 	mov qword [rbp + 24], main$5
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp file_test
 
@@ -175,7 +175,7 @@ section .text
  main$7:
 	; Call 24 time_test 0
 	mov qword [rbp + 24], main$8
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp time_test
 
@@ -188,7 +188,7 @@ section .text
  main$10:
 	; Call 24 assert_test 0
 	mov qword [rbp + 24], main$11
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp assert_test
 
@@ -201,7 +201,7 @@ section .text
  main$13:
 	; Call 24 malloc_test 0
 	mov qword [rbp + 24], main$14
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp malloc_test
 
@@ -214,7 +214,7 @@ section .text
  main$16:
 	; Call 24 print_test 0
 	mov qword [rbp + 24], main$17
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp print_test
 
@@ -227,7 +227,7 @@ section .text
  main$19:
 	; Call 24 limits_test 0
 	mov qword [rbp + 24], main$20
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp limits_test
 
@@ -240,7 +240,7 @@ section .text
  main$22:
 	; Call 24 float_test 0
 	mov qword [rbp + 24], main$23
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp float_test
 
@@ -253,7 +253,7 @@ section .text
  main$25:
 	; Call 24 setjmp_test 0
 	mov qword [rbp + 24], main$26
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp setjmp_test
 
@@ -266,7 +266,7 @@ section .text
  main$28:
 	; Call 24 stdio_test 0
 	mov qword [rbp + 24], main$29
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp stdio_test
 
@@ -279,7 +279,7 @@ section .text
  main$31:
 	; Call 24 string_test 0
 	mov qword [rbp + 24], main$32
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp string_test
 
@@ -292,7 +292,7 @@ section .text
  main$34:
 	; Call 24 stdio_test 0
 	mov qword [rbp + 24], main$35
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp stdio_test
 
@@ -305,7 +305,7 @@ section .text
  main$37:
 	; Call 24 stdlib_test 0
 	mov qword [rbp + 24], main$38
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp stdlib_test
 
@@ -318,7 +318,7 @@ section .text
  main$40:
 	; Call 24 strtol_test 0
 	mov qword [rbp + 24], main$41
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp strtol_test
 
@@ -331,7 +331,7 @@ section .text
  main$43:
 	; Call 24 strtoul_test 0
 	mov qword [rbp + 24], main$44
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp strtoul_test
 
@@ -344,7 +344,7 @@ section .text
  main$46:
 	; Call 24 character_test 0
 	mov qword [rbp + 24], main$47
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp character_test
 
@@ -357,7 +357,7 @@ section .text
  main$49:
 	; Call 24 locale_test 0
 	mov qword [rbp + 24], main$50
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp locale_test
 
@@ -366,11 +366,11 @@ section .text
 
  main$51:
 	; Return
-	cmp qword [rbp], {operand2}
+	cmp qword [rbp], 0
 	je main$52
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  main$52:

@@ -596,16 +596,16 @@ section .text
 
  setlocale:
 	; Equal 4 g_currStructPtr integral8$0#
-	cmp qword [@1546$g_currStructPtr], {operand2}
+	cmp qword [@1546$g_currStructPtr], 0
 	je setlocale$4
 
  setlocale$1:
 	; Dereference £temporary378 g_currStructPtr 0
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [@1546$g_currStructPtr]
 
  setlocale$2:
 	; Assign £temporary379 £temporary378.name
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [rsi]
 
  setlocale$3:
 	; Jump 5
@@ -617,25 +617,25 @@ section .text
 
  setlocale$5:
 	; Assign oldName £temporary379
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rax
 
  setlocale$6:
 	; Assign g_currStructPtr integral8$0#
-	mov qword [@1546$g_currStructPtr], {operand2}
+	mov qword [@1546$g_currStructPtr], 0
 
  setlocale$7:
 	; Equal 30 newName integral8$0#
-	cmp qword [rbp + 28], {operand2}
+	cmp qword [rbp + 28], 0
 	je setlocale$30
 
  setlocale$8:
 	; Assign index integral4$0#
-	mov dword [rbp + 36], {operand2}
+	mov dword [rbp + 36], 0
 
  setlocale$9:
 	; GreaterThanEqual 30 index g_sSize
-	mov eax, [{operand1}{WithSign(operand2)}]
-	cmp [rbp + 36], {operand2}
+	mov eax, [@1541$g_sSize]
+	cmp [rbp + 36], eax
 	jge setlocale$30
 
  setlocale$10:
@@ -643,12 +643,12 @@ section .text
 
  setlocale$11:
 	; Parameter 72 pointer newName
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 72], {operand2}
+	mov rax, [rbp + 28]
+	mov [rbp + 72], rax
 
  setlocale$12:
 	; Multiply £temporary383 index integral4$16#
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 36]
 	xor edx, edx
 	imul dword [@1562integral4$16#]
 
@@ -667,13 +667,13 @@ section .text
 
  setlocale$16:
 	; Parameter 80 pointer £temporary386.name
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov rax, [rsi]
+	mov [rbp + 80], rax
 
  setlocale$17:
 	; Call 48 strcmp 0
 	mov qword [rbp + 48], setlocale$18
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp strcmp
 
@@ -690,7 +690,7 @@ section .text
 
  setlocale$21:
 	; Multiply £temporary389 index integral4$16#
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 36]
 	xor edx, edx
 	imul dword [@1565integral4$16#]
 
@@ -712,7 +712,7 @@ section .text
 
  setlocale$26:
 	; Assign g_currStructPtr £temporary393
-	mov [@1546$g_currStructPtr], {operand2}
+	mov [@1546$g_currStructPtr], rsi
 
  setlocale$27:
 	; Jump 30
@@ -728,10 +728,10 @@ section .text
 
  setlocale$30:
 	; Return oldName
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 40]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  setlocale$31:
@@ -741,16 +741,16 @@ section .text
 
  localeconv:
 	; Equal 4 g_currStructPtr integral8$0#
-	cmp qword [@1546$g_currStructPtr], {operand2}
+	cmp qword [@1546$g_currStructPtr], 0
 	je localeconv$4
 
  localeconv$1:
 	; Dereference £temporary399 g_currStructPtr 0
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [@1546$g_currStructPtr]
 
  localeconv$2:
 	; Assign £temporary400 £temporary399.localePtr
-	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rsi + 8]
 
  localeconv$3:
 	; Jump 5
@@ -762,9 +762,9 @@ section .text
 
  localeconv$5:
 	; Return £temporary400
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  localeconv$6:

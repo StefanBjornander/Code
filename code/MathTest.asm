@@ -91,7 +91,7 @@ section .text
  math_test_1x$3:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test_1x$4
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -112,7 +112,7 @@ section .text
  math_test_1x$8:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test_1x$9
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -133,7 +133,7 @@ section .text
  math_test_1x$13:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test_1x$14
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -154,7 +154,7 @@ section .text
  math_test_1x$18:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test_1x$19
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -175,7 +175,7 @@ section .text
  math_test_1x$23:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test_1x$24
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -196,7 +196,7 @@ section .text
  math_test_1x$28:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test_1x$29
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -217,7 +217,7 @@ section .text
  math_test_1x$33:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test_1x$34
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -238,7 +238,7 @@ section .text
  math_test_1x$38:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test_1x$39
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -259,7 +259,7 @@ section .text
  math_test_1x$43:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test_1x$44
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -268,9 +268,9 @@ section .text
 
  math_test_1x$45:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  math_test_1x$46:
@@ -289,7 +289,7 @@ section .text
 
  acos_test$1:
 	; Parameter 56 string string_2020acos2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9792string_2020acos2825f29203D2025f2C20errno203D2025i0A#
 
  acos_test$2:
 	; PushFloat x
@@ -313,7 +313,7 @@ section .text
  acos_test$7:
 	; Call 72 acos 0
 	mov qword [rbp + 72], acos_test$8
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp acos
 
@@ -329,13 +329,13 @@ section .text
 
  acos_test$11:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  acos_test$12:
 	; Call 32 printf 20
 	mov qword [rbp + 32], acos_test$13
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -346,13 +346,13 @@ section .text
 
  acos_test$14:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  acos_test$15:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  acos_test$16:
@@ -371,7 +371,7 @@ section .text
 
  atan_test$1:
 	; Parameter 56 string string_2020atan2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9797string_2020atan2825f29203D2025f2C20errno203D2025i0A#
 
  atan_test$2:
 	; PushFloat x
@@ -395,7 +395,7 @@ section .text
  atan_test$7:
 	; Call 72 atan 0
 	mov qword [rbp + 72], atan_test$8
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp atan
 
@@ -411,13 +411,13 @@ section .text
 
  atan_test$11:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  atan_test$12:
 	; Call 32 printf 20
 	mov qword [rbp + 32], atan_test$13
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -428,13 +428,13 @@ section .text
 
  atan_test$14:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  atan_test$15:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  atan_test$16:
@@ -624,7 +624,7 @@ section .text
  math_test$3:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$4
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -645,7 +645,7 @@ section .text
  math_test$8:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$9
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -666,7 +666,7 @@ section .text
  math_test$13:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$14
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -687,7 +687,7 @@ section .text
  math_test$18:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$19
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -708,7 +708,7 @@ section .text
  math_test$23:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$24
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -729,7 +729,7 @@ section .text
  math_test$28:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$29
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -750,7 +750,7 @@ section .text
  math_test$33:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$34
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -771,7 +771,7 @@ section .text
  math_test$38:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$39
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -792,7 +792,7 @@ section .text
  math_test$43:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$44
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -813,7 +813,7 @@ section .text
  math_test$48:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$49
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -834,7 +834,7 @@ section .text
  math_test$53:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$54
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -855,7 +855,7 @@ section .text
  math_test$58:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$59
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -876,7 +876,7 @@ section .text
  math_test$63:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$64
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -897,7 +897,7 @@ section .text
  math_test$68:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$69
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -918,7 +918,7 @@ section .text
  math_test$73:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$74
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -939,7 +939,7 @@ section .text
  math_test$78:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$79
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -960,7 +960,7 @@ section .text
  math_test$83:
 	; Call 24 math_test_1 0
 	mov qword [rbp + 24], math_test$84
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_1
 
@@ -989,7 +989,7 @@ section .text
  math_test$90:
 	; Call 24 math_test_2 0
 	mov qword [rbp + 24], math_test$91
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_2
 
@@ -1018,7 +1018,7 @@ section .text
  math_test$97:
 	; Call 24 math_test_2 0
 	mov qword [rbp + 24], math_test$98
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_2
 
@@ -1047,7 +1047,7 @@ section .text
  math_test$104:
 	; Call 24 math_test_2 0
 	mov qword [rbp + 24], math_test$105
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_2
 
@@ -1076,7 +1076,7 @@ section .text
  math_test$111:
 	; Call 24 math_test_2 0
 	mov qword [rbp + 24], math_test$112
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_2
 
@@ -1105,7 +1105,7 @@ section .text
  math_test$118:
 	; Call 24 math_test_2 0
 	mov qword [rbp + 24], math_test$119
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_2
 
@@ -1134,7 +1134,7 @@ section .text
  math_test$125:
 	; Call 24 math_test_2 0
 	mov qword [rbp + 24], math_test$126
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_2
 
@@ -1163,7 +1163,7 @@ section .text
  math_test$132:
 	; Call 24 math_test_2 0
 	mov qword [rbp + 24], math_test$133
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_2
 
@@ -1192,7 +1192,7 @@ section .text
  math_test$139:
 	; Call 24 math_test_2 0
 	mov qword [rbp + 24], math_test$140
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_2
 
@@ -1221,7 +1221,7 @@ section .text
  math_test$146:
 	; Call 24 math_test_2 0
 	mov qword [rbp + 24], math_test$147
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_2
 
@@ -1250,7 +1250,7 @@ section .text
  math_test$153:
 	; Call 24 math_test_2 0
 	mov qword [rbp + 24], math_test$154
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_2
 
@@ -1279,7 +1279,7 @@ section .text
  math_test$160:
 	; Call 24 math_test_2 0
 	mov qword [rbp + 24], math_test$161
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	jmp math_test_2
 
@@ -1288,9 +1288,9 @@ section .text
 
  math_test$162:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  math_test$163:
@@ -1435,7 +1435,7 @@ section .text
 
  math_test_1$1:
 	; Parameter 56 string string_3C25f3E0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9871string_3C25f3E0A#
 
  math_test_1$2:
 	; PushFloat x
@@ -1448,7 +1448,7 @@ section .text
  math_test_1$4:
 	; Call 32 printf 8
 	mov qword [rbp + 32], math_test_1$5
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 8
@@ -1462,7 +1462,7 @@ section .text
 
  math_test_1$7:
 	; Parameter 56 string string_2020sin2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9872string_2020sin2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$8:
 	; PushFloat x
@@ -1486,7 +1486,7 @@ section .text
  math_test_1$13:
 	; Call 72 sin 0
 	mov qword [rbp + 72], math_test_1$14
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp sin
 
@@ -1502,13 +1502,13 @@ section .text
 
  math_test_1$17:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$18:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$19
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -1519,14 +1519,14 @@ section .text
 
  math_test_1$20:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$21:
 	; PreCall 32
 
  math_test_1$22:
 	; Parameter 56 string string_2020cos2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9874string_2020cos2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$23:
 	; PushFloat x
@@ -1550,7 +1550,7 @@ section .text
  math_test_1$28:
 	; Call 72 cos 0
 	mov qword [rbp + 72], math_test_1$29
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp cos
 
@@ -1566,13 +1566,13 @@ section .text
 
  math_test_1$32:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$33:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$34
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -1583,14 +1583,14 @@ section .text
 
  math_test_1$35:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$36:
 	; PreCall 32
 
  math_test_1$37:
 	; Parameter 56 string string_2020tan2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9876string_2020tan2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$38:
 	; PushFloat x
@@ -1614,7 +1614,7 @@ section .text
  math_test_1$43:
 	; Call 72 tan 0
 	mov qword [rbp + 72], math_test_1$44
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp tan
 
@@ -1630,13 +1630,13 @@ section .text
 
  math_test_1$47:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$48:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$49
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -1647,14 +1647,14 @@ section .text
 
  math_test_1$50:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$51:
 	; PreCall 32
 
  math_test_1$52:
 	; Parameter 56 string string_2020asin2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9878string_2020asin2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$53:
 	; PushFloat x
@@ -1678,7 +1678,7 @@ section .text
  math_test_1$58:
 	; Call 72 asin 0
 	mov qword [rbp + 72], math_test_1$59
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp asin
 
@@ -1694,13 +1694,13 @@ section .text
 
  math_test_1$62:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$63:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$64
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -1711,14 +1711,14 @@ section .text
 
  math_test_1$65:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$66:
 	; PreCall 32
 
  math_test_1$67:
 	; Parameter 56 string string_2020acos2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9880string_2020acos2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$68:
 	; PushFloat x
@@ -1742,7 +1742,7 @@ section .text
  math_test_1$73:
 	; Call 72 acos 0
 	mov qword [rbp + 72], math_test_1$74
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp acos
 
@@ -1758,13 +1758,13 @@ section .text
 
  math_test_1$77:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$78:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$79
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -1775,14 +1775,14 @@ section .text
 
  math_test_1$80:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$81:
 	; PreCall 32
 
  math_test_1$82:
 	; Parameter 56 string string_2020atan2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9882string_2020atan2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$83:
 	; PushFloat x
@@ -1806,7 +1806,7 @@ section .text
  math_test_1$88:
 	; Call 72 atan 0
 	mov qword [rbp + 72], math_test_1$89
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp atan
 
@@ -1822,13 +1822,13 @@ section .text
 
  math_test_1$92:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$93:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$94
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -1839,14 +1839,14 @@ section .text
 
  math_test_1$95:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$96:
 	; PreCall 32
 
  math_test_1$97:
 	; Parameter 56 string string_2020exp2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9884string_2020exp2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$98:
 	; PushFloat x
@@ -1870,7 +1870,7 @@ section .text
  math_test_1$103:
 	; Call 72 exp 0
 	mov qword [rbp + 72], math_test_1$104
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp exp
 
@@ -1886,13 +1886,13 @@ section .text
 
  math_test_1$107:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$108:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$109
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -1903,14 +1903,14 @@ section .text
 
  math_test_1$110:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$111:
 	; PreCall 32
 
  math_test_1$112:
 	; Parameter 56 string string_2020log2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9886string_2020log2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$113:
 	; PushFloat x
@@ -1934,7 +1934,7 @@ section .text
  math_test_1$118:
 	; Call 72 log 0
 	mov qword [rbp + 72], math_test_1$119
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp log
 
@@ -1950,13 +1950,13 @@ section .text
 
  math_test_1$122:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$123:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$124
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -1967,14 +1967,14 @@ section .text
 
  math_test_1$125:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$126:
 	; PreCall 32
 
  math_test_1$127:
 	; Parameter 56 string string_2020log102825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9888string_2020log102825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$128:
 	; PushFloat x
@@ -1998,7 +1998,7 @@ section .text
  math_test_1$133:
 	; Call 72 log10 0
 	mov qword [rbp + 72], math_test_1$134
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp log10
 
@@ -2014,13 +2014,13 @@ section .text
 
  math_test_1$137:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$138:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$139
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -2031,14 +2031,14 @@ section .text
 
  math_test_1$140:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$141:
 	; PreCall 32
 
  math_test_1$142:
 	; Parameter 56 string string_2020sinh2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9890string_2020sinh2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$143:
 	; PushFloat x
@@ -2062,7 +2062,7 @@ section .text
  math_test_1$148:
 	; Call 72 sinh 0
 	mov qword [rbp + 72], math_test_1$149
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp sinh
 
@@ -2078,13 +2078,13 @@ section .text
 
  math_test_1$152:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$153:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$154
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -2095,14 +2095,14 @@ section .text
 
  math_test_1$155:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$156:
 	; PreCall 32
 
  math_test_1$157:
 	; Parameter 56 string string_2020cosh2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9892string_2020cosh2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$158:
 	; PushFloat x
@@ -2126,7 +2126,7 @@ section .text
  math_test_1$163:
 	; Call 72 cosh 0
 	mov qword [rbp + 72], math_test_1$164
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp cosh
 
@@ -2142,13 +2142,13 @@ section .text
 
  math_test_1$167:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$168:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$169
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -2159,14 +2159,14 @@ section .text
 
  math_test_1$170:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$171:
 	; PreCall 32
 
  math_test_1$172:
 	; Parameter 56 string string_2020tanh2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9894string_2020tanh2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$173:
 	; PushFloat x
@@ -2190,7 +2190,7 @@ section .text
  math_test_1$178:
 	; Call 72 tanh 0
 	mov qword [rbp + 72], math_test_1$179
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp tanh
 
@@ -2206,13 +2206,13 @@ section .text
 
  math_test_1$182:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$183:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$184
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -2223,14 +2223,14 @@ section .text
 
  math_test_1$185:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$186:
 	; PreCall 32
 
  math_test_1$187:
 	; Parameter 56 string string_2020sqrt2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9896string_2020sqrt2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$188:
 	; PushFloat x
@@ -2254,7 +2254,7 @@ section .text
  math_test_1$193:
 	; Call 72 sqrt 0
 	mov qword [rbp + 72], math_test_1$194
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp sqrt
 
@@ -2270,13 +2270,13 @@ section .text
 
  math_test_1$197:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$198:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$199
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -2287,14 +2287,14 @@ section .text
 
  math_test_1$200:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$201:
 	; PreCall 32
 
  math_test_1$202:
 	; Parameter 56 string string_2020floor2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9898string_2020floor2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$203:
 	; PushFloat x
@@ -2318,7 +2318,7 @@ section .text
  math_test_1$208:
 	; Call 72 floor 0
 	mov qword [rbp + 72], math_test_1$209
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp floor
 
@@ -2334,13 +2334,13 @@ section .text
 
  math_test_1$212:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$213:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$214
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -2351,14 +2351,14 @@ section .text
 
  math_test_1$215:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$216:
 	; PreCall 32
 
  math_test_1$217:
 	; Parameter 56 string string_2020ceil2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9900string_2020ceil2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$218:
 	; PushFloat x
@@ -2382,7 +2382,7 @@ section .text
  math_test_1$223:
 	; Call 72 ceil 0
 	mov qword [rbp + 72], math_test_1$224
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp ceil
 
@@ -2398,13 +2398,13 @@ section .text
 
  math_test_1$227:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$228:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$229
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -2415,14 +2415,14 @@ section .text
 
  math_test_1$230:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$231:
 	; PreCall 32
 
  math_test_1$232:
 	; Parameter 56 string string_2020fabs2825f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9902string_2020fabs2825f29203D2025f2C20errno203D2025i0A#
 
  math_test_1$233:
 	; PushFloat x
@@ -2446,7 +2446,7 @@ section .text
  math_test_1$238:
 	; Call 72 fabs 0
 	mov qword [rbp + 72], math_test_1$239
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp fabs
 
@@ -2462,13 +2462,13 @@ section .text
 
  math_test_1$242:
 	; Parameter 80 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov eax, [errno]
+	mov [rbp + 80], eax
 
  math_test_1$243:
 	; Call 32 printf 20
 	mov qword [rbp + 32], math_test_1$244
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -2479,11 +2479,11 @@ section .text
 
  math_test_1$245:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$246:
 	; Assign j integral4$0#
-	mov dword [rbp + 32], {operand2}
+	mov dword [rbp + 32], 0
 
  math_test_1$247:
 	; PreCall 36
@@ -2503,12 +2503,12 @@ section .text
 
  math_test_1$251:
 	; Parameter 68 pointer £temporary4294
-	mov [rbp + 68], {operand2}
+	mov [rbp + 68], rsi
 
  math_test_1$252:
 	; Call 36 frexp 0
 	mov qword [rbp + 36], math_test_1$253
-	mov [rbp + 44], {operand2}
+	mov [rbp + 44], rbp
 	add rbp, 36
 	jmp frexp
 
@@ -2527,7 +2527,7 @@ section .text
 
  math_test_1$257:
 	; Parameter 68 string string_frexp202825f2C20p29203D202825f2C2025i292C20errno203D2025i0A#
-	mov qword [rbp + 68], {operand2}
+	mov qword [rbp + 68], @9907string_frexp202825f2C20p29203D202825f2C2025i292C20errno203D2025i0A#
 
  math_test_1$258:
 	; PushFloat x
@@ -2547,18 +2547,18 @@ section .text
 
  math_test_1$262:
 	; Parameter 92 signed int j
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 92], {operand2}
+	mov eax, [rbp + 32]
+	mov [rbp + 92], eax
 
  math_test_1$263:
 	; Parameter 96 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 96], {operand2}
+	mov eax, [errno]
+	mov [rbp + 96], eax
 
  math_test_1$264:
 	; Call 44 printf 24
 	mov qword [rbp + 44], math_test_1$265
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rbp
 	add rbp, 44
 	mov rdi, rbp
 	add rdi, 24
@@ -2569,7 +2569,7 @@ section .text
 
  math_test_1$266:
 	; Equal 272 errno integral4$0#
-	cmp dword [errno], {operand2}
+	cmp dword [errno], 0
 	je math_test_1$272
 
  math_test_1$267:
@@ -2577,12 +2577,12 @@ section .text
 
  math_test_1$268:
 	; Parameter 68 string string_Error20message3A#
-	mov qword [rbp + 68], {operand2}
+	mov qword [rbp + 68], @9909string_Error20message3A#
 
  math_test_1$269:
 	; Call 44 perror 0
 	mov qword [rbp + 44], math_test_1$270
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rbp
 	add rbp, 44
 	jmp perror
 
@@ -2591,7 +2591,7 @@ section .text
 
  math_test_1$271:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$272:
 	; PushFloat floating8$0#
@@ -2619,12 +2619,12 @@ section .text
 
  math_test_1$278:
 	; Parameter 72 pointer £temporary4301
-	mov [rbp + 72], {operand2}
+	mov [rbp + 72], rsi
 
  math_test_1$279:
 	; Call 40 modf 0
 	mov qword [rbp + 40], math_test_1$280
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp modf
 
@@ -2643,7 +2643,7 @@ section .text
 
  math_test_1$284:
 	; Parameter 72 string string_modf202825f2C20p29203D202825f2C2025f292C20errno203D2025i0A#
-	mov qword [rbp + 72], {operand2}
+	mov qword [rbp + 72], @9915string_modf202825f2C20p29203D202825f2C2025f292C20errno203D2025i0A#
 
  math_test_1$285:
 	; PushFloat x
@@ -2671,13 +2671,13 @@ section .text
 
  math_test_1$291:
 	; Parameter 104 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 104], {operand2}
+	mov eax, [errno]
+	mov [rbp + 104], eax
 
  math_test_1$292:
 	; Call 48 printf 28
 	mov qword [rbp + 48], math_test_1$293
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	mov rdi, rbp
 	add rdi, 28
@@ -2688,7 +2688,7 @@ section .text
 
  math_test_1$294:
 	; Equal 300 errno integral4$0#
-	cmp dword [errno], {operand2}
+	cmp dword [errno], 0
 	je math_test_1$300
 
  math_test_1$295:
@@ -2696,12 +2696,12 @@ section .text
 
  math_test_1$296:
 	; Parameter 72 string string_Error20message3A#
-	mov qword [rbp + 72], {operand2}
+	mov qword [rbp + 72], @9917string_Error20message3A#
 
  math_test_1$297:
 	; Call 48 perror 0
 	mov qword [rbp + 48], math_test_1$298
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp perror
 
@@ -2710,19 +2710,19 @@ section .text
 
  math_test_1$299:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_1$300:
 	; PreCall 32
 
  math_test_1$301:
 	; Parameter 56 string string_0A#
-	mov qword [rbp + 56], {operand2}
+	mov qword [rbp + 56], @9919string_0A#
 
  math_test_1$302:
 	; Call 32 printf 0
 	mov qword [rbp + 32], math_test_1$303
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	mov rdi, rbp
 	jmp printf
@@ -2732,9 +2732,9 @@ section .text
 
  math_test_1$304:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  math_test_1$305:
@@ -2783,7 +2783,7 @@ section .text
 
  math_test_2$1:
 	; Parameter 64 string string_fmod2825f2C2025f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], @9965string_fmod2825f2C2025f29203D2025f2C20errno203D2025i0A#
 
  math_test_2$2:
 	; PushFloat x
@@ -2823,7 +2823,7 @@ section .text
  math_test_2$11:
 	; Call 88 fmod 0
 	mov qword [rbp + 88], math_test_2$12
-	mov [rbp + 96], {operand2}
+	mov [rbp + 96], rbp
 	add rbp, 88
 	jmp fmod
 
@@ -2839,13 +2839,13 @@ section .text
 
  math_test_2$15:
 	; Parameter 96 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 96], {operand2}
+	mov eax, [errno]
+	mov [rbp + 96], eax
 
  math_test_2$16:
 	; Call 40 printf 28
 	mov qword [rbp + 40], math_test_2$17
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 28
@@ -2856,14 +2856,14 @@ section .text
 
  math_test_2$18:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_2$19:
 	; PreCall 40
 
  math_test_2$20:
 	; Parameter 64 string string_atan22825f2C2025f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], @9967string_atan22825f2C2025f29203D2025f2C20errno203D2025i0A#
 
  math_test_2$21:
 	; PushFloat x
@@ -2903,7 +2903,7 @@ section .text
  math_test_2$30:
 	; Call 88 atan2 0
 	mov qword [rbp + 88], math_test_2$31
-	mov [rbp + 96], {operand2}
+	mov [rbp + 96], rbp
 	add rbp, 88
 	jmp atan2
 
@@ -2919,13 +2919,13 @@ section .text
 
  math_test_2$34:
 	; Parameter 96 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 96], {operand2}
+	mov eax, [errno]
+	mov [rbp + 96], eax
 
  math_test_2$35:
 	; Call 40 printf 28
 	mov qword [rbp + 40], math_test_2$36
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 28
@@ -2936,14 +2936,14 @@ section .text
 
  math_test_2$37:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_2$38:
 	; PreCall 40
 
  math_test_2$39:
 	; Parameter 64 string string_pow2825f2C2025f29203D2025f2C20errno203D2025i0A#
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], @9969string_pow2825f2C2025f29203D2025f2C20errno203D2025i0A#
 
  math_test_2$40:
 	; PushFloat x
@@ -2983,7 +2983,7 @@ section .text
  math_test_2$49:
 	; Call 88 pow 0
 	mov qword [rbp + 88], math_test_2$50
-	mov [rbp + 96], {operand2}
+	mov [rbp + 96], rbp
 	add rbp, 88
 	jmp pow
 
@@ -2999,13 +2999,13 @@ section .text
 
  math_test_2$53:
 	; Parameter 96 signed int errno
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 96], {operand2}
+	mov eax, [errno]
+	mov [rbp + 96], eax
 
  math_test_2$54:
 	; Call 40 printf 28
 	mov qword [rbp + 40], math_test_2$55
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 28
@@ -3016,19 +3016,19 @@ section .text
 
  math_test_2$56:
 	; Assign errno integral4$0#
-	mov dword [errno], {operand2}
+	mov dword [errno], 0
 
  math_test_2$57:
 	; PreCall 40
 
  math_test_2$58:
 	; Parameter 64 string string_0A#
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], @9971string_0A#
 
  math_test_2$59:
 	; Call 40 printf 0
 	mov qword [rbp + 40], math_test_2$60
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	mov rdi, rbp
 	jmp printf
@@ -3041,7 +3041,7 @@ section .text
 
  math_test_2$62:
 	; Parameter 64 string string_ldexp2825f2C2025i29203D2025f0A0A#
-	mov qword [rbp + 64], {operand2}
+	mov qword [rbp + 64], @9972string_ldexp2825f2C2025i29203D2025f0A0A#
 
  math_test_2$63:
 	; PushFloat x
@@ -3058,11 +3058,11 @@ section .text
  math_test_2$66:
 	; FloatingToIntegral £temporary4374 y
 	fistp dword [container4bytes#]
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [container4bytes#]
 
  math_test_2$67:
 	; Parameter 80 signed int £temporary4374
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], eax
 
  math_test_2$68:
 	; PreCall 40
@@ -3082,16 +3082,16 @@ section .text
  math_test_2$72:
 	; FloatingToIntegral £temporary4375 y
 	fistp dword [container4bytes#]
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [container4bytes#]
 
  math_test_2$73:
 	; Parameter 116 signed int £temporary4375
-	mov [rbp + 116], {operand2}
+	mov [rbp + 116], eax
 
  math_test_2$74:
 	; Call 84 ldexp 0
 	mov qword [rbp + 84], math_test_2$75
-	mov [rbp + 92], {operand2}
+	mov [rbp + 92], rbp
 	add rbp, 84
 	jmp ldexp
 
@@ -3108,7 +3108,7 @@ section .text
  math_test_2$78:
 	; Call 40 printf 20
 	mov qword [rbp + 40], math_test_2$79
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 20
@@ -3119,9 +3119,9 @@ section .text
 
  math_test_2$80:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  math_test_2$81:

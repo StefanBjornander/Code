@@ -101,16 +101,16 @@ section .text
 
  limits_test$1:
 	; Parameter 48 string string_CHAR_BIT203D2025i0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8593string_CHAR_BIT203D2025i0A#
 
  limits_test$2:
 	; Parameter 56 signed int integral4$8#
-	mov dword [rbp + 56], {operand2}
+	mov dword [rbp + 56], 8
 
  limits_test$3:
 	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$4
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 4
@@ -124,16 +124,16 @@ section .text
 
  limits_test$6:
 	; Parameter 48 string string_CHAR_MIN203D2025i0A0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8595string_CHAR_MIN203D2025i0A0A#
 
  limits_test$7:
 	; Parameter 56 signed int integral4$minus128#
-	mov dword [rbp + 56], {operand2}
+	mov dword [rbp + 56], -128
 
  limits_test$8:
 	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$9
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 4
@@ -147,16 +147,16 @@ section .text
 
  limits_test$11:
 	; Parameter 48 string string_CHAR_MAX203D2025i0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8598string_CHAR_MAX203D2025i0A#
 
  limits_test$12:
 	; Parameter 56 signed int integral4$127#
-	mov dword [rbp + 56], {operand2}
+	mov dword [rbp + 56], 127
 
  limits_test$13:
 	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$14
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 4
@@ -170,16 +170,16 @@ section .text
 
  limits_test$16:
 	; Parameter 48 string string_UCHAR_MAX203D2025u0A0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8601string_UCHAR_MAX203D2025u0A0A#
 
  limits_test$17:
 	; Parameter 56 unsigned int integral4$255#
-	mov dword [rbp + 56], {operand2}
+	mov dword [rbp + 56], 255
 
  limits_test$18:
 	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$19
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 4
@@ -193,16 +193,16 @@ section .text
 
  limits_test$21:
 	; Parameter 48 string string_SHRT_MIN203D2025i0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8604string_SHRT_MIN203D2025i0A#
 
  limits_test$22:
 	; Parameter 56 signed int integral4$minus32768#
-	mov dword [rbp + 56], {operand2}
+	mov dword [rbp + 56], -32768
 
  limits_test$23:
 	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$24
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 4
@@ -216,16 +216,16 @@ section .text
 
  limits_test$26:
 	; Parameter 48 string string_SHRT_MAX203D2025i0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8607string_SHRT_MAX203D2025i0A#
 
  limits_test$27:
 	; Parameter 56 signed int integral4$32767#
-	mov dword [rbp + 56], {operand2}
+	mov dword [rbp + 56], 32767
 
  limits_test$28:
 	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$29
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 4
@@ -239,16 +239,16 @@ section .text
 
  limits_test$31:
 	; Parameter 48 string string_USHRT_MAX203D2025u0A0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8610string_USHRT_MAX203D2025u0A0A#
 
  limits_test$32:
 	; Parameter 56 unsigned int integral4$65535#
-	mov dword [rbp + 56], {operand2}
+	mov dword [rbp + 56], 65535
 
  limits_test$33:
 	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$34
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 4
@@ -262,16 +262,16 @@ section .text
 
  limits_test$36:
 	; Parameter 48 string string_INT_MIN203D2025i0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8613string_INT_MIN203D2025i0A#
 
  limits_test$37:
 	; Parameter 56 signed int integral4$minus2147483648#
-	mov dword [rbp + 56], {operand2}
+	mov dword [rbp + 56], -2147483648
 
  limits_test$38:
 	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$39
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 4
@@ -285,16 +285,16 @@ section .text
 
  limits_test$41:
 	; Parameter 48 string string_INT_MAX203D2025i0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8615string_INT_MAX203D2025i0A#
 
  limits_test$42:
 	; Parameter 56 signed int integral4$2147483647#
-	mov dword [rbp + 56], {operand2}
+	mov dword [rbp + 56], 2147483647
 
  limits_test$43:
 	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$44
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 4
@@ -308,17 +308,17 @@ section .text
 
  limits_test$46:
 	; Parameter 48 string string_UINT_MAX203D2025u0A0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8617string_UINT_MAX203D2025u0A0A#
 
  limits_test$47:
 	; Parameter 56 unsigned int integral4$4294967295#
 	mov eax, 4294967295
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], eax
 
  limits_test$48:
 	; Call 24 printf 4
 	mov qword [rbp + 24], limits_test$49
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 4
@@ -332,17 +332,17 @@ section .text
 
  limits_test$51:
 	; Parameter 48 string string_LONG_MIN203D2025li0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8619string_LONG_MIN203D2025li0A#
 
  limits_test$52:
 	; Parameter 56 signed long int integral8$minus9223372036854775808#
 	mov rax, -9223372036854775808
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rax
 
  limits_test$53:
 	; Call 24 printf 8
 	mov qword [rbp + 24], limits_test$54
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -356,17 +356,17 @@ section .text
 
  limits_test$56:
 	; Parameter 48 string string_LONG_MAX203D2025li0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8621string_LONG_MAX203D2025li0A#
 
  limits_test$57:
 	; Parameter 56 signed long int integral8$9223372036854775807#
 	mov rax, 9223372036854775807
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rax
 
  limits_test$58:
 	; Call 24 printf 8
 	mov qword [rbp + 24], limits_test$59
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -380,17 +380,17 @@ section .text
 
  limits_test$61:
 	; Parameter 48 string string_ULONG_MAX203D2025lu0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8623string_ULONG_MAX203D2025lu0A#
 
  limits_test$62:
 	; Parameter 56 unsigned long int integral8$18446744073709551615#
 	mov rax, 18446744073709551615
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rax
 
  limits_test$63:
 	; Call 24 printf 8
 	mov qword [rbp + 24], limits_test$64
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -404,17 +404,17 @@ section .text
 
  limits_test$66:
 	; Parameter 48 string string_ULONG_MAX203D2025lx0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8625string_ULONG_MAX203D2025lx0A#
 
  limits_test$67:
 	; Parameter 56 unsigned long int integral8$18446744073709551615#
 	mov rax, 18446744073709551615
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rax
 
  limits_test$68:
 	; Call 24 printf 8
 	mov qword [rbp + 24], limits_test$69
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -428,17 +428,17 @@ section .text
 
  limits_test$71:
 	; Parameter 48 string string_ULONG_MAX203D2025lX0A#
-	mov qword [rbp + 48], {operand2}
+	mov qword [rbp + 48], @8627string_ULONG_MAX203D2025lX0A#
 
  limits_test$72:
 	; Parameter 56 unsigned long int integral8$18446744073709551615#
 	mov rax, 18446744073709551615
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rax
 
  limits_test$73:
 	; Call 24 printf 8
 	mov qword [rbp + 24], limits_test$74
-	mov [rbp + 32], {operand2}
+	mov [rbp + 32], rbp
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -449,9 +449,9 @@ section .text
 
  limits_test$75:
 	; Return
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  limits_test$76:

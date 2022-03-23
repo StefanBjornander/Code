@@ -156,7 +156,7 @@ section .text
  exp$30:
 	; Call 72 fabs 0
 	mov qword [rbp + 72], exp$31
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp fabs
 
@@ -183,9 +183,9 @@ section .text
 
  exp$36:
 	; Return sum
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  exp$37:
@@ -246,7 +246,7 @@ section .text
 
  log$3:
 	; Assign n integral4$0#
-	mov dword [rbp + 32], {operand2}
+	mov dword [rbp + 32], 0
 
  log$4:
 	; PushFloat x
@@ -502,7 +502,7 @@ section .text
  log$64:
 	; Call 84 fabs 0
 	mov qword [rbp + 84], log$65
-	mov [rbp + 92], {operand2}
+	mov [rbp + 92], rbp
 	add rbp, 84
 	jmp fabs
 
@@ -537,14 +537,14 @@ section .text
 
  log$72:
 	; Return £temporary433
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  log$73:
 	; Assign errno EDOM
-	mov dword [errno], {operand2}
+	mov dword [errno], 6
 
  log$74:
 	; PushFloat floating8$0#
@@ -552,9 +552,9 @@ section .text
 
  log$75:
 	; Return floating8$0#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  log$76:
@@ -582,7 +582,7 @@ section .text
  log10$3:
 	; Call 32 log 0
 	mov qword [rbp + 32], log10$4
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp log
 
@@ -602,9 +602,9 @@ section .text
 
  log10$8:
 	; Return £temporary439
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  log10$9:
@@ -661,7 +661,7 @@ section .text
  pow$8:
 	; Call 40 log 0
 	mov qword [rbp + 48], pow$9
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp log
 
@@ -685,7 +685,7 @@ section .text
  pow$13:
 	; Call 40 exp 0
 	mov qword [rbp + 40], pow$14
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp exp
 
@@ -697,9 +697,9 @@ section .text
 
  pow$16:
 	; Return £temporary444
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  pow$17:
@@ -738,9 +738,9 @@ section .text
 
  pow$24:
 	; Return floating8$1#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  pow$25:
@@ -779,9 +779,9 @@ section .text
 
  pow$32:
 	; Return floating8$0#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  pow$33:
@@ -813,7 +813,7 @@ section .text
  pow$39:
 	; Call 40 floor 0
 	mov qword [rbp + 40], pow$40
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp floor
 
@@ -838,7 +838,7 @@ section .text
  pow$45:
 	; Call 40 ceil 0
 	mov qword [rbp + 48], pow$46
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp ceil
 
@@ -865,15 +865,15 @@ section .text
  pow$50:
 	; FloatingToIntegral £temporary456 y
 	fistp qword [container8bytes#]
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [container8bytes#]
 
  pow$51:
 	; Assign long_y £temporary456
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rax
 
  pow$52:
 	; Modulo £temporary457 long_y integral8$2#
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp + 40]
 	xor rdx, rdx
 	idiv qword [@1748integral8$2#]
 
@@ -908,7 +908,7 @@ section .text
  pow$60:
 	; Call 48 log 0
 	mov qword [rbp + 56], pow$61
-	mov [rbp + 64], {operand2}
+	mov [rbp + 64], rbp
 	add rbp, 56
 	jmp log
 
@@ -932,7 +932,7 @@ section .text
  pow$65:
 	; Call 48 exp 0
 	mov qword [rbp + 48], pow$66
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp exp
 
@@ -944,9 +944,9 @@ section .text
 
  pow$68:
 	; Return £temporary462
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  pow$69:
@@ -975,7 +975,7 @@ section .text
  pow$75:
 	; Call 48 log 0
 	mov qword [rbp + 56], pow$76
-	mov [rbp + 64], {operand2}
+	mov [rbp + 64], rbp
 	add rbp, 56
 	jmp log
 
@@ -999,7 +999,7 @@ section .text
  pow$80:
 	; Call 48 exp 0
 	mov qword [rbp + 48], pow$81
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp exp
 
@@ -1015,14 +1015,14 @@ section .text
 
  pow$84:
 	; Return £temporary467
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  pow$85:
 	; Assign errno EDOM
-	mov dword [errno], {operand2}
+	mov dword [errno], 6
 
  pow$86:
 	; PushFloat floating8$0#
@@ -1030,9 +1030,9 @@ section .text
 
  pow$87:
 	; Return floating8$0#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  pow$88:
@@ -1073,7 +1073,7 @@ section .text
  ldexp$6:
 	; Call 36 pow 0
 	mov qword [rbp + 44], ldexp$7
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rbp
 	add rbp, 44
 	jmp pow
 
@@ -1092,9 +1092,9 @@ section .text
 
  ldexp$10:
 	; Return £temporary488
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  ldexp$11:
@@ -1128,7 +1128,7 @@ section .text
  @1758$log2$3:
 	; Call 32 log 0
 	mov qword [rbp + 32], @1758$log2$4
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp log
 
@@ -1149,13 +1149,13 @@ section .text
  @1758$log2$8:
 	; FloatingToIntegral £temporary493 £temporary492
 	fistp dword [container4bytes#]
-	mov ebx, [{operand1}{WithSign(operand2)}]
+	mov ebx, [container4bytes#]
 
  @1758$log2$9:
 	; Return £temporary493
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  @1758$log2$10:
@@ -1207,7 +1207,7 @@ section .text
  frexp$7:
 	; Call 40 fabs 0
 	mov qword [rbp + 40], frexp$8
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp fabs
 
@@ -1224,7 +1224,7 @@ section .text
  frexp$11:
 	; Call 40 log2 0
 	mov qword [rbp + 40], frexp$12
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp @1758$log2
 
@@ -1239,7 +1239,7 @@ section .text
 
  frexp$15:
 	; Assign exponent £temporary498
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], ebx
 
  frexp$16:
 	; PreCall 44
@@ -1263,7 +1263,7 @@ section .text
  frexp$21:
 	; Call 44 pow 0
 	mov qword [rbp + 44], frexp$22
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rbp
 	add rbp, 44
 	jmp pow
 
@@ -1290,17 +1290,17 @@ section .text
 
  frexp$27:
 	; Equal 30 p integral8$0#
-	cmp qword [rbp + 32], {operand2}
+	cmp qword [rbp + 32], 0
 	je frexp$30
 
  frexp$28:
 	; Dereference £temporary506 p 0
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 32]
 
  frexp$29:
 	; Assign £temporary506 exponent
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rsi], {operand2}
+	mov eax, [rbp + 40]
+	mov [rsi], eax
 
  frexp$30:
 	; PushFloat x
@@ -1329,7 +1329,7 @@ section .text
  frexp$36:
 	; Call 44 pow 0
 	mov qword [rbp + 52], frexp$37
-	mov [rbp + 60], {operand2}
+	mov [rbp + 60], rbp
 	add rbp, 52
 	jmp pow
 
@@ -1348,23 +1348,23 @@ section .text
 
  frexp$40:
 	; Return £temporary511
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  frexp$41:
 	; Equal 44 p integral8$0#
-	cmp qword [rbp + 32], {operand2}
+	cmp qword [rbp + 32], 0
 	je frexp$44
 
  frexp$42:
 	; Dereference £temporary513 p 0
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 32]
 
  frexp$43:
 	; Assign £temporary513 integral4$0#
-	mov dword [rsi], {operand2}
+	mov dword [rsi], 0
 
  frexp$44:
 	; PushFloat floating8$0#
@@ -1372,9 +1372,9 @@ section .text
 
  frexp$45:
 	; Return floating8$0#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  frexp$46:
@@ -1475,7 +1475,7 @@ section .text
  sqrt$19:
 	; Call 48 fabs 0
 	mov qword [rbp + 48], sqrt$20
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp fabs
 
@@ -1502,14 +1502,14 @@ section .text
 
  sqrt$25:
 	; Return root_i_plus_1
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  sqrt$26:
 	; Assign errno EDOM
-	mov dword [errno], {operand2}
+	mov dword [errno], 6
 
  sqrt$27:
 	; PushFloat floating8$0#
@@ -1517,9 +1517,9 @@ section .text
 
  sqrt$28:
 	; Return floating8$0#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  sqrt$29:
@@ -1541,7 +1541,7 @@ section .text
  modf$3:
 	; Call 40 fabs 0
 	mov qword [rbp + 40], modf$4
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp fabs
 
@@ -1558,11 +1558,11 @@ section .text
  modf$7:
 	; FloatingToIntegral £temporary535 abs_x
 	fistp qword [container8bytes#]
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [container8bytes#]
 
  modf$8:
 	; IntegralToFloating £temporary536 £temporary535
-	mov [container8bytes#], {operand2}
+	mov [container8bytes#], rax
 	fild qword [container8bytes#]
 
  modf$9:
@@ -1587,12 +1587,12 @@ section .text
 
  modf$14:
 	; Equal 25 p integral8$0#
-	cmp qword [rbp + 32], {operand2}
+	cmp qword [rbp + 32], 0
 	je modf$25
 
  modf$15:
 	; Dereference £temporary539 p 0
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 32]
 
  modf$16:
 	; PushFloat x
@@ -1668,9 +1668,9 @@ section .text
 
  modf$33:
 	; Return £temporary547
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  modf$34:
@@ -1719,11 +1719,11 @@ section .text
  fmod$9:
 	; FloatingToIntegral £temporary551 £temporary550
 	fistp dword [container4bytes#]
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [container4bytes#]
 
  fmod$10:
 	; IntegralToFloating £temporary553 £temporary551
-	mov [container4bytes#], {operand2}
+	mov [container4bytes#], eax
 	fild dword [container4bytes#]
 
  fmod$11:
@@ -1741,7 +1741,7 @@ section .text
  fmod$14:
 	; Call 40 fabs 0
 	mov qword [rbp + 40], fmod$15
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp fabs
 
@@ -1791,14 +1791,14 @@ section .text
 
  fmod$26:
 	; Return £temporary558
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  fmod$27:
 	; Assign errno EDOM
-	mov dword [errno], {operand2}
+	mov dword [errno], 6
 
  fmod$28:
 	; PushFloat floating8$0#
@@ -1806,9 +1806,9 @@ section .text
 
  fmod$29:
 	; Return floating8$0#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  fmod$30:
@@ -1854,7 +1854,7 @@ section .text
  sin$3:
 	; Call 32 fabs 0
 	mov qword [rbp + 32], sin$4
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp fabs
 
@@ -1897,7 +1897,7 @@ section .text
  sin$13:
 	; Call 32 fmod 0
 	mov qword [rbp + 32], sin$14
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp fmod
 
@@ -2093,7 +2093,7 @@ section .text
  sin$62:
 	; Call 80 fabs 0
 	mov qword [rbp + 80], sin$63
-	mov [rbp + 88], {operand2}
+	mov [rbp + 88], rbp
 	add rbp, 80
 	jmp fabs
 
@@ -2120,9 +2120,9 @@ section .text
 
  sin$68:
 	; Return sum
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  sin$69:
@@ -2168,7 +2168,7 @@ section .text
  cos$3:
 	; Call 32 fabs 0
 	mov qword [rbp + 32], cos$4
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp fabs
 
@@ -2211,7 +2211,7 @@ section .text
  cos$13:
 	; Call 32 fmod 0
 	mov qword [rbp + 32], cos$14
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp fmod
 
@@ -2407,7 +2407,7 @@ section .text
  cos$62:
 	; Call 80 fabs 0
 	mov qword [rbp + 80], cos$63
-	mov [rbp + 88], {operand2}
+	mov [rbp + 88], rbp
 	add rbp, 80
 	jmp fabs
 
@@ -2434,9 +2434,9 @@ section .text
 
  cos$68:
 	; Return sum
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  cos$69:
@@ -2458,7 +2458,7 @@ section .text
  tan$3:
 	; Call 32 cos 0
 	mov qword [rbp + 32], tan$4
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp cos
 
@@ -2497,7 +2497,7 @@ section .text
  tan$12:
 	; Call 40 sin 0
 	mov qword [rbp + 40], tan$13
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp sin
 
@@ -2517,14 +2517,14 @@ section .text
 
  tan$17:
 	; Return £temporary611
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  tan$18:
 	; Assign errno EDOM
-	mov dword [errno], {operand2}
+	mov dword [errno], 6
 
  tan$19:
 	; PushFloat floating8$0#
@@ -2532,9 +2532,9 @@ section .text
 
  tan$20:
 	; Return floating8$0#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  tan$21:
@@ -2569,9 +2569,9 @@ section .text
 
  asin$4:
 	; Return floating8$1.57#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  asin$5:
@@ -2607,7 +2607,7 @@ section .text
  asin$12:
 	; Call 32 asin 0
 	mov qword [rbp + 32], asin$13
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp asin
 
@@ -2623,9 +2623,9 @@ section .text
 
  asin$16:
 	; Return £temporary620
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  asin$17:
@@ -2681,7 +2681,7 @@ section .text
  asin$29:
 	; Call 32 sqrt 0
 	mov qword [rbp + 40], asin$30
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp sqrt
 
@@ -2705,7 +2705,7 @@ section .text
  asin$34:
 	; Call 32 atan 0
 	mov qword [rbp + 32], asin$35
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp atan
 
@@ -2717,14 +2717,14 @@ section .text
 
  asin$37:
 	; Return £temporary626
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  asin$38:
 	; Assign errno EDOM
-	mov dword [errno], {operand2}
+	mov dword [errno], 6
 
  asin$39:
 	; PushFloat floating8$0#
@@ -2732,9 +2732,9 @@ section .text
 
  asin$40:
 	; Return floating8$0#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  asin$41:
@@ -2775,9 +2775,9 @@ section .text
 
  acos$4:
 	; Return floating8$1.57#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  acos$5:
@@ -2818,7 +2818,7 @@ section .text
  acos$13:
 	; Call 32 acos 0
 	mov qword [rbp + 40], acos$14
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp acos
 
@@ -2837,9 +2837,9 @@ section .text
 
  acos$17:
 	; Return £temporary640
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  acos$18:
@@ -2890,7 +2890,7 @@ section .text
  acos$29:
 	; Call 32 sqrt 0
 	mov qword [rbp + 32], acos$30
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp sqrt
 
@@ -2915,7 +2915,7 @@ section .text
  acos$35:
 	; Call 32 atan 0
 	mov qword [rbp + 32], acos$36
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp atan
 
@@ -2927,14 +2927,14 @@ section .text
 
  acos$38:
 	; Return £temporary646
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  acos$39:
 	; Assign errno EDOM
-	mov dword [errno], {operand2}
+	mov dword [errno], 6
 
  acos$40:
 	; PushFloat floating8$0#
@@ -2942,9 +2942,9 @@ section .text
 
  acos$41:
 	; Return floating8$0#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  acos$42:
@@ -3015,7 +3015,7 @@ section .text
  atan$7:
 	; Call 32 atan 0
 	mov qword [rbp + 32], atan$8
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp atan
 
@@ -3031,9 +3031,9 @@ section .text
 
  atan$11:
 	; Return £temporary659
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  atan$12:
@@ -3078,7 +3078,7 @@ section .text
  atan$21:
 	; Call 32 atan 0
 	mov qword [rbp + 40], atan$22
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp atan
 
@@ -3097,9 +3097,9 @@ section .text
 
  atan$25:
 	; Return £temporary663
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  atan$26:
@@ -3165,7 +3165,7 @@ section .text
  atan$40:
 	; Call 32 sqrt 0
 	mov qword [rbp + 64], atan$41
-	mov [rbp + 72], {operand2}
+	mov [rbp + 72], rbp
 	add rbp, 64
 	jmp sqrt
 
@@ -3194,7 +3194,7 @@ section .text
  atan$46:
 	; Call 32 atan 0
 	mov qword [rbp + 40], atan$47
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp atan
 
@@ -3213,9 +3213,9 @@ section .text
 
  atan$50:
 	; Return £temporary671
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  atan$51:
@@ -3356,7 +3356,7 @@ section .text
  atan$85:
 	; Call 72 fabs 0
 	mov qword [rbp + 72], atan$86
-	mov [rbp + 80], {operand2}
+	mov [rbp + 80], rbp
 	add rbp, 72
 	jmp fabs
 
@@ -3383,9 +3383,9 @@ section .text
 
  atan$91:
 	; Return sum
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  atan$92:
@@ -3454,7 +3454,7 @@ section .text
  atan2$8:
 	; Call 40 atan 0
 	mov qword [rbp + 40], atan2$9
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp atan
 
@@ -3466,9 +3466,9 @@ section .text
 
  atan2$11:
 	; Return £temporary694
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  atan2$12:
@@ -3528,7 +3528,7 @@ section .text
  atan2$24:
 	; Call 40 atan 0
 	mov qword [rbp + 48], atan2$25
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp atan
 
@@ -3547,9 +3547,9 @@ section .text
 
  atan2$28:
 	; Return £temporary700
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  atan2$29:
@@ -3609,7 +3609,7 @@ section .text
  atan2$41:
 	; Call 40 atan 0
 	mov qword [rbp + 48], atan2$42
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp atan
 
@@ -3628,9 +3628,9 @@ section .text
 
  atan2$45:
 	; Return £temporary706
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  atan2$46:
@@ -3669,9 +3669,9 @@ section .text
 
  atan2$53:
 	; Return floating8$1.57#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  atan2$54:
@@ -3710,14 +3710,14 @@ section .text
 
  atan2$61:
 	; Return floating8$minus1.57#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  atan2$62:
 	; Assign errno EDOM
-	mov dword [errno], {operand2}
+	mov dword [errno], 6
 
  atan2$63:
 	; PushFloat floating8$0#
@@ -3725,9 +3725,9 @@ section .text
 
  atan2$64:
 	; Return floating8$0#
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  atan2$65:
@@ -3755,7 +3755,7 @@ section .text
  sinh$3:
 	; Call 32 exp 0
 	mov qword [rbp + 32], sinh$4
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp exp
 
@@ -3784,7 +3784,7 @@ section .text
  sinh$10:
 	; Call 32 exp 0
 	mov qword [rbp + 40], sinh$11
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp exp
 
@@ -3811,9 +3811,9 @@ section .text
 
  sinh$16:
 	; Return £temporary730
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  sinh$17:
@@ -3841,7 +3841,7 @@ section .text
  cosh$3:
 	; Call 32 exp 0
 	mov qword [rbp + 32], cosh$4
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp exp
 
@@ -3870,7 +3870,7 @@ section .text
  cosh$10:
 	; Call 32 exp 0
 	mov qword [rbp + 40], cosh$11
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp exp
 
@@ -3897,9 +3897,9 @@ section .text
 
  cosh$16:
 	; Return £temporary737
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  cosh$17:
@@ -3921,7 +3921,7 @@ section .text
  tanh$3:
 	; Call 32 sinh 0
 	mov qword [rbp + 32], tanh$4
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp sinh
 
@@ -3946,7 +3946,7 @@ section .text
  tanh$9:
 	; Call 32 cosh 0
 	mov qword [rbp + 40], tanh$10
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], rbp
 	add rbp, 40
 	jmp cosh
 
@@ -3965,9 +3965,9 @@ section .text
 
  tanh$13:
 	; Return £temporary742
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  tanh$14:
@@ -4008,7 +4008,7 @@ section .text
  floor$7:
 	; Call 32 ceil 0
 	mov qword [rbp + 32], floor$8
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp ceil
 
@@ -4024,9 +4024,9 @@ section .text
 
  floor$11:
 	; Return £temporary748
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  floor$12:
@@ -4036,18 +4036,18 @@ section .text
  floor$13:
 	; FloatingToIntegral £temporary751 x
 	fistp qword [container8bytes#]
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [container8bytes#]
 
  floor$14:
 	; IntegralToFloating £temporary752 £temporary751
-	mov [container8bytes#], {operand2}
+	mov [container8bytes#], rax
 	fild qword [container8bytes#]
 
  floor$15:
 	; Return £temporary752
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  floor$16:
@@ -4094,7 +4094,7 @@ section .text
  ceil$7:
 	; Call 32 floor 0
 	mov qword [rbp + 32], ceil$8
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rbp
 	add rbp, 32
 	jmp floor
 
@@ -4110,9 +4110,9 @@ section .text
 
  ceil$11:
 	; Return £temporary757
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  ceil$12:
@@ -4130,18 +4130,18 @@ section .text
  ceil$15:
 	; FloatingToIntegral £temporary761 £temporary760
 	fistp qword [container8bytes#]
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [container8bytes#]
 
  ceil$16:
 	; IntegralToFloating £temporary762 £temporary761
-	mov [container8bytes#], {operand2}
+	mov [container8bytes#], rax
 	fild qword [container8bytes#]
 
  ceil$17:
 	; Return £temporary762
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  ceil$18:
@@ -4210,18 +4210,18 @@ section .text
  round$11:
 	; FloatingToIntegral £temporary768 £temporary767
 	fistp qword [container8bytes#]
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [container8bytes#]
 
  round$12:
 	; IntegralToFloating £temporary769 £temporary768
-	mov [container8bytes#], {operand2}
+	mov [container8bytes#], rax
 	fild qword [container8bytes#]
 
  round$13:
 	; Return £temporary769
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  round$14:
@@ -4265,9 +4265,9 @@ section .text
 
  fabs$8:
 	; Return £temporary772
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  fabs$9:

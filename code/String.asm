@@ -27,17 +27,17 @@ section .text
 
  strcpy:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], {operand2}
+	mov dword [rbp + 40], 0
 
  strcpy$1:
 	; IntegralToIntegral £temporary3434 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcpy$2:
 	; Add £temporary3435 source £temporary3434
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strcpy$3:
@@ -45,18 +45,18 @@ section .text
 
  strcpy$4:
 	; Equal 14 £temporary3436 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strcpy$14
 
  strcpy$5:
 	; IntegralToIntegral £temporary3440 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcpy$6:
 	; Add £temporary3441 target £temporary3440
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcpy$7:
@@ -64,13 +64,13 @@ section .text
 
  strcpy$8:
 	; IntegralToIntegral £temporary3444 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcpy$9:
 	; Add £temporary3445 source £temporary3444
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strcpy$10:
@@ -78,8 +78,8 @@ section .text
 
  strcpy$11:
 	; Assign £temporary3442 £temporary3446
-	mov al, [{operand1}{WithSign(operand2)}]
-	mov [rsi], {operand2}
+	mov al, [rdi]
+	mov [rsi], al
 
  strcpy$12:
 	; Add index index integral4$1#
@@ -91,13 +91,13 @@ section .text
 
  strcpy$14:
 	; IntegralToIntegral £temporary3448 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcpy$15:
 	; Add £temporary3449 target £temporary3448
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcpy$16:
@@ -105,14 +105,14 @@ section .text
 
  strcpy$17:
 	; Assign £temporary3450 integral1$0#
-	mov byte [rsi], {operand2}
+	mov byte [rsi], 0
 
  strcpy$18:
 	; Return target
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strcpy$19:
@@ -122,23 +122,23 @@ section .text
 
  strncpy:
 	; Assign index integral4$0#
-	mov dword [rbp + 44], {operand2}
+	mov dword [rbp + 44], 0
 
  strncpy$1:
 	; GreaterThanEqual 15 index size
-	mov eax, [{operand1}{WithSign(operand2)}]
-	cmp [rbp + 44], {operand2}
+	mov eax, [rbp + 40]
+	cmp [rbp + 44], eax
 	jge strncpy$15
 
  strncpy$2:
 	; IntegralToIntegral £temporary3453 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncpy$3:
 	; Add £temporary3454 source £temporary3453
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strncpy$4:
@@ -146,18 +146,18 @@ section .text
 
  strncpy$5:
 	; Equal 15 £temporary3455 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strncpy$15
 
  strncpy$6:
 	; IntegralToIntegral £temporary3460 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncpy$7:
 	; Add £temporary3461 target £temporary3460
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncpy$8:
@@ -165,13 +165,13 @@ section .text
 
  strncpy$9:
 	; IntegralToIntegral £temporary3464 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncpy$10:
 	; Add £temporary3465 source £temporary3464
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strncpy$11:
@@ -179,8 +179,8 @@ section .text
 
  strncpy$12:
 	; Assign £temporary3462 £temporary3466
-	mov al, [{operand1}{WithSign(operand2)}]
-	mov [rsi], {operand2}
+	mov al, [rdi]
+	mov [rsi], al
 
  strncpy$13:
 	; Add index index integral4$1#
@@ -192,19 +192,19 @@ section .text
 
  strncpy$15:
 	; GreaterThanEqual 22 index size
-	mov eax, [{operand1}{WithSign(operand2)}]
-	cmp [rbp + 44], {operand2}
+	mov eax, [rbp + 40]
+	cmp [rbp + 44], eax
 	jge strncpy$22
 
  strncpy$16:
 	; IntegralToIntegral £temporary3470 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncpy$17:
 	; Add £temporary3471 target £temporary3470
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncpy$18:
@@ -212,7 +212,7 @@ section .text
 
  strncpy$19:
 	; Assign £temporary3472 integral1$0#
-	mov byte [rsi], {operand2}
+	mov byte [rsi], 0
 
  strncpy$20:
 	; Add index index integral4$1#
@@ -224,10 +224,10 @@ section .text
 
  strncpy$22:
 	; Return target
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strncpy$23:
@@ -240,13 +240,13 @@ section .text
 
  strcat$1:
 	; Parameter 68 pointer target
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 68], {operand2}
+	mov rax, [rbp + 24]
+	mov [rbp + 68], rax
 
  strcat$2:
 	; Call 44 strlen 0
 	mov qword [rbp + 44], strcat$3
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rbp
 	add rbp, 44
 	jmp strlen
 
@@ -258,21 +258,21 @@ section .text
 
  strcat$5:
 	; Assign targetLength £temporary3473
-	mov [rbp + 44], {operand2}
+	mov [rbp + 44], ebx
 
  strcat$6:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], {operand2}
+	mov dword [rbp + 40], 0
 
  strcat$7:
 	; IntegralToIntegral £temporary3475 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcat$8:
 	; Add £temporary3476 source £temporary3475
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strcat$9:
@@ -280,13 +280,13 @@ section .text
 
  strcat$10:
 	; Equal 21 £temporary3477 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strcat$21
 
  strcat$11:
 	; Add £temporary3481 targetLength index
-	mov eax, [{operand1}{WithSign(operand2)}]
-	add eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
+	add eax, [rbp + 40]
 
  strcat$12:
 	; IntegralToIntegral £temporary3482 £temporary3481
@@ -295,7 +295,7 @@ section .text
 
  strcat$13:
 	; Add £temporary3483 target £temporary3482
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcat$14:
@@ -303,13 +303,13 @@ section .text
 
  strcat$15:
 	; IntegralToIntegral £temporary3486 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcat$16:
 	; Add £temporary3487 source £temporary3486
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strcat$17:
@@ -317,8 +317,8 @@ section .text
 
  strcat$18:
 	; Assign £temporary3484 £temporary3488
-	mov al, [{operand1}{WithSign(operand2)}]
-	mov [rsi], {operand2}
+	mov al, [rdi]
+	mov [rsi], al
 
  strcat$19:
 	; Add index index integral4$1#
@@ -330,8 +330,8 @@ section .text
 
  strcat$21:
 	; Add £temporary3490 targetLength index
-	mov eax, [{operand1}{WithSign(operand2)}]
-	add eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
+	add eax, [rbp + 40]
 
  strcat$22:
 	; IntegralToIntegral £temporary3491 £temporary3490
@@ -340,7 +340,7 @@ section .text
 
  strcat$23:
 	; Add £temporary3492 target £temporary3491
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcat$24:
@@ -348,14 +348,14 @@ section .text
 
  strcat$25:
 	; Assign £temporary3493 integral1$0#
-	mov byte [rsi], {operand2}
+	mov byte [rsi], 0
 
  strcat$26:
 	; Return target
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strcat$27:
@@ -368,13 +368,13 @@ section .text
 
  strncat$1:
 	; Parameter 72 pointer target
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 72], {operand2}
+	mov rax, [rbp + 24]
+	mov [rbp + 72], rax
 
  strncat$2:
 	; Call 48 strlen 0
 	mov qword [rbp + 48], strncat$3
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp strlen
 
@@ -386,31 +386,31 @@ section .text
 
  strncat$5:
 	; Assign targetLength £temporary3494
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], ebx
 
  strncat$6:
 	; Assign index integral4$0#
-	mov dword [rbp + 44], {operand2}
+	mov dword [rbp + 44], 0
 
  strncat$7:
 	; Subtract £temporary3495 size integral4$1#
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	dec eax
 
  strncat$8:
 	; GreaterThanEqual 23 index £temporary3495
-	cmp [rbp + 44], {operand2}
+	cmp [rbp + 44], eax
 	jge strncat$23
 
  strncat$9:
 	; IntegralToIntegral £temporary3498 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncat$10:
 	; Add £temporary3499 source £temporary3498
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strncat$11:
@@ -418,13 +418,13 @@ section .text
 
  strncat$12:
 	; Equal 23 £temporary3500 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strncat$23
 
  strncat$13:
 	; Add £temporary3505 targetLength index
-	mov eax, [{operand1}{WithSign(operand2)}]
-	add eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 48]
+	add eax, [rbp + 44]
 
  strncat$14:
 	; IntegralToIntegral £temporary3506 £temporary3505
@@ -433,7 +433,7 @@ section .text
 
  strncat$15:
 	; Add £temporary3507 target £temporary3506
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncat$16:
@@ -441,13 +441,13 @@ section .text
 
  strncat$17:
 	; IntegralToIntegral £temporary3510 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncat$18:
 	; Add £temporary3511 source £temporary3510
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strncat$19:
@@ -455,8 +455,8 @@ section .text
 
  strncat$20:
 	; Assign £temporary3508 £temporary3512
-	mov al, [{operand1}{WithSign(operand2)}]
-	mov [rsi], {operand2}
+	mov al, [rdi]
+	mov [rsi], al
 
  strncat$21:
 	; Add index index integral4$1#
@@ -468,8 +468,8 @@ section .text
 
  strncat$23:
 	; Add £temporary3513 targetLength size
-	mov eax, [{operand1}{WithSign(operand2)}]
-	add eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 48]
+	add eax, [rbp + 40]
 
  strncat$24:
 	; Subtract £temporary3515 £temporary3513 integral4$1#
@@ -482,7 +482,7 @@ section .text
 
  strncat$26:
 	; Add £temporary3517 target £temporary3516
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncat$27:
@@ -490,14 +490,14 @@ section .text
 
  strncat$28:
 	; Assign £temporary3518 integral1$0#
-	mov byte [rsi], {operand2}
+	mov byte [rsi], 0
 
  strncat$29:
 	; Return target
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strncat$30:
@@ -507,17 +507,17 @@ section .text
 
  strcmp:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], {operand2}
+	mov dword [rbp + 40], 0
 
  strcmp$1:
 	; IntegralToIntegral £temporary3521 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$2:
 	; Add £temporary3522 left £temporary3521
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcmp$3:
@@ -525,18 +525,18 @@ section .text
 
  strcmp$4:
 	; NotEqual 10 £temporary3523 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	jne strcmp$10
 
  strcmp$5:
 	; IntegralToIntegral £temporary3526 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$6:
 	; Add £temporary3527 right £temporary3526
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strcmp$7:
@@ -544,26 +544,26 @@ section .text
 
  strcmp$8:
 	; NotEqual 10 £temporary3528 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	jne strcmp$10
 
  strcmp$9:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strcmp$10:
 	; IntegralToIntegral £temporary3532 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$11:
 	; Add £temporary3533 left £temporary3532
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcmp$12:
@@ -571,13 +571,13 @@ section .text
 
  strcmp$13:
 	; IntegralToIntegral £temporary3536 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$14:
 	; Add £temporary3537 right £temporary3536
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strcmp$15:
@@ -585,27 +585,27 @@ section .text
 
  strcmp$16:
 	; GreaterThanEqual 18 £temporary3534 £temporary3538
-	mov al, [{operand1}{WithSign(operand2)}]
-	cmp [rsi], {operand2}
+	mov al, [rdi]
+	cmp [rsi], al
 	jge strcmp$18
 
  strcmp$17:
 	; Return integral4$minus1#
 	mov ebx, -1
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strcmp$18:
 	; IntegralToIntegral £temporary3541 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$19:
 	; Add £temporary3542 left £temporary3541
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcmp$20:
@@ -613,13 +613,13 @@ section .text
 
  strcmp$21:
 	; IntegralToIntegral £temporary3545 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcmp$22:
 	; Add £temporary3546 right £temporary3545
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strcmp$23:
@@ -627,16 +627,16 @@ section .text
 
  strcmp$24:
 	; LessThanEqual 26 £temporary3543 £temporary3547
-	mov al, [{operand1}{WithSign(operand2)}]
-	cmp [rsi], {operand2}
+	mov al, [rdi]
+	cmp [rsi], al
 	jle strcmp$26
 
  strcmp$25:
 	; Return integral4$1#
 	mov ebx, 1
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strcmp$26:
@@ -654,23 +654,23 @@ section .text
 
  strncmp:
 	; Assign index integral4$0#
-	mov dword [rbp + 44], {operand2}
+	mov dword [rbp + 44], 0
 
  strncmp$1:
 	; GreaterThanEqual 29 index size
-	mov eax, [{operand1}{WithSign(operand2)}]
-	cmp [rbp + 44], {operand2}
+	mov eax, [rbp + 40]
+	cmp [rbp + 44], eax
 	jge strncmp$29
 
  strncmp$2:
 	; IntegralToIntegral £temporary3559 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$3:
 	; Add £temporary3560 left £temporary3559
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncmp$4:
@@ -678,18 +678,18 @@ section .text
 
  strncmp$5:
 	; NotEqual 11 £temporary3561 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	jne strncmp$11
 
  strncmp$6:
 	; IntegralToIntegral £temporary3564 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$7:
 	; Add £temporary3565 right £temporary3564
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 32]
 	add rsi, rax
 
  strncmp$8:
@@ -697,26 +697,26 @@ section .text
 
  strncmp$9:
 	; NotEqual 11 £temporary3566 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	jne strncmp$11
 
  strncmp$10:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strncmp$11:
 	; IntegralToIntegral £temporary3570 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$12:
 	; Add £temporary3571 left £temporary3570
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncmp$13:
@@ -724,13 +724,13 @@ section .text
 
  strncmp$14:
 	; IntegralToIntegral £temporary3574 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$15:
 	; Add £temporary3575 right £temporary3574
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strncmp$16:
@@ -738,27 +738,27 @@ section .text
 
  strncmp$17:
 	; GreaterThanEqual 19 £temporary3572 £temporary3576
-	mov al, [{operand1}{WithSign(operand2)}]
-	cmp [rsi], {operand2}
+	mov al, [rdi]
+	cmp [rsi], al
 	jge strncmp$19
 
  strncmp$18:
 	; Return integral4$minus1#
 	mov ebx, -1
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strncmp$19:
 	; IntegralToIntegral £temporary3579 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$20:
 	; Add £temporary3580 left £temporary3579
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strncmp$21:
@@ -766,13 +766,13 @@ section .text
 
  strncmp$22:
 	; IntegralToIntegral £temporary3583 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 44]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strncmp$23:
 	; Add £temporary3584 right £temporary3583
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 32]
 	add rdi, rax
 
  strncmp$24:
@@ -780,16 +780,16 @@ section .text
 
  strncmp$25:
 	; LessThanEqual 27 £temporary3581 £temporary3585
-	mov al, [{operand1}{WithSign(operand2)}]
-	cmp [rsi], {operand2}
+	mov al, [rdi]
+	cmp [rsi], al
 	jle strncmp$27
 
  strncmp$26:
 	; Return integral4$1#
 	mov ebx, 1
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strncmp$27:
@@ -803,9 +803,9 @@ section .text
  strncmp$29:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strncmp$30:
@@ -815,7 +815,7 @@ section .text
 
  strchr:
 	; IntegralToIntegral £temporary3593 i
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 32]
 	cmp eax, 0
 	jge strchr$1
 	neg eax
@@ -823,21 +823,21 @@ section .text
 
  strchr$1:
 	; Assign c £temporary3593
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], al
 
  strchr$2:
 	; Assign index integral4$0#
-	mov dword [rbp + 36], {operand2}
+	mov dword [rbp + 36], 0
 
  strchr$3:
 	; IntegralToIntegral £temporary3595 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strchr$4:
 	; Add £temporary3596 text £temporary3595
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strchr$5:
@@ -845,18 +845,18 @@ section .text
 
  strchr$6:
 	; Equal 18 £temporary3597 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strchr$18
 
  strchr$7:
 	; IntegralToIntegral £temporary3601 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strchr$8:
 	; Add £temporary3602 text £temporary3601
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strchr$9:
@@ -864,19 +864,19 @@ section .text
 
  strchr$10:
 	; NotEqual 16 £temporary3603 c
-	mov al, [{operand1}{WithSign(operand2)}]
-	cmp [rsi], {operand2}
+	mov al, [rbp + 40]
+	cmp [rsi], al
 	jne strchr$16
 
  strchr$11:
 	; IntegralToIntegral £temporary3606 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strchr$12:
 	; Add £temporary3607 text £temporary3606
-	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
 	add rbx, rax
 
  strchr$13:
@@ -887,9 +887,9 @@ section .text
 
  strchr$15:
 	; Return £temporary3609
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strchr$16:
@@ -903,9 +903,9 @@ section .text
  strchr$18:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strchr$19:
@@ -915,11 +915,11 @@ section .text
 
  strrchr:
 	; Assign result integral8$0#
-	mov qword [rbp + 40], {operand2}
+	mov qword [rbp + 40], 0
 
  strrchr$1:
 	; IntegralToIntegral £temporary3612 i
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 32]
 	cmp eax, 0
 	jge strrchr$2
 	neg eax
@@ -927,21 +927,21 @@ section .text
 
  strrchr$2:
 	; Assign c £temporary3612
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], al
 
  strrchr$3:
 	; Assign index integral4$0#
-	mov dword [rbp + 36], {operand2}
+	mov dword [rbp + 36], 0
 
  strrchr$4:
 	; IntegralToIntegral £temporary3614 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strrchr$5:
 	; Add £temporary3615 text £temporary3614
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strrchr$6:
@@ -949,18 +949,18 @@ section .text
 
  strrchr$7:
 	; Equal 19 £temporary3616 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strrchr$19
 
  strrchr$8:
 	; IntegralToIntegral £temporary3620 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strrchr$9:
 	; Add £temporary3621 text £temporary3620
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strrchr$10:
@@ -968,19 +968,19 @@ section .text
 
  strrchr$11:
 	; NotEqual 17 £temporary3622 c
-	mov al, [{operand1}{WithSign(operand2)}]
-	cmp [rsi], {operand2}
+	mov al, [rbp + 48]
+	cmp [rsi], al
 	jne strrchr$17
 
  strrchr$12:
 	; IntegralToIntegral £temporary3625 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 36]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strrchr$13:
 	; Add £temporary3626 text £temporary3625
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strrchr$14:
@@ -991,7 +991,7 @@ section .text
 
  strrchr$16:
 	; Assign result £temporary3628
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rsi
 
  strrchr$17:
 	; Add index index integral4$1#
@@ -1003,10 +1003,10 @@ section .text
 
  strrchr$19:
 	; Return result
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 40]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strrchr$20:
@@ -1016,17 +1016,17 @@ section .text
 
  strspn:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], {operand2}
+	mov dword [rbp + 40], 0
 
  strspn$1:
 	; IntegralToIntegral £temporary3632 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strspn$2:
 	; Add £temporary3633 mainString £temporary3632
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strspn$3:
@@ -1034,7 +1034,7 @@ section .text
 
  strspn$4:
 	; Equal 19 £temporary3634 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strspn$19
 
  strspn$5:
@@ -1042,18 +1042,18 @@ section .text
 
  strspn$6:
 	; Parameter 68 pointer charSet
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 68], {operand2}
+	mov rax, [rbp + 32]
+	mov [rbp + 68], rax
 
  strspn$7:
 	; IntegralToIntegral £temporary3638 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strspn$8:
 	; Add £temporary3639 mainString £temporary3638
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strspn$9:
@@ -1061,7 +1061,7 @@ section .text
 
  strspn$10:
 	; IntegralToIntegral £temporary3641 £temporary3640
-	mov al, [{operand1}{WithSign(operand2)}]
+	mov al, [rsi]
 	and eax, 255
 	cmp al, 0
 	jge strspn$11
@@ -1070,12 +1070,12 @@ section .text
 
  strspn$11:
 	; Parameter 76 signed int £temporary3641
-	mov [rbp + 76], {operand2}
+	mov [rbp + 76], eax
 
  strspn$12:
 	; Call 44 strchr 0
 	mov qword [rbp + 44], strspn$13
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rbp
 	add rbp, 44
 	jmp strchr
 
@@ -1092,10 +1092,10 @@ section .text
 
  strspn$16:
 	; Return index
-	mov ebx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov ebx, [rbp + 40]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strspn$17:
@@ -1109,9 +1109,9 @@ section .text
  strspn$19:
 	; Return integral4$minus1#
 	mov ebx, -1
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strspn$20:
@@ -1121,17 +1121,17 @@ section .text
 
  strcspn:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], {operand2}
+	mov dword [rbp + 40], 0
 
  strcspn$1:
 	; IntegralToIntegral £temporary3647 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcspn$2:
 	; Add £temporary3648 mainString £temporary3647
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcspn$3:
@@ -1139,7 +1139,7 @@ section .text
 
  strcspn$4:
 	; Equal 19 £temporary3649 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strcspn$19
 
  strcspn$5:
@@ -1147,18 +1147,18 @@ section .text
 
  strcspn$6:
 	; Parameter 68 pointer charSet
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 68], {operand2}
+	mov rax, [rbp + 32]
+	mov [rbp + 68], rax
 
  strcspn$7:
 	; IntegralToIntegral £temporary3653 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strcspn$8:
 	; Add £temporary3654 mainString £temporary3653
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strcspn$9:
@@ -1166,7 +1166,7 @@ section .text
 
  strcspn$10:
 	; IntegralToIntegral £temporary3656 £temporary3655
-	mov al, [{operand1}{WithSign(operand2)}]
+	mov al, [rsi]
 	and eax, 255
 	cmp al, 0
 	jge strcspn$11
@@ -1175,12 +1175,12 @@ section .text
 
  strcspn$11:
 	; Parameter 76 signed int £temporary3656
-	mov [rbp + 76], {operand2}
+	mov [rbp + 76], eax
 
  strcspn$12:
 	; Call 44 strchr 0
 	mov qword [rbp + 44], strcspn$13
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rbp
 	add rbp, 44
 	jmp strchr
 
@@ -1197,10 +1197,10 @@ section .text
 
  strcspn$16:
 	; Return index
-	mov ebx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov ebx, [rbp + 40]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strcspn$17:
@@ -1214,9 +1214,9 @@ section .text
  strcspn$19:
 	; Return integral4$minus1#
 	mov ebx, -1
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strcspn$20:
@@ -1226,17 +1226,17 @@ section .text
 
  strpbrk:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], {operand2}
+	mov dword [rbp + 40], 0
 
  strpbrk$1:
 	; IntegralToIntegral £temporary3662 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strpbrk$2:
 	; Add £temporary3663 mainString £temporary3662
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strpbrk$3:
@@ -1244,7 +1244,7 @@ section .text
 
  strpbrk$4:
 	; Equal 23 £temporary3664 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strpbrk$23
 
  strpbrk$5:
@@ -1252,18 +1252,18 @@ section .text
 
  strpbrk$6:
 	; Parameter 68 pointer charSet
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 68], {operand2}
+	mov rax, [rbp + 32]
+	mov [rbp + 68], rax
 
  strpbrk$7:
 	; IntegralToIntegral £temporary3668 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strpbrk$8:
 	; Add £temporary3669 mainString £temporary3668
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strpbrk$9:
@@ -1271,7 +1271,7 @@ section .text
 
  strpbrk$10:
 	; IntegralToIntegral £temporary3671 £temporary3670
-	mov al, [{operand1}{WithSign(operand2)}]
+	mov al, [rsi]
 	and eax, 255
 	cmp al, 0
 	jge strpbrk$11
@@ -1280,12 +1280,12 @@ section .text
 
  strpbrk$11:
 	; Parameter 76 signed int £temporary3671
-	mov [rbp + 76], {operand2}
+	mov [rbp + 76], eax
 
  strpbrk$12:
 	; Call 44 strchr 0
 	mov qword [rbp + 44], strpbrk$13
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rbp
 	add rbp, 44
 	jmp strchr
 
@@ -1302,13 +1302,13 @@ section .text
 
  strpbrk$16:
 	; IntegralToIntegral £temporary3675 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strpbrk$17:
 	; Add £temporary3676 mainString £temporary3675
-	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
 	add rbx, rax
 
  strpbrk$18:
@@ -1319,9 +1319,9 @@ section .text
 
  strpbrk$20:
 	; Return £temporary3678
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strpbrk$21:
@@ -1335,9 +1335,9 @@ section .text
  strpbrk$23:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strpbrk$24:
@@ -1350,13 +1350,13 @@ section .text
 
  strstr$1:
 	; Parameter 68 pointer subString
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 68], {operand2}
+	mov rax, [rbp + 32]
+	mov [rbp + 68], rax
 
  strstr$2:
 	; Call 44 strlen 0
 	mov qword [rbp + 44], strstr$3
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rbp
 	add rbp, 44
 	jmp strlen
 
@@ -1368,21 +1368,21 @@ section .text
 
  strstr$5:
 	; Assign subStringSize £temporary3681
-	mov [rbp + 44], {operand2}
+	mov [rbp + 44], ebx
 
  strstr$6:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], {operand2}
+	mov dword [rbp + 40], 0
 
  strstr$7:
 	; IntegralToIntegral £temporary3683 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strstr$8:
 	; Add £temporary3684 mainString £temporary3683
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strstr$9:
@@ -1390,7 +1390,7 @@ section .text
 
  strstr$10:
 	; Equal 28 £temporary3685 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strstr$28
 
  strstr$11:
@@ -1398,33 +1398,33 @@ section .text
 
  strstr$12:
 	; IntegralToIntegral £temporary3689 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strstr$13:
 	; Add £temporary3690 mainString £temporary3689
-	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
 	add rbx, rax
 
  strstr$14:
 	; Parameter 72 pointer £temporary3690
-	mov [rbp + 72], {operand2}
+	mov [rbp + 72], rbx
 
  strstr$15:
 	; Parameter 80 pointer subString
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 80], {operand2}
+	mov rax, [rbp + 32]
+	mov [rbp + 80], rax
 
  strstr$16:
 	; Parameter 88 signed int subStringSize
-	mov eax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 88], {operand2}
+	mov eax, [rbp + 44]
+	mov [rbp + 88], eax
 
  strstr$17:
 	; Call 48 strncmp 0
 	mov qword [rbp + 48], strstr$18
-	mov [rbp + 56], {operand2}
+	mov [rbp + 56], rbp
 	add rbp, 48
 	jmp strncmp
 
@@ -1441,13 +1441,13 @@ section .text
 
  strstr$21:
 	; IntegralToIntegral £temporary3694 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strstr$22:
 	; Add £temporary3695 mainString £temporary3694
-	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
 	add rbx, rax
 
  strstr$23:
@@ -1458,9 +1458,9 @@ section .text
 
  strstr$25:
 	; Return £temporary3697
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strstr$26:
@@ -1474,9 +1474,9 @@ section .text
  strstr$28:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strstr$29:
@@ -1486,17 +1486,17 @@ section .text
 
  strlen:
 	; Assign index integral4$0#
-	mov dword [rbp + 32], {operand2}
+	mov dword [rbp + 32], 0
 
  strlen$1:
 	; IntegralToIntegral £temporary3701 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 32]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strlen$2:
 	; Add £temporary3702 string £temporary3701
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strlen$3:
@@ -1504,7 +1504,7 @@ section .text
 
  strlen$4:
 	; Equal 7 £temporary3703 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strlen$7
 
  strlen$5:
@@ -1517,10 +1517,10 @@ section .text
 
  strlen$7:
 	; Return index
-	mov ebx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov ebx, [rbp + 32]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strlen$8:
@@ -1540,7 +1540,7 @@ section .text
  strerror$1:
 	; Call 28 localeconv 0
 	mov qword [rbp + 28], strerror$2
-	mov [rbp + 36], {operand2}
+	mov [rbp + 36], rbp
 	add rbp, 28
 	jmp localeconv
 
@@ -1552,30 +1552,30 @@ section .text
 
  strerror$4:
 	; Assign localeConvPtr £temporary3706
-	mov [rbp + 28], {operand2}
+	mov [rbp + 28], rbx
 
  strerror$5:
 	; Equal 14 localeConvPtr integral8$0#
-	cmp qword [rbp + 28], {operand2}
+	cmp qword [rbp + 28], 0
 	je strerror$14
 
  strerror$6:
 	; Dereference £temporary3708 localeConvPtr 0
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 28]
 
  strerror$7:
 	; Assign messageList £temporary3708.messageList
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 36], {operand2}
+	mov rax, [rsi + 56]
+	mov [rbp + 36], rax
 
  strerror$8:
 	; Equal 14 messageList integral8$0#
-	cmp qword [rbp + 36], {operand2}
+	cmp qword [rbp + 36], 0
 	je strerror$14
 
  strerror$9:
 	; Multiply £temporary3710 errno integral4$8#
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 24]
 	xor edx, edx
 	imul dword [@7670integral4$8#]
 
@@ -1586,7 +1586,7 @@ section .text
 
  strerror$11:
 	; Add £temporary3712 messageList £temporary3711
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 36]
 	add rsi, rax
 
  strerror$12:
@@ -1594,18 +1594,18 @@ section .text
 
  strerror$13:
 	; Return £temporary3713
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rsi]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strerror$14:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strerror$15:
@@ -1621,39 +1621,39 @@ section .text
 
  strtok:
 	; Equal 39 string integral8$0#
-	cmp qword [rbp + 24], {operand2}
+	cmp qword [rbp + 24], 0
 	je strtok$39
 
  strtok$1:
 	; Dereference £temporary3720 £temporary3719 0
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 
  strtok$2:
 	; NotEqual 4 £temporary3720 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	jne strtok$4
 
  strtok$3:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strtok$4:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], {operand2}
+	mov dword [rbp + 40], 0
 
  strtok$5:
 	; IntegralToIntegral £temporary3725 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$6:
 	; Add £temporary3726 string £temporary3725
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strtok$7:
@@ -1661,7 +1661,7 @@ section .text
 
  strtok$8:
 	; Equal 33 £temporary3727 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strtok$33
 
  strtok$9:
@@ -1669,18 +1669,18 @@ section .text
 
  strtok$10:
 	; Parameter 76 pointer charSet
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 76], {operand2}
+	mov rax, [rbp + 32]
+	mov [rbp + 76], rax
 
  strtok$11:
 	; IntegralToIntegral £temporary3731 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$12:
 	; Add £temporary3732 string £temporary3731
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strtok$13:
@@ -1688,7 +1688,7 @@ section .text
 
  strtok$14:
 	; IntegralToIntegral £temporary3734 £temporary3733
-	mov al, [{operand1}{WithSign(operand2)}]
+	mov al, [rsi]
 	and eax, 255
 	cmp al, 0
 	jge strtok$15
@@ -1697,12 +1697,12 @@ section .text
 
  strtok$15:
 	; Parameter 84 signed int £temporary3734
-	mov [rbp + 84], {operand2}
+	mov [rbp + 84], eax
 
  strtok$16:
 	; Call 52 strchr 0
 	mov qword [rbp + 52], strtok$17
-	mov [rbp + 60], {operand2}
+	mov [rbp + 60], rbp
 	add rbp, 52
 	jmp strchr
 
@@ -1719,13 +1719,13 @@ section .text
 
  strtok$20:
 	; IntegralToIntegral £temporary3738 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$21:
 	; Add £temporary3739 string £temporary3738
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strtok$22:
@@ -1733,11 +1733,11 @@ section .text
 
  strtok$23:
 	; Assign £temporary3740 integral1$0#
-	mov byte [rsi], {operand2}
+	mov byte [rsi], 0
 
  strtok$24:
 	; Add £temporary3742 index integral4$1#
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	inc eax
 
  strtok$25:
@@ -1747,7 +1747,7 @@ section .text
 
  strtok$26:
 	; Add £temporary3744 string £temporary3743
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strtok$27:
@@ -1758,14 +1758,14 @@ section .text
 
  strtok$29:
 	; Assign token £temporary3746
-	mov [@7675$token], {operand2}
+	mov [@7675$token], rsi
 
  strtok$30:
 	; Return string
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strtok$31:
@@ -1778,13 +1778,13 @@ section .text
 
  strtok$33:
 	; IntegralToIntegral £temporary3750 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$34:
 	; Add £temporary3751 string £temporary3750
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 24]
 	add rsi, rax
 
  strtok$35:
@@ -1795,59 +1795,59 @@ section .text
 
  strtok$37:
 	; Assign token £temporary3753
-	mov [@7675$token], {operand2}
+	mov [@7675$token], rsi
 
  strtok$38:
 	; Return string
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strtok$39:
 	; NotEqual 41 token integral8$0#
-	cmp qword [@7675$token], {operand2}
+	cmp qword [@7675$token], 0
 	jne strtok$41
 
  strtok$40:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strtok$41:
 	; Dereference £temporary3756 £temporary3755 0
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [@7675$token]
 
  strtok$42:
 	; NotEqual 44 £temporary3756 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	jne strtok$44
 
  strtok$43:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strtok$44:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], {operand2}
+	mov dword [rbp + 40], 0
 
  strtok$45:
 	; IntegralToIntegral £temporary3761 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$46:
 	; Add £temporary3762 token £temporary3761
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [@7675$token]
 	add rsi, rax
 
  strtok$47:
@@ -1855,7 +1855,7 @@ section .text
 
  strtok$48:
 	; Equal 74 £temporary3763 integral1$0#
-	cmp byte [rsi], {operand2}
+	cmp byte [rsi], 0
 	je strtok$74
 
  strtok$49:
@@ -1863,18 +1863,18 @@ section .text
 
  strtok$50:
 	; Parameter 76 pointer charSet
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 76], {operand2}
+	mov rax, [rbp + 32]
+	mov [rbp + 76], rax
 
  strtok$51:
 	; IntegralToIntegral £temporary3767 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$52:
 	; Add £temporary3768 token £temporary3767
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [@7675$token]
 	add rsi, rax
 
  strtok$53:
@@ -1882,7 +1882,7 @@ section .text
 
  strtok$54:
 	; IntegralToIntegral £temporary3770 £temporary3769
-	mov al, [{operand1}{WithSign(operand2)}]
+	mov al, [rsi]
 	and eax, 255
 	cmp al, 0
 	jge strtok$55
@@ -1891,12 +1891,12 @@ section .text
 
  strtok$55:
 	; Parameter 84 signed int £temporary3770
-	mov [rbp + 84], {operand2}
+	mov [rbp + 84], eax
 
  strtok$56:
 	; Call 52 strchr 0
 	mov qword [rbp + 52], strtok$57
-	mov [rbp + 60], {operand2}
+	mov [rbp + 60], rbp
 	add rbp, 52
 	jmp strchr
 
@@ -1913,18 +1913,18 @@ section .text
 
  strtok$60:
 	; Assign tokenStart2 token
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 52], {operand2}
+	mov rax, [@7675$token]
+	mov [rbp + 52], rax
 
  strtok$61:
 	; IntegralToIntegral £temporary3774 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$62:
 	; Add £temporary3775 token £temporary3774
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [@7675$token]
 	add rsi, rax
 
  strtok$63:
@@ -1932,11 +1932,11 @@ section .text
 
  strtok$64:
 	; Assign £temporary3776 integral1$0#
-	mov byte [rsi], {operand2}
+	mov byte [rsi], 0
 
  strtok$65:
 	; Add £temporary3778 index integral4$1#
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	inc eax
 
  strtok$66:
@@ -1946,7 +1946,7 @@ section .text
 
  strtok$67:
 	; Add £temporary3780 token £temporary3779
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [@7675$token]
 	add rsi, rax
 
  strtok$68:
@@ -1957,14 +1957,14 @@ section .text
 
  strtok$70:
 	; Assign token £temporary3782
-	mov [@7675$token], {operand2}
+	mov [@7675$token], rsi
 
  strtok$71:
 	; Return tokenStart2
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 52]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strtok$72:
@@ -1977,18 +1977,18 @@ section .text
 
  strtok$74:
 	; Assign tokenStart token
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov [rbp + 44], {operand2}
+	mov rax, [@7675$token]
+	mov [rbp + 44], rax
 
  strtok$75:
 	; IntegralToIntegral £temporary3786 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  strtok$76:
 	; Add £temporary3787 token £temporary3786
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [@7675$token]
 	add rsi, rax
 
  strtok$77:
@@ -1999,14 +1999,14 @@ section .text
 
  strtok$79:
 	; Assign token £temporary3789
-	mov [@7675$token], {operand2}
+	mov [@7675$token], rsi
 
  strtok$80:
 	; Return tokenStart
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 44]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  strtok$81:
@@ -2016,39 +2016,39 @@ section .text
 
  memcpy:
 	; IntegralToIntegral £temporary3794 target
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp + 24]
 
  memcpy$1:
 	; Assign charTarget £temporary3794
-	mov [rbp + 44], {operand2}
+	mov [rbp + 44], rax
 
  memcpy$2:
 	; IntegralToIntegral £temporary3795 source
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp + 32]
 
  memcpy$3:
 	; Assign charSource £temporary3795
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rax
 
  memcpy$4:
 	; Assign index integral4$0#
-	mov dword [rbp + 60], {operand2}
+	mov dword [rbp + 60], 0
 
  memcpy$5:
 	; GreaterThanEqual 15 index size
-	mov eax, [{operand1}{WithSign(operand2)}]
-	cmp [rbp + 60], {operand2}
+	mov eax, [rbp + 40]
+	cmp [rbp + 60], eax
 	jge memcpy$15
 
  memcpy$6:
 	; IntegralToIntegral £temporary3799 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcpy$7:
 	; Add £temporary3800 charTarget £temporary3799
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memcpy$8:
@@ -2056,13 +2056,13 @@ section .text
 
  memcpy$9:
 	; IntegralToIntegral £temporary3803 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcpy$10:
 	; Add £temporary3804 charSource £temporary3803
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 52]
 	add rdi, rax
 
  memcpy$11:
@@ -2070,8 +2070,8 @@ section .text
 
  memcpy$12:
 	; Assign £temporary3801 £temporary3805
-	mov al, [{operand1}{WithSign(operand2)}]
-	mov [rsi], {operand2}
+	mov al, [rdi]
+	mov [rsi], al
 
  memcpy$13:
 	; Add index index integral4$1#
@@ -2083,13 +2083,13 @@ section .text
 
  memcpy$15:
 	; IntegralToIntegral £temporary3806 target
-	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
 
  memcpy$16:
 	; Return £temporary3806
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  memcpy$17:
@@ -2099,46 +2099,46 @@ section .text
 
  memmove:
 	; IntegralToIntegral £temporary3807 target
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp + 24]
 
  memmove$1:
 	; Assign charTarget £temporary3807
-	mov [rbp + 44], {operand2}
+	mov [rbp + 44], rax
 
  memmove$2:
 	; IntegralToIntegral £temporary3808 source
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp + 32]
 
  memmove$3:
 	; Assign charSource £temporary3808
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rax
 
  memmove$4:
 	; GreaterThanEqual 16 source target
-	mov rax, [{operand1}{WithSign(operand2)}]
-	cmp [rbp + 32], {operand2}
+	mov rax, [rbp + 24]
+	cmp [rbp + 32], rax
 	jge memmove$16
 
  memmove$5:
 	; Subtract index size integral4$1#
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	dec eax
-	mov [rbp + 60], {operand2}
+	mov [rbp + 60], eax
 
  memmove$6:
 	; LessThan 27 index integral4$0#
-	cmp dword [rbp + 60], {operand2}
+	cmp dword [rbp + 60], 0
 	jl memmove$27
 
  memmove$7:
 	; IntegralToIntegral £temporary3814 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memmove$8:
 	; Add £temporary3815 charTarget £temporary3814
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memmove$9:
@@ -2146,13 +2146,13 @@ section .text
 
  memmove$10:
 	; IntegralToIntegral £temporary3818 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memmove$11:
 	; Add £temporary3819 charSource £temporary3818
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 52]
 	add rdi, rax
 
  memmove$12:
@@ -2160,8 +2160,8 @@ section .text
 
  memmove$13:
 	; Assign £temporary3816 £temporary3820
-	mov al, [{operand1}{WithSign(operand2)}]
-	mov [rsi], {operand2}
+	mov al, [rdi]
+	mov [rsi], al
 
  memmove$14:
 	; Subtract index index integral4$1#
@@ -2173,23 +2173,23 @@ section .text
 
  memmove$16:
 	; Assign index integral4$0#
-	mov dword [rbp + 60], {operand2}
+	mov dword [rbp + 60], 0
 
  memmove$17:
 	; GreaterThanEqual 27 index size
-	mov eax, [{operand1}{WithSign(operand2)}]
-	cmp [rbp + 60], {operand2}
+	mov eax, [rbp + 40]
+	cmp [rbp + 60], eax
 	jge memmove$27
 
  memmove$18:
 	; IntegralToIntegral £temporary3824 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memmove$19:
 	; Add £temporary3825 charTarget £temporary3824
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memmove$20:
@@ -2197,13 +2197,13 @@ section .text
 
  memmove$21:
 	; IntegralToIntegral £temporary3828 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memmove$22:
 	; Add £temporary3829 charSource £temporary3828
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 52]
 	add rdi, rax
 
  memmove$23:
@@ -2211,8 +2211,8 @@ section .text
 
  memmove$24:
 	; Assign £temporary3826 £temporary3830
-	mov al, [{operand1}{WithSign(operand2)}]
-	mov [rsi], {operand2}
+	mov al, [rdi]
+	mov [rsi], al
 
  memmove$25:
 	; Add index index integral4$1#
@@ -2224,13 +2224,13 @@ section .text
 
  memmove$27:
 	; IntegralToIntegral £temporary3833 target
-	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
 
  memmove$28:
 	; Return £temporary3833
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  memmove$29:
@@ -2240,39 +2240,39 @@ section .text
 
  memcmp:
 	; IntegralToIntegral £temporary3834 left
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp + 24]
 
  memcmp$1:
 	; Assign charLeft £temporary3834
-	mov [rbp + 44], {operand2}
+	mov [rbp + 44], rax
 
  memcmp$2:
 	; IntegralToIntegral £temporary3835 right
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp + 32]
 
  memcmp$3:
 	; Assign charRight £temporary3835
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], rax
 
  memcmp$4:
 	; Assign index integral4$0#
-	mov dword [rbp + 60], {operand2}
+	mov dword [rbp + 60], 0
 
  memcmp$5:
 	; GreaterThanEqual 24 index size
-	mov eax, [{operand1}{WithSign(operand2)}]
-	cmp [rbp + 60], {operand2}
+	mov eax, [rbp + 40]
+	cmp [rbp + 60], eax
 	jge memcmp$24
 
  memcmp$6:
 	; IntegralToIntegral £temporary3839 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcmp$7:
 	; Add £temporary3840 charLeft £temporary3839
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memcmp$8:
@@ -2280,13 +2280,13 @@ section .text
 
  memcmp$9:
 	; IntegralToIntegral £temporary3843 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcmp$10:
 	; Add £temporary3844 charRight £temporary3843
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 52]
 	add rdi, rax
 
  memcmp$11:
@@ -2294,27 +2294,27 @@ section .text
 
  memcmp$12:
 	; GreaterThanEqual 14 £temporary3841 £temporary3845
-	mov al, [{operand1}{WithSign(operand2)}]
-	cmp [rsi], {operand2}
+	mov al, [rdi]
+	cmp [rsi], al
 	jge memcmp$14
 
  memcmp$13:
 	; Return integral4$minus1#
 	mov ebx, -1
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  memcmp$14:
 	; IntegralToIntegral £temporary3848 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcmp$15:
 	; Add £temporary3849 charLeft £temporary3848
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memcmp$16:
@@ -2322,13 +2322,13 @@ section .text
 
  memcmp$17:
 	; IntegralToIntegral £temporary3852 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 60]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memcmp$18:
 	; Add £temporary3853 charRight £temporary3852
-	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rdi, [rbp + 52]
 	add rdi, rax
 
  memcmp$19:
@@ -2336,16 +2336,16 @@ section .text
 
  memcmp$20:
 	; LessThanEqual 22 £temporary3850 £temporary3854
-	mov al, [{operand1}{WithSign(operand2)}]
-	cmp [rsi], {operand2}
+	mov al, [rdi]
+	cmp [rsi], al
 	jle memcmp$22
 
  memcmp$21:
 	; Return integral4$1#
 	mov ebx, 1
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  memcmp$22:
@@ -2359,9 +2359,9 @@ section .text
  memcmp$24:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  memcmp$25:
@@ -2371,15 +2371,15 @@ section .text
 
  memchr:
 	; IntegralToIntegral £temporary3860 block
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp + 24]
 
  memchr$1:
 	; Assign charBlock £temporary3860
-	mov [rbp + 44], {operand2}
+	mov [rbp + 44], rax
 
  memchr$2:
 	; IntegralToIntegral £temporary3861 i
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 32]
 	cmp eax, 0
 	jge memchr$3
 	neg eax
@@ -2387,27 +2387,27 @@ section .text
 
  memchr$3:
 	; Assign c £temporary3861
-	mov [rbp + 52], {operand2}
+	mov [rbp + 52], al
 
  memchr$4:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], {operand2}
+	mov dword [rbp + 40], 0
 
  memchr$5:
 	; GreaterThanEqual 18 index size
-	mov eax, [{operand1}{WithSign(operand2)}]
-	cmp [rbp + 40], {operand2}
+	mov eax, [rbp + 36]
+	cmp [rbp + 40], eax
 	jge memchr$18
 
  memchr$6:
 	; IntegralToIntegral £temporary3865 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memchr$7:
 	; Add £temporary3866 charBlock £temporary3865
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 44]
 	add rsi, rax
 
  memchr$8:
@@ -2415,19 +2415,19 @@ section .text
 
  memchr$9:
 	; NotEqual 16 £temporary3867 c
-	mov al, [{operand1}{WithSign(operand2)}]
-	cmp [rsi], {operand2}
+	mov al, [rbp + 52]
+	cmp [rsi], al
 	jne memchr$16
 
  memchr$10:
 	; IntegralToIntegral £temporary3870 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 40]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memchr$11:
 	; Add £temporary3871 charBlock £temporary3870
-	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 44]
 	add rbx, rax
 
  memchr$12:
@@ -2441,9 +2441,9 @@ section .text
 
  memchr$15:
 	; Return £temporary3874
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  memchr$16:
@@ -2457,9 +2457,9 @@ section .text
  memchr$18:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  memchr$19:
@@ -2469,15 +2469,15 @@ section .text
 
  memset:
 	; IntegralToIntegral £temporary3877 block
-	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rax, [rbp + 24]
 
  memset$1:
 	; Assign charBlock £temporary3877
-	mov [rbp + 40], {operand2}
+	mov [rbp + 40], rax
 
  memset$2:
 	; IntegralToIntegral £temporary3878 i
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 32]
 	cmp eax, 0
 	jge memset$3
 	neg eax
@@ -2485,27 +2485,27 @@ section .text
 
  memset$3:
 	; Assign c £temporary3878
-	mov [rbp + 48], {operand2}
+	mov [rbp + 48], al
 
  memset$4:
 	; Assign index integral4$0#
-	mov dword [rbp + 49], {operand2}
+	mov dword [rbp + 49], 0
 
  memset$5:
 	; GreaterThanEqual 12 index size
-	mov eax, [{operand1}{WithSign(operand2)}]
-	cmp [rbp + 49], {operand2}
+	mov eax, [rbp + 36]
+	cmp [rbp + 49], eax
 	jge memset$12
 
  memset$6:
 	; IntegralToIntegral £temporary3882 index
-	mov eax, [{operand1}{WithSign(operand2)}]
+	mov eax, [rbp + 49]
 	mov rbx, 4294967295
 	and rax, rbx
 
  memset$7:
 	; Add £temporary3883 charBlock £temporary3882
-	mov rsi, [{operand1}{WithSign(operand2)}]
+	mov rsi, [rbp + 40]
 	add rsi, rax
 
  memset$8:
@@ -2513,8 +2513,8 @@ section .text
 
  memset$9:
 	; Assign £temporary3884 c
-	mov al, [{operand1}{WithSign(operand2)}]
-	mov [rsi], {operand2}
+	mov al, [rbp + 48]
+	mov [rsi], al
 
  memset$10:
 	; Add index index integral4$1#
@@ -2526,10 +2526,10 @@ section .text
 
  memset$12:
 	; Return block
-	mov rbx, [{operand1}{WithSign(operand2)}]
-	mov rax, [{operand1}{WithSign(operand2)}]
-	mov rdi, [{operand1}{WithSign(operand2)}]
-	mov rbp, [{operand1}{WithSign(operand2)}]
+	mov rbx, [rbp + 24]
+	mov rax, [rbp]
+	mov rdi, [rbp + 16]
+	mov rbp, [rbp + 8]
 	jmp rax
 
  memset$13:
