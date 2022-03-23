@@ -1147,16 +1147,16 @@ section .text
 
  file_test$1:
 	; Parameter 48 string string_in2Etxt#
-	mov qword [rbp + 48], @10254string_in2Etxt#
+	mov qword [rbp + 48], {operand2}
 
  file_test$2:
 	; Parameter 56 string string_r#
-	mov qword [rbp + 56], @10255string_r#
+	mov qword [rbp + 56], {operand2}
 
  file_test$3:
 	; Call 24 fopen 0
 	mov qword [rbp + 24], file_test$4
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp fopen
 
@@ -1168,23 +1168,23 @@ section .text
 
  file_test$6:
 	; Assign inFilePtr £temporary4396
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  file_test$7:
 	; PreCall 32
 
  file_test$8:
 	; Parameter 56 string string_outX2Etxt#
-	mov qword [rbp + 56], @10257string_outX2Etxt#
+	mov qword [rbp + 56], {operand2}
 
  file_test$9:
 	; Parameter 64 string string_w#
-	mov qword [rbp + 64], @10258string_w#
+	mov qword [rbp + 64], {operand2}
 
  file_test$10:
 	; Call 32 fopen 0
 	mov qword [rbp + 32], file_test$11
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fopen
 
@@ -1196,11 +1196,11 @@ section .text
 
  file_test$13:
 	; Assign outFilePtr £temporary4397
-	mov [rbp + 32], rbx
+	mov [rbp + 32], {operand2}
 
  file_test$14:
 	; NotEqual 26 inFilePtr integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne file_test$26
 
  file_test$15:
@@ -1208,29 +1208,29 @@ section .text
 
  file_test$16:
 	; Parameter 64 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$17:
 	; Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 72], @10262string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 72], {operand2}
 
  file_test$18:
 	; Parameter 80 string string_inFilePtr20213D20NULL#
-	mov qword [rbp + 80], @10263string_inFilePtr20213D20NULL#
+	mov qword [rbp + 80], {operand2}
 
  file_test$19:
 	; Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 88], @10264string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 88], {operand2}
 
  file_test$20:
 	; Parameter 96 signed int integral4$14#
-	mov dword [rbp + 96], 14
+	mov dword [rbp + 96], {operand2}
 
  file_test$21:
 	; Call 40 fprintf 20
 	mov qword [rbp + 40], file_test$22
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 20
@@ -1245,7 +1245,7 @@ section .text
  file_test$24:
 	; Call 40 abort 0
 	mov qword [rbp + 40], file_test$25
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp abort
 
@@ -1254,7 +1254,7 @@ section .text
 
  file_test$26:
 	; NotEqual 38 outFilePtr integral8$0#
-	cmp qword [rbp + 32], 0
+	cmp qword [rbp + 32], {operand2}
 	jne file_test$38
 
  file_test$27:
@@ -1262,29 +1262,29 @@ section .text
 
  file_test$28:
 	; Parameter 64 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$29:
 	; Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 72], @10268string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 72], {operand2}
 
  file_test$30:
 	; Parameter 80 string string_outFilePtr20213D20NULL#
-	mov qword [rbp + 80], @10269string_outFilePtr20213D20NULL#
+	mov qword [rbp + 80], {operand2}
 
  file_test$31:
 	; Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 88], @10270string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 88], {operand2}
 
  file_test$32:
 	; Parameter 96 signed int integral4$15#
-	mov dword [rbp + 96], 15
+	mov dword [rbp + 96], {operand2}
 
  file_test$33:
 	; Call 40 fprintf 20
 	mov qword [rbp + 40], file_test$34
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 20
@@ -1299,7 +1299,7 @@ section .text
  file_test$36:
 	; Call 40 abort 0
 	mov qword [rbp + 40], file_test$37
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp abort
 
@@ -1311,13 +1311,13 @@ section .text
 
  file_test$39:
 	; Parameter 64 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$40:
 	; Call 40 feof 0
 	mov qword [rbp + 40], file_test$41
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp feof
 
@@ -1337,12 +1337,12 @@ section .text
 
  file_test$45:
 	; Parameter 72 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$46:
 	; Parameter 80 string string_25lf#
-	mov qword [rbp + 80], @10274string_25lf#
+	mov qword [rbp + 80], {operand2}
 
  file_test$47:
 	; Address £temporary4413 value
@@ -1351,12 +1351,12 @@ section .text
 
  file_test$48:
 	; Parameter 88 pointer £temporary4413
-	mov [rbp + 88], rsi
+	mov [rbp + 88], {operand2}
 
  file_test$49:
 	; Call 48 fscanf 8
 	mov qword [rbp + 48], file_test$50
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	mov rdi, rbp
 	add rdi, 8
@@ -1370,7 +1370,7 @@ section .text
 
  file_test$52:
 	; Parameter 72 string string_X12025f0A#
-	mov qword [rbp + 72], @10275string_X12025f0A#
+	mov qword [rbp + 72], {operand2}
 
  file_test$53:
 	; PreCall 48
@@ -1386,7 +1386,7 @@ section .text
  file_test$56:
 	; Call 80 sqrt 0
 	mov qword [rbp + 80], file_test$57
-	mov [rbp + 88], rbp
+	mov [rbp + 88], {operand2}
 	add rbp, 80
 	jmp sqrt
 
@@ -1403,7 +1403,7 @@ section .text
  file_test$60:
 	; Call 48 printf 8
 	mov qword [rbp + 48], file_test$61
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	mov rdi, rbp
 	add rdi, 8
@@ -1417,12 +1417,12 @@ section .text
 
  file_test$63:
 	; Parameter 72 pointer outFilePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$64:
 	; Parameter 80 string string_X22025f0A#
-	mov qword [rbp + 80], @10276string_X22025f0A#
+	mov qword [rbp + 80], {operand2}
 
  file_test$65:
 	; PreCall 48
@@ -1438,7 +1438,7 @@ section .text
  file_test$68:
 	; Call 88 sqrt 0
 	mov qword [rbp + 88], file_test$69
-	mov [rbp + 96], rbp
+	mov [rbp + 96], {operand2}
 	add rbp, 88
 	jmp sqrt
 
@@ -1455,7 +1455,7 @@ section .text
  file_test$72:
 	; Call 48 fprintf 8
 	mov qword [rbp + 48], file_test$73
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	mov rdi, rbp
 	add rdi, 8
@@ -1473,12 +1473,12 @@ section .text
 
  file_test$76:
 	; Parameter 64 string string_0A#
-	mov qword [rbp + 64], @10277string_0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$77:
 	; Call 40 printf 0
 	mov qword [rbp + 40], file_test$78
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	jmp printf
@@ -1491,13 +1491,13 @@ section .text
 
  file_test$80:
 	; Parameter 64 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$81:
 	; Call 40 fclose 0
 	mov qword [rbp + 40], file_test$82
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fclose
 
@@ -1509,13 +1509,13 @@ section .text
 
  file_test$84:
 	; Parameter 64 pointer outFilePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$85:
 	; Call 40 fclose 0
 	mov qword [rbp + 40], file_test$86
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fclose
 
@@ -1527,16 +1527,16 @@ section .text
 
  file_test$88:
 	; Parameter 48 string string_in2Etxt#
-	mov qword [rbp + 48], @10278string_in2Etxt#
+	mov qword [rbp + 48], {operand2}
 
  file_test$89:
 	; Parameter 56 string string_r#
-	mov qword [rbp + 56], @10279string_r#
+	mov qword [rbp + 56], {operand2}
 
  file_test$90:
 	; Call 24 fopen 0
 	mov qword [rbp + 24], file_test$91
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp fopen
 
@@ -1548,23 +1548,23 @@ section .text
 
  file_test$93:
 	; Assign inFilePtr £temporary4422
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  file_test$94:
 	; PreCall 32
 
  file_test$95:
 	; Parameter 56 string string_outY2Etxt#
-	mov qword [rbp + 56], @10281string_outY2Etxt#
+	mov qword [rbp + 56], {operand2}
 
  file_test$96:
 	; Parameter 64 string string_w#
-	mov qword [rbp + 64], @10282string_w#
+	mov qword [rbp + 64], {operand2}
 
  file_test$97:
 	; Call 32 fopen 0
 	mov qword [rbp + 32], file_test$98
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fopen
 
@@ -1576,11 +1576,11 @@ section .text
 
  file_test$100:
 	; Assign outFilePtr £temporary4423
-	mov [rbp + 32], rbx
+	mov [rbp + 32], {operand2}
 
  file_test$101:
 	; NotEqual 113 inFilePtr integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne file_test$113
 
  file_test$102:
@@ -1588,29 +1588,29 @@ section .text
 
  file_test$103:
 	; Parameter 64 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$104:
 	; Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 72], @10286string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 72], {operand2}
 
  file_test$105:
 	; Parameter 80 string string_inFilePtr20213D20NULL#
-	mov qword [rbp + 80], @10287string_inFilePtr20213D20NULL#
+	mov qword [rbp + 80], {operand2}
 
  file_test$106:
 	; Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 88], @10288string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 88], {operand2}
 
  file_test$107:
 	; Parameter 96 signed int integral4$34#
-	mov dword [rbp + 96], 34
+	mov dword [rbp + 96], {operand2}
 
  file_test$108:
 	; Call 40 fprintf 20
 	mov qword [rbp + 40], file_test$109
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 20
@@ -1625,7 +1625,7 @@ section .text
  file_test$111:
 	; Call 40 abort 0
 	mov qword [rbp + 40], file_test$112
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp abort
 
@@ -1634,7 +1634,7 @@ section .text
 
  file_test$113:
 	; NotEqual 125 outFilePtr integral8$0#
-	cmp qword [rbp + 32], 0
+	cmp qword [rbp + 32], {operand2}
 	jne file_test$125
 
  file_test$114:
@@ -1642,29 +1642,29 @@ section .text
 
  file_test$115:
 	; Parameter 64 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$116:
 	; Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 72], @10292string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 72], {operand2}
 
  file_test$117:
 	; Parameter 80 string string_outFilePtr20213D20NULL#
-	mov qword [rbp + 80], @10293string_outFilePtr20213D20NULL#
+	mov qword [rbp + 80], {operand2}
 
  file_test$118:
 	; Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 88], @10294string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 88], {operand2}
 
  file_test$119:
 	; Parameter 96 signed int integral4$35#
-	mov dword [rbp + 96], 35
+	mov dword [rbp + 96], {operand2}
 
  file_test$120:
 	; Call 40 fprintf 20
 	mov qword [rbp + 40], file_test$121
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 20
@@ -1679,7 +1679,7 @@ section .text
  file_test$123:
 	; Call 40 abort 0
 	mov qword [rbp + 40], file_test$124
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp abort
 
@@ -1688,19 +1688,19 @@ section .text
 
  file_test$125:
 	; Assign size integral4$0#
-	mov dword [rbp + 40], 0
+	mov dword [rbp + 40], {operand2}
 
  file_test$126:
 	; PreCall 48
 
  file_test$127:
 	; Parameter 72 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$128:
 	; Parameter 80 string string_25i#
-	mov qword [rbp + 80], @10299string_25i#
+	mov qword [rbp + 80], {operand2}
 
  file_test$129:
 	; Address £temporary4436 size
@@ -1709,12 +1709,12 @@ section .text
 
  file_test$130:
 	; Parameter 88 pointer £temporary4436
-	mov [rbp + 88], rsi
+	mov [rbp + 88], {operand2}
 
  file_test$131:
 	; Call 48 fscanf 8
 	mov qword [rbp + 48], file_test$132
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	mov rdi, rbp
 	add rdi, 8
@@ -1728,17 +1728,17 @@ section .text
 
  file_test$134:
 	; Parameter 72 string string_size2025i0A#
-	mov qword [rbp + 72], @10300string_size2025i0A#
+	mov qword [rbp + 72], {operand2}
 
  file_test$135:
 	; Parameter 80 signed int size
-	mov eax, [rbp + 40]
-	mov [rbp + 80], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$136:
 	; Call 48 printf 4
 	mov qword [rbp + 48], file_test$137
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	mov rdi, rbp
 	add rdi, 4
@@ -1752,22 +1752,22 @@ section .text
 
  file_test$139:
 	; Parameter 72 pointer outFilePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$140:
 	; Parameter 80 string string_Y20size2025i0A#
-	mov qword [rbp + 80], @10301string_Y20size2025i0A#
+	mov qword [rbp + 80], {operand2}
 
  file_test$141:
 	; Parameter 88 signed int size
-	mov eax, [rbp + 40]
-	mov [rbp + 88], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 88], {operand2}
 
  file_test$142:
 	; Call 48 fprintf 4
 	mov qword [rbp + 48], file_test$143
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	mov rdi, rbp
 	add rdi, 4
@@ -1778,12 +1778,12 @@ section .text
 
  file_test$144:
 	; Assign index integral4$0#
-	mov dword [rbp + 44], 0
+	mov dword [rbp + 44], {operand2}
 
  file_test$145:
 	; GreaterThanEqual 178 index size
-	mov eax, [rbp + 40]
-	cmp [rbp + 44], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 44], {operand2}
 	jge file_test$178
 
  file_test$146:
@@ -1791,12 +1791,12 @@ section .text
 
  file_test$147:
 	; Parameter 80 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$148:
 	; Parameter 88 string string_25lf#
-	mov qword [rbp + 88], @10305string_25lf#
+	mov qword [rbp + 88], {operand2}
 
  file_test$149:
 	; Address £temporary4442 value
@@ -1805,12 +1805,12 @@ section .text
 
  file_test$150:
 	; Parameter 96 pointer £temporary4442
-	mov [rbp + 96], rsi
+	mov [rbp + 96], {operand2}
 
  file_test$151:
 	; Call 56 fscanf 8
 	mov qword [rbp + 56], file_test$152
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	mov rdi, rbp
 	add rdi, 8
@@ -1824,7 +1824,7 @@ section .text
 
  file_test$154:
 	; Parameter 80 string string_Y12025f0A#
-	mov qword [rbp + 80], @10306string_Y12025f0A#
+	mov qword [rbp + 80], {operand2}
 
  file_test$155:
 	; PreCall 56
@@ -1840,7 +1840,7 @@ section .text
  file_test$158:
 	; Call 88 sqrt 0
 	mov qword [rbp + 88], file_test$159
-	mov [rbp + 96], rbp
+	mov [rbp + 96], {operand2}
 	add rbp, 88
 	jmp sqrt
 
@@ -1857,7 +1857,7 @@ section .text
  file_test$162:
 	; Call 56 printf 8
 	mov qword [rbp + 56], file_test$163
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	mov rdi, rbp
 	add rdi, 8
@@ -1871,12 +1871,12 @@ section .text
 
  file_test$165:
 	; Parameter 80 pointer outFilePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$166:
 	; Parameter 88 string string_Y22025f0A#
-	mov qword [rbp + 88], @10307string_Y22025f0A#
+	mov qword [rbp + 88], {operand2}
 
  file_test$167:
 	; PreCall 56
@@ -1892,7 +1892,7 @@ section .text
  file_test$170:
 	; Call 96 sqrt 0
 	mov qword [rbp + 96], file_test$171
-	mov [rbp + 104], rbp
+	mov [rbp + 104], {operand2}
 	add rbp, 96
 	jmp sqrt
 
@@ -1909,7 +1909,7 @@ section .text
  file_test$174:
 	; Call 56 fprintf 8
 	mov qword [rbp + 56], file_test$175
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	mov rdi, rbp
 	add rdi, 8
@@ -1931,12 +1931,12 @@ section .text
 
  file_test$179:
 	; Parameter 72 string string_0A#
-	mov qword [rbp + 72], @10308string_0A#
+	mov qword [rbp + 72], {operand2}
 
  file_test$180:
 	; Call 48 printf 0
 	mov qword [rbp + 48], file_test$181
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	mov rdi, rbp
 	jmp printf
@@ -1949,13 +1949,13 @@ section .text
 
  file_test$183:
 	; Parameter 64 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$184:
 	; Call 40 fclose 0
 	mov qword [rbp + 40], file_test$185
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fclose
 
@@ -1967,13 +1967,13 @@ section .text
 
  file_test$187:
 	; Parameter 64 pointer outFilePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$188:
 	; Call 40 fclose 0
 	mov qword [rbp + 40], file_test$189
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fclose
 
@@ -1982,20 +1982,20 @@ section .text
 
  file_test$190:
 	; Assign sourceFile string_Y#
-	mov qword [rbp + 24], @10309string_Y#
+	mov qword [rbp + 24], {operand2}
 
  file_test$191:
 	; PreCall 32
 
  file_test$192:
 	; Parameter 56 pointer sourceFile
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$193:
 	; Call 32 remove 0
 	mov qword [rbp + 32], file_test$194
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp remove
 
@@ -2015,17 +2015,17 @@ section .text
 
  file_test$198:
 	; Parameter 56 string string_2225s2220has20been20removed0A#
-	mov qword [rbp + 56], @10312string_2225s2220has20been20removed0A#
+	mov qword [rbp + 56], {operand2}
 
  file_test$199:
 	; Parameter 64 pointer sourceFile
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$200:
 	; Call 32 printf 8
 	mov qword [rbp + 32], file_test$201
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 8
@@ -2043,30 +2043,30 @@ section .text
 
  file_test$204:
 	; Parameter 56 string string_Error202225s222025i3A2025s2E0A#
-	mov qword [rbp + 56], @10313string_Error202225s222025i3A2025s2E0A#
+	mov qword [rbp + 56], {operand2}
 
  file_test$205:
 	; Parameter 64 pointer sourceFile
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$206:
 	; Parameter 72 signed int errno
-	mov eax, [errno]
-	mov [rbp + 72], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$207:
 	; PreCall 32
 
  file_test$208:
 	; Parameter 100 signed int errno
-	mov eax, [errno]
-	mov [rbp + 100], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 100], {operand2}
 
  file_test$209:
 	; Call 76 strerror 0
 	mov qword [rbp + 76], file_test$210
-	mov [rbp + 84], rbp
+	mov [rbp + 84], {operand2}
 	add rbp, 76
 	jmp strerror
 
@@ -2078,12 +2078,12 @@ section .text
 
  file_test$212:
 	; Parameter 76 pointer £temporary4454
-	mov [rbp + 76], rbx
+	mov [rbp + 76], {operand2}
 
  file_test$213:
 	; Call 32 printf 20
 	mov qword [rbp + 32], file_test$214
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -2094,28 +2094,28 @@ section .text
 
  file_test$215:
 	; Assign sourceFile string_X#
-	mov qword [rbp + 24], @10314string_X#
+	mov qword [rbp + 24], {operand2}
 
  file_test$216:
 	; Assign targetFile string_Y#
-	mov qword [rbp + 32], @10316string_Y#
+	mov qword [rbp + 32], {operand2}
 
  file_test$217:
 	; PreCall 40
 
  file_test$218:
 	; Parameter 64 pointer sourceFile
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$219:
 	; Parameter 72 string string_w#
-	mov qword [rbp + 72], @10318string_w#
+	mov qword [rbp + 72], {operand2}
 
  file_test$220:
 	; Call 40 fopen 0
 	mov qword [rbp + 40], file_test$221
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fopen
 
@@ -2127,24 +2127,24 @@ section .text
 
  file_test$223:
 	; Assign filePtr £temporary4458
-	mov [rbp + 40], rbx
+	mov [rbp + 40], {operand2}
 
  file_test$224:
 	; PreCall 48
 
  file_test$225:
 	; Parameter 72 pointer filePtr
-	mov rax, [rbp + 40]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$226:
 	; Parameter 80 string string_Hello20X#
-	mov qword [rbp + 80], @10320string_Hello20X#
+	mov qword [rbp + 80], {operand2}
 
  file_test$227:
 	; Call 48 fprintf 0
 	mov qword [rbp + 48], file_test$228
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	mov rdi, rbp
 	jmp fprintf
@@ -2157,13 +2157,13 @@ section .text
 
  file_test$230:
 	; Parameter 72 pointer filePtr
-	mov rax, [rbp + 40]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$231:
 	; Call 48 fclose 0
 	mov qword [rbp + 48], file_test$232
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	jmp fclose
 
@@ -2175,18 +2175,18 @@ section .text
 
  file_test$234:
 	; Parameter 72 pointer sourceFile
-	mov rax, [rbp + 24]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$235:
 	; Parameter 80 pointer targetFile
-	mov rax, [rbp + 32]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$236:
 	; Call 48 rename 0
 	mov qword [rbp + 48], file_test$237
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	jmp rename
 
@@ -2206,22 +2206,22 @@ section .text
 
  file_test$241:
 	; Parameter 72 string string_2225s2220has20been20renamed20to202225s222E0A#
-	mov qword [rbp + 72], @10322string_2225s2220has20been20renamed20to202225s222E0A#
+	mov qword [rbp + 72], {operand2}
 
  file_test$242:
 	; Parameter 80 pointer sourceFile
-	mov rax, [rbp + 24]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$243:
 	; Parameter 88 pointer targetFile
-	mov rax, [rbp + 32]
-	mov [rbp + 88], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 88], {operand2}
 
  file_test$244:
 	; Call 48 printf 16
 	mov qword [rbp + 48], file_test$245
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	mov rdi, rbp
 	add rdi, 16
@@ -2239,35 +2239,35 @@ section .text
 
  file_test$248:
 	; Parameter 72 string string_Error202225s22202225s222025i3A2025s2E0A#
-	mov qword [rbp + 72], @10323string_Error202225s22202225s222025i3A2025s2E0A#
+	mov qword [rbp + 72], {operand2}
 
  file_test$249:
 	; Parameter 80 pointer sourceFile
-	mov rax, [rbp + 24]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$250:
 	; Parameter 88 pointer targetFile
-	mov rax, [rbp + 32]
-	mov [rbp + 88], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 88], {operand2}
 
  file_test$251:
 	; Parameter 96 signed int errno
-	mov eax, [errno]
-	mov [rbp + 96], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 96], {operand2}
 
  file_test$252:
 	; PreCall 48
 
  file_test$253:
 	; Parameter 124 signed int errno
-	mov eax, [errno]
-	mov [rbp + 124], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 124], {operand2}
 
  file_test$254:
 	; Call 100 strerror 0
 	mov qword [rbp + 100], file_test$255
-	mov [rbp + 108], rbp
+	mov [rbp + 108], {operand2}
 	add rbp, 100
 	jmp strerror
 
@@ -2279,12 +2279,12 @@ section .text
 
  file_test$257:
 	; Parameter 100 pointer £temporary4464
-	mov [rbp + 100], rbx
+	mov [rbp + 100], {operand2}
 
  file_test$258:
 	; Call 48 printf 28
 	mov qword [rbp + 48], file_test$259
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	mov rdi, rbp
 	add rdi, 28
@@ -2295,29 +2295,29 @@ section .text
 
  file_test$260:
 	; Assign sourceFile string_X2#
-	mov qword [rbp + 24], @10324string_X2#
+	mov qword [rbp + 24], {operand2}
 
  file_test$261:
 	; Assign targetFile string_Y2#
-	mov qword [rbp + 32], @10326string_Y2#
+	mov qword [rbp + 32], {operand2}
 
  file_test$262:
 	; PreCall 40
 
  file_test$263:
 	; Parameter 64 pointer sourceFile
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$264:
 	; Parameter 72 pointer targetFile
-	mov rax, [rbp + 32]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$265:
 	; Call 40 rename 0
 	mov qword [rbp + 40], file_test$266
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp rename
 
@@ -2337,22 +2337,22 @@ section .text
 
  file_test$270:
 	; Parameter 64 string string_2225s2220has20been20renamed20to202225s222E0A#
-	mov qword [rbp + 64], @10329string_2225s2220has20been20renamed20to202225s222E0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$271:
 	; Parameter 72 pointer sourceFile
-	mov rax, [rbp + 24]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$272:
 	; Parameter 80 pointer targetFile
-	mov rax, [rbp + 32]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$273:
 	; Call 40 printf 16
 	mov qword [rbp + 40], file_test$274
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 16
@@ -2370,35 +2370,35 @@ section .text
 
  file_test$277:
 	; Parameter 64 string string_Error202225s22202225s222025i3A2025s2E0A#
-	mov qword [rbp + 64], @10330string_Error202225s22202225s222025i3A2025s2E0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$278:
 	; Parameter 72 pointer sourceFile
-	mov rax, [rbp + 24]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$279:
 	; Parameter 80 pointer targetFile
-	mov rax, [rbp + 32]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$280:
 	; Parameter 88 signed int errno
-	mov eax, [errno]
-	mov [rbp + 88], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 88], {operand2}
 
  file_test$281:
 	; PreCall 40
 
  file_test$282:
 	; Parameter 116 signed int errno
-	mov eax, [errno]
-	mov [rbp + 116], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 116], {operand2}
 
  file_test$283:
 	; Call 92 strerror 0
 	mov qword [rbp + 92], file_test$284
-	mov [rbp + 100], rbp
+	mov [rbp + 100], {operand2}
 	add rbp, 92
 	jmp strerror
 
@@ -2410,12 +2410,12 @@ section .text
 
  file_test$286:
 	; Parameter 92 pointer £temporary4471
-	mov [rbp + 92], rbx
+	mov [rbp + 92], {operand2}
 
  file_test$287:
 	; Call 40 printf 28
 	mov qword [rbp + 40], file_test$288
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 28
@@ -2426,24 +2426,24 @@ section .text
 
  file_test$289:
 	; Assign targetFile string_Z#
-	mov qword [rbp + 24], @10331string_Z#
+	mov qword [rbp + 24], {operand2}
 
  file_test$290:
 	; PreCall 32
 
  file_test$291:
 	; Parameter 56 pointer targetFile
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$292:
 	; Parameter 64 string string_w#
-	mov qword [rbp + 64], @10333string_w#
+	mov qword [rbp + 64], {operand2}
 
  file_test$293:
 	; Call 32 fopen 0
 	mov qword [rbp + 32], file_test$294
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fopen
 
@@ -2455,24 +2455,24 @@ section .text
 
  file_test$296:
 	; Assign filePtr £temporary4475
-	mov [rbp + 32], rbx
+	mov [rbp + 32], {operand2}
 
  file_test$297:
 	; PreCall 40
 
  file_test$298:
 	; Parameter 64 pointer filePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$299:
 	; Parameter 72 string string_Hello20Z#
-	mov qword [rbp + 72], @10335string_Hello20Z#
+	mov qword [rbp + 72], {operand2}
 
  file_test$300:
 	; Call 40 fprintf 0
 	mov qword [rbp + 40], file_test$301
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	jmp fprintf
@@ -2485,13 +2485,13 @@ section .text
 
  file_test$303:
 	; Parameter 64 pointer filePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$304:
 	; Call 40 fclose 0
 	mov qword [rbp + 40], file_test$305
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fclose
 
@@ -2503,13 +2503,13 @@ section .text
 
  file_test$307:
 	; Parameter 64 pointer targetFile
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$308:
 	; Call 40 remove 0
 	mov qword [rbp + 40], file_test$309
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp remove
 
@@ -2529,17 +2529,17 @@ section .text
 
  file_test$313:
 	; Parameter 64 string string_2225s2220has20been20removed2E0A#
-	mov qword [rbp + 64], @10337string_2225s2220has20been20removed2E0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$314:
 	; Parameter 72 pointer targetFile
-	mov rax, [rbp + 24]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$315:
 	; Call 40 printf 8
 	mov qword [rbp + 40], file_test$316
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 8
@@ -2557,30 +2557,30 @@ section .text
 
  file_test$319:
 	; Parameter 64 string string_Error202225s222025i3A2025s2E0A#
-	mov qword [rbp + 64], @10338string_Error202225s222025i3A2025s2E0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$320:
 	; Parameter 72 pointer targetFile
-	mov rax, [rbp + 24]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$321:
 	; Parameter 80 signed int errno
-	mov eax, [errno]
-	mov [rbp + 80], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$322:
 	; PreCall 40
 
  file_test$323:
 	; Parameter 108 signed int errno
-	mov eax, [errno]
-	mov [rbp + 108], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 108], {operand2}
 
  file_test$324:
 	; Call 84 strerror 0
 	mov qword [rbp + 84], file_test$325
-	mov [rbp + 92], rbp
+	mov [rbp + 92], {operand2}
 	add rbp, 84
 	jmp strerror
 
@@ -2592,12 +2592,12 @@ section .text
 
  file_test$327:
 	; Parameter 84 pointer £temporary4481
-	mov [rbp + 84], rbx
+	mov [rbp + 84], {operand2}
 
  file_test$328:
 	; Call 40 printf 20
 	mov qword [rbp + 40], file_test$329
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 20
@@ -2608,20 +2608,20 @@ section .text
 
  file_test$330:
 	; Assign targetFile string_Z2#
-	mov qword [rbp + 24], @10339string_Z2#
+	mov qword [rbp + 24], {operand2}
 
  file_test$331:
 	; PreCall 32
 
  file_test$332:
 	; Parameter 56 pointer targetFile
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$333:
 	; Call 32 remove 0
 	mov qword [rbp + 32], file_test$334
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp remove
 
@@ -2641,17 +2641,17 @@ section .text
 
  file_test$338:
 	; Parameter 56 string string_2225s2220has20been20removed2E0A#
-	mov qword [rbp + 56], @10342string_2225s2220has20been20removed2E0A#
+	mov qword [rbp + 56], {operand2}
 
  file_test$339:
 	; Parameter 64 pointer targetFile
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$340:
 	; Call 32 printf 8
 	mov qword [rbp + 32], file_test$341
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 8
@@ -2669,30 +2669,30 @@ section .text
 
  file_test$344:
 	; Parameter 56 string string_Error202225s222025i3A2025s2E0A#
-	mov qword [rbp + 56], @10343string_Error202225s222025i3A2025s2E0A#
+	mov qword [rbp + 56], {operand2}
 
  file_test$345:
 	; Parameter 64 pointer targetFile
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$346:
 	; Parameter 72 signed int errno
-	mov eax, [errno]
-	mov [rbp + 72], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$347:
 	; PreCall 32
 
  file_test$348:
 	; Parameter 100 signed int errno
-	mov eax, [errno]
-	mov [rbp + 100], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 100], {operand2}
 
  file_test$349:
 	; Call 76 strerror 0
 	mov qword [rbp + 76], file_test$350
-	mov [rbp + 84], rbp
+	mov [rbp + 84], {operand2}
 	add rbp, 76
 	jmp strerror
 
@@ -2704,12 +2704,12 @@ section .text
 
  file_test$352:
 	; Parameter 76 pointer £temporary4488
-	mov [rbp + 76], rbx
+	mov [rbp + 76], {operand2}
 
  file_test$353:
 	; Call 32 printf 20
 	mov qword [rbp + 32], file_test$354
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -2723,16 +2723,16 @@ section .text
 
  file_test$356:
 	; Parameter 48 string string_PBook2Etxt#
-	mov qword [rbp + 48], @10344string_PBook2Etxt#
+	mov qword [rbp + 48], {operand2}
 
  file_test$357:
 	; Parameter 56 string string_r#
-	mov qword [rbp + 56], @10345string_r#
+	mov qword [rbp + 56], {operand2}
 
  file_test$358:
 	; Call 24 fopen 0
 	mov qword [rbp + 24], file_test$359
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp fopen
 
@@ -2744,11 +2744,11 @@ section .text
 
  file_test$361:
 	; Assign inFilePtr £temporary4492
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  file_test$362:
 	; NotEqual 374 inFilePtr integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne file_test$374
 
  file_test$363:
@@ -2756,29 +2756,29 @@ section .text
 
  file_test$364:
 	; Parameter 56 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$365:
 	; Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 64], @10349string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$366:
 	; Parameter 72 string string_inFilePtr20213D20NULL#
-	mov qword [rbp + 72], @10350string_inFilePtr20213D20NULL#
+	mov qword [rbp + 72], {operand2}
 
  file_test$367:
 	; Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 80], @10351string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 80], {operand2}
 
  file_test$368:
 	; Parameter 88 signed int integral4$119#
-	mov dword [rbp + 88], 119
+	mov dword [rbp + 88], {operand2}
 
  file_test$369:
 	; Call 32 fprintf 20
 	mov qword [rbp + 32], file_test$370
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -2793,7 +2793,7 @@ section .text
  file_test$372:
 	; Call 32 abort 0
 	mov qword [rbp + 32], file_test$373
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp abort
 
@@ -2805,20 +2805,20 @@ section .text
 
  file_test$375:
 	; Parameter 56 string string_0A252D24s20252D24s0A#
-	mov qword [rbp + 56], @10353string_0A252D24s20252D24s0A#
+	mov qword [rbp + 56], {operand2}
 
  file_test$376:
 	; Parameter 64 string string_Name#
-	mov qword [rbp + 64], @10354string_Name#
+	mov qword [rbp + 64], {operand2}
 
  file_test$377:
 	; Parameter 72 string string_Phone#
-	mov qword [rbp + 72], @10355string_Phone#
+	mov qword [rbp + 72], {operand2}
 
  file_test$378:
 	; Call 32 printf 16
 	mov qword [rbp + 32], file_test$379
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 16
@@ -2832,20 +2832,20 @@ section .text
 
  file_test$381:
 	; Parameter 56 string string_252D24s20252D24s0A#
-	mov qword [rbp + 56], @10356string_252D24s20252D24s0A#
+	mov qword [rbp + 56], {operand2}
 
  file_test$382:
 	; Parameter 64 string string_3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D#
-	mov qword [rbp + 64], @10357string_3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D#
+	mov qword [rbp + 64], {operand2}
 
  file_test$383:
 	; Parameter 72 string string_3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D#
-	mov qword [rbp + 72], @10358string_3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D3D#
+	mov qword [rbp + 72], {operand2}
 
  file_test$384:
 	; Call 32 printf 16
 	mov qword [rbp + 32], file_test$385
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 16
@@ -2859,12 +2859,12 @@ section .text
 
  file_test$387:
 	; Parameter 64 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$388:
 	; Parameter 72 string string_25i#
-	mov qword [rbp + 72], @10361string_25i#
+	mov qword [rbp + 72], {operand2}
 
  file_test$389:
 	; Address £temporary4501 size
@@ -2873,12 +2873,12 @@ section .text
 
  file_test$390:
 	; Parameter 80 pointer £temporary4501
-	mov [rbp + 80], rsi
+	mov [rbp + 80], {operand2}
 
  file_test$391:
 	; Call 40 fscanf 8
 	mov qword [rbp + 40], file_test$392
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 8
@@ -2892,17 +2892,17 @@ section .text
 
  file_test$394:
 	; Parameter 64 string string_size2025i0A#
-	mov qword [rbp + 64], @10362string_size2025i0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$395:
 	; Parameter 72 signed int size
-	mov eax, [rbp + 36]
-	mov [rbp + 72], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$396:
 	; Call 40 printf 4
 	mov qword [rbp + 40], file_test$397
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 4
@@ -2913,12 +2913,12 @@ section .text
 
  file_test$398:
 	; Assign count integral4$0#
-	mov dword [rbp + 32], 0
+	mov dword [rbp + 32], {operand2}
 
  file_test$399:
 	; GreaterThanEqual 415 count size
-	mov eax, [rbp + 36]
-	cmp [rbp + 32], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 32], {operand2}
 	jge file_test$415
 
  file_test$400:
@@ -2926,27 +2926,27 @@ section .text
 
  file_test$401:
 	; Parameter 104 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 104], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 104], {operand2}
 
  file_test$402:
 	; Parameter 112 string string_25s25s#
-	mov qword [rbp + 112], @10371string_25s25s#
+	mov qword [rbp + 112], {operand2}
 
  file_test$403:
 	; Parameter 120 array name
-	mov [rbp + 120], rbp
-	add qword [rbp + 120], 40
+	mov [rbp + 120], {operand2}
+	add qword [rbp + 120], {operand2}
 
  file_test$404:
 	; Parameter 128 array phone
-	mov [rbp + 128], rbp
-	add qword [rbp + 128], 60
+	mov [rbp + 128], {operand2}
+	add qword [rbp + 128], {operand2}
 
  file_test$405:
 	; Call 80 fscanf 16
 	mov qword [rbp + 80], file_test$406
-	mov [rbp + 88], rbp
+	mov [rbp + 88], {operand2}
 	add rbp, 80
 	mov rdi, rbp
 	add rdi, 16
@@ -2960,22 +2960,22 @@ section .text
 
  file_test$408:
 	; Parameter 104 string string_252D24s20252D24s0A#
-	mov qword [rbp + 104], @10372string_252D24s20252D24s0A#
+	mov qword [rbp + 104], {operand2}
 
  file_test$409:
 	; Parameter 112 array name
-	mov [rbp + 112], rbp
-	add qword [rbp + 112], 40
+	mov [rbp + 112], {operand2}
+	add qword [rbp + 112], {operand2}
 
  file_test$410:
 	; Parameter 120 array phone
-	mov [rbp + 120], rbp
-	add qword [rbp + 120], 60
+	mov [rbp + 120], {operand2}
+	add qword [rbp + 120], {operand2}
 
  file_test$411:
 	; Call 80 printf 16
 	mov qword [rbp + 80], file_test$412
-	mov [rbp + 88], rbp
+	mov [rbp + 88], {operand2}
 	add rbp, 80
 	mov rdi, rbp
 	add rdi, 16
@@ -2997,12 +2997,12 @@ section .text
 
  file_test$416:
 	; Parameter 56 string string_0A#
-	mov qword [rbp + 56], @10373string_0A#
+	mov qword [rbp + 56], {operand2}
 
  file_test$417:
 	; Call 32 printf 0
 	mov qword [rbp + 32], file_test$418
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	jmp printf
@@ -3015,13 +3015,13 @@ section .text
 
  file_test$420:
 	; Parameter 56 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$421:
 	; Call 32 fclose 0
 	mov qword [rbp + 32], file_test$422
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fclose
 
@@ -3033,16 +3033,16 @@ section .text
 
  file_test$424:
 	; Parameter 48 string string_TestX2Ebin#
-	mov qword [rbp + 48], @10374string_TestX2Ebin#
+	mov qword [rbp + 48], {operand2}
 
  file_test$425:
 	; Parameter 56 string string_w#
-	mov qword [rbp + 56], @10375string_w#
+	mov qword [rbp + 56], {operand2}
 
  file_test$426:
 	; Call 24 fopen 0
 	mov qword [rbp + 24], file_test$427
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp fopen
 
@@ -3054,11 +3054,11 @@ section .text
 
  file_test$429:
 	; Assign outFilePtr £temporary4510
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  file_test$430:
 	; NotEqual 442 outFilePtr integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne file_test$442
 
  file_test$431:
@@ -3066,29 +3066,29 @@ section .text
 
  file_test$432:
 	; Parameter 56 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$433:
 	; Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 64], @10379string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$434:
 	; Parameter 72 string string_outFilePtr20213D20NULL#
-	mov qword [rbp + 72], @10380string_outFilePtr20213D20NULL#
+	mov qword [rbp + 72], {operand2}
 
  file_test$435:
 	; Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 80], @10381string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 80], {operand2}
 
  file_test$436:
 	; Parameter 88 signed int integral4$171#
-	mov dword [rbp + 88], 171
+	mov dword [rbp + 88], {operand2}
 
  file_test$437:
 	; Call 32 fprintf 20
 	mov qword [rbp + 32], file_test$438
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -3103,7 +3103,7 @@ section .text
  file_test$440:
 	; Call 32 abort 0
 	mov qword [rbp + 32], file_test$441
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp abort
 
@@ -3112,7 +3112,7 @@ section .text
 
  file_test$442:
 	; Assign size integral4$10#
-	mov dword [rbp + 32], 10
+	mov dword [rbp + 32], {operand2}
 
  file_test$443:
 	; PreCall 40
@@ -3124,25 +3124,25 @@ section .text
 
  file_test$445:
 	; Parameter 64 pointer £temporary4517
-	mov [rbp + 64], rsi
+	mov [rbp + 64], {operand2}
 
  file_test$446:
 	; Parameter 72 signed int integral4$4#
-	mov dword [rbp + 72], 4
+	mov dword [rbp + 72], {operand2}
 
  file_test$447:
 	; Parameter 76 signed int integral4$1#
-	mov dword [rbp + 76], 1
+	mov dword [rbp + 76], {operand2}
 
  file_test$448:
 	; Parameter 80 pointer outFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$449:
 	; Call 40 fwrite 0
 	mov qword [rbp + 40], file_test$450
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fwrite
 
@@ -3151,23 +3151,23 @@ section .text
 
  file_test$451:
 	; Assign index integral4$0#
-	mov dword [rbp + 36], 0
+	mov dword [rbp + 36], {operand2}
 
  file_test$452:
 	; GreaterThanEqual 466 index size
-	mov eax, [rbp + 32]
-	cmp [rbp + 36], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 36], {operand2}
 	jge file_test$466
 
  file_test$453:
 	; Multiply £temporary4521 index index
-	mov eax, [rbp + 36]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [rbp + 36]
 
  file_test$454:
 	; IntegralToFloating £temporary4522 £temporary4521
-	mov [container4bytes#], eax
+	mov [container4bytes#], {operand2}
 	fild dword [container4bytes#]
 
  file_test$455:
@@ -3184,25 +3184,25 @@ section .text
 
  file_test$458:
 	; Parameter 72 pointer £temporary4523
-	mov [rbp + 72], rsi
+	mov [rbp + 72], {operand2}
 
  file_test$459:
 	; Parameter 80 signed int integral4$8#
-	mov dword [rbp + 80], 8
+	mov dword [rbp + 80], {operand2}
 
  file_test$460:
 	; Parameter 84 signed int integral4$1#
-	mov dword [rbp + 84], 1
+	mov dword [rbp + 84], {operand2}
 
  file_test$461:
 	; Parameter 88 pointer outFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 88], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 88], {operand2}
 
  file_test$462:
 	; Call 48 fwrite 0
 	mov qword [rbp + 48], file_test$463
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	jmp fwrite
 
@@ -3222,13 +3222,13 @@ section .text
 
  file_test$467:
 	; Parameter 64 pointer outFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$468:
 	; Call 40 fclose 0
 	mov qword [rbp + 40], file_test$469
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fclose
 
@@ -3240,16 +3240,16 @@ section .text
 
  file_test$471:
 	; Parameter 48 string string_TestX2Ebin#
-	mov qword [rbp + 48], @10393string_TestX2Ebin#
+	mov qword [rbp + 48], {operand2}
 
  file_test$472:
 	; Parameter 56 string string_r#
-	mov qword [rbp + 56], @10394string_r#
+	mov qword [rbp + 56], {operand2}
 
  file_test$473:
 	; Call 24 fopen 0
 	mov qword [rbp + 24], file_test$474
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp fopen
 
@@ -3261,11 +3261,11 @@ section .text
 
  file_test$476:
 	; Assign inFilePtr £temporary4526
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  file_test$477:
 	; NotEqual 489 inFilePtr integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne file_test$489
 
  file_test$478:
@@ -3273,29 +3273,29 @@ section .text
 
  file_test$479:
 	; Parameter 64 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$480:
 	; Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 72], @10400string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 72], {operand2}
 
  file_test$481:
 	; Parameter 80 string string_inFilePtr20213D20NULL#
-	mov qword [rbp + 80], @10401string_inFilePtr20213D20NULL#
+	mov qword [rbp + 80], {operand2}
 
  file_test$482:
 	; Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 88], @10402string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 88], {operand2}
 
  file_test$483:
 	; Parameter 96 signed int integral4$188#
-	mov dword [rbp + 96], 188
+	mov dword [rbp + 96], {operand2}
 
  file_test$484:
 	; Call 40 fprintf 20
 	mov qword [rbp + 40], file_test$485
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 20
@@ -3310,7 +3310,7 @@ section .text
  file_test$487:
 	; Call 40 abort 0
 	mov qword [rbp + 40], file_test$488
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp abort
 
@@ -3327,25 +3327,25 @@ section .text
 
  file_test$491:
 	; Parameter 64 pointer £temporary4533
-	mov [rbp + 64], rsi
+	mov [rbp + 64], {operand2}
 
  file_test$492:
 	; Parameter 72 signed int integral4$4#
-	mov dword [rbp + 72], 4
+	mov dword [rbp + 72], {operand2}
 
  file_test$493:
 	; Parameter 76 signed int integral4$1#
-	mov dword [rbp + 76], 1
+	mov dword [rbp + 76], {operand2}
 
  file_test$494:
 	; Parameter 80 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$495:
 	; Call 40 fread 0
 	mov qword [rbp + 40], file_test$496
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fread
 
@@ -3357,17 +3357,17 @@ section .text
 
  file_test$498:
 	; Parameter 64 string string_size13A2025i0A#
-	mov qword [rbp + 64], @10406string_size13A2025i0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$499:
 	; Parameter 72 signed int size
-	mov eax, [rbp + 32]
-	mov [rbp + 72], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  file_test$500:
 	; Call 40 printf 4
 	mov qword [rbp + 40], file_test$501
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 4
@@ -3378,12 +3378,12 @@ section .text
 
  file_test$502:
 	; Assign index integral4$0#
-	mov dword [rbp + 36], 0
+	mov dword [rbp + 36], {operand2}
 
  file_test$503:
 	; GreaterThanEqual 521 index size
-	mov eax, [rbp + 32]
-	cmp [rbp + 36], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 36], {operand2}
 	jge file_test$521
 
  file_test$504:
@@ -3396,25 +3396,25 @@ section .text
 
  file_test$506:
 	; Parameter 72 pointer £temporary4538
-	mov [rbp + 72], rsi
+	mov [rbp + 72], {operand2}
 
  file_test$507:
 	; Parameter 80 signed int integral4$8#
-	mov dword [rbp + 80], 8
+	mov dword [rbp + 80], {operand2}
 
  file_test$508:
 	; Parameter 84 signed int integral4$1#
-	mov dword [rbp + 84], 1
+	mov dword [rbp + 84], {operand2}
 
  file_test$509:
 	; Parameter 88 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 88], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 88], {operand2}
 
  file_test$510:
 	; Call 48 fread 0
 	mov qword [rbp + 48], file_test$511
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	jmp fread
 
@@ -3426,12 +3426,12 @@ section .text
 
  file_test$513:
 	; Parameter 72 string string_index13A2025i3A20value2025f0A#
-	mov qword [rbp + 72], @10412string_index13A2025i3A20value2025f0A#
+	mov qword [rbp + 72], {operand2}
 
  file_test$514:
 	; Parameter 80 signed int index
-	mov eax, [rbp + 36]
-	mov [rbp + 80], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  file_test$515:
 	; PushFloat value
@@ -3444,7 +3444,7 @@ section .text
  file_test$517:
 	; Call 48 printf 12
 	mov qword [rbp + 48], file_test$518
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	mov rdi, rbp
 	add rdi, 12
@@ -3466,12 +3466,12 @@ section .text
 
  file_test$522:
 	; Parameter 64 string string_0A#
-	mov qword [rbp + 64], @10413string_0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$523:
 	; Call 40 printf 0
 	mov qword [rbp + 40], file_test$524
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	jmp printf
@@ -3484,13 +3484,13 @@ section .text
 
  file_test$526:
 	; Parameter 64 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$527:
 	; Call 40 fclose 0
 	mov qword [rbp + 40], file_test$528
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fclose
 
@@ -3502,16 +3502,16 @@ section .text
 
  file_test$530:
 	; Parameter 48 string string_TestY2Ebin#
-	mov qword [rbp + 48], @10414string_TestY2Ebin#
+	mov qword [rbp + 48], {operand2}
 
  file_test$531:
 	; Parameter 56 string string_w#
-	mov qword [rbp + 56], @10415string_w#
+	mov qword [rbp + 56], {operand2}
 
  file_test$532:
 	; Call 24 fopen 0
 	mov qword [rbp + 24], file_test$533
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp fopen
 
@@ -3523,11 +3523,11 @@ section .text
 
  file_test$535:
 	; Assign outFilePtr £temporary4543
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  file_test$536:
 	; NotEqual 548 outFilePtr integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne file_test$548
 
  file_test$537:
@@ -3535,29 +3535,29 @@ section .text
 
  file_test$538:
 	; Parameter 56 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$539:
 	; Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 64], @10419string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$540:
 	; Parameter 72 string string_outFilePtr20213D20NULL#
-	mov qword [rbp + 72], @10420string_outFilePtr20213D20NULL#
+	mov qword [rbp + 72], {operand2}
 
  file_test$541:
 	; Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 80], @10421string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 80], {operand2}
 
  file_test$542:
 	; Parameter 88 signed int integral4$203#
-	mov dword [rbp + 88], 203
+	mov dword [rbp + 88], {operand2}
 
  file_test$543:
 	; Call 32 fprintf 20
 	mov qword [rbp + 32], file_test$544
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -3572,7 +3572,7 @@ section .text
  file_test$546:
 	; Call 32 abort 0
 	mov qword [rbp + 32], file_test$547
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp abort
 
@@ -3581,27 +3581,27 @@ section .text
 
  file_test$548:
 	; Assign size integral4$10#
-	mov dword [rbp + 32], 10
+	mov dword [rbp + 32], {operand2}
 
  file_test$549:
 	; Assign index integral4$0#
-	mov dword [rbp + 36], 0
+	mov dword [rbp + 36], {operand2}
 
  file_test$550:
 	; GreaterThanEqual 564 index size
-	mov eax, [rbp + 32]
-	cmp [rbp + 36], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 36], {operand2}
 	jge file_test$564
 
  file_test$551:
 	; Multiply £temporary4552 index index
-	mov eax, [rbp + 36]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [rbp + 36]
 
  file_test$552:
 	; IntegralToFloating £temporary4553 £temporary4552
-	mov [container4bytes#], eax
+	mov [container4bytes#], {operand2}
 	fild dword [container4bytes#]
 
  file_test$553:
@@ -3618,25 +3618,25 @@ section .text
 
  file_test$556:
 	; Parameter 72 pointer £temporary4554
-	mov [rbp + 72], rsi
+	mov [rbp + 72], {operand2}
 
  file_test$557:
 	; Parameter 80 signed int integral4$8#
-	mov dword [rbp + 80], 8
+	mov dword [rbp + 80], {operand2}
 
  file_test$558:
 	; Parameter 84 signed int integral4$1#
-	mov dword [rbp + 84], 1
+	mov dword [rbp + 84], {operand2}
 
  file_test$559:
 	; Parameter 88 pointer outFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 88], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 88], {operand2}
 
  file_test$560:
 	; Call 48 fwrite 0
 	mov qword [rbp + 48], file_test$561
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	jmp fwrite
 
@@ -3656,13 +3656,13 @@ section .text
 
  file_test$565:
 	; Parameter 64 pointer outFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  file_test$566:
 	; Call 40 fclose 0
 	mov qword [rbp + 40], file_test$567
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fclose
 
@@ -3674,16 +3674,16 @@ section .text
 
  file_test$569:
 	; Parameter 48 string string_TestY2Ebin#
-	mov qword [rbp + 48], @10431string_TestY2Ebin#
+	mov qword [rbp + 48], {operand2}
 
  file_test$570:
 	; Parameter 56 string string_r#
-	mov qword [rbp + 56], @10432string_r#
+	mov qword [rbp + 56], {operand2}
 
  file_test$571:
 	; Call 24 fopen 0
 	mov qword [rbp + 24], file_test$572
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp fopen
 
@@ -3695,11 +3695,11 @@ section .text
 
  file_test$574:
 	; Assign inFilePtr £temporary4557
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  file_test$575:
 	; NotEqual 587 inFilePtr integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne file_test$587
 
  file_test$576:
@@ -3707,29 +3707,29 @@ section .text
 
  file_test$577:
 	; Parameter 56 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$578:
 	; Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 64], @10436string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$579:
 	; Parameter 72 string string_inFilePtr20213D20NULL#
-	mov qword [rbp + 72], @10437string_inFilePtr20213D20NULL#
+	mov qword [rbp + 72], {operand2}
 
  file_test$580:
 	; Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 80], @10438string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 80], {operand2}
 
  file_test$581:
 	; Parameter 88 signed int integral4$217#
-	mov dword [rbp + 88], 217
+	mov dword [rbp + 88], {operand2}
 
  file_test$582:
 	; Call 32 fprintf 20
 	mov qword [rbp + 32], file_test$583
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -3744,7 +3744,7 @@ section .text
  file_test$585:
 	; Call 32 abort 0
 	mov qword [rbp + 32], file_test$586
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp abort
 
@@ -3753,7 +3753,7 @@ section .text
 
  file_test$587:
 	; Assign index integral4$0#
-	mov dword [rbp + 32], 0
+	mov dword [rbp + 32], {operand2}
 
  file_test$588:
 	; PreCall 44
@@ -3765,25 +3765,25 @@ section .text
 
  file_test$590:
 	; Parameter 68 pointer £temporary4564
-	mov [rbp + 68], rsi
+	mov [rbp + 68], {operand2}
 
  file_test$591:
 	; Parameter 76 signed int integral4$8#
-	mov dword [rbp + 76], 8
+	mov dword [rbp + 76], {operand2}
 
  file_test$592:
 	; Parameter 80 signed int integral4$1#
-	mov dword [rbp + 80], 1
+	mov dword [rbp + 80], {operand2}
 
  file_test$593:
 	; Parameter 84 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 84], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 84], {operand2}
 
  file_test$594:
 	; Call 44 fread 0
 	mov qword [rbp + 44], file_test$595
-	mov [rbp + 52], rbp
+	mov [rbp + 52], {operand2}
 	add rbp, 44
 	jmp fread
 
@@ -3803,11 +3803,11 @@ section .text
 
  file_test$599:
 	; Parameter 68 string string_index23A2025i3A20value2025f0A#
-	mov qword [rbp + 68], @10446string_index23A2025i3A20value2025f0A#
+	mov qword [rbp + 68], {operand2}
 
  file_test$600:
 	; Assign £temporary4567 index
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 
  file_test$601:
 	; Add index index integral4$1#
@@ -3815,7 +3815,7 @@ section .text
 
  file_test$602:
 	; Parameter 76 signed int £temporary4567
-	mov [rbp + 76], eax
+	mov [rbp + 76], {operand2}
 
  file_test$603:
 	; PushFloat value
@@ -3828,7 +3828,7 @@ section .text
  file_test$605:
 	; Call 44 printf 12
 	mov qword [rbp + 44], file_test$606
-	mov [rbp + 52], rbp
+	mov [rbp + 52], {operand2}
 	add rbp, 44
 	mov rdi, rbp
 	add rdi, 12
@@ -3846,12 +3846,12 @@ section .text
 
  file_test$609:
 	; Parameter 56 string string_0A#
-	mov qword [rbp + 56], @10448string_0A#
+	mov qword [rbp + 56], {operand2}
 
  file_test$610:
 	; Call 32 printf 0
 	mov qword [rbp + 32], file_test$611
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	jmp printf
@@ -3864,13 +3864,13 @@ section .text
 
  file_test$613:
 	; Parameter 56 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$614:
 	; Call 32 fclose 0
 	mov qword [rbp + 32], file_test$615
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fclose
 
@@ -3882,16 +3882,16 @@ section .text
 
  file_test$617:
 	; Parameter 48 string string_TestY2Ebin#
-	mov qword [rbp + 48], @10449string_TestY2Ebin#
+	mov qword [rbp + 48], {operand2}
 
  file_test$618:
 	; Parameter 56 string string_r#
-	mov qword [rbp + 56], @10450string_r#
+	mov qword [rbp + 56], {operand2}
 
  file_test$619:
 	; Call 24 fopen 0
 	mov qword [rbp + 24], file_test$620
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp fopen
 
@@ -3903,11 +3903,11 @@ section .text
 
  file_test$622:
 	; Assign inFilePtr £temporary4572
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  file_test$623:
 	; NotEqual 635 inFilePtr integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne file_test$635
 
  file_test$624:
@@ -3915,29 +3915,29 @@ section .text
 
  file_test$625:
 	; Parameter 56 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$626:
 	; Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 64], @10454string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$627:
 	; Parameter 72 string string_inFilePtr20213D20NULL#
-	mov qword [rbp + 72], @10455string_inFilePtr20213D20NULL#
+	mov qword [rbp + 72], {operand2}
 
  file_test$628:
 	; Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 80], @10456string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 80], {operand2}
 
  file_test$629:
 	; Parameter 88 signed int integral4$232#
-	mov dword [rbp + 88], 232
+	mov dword [rbp + 88], {operand2}
 
  file_test$630:
 	; Call 32 fprintf 20
 	mov qword [rbp + 32], file_test$631
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -3952,7 +3952,7 @@ section .text
  file_test$633:
 	; Call 32 abort 0
 	mov qword [rbp + 32], file_test$634
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp abort
 
@@ -3961,20 +3961,20 @@ section .text
 
  file_test$635:
 	; Assign index integral4$0#
-	mov dword [rbp + 32], 0
+	mov dword [rbp + 32], {operand2}
 
  file_test$636:
 	; PreCall 36
 
  file_test$637:
 	; Parameter 60 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 60], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 60], {operand2}
 
  file_test$638:
 	; Call 36 feof 0
 	mov qword [rbp + 36], file_test$639
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp feof
 
@@ -3999,25 +3999,25 @@ section .text
 
  file_test$644:
 	; Parameter 68 pointer £temporary4582
-	mov [rbp + 68], rsi
+	mov [rbp + 68], {operand2}
 
  file_test$645:
 	; Parameter 76 signed int integral4$8#
-	mov dword [rbp + 76], 8
+	mov dword [rbp + 76], {operand2}
 
  file_test$646:
 	; Parameter 80 signed int integral4$1#
-	mov dword [rbp + 80], 1
+	mov dword [rbp + 80], {operand2}
 
  file_test$647:
 	; Parameter 84 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 84], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 84], {operand2}
 
  file_test$648:
 	; Call 44 fread 0
 	mov qword [rbp + 44], file_test$649
-	mov [rbp + 52], rbp
+	mov [rbp + 52], {operand2}
 	add rbp, 44
 	jmp fread
 
@@ -4029,11 +4029,11 @@ section .text
 
  file_test$651:
 	; Parameter 68 string string_index33A2025i3A20value2025f0A#
-	mov qword [rbp + 68], @10464string_index33A2025i3A20value2025f0A#
+	mov qword [rbp + 68], {operand2}
 
  file_test$652:
 	; Assign £temporary4584 index
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 
  file_test$653:
 	; Add index index integral4$1#
@@ -4041,7 +4041,7 @@ section .text
 
  file_test$654:
 	; Parameter 76 signed int £temporary4584
-	mov [rbp + 76], eax
+	mov [rbp + 76], {operand2}
 
  file_test$655:
 	; PushFloat value
@@ -4054,7 +4054,7 @@ section .text
  file_test$657:
 	; Call 44 printf 12
 	mov qword [rbp + 44], file_test$658
-	mov [rbp + 52], rbp
+	mov [rbp + 52], {operand2}
 	add rbp, 44
 	mov rdi, rbp
 	add rdi, 12
@@ -4072,12 +4072,12 @@ section .text
 
  file_test$661:
 	; Parameter 56 string string_0A#
-	mov qword [rbp + 56], @10466string_0A#
+	mov qword [rbp + 56], {operand2}
 
  file_test$662:
 	; Call 32 printf 0
 	mov qword [rbp + 32], file_test$663
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	jmp printf
@@ -4090,13 +4090,13 @@ section .text
 
  file_test$665:
 	; Parameter 56 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$666:
 	; Call 32 fclose 0
 	mov qword [rbp + 32], file_test$667
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fclose
 
@@ -4108,16 +4108,16 @@ section .text
 
  file_test$669:
 	; Parameter 48 string string_TestX2Ebin#
-	mov qword [rbp + 48], @10467string_TestX2Ebin#
+	mov qword [rbp + 48], {operand2}
 
  file_test$670:
 	; Parameter 56 string string_r#
-	mov qword [rbp + 56], @10468string_r#
+	mov qword [rbp + 56], {operand2}
 
  file_test$671:
 	; Call 24 fopen 0
 	mov qword [rbp + 24], file_test$672
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp fopen
 
@@ -4129,11 +4129,11 @@ section .text
 
  file_test$674:
 	; Assign inFilePtr £temporary4589
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  file_test$675:
 	; NotEqual 687 inFilePtr integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne file_test$687
 
  file_test$676:
@@ -4141,29 +4141,29 @@ section .text
 
  file_test$677:
 	; Parameter 60 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 60], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 60], {operand2}
 
  file_test$678:
 	; Parameter 68 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 68], @10473string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 68], {operand2}
 
  file_test$679:
 	; Parameter 76 string string_inFilePtr20213D20NULL#
-	mov qword [rbp + 76], @10474string_inFilePtr20213D20NULL#
+	mov qword [rbp + 76], {operand2}
 
  file_test$680:
 	; Parameter 84 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 84], @10475string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 84], {operand2}
 
  file_test$681:
 	; Parameter 92 signed int integral4$250#
-	mov dword [rbp + 92], 250
+	mov dword [rbp + 92], {operand2}
 
  file_test$682:
 	; Call 36 fprintf 20
 	mov qword [rbp + 36], file_test$683
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	mov rdi, rbp
 	add rdi, 20
@@ -4178,7 +4178,7 @@ section .text
  file_test$685:
 	; Call 36 abort 0
 	mov qword [rbp + 36], file_test$686
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp abort
 
@@ -4195,25 +4195,25 @@ section .text
 
  file_test$689:
 	; Parameter 60 pointer £temporary4596
-	mov [rbp + 60], rsi
+	mov [rbp + 60], {operand2}
 
  file_test$690:
 	; Parameter 68 signed int integral4$4#
-	mov dword [rbp + 68], 4
+	mov dword [rbp + 68], {operand2}
 
  file_test$691:
 	; Parameter 72 signed int integral4$1#
-	mov dword [rbp + 72], 1
+	mov dword [rbp + 72], {operand2}
 
  file_test$692:
 	; Parameter 76 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  file_test$693:
 	; Call 36 fread 0
 	mov qword [rbp + 36], file_test$694
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp fread
 
@@ -4225,27 +4225,27 @@ section .text
 
  file_test$696:
 	; Parameter 60 string string_size43A2025i20total2025i0A#
-	mov qword [rbp + 60], @10479string_size43A2025i20total2025i0A#
+	mov qword [rbp + 60], {operand2}
 
  file_test$697:
 	; Parameter 68 signed int size
-	mov eax, [rbp + 32]
-	mov [rbp + 68], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 68], {operand2}
 
  file_test$698:
 	; Multiply £temporary4598 size integral4$8#
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [@10480integral4$8#]
 
  file_test$699:
 	; Parameter 72 signed int £temporary4598
-	mov [rbp + 72], eax
+	mov [rbp + 72], {operand2}
 
  file_test$700:
 	; Call 36 printf 8
 	mov qword [rbp + 36], file_test$701
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	mov rdi, rbp
 	add rdi, 8
@@ -4256,23 +4256,23 @@ section .text
 
  file_test$702:
 	; Multiply total size integral4$8#
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [@10481integral4$8#]
-	mov [rbp + 36], eax
+	mov [rbp + 36], {operand2}
 
  file_test$703:
 	; PreCall 44
 
  file_test$704:
 	; Parameter 68 signed int total
-	mov eax, [rbp + 36]
-	mov [rbp + 68], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 68], {operand2}
 
  file_test$705:
 	; Call 44 malloc 0
 	mov qword [rbp + 44], file_test$706
-	mov [rbp + 52], rbp
+	mov [rbp + 52], {operand2}
 	add rbp, 44
 	jmp malloc
 
@@ -4284,11 +4284,11 @@ section .text
 
  file_test$708:
 	; Assign p £temporary4601
-	mov [rbp + 44], rbx
+	mov [rbp + 44], {operand2}
 
  file_test$709:
 	; Multiply £temporary4602 size integral4$8#
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [@10485integral4$8#]
 
@@ -4299,13 +4299,13 @@ section .text
 
  file_test$711:
 	; Add endPtr p £temporary4603
-	mov rbx, [rbp + 44]
+	mov rbx, [{operand1}{WithSign(operand2)}]
 	add rbx, rax
-	mov [rbp + 52], rbx
+	mov [rbp + 52], {operand2}
 
  file_test$712:
 	; NotEqual 724 p integral8$0#
-	cmp qword [rbp + 44], 0
+	cmp qword [rbp + 44], {operand2}
 	jne file_test$724
 
  file_test$713:
@@ -4313,29 +4313,29 @@ section .text
 
  file_test$714:
 	; Parameter 84 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 84], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 84], {operand2}
 
  file_test$715:
 	; Parameter 92 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 92], @10489string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 92], {operand2}
 
  file_test$716:
 	; Parameter 100 string string_p20213D20NULL#
-	mov qword [rbp + 100], @10490string_p20213D20NULL#
+	mov qword [rbp + 100], {operand2}
 
  file_test$717:
 	; Parameter 108 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 108], @10491string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 108], {operand2}
 
  file_test$718:
 	; Parameter 116 signed int integral4$257#
-	mov dword [rbp + 116], 257
+	mov dword [rbp + 116], {operand2}
 
  file_test$719:
 	; Call 60 fprintf 20
 	mov qword [rbp + 60], file_test$720
-	mov [rbp + 68], rbp
+	mov [rbp + 68], {operand2}
 	add rbp, 60
 	mov rdi, rbp
 	add rdi, 20
@@ -4350,7 +4350,7 @@ section .text
  file_test$722:
 	; Call 60 abort 0
 	mov qword [rbp + 60], file_test$723
-	mov [rbp + 68], rbp
+	mov [rbp + 68], {operand2}
 	add rbp, 60
 	jmp abort
 
@@ -4362,27 +4362,27 @@ section .text
 
  file_test$725:
 	; Parameter 84 string string_malloc43A2025u2025u2025u0A#
-	mov qword [rbp + 84], @10493string_malloc43A2025u2025u2025u0A#
+	mov qword [rbp + 84], {operand2}
 
  file_test$726:
 	; Parameter 92 pointer p
-	mov rax, [rbp + 44]
-	mov [rbp + 92], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 92], {operand2}
 
  file_test$727:
 	; Parameter 100 signed int total
-	mov eax, [rbp + 36]
-	mov [rbp + 100], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 100], {operand2}
 
  file_test$728:
 	; Parameter 104 pointer endPtr
-	mov rax, [rbp + 52]
-	mov [rbp + 104], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 104], {operand2}
 
  file_test$729:
 	; Call 60 printf 20
 	mov qword [rbp + 60], file_test$730
-	mov [rbp + 68], rbp
+	mov [rbp + 68], {operand2}
 	add rbp, 60
 	mov rdi, rbp
 	add rdi, 20
@@ -4396,27 +4396,27 @@ section .text
 
  file_test$732:
 	; Parameter 84 pointer p
-	mov rax, [rbp + 44]
-	mov [rbp + 84], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 84], {operand2}
 
  file_test$733:
 	; Parameter 92 signed int total
-	mov eax, [rbp + 36]
-	mov [rbp + 92], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 92], {operand2}
 
  file_test$734:
 	; Parameter 96 signed int integral4$1#
-	mov dword [rbp + 96], 1
+	mov dword [rbp + 96], {operand2}
 
  file_test$735:
 	; Parameter 100 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 100], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 100], {operand2}
 
  file_test$736:
 	; Call 60 fread 0
 	mov qword [rbp + 60], file_test$737
-	mov [rbp + 68], rbp
+	mov [rbp + 68], {operand2}
 	add rbp, 60
 	jmp fread
 
@@ -4425,12 +4425,12 @@ section .text
 
  file_test$738:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], 0
+	mov dword [rbp + 40], {operand2}
 
  file_test$739:
 	; GreaterThanEqual 753 index size
-	mov eax, [rbp + 32]
-	cmp [rbp + 40], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 40], {operand2}
 	jge file_test$753
 
  file_test$740:
@@ -4438,16 +4438,16 @@ section .text
 
  file_test$741:
 	; Parameter 84 string string_index43A2025i3A20value2025f0A#
-	mov qword [rbp + 84], @10497string_index43A2025i3A20value2025f0A#
+	mov qword [rbp + 84], {operand2}
 
  file_test$742:
 	; Parameter 92 signed int index
-	mov eax, [rbp + 40]
-	mov [rbp + 92], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 92], {operand2}
 
  file_test$743:
 	; Multiply £temporary4615 index integral4$8#
-	mov eax, [rbp + 40]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [@10498integral4$8#]
 
@@ -4458,7 +4458,7 @@ section .text
 
  file_test$745:
 	; Add £temporary4617 p £temporary4616
-	mov rsi, [rbp + 44]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  file_test$746:
@@ -4475,7 +4475,7 @@ section .text
  file_test$749:
 	; Call 60 printf 12
 	mov qword [rbp + 60], file_test$750
-	mov [rbp + 68], rbp
+	mov [rbp + 68], {operand2}
 	add rbp, 60
 	mov rdi, rbp
 	add rdi, 12
@@ -4497,12 +4497,12 @@ section .text
 
  file_test$754:
 	; Parameter 84 string string_0A#
-	mov qword [rbp + 84], @10499string_0A#
+	mov qword [rbp + 84], {operand2}
 
  file_test$755:
 	; Call 60 printf 0
 	mov qword [rbp + 60], file_test$756
-	mov [rbp + 68], rbp
+	mov [rbp + 68], {operand2}
 	add rbp, 60
 	mov rdi, rbp
 	jmp printf
@@ -4515,13 +4515,13 @@ section .text
 
  file_test$758:
 	; Parameter 84 pointer p
-	mov rax, [rbp + 44]
-	mov [rbp + 84], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 84], {operand2}
 
  file_test$759:
 	; Call 60 free 0
 	mov qword [rbp + 60], file_test$760
-	mov [rbp + 68], rbp
+	mov [rbp + 68], {operand2}
 	add rbp, 60
 	jmp free
 
@@ -4533,13 +4533,13 @@ section .text
 
  file_test$762:
 	; Parameter 60 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 60], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 60], {operand2}
 
  file_test$763:
 	; Call 36 fclose 0
 	mov qword [rbp + 36], file_test$764
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp fclose
 
@@ -4548,235 +4548,235 @@ section .text
 
  file_test$765:
 	; Assign personVector[0].name[0] integral1$65#
-	mov byte [rbp + 24], 65
+	mov byte [rbp + 24], {operand2}
 
  file_test$766:
 	; Assign personVector[0].name[1] integral1$100#
-	mov byte [rbp + 25], 100
+	mov byte [rbp + 25], {operand2}
 
  file_test$767:
 	; Assign personVector[0].name[2] integral1$97#
-	mov byte [rbp + 26], 97
+	mov byte [rbp + 26], {operand2}
 
  file_test$768:
 	; Assign personVector[0].name[3] integral1$109#
-	mov byte [rbp + 27], 109
+	mov byte [rbp + 27], {operand2}
 
  file_test$769:
 	; Assign personVector[0].name[4] integral1$32#
-	mov byte [rbp + 28], 32
+	mov byte [rbp + 28], {operand2}
 
  file_test$770:
 	; Assign personVector[0].name[5] integral1$66#
-	mov byte [rbp + 29], 66
+	mov byte [rbp + 29], {operand2}
 
  file_test$771:
 	; Assign personVector[0].name[6] integral1$101#
-	mov byte [rbp + 30], 101
+	mov byte [rbp + 30], {operand2}
 
  file_test$772:
 	; Assign personVector[0].name[7] integral1$114#
-	mov byte [rbp + 31], 114
+	mov byte [rbp + 31], {operand2}
 
  file_test$773:
 	; Assign personVector[0].name[8] integral1$116#
-	mov byte [rbp + 32], 116
+	mov byte [rbp + 32], {operand2}
 
  file_test$774:
 	; Assign personVector[0].name[9] integral1$105#
-	mov byte [rbp + 33], 105
+	mov byte [rbp + 33], {operand2}
 
  file_test$775:
 	; Assign personVector[0].name[10] integral1$108#
-	mov byte [rbp + 34], 108
+	mov byte [rbp + 34], {operand2}
 
  file_test$776:
 	; Assign personVector[0].name[11] integral1$115#
-	mov byte [rbp + 35], 115
+	mov byte [rbp + 35], {operand2}
 
  file_test$777:
 	; Assign personVector[0].name[12] integral1$115#
-	mov byte [rbp + 36], 115
+	mov byte [rbp + 36], {operand2}
 
  file_test$778:
 	; Assign personVector[0].name[13] integral1$111#
-	mov byte [rbp + 37], 111
+	mov byte [rbp + 37], {operand2}
 
  file_test$779:
 	; Assign personVector[0].name[14] integral1$110#
-	mov byte [rbp + 38], 110
+	mov byte [rbp + 38], {operand2}
 
  file_test$780:
 	; Assign personVector[0].name[15] integral1$0#
-	mov byte [rbp + 39], 0
+	mov byte [rbp + 39], {operand2}
 
  file_test$781:
 	; Assign personVector[0].phone integral4$12345#
-	mov dword [rbp + 72], 12345
+	mov dword [rbp + 72], {operand2}
 
  file_test$782:
 	; Assign personVector[1].name[0] integral1$66#
-	mov byte [rbp + 76], 66
+	mov byte [rbp + 76], {operand2}
 
  file_test$783:
 	; Assign personVector[1].name[1] integral1$101#
-	mov byte [rbp + 77], 101
+	mov byte [rbp + 77], {operand2}
 
  file_test$784:
 	; Assign personVector[1].name[2] integral1$114#
-	mov byte [rbp + 78], 114
+	mov byte [rbp + 78], {operand2}
 
  file_test$785:
 	; Assign personVector[1].name[3] integral1$116#
-	mov byte [rbp + 79], 116
+	mov byte [rbp + 79], {operand2}
 
  file_test$786:
 	; Assign personVector[1].name[4] integral1$105#
-	mov byte [rbp + 80], 105
+	mov byte [rbp + 80], {operand2}
 
  file_test$787:
 	; Assign personVector[1].name[5] integral1$108#
-	mov byte [rbp + 81], 108
+	mov byte [rbp + 81], {operand2}
 
  file_test$788:
 	; Assign personVector[1].name[6] integral1$32#
-	mov byte [rbp + 82], 32
+	mov byte [rbp + 82], {operand2}
 
  file_test$789:
 	; Assign personVector[1].name[7] integral1$67#
-	mov byte [rbp + 83], 67
+	mov byte [rbp + 83], {operand2}
 
  file_test$790:
 	; Assign personVector[1].name[8] integral1$101#
-	mov byte [rbp + 84], 101
+	mov byte [rbp + 84], {operand2}
 
  file_test$791:
 	; Assign personVector[1].name[9] integral1$97#
-	mov byte [rbp + 85], 97
+	mov byte [rbp + 85], {operand2}
 
  file_test$792:
 	; Assign personVector[1].name[10] integral1$115#
-	mov byte [rbp + 86], 115
+	mov byte [rbp + 86], {operand2}
 
  file_test$793:
 	; Assign personVector[1].name[11] integral1$97#
-	mov byte [rbp + 87], 97
+	mov byte [rbp + 87], {operand2}
 
  file_test$794:
 	; Assign personVector[1].name[12] integral1$114#
-	mov byte [rbp + 88], 114
+	mov byte [rbp + 88], {operand2}
 
  file_test$795:
 	; Assign personVector[1].name[13] integral1$115#
-	mov byte [rbp + 89], 115
+	mov byte [rbp + 89], {operand2}
 
  file_test$796:
 	; Assign personVector[1].name[14] integral1$115#
-	mov byte [rbp + 90], 115
+	mov byte [rbp + 90], {operand2}
 
  file_test$797:
 	; Assign personVector[1].name[15] integral1$111#
-	mov byte [rbp + 91], 111
+	mov byte [rbp + 91], {operand2}
 
  file_test$798:
 	; Assign personVector[1].name[16] integral1$110#
-	mov byte [rbp + 92], 110
+	mov byte [rbp + 92], {operand2}
 
  file_test$799:
 	; Assign personVector[1].name[17] integral1$0#
-	mov byte [rbp + 93], 0
+	mov byte [rbp + 93], {operand2}
 
  file_test$800:
 	; Assign personVector[1].phone integral4$23456#
-	mov dword [rbp + 124], 23456
+	mov dword [rbp + 124], {operand2}
 
  file_test$801:
 	; Assign personVector[2].name[0] integral1$67#
-	mov byte [rbp + 128], 67
+	mov byte [rbp + 128], {operand2}
 
  file_test$802:
 	; Assign personVector[2].name[1] integral1$101#
-	mov byte [rbp + 129], 101
+	mov byte [rbp + 129], {operand2}
 
  file_test$803:
 	; Assign personVector[2].name[2] integral1$97#
-	mov byte [rbp + 130], 97
+	mov byte [rbp + 130], {operand2}
 
  file_test$804:
 	; Assign personVector[2].name[3] integral1$115#
-	mov byte [rbp + 131], 115
+	mov byte [rbp + 131], {operand2}
 
  file_test$805:
 	; Assign personVector[2].name[4] integral1$97#
-	mov byte [rbp + 132], 97
+	mov byte [rbp + 132], {operand2}
 
  file_test$806:
 	; Assign personVector[2].name[5] integral1$114#
-	mov byte [rbp + 133], 114
+	mov byte [rbp + 133], {operand2}
 
  file_test$807:
 	; Assign personVector[2].name[6] integral1$32#
-	mov byte [rbp + 134], 32
+	mov byte [rbp + 134], {operand2}
 
  file_test$808:
 	; Assign personVector[2].name[7] integral1$68#
-	mov byte [rbp + 135], 68
+	mov byte [rbp + 135], {operand2}
 
  file_test$809:
 	; Assign personVector[2].name[8] integral1$97#
-	mov byte [rbp + 136], 97
+	mov byte [rbp + 136], {operand2}
 
  file_test$810:
 	; Assign personVector[2].name[9] integral1$118#
-	mov byte [rbp + 137], 118
+	mov byte [rbp + 137], {operand2}
 
  file_test$811:
 	; Assign personVector[2].name[10] integral1$105#
-	mov byte [rbp + 138], 105
+	mov byte [rbp + 138], {operand2}
 
  file_test$812:
 	; Assign personVector[2].name[11] integral1$100#
-	mov byte [rbp + 139], 100
+	mov byte [rbp + 139], {operand2}
 
  file_test$813:
 	; Assign personVector[2].name[12] integral1$115#
-	mov byte [rbp + 140], 115
+	mov byte [rbp + 140], {operand2}
 
  file_test$814:
 	; Assign personVector[2].name[13] integral1$115#
-	mov byte [rbp + 141], 115
+	mov byte [rbp + 141], {operand2}
 
  file_test$815:
 	; Assign personVector[2].name[14] integral1$111#
-	mov byte [rbp + 142], 111
+	mov byte [rbp + 142], {operand2}
 
  file_test$816:
 	; Assign personVector[2].name[15] integral1$110#
-	mov byte [rbp + 143], 110
+	mov byte [rbp + 143], {operand2}
 
  file_test$817:
 	; Assign personVector[2].name[16] integral1$0#
-	mov byte [rbp + 144], 0
+	mov byte [rbp + 144], {operand2}
 
  file_test$818:
 	; Assign personVector[2].phone integral4$24567#
-	mov dword [rbp + 176], 24567
+	mov dword [rbp + 176], {operand2}
 
  file_test$819:
 	; PreCall 232
 
  file_test$820:
 	; Parameter 256 string string_Block2Ebin#
-	mov qword [rbp + 256], @10563string_Block2Ebin#
+	mov qword [rbp + 256], {operand2}
 
  file_test$821:
 	; Parameter 264 string string_w#
-	mov qword [rbp + 264], @10564string_w#
+	mov qword [rbp + 264], {operand2}
 
  file_test$822:
 	; Call 232 fopen 0
 	mov qword [rbp + 232], file_test$823
-	mov [rbp + 240], rbp
+	mov [rbp + 240], {operand2}
 	add rbp, 232
 	jmp fopen
 
@@ -4788,23 +4788,23 @@ section .text
 
  file_test$825:
 	; Assign outFilePtr £temporary4683
-	mov [rbp + 232], rbx
+	mov [rbp + 232], {operand2}
 
  file_test$826:
 	; PreCall 240
 
  file_test$827:
 	; Parameter 264 string string_Block2Ebin#
-	mov qword [rbp + 264], @10566string_Block2Ebin#
+	mov qword [rbp + 264], {operand2}
 
  file_test$828:
 	; Parameter 272 string string_r#
-	mov qword [rbp + 272], @10567string_r#
+	mov qword [rbp + 272], {operand2}
 
  file_test$829:
 	; Call 240 fopen 0
 	mov qword [rbp + 240], file_test$830
-	mov [rbp + 248], rbp
+	mov [rbp + 248], {operand2}
 	add rbp, 240
 	jmp fopen
 
@@ -4816,11 +4816,11 @@ section .text
 
  file_test$832:
 	; Assign inFilePtr £temporary4684
-	mov [rbp + 240], rbx
+	mov [rbp + 240], {operand2}
 
  file_test$833:
 	; NotEqual 845 outFilePtr integral8$0#
-	cmp qword [rbp + 232], 0
+	cmp qword [rbp + 232], {operand2}
 	jne file_test$845
 
  file_test$834:
@@ -4828,29 +4828,29 @@ section .text
 
  file_test$835:
 	; Parameter 272 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 272], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 272], {operand2}
 
  file_test$836:
 	; Parameter 280 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 280], @10571string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 280], {operand2}
 
  file_test$837:
 	; Parameter 288 string string_outFilePtr20213D20NULL#
-	mov qword [rbp + 288], @10572string_outFilePtr20213D20NULL#
+	mov qword [rbp + 288], {operand2}
 
  file_test$838:
 	; Parameter 296 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 296], @10573string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 296], {operand2}
 
  file_test$839:
 	; Parameter 304 signed int integral4$284#
-	mov dword [rbp + 304], 284
+	mov dword [rbp + 304], {operand2}
 
  file_test$840:
 	; Call 248 fprintf 20
 	mov qword [rbp + 248], file_test$841
-	mov [rbp + 256], rbp
+	mov [rbp + 256], {operand2}
 	add rbp, 248
 	mov rdi, rbp
 	add rdi, 20
@@ -4865,7 +4865,7 @@ section .text
  file_test$843:
 	; Call 248 abort 0
 	mov qword [rbp + 248], file_test$844
-	mov [rbp + 256], rbp
+	mov [rbp + 256], {operand2}
 	add rbp, 248
 	jmp abort
 
@@ -4874,7 +4874,7 @@ section .text
 
  file_test$845:
 	; NotEqual 857 inFilePtr integral8$0#
-	cmp qword [rbp + 240], 0
+	cmp qword [rbp + 240], {operand2}
 	jne file_test$857
 
  file_test$846:
@@ -4882,29 +4882,29 @@ section .text
 
  file_test$847:
 	; Parameter 272 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 272], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 272], {operand2}
 
  file_test$848:
 	; Parameter 280 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 280], @10577string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 280], {operand2}
 
  file_test$849:
 	; Parameter 288 string string_inFilePtr20213D20NULL#
-	mov qword [rbp + 288], @10578string_inFilePtr20213D20NULL#
+	mov qword [rbp + 288], {operand2}
 
  file_test$850:
 	; Parameter 296 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 296], @10579string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 296], {operand2}
 
  file_test$851:
 	; Parameter 304 signed int integral4$285#
-	mov dword [rbp + 304], 285
+	mov dword [rbp + 304], {operand2}
 
  file_test$852:
 	; Call 248 fprintf 20
 	mov qword [rbp + 248], file_test$853
-	mov [rbp + 256], rbp
+	mov [rbp + 256], {operand2}
 	add rbp, 248
 	mov rdi, rbp
 	add rdi, 20
@@ -4919,7 +4919,7 @@ section .text
  file_test$855:
 	; Call 248 abort 0
 	mov qword [rbp + 248], file_test$856
-	mov [rbp + 256], rbp
+	mov [rbp + 256], {operand2}
 	add rbp, 248
 	jmp abort
 
@@ -4931,26 +4931,26 @@ section .text
 
  file_test$858:
 	; Parameter 272 array personVector
-	mov [rbp + 272], rbp
-	add qword [rbp + 272], 24
+	mov [rbp + 272], {operand2}
+	add qword [rbp + 272], {operand2}
 
  file_test$859:
 	; Parameter 280 signed int integral4$156#
-	mov dword [rbp + 280], 156
+	mov dword [rbp + 280], {operand2}
 
  file_test$860:
 	; Parameter 284 signed int integral4$1#
-	mov dword [rbp + 284], 1
+	mov dword [rbp + 284], {operand2}
 
  file_test$861:
 	; Parameter 288 pointer outFilePtr
-	mov rax, [rbp + 232]
-	mov [rbp + 288], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 288], {operand2}
 
  file_test$862:
 	; Call 248 fwrite 0
 	mov qword [rbp + 248], file_test$863
-	mov [rbp + 256], rbp
+	mov [rbp + 256], {operand2}
 	add rbp, 248
 	jmp fwrite
 
@@ -4962,13 +4962,13 @@ section .text
 
  file_test$865:
 	; Parameter 272 pointer outFilePtr
-	mov rax, [rbp + 232]
-	mov [rbp + 272], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 272], {operand2}
 
  file_test$866:
 	; Call 248 fclose 0
 	mov qword [rbp + 248], file_test$867
-	mov [rbp + 256], rbp
+	mov [rbp + 256], {operand2}
 	add rbp, 248
 	jmp fclose
 
@@ -4980,13 +4980,13 @@ section .text
 
  file_test$869:
 	; Parameter 272 pointer inFilePtr
-	mov rax, [rbp + 240]
-	mov [rbp + 272], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 272], {operand2}
 
  file_test$870:
 	; Call 248 feof 0
 	mov qword [rbp + 248], file_test$871
-	mov [rbp + 256], rbp
+	mov [rbp + 256], {operand2}
 	add rbp, 248
 	jmp feof
 
@@ -5011,25 +5011,25 @@ section .text
 
  file_test$876:
 	; Parameter 272 pointer £temporary4702
-	mov [rbp + 272], rsi
+	mov [rbp + 272], {operand2}
 
  file_test$877:
 	; Parameter 280 signed int integral4$52#
-	mov dword [rbp + 280], 52
+	mov dword [rbp + 280], {operand2}
 
  file_test$878:
 	; Parameter 284 signed int integral4$1#
-	mov dword [rbp + 284], 1
+	mov dword [rbp + 284], {operand2}
 
  file_test$879:
 	; Parameter 288 pointer inFilePtr
-	mov rax, [rbp + 240]
-	mov [rbp + 288], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 288], {operand2}
 
  file_test$880:
 	; Call 248 fread 0
 	mov qword [rbp + 248], file_test$881
-	mov [rbp + 256], rbp
+	mov [rbp + 256], {operand2}
 	add rbp, 248
 	jmp fread
 
@@ -5041,17 +5041,17 @@ section .text
 
  file_test$883:
 	; Parameter 272 string string_Name20203A2025s0A#
-	mov qword [rbp + 272], @10586string_Name20203A2025s0A#
+	mov qword [rbp + 272], {operand2}
 
  file_test$884:
 	; Parameter 280 array person.name
-	mov [rbp + 280], rbp
-	add qword [rbp + 280], 180
+	mov [rbp + 280], {operand2}
+	add qword [rbp + 280], {operand2}
 
  file_test$885:
 	; Call 248 printf 8
 	mov qword [rbp + 248], file_test$886
-	mov [rbp + 256], rbp
+	mov [rbp + 256], {operand2}
 	add rbp, 248
 	mov rdi, rbp
 	add rdi, 8
@@ -5065,17 +5065,17 @@ section .text
 
  file_test$888:
 	; Parameter 272 string string_Phone203A2025d0A#
-	mov qword [rbp + 272], @10588string_Phone203A2025d0A#
+	mov qword [rbp + 272], {operand2}
 
  file_test$889:
 	; Parameter 280 signed int person.phone
-	mov eax, [rbp + 228]
-	mov [rbp + 280], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 280], {operand2}
 
  file_test$890:
 	; Call 248 printf 4
 	mov qword [rbp + 248], file_test$891
-	mov [rbp + 256], rbp
+	mov [rbp + 256], {operand2}
 	add rbp, 248
 	mov rdi, rbp
 	add rdi, 4
@@ -5093,13 +5093,13 @@ section .text
 
  file_test$894:
 	; Parameter 272 pointer inFilePtr
-	mov rax, [rbp + 240]
-	mov [rbp + 272], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 272], {operand2}
 
  file_test$895:
 	; Call 248 fclose 0
 	mov qword [rbp + 248], file_test$896
-	mov [rbp + 256], rbp
+	mov [rbp + 256], {operand2}
 	add rbp, 248
 	jmp fclose
 
@@ -5111,16 +5111,16 @@ section .text
 
  file_test$898:
 	; Parameter 48 string string_outx2Etxt#
-	mov qword [rbp + 48], @10590string_outx2Etxt#
+	mov qword [rbp + 48], {operand2}
 
  file_test$899:
 	; Parameter 56 string string_r#
-	mov qword [rbp + 56], @10591string_r#
+	mov qword [rbp + 56], {operand2}
 
  file_test$900:
 	; Call 24 fopen 0
 	mov qword [rbp + 24], file_test$901
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp fopen
 
@@ -5132,11 +5132,11 @@ section .text
 
  file_test$903:
 	; Assign inFilePtr £temporary4707
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  file_test$904:
 	; NotEqual 916 inFilePtr integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne file_test$916
 
  file_test$905:
@@ -5144,29 +5144,29 @@ section .text
 
  file_test$906:
 	; Parameter 56 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$907:
 	; Parameter 64 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 64], @10595string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 64], {operand2}
 
  file_test$908:
 	; Parameter 72 string string_inFilePtr20213D20NULL#
-	mov qword [rbp + 72], @10596string_inFilePtr20213D20NULL#
+	mov qword [rbp + 72], {operand2}
 
  file_test$909:
 	; Parameter 80 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 80], @10597string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 80], {operand2}
 
  file_test$910:
 	; Parameter 88 signed int integral4$301#
-	mov dword [rbp + 88], 301
+	mov dword [rbp + 88], {operand2}
 
  file_test$911:
 	; Call 32 fprintf 20
 	mov qword [rbp + 32], file_test$912
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 20
@@ -5181,7 +5181,7 @@ section .text
  file_test$914:
 	; Call 32 abort 0
 	mov qword [rbp + 32], file_test$915
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp abort
 
@@ -5193,21 +5193,21 @@ section .text
 
  file_test$917:
 	; Parameter 56 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$918:
 	; Parameter 64 signed int integral4$0#
-	mov dword [rbp + 64], 0
+	mov dword [rbp + 64], {operand2}
 
  file_test$919:
 	; Parameter 68 signed int SEEK_END
-	mov dword [rbp + 68], 2
+	mov dword [rbp + 68], {operand2}
 
  file_test$920:
 	; Call 32 fseek 0
 	mov qword [rbp + 32], file_test$921
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fseek
 
@@ -5219,20 +5219,20 @@ section .text
 
  file_test$923:
 	; Assign size £temporary4714
-	mov [rbp + 32], ebx
+	mov [rbp + 32], {operand2}
 
  file_test$924:
 	; PreCall 36
 
  file_test$925:
 	; Parameter 60 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 60], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 60], {operand2}
 
  file_test$926:
 	; Call 36 ftell 0
 	mov qword [rbp + 36], file_test$927
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp ftell
 
@@ -5252,8 +5252,8 @@ section .text
 
  file_test$931:
 	; Parameter 60 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 60], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 60], {operand2}
 
  file_test$932:
 	; Subtract size size integral4$1#
@@ -5261,17 +5261,17 @@ section .text
 
  file_test$933:
 	; Parameter 68 signed int size
-	mov eax, [rbp + 32]
-	mov [rbp + 68], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 68], {operand2}
 
  file_test$934:
 	; Parameter 72 signed int SEEK_SET
-	mov dword [rbp + 72], 0
+	mov dword [rbp + 72], {operand2}
 
  file_test$935:
 	; Call 36 fseek 0
 	mov qword [rbp + 36], file_test$936
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp fseek
 
@@ -5286,13 +5286,13 @@ section .text
 
  file_test$939:
 	; Parameter 60 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 60], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 60], {operand2}
 
  file_test$940:
 	; Call 36 fgetc 0
 	mov qword [rbp + 36], file_test$941
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp fgetc
 
@@ -5304,12 +5304,12 @@ section .text
 
  file_test$943:
 	; Parameter 60 signed int £temporary4719
-	mov [rbp + 60], ebx
+	mov [rbp + 60], {operand2}
 
  file_test$944:
 	; Call 36 putchar 0
 	mov qword [rbp + 36], file_test$945
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp putchar
 
@@ -5325,13 +5325,13 @@ section .text
 
  file_test$948:
 	; Parameter 56 pointer inFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  file_test$949:
 	; Call 32 fclose 0
 	mov qword [rbp + 32], file_test$950
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fclose
 
@@ -5343,19 +5343,19 @@ section .text
 
  file_test$952:
 	; Parameter 48 string string_fileexists2022X223A2025s0A#
-	mov qword [rbp + 48], @10603string_fileexists2022X223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$953:
 	; PreCall 24
 
  file_test$954:
 	; Parameter 80 string string_X#
-	mov qword [rbp + 80], @10604string_X#
+	mov qword [rbp + 80], {operand2}
 
  file_test$955:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$956
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -5384,12 +5384,12 @@ section .text
 
  file_test$962:
 	; Parameter 56 string £temporary4724
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$963:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$964
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -5403,19 +5403,19 @@ section .text
 
  file_test$966:
 	; Parameter 48 string string_fileexists2022Y223A2025s0A#
-	mov qword [rbp + 48], @10608string_fileexists2022Y223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$967:
 	; PreCall 24
 
  file_test$968:
 	; Parameter 80 string string_Y#
-	mov qword [rbp + 80], @10609string_Y#
+	mov qword [rbp + 80], {operand2}
 
  file_test$969:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$970
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -5444,12 +5444,12 @@ section .text
 
  file_test$976:
 	; Parameter 56 string £temporary4728
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$977:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$978
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -5463,19 +5463,19 @@ section .text
 
  file_test$980:
 	; Parameter 48 string string_fileexists2022Main2Easm223A2025s0A#
-	mov qword [rbp + 48], @10613string_fileexists2022Main2Easm223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$981:
 	; PreCall 24
 
  file_test$982:
 	; Parameter 80 string string_Main2Easm#
-	mov qword [rbp + 80], @10614string_Main2Easm#
+	mov qword [rbp + 80], {operand2}
 
  file_test$983:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$984
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -5504,12 +5504,12 @@ section .text
 
  file_test$990:
 	; Parameter 56 string £temporary4732
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$991:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$992
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -5523,19 +5523,19 @@ section .text
 
  file_test$994:
 	; Parameter 48 string string_fileexists2022MainX2Easm223A2025s0A#
-	mov qword [rbp + 48], @10618string_fileexists2022MainX2Easm223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$995:
 	; PreCall 24
 
  file_test$996:
 	; Parameter 80 string string_MainX2Easm#
-	mov qword [rbp + 80], @10619string_MainX2Easm#
+	mov qword [rbp + 80], {operand2}
 
  file_test$997:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$998
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -5564,12 +5564,12 @@ section .text
 
  file_test$1004:
 	; Parameter 56 string £temporary4736
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$1005:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$1006
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -5583,19 +5583,19 @@ section .text
 
  file_test$1008:
 	; Parameter 48 string string_fileexists2022Main2Ec223A2025s0A#
-	mov qword [rbp + 48], @10623string_fileexists2022Main2Ec223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$1009:
 	; PreCall 24
 
  file_test$1010:
 	; Parameter 80 string string_Main2Ec#
-	mov qword [rbp + 80], @10624string_Main2Ec#
+	mov qword [rbp + 80], {operand2}
 
  file_test$1011:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$1012
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -5624,12 +5624,12 @@ section .text
 
  file_test$1018:
 	; Parameter 56 string £temporary4740
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$1019:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$1020
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -5643,19 +5643,19 @@ section .text
 
  file_test$1022:
 	; Parameter 48 string string_fileexists2022MainX2Ec223A2025s0A#
-	mov qword [rbp + 48], @10628string_fileexists2022MainX2Ec223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$1023:
 	; PreCall 24
 
  file_test$1024:
 	; Parameter 80 string string_MainX2Ec#
-	mov qword [rbp + 80], @10629string_MainX2Ec#
+	mov qword [rbp + 80], {operand2}
 
  file_test$1025:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$1026
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -5684,12 +5684,12 @@ section .text
 
  file_test$1032:
 	; Parameter 56 string £temporary4744
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$1033:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$1034
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -5703,19 +5703,19 @@ section .text
 
  file_test$1036:
 	; Parameter 48 string string_fileexists2022File2Ec223A2025s0A#
-	mov qword [rbp + 48], @10633string_fileexists2022File2Ec223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$1037:
 	; PreCall 24
 
  file_test$1038:
 	; Parameter 80 string string_File2Ec#
-	mov qword [rbp + 80], @10634string_File2Ec#
+	mov qword [rbp + 80], {operand2}
 
  file_test$1039:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$1040
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -5744,12 +5744,12 @@ section .text
 
  file_test$1046:
 	; Parameter 56 string £temporary4748
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$1047:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$1048
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -5763,19 +5763,19 @@ section .text
 
  file_test$1050:
 	; Parameter 48 string string_fileexists2022File2Ex223A2025s0A#
-	mov qword [rbp + 48], @10638string_fileexists2022File2Ex223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$1051:
 	; PreCall 24
 
  file_test$1052:
 	; Parameter 80 string string_File2Ex#
-	mov qword [rbp + 80], @10639string_File2Ex#
+	mov qword [rbp + 80], {operand2}
 
  file_test$1053:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$1054
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -5804,12 +5804,12 @@ section .text
 
  file_test$1060:
 	; Parameter 56 string £temporary4752
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$1061:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$1062
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -5823,19 +5823,19 @@ section .text
 
  file_test$1064:
 	; Parameter 48 string string_fileexists2022File2Eh223A2025s0A#
-	mov qword [rbp + 48], @10643string_fileexists2022File2Eh223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$1065:
 	; PreCall 24
 
  file_test$1066:
 	; Parameter 80 string string_File2Eh#
-	mov qword [rbp + 80], @10644string_File2Eh#
+	mov qword [rbp + 80], {operand2}
 
  file_test$1067:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$1068
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -5864,12 +5864,12 @@ section .text
 
  file_test$1074:
 	; Parameter 56 string £temporary4756
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$1075:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$1076
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -5883,19 +5883,19 @@ section .text
 
  file_test$1078:
 	; Parameter 48 string string_fileexists2022File2Ey223A2025s0A#
-	mov qword [rbp + 48], @10648string_fileexists2022File2Ey223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$1079:
 	; PreCall 24
 
  file_test$1080:
 	; Parameter 80 string string_File2Ey#
-	mov qword [rbp + 80], @10649string_File2Ey#
+	mov qword [rbp + 80], {operand2}
 
  file_test$1081:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$1082
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -5924,12 +5924,12 @@ section .text
 
  file_test$1088:
 	; Parameter 56 string £temporary4760
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$1089:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$1090
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -5943,19 +5943,19 @@ section .text
 
  file_test$1092:
 	; Parameter 48 string string_fileexists2022File2Ep223A2025s0A#
-	mov qword [rbp + 48], @10653string_fileexists2022File2Ep223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$1093:
 	; PreCall 24
 
  file_test$1094:
 	; Parameter 80 string string_File2Ep#
-	mov qword [rbp + 80], @10654string_File2Ep#
+	mov qword [rbp + 80], {operand2}
 
  file_test$1095:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$1096
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -5984,12 +5984,12 @@ section .text
 
  file_test$1102:
 	; Parameter 56 string £temporary4764
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$1103:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$1104
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -6003,19 +6003,19 @@ section .text
 
  file_test$1106:
 	; Parameter 48 string string_fileexists2022File2Ez223A2025s0A#
-	mov qword [rbp + 48], @10658string_fileexists2022File2Ez223A2025s0A#
+	mov qword [rbp + 48], {operand2}
 
  file_test$1107:
 	; PreCall 24
 
  file_test$1108:
 	; Parameter 80 string string_File2Ez#
-	mov qword [rbp + 80], @10659string_File2Ez#
+	mov qword [rbp + 80], {operand2}
 
  file_test$1109:
 	; Call 56 fileexists 0
 	mov qword [rbp + 56], file_test$1110
-	mov [rbp + 64], rbp
+	mov [rbp + 64], {operand2}
 	add rbp, 56
 	jmp fileexists
 
@@ -6044,12 +6044,12 @@ section .text
 
  file_test$1116:
 	; Parameter 56 string £temporary4768
-	mov [rbp + 56], rax
+	mov [rbp + 56], {operand2}
 
  file_test$1117:
 	; Call 24 printf 8
 	mov qword [rbp + 24], file_test$1118
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 8
@@ -6060,9 +6060,9 @@ section .text
 
  file_test$1119:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  file_test$1120:
@@ -6141,12 +6141,12 @@ section .text
 
  temp_file$1:
 	; Parameter 48 string string_Hello0A#
-	mov qword [rbp + 48], @10997string_Hello0A#
+	mov qword [rbp + 48], {operand2}
 
  temp_file$2:
 	; Call 24 printf 0
 	mov qword [rbp + 24], temp_file$3
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	jmp printf
@@ -6159,16 +6159,16 @@ section .text
 
  temp_file$5:
 	; Parameter 56 string string_PBookX2Etxt#
-	mov qword [rbp + 56], @10999string_PBookX2Etxt#
+	mov qword [rbp + 56], {operand2}
 
  temp_file$6:
 	; Parameter 64 string string_r2B#
-	mov qword [rbp + 64], @11000string_r2B#
+	mov qword [rbp + 64], {operand2}
 
  temp_file$7:
 	; Call 32 fopen 0
 	mov qword [rbp + 32], temp_file$8
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fopen
 
@@ -6180,11 +6180,11 @@ section .text
 
  temp_file$10:
 	; Assign inOutFilePtr £temporary4796
-	mov [rbp + 32], rbx
+	mov [rbp + 32], {operand2}
 
  temp_file$11:
 	; NotEqual 23 inOutFilePtr integral8$0#
-	cmp qword [rbp + 32], 0
+	cmp qword [rbp + 32], {operand2}
 	jne temp_file$23
 
  temp_file$12:
@@ -6192,29 +6192,29 @@ section .text
 
  temp_file$13:
 	; Parameter 64 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  temp_file$14:
 	; Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 72], @11004string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 72], {operand2}
 
  temp_file$15:
 	; Parameter 80 string string_inOutFilePtr20213D20NULL#
-	mov qword [rbp + 80], @11005string_inOutFilePtr20213D20NULL#
+	mov qword [rbp + 80], {operand2}
 
  temp_file$16:
 	; Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 88], @11006string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 88], {operand2}
 
  temp_file$17:
 	; Parameter 96 signed int integral4$369#
-	mov dword [rbp + 96], 369
+	mov dword [rbp + 96], {operand2}
 
  temp_file$18:
 	; Call 40 fprintf 20
 	mov qword [rbp + 40], temp_file$19
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 20
@@ -6229,7 +6229,7 @@ section .text
  temp_file$21:
 	; Call 40 abort 0
 	mov qword [rbp + 40], temp_file$22
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp abort
 
@@ -6241,12 +6241,12 @@ section .text
 
  temp_file$24:
 	; Parameter 64 string string_Temp0A#
-	mov qword [rbp + 64], @11008string_Temp0A#
+	mov qword [rbp + 64], {operand2}
 
  temp_file$25:
 	; Call 40 printf 0
 	mov qword [rbp + 40], temp_file$26
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	jmp printf
@@ -6260,7 +6260,7 @@ section .text
  temp_file$28:
 	; Call 40 tmpfile 0
 	mov qword [rbp + 40], temp_file$29
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp tmpfile
 
@@ -6272,11 +6272,11 @@ section .text
 
  temp_file$31:
 	; Assign tempFilePtr £temporary4804
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  temp_file$32:
 	; NotEqual 44 tempFilePtr integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne temp_file$44
 
  temp_file$33:
@@ -6284,29 +6284,29 @@ section .text
 
  temp_file$34:
 	; Parameter 64 pointer stderr
-	mov rax, [stderr]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  temp_file$35:
 	; Parameter 72 string string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
-	mov qword [rbp + 72], @11011string_Assertion20failed3A202225s2220in20file2025s20at20line2025i0A#
+	mov qword [rbp + 72], {operand2}
 
  temp_file$36:
 	; Parameter 80 string string_tempFilePtr20213D20NULL#
-	mov qword [rbp + 80], @11012string_tempFilePtr20213D20NULL#
+	mov qword [rbp + 80], {operand2}
 
  temp_file$37:
 	; Parameter 88 string string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
-	mov qword [rbp + 88], @11013string_C3A5CUsers5CStefa5CDocuments5Cvagrant5Chomestead5Ccode5Ccode5CFileTest2Ec#
+	mov qword [rbp + 88], {operand2}
 
  temp_file$38:
 	; Parameter 96 signed int integral4$372#
-	mov dword [rbp + 96], 372
+	mov dword [rbp + 96], {operand2}
 
  temp_file$39:
 	; Call 40 fprintf 20
 	mov qword [rbp + 40], temp_file$40
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 20
@@ -6321,7 +6321,7 @@ section .text
  temp_file$42:
 	; Call 40 abort 0
 	mov qword [rbp + 40], temp_file$43
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp abort
 
@@ -6333,13 +6333,13 @@ section .text
 
  temp_file$45:
 	; Parameter 64 pointer inOutFilePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  temp_file$46:
 	; Call 40 fgetc 0
 	mov qword [rbp + 40], temp_file$47
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fgetc
 
@@ -6358,11 +6358,11 @@ section .text
 
  temp_file$50:
 	; Assign c £temporary4812
-	mov [rbp + 40], bl
+	mov [rbp + 40], {operand2}
 
  temp_file$51:
 	; IntegralToIntegral £temporary4813 c
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge temp_file$52
@@ -6382,7 +6382,7 @@ section .text
 
  temp_file$55:
 	; IntegralToIntegral £temporary4817 c
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge temp_file$56
@@ -6391,12 +6391,12 @@ section .text
 
  temp_file$56:
 	; Parameter 65 signed int £temporary4817
-	mov [rbp + 65], eax
+	mov [rbp + 65], {operand2}
 
  temp_file$57:
 	; Call 41 toupper 0
 	mov qword [rbp + 41], temp_file$58
-	mov [rbp + 49], rbp
+	mov [rbp + 49], {operand2}
 	add rbp, 41
 	jmp toupper
 
@@ -6408,17 +6408,17 @@ section .text
 
  temp_file$60:
 	; Parameter 65 signed int £temporary4818
-	mov [rbp + 65], ebx
+	mov [rbp + 65], {operand2}
 
  temp_file$61:
 	; Parameter 69 pointer tempFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 69], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 69], {operand2}
 
  temp_file$62:
 	; Call 41 putc 0
 	mov qword [rbp + 41], temp_file$63
-	mov [rbp + 49], rbp
+	mov [rbp + 49], {operand2}
 	add rbp, 41
 	jmp putc
 
@@ -6434,13 +6434,13 @@ section .text
 
  temp_file$66:
 	; Parameter 64 pointer tempFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  temp_file$67:
 	; Call 40 rewind 0
 	mov qword [rbp + 40], temp_file$68
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp rewind
 
@@ -6452,17 +6452,17 @@ section .text
 
  temp_file$70:
 	; Parameter 64 pointer inOutFilePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  temp_file$71:
 	; Parameter 72 string string_0A2D2D2D2D2D2D2D2D2D2D2D2D0A#
-	mov qword [rbp + 72], @11018string_0A2D2D2D2D2D2D2D2D2D2D2D2D0A#
+	mov qword [rbp + 72], {operand2}
 
  temp_file$72:
 	; Call 40 fprintf 0
 	mov qword [rbp + 40], temp_file$73
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	jmp fprintf
@@ -6475,13 +6475,13 @@ section .text
 
  temp_file$75:
 	; Parameter 64 pointer tempFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  temp_file$76:
 	; Call 40 fgetc 0
 	mov qword [rbp + 40], temp_file$77
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fgetc
 
@@ -6500,11 +6500,11 @@ section .text
 
  temp_file$80:
 	; Assign c £temporary4824
-	mov [rbp + 40], bl
+	mov [rbp + 40], {operand2}
 
  temp_file$81:
 	; IntegralToIntegral £temporary4825 c
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge temp_file$82
@@ -6521,7 +6521,7 @@ section .text
 
  temp_file$84:
 	; IntegralToIntegral £temporary4829 c
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge temp_file$85
@@ -6530,17 +6530,17 @@ section .text
 
  temp_file$85:
 	; Parameter 65 signed int £temporary4829
-	mov [rbp + 65], eax
+	mov [rbp + 65], {operand2}
 
  temp_file$86:
 	; Parameter 69 pointer inOutFilePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 69], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 69], {operand2}
 
  temp_file$87:
 	; Call 41 putc 0
 	mov qword [rbp + 41], temp_file$88
-	mov [rbp + 49], rbp
+	mov [rbp + 49], {operand2}
 	add rbp, 41
 	jmp putc
 
@@ -6556,13 +6556,13 @@ section .text
 
  temp_file$91:
 	; Parameter 64 pointer inOutFilePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  temp_file$92:
 	; Call 40 fclose 0
 	mov qword [rbp + 40], temp_file$93
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fclose
 
@@ -6574,13 +6574,13 @@ section .text
 
  temp_file$95:
 	; Parameter 64 pointer tempFilePtr
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  temp_file$96:
 	; Call 40 fclose 0
 	mov qword [rbp + 40], temp_file$97
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fclose
 
@@ -6589,9 +6589,9 @@ section .text
 
  temp_file$98:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  temp_file$99:

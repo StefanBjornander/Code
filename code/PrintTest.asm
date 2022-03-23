@@ -203,44 +203,44 @@ section .text
 
  print_test$1:
 	; Parameter 48 string string_3C258i3E203C252B8i3E203C25208i3E203C252D8i3E203C252B2D8i3E203C252D2B8i3E203C25202D8i3E203C252D208i3E0A#
-	mov qword [rbp + 48], @7940string_3C258i3E203C252B8i3E203C25208i3E203C252D8i3E203C252B2D8i3E203C252D2B8i3E203C25202D8i3E203C252D208i3E0A#
+	mov qword [rbp + 48], {operand2}
 
  print_test$2:
 	; Parameter 56 signed int integral4$123#
-	mov dword [rbp + 56], 123
+	mov dword [rbp + 56], {operand2}
 
  print_test$3:
 	; Parameter 60 signed int integral4$123#
-	mov dword [rbp + 60], 123
+	mov dword [rbp + 60], {operand2}
 
  print_test$4:
 	; Parameter 64 signed int integral4$123#
-	mov dword [rbp + 64], 123
+	mov dword [rbp + 64], {operand2}
 
  print_test$5:
 	; Parameter 68 signed int integral4$123#
-	mov dword [rbp + 68], 123
+	mov dword [rbp + 68], {operand2}
 
  print_test$6:
 	; Parameter 72 signed int integral4$123#
-	mov dword [rbp + 72], 123
+	mov dword [rbp + 72], {operand2}
 
  print_test$7:
 	; Parameter 76 signed int integral4$123#
-	mov dword [rbp + 76], 123
+	mov dword [rbp + 76], {operand2}
 
  print_test$8:
 	; Parameter 80 signed int integral4$123#
-	mov dword [rbp + 80], 123
+	mov dword [rbp + 80], {operand2}
 
  print_test$9:
 	; Parameter 84 signed int integral4$123#
-	mov dword [rbp + 84], 123
+	mov dword [rbp + 84], {operand2}
 
  print_test$10:
 	; Call 24 printf 32
 	mov qword [rbp + 24], print_test$11
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 32
@@ -254,44 +254,44 @@ section .text
 
  print_test$13:
 	; Parameter 48 string string_3C258i3E203C252B8i3E203C25208i3E203C252D8i3E203C252B2D8i3E203C252D2B8i3E203C25202D8i3E203C252D208i3E0A#
-	mov qword [rbp + 48], @7949string_3C258i3E203C252B8i3E203C25208i3E203C252D8i3E203C252B2D8i3E203C252D2B8i3E203C25202D8i3E203C252D208i3E0A#
+	mov qword [rbp + 48], {operand2}
 
  print_test$14:
 	; Parameter 56 signed int integral4$minus123#
-	mov dword [rbp + 56], -123
+	mov dword [rbp + 56], {operand2}
 
  print_test$15:
 	; Parameter 60 signed int integral4$minus123#
-	mov dword [rbp + 60], -123
+	mov dword [rbp + 60], {operand2}
 
  print_test$16:
 	; Parameter 64 signed int integral4$minus123#
-	mov dword [rbp + 64], -123
+	mov dword [rbp + 64], {operand2}
 
  print_test$17:
 	; Parameter 68 signed int integral4$minus123#
-	mov dword [rbp + 68], -123
+	mov dword [rbp + 68], {operand2}
 
  print_test$18:
 	; Parameter 72 signed int integral4$minus123#
-	mov dword [rbp + 72], -123
+	mov dword [rbp + 72], {operand2}
 
  print_test$19:
 	; Parameter 76 signed int integral4$minus123#
-	mov dword [rbp + 76], -123
+	mov dword [rbp + 76], {operand2}
 
  print_test$20:
 	; Parameter 80 signed int integral4$minus123#
-	mov dword [rbp + 80], -123
+	mov dword [rbp + 80], {operand2}
 
  print_test$21:
 	; Parameter 84 signed int integral4$minus123#
-	mov dword [rbp + 84], -123
+	mov dword [rbp + 84], {operand2}
 
  print_test$22:
 	; Call 24 printf 32
 	mov qword [rbp + 24], print_test$23
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 32
@@ -305,28 +305,28 @@ section .text
 
  print_test$25:
 	; Parameter 48 string string_3C2508i3E203C252B08i3E203C252008i3E203C250208i3E0A#
-	mov qword [rbp + 48], @7958string_3C2508i3E203C252B08i3E203C252008i3E203C250208i3E0A#
+	mov qword [rbp + 48], {operand2}
 
  print_test$26:
 	; Parameter 56 signed int integral4$123#
-	mov dword [rbp + 56], 123
+	mov dword [rbp + 56], {operand2}
 
  print_test$27:
 	; Parameter 60 signed int integral4$123#
-	mov dword [rbp + 60], 123
+	mov dword [rbp + 60], {operand2}
 
  print_test$28:
 	; Parameter 64 signed int integral4$123#
-	mov dword [rbp + 64], 123
+	mov dword [rbp + 64], {operand2}
 
  print_test$29:
 	; Parameter 68 signed int integral4$123#
-	mov dword [rbp + 68], 123
+	mov dword [rbp + 68], {operand2}
 
  print_test$30:
 	; Call 24 printf 16
 	mov qword [rbp + 24], print_test$31
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 16
@@ -340,28 +340,28 @@ section .text
 
  print_test$33:
 	; Parameter 48 string string_3C2508i3E203C252B08i3E203C252008i3E203C250208i3E0A#
-	mov qword [rbp + 48], @7963string_3C2508i3E203C252B08i3E203C252008i3E203C250208i3E0A#
+	mov qword [rbp + 48], {operand2}
 
  print_test$34:
 	; Parameter 56 signed int integral4$minus123#
-	mov dword [rbp + 56], -123
+	mov dword [rbp + 56], {operand2}
 
  print_test$35:
 	; Parameter 60 signed int integral4$minus123#
-	mov dword [rbp + 60], -123
+	mov dword [rbp + 60], {operand2}
 
  print_test$36:
 	; Parameter 64 signed int integral4$minus123#
-	mov dword [rbp + 64], -123
+	mov dword [rbp + 64], {operand2}
 
  print_test$37:
 	; Parameter 68 signed int integral4$minus123#
-	mov dword [rbp + 68], -123
+	mov dword [rbp + 68], {operand2}
 
  print_test$38:
 	; Call 24 printf 16
 	mov qword [rbp + 24], print_test$39
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 16
@@ -375,7 +375,7 @@ section .text
 
  print_test$41:
 	; Parameter 48 string string_3C25122E3f3E203C252B122E3f3E203C2520122E3f3E203C252D122E3f3E203C252B2D122E3f3E203C252D2B122E3f3E203C25202D122E3f3E203C252D20122E3f3E0A#
-	mov qword [rbp + 48], @7968string_3C25122E3f3E203C252B122E3f3E203C2520122E3f3E203C252D122E3f3E203C252B2D122E3f3E203C252D2B122E3f3E203C25202D122E3f3E203C252D20122E3f3E0A#
+	mov qword [rbp + 48], {operand2}
 
  print_test$42:
 	; PushFloat floating8$123.456#
@@ -444,7 +444,7 @@ section .text
  print_test$58:
 	; Call 24 printf 64
 	mov qword [rbp + 24], print_test$59
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 64
@@ -458,7 +458,7 @@ section .text
 
  print_test$61:
 	; Parameter 48 string string_3C25122E3f3E203C252B122E3f3E203C2520122E3f3E203C252D122E3f3E203C252B2D122E3f3E203C252D2B122E3f3E203C25202D122E3f3E203C252D20122E3f3E0A#
-	mov qword [rbp + 48], @7977string_3C25122E3f3E203C252B122E3f3E203C2520122E3f3E203C252D122E3f3E203C252B2D122E3f3E203C252D2B122E3f3E203C25202D122E3f3E203C252D20122E3f3E0A#
+	mov qword [rbp + 48], {operand2}
 
  print_test$62:
 	; PushFloat floating8$minus123.456#
@@ -527,7 +527,7 @@ section .text
  print_test$78:
 	; Call 24 printf 64
 	mov qword [rbp + 24], print_test$79
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 64
@@ -541,7 +541,7 @@ section .text
 
  print_test$81:
 	; Parameter 48 string string_3C250122E3f3E203C252B0122E3f3E203C25200122E3f3E203C25020122E3f3E0A#
-	mov qword [rbp + 48], @7986string_3C250122E3f3E203C252B0122E3f3E203C25200122E3f3E203C25020122E3f3E0A#
+	mov qword [rbp + 48], {operand2}
 
  print_test$82:
 	; PushFloat floating8$123.456#
@@ -578,7 +578,7 @@ section .text
  print_test$90:
 	; Call 24 printf 32
 	mov qword [rbp + 24], print_test$91
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 32
@@ -592,7 +592,7 @@ section .text
 
  print_test$93:
 	; Parameter 48 string string_3C250122E3f3E203C252B0122E3f3E203C25200122E3f3E203C25020122E3f3E0A#
-	mov qword [rbp + 48], @7991string_3C250122E3f3E203C252B0122E3f3E203C25200122E3f3E203C25020122E3f3E0A#
+	mov qword [rbp + 48], {operand2}
 
  print_test$94:
 	; PushFloat floating8$minus123.456#
@@ -629,7 +629,7 @@ section .text
  print_test$102:
 	; Call 24 printf 32
 	mov qword [rbp + 24], print_test$103
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	mov rdi, rbp
 	add rdi, 32
@@ -640,9 +640,9 @@ section .text
 
  print_test$104:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  print_test$105:

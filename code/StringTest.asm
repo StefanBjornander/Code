@@ -195,32 +195,32 @@ section .text
 
  string_test:
 	; Assign s string_Hello2C20World21#
-	mov qword [rbp + 28], @9124string_Hello2C20World21#
+	mov qword [rbp + 28], {operand2}
 
  string_test$1:
 	; PreCall 244
 
  string_test$2:
 	; Parameter 268 string string_strlen282225s2229203D2025i0A#
-	mov qword [rbp + 268], @9133string_strlen282225s2229203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$3:
 	; Parameter 276 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 276], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 276], {operand2}
 
  string_test$4:
 	; PreCall 244
 
  string_test$5:
 	; Parameter 308 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 308], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 308], {operand2}
 
  string_test$6:
 	; Call 284 strlen 0
 	mov qword [rbp + 284], string_test$7
-	mov [rbp + 292], rbp
+	mov [rbp + 292], {operand2}
 	add rbp, 284
 	jmp strlen
 
@@ -232,12 +232,12 @@ section .text
 
  string_test$9:
 	; Parameter 284 signed int £temporary4042
-	mov [rbp + 284], ebx
+	mov [rbp + 284], {operand2}
 
  string_test$10:
 	; Call 244 printf 12
 	mov qword [rbp + 244], string_test$11
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 12
@@ -251,18 +251,18 @@ section .text
 
  string_test$13:
 	; Parameter 268 array t
-	mov [rbp + 268], rbp
-	add qword [rbp + 268], 36
+	mov [rbp + 268], {operand2}
+	add qword [rbp + 268], {operand2}
 
  string_test$14:
 	; Parameter 276 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 276], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 276], {operand2}
 
  string_test$15:
 	; Call 244 strcpy 0
 	mov qword [rbp + 244], string_test$16
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp strcpy
 
@@ -274,22 +274,22 @@ section .text
 
  string_test$18:
 	; Parameter 268 array u
-	mov [rbp + 268], rbp
-	add qword [rbp + 268], 136
+	mov [rbp + 268], {operand2}
+	add qword [rbp + 268], {operand2}
 
  string_test$19:
 	; Parameter 276 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 276], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 276], {operand2}
 
  string_test$20:
 	; Parameter 284 signed int integral4$5#
-	mov dword [rbp + 284], 5
+	mov dword [rbp + 284], {operand2}
 
  string_test$21:
 	; Call 244 strncpy 0
 	mov qword [rbp + 244], string_test$22
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp strncpy
 
@@ -303,29 +303,29 @@ section .text
 
  string_test$24:
 	; Assign £temporary4047 integral1$0#
-	mov byte [rsi + 5], 0
+	mov byte [rsi + 5], {operand2}
 
  string_test$25:
 	; PreCall 244
 
  string_test$26:
 	; Parameter 268 string string_t203D202225s222C20u203D202225s220A#
-	mov qword [rbp + 268], @9140string_t203D202225s222C20u203D202225s220A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$27:
 	; Parameter 276 array t
-	mov [rbp + 276], rbp
-	add qword [rbp + 276], 36
+	mov [rbp + 276], {operand2}
+	add qword [rbp + 276], {operand2}
 
  string_test$28:
 	; Parameter 284 array u
-	mov [rbp + 284], rbp
-	add qword [rbp + 284], 136
+	mov [rbp + 284], {operand2}
+	add qword [rbp + 284], {operand2}
 
  string_test$29:
 	; Call 244 printf 16
 	mov qword [rbp + 244], string_test$30
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 16
@@ -339,17 +339,17 @@ section .text
 
  string_test$32:
 	; Parameter 268 array t
-	mov [rbp + 268], rbp
-	add qword [rbp + 268], 36
+	mov [rbp + 268], {operand2}
+	add qword [rbp + 268], {operand2}
 
  string_test$33:
 	; Parameter 276 string string_abc#
-	mov qword [rbp + 276], @9141string_abc#
+	mov qword [rbp + 276], {operand2}
 
  string_test$34:
 	; Call 244 strcat 0
 	mov qword [rbp + 244], string_test$35
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp strcat
 
@@ -361,13 +361,13 @@ section .text
 
  string_test$37:
 	; Parameter 268 array u
-	mov [rbp + 268], rbp
-	add qword [rbp + 268], 136
+	mov [rbp + 268], {operand2}
+	add qword [rbp + 268], {operand2}
 
  string_test$38:
 	; Call 244 strlen 0
 	mov qword [rbp + 244], string_test$39
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp strlen
 
@@ -379,28 +379,28 @@ section .text
 
  string_test$41:
 	; Assign i £temporary4050
-	mov [rbp + 24], ebx
+	mov [rbp + 24], {operand2}
 
  string_test$42:
 	; PreCall 244
 
  string_test$43:
 	; Parameter 268 array u
-	mov [rbp + 268], rbp
-	add qword [rbp + 268], 136
+	mov [rbp + 268], {operand2}
+	add qword [rbp + 268], {operand2}
 
  string_test$44:
 	; Parameter 276 string string_abc#
-	mov qword [rbp + 276], @9142string_abc#
+	mov qword [rbp + 276], {operand2}
 
  string_test$45:
 	; Parameter 284 signed int integral4$2#
-	mov dword [rbp + 284], 2
+	mov dword [rbp + 284], {operand2}
 
  string_test$46:
 	; Call 244 strncat 0
 	mov qword [rbp + 244], string_test$47
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp strncat
 
@@ -409,7 +409,7 @@ section .text
 
  string_test$48:
 	; Add £temporary4053 i integral4$2#
-	mov eax, [rbp + 24]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	add eax, 2
 
  string_test$49:
@@ -428,29 +428,29 @@ section .text
 
  string_test$52:
 	; Assign £temporary4056 integral1$0#
-	mov byte [rsi], 0
+	mov byte [rsi], {operand2}
 
  string_test$53:
 	; PreCall 244
 
  string_test$54:
 	; Parameter 268 string string_t203D202225s222C20u203D202225s220A#
-	mov qword [rbp + 268], @9147string_t203D202225s222C20u203D202225s220A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$55:
 	; Parameter 276 array t
-	mov [rbp + 276], rbp
-	add qword [rbp + 276], 36
+	mov [rbp + 276], {operand2}
+	add qword [rbp + 276], {operand2}
 
  string_test$56:
 	; Parameter 284 array u
-	mov [rbp + 284], rbp
-	add qword [rbp + 284], 136
+	mov [rbp + 284], {operand2}
+	add qword [rbp + 284], {operand2}
 
  string_test$57:
 	; Call 244 printf 16
 	mov qword [rbp + 244], string_test$58
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 16
@@ -464,25 +464,25 @@ section .text
 
  string_test$60:
 	; Parameter 268 string string_strcmp28s2C20u29203D2025i0A#
-	mov qword [rbp + 268], @9148string_strcmp28s2C20u29203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$61:
 	; PreCall 244
 
  string_test$62:
 	; Parameter 300 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 300], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 300], {operand2}
 
  string_test$63:
 	; Parameter 308 array u
-	mov [rbp + 308], rbp
-	add qword [rbp + 308], 136
+	mov [rbp + 308], {operand2}
+	add qword [rbp + 308], {operand2}
 
  string_test$64:
 	; Call 276 strcmp 0
 	mov qword [rbp + 276], string_test$65
-	mov [rbp + 284], rbp
+	mov [rbp + 284], {operand2}
 	add rbp, 276
 	jmp strcmp
 
@@ -494,12 +494,12 @@ section .text
 
  string_test$67:
 	; Parameter 276 signed int £temporary4058
-	mov [rbp + 276], ebx
+	mov [rbp + 276], {operand2}
 
  string_test$68:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$69
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -513,29 +513,29 @@ section .text
 
  string_test$71:
 	; Parameter 268 string string_strncmp28s2C20u2C20229203D2025i0A#
-	mov qword [rbp + 268], @9149string_strncmp28s2C20u2C20229203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$72:
 	; PreCall 244
 
  string_test$73:
 	; Parameter 300 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 300], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 300], {operand2}
 
  string_test$74:
 	; Parameter 308 array u
-	mov [rbp + 308], rbp
-	add qword [rbp + 308], 136
+	mov [rbp + 308], {operand2}
+	add qword [rbp + 308], {operand2}
 
  string_test$75:
 	; Parameter 316 signed int integral4$2#
-	mov dword [rbp + 316], 2
+	mov dword [rbp + 316], {operand2}
 
  string_test$76:
 	; Call 276 strncmp 0
 	mov qword [rbp + 276], string_test$77
-	mov [rbp + 284], rbp
+	mov [rbp + 284], {operand2}
 	add rbp, 276
 	jmp strncmp
 
@@ -547,12 +547,12 @@ section .text
 
  string_test$79:
 	; Parameter 276 signed int £temporary4060
-	mov [rbp + 276], ebx
+	mov [rbp + 276], {operand2}
 
  string_test$80:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$81
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -566,17 +566,17 @@ section .text
 
  string_test$83:
 	; Parameter 268 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 268], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 268], {operand2}
 
  string_test$84:
 	; Parameter 276 signed int integral4$108#
-	mov dword [rbp + 276], 108
+	mov dword [rbp + 276], {operand2}
 
  string_test$85:
 	; Call 244 strchr 0
 	mov qword [rbp + 244], string_test$86
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp strchr
 
@@ -588,24 +588,24 @@ section .text
 
  string_test$88:
 	; Assign p £temporary4062
-	mov [rbp + 236], rbx
+	mov [rbp + 236], {operand2}
 
  string_test$89:
 	; PreCall 244
 
  string_test$90:
 	; Parameter 268 string string_strchr28s2C2027l2729203D2025i0A#
-	mov qword [rbp + 268], @9153string_strchr28s2C2027l2729203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$91:
 	; Equal 95 p integral8$0#
-	cmp qword [rbp + 236], 0
+	cmp qword [rbp + 236], {operand2}
 	je string_test$95
 
  string_test$92:
 	; Subtract £temporary4064 p s
-	mov rax, [rbp + 236]
-	sub rax, [rbp + 28]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	sub rax, [{operand1}{WithSign(operand2)}]
 
  string_test$93:
 	; IntegralToIntegral £temporary4067 £temporary4064
@@ -620,12 +620,12 @@ section .text
 
  string_test$96:
 	; Parameter 276 signed int £temporary4067
-	mov [rbp + 276], eax
+	mov [rbp + 276], {operand2}
 
  string_test$97:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$98
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -639,17 +639,17 @@ section .text
 
  string_test$100:
 	; Parameter 268 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 268], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 268], {operand2}
 
  string_test$101:
 	; Parameter 276 signed int integral4$108#
-	mov dword [rbp + 276], 108
+	mov dword [rbp + 276], {operand2}
 
  string_test$102:
 	; Call 244 strrchr 0
 	mov qword [rbp + 244], string_test$103
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp strrchr
 
@@ -661,24 +661,24 @@ section .text
 
  string_test$105:
 	; Assign p £temporary4069
-	mov [rbp + 236], rbx
+	mov [rbp + 236], {operand2}
 
  string_test$106:
 	; PreCall 244
 
  string_test$107:
 	; Parameter 268 string string_strrchr28s2C2027l2729203D2025i0A#
-	mov qword [rbp + 268], @9160string_strrchr28s2C2027l2729203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$108:
 	; Equal 112 p integral8$0#
-	cmp qword [rbp + 236], 0
+	cmp qword [rbp + 236], {operand2}
 	je string_test$112
 
  string_test$109:
 	; Subtract £temporary4071 p s
-	mov rax, [rbp + 236]
-	sub rax, [rbp + 28]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	sub rax, [{operand1}{WithSign(operand2)}]
 
  string_test$110:
 	; IntegralToIntegral £temporary4074 £temporary4071
@@ -693,12 +693,12 @@ section .text
 
  string_test$113:
 	; Parameter 276 signed int £temporary4074
-	mov [rbp + 276], eax
+	mov [rbp + 276], {operand2}
 
  string_test$114:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$115
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -712,17 +712,17 @@ section .text
 
  string_test$117:
 	; Parameter 268 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 268], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 268], {operand2}
 
  string_test$118:
 	; Parameter 276 signed int integral4$120#
-	mov dword [rbp + 276], 120
+	mov dword [rbp + 276], {operand2}
 
  string_test$119:
 	; Call 244 strchr 0
 	mov qword [rbp + 244], string_test$120
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp strchr
 
@@ -734,24 +734,24 @@ section .text
 
  string_test$122:
 	; Assign p £temporary4076
-	mov [rbp + 236], rbx
+	mov [rbp + 236], {operand2}
 
  string_test$123:
 	; PreCall 244
 
  string_test$124:
 	; Parameter 268 string string_strchr28s2C2027x2729203D2025i0A#
-	mov qword [rbp + 268], @9167string_strchr28s2C2027x2729203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$125:
 	; Equal 129 p integral8$0#
-	cmp qword [rbp + 236], 0
+	cmp qword [rbp + 236], {operand2}
 	je string_test$129
 
  string_test$126:
 	; Subtract £temporary4078 p s
-	mov rax, [rbp + 236]
-	sub rax, [rbp + 28]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	sub rax, [{operand1}{WithSign(operand2)}]
 
  string_test$127:
 	; IntegralToIntegral £temporary4081 £temporary4078
@@ -766,12 +766,12 @@ section .text
 
  string_test$130:
 	; Parameter 276 signed int £temporary4081
-	mov [rbp + 276], eax
+	mov [rbp + 276], {operand2}
 
  string_test$131:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$132
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -785,17 +785,17 @@ section .text
 
  string_test$134:
 	; Parameter 268 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 268], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 268], {operand2}
 
  string_test$135:
 	; Parameter 276 signed int integral4$120#
-	mov dword [rbp + 276], 120
+	mov dword [rbp + 276], {operand2}
 
  string_test$136:
 	; Call 244 strrchr 0
 	mov qword [rbp + 244], string_test$137
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp strrchr
 
@@ -807,24 +807,24 @@ section .text
 
  string_test$139:
 	; Assign p £temporary4083
-	mov [rbp + 236], rbx
+	mov [rbp + 236], {operand2}
 
  string_test$140:
 	; PreCall 244
 
  string_test$141:
 	; Parameter 268 string string_strrchr28s2C2027x2729203D2025i0A#
-	mov qword [rbp + 268], @9174string_strrchr28s2C2027x2729203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$142:
 	; Equal 146 p integral8$0#
-	cmp qword [rbp + 236], 0
+	cmp qword [rbp + 236], {operand2}
 	je string_test$146
 
  string_test$143:
 	; Subtract £temporary4085 p s
-	mov rax, [rbp + 236]
-	sub rax, [rbp + 28]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	sub rax, [{operand1}{WithSign(operand2)}]
 
  string_test$144:
 	; IntegralToIntegral £temporary4088 £temporary4085
@@ -839,12 +839,12 @@ section .text
 
  string_test$147:
 	; Parameter 276 signed int £temporary4088
-	mov [rbp + 276], eax
+	mov [rbp + 276], {operand2}
 
  string_test$148:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$149
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -858,21 +858,21 @@ section .text
 
  string_test$151:
 	; Parameter 268 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 268], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 268], {operand2}
 
  string_test$152:
 	; Parameter 276 string string_Hello2C20World21#
-	mov qword [rbp + 276], @9179string_Hello2C20World21#
+	mov qword [rbp + 276], {operand2}
 
  string_test$153:
 	; Parameter 284 signed int integral4$20#
-	mov dword [rbp + 284], 20
+	mov dword [rbp + 284], {operand2}
 
  string_test$154:
 	; Call 244 memcpy 0
 	mov qword [rbp + 244], string_test$155
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp memcpy
 
@@ -884,21 +884,21 @@ section .text
 
  string_test$157:
 	; Parameter 268 array t
-	mov [rbp + 268], rbp
-	add qword [rbp + 268], 36
+	mov [rbp + 268], {operand2}
+	add qword [rbp + 268], {operand2}
 
  string_test$158:
 	; Parameter 276 string string_Hello2C20World21#
-	mov qword [rbp + 276], @9183string_Hello2C20World21#
+	mov qword [rbp + 276], {operand2}
 
  string_test$159:
 	; Parameter 284 signed int integral4$20#
-	mov dword [rbp + 284], 20
+	mov dword [rbp + 284], {operand2}
 
  string_test$160:
 	; Call 244 memmove 0
 	mov qword [rbp + 244], string_test$161
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp memmove
 
@@ -910,21 +910,21 @@ section .text
 
  string_test$163:
 	; Parameter 268 array u
-	mov [rbp + 268], rbp
-	add qword [rbp + 268], 136
+	mov [rbp + 268], {operand2}
+	add qword [rbp + 268], {operand2}
 
  string_test$164:
 	; Parameter 276 signed int integral4$88#
-	mov dword [rbp + 276], 88
+	mov dword [rbp + 276], {operand2}
 
  string_test$165:
 	; Parameter 280 signed int integral4$20#
-	mov dword [rbp + 280], 20
+	mov dword [rbp + 280], {operand2}
 
  string_test$166:
 	; Call 244 memset 0
 	mov qword [rbp + 244], string_test$167
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp memset
 
@@ -938,34 +938,34 @@ section .text
 
  string_test$169:
 	; Assign £temporary4094 integral1$0#
-	mov byte [rsi + 19], 0
+	mov byte [rsi + 19], {operand2}
 
  string_test$170:
 	; PreCall 244
 
  string_test$171:
 	; Parameter 268 string string_s203D202225s222C20t203D202225s222C20u203D202225s220A#
-	mov qword [rbp + 268], @9199string_s203D202225s222C20t203D202225s222C20u203D202225s220A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$172:
 	; Parameter 276 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 276], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 276], {operand2}
 
  string_test$173:
 	; Parameter 284 array t
-	mov [rbp + 284], rbp
-	add qword [rbp + 284], 36
+	mov [rbp + 284], {operand2}
+	add qword [rbp + 284], {operand2}
 
  string_test$174:
 	; Parameter 292 array u
-	mov [rbp + 292], rbp
-	add qword [rbp + 292], 136
+	mov [rbp + 292], {operand2}
+	add qword [rbp + 292], {operand2}
 
  string_test$175:
 	; Call 244 printf 24
 	mov qword [rbp + 244], string_test$176
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 24
@@ -979,21 +979,21 @@ section .text
 
  string_test$178:
 	; Parameter 268 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 268], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 268], {operand2}
 
  string_test$179:
 	; Parameter 276 signed int integral4$108#
-	mov dword [rbp + 276], 108
+	mov dword [rbp + 276], {operand2}
 
  string_test$180:
 	; Parameter 280 signed int integral4$20#
-	mov dword [rbp + 280], 20
+	mov dword [rbp + 280], {operand2}
 
  string_test$181:
 	; Call 244 memchr 0
 	mov qword [rbp + 244], string_test$182
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp memchr
 
@@ -1005,24 +1005,24 @@ section .text
 
  string_test$184:
 	; Assign p £temporary4096
-	mov [rbp + 236], rbx
+	mov [rbp + 236], {operand2}
 
  string_test$185:
 	; PreCall 244
 
  string_test$186:
 	; Parameter 268 string string_memchr28s2C2027l272C20SIZE202A20sizeof28char2929203D2025i0A#
-	mov qword [rbp + 268], @9205string_memchr28s2C2027l272C20SIZE202A20sizeof28char2929203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$187:
 	; Equal 191 p integral8$0#
-	cmp qword [rbp + 236], 0
+	cmp qword [rbp + 236], {operand2}
 	je string_test$191
 
  string_test$188:
 	; Subtract £temporary4098 p s
-	mov rax, [rbp + 236]
-	sub rax, [rbp + 28]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	sub rax, [{operand1}{WithSign(operand2)}]
 
  string_test$189:
 	; IntegralToIntegral £temporary4101 £temporary4098
@@ -1037,12 +1037,12 @@ section .text
 
  string_test$192:
 	; Parameter 276 signed int £temporary4101
-	mov [rbp + 276], eax
+	mov [rbp + 276], {operand2}
 
  string_test$193:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$194
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -1056,21 +1056,21 @@ section .text
 
  string_test$196:
 	; Parameter 268 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 268], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 268], {operand2}
 
  string_test$197:
 	; Parameter 276 signed int integral4$120#
-	mov dword [rbp + 276], 120
+	mov dword [rbp + 276], {operand2}
 
  string_test$198:
 	; Parameter 280 signed int integral4$20#
-	mov dword [rbp + 280], 20
+	mov dword [rbp + 280], {operand2}
 
  string_test$199:
 	; Call 244 memchr 0
 	mov qword [rbp + 244], string_test$200
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp memchr
 
@@ -1082,24 +1082,24 @@ section .text
 
  string_test$202:
 	; Assign p £temporary4103
-	mov [rbp + 236], rbx
+	mov [rbp + 236], {operand2}
 
  string_test$203:
 	; PreCall 244
 
  string_test$204:
 	; Parameter 268 string string_memchr28s2C2027x272C20SIZE202A20sizeof28char2929203D2025i0A#
-	mov qword [rbp + 268], @9215string_memchr28s2C2027x272C20SIZE202A20sizeof28char2929203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$205:
 	; Equal 209 p integral8$0#
-	cmp qword [rbp + 236], 0
+	cmp qword [rbp + 236], {operand2}
 	je string_test$209
 
  string_test$206:
 	; Subtract £temporary4105 p s
-	mov rax, [rbp + 236]
-	sub rax, [rbp + 28]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	sub rax, [{operand1}{WithSign(operand2)}]
 
  string_test$207:
 	; IntegralToIntegral £temporary4108 £temporary4105
@@ -1114,12 +1114,12 @@ section .text
 
  string_test$210:
 	; Parameter 276 signed int £temporary4108
-	mov [rbp + 276], eax
+	mov [rbp + 276], {operand2}
 
  string_test$211:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$212
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -1133,22 +1133,22 @@ section .text
 
  string_test$214:
 	; Parameter 268 string string_s3A202225s222C20t3A202225s220A#
-	mov qword [rbp + 268], @9220string_s3A202225s222C20t3A202225s220A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$215:
 	; Parameter 276 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 276], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 276], {operand2}
 
  string_test$216:
 	; Parameter 284 array t
-	mov [rbp + 284], rbp
-	add qword [rbp + 284], 36
+	mov [rbp + 284], {operand2}
+	add qword [rbp + 284], {operand2}
 
  string_test$217:
 	; Call 244 printf 16
 	mov qword [rbp + 244], string_test$218
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 16
@@ -1162,25 +1162,25 @@ section .text
 
  string_test$220:
 	; Parameter 268 string string_strcmp28s2C20t29203D2025i0A#
-	mov qword [rbp + 268], @9221string_strcmp28s2C20t29203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$221:
 	; PreCall 244
 
  string_test$222:
 	; Parameter 300 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 300], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 300], {operand2}
 
  string_test$223:
 	; Parameter 308 array t
-	mov [rbp + 308], rbp
-	add qword [rbp + 308], 36
+	mov [rbp + 308], {operand2}
+	add qword [rbp + 308], {operand2}
 
  string_test$224:
 	; Call 276 strcmp 0
 	mov qword [rbp + 276], string_test$225
-	mov [rbp + 284], rbp
+	mov [rbp + 284], {operand2}
 	add rbp, 276
 	jmp strcmp
 
@@ -1192,12 +1192,12 @@ section .text
 
  string_test$227:
 	; Parameter 276 signed int £temporary4111
-	mov [rbp + 276], ebx
+	mov [rbp + 276], {operand2}
 
  string_test$228:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$229
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -1211,29 +1211,29 @@ section .text
 
  string_test$231:
 	; Parameter 268 string string_memcmp28s2C20t2C20SIZE202A20sizeof28char2929203D2025i0A#
-	mov qword [rbp + 268], @9222string_memcmp28s2C20t2C20SIZE202A20sizeof28char2929203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$232:
 	; PreCall 244
 
  string_test$233:
 	; Parameter 300 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 300], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 300], {operand2}
 
  string_test$234:
 	; Parameter 308 array t
-	mov [rbp + 308], rbp
-	add qword [rbp + 308], 36
+	mov [rbp + 308], {operand2}
+	add qword [rbp + 308], {operand2}
 
  string_test$235:
 	; Parameter 316 signed int integral4$20#
-	mov dword [rbp + 316], 20
+	mov dword [rbp + 316], {operand2}
 
  string_test$236:
 	; Call 276 memcmp 0
 	mov qword [rbp + 276], string_test$237
-	mov [rbp + 284], rbp
+	mov [rbp + 284], {operand2}
 	add rbp, 276
 	jmp memcmp
 
@@ -1245,12 +1245,12 @@ section .text
 
  string_test$239:
 	; Parameter 276 signed int £temporary4113
-	mov [rbp + 276], ebx
+	mov [rbp + 276], {operand2}
 
  string_test$240:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$241
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -1264,24 +1264,24 @@ section .text
 
  string_test$243:
 	; Parameter 268 string string_strspn28s2C2022Hello2C20C2229203D2025i0A#
-	mov qword [rbp + 268], @9226string_strspn28s2C2022Hello2C20C2229203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$244:
 	; PreCall 244
 
  string_test$245:
 	; Parameter 300 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 300], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 300], {operand2}
 
  string_test$246:
 	; Parameter 308 string string_Hello2C20C#
-	mov qword [rbp + 308], @9227string_Hello2C20C#
+	mov qword [rbp + 308], {operand2}
 
  string_test$247:
 	; Call 276 strspn 0
 	mov qword [rbp + 276], string_test$248
-	mov [rbp + 284], rbp
+	mov [rbp + 284], {operand2}
 	add rbp, 276
 	jmp strspn
 
@@ -1293,12 +1293,12 @@ section .text
 
  string_test$250:
 	; Parameter 276 signed int £temporary4115
-	mov [rbp + 276], ebx
+	mov [rbp + 276], {operand2}
 
  string_test$251:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$252
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -1312,24 +1312,24 @@ section .text
 
  string_test$254:
 	; Parameter 268 string string_strcspn28s2C2022Hello2C20C2229203D2025i0A#
-	mov qword [rbp + 268], @9228string_strcspn28s2C2022Hello2C20C2229203D2025i0A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$255:
 	; PreCall 244
 
  string_test$256:
 	; Parameter 300 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 300], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 300], {operand2}
 
  string_test$257:
 	; Parameter 308 string string_Hello2C20C#
-	mov qword [rbp + 308], @9229string_Hello2C20C#
+	mov qword [rbp + 308], {operand2}
 
  string_test$258:
 	; Call 276 strcspn 0
 	mov qword [rbp + 276], string_test$259
-	mov [rbp + 284], rbp
+	mov [rbp + 284], {operand2}
 	add rbp, 276
 	jmp strcspn
 
@@ -1341,12 +1341,12 @@ section .text
 
  string_test$261:
 	; Parameter 276 signed int £temporary4117
-	mov [rbp + 276], ebx
+	mov [rbp + 276], {operand2}
 
  string_test$262:
 	; Call 244 printf 4
 	mov qword [rbp + 244], string_test$263
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 4
@@ -1360,20 +1360,20 @@ section .text
 
  string_test$265:
 	; Parameter 268 string string_strerror28errno29203D202225s220A#
-	mov qword [rbp + 268], @9230string_strerror28errno29203D202225s220A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$266:
 	; PreCall 244
 
  string_test$267:
 	; Parameter 300 signed int errno
-	mov eax, [errno]
-	mov [rbp + 300], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 300], {operand2}
 
  string_test$268:
 	; Call 276 strerror 0
 	mov qword [rbp + 276], string_test$269
-	mov [rbp + 284], rbp
+	mov [rbp + 284], {operand2}
 	add rbp, 276
 	jmp strerror
 
@@ -1385,12 +1385,12 @@ section .text
 
  string_test$271:
 	; Parameter 276 pointer £temporary4119
-	mov [rbp + 276], rbx
+	mov [rbp + 276], {operand2}
 
  string_test$272:
 	; Call 244 printf 8
 	mov qword [rbp + 244], string_test$273
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 8
@@ -1404,17 +1404,17 @@ section .text
 
  string_test$275:
 	; Parameter 268 pointer s
-	mov rax, [rbp + 28]
-	mov [rbp + 268], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 268], {operand2}
 
  string_test$276:
 	; Parameter 276 string string_2C#
-	mov qword [rbp + 276], @9231string_2C#
+	mov qword [rbp + 276], {operand2}
 
  string_test$277:
 	; Call 244 strtok 0
 	mov qword [rbp + 244], string_test$278
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp strtok
 
@@ -1426,11 +1426,11 @@ section .text
 
  string_test$280:
 	; Assign p £temporary4121
-	mov [rbp + 236], rbx
+	mov [rbp + 236], {operand2}
 
  string_test$281:
 	; Equal 295 p integral8$0#
-	cmp qword [rbp + 236], 0
+	cmp qword [rbp + 236], {operand2}
 	je string_test$295
 
  string_test$282:
@@ -1438,17 +1438,17 @@ section .text
 
  string_test$283:
 	; Parameter 268 string string_strtok28s2C20222C2229203D202225s220A#
-	mov qword [rbp + 268], @9234string_strtok28s2C20222C2229203D202225s220A#
+	mov qword [rbp + 268], {operand2}
 
  string_test$284:
 	; Parameter 276 pointer p
-	mov rax, [rbp + 236]
-	mov [rbp + 276], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 276], {operand2}
 
  string_test$285:
 	; Call 244 printf 8
 	mov qword [rbp + 244], string_test$286
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	mov rdi, rbp
 	add rdi, 8
@@ -1462,16 +1462,16 @@ section .text
 
  string_test$288:
 	; Parameter 268 pointer integral8$0#
-	mov qword [rbp + 268], 0
+	mov qword [rbp + 268], {operand2}
 
  string_test$289:
 	; Parameter 276 string string_2C#
-	mov qword [rbp + 276], @9237string_2C#
+	mov qword [rbp + 276], {operand2}
 
  string_test$290:
 	; Call 244 strtok 0
 	mov qword [rbp + 244], string_test$291
-	mov [rbp + 252], rbp
+	mov [rbp + 252], {operand2}
 	add rbp, 244
 	jmp strtok
 
@@ -1483,7 +1483,7 @@ section .text
 
  string_test$293:
 	; Assign p £temporary4124
-	mov [rbp + 236], rbx
+	mov [rbp + 236], {operand2}
 
  string_test$294:
 	; Jump 281
@@ -1491,9 +1491,9 @@ section .text
 
  string_test$295:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  string_test$296:

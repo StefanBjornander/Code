@@ -25,7 +25,7 @@ section .text
  islower$1:
 	; Call 28 localeconv 0
 	mov qword [rbp + 28], islower$2
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp localeconv
 
@@ -37,11 +37,11 @@ section .text
 
  islower$4:
 	; Assign localeConvPtr £temporary178
-	mov [rbp + 28], rbx
+	mov [rbp + 28], {operand2}
 
  islower$5:
 	; Equal 18 localeConvPtr integral8$0#
-	cmp qword [rbp + 28], 0
+	cmp qword [rbp + 28], {operand2}
 	je islower$18
 
  islower$6:
@@ -49,22 +49,22 @@ section .text
 
  islower$7:
 	; Dereference £temporary180 localeConvPtr 0
-	mov rsi, [rbp + 28]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  islower$8:
 	; Parameter 60 pointer £temporary180.lowerCase
-	mov rax, [rsi + 40]
-	mov [rbp + 60], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 60], {operand2}
 
  islower$9:
 	; Parameter 68 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 68], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 68], {operand2}
 
  islower$10:
 	; Call 36 strchr 0
 	mov qword [rbp + 36], islower$11
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp strchr
 
@@ -93,19 +93,19 @@ section .text
 
  islower$17:
 	; Return £temporary183
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  islower$18:
 	; LessThan 22 c integral4$97#
-	cmp dword [rbp + 24], 97
+	cmp dword [rbp + 24], {operand2}
 	jl islower$22
 
  islower$19:
 	; GreaterThan 22 c integral4$122#
-	cmp dword [rbp + 24], 122
+	cmp dword [rbp + 24], {operand2}
 	jg islower$22
 
  islower$20:
@@ -122,9 +122,9 @@ section .text
 
  islower$23:
 	; Return £temporary187
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  islower$24:
@@ -138,7 +138,7 @@ section .text
  isupper$1:
 	; Call 28 localeconv 0
 	mov qword [rbp + 28], isupper$2
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp localeconv
 
@@ -150,11 +150,11 @@ section .text
 
  isupper$4:
 	; Assign localeConvPtr £temporary190
-	mov [rbp + 28], rbx
+	mov [rbp + 28], {operand2}
 
  isupper$5:
 	; Equal 18 localeConvPtr integral8$0#
-	cmp qword [rbp + 28], 0
+	cmp qword [rbp + 28], {operand2}
 	je isupper$18
 
  isupper$6:
@@ -162,22 +162,22 @@ section .text
 
  isupper$7:
 	; Dereference £temporary192 localeConvPtr 0
-	mov rsi, [rbp + 28]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  isupper$8:
 	; Parameter 60 pointer £temporary192.upperCase
-	mov rax, [rsi + 48]
-	mov [rbp + 60], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 60], {operand2}
 
  isupper$9:
 	; Parameter 68 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 68], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 68], {operand2}
 
  isupper$10:
 	; Call 36 strchr 0
 	mov qword [rbp + 36], isupper$11
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp strchr
 
@@ -206,19 +206,19 @@ section .text
 
  isupper$17:
 	; Return £temporary195
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  isupper$18:
 	; LessThan 22 c integral4$65#
-	cmp dword [rbp + 24], 65
+	cmp dword [rbp + 24], {operand2}
 	jl isupper$22
 
  isupper$19:
 	; GreaterThan 22 c integral4$90#
-	cmp dword [rbp + 24], 90
+	cmp dword [rbp + 24], {operand2}
 	jg isupper$22
 
  isupper$20:
@@ -235,9 +235,9 @@ section .text
 
  isupper$23:
 	; Return £temporary199
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  isupper$24:
@@ -250,13 +250,13 @@ section .text
 
  isalpha$1:
 	; Parameter 52 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 52], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 52], {operand2}
 
  isalpha$2:
 	; Call 28 islower 0
 	mov qword [rbp + 28], isalpha$3
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp islower
 
@@ -276,13 +276,13 @@ section .text
 
  isalpha$7:
 	; Parameter 52 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 52], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 52], {operand2}
 
  isalpha$8:
 	; Call 28 isupper 0
 	mov qword [rbp + 28], isalpha$9
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp isupper
 
@@ -311,9 +311,9 @@ section .text
 
  isalpha$15:
 	; Return £temporary207
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  isalpha$16:
@@ -323,12 +323,12 @@ section .text
 
  isdigit:
 	; LessThan 4 c integral4$48#
-	cmp dword [rbp + 24], 48
+	cmp dword [rbp + 24], {operand2}
 	jl isdigit$4
 
  isdigit$1:
 	; GreaterThan 4 c integral4$57#
-	cmp dword [rbp + 24], 57
+	cmp dword [rbp + 24], {operand2}
 	jg isdigit$4
 
  isdigit$2:
@@ -345,9 +345,9 @@ section .text
 
  isdigit$5:
 	; Return £temporary211
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  isdigit$6:
@@ -360,13 +360,13 @@ section .text
 
  isalnum$1:
 	; Parameter 52 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 52], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 52], {operand2}
 
  isalnum$2:
 	; Call 28 isalpha 0
 	mov qword [rbp + 28], isalnum$3
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp isalpha
 
@@ -386,13 +386,13 @@ section .text
 
  isalnum$7:
 	; Parameter 52 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 52], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 52], {operand2}
 
  isalnum$8:
 	; Call 28 isdigit 0
 	mov qword [rbp + 28], isalnum$9
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp isdigit
 
@@ -421,9 +421,9 @@ section .text
 
  isalnum$15:
 	; Return £temporary217
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  isalnum$16:
@@ -436,13 +436,13 @@ section .text
 
  isxdigit$1:
 	; Parameter 52 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 52], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 52], {operand2}
 
  isxdigit$2:
 	; Call 28 isdigit 0
 	mov qword [rbp + 28], isxdigit$3
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp isdigit
 
@@ -459,22 +459,22 @@ section .text
 
  isxdigit$6:
 	; LessThan 8 c integral4$97#
-	cmp dword [rbp + 24], 97
+	cmp dword [rbp + 24], {operand2}
 	jl isxdigit$8
 
  isxdigit$7:
 	; LessThanEqual 10 c integral4$102#
-	cmp dword [rbp + 24], 102
+	cmp dword [rbp + 24], {operand2}
 	jle isxdigit$10
 
  isxdigit$8:
 	; LessThan 12 c integral4$65#
-	cmp dword [rbp + 24], 65
+	cmp dword [rbp + 24], {operand2}
 	jl isxdigit$12
 
  isxdigit$9:
 	; GreaterThan 12 c integral4$70#
-	cmp dword [rbp + 24], 70
+	cmp dword [rbp + 24], {operand2}
 	jg isxdigit$12
 
  isxdigit$10:
@@ -491,9 +491,9 @@ section .text
 
  isxdigit$13:
 	; Return £temporary228
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  isxdigit$14:
@@ -503,12 +503,12 @@ section .text
 
  isgraph:
 	; LessThan 4 c integral4$32#
-	cmp dword [rbp + 24], 32
+	cmp dword [rbp + 24], {operand2}
 	jl isgraph$4
 
  isgraph$1:
 	; GreaterThan 4 c integral4$126#
-	cmp dword [rbp + 24], 126
+	cmp dword [rbp + 24], {operand2}
 	jg isgraph$4
 
  isgraph$2:
@@ -525,9 +525,9 @@ section .text
 
  isgraph$5:
 	; Return £temporary232
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  isgraph$6:
@@ -540,13 +540,13 @@ section .text
 
  isprint$1:
 	; Parameter 52 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 52], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 52], {operand2}
 
  isprint$2:
 	; Call 28 isgraph 0
 	mov qword [rbp + 28], isprint$3
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp isgraph
 
@@ -563,7 +563,7 @@ section .text
 
  isprint$6:
 	; Equal 9 c integral4$32#
-	cmp dword [rbp + 24], 32
+	cmp dword [rbp + 24], {operand2}
 	je isprint$9
 
  isprint$7:
@@ -580,9 +580,9 @@ section .text
 
  isprint$10:
 	; Return £temporary237
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  isprint$11:
@@ -595,13 +595,13 @@ section .text
 
  ispunct$1:
 	; Parameter 52 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 52], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 52], {operand2}
 
  ispunct$2:
 	; Call 28 isgraph 0
 	mov qword [rbp + 28], ispunct$3
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp isgraph
 
@@ -621,13 +621,13 @@ section .text
 
  ispunct$7:
 	; Parameter 52 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 52], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 52], {operand2}
 
  ispunct$8:
 	; Call 28 isalnum 0
 	mov qword [rbp + 28], ispunct$9
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp isalnum
 
@@ -656,9 +656,9 @@ section .text
 
  ispunct$15:
 	; Return £temporary244
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  ispunct$16:
@@ -671,13 +671,13 @@ section .text
 
  iscntrl$1:
 	; Parameter 52 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 52], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 52], {operand2}
 
  iscntrl$2:
 	; Call 28 isprint 0
 	mov qword [rbp + 28], iscntrl$3
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp isprint
 
@@ -706,9 +706,9 @@ section .text
 
  iscntrl$9:
 	; Return £temporary248
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  iscntrl$10:
@@ -718,32 +718,32 @@ section .text
 
  isspace:
 	; Equal 6 c integral4$32#
-	cmp dword [rbp + 24], 32
+	cmp dword [rbp + 24], {operand2}
 	je isspace$6
 
  isspace$1:
 	; Equal 6 c integral4$12#
-	cmp dword [rbp + 24], 12
+	cmp dword [rbp + 24], {operand2}
 	je isspace$6
 
  isspace$2:
 	; Equal 6 c integral4$10#
-	cmp dword [rbp + 24], 10
+	cmp dword [rbp + 24], {operand2}
 	je isspace$6
 
  isspace$3:
 	; Equal 6 c integral4$13#
-	cmp dword [rbp + 24], 13
+	cmp dword [rbp + 24], {operand2}
 	je isspace$6
 
  isspace$4:
 	; Equal 6 c integral4$9#
-	cmp dword [rbp + 24], 9
+	cmp dword [rbp + 24], {operand2}
 	je isspace$6
 
  isspace$5:
 	; NotEqual 8 c integral4$11#
-	cmp dword [rbp + 24], 11
+	cmp dword [rbp + 24], {operand2}
 	jne isspace$8
 
  isspace$6:
@@ -760,9 +760,9 @@ section .text
 
  isspace$9:
 	; Return £temporary260
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  isspace$10:
@@ -775,13 +775,13 @@ section .text
 
  tolower$1:
 	; Parameter 52 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 52], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 52], {operand2}
 
  tolower$2:
 	; Call 28 isupper 0
 	mov qword [rbp + 28], tolower$3
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp isupper
 
@@ -802,7 +802,7 @@ section .text
  tolower$7:
 	; Call 28 localeconv 0
 	mov qword [rbp + 28], tolower$8
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp localeconv
 
@@ -814,48 +814,48 @@ section .text
 
  tolower$10:
 	; Assign localeConvPtr £temporary262
-	mov [rbp + 28], rbx
+	mov [rbp + 28], {operand2}
 
  tolower$11:
 	; Equal 30 localeConvPtr integral8$0#
-	cmp qword [rbp + 28], 0
+	cmp qword [rbp + 28], {operand2}
 	je tolower$30
 
  tolower$12:
 	; Dereference £temporary264 localeConvPtr 0
-	mov rsi, [rbp + 28]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  tolower$13:
 	; Assign lowerCase £temporary264.lowerCase
-	mov rax, [rsi + 40]
-	mov [rbp + 36], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 36], {operand2}
 
  tolower$14:
 	; Dereference £temporary265 localeConvPtr 0
-	mov rsi, [rbp + 28]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  tolower$15:
 	; Assign upperCase £temporary265.upperCase
-	mov rax, [rsi + 48]
-	mov [rbp + 44], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 44], {operand2}
 
  tolower$16:
 	; PreCall 52
 
  tolower$17:
 	; Parameter 76 pointer upperCase
-	mov rax, [rbp + 44]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  tolower$18:
 	; Parameter 84 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 84], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 84], {operand2}
 
  tolower$19:
 	; Call 52 strchr 0
 	mov qword [rbp + 52], tolower$20
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp strchr
 
@@ -867,24 +867,24 @@ section .text
 
  tolower$22:
 	; Subtract £temporary267 £temporary266 upperCase
-	sub rbx, [rbp + 44]
+	sub rbx, [{operand1}{WithSign(operand2)}]
 
  tolower$23:
 	; IntegralToIntegral £temporary268 £temporary267
 
  tolower$24:
 	; Assign index £temporary268
-	mov [rbp + 52], ebx
+	mov [rbp + 52], {operand2}
 
  tolower$25:
 	; IntegralToIntegral £temporary271 index
-	mov eax, [rbp + 52]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  tolower$26:
 	; Add £temporary272 lowerCase £temporary271
-	mov rsi, [rbp + 36]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  tolower$27:
@@ -892,7 +892,7 @@ section .text
 
  tolower$28:
 	; IntegralToIntegral £temporary274 £temporary273
-	mov bl, [rsi]
+	mov bl, [{operand1}{WithSign(operand2)}]
 	and ebx, 255
 	cmp bl, 0
 	jge tolower$29
@@ -901,29 +901,29 @@ section .text
 
  tolower$29:
 	; Return £temporary274
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  tolower$30:
 	; Add £temporary275 c integral4$32#
-	mov ebx, [rbp + 24]
+	mov ebx, [{operand1}{WithSign(operand2)}]
 	add ebx, 32
 
  tolower$31:
 	; Return £temporary275
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  tolower$32:
 	; Return c
-	mov ebx, [rbp + 24]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov ebx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  tolower$33:
@@ -936,13 +936,13 @@ section .text
 
  toupper$1:
 	; Parameter 52 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 52], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 52], {operand2}
 
  toupper$2:
 	; Call 28 islower 0
 	mov qword [rbp + 28], toupper$3
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp islower
 
@@ -963,7 +963,7 @@ section .text
  toupper$7:
 	; Call 28 localeconv 0
 	mov qword [rbp + 28], toupper$8
-	mov [rbp + 36], rbp
+	mov [rbp + 36], {operand2}
 	add rbp, 28
 	jmp localeconv
 
@@ -975,48 +975,48 @@ section .text
 
  toupper$10:
 	; Assign localeConvPtr £temporary282
-	mov [rbp + 28], rbx
+	mov [rbp + 28], {operand2}
 
  toupper$11:
 	; Equal 30 localeConvPtr integral8$0#
-	cmp qword [rbp + 28], 0
+	cmp qword [rbp + 28], {operand2}
 	je toupper$30
 
  toupper$12:
 	; Dereference £temporary284 localeConvPtr 0
-	mov rsi, [rbp + 28]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  toupper$13:
 	; Assign lowerCase £temporary284.lowerCase
-	mov rax, [rsi + 40]
-	mov [rbp + 36], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 36], {operand2}
 
  toupper$14:
 	; Dereference £temporary285 localeConvPtr 0
-	mov rsi, [rbp + 28]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  toupper$15:
 	; Assign upperCase £temporary285.upperCase
-	mov rax, [rsi + 48]
-	mov [rbp + 44], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 44], {operand2}
 
  toupper$16:
 	; PreCall 52
 
  toupper$17:
 	; Parameter 76 pointer lowerCase
-	mov rax, [rbp + 36]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  toupper$18:
 	; Parameter 84 signed int c
-	mov eax, [rbp + 24]
-	mov [rbp + 84], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 84], {operand2}
 
  toupper$19:
 	; Call 52 strchr 0
 	mov qword [rbp + 52], toupper$20
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp strchr
 
@@ -1028,24 +1028,24 @@ section .text
 
  toupper$22:
 	; Subtract £temporary287 £temporary286 lowerCase
-	sub rbx, [rbp + 36]
+	sub rbx, [{operand1}{WithSign(operand2)}]
 
  toupper$23:
 	; IntegralToIntegral £temporary288 £temporary287
 
  toupper$24:
 	; Assign index £temporary288
-	mov [rbp + 52], ebx
+	mov [rbp + 52], {operand2}
 
  toupper$25:
 	; IntegralToIntegral £temporary291 index
-	mov eax, [rbp + 52]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  toupper$26:
 	; Add £temporary292 upperCase £temporary291
-	mov rsi, [rbp + 44]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  toupper$27:
@@ -1053,7 +1053,7 @@ section .text
 
  toupper$28:
 	; IntegralToIntegral £temporary294 £temporary293
-	mov bl, [rsi]
+	mov bl, [{operand1}{WithSign(operand2)}]
 	and ebx, 255
 	cmp bl, 0
 	jge toupper$29
@@ -1062,29 +1062,29 @@ section .text
 
  toupper$29:
 	; Return £temporary294
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  toupper$30:
 	; Subtract £temporary295 c integral4$32#
-	mov ebx, [rbp + 24]
+	mov ebx, [{operand1}{WithSign(operand2)}]
 	sub ebx, 32
 
  toupper$31:
 	; Return £temporary295
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  toupper$32:
 	; Return c
-	mov ebx, [rbp + 24]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov ebx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  toupper$33:

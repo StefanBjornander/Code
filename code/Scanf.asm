@@ -55,11 +55,11 @@ section .text
 
  scanChar:
 	; Assign c integral1$0#
-	mov byte [rbp + 24], 0
+	mov byte [rbp + 24], {operand2}
 
  scanChar$1:
 	; Case 5 g_inStatus integral4$0#
-	mov eax, [g_inStatus]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	cmp eax, 0
 	je scanChar$5
 
@@ -77,20 +77,20 @@ section .text
 
  scanChar$5:
 	; IntegralToIntegral £temporary1139 g_inDevice
-	mov rax, [g_inDevice]
+	mov rax, [{operand1}{WithSign(operand2)}]
 
  scanChar$6:
 	; Assign stream £temporary1139
-	mov [rbp + 25], rax
+	mov [rbp + 25], {operand2}
 
  scanChar$7:
 	; Dereference £temporary1140 stream 0
-	mov rsi, [rbp + 25]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanChar$8:
 	; Assign handle £temporary1140.handle
-	mov eax, [rsi + 4]
-	mov [rbp + 33], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 33], {operand2}
 
  scanChar$9:
 	; AssignRegister rax integral8$0#
@@ -98,11 +98,11 @@ section .text
 
  scanChar$10:
 	; Dereference £temporary1143 stream 0
-	mov rsi, [rbp + 25]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanChar$11:
 	; IntegralToIntegral £temporary1144 £temporary1143.handle
-	mov edi, [rsi + 4]
+	mov edi, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rdi, rbx
 
@@ -134,23 +134,23 @@ section .text
 
  scanChar$19:
 	; Return c
-	mov bl, [rbp + 24]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov bl, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  scanChar$20:
 	; IntegralToIntegral £temporary1150 g_inDevice
-	mov rax, [g_inDevice]
+	mov rax, [{operand1}{WithSign(operand2)}]
 
  scanChar$21:
 	; Assign inString £temporary1150
-	mov [rbp + 37], rax
+	mov [rbp + 37], {operand2}
 
  scanChar$22:
 	; Assign £temporary1153 g_inChars
-	mov eax, [g_inChars]
+	mov eax, [{operand1}{WithSign(operand2)}]
 
  scanChar$23:
 	; Add g_inChars g_inChars integral4$1#
@@ -163,7 +163,7 @@ section .text
 
  scanChar$25:
 	; Add £temporary1155 inString £temporary1154
-	mov rsi, [rbp + 37]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanChar$26:
@@ -171,18 +171,18 @@ section .text
 
  scanChar$27:
 	; Return £temporary1156
-	mov bl, [rsi]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov bl, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  scanChar$28:
 	; Return integral1$0#
 	mov bl, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  scanChar$29:
@@ -192,7 +192,7 @@ section .text
 
  unscanChar:
 	; Case 4 g_inStatus integral4$0#
-	mov eax, [g_inStatus]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	cmp eax, 0
 	je unscanChar$4
 
@@ -222,9 +222,9 @@ section .text
 
  unscanChar$7:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  unscanChar$8:
@@ -234,7 +234,7 @@ section .text
 
  @3318$strnchr:
 	; IntegralToIntegral £temporary1160 i
-	mov eax, [rbp + 36]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	cmp eax, 0
 	jge @3318$strnchr$1
 	neg eax
@@ -242,27 +242,27 @@ section .text
 
  @3318$strnchr$1:
 	; Assign c £temporary1160
-	mov [rbp + 44], al
+	mov [rbp + 44], {operand2}
 
  @3318$strnchr$2:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], 0
+	mov dword [rbp + 40], {operand2}
 
  @3318$strnchr$3:
 	; GreaterThanEqual 15 index size
-	mov eax, [rbp + 32]
-	cmp [rbp + 40], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 40], {operand2}
 	jge @3318$strnchr$15
 
  @3318$strnchr$4:
 	; IntegralToIntegral £temporary1164 index
-	mov eax, [rbp + 40]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  @3318$strnchr$5:
 	; Add £temporary1165 text £temporary1164
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  @3318$strnchr$6:
@@ -270,19 +270,19 @@ section .text
 
  @3318$strnchr$7:
 	; NotEqual 13 £temporary1166 c
-	mov al, [rbp + 44]
-	cmp [rsi], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	cmp [rsi], {operand2}
 	jne @3318$strnchr$13
 
  @3318$strnchr$8:
 	; IntegralToIntegral £temporary1169 index
-	mov eax, [rbp + 40]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  @3318$strnchr$9:
 	; Add £temporary1170 text £temporary1169
-	mov rbx, [rbp + 24]
+	mov rbx, [{operand1}{WithSign(operand2)}]
 	add rbx, rax
 
  @3318$strnchr$10:
@@ -293,9 +293,9 @@ section .text
 
  @3318$strnchr$12:
 	; Return £temporary1172
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  @3318$strnchr$13:
@@ -309,9 +309,9 @@ section .text
  @3318$strnchr$15:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  @3318$strnchr$16:
@@ -321,7 +321,7 @@ section .text
 
  scanPattern:
 	; Assign index integral4$0#
-	mov dword [rbp + 48], 0
+	mov dword [rbp + 48], {operand2}
 
  scanPattern$1:
 	; PreCall 52
@@ -329,7 +329,7 @@ section .text
  scanPattern$2:
 	; Call 52 scanChar 0
 	mov qword [rbp + 52], scanPattern$3
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp scanChar
 
@@ -341,14 +341,14 @@ section .text
 
  scanPattern$5:
 	; Assign input £temporary1175
-	mov [rbp + 52], bl
+	mov [rbp + 52], {operand2}
 
  scanPattern$6:
 	; PreCall 53
 
  scanPattern$7:
 	; IntegralToIntegral £temporary1176 input
-	mov al, [rbp + 52]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanPattern$8
@@ -357,12 +357,12 @@ section .text
 
  scanPattern$8:
 	; Parameter 77 signed int £temporary1176
-	mov [rbp + 77], eax
+	mov [rbp + 77], {operand2}
 
  scanPattern$9:
 	; Call 53 isspace 0
 	mov qword [rbp + 53], scanPattern$10
-	mov [rbp + 61], rbp
+	mov [rbp + 61], {operand2}
 	add rbp, 53
 	jmp isspace
 
@@ -383,7 +383,7 @@ section .text
  scanPattern$14:
 	; Call 53 scanChar 0
 	mov qword [rbp + 53], scanPattern$15
-	mov [rbp + 61], rbp
+	mov [rbp + 61], {operand2}
 	add rbp, 53
 	jmp scanChar
 
@@ -395,7 +395,7 @@ section .text
 
  scanPattern$17:
 	; Assign input £temporary1178
-	mov [rbp + 52], bl
+	mov [rbp + 52], {operand2}
 
  scanPattern$18:
 	; Jump 6
@@ -403,12 +403,12 @@ section .text
 
  scanPattern$19:
 	; Equal 57 string integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	je scanPattern$57
 
  scanPattern$20:
 	; NotEqual 30 not integral4$0#
-	cmp dword [rbp + 44], 0
+	cmp dword [rbp + 44], {operand2}
 	jne scanPattern$30
 
  scanPattern$21:
@@ -416,17 +416,17 @@ section .text
 
  scanPattern$22:
 	; Parameter 77 pointer pattern
-	mov rax, [rbp + 32]
-	mov [rbp + 77], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 77], {operand2}
 
  scanPattern$23:
 	; Parameter 85 signed int size
-	mov eax, [rbp + 40]
-	mov [rbp + 85], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 85], {operand2}
 
  scanPattern$24:
 	; IntegralToIntegral £temporary1183 input
-	mov al, [rbp + 52]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanPattern$25
@@ -435,12 +435,12 @@ section .text
 
  scanPattern$25:
 	; Parameter 89 signed int £temporary1183
-	mov [rbp + 89], eax
+	mov [rbp + 89], {operand2}
 
  scanPattern$26:
 	; Call 53 strnchr 0
 	mov qword [rbp + 53], scanPattern$27
-	mov [rbp + 61], rbp
+	mov [rbp + 61], {operand2}
 	add rbp, 53
 	jmp @3318$strnchr
 
@@ -457,7 +457,7 @@ section .text
 
  scanPattern$30:
 	; Equal 52 not integral4$0#
-	cmp dword [rbp + 44], 0
+	cmp dword [rbp + 44], {operand2}
 	je scanPattern$52
 
  scanPattern$31:
@@ -465,17 +465,17 @@ section .text
 
  scanPattern$32:
 	; Parameter 77 pointer pattern
-	mov rax, [rbp + 32]
-	mov [rbp + 77], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 77], {operand2}
 
  scanPattern$33:
 	; Parameter 85 signed int size
-	mov eax, [rbp + 40]
-	mov [rbp + 85], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 85], {operand2}
 
  scanPattern$34:
 	; IntegralToIntegral £temporary1187 input
-	mov al, [rbp + 52]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanPattern$35
@@ -484,12 +484,12 @@ section .text
 
  scanPattern$35:
 	; Parameter 89 signed int £temporary1187
-	mov [rbp + 89], eax
+	mov [rbp + 89], {operand2}
 
  scanPattern$36:
 	; Call 53 strnchr 0
 	mov qword [rbp + 53], scanPattern$37
-	mov [rbp + 61], rbp
+	mov [rbp + 61], {operand2}
 	add rbp, 53
 	jmp @3318$strnchr
 
@@ -506,7 +506,7 @@ section .text
 
  scanPattern$40:
 	; Assign £temporary1196 index
-	mov eax, [rbp + 48]
+	mov eax, [{operand1}{WithSign(operand2)}]
 
  scanPattern$41:
 	; Add index index integral4$1#
@@ -519,7 +519,7 @@ section .text
 
  scanPattern$43:
 	; Add £temporary1198 string £temporary1197
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanPattern$44:
@@ -527,8 +527,8 @@ section .text
 
  scanPattern$45:
 	; Assign £temporary1199 input
-	mov al, [rbp + 52]
-	mov [rsi], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  scanPattern$46:
 	; PreCall 53
@@ -536,7 +536,7 @@ section .text
  scanPattern$47:
 	; Call 53 scanChar 0
 	mov qword [rbp + 53], scanPattern$48
-	mov [rbp + 61], rbp
+	mov [rbp + 61], {operand2}
 	add rbp, 53
 	jmp scanChar
 
@@ -548,7 +548,7 @@ section .text
 
  scanPattern$50:
 	; Assign input £temporary1200
-	mov [rbp + 52], bl
+	mov [rbp + 52], {operand2}
 
  scanPattern$51:
 	; Jump 20
@@ -556,13 +556,13 @@ section .text
 
  scanPattern$52:
 	; IntegralToIntegral £temporary1202 index
-	mov eax, [rbp + 48]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanPattern$53:
 	; Add £temporary1203 string £temporary1202
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanPattern$54:
@@ -570,7 +570,7 @@ section .text
 
  scanPattern$55:
 	; Assign £temporary1204 integral1$0#
-	mov byte [rsi], 0
+	mov byte [rsi], {operand2}
 
  scanPattern$56:
 	; Jump 83
@@ -578,7 +578,7 @@ section .text
 
  scanPattern$57:
 	; NotEqual 67 not integral4$0#
-	cmp dword [rbp + 44], 0
+	cmp dword [rbp + 44], {operand2}
 	jne scanPattern$67
 
  scanPattern$58:
@@ -586,17 +586,17 @@ section .text
 
  scanPattern$59:
 	; Parameter 77 pointer pattern
-	mov rax, [rbp + 32]
-	mov [rbp + 77], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 77], {operand2}
 
  scanPattern$60:
 	; Parameter 85 signed int size
-	mov eax, [rbp + 40]
-	mov [rbp + 85], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 85], {operand2}
 
  scanPattern$61:
 	; IntegralToIntegral £temporary1207 input
-	mov al, [rbp + 52]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanPattern$62
@@ -605,12 +605,12 @@ section .text
 
  scanPattern$62:
 	; Parameter 89 signed int £temporary1207
-	mov [rbp + 89], eax
+	mov [rbp + 89], {operand2}
 
  scanPattern$63:
 	; Call 53 strnchr 0
 	mov qword [rbp + 53], scanPattern$64
-	mov [rbp + 61], rbp
+	mov [rbp + 61], {operand2}
 	add rbp, 53
 	jmp @3318$strnchr
 
@@ -627,7 +627,7 @@ section .text
 
  scanPattern$67:
 	; Equal 83 not integral4$0#
-	cmp dword [rbp + 44], 0
+	cmp dword [rbp + 44], {operand2}
 	je scanPattern$83
 
  scanPattern$68:
@@ -635,17 +635,17 @@ section .text
 
  scanPattern$69:
 	; Parameter 77 pointer pattern
-	mov rax, [rbp + 32]
-	mov [rbp + 77], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 77], {operand2}
 
  scanPattern$70:
 	; Parameter 85 signed int size
-	mov eax, [rbp + 40]
-	mov [rbp + 85], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 85], {operand2}
 
  scanPattern$71:
 	; IntegralToIntegral £temporary1211 input
-	mov al, [rbp + 52]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanPattern$72
@@ -654,12 +654,12 @@ section .text
 
  scanPattern$72:
 	; Parameter 89 signed int £temporary1211
-	mov [rbp + 89], eax
+	mov [rbp + 89], {operand2}
 
  scanPattern$73:
 	; Call 53 strnchr 0
 	mov qword [rbp + 53], scanPattern$74
-	mov [rbp + 61], rbp
+	mov [rbp + 61], {operand2}
 	add rbp, 53
 	jmp @3318$strnchr
 
@@ -680,7 +680,7 @@ section .text
  scanPattern$78:
 	; Call 53 scanChar 0
 	mov qword [rbp + 53], scanPattern$79
-	mov [rbp + 61], rbp
+	mov [rbp + 61], {operand2}
 	add rbp, 53
 	jmp scanChar
 
@@ -692,7 +692,7 @@ section .text
 
  scanPattern$81:
 	; Assign input £temporary1218
-	mov [rbp + 52], bl
+	mov [rbp + 52], {operand2}
 
  scanPattern$82:
 	; Jump 57
@@ -700,9 +700,9 @@ section .text
 
  scanPattern$83:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  scanPattern$84:
@@ -712,7 +712,7 @@ section .text
 
  scanString:
 	; Assign index integral4$0#
-	mov dword [rbp + 36], 0
+	mov dword [rbp + 36], {operand2}
 
  scanString$1:
 	; PreCall 40
@@ -720,7 +720,7 @@ section .text
  scanString$2:
 	; Call 40 scanChar 0
 	mov qword [rbp + 40], scanString$3
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp scanChar
 
@@ -732,18 +732,18 @@ section .text
 
  scanString$5:
 	; Assign input £temporary1221
-	mov [rbp + 40], bl
+	mov [rbp + 40], {operand2}
 
  scanString$6:
 	; Assign found integral4$0#
-	mov dword [rbp + 41], 0
+	mov dword [rbp + 41], {operand2}
 
  scanString$7:
 	; PreCall 45
 
  scanString$8:
 	; IntegralToIntegral £temporary1222 input
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanString$9
@@ -752,12 +752,12 @@ section .text
 
  scanString$9:
 	; Parameter 69 signed int £temporary1222
-	mov [rbp + 69], eax
+	mov [rbp + 69], {operand2}
 
  scanString$10:
 	; Call 45 isspace 0
 	mov qword [rbp + 45], scanString$11
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp isspace
 
@@ -778,7 +778,7 @@ section .text
  scanString$15:
 	; Call 45 scanChar 0
 	mov qword [rbp + 45], scanString$16
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp scanChar
 
@@ -790,7 +790,7 @@ section .text
 
  scanString$18:
 	; Assign input £temporary1224
-	mov [rbp + 40], bl
+	mov [rbp + 40], {operand2}
 
  scanString$19:
 	; Jump 7
@@ -798,12 +798,12 @@ section .text
 
  scanString$20:
 	; Equal 86 string integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	je scanString$86
 
  scanString$21:
 	; NotEqual 52 precision integral4$0#
-	cmp dword [rbp + 32], 0
+	cmp dword [rbp + 32], {operand2}
 	jne scanString$52
 
  scanString$22:
@@ -811,7 +811,7 @@ section .text
 
  scanString$23:
 	; IntegralToIntegral £temporary1228 input
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanString$24
@@ -820,12 +820,12 @@ section .text
 
  scanString$24:
 	; Parameter 69 signed int £temporary1228
-	mov [rbp + 69], eax
+	mov [rbp + 69], {operand2}
 
  scanString$25:
 	; Call 45 isspace 0
 	mov qword [rbp + 45], scanString$26
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp isspace
 
@@ -842,7 +842,7 @@ section .text
 
  scanString$29:
 	; IntegralToIntegral £temporary1232 input
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanString$30
@@ -856,12 +856,12 @@ section .text
 
  scanString$31:
 	; Equal 46 input integral1$10#
-	cmp byte [rbp + 40], 10
+	cmp byte [rbp + 40], {operand2}
 	je scanString$46
 
  scanString$32:
 	; Assign £temporary1239 index
-	mov eax, [rbp + 36]
+	mov eax, [{operand1}{WithSign(operand2)}]
 
  scanString$33:
 	; Add index index integral4$1#
@@ -874,7 +874,7 @@ section .text
 
  scanString$35:
 	; Add £temporary1241 string £temporary1240
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanString$36:
@@ -882,8 +882,8 @@ section .text
 
  scanString$37:
 	; Assign £temporary1242 input
-	mov al, [rbp + 40]
-	mov [rsi], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  scanString$38:
 	; PreCall 45
@@ -891,7 +891,7 @@ section .text
  scanString$39:
 	; Call 45 scanChar 0
 	mov qword [rbp + 45], scanString$40
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp scanChar
 
@@ -903,11 +903,11 @@ section .text
 
  scanString$42:
 	; Assign input £temporary1243
-	mov [rbp + 40], bl
+	mov [rbp + 40], {operand2}
 
  scanString$43:
 	; Assign found integral4$1#
-	mov dword [rbp + 41], 1
+	mov dword [rbp + 41], {operand2}
 
  scanString$44:
 	; Add g_inChars g_inChars integral4$1#
@@ -919,13 +919,13 @@ section .text
 
  scanString$46:
 	; IntegralToIntegral £temporary1246 index
-	mov eax, [rbp + 36]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanString$47:
 	; Add £temporary1247 string £temporary1246
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanString$48:
@@ -933,7 +933,7 @@ section .text
 
  scanString$49:
 	; Assign £temporary1248 integral1$0#
-	mov byte [rsi], 0
+	mov byte [rsi], {operand2}
 
  scanString$50:
 	; Add g_inChars g_inChars integral4$1#
@@ -945,7 +945,7 @@ section .text
 
  scanString$52:
 	; Assign £temporary1250 precision
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 
  scanString$53:
 	; Subtract precision precision integral4$1#
@@ -961,7 +961,7 @@ section .text
 
  scanString$56:
 	; IntegralToIntegral £temporary1253 input
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanString$57
@@ -970,12 +970,12 @@ section .text
 
  scanString$57:
 	; Parameter 69 signed int £temporary1253
-	mov [rbp + 69], eax
+	mov [rbp + 69], {operand2}
 
  scanString$58:
 	; Call 45 isspace 0
 	mov qword [rbp + 45], scanString$59
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp isspace
 
@@ -992,7 +992,7 @@ section .text
 
  scanString$62:
 	; IntegralToIntegral £temporary1257 input
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanString$63
@@ -1006,12 +1006,12 @@ section .text
 
  scanString$64:
 	; Equal 79 input integral1$10#
-	cmp byte [rbp + 40], 10
+	cmp byte [rbp + 40], {operand2}
 	je scanString$79
 
  scanString$65:
 	; Assign £temporary1265 index
-	mov eax, [rbp + 36]
+	mov eax, [{operand1}{WithSign(operand2)}]
 
  scanString$66:
 	; Add index index integral4$1#
@@ -1024,7 +1024,7 @@ section .text
 
  scanString$68:
 	; Add £temporary1267 string £temporary1266
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanString$69:
@@ -1032,8 +1032,8 @@ section .text
 
  scanString$70:
 	; Assign £temporary1268 input
-	mov al, [rbp + 40]
-	mov [rsi], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  scanString$71:
 	; PreCall 45
@@ -1041,7 +1041,7 @@ section .text
  scanString$72:
 	; Call 45 scanChar 0
 	mov qword [rbp + 45], scanString$73
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp scanChar
 
@@ -1053,11 +1053,11 @@ section .text
 
  scanString$75:
 	; Assign input £temporary1269
-	mov [rbp + 40], bl
+	mov [rbp + 40], {operand2}
 
  scanString$76:
 	; Assign found integral4$1#
-	mov dword [rbp + 41], 1
+	mov dword [rbp + 41], {operand2}
 
  scanString$77:
 	; Add g_inChars g_inChars integral4$1#
@@ -1069,18 +1069,18 @@ section .text
 
  scanString$79:
 	; LessThanEqual 130 precision integral4$0#
-	cmp dword [rbp + 32], 0
+	cmp dword [rbp + 32], {operand2}
 	jle scanString$130
 
  scanString$80:
 	; IntegralToIntegral £temporary1273 index
-	mov eax, [rbp + 36]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanString$81:
 	; Add £temporary1274 string £temporary1273
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanString$82:
@@ -1088,7 +1088,7 @@ section .text
 
  scanString$83:
 	; Assign £temporary1275 integral1$0#
-	mov byte [rsi], 0
+	mov byte [rsi], {operand2}
 
  scanString$84:
 	; Add g_inChars g_inChars integral4$1#
@@ -1100,7 +1100,7 @@ section .text
 
  scanString$86:
 	; NotEqual 107 precision integral4$0#
-	cmp dword [rbp + 32], 0
+	cmp dword [rbp + 32], {operand2}
 	jne scanString$107
 
  scanString$87:
@@ -1108,7 +1108,7 @@ section .text
 
  scanString$88:
 	; IntegralToIntegral £temporary1282 input
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanString$89
@@ -1117,12 +1117,12 @@ section .text
 
  scanString$89:
 	; Parameter 69 signed int £temporary1282
-	mov [rbp + 69], eax
+	mov [rbp + 69], {operand2}
 
  scanString$90:
 	; Call 45 isspace 0
 	mov qword [rbp + 45], scanString$91
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp isspace
 
@@ -1139,7 +1139,7 @@ section .text
 
  scanString$94:
 	; IntegralToIntegral £temporary1286 input
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanString$95
@@ -1153,7 +1153,7 @@ section .text
 
  scanString$96:
 	; Equal 105 input integral1$10#
-	cmp byte [rbp + 40], 10
+	cmp byte [rbp + 40], {operand2}
 	je scanString$105
 
  scanString$97:
@@ -1162,7 +1162,7 @@ section .text
  scanString$98:
 	; Call 45 scanChar 0
 	mov qword [rbp + 45], scanString$99
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp scanChar
 
@@ -1174,11 +1174,11 @@ section .text
 
  scanString$101:
 	; Assign input £temporary1291
-	mov [rbp + 40], bl
+	mov [rbp + 40], {operand2}
 
  scanString$102:
 	; Assign found integral4$1#
-	mov dword [rbp + 41], 1
+	mov dword [rbp + 41], {operand2}
 
  scanString$103:
 	; Add g_inChars g_inChars integral4$1#
@@ -1198,7 +1198,7 @@ section .text
 
  scanString$107:
 	; Assign £temporary1294 precision
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 
  scanString$108:
 	; Subtract precision precision integral4$1#
@@ -1214,7 +1214,7 @@ section .text
 
  scanString$111:
 	; IntegralToIntegral £temporary1297 input
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanString$112
@@ -1223,12 +1223,12 @@ section .text
 
  scanString$112:
 	; Parameter 69 signed int £temporary1297
-	mov [rbp + 69], eax
+	mov [rbp + 69], {operand2}
 
  scanString$113:
 	; Call 45 isspace 0
 	mov qword [rbp + 45], scanString$114
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp isspace
 
@@ -1245,7 +1245,7 @@ section .text
 
  scanString$117:
 	; IntegralToIntegral £temporary1301 input
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanString$118
@@ -1259,7 +1259,7 @@ section .text
 
  scanString$119:
 	; Equal 128 input integral1$10#
-	cmp byte [rbp + 40], 10
+	cmp byte [rbp + 40], {operand2}
 	je scanString$128
 
  scanString$120:
@@ -1268,7 +1268,7 @@ section .text
  scanString$121:
 	; Call 45 scanChar 0
 	mov qword [rbp + 45], scanString$122
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp scanChar
 
@@ -1280,11 +1280,11 @@ section .text
 
  scanString$124:
 	; Assign input £temporary1307
-	mov [rbp + 40], bl
+	mov [rbp + 40], {operand2}
 
  scanString$125:
 	; Assign found integral4$1#
-	mov dword [rbp + 41], 1
+	mov dword [rbp + 41], {operand2}
 
  scanString$126:
 	; Add g_inChars g_inChars integral4$1#
@@ -1296,7 +1296,7 @@ section .text
 
  scanString$128:
 	; LessThanEqual 130 precision integral4$0#
-	cmp dword [rbp + 32], 0
+	cmp dword [rbp + 32], {operand2}
 	jle scanString$130
 
  scanString$129:
@@ -1305,7 +1305,7 @@ section .text
 
  scanString$130:
 	; Equal 132 found integral4$0#
-	cmp dword [rbp + 41], 0
+	cmp dword [rbp + 41], {operand2}
 	je scanString$132
 
  scanString$131:
@@ -1314,9 +1314,9 @@ section .text
 
  scanString$132:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  scanString$133:
@@ -1329,7 +1329,7 @@ section .text
 
  @3421$isDigitInBase$1:
 	; IntegralToIntegral £temporary1321 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge @3421$isDigitInBase$2
@@ -1338,12 +1338,12 @@ section .text
 
  @3421$isDigitInBase$2:
 	; Parameter 53 signed int £temporary1321
-	mov [rbp + 53], eax
+	mov [rbp + 53], {operand2}
 
  @3421$isDigitInBase$3:
 	; Call 29 isdigit 0
 	mov qword [rbp + 29], @3421$isDigitInBase$4
-	mov [rbp + 37], rbp
+	mov [rbp + 37], {operand2}
 	add rbp, 29
 	jmp isdigit
 
@@ -1360,7 +1360,7 @@ section .text
 
  @3421$isDigitInBase$7:
 	; Subtract £temporary1323 c integral1$48#
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	sub al, 48
 
  @3421$isDigitInBase$8:
@@ -1373,17 +1373,17 @@ section .text
 
  @3421$isDigitInBase$9:
 	; Assign value £temporary1324
-	mov [rbp + 29], eax
+	mov [rbp + 29], {operand2}
 
  @3421$isDigitInBase$10:
 	; LessThan 14 value integral4$0#
-	cmp dword [rbp + 29], 0
+	cmp dword [rbp + 29], {operand2}
 	jl @3421$isDigitInBase$14
 
  @3421$isDigitInBase$11:
 	; GreaterThanEqual 14 value base
-	mov eax, [rbp + 25]
-	cmp [rbp + 29], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 29], {operand2}
 	jge @3421$isDigitInBase$14
 
  @3421$isDigitInBase$12:
@@ -1400,9 +1400,9 @@ section .text
 
  @3421$isDigitInBase$15:
 	; Return £temporary1328
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  @3421$isDigitInBase$16:
@@ -1410,7 +1410,7 @@ section .text
 
  @3421$isDigitInBase$17:
 	; IntegralToIntegral £temporary1329 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge @3421$isDigitInBase$18
@@ -1419,12 +1419,12 @@ section .text
 
  @3421$isDigitInBase$18:
 	; Parameter 53 signed int £temporary1329
-	mov [rbp + 53], eax
+	mov [rbp + 53], {operand2}
 
  @3421$isDigitInBase$19:
 	; Call 29 islower 0
 	mov qword [rbp + 29], @3421$isDigitInBase$20
-	mov [rbp + 37], rbp
+	mov [rbp + 37], {operand2}
 	add rbp, 29
 	jmp islower
 
@@ -1441,7 +1441,7 @@ section .text
 
  @3421$isDigitInBase$23:
 	; Subtract £temporary1331 c integral1$97#
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	sub al, 97
 
  @3421$isDigitInBase$24:
@@ -1455,17 +1455,17 @@ section .text
  @3421$isDigitInBase$25:
 	; Add value £temporary1333 integral4$10#
 	add eax, 10
-	mov [rbp + 29], eax
+	mov [rbp + 29], {operand2}
 
  @3421$isDigitInBase$26:
 	; LessThan 30 value integral4$0#
-	cmp dword [rbp + 29], 0
+	cmp dword [rbp + 29], {operand2}
 	jl @3421$isDigitInBase$30
 
  @3421$isDigitInBase$27:
 	; GreaterThanEqual 30 value base
-	mov eax, [rbp + 25]
-	cmp [rbp + 29], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 29], {operand2}
 	jge @3421$isDigitInBase$30
 
  @3421$isDigitInBase$28:
@@ -1482,9 +1482,9 @@ section .text
 
  @3421$isDigitInBase$31:
 	; Return £temporary1337
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  @3421$isDigitInBase$32:
@@ -1492,7 +1492,7 @@ section .text
 
  @3421$isDigitInBase$33:
 	; IntegralToIntegral £temporary1338 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge @3421$isDigitInBase$34
@@ -1501,12 +1501,12 @@ section .text
 
  @3421$isDigitInBase$34:
 	; Parameter 53 signed int £temporary1338
-	mov [rbp + 53], eax
+	mov [rbp + 53], {operand2}
 
  @3421$isDigitInBase$35:
 	; Call 29 isupper 0
 	mov qword [rbp + 29], @3421$isDigitInBase$36
-	mov [rbp + 37], rbp
+	mov [rbp + 37], {operand2}
 	add rbp, 29
 	jmp isupper
 
@@ -1523,7 +1523,7 @@ section .text
 
  @3421$isDigitInBase$39:
 	; Subtract £temporary1340 c integral1$65#
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	sub al, 65
 
  @3421$isDigitInBase$40:
@@ -1537,17 +1537,17 @@ section .text
  @3421$isDigitInBase$41:
 	; Add value £temporary1342 integral4$10#
 	add eax, 10
-	mov [rbp + 29], eax
+	mov [rbp + 29], {operand2}
 
  @3421$isDigitInBase$42:
 	; LessThan 46 value integral4$0#
-	cmp dword [rbp + 29], 0
+	cmp dword [rbp + 29], {operand2}
 	jl @3421$isDigitInBase$46
 
  @3421$isDigitInBase$43:
 	; GreaterThanEqual 46 value base
-	mov eax, [rbp + 25]
-	cmp [rbp + 29], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 29], {operand2}
 	jge @3421$isDigitInBase$46
 
  @3421$isDigitInBase$44:
@@ -1564,17 +1564,17 @@ section .text
 
  @3421$isDigitInBase$47:
 	; Return £temporary1346
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  @3421$isDigitInBase$48:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  @3421$isDigitInBase$49:
@@ -1587,7 +1587,7 @@ section .text
 
  @3447$digitToValue$1:
 	; IntegralToIntegral £temporary1356 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge @3447$digitToValue$2
@@ -1596,12 +1596,12 @@ section .text
 
  @3447$digitToValue$2:
 	; Parameter 49 signed int £temporary1356
-	mov [rbp + 49], eax
+	mov [rbp + 49], {operand2}
 
  @3447$digitToValue$3:
 	; Call 25 isdigit 0
 	mov qword [rbp + 25], @3447$digitToValue$4
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	jmp isdigit
 
@@ -1618,7 +1618,7 @@ section .text
 
  @3447$digitToValue$7:
 	; Subtract £temporary1358 c integral1$48#
-	mov bl, [rbp + 24]
+	mov bl, [{operand1}{WithSign(operand2)}]
 	sub bl, 48
 
  @3447$digitToValue$8:
@@ -1631,9 +1631,9 @@ section .text
 
  @3447$digitToValue$9:
 	; Return £temporary1359
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  @3447$digitToValue$10:
@@ -1641,7 +1641,7 @@ section .text
 
  @3447$digitToValue$11:
 	; IntegralToIntegral £temporary1360 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge @3447$digitToValue$12
@@ -1650,12 +1650,12 @@ section .text
 
  @3447$digitToValue$12:
 	; Parameter 49 signed int £temporary1360
-	mov [rbp + 49], eax
+	mov [rbp + 49], {operand2}
 
  @3447$digitToValue$13:
 	; Call 25 islower 0
 	mov qword [rbp + 25], @3447$digitToValue$14
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	jmp islower
 
@@ -1672,7 +1672,7 @@ section .text
 
  @3447$digitToValue$17:
 	; Subtract £temporary1362 c integral1$97#
-	mov bl, [rbp + 24]
+	mov bl, [{operand1}{WithSign(operand2)}]
 	sub bl, 97
 
  @3447$digitToValue$18:
@@ -1689,9 +1689,9 @@ section .text
 
  @3447$digitToValue$20:
 	; Return £temporary1363
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  @3447$digitToValue$21:
@@ -1699,7 +1699,7 @@ section .text
 
  @3447$digitToValue$22:
 	; IntegralToIntegral £temporary1365 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge @3447$digitToValue$23
@@ -1708,12 +1708,12 @@ section .text
 
  @3447$digitToValue$23:
 	; Parameter 49 signed int £temporary1365
-	mov [rbp + 49], eax
+	mov [rbp + 49], {operand2}
 
  @3447$digitToValue$24:
 	; Call 25 isupper 0
 	mov qword [rbp + 25], @3447$digitToValue$25
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	jmp isupper
 
@@ -1730,7 +1730,7 @@ section .text
 
  @3447$digitToValue$28:
 	; Subtract £temporary1367 c integral1$65#
-	mov bl, [rbp + 24]
+	mov bl, [{operand1}{WithSign(operand2)}]
 	sub bl, 65
 
  @3447$digitToValue$29:
@@ -1747,17 +1747,17 @@ section .text
 
  @3447$digitToValue$31:
 	; Return £temporary1368
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  @3447$digitToValue$32:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  @3447$digitToValue$33:
@@ -1767,15 +1767,15 @@ section .text
 
  scanLongInt:
 	; Assign longValue integral8$0#
-	mov qword [rbp + 28], 0
+	mov qword [rbp + 28], {operand2}
 
  scanLongInt$1:
 	; Assign minus integral4$0#
-	mov dword [rbp + 36], 0
+	mov dword [rbp + 36], {operand2}
 
  scanLongInt$2:
 	; Assign found integral4$0#
-	mov dword [rbp + 40], 0
+	mov dword [rbp + 40], {operand2}
 
  scanLongInt$3:
 	; PreCall 44
@@ -1783,7 +1783,7 @@ section .text
  scanLongInt$4:
 	; Call 44 scanChar 0
 	mov qword [rbp + 44], scanLongInt$5
-	mov [rbp + 52], rbp
+	mov [rbp + 52], {operand2}
 	add rbp, 44
 	jmp scanChar
 
@@ -1795,14 +1795,14 @@ section .text
 
  scanLongInt$7:
 	; Assign input £temporary1379
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanLongInt$8:
 	; PreCall 45
 
  scanLongInt$9:
 	; IntegralToIntegral £temporary1380 input
-	mov al, [rbp + 44]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanLongInt$10
@@ -1811,12 +1811,12 @@ section .text
 
  scanLongInt$10:
 	; Parameter 69 signed int £temporary1380
-	mov [rbp + 69], eax
+	mov [rbp + 69], {operand2}
 
  scanLongInt$11:
 	; Call 45 isspace 0
 	mov qword [rbp + 45], scanLongInt$12
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp isspace
 
@@ -1837,7 +1837,7 @@ section .text
  scanLongInt$16:
 	; Call 45 scanChar 0
 	mov qword [rbp + 45], scanLongInt$17
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp scanChar
 
@@ -1849,7 +1849,7 @@ section .text
 
  scanLongInt$19:
 	; Assign input £temporary1382
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanLongInt$20:
 	; Jump 8
@@ -1857,7 +1857,7 @@ section .text
 
  scanLongInt$21:
 	; NotEqual 28 input integral1$43#
-	cmp byte [rbp + 44], 43
+	cmp byte [rbp + 44], {operand2}
 	jne scanLongInt$28
 
  scanLongInt$22:
@@ -1866,7 +1866,7 @@ section .text
  scanLongInt$23:
 	; Call 45 scanChar 0
 	mov qword [rbp + 45], scanLongInt$24
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp scanChar
 
@@ -1878,7 +1878,7 @@ section .text
 
  scanLongInt$26:
 	; Assign input £temporary1385
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanLongInt$27:
 	; Jump 35
@@ -1886,12 +1886,12 @@ section .text
 
  scanLongInt$28:
 	; NotEqual 35 input integral1$45#
-	cmp byte [rbp + 44], 45
+	cmp byte [rbp + 44], {operand2}
 	jne scanLongInt$35
 
  scanLongInt$29:
 	; Assign minus integral4$1#
-	mov dword [rbp + 36], 1
+	mov dword [rbp + 36], {operand2}
 
  scanLongInt$30:
 	; PreCall 45
@@ -1899,7 +1899,7 @@ section .text
  scanLongInt$31:
 	; Call 45 scanChar 0
 	mov qword [rbp + 45], scanLongInt$32
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp scanChar
 
@@ -1911,16 +1911,16 @@ section .text
 
  scanLongInt$34:
 	; Assign input £temporary1387
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanLongInt$35:
 	; NotEqual 59 base integral4$0#
-	cmp dword [rbp + 24], 0
+	cmp dword [rbp + 24], {operand2}
 	jne scanLongInt$59
 
  scanLongInt$36:
 	; NotEqual 58 input integral1$48#
-	cmp byte [rbp + 44], 48
+	cmp byte [rbp + 44], {operand2}
 	jne scanLongInt$58
 
  scanLongInt$37:
@@ -1929,7 +1929,7 @@ section .text
  scanLongInt$38:
 	; Call 45 scanChar 0
 	mov qword [rbp + 45], scanLongInt$39
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp scanChar
 
@@ -1941,14 +1941,14 @@ section .text
 
  scanLongInt$41:
 	; Assign input £temporary1394
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanLongInt$42:
 	; PreCall 45
 
  scanLongInt$43:
 	; IntegralToIntegral £temporary1395 input
-	mov al, [rbp + 44]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanLongInt$44
@@ -1957,12 +1957,12 @@ section .text
 
  scanLongInt$44:
 	; Parameter 69 signed int £temporary1395
-	mov [rbp + 69], eax
+	mov [rbp + 69], {operand2}
 
  scanLongInt$45:
 	; Call 45 tolower 0
 	mov qword [rbp + 45], scanLongInt$46
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp tolower
 
@@ -1979,7 +1979,7 @@ section .text
 
  scanLongInt$49:
 	; Assign base integral4$16#
-	mov dword [rbp + 24], 16
+	mov dword [rbp + 24], {operand2}
 
  scanLongInt$50:
 	; PreCall 45
@@ -1987,7 +1987,7 @@ section .text
  scanLongInt$51:
 	; Call 45 scanChar 0
 	mov qword [rbp + 45], scanLongInt$52
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp scanChar
 
@@ -1999,7 +1999,7 @@ section .text
 
  scanLongInt$54:
 	; Assign input £temporary1398
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanLongInt$55:
 	; Jump 59
@@ -2007,7 +2007,7 @@ section .text
 
  scanLongInt$56:
 	; Assign base integral4$8#
-	mov dword [rbp + 24], 8
+	mov dword [rbp + 24], {operand2}
 
  scanLongInt$57:
 	; Jump 59
@@ -2015,25 +2015,25 @@ section .text
 
  scanLongInt$58:
 	; Assign base integral4$10#
-	mov dword [rbp + 24], 10
+	mov dword [rbp + 24], {operand2}
 
  scanLongInt$59:
 	; PreCall 45
 
  scanLongInt$60:
 	; Parameter 69 signed char input
-	mov al, [rbp + 44]
-	mov [rbp + 69], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 69], {operand2}
 
  scanLongInt$61:
 	; Parameter 70 signed int base
-	mov eax, [rbp + 24]
-	mov [rbp + 70], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 70], {operand2}
 
  scanLongInt$62:
 	; Call 45 isDigitInBase 0
 	mov qword [rbp + 45], scanLongInt$63
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp @3421$isDigitInBase
 
@@ -2050,7 +2050,7 @@ section .text
 
  scanLongInt$66:
 	; IntegralToIntegral £temporary1407 base
-	mov ebx, [rbp + 24]
+	mov ebx, [{operand1}{WithSign(operand2)}]
 	mov rax, 4294967295
 	and rbx, rax
 	cmp ebx, 0
@@ -2060,23 +2060,23 @@ section .text
 
  scanLongInt$67:
 	; Multiply longValue longValue £temporary1407
-	mov rax, [rbp + 28]
+	mov rax, [{operand1}{WithSign(operand2)}]
 	xor rdx, rdx
 	imul rbx
-	mov [rbp + 28], rax
+	mov [rbp + 28], {operand2}
 
  scanLongInt$68:
 	; PreCall 45
 
  scanLongInt$69:
 	; Parameter 69 signed char input
-	mov al, [rbp + 44]
-	mov [rbp + 69], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 69], {operand2}
 
  scanLongInt$70:
 	; Call 45 digitToValue 0
 	mov qword [rbp + 45], scanLongInt$71
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp @3447$digitToValue
 
@@ -2097,7 +2097,7 @@ section .text
 
  scanLongInt$74:
 	; Add longValue longValue £temporary1410
-	add [rbp + 28], rbx
+	add [rbp + 28], {operand2}
 
  scanLongInt$75:
 	; PreCall 45
@@ -2105,7 +2105,7 @@ section .text
  scanLongInt$76:
 	; Call 45 scanChar 0
 	mov qword [rbp + 45], scanLongInt$77
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp scanChar
 
@@ -2117,11 +2117,11 @@ section .text
 
  scanLongInt$79:
 	; Assign input £temporary1411
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanLongInt$80:
 	; Assign found integral4$1#
-	mov dword [rbp + 40], 1
+	mov dword [rbp + 40], {operand2}
 
  scanLongInt$81:
 	; Jump 59
@@ -2129,21 +2129,21 @@ section .text
 
  scanLongInt$82:
 	; Equal 85 minus integral4$0#
-	cmp dword [rbp + 36], 0
+	cmp dword [rbp + 36], {operand2}
 	je scanLongInt$85
 
  scanLongInt$83:
 	; Minus £temporary1413 longValue
-	mov rax, [rbp + 28]
+	mov rax, [{operand1}{WithSign(operand2)}]
 	neg rax
 
  scanLongInt$84:
 	; Assign longValue £temporary1413
-	mov [rbp + 28], rax
+	mov [rbp + 28], {operand2}
 
  scanLongInt$85:
 	; Equal 87 found integral4$0#
-	cmp dword [rbp + 40], 0
+	cmp dword [rbp + 40], {operand2}
 	je scanLongInt$87
 
  scanLongInt$86:
@@ -2155,13 +2155,13 @@ section .text
 
  scanLongInt$88:
 	; Parameter 69 signed char input
-	mov al, [rbp + 44]
-	mov [rbp + 69], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 69], {operand2}
 
  scanLongInt$89:
 	; Call 45 unscanChar 0
 	mov qword [rbp + 45], scanLongInt$90
-	mov [rbp + 53], rbp
+	mov [rbp + 53], {operand2}
 	add rbp, 45
 	jmp unscanChar
 
@@ -2170,10 +2170,10 @@ section .text
 
  scanLongInt$91:
 	; Return longValue
-	mov rbx, [rbp + 28]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  scanLongInt$92:
@@ -2183,7 +2183,7 @@ section .text
 
  scanUnsignedLongInt:
 	; Assign unsignedLongValue integral8$0#
-	mov qword [rbp + 28], 0
+	mov qword [rbp + 28], {operand2}
 
  scanUnsignedLongInt$1:
 	; PreCall 44
@@ -2191,7 +2191,7 @@ section .text
  scanUnsignedLongInt$2:
 	; Call 44 scanChar 0
 	mov qword [rbp + 44], scanUnsignedLongInt$3
-	mov [rbp + 52], rbp
+	mov [rbp + 52], {operand2}
 	add rbp, 44
 	jmp scanChar
 
@@ -2203,18 +2203,18 @@ section .text
 
  scanUnsignedLongInt$5:
 	; Assign input £temporary1422
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanUnsignedLongInt$6:
 	; Assign found integral4$1#
-	mov dword [rbp + 45], 1
+	mov dword [rbp + 45], {operand2}
 
  scanUnsignedLongInt$7:
 	; PreCall 49
 
  scanUnsignedLongInt$8:
 	; IntegralToIntegral £temporary1423 input
-	mov al, [rbp + 44]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanUnsignedLongInt$9
@@ -2223,12 +2223,12 @@ section .text
 
  scanUnsignedLongInt$9:
 	; Parameter 73 signed int £temporary1423
-	mov [rbp + 73], eax
+	mov [rbp + 73], {operand2}
 
  scanUnsignedLongInt$10:
 	; Call 49 isspace 0
 	mov qword [rbp + 49], scanUnsignedLongInt$11
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp isspace
 
@@ -2249,7 +2249,7 @@ section .text
  scanUnsignedLongInt$15:
 	; Call 49 scanChar 0
 	mov qword [rbp + 49], scanUnsignedLongInt$16
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanChar
 
@@ -2261,7 +2261,7 @@ section .text
 
  scanUnsignedLongInt$18:
 	; Assign input £temporary1425
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanUnsignedLongInt$19:
 	; Jump 7
@@ -2269,7 +2269,7 @@ section .text
 
  scanUnsignedLongInt$20:
 	; NotEqual 26 input integral1$43#
-	cmp byte [rbp + 44], 43
+	cmp byte [rbp + 44], {operand2}
 	jne scanUnsignedLongInt$26
 
  scanUnsignedLongInt$21:
@@ -2278,7 +2278,7 @@ section .text
  scanUnsignedLongInt$22:
 	; Call 49 scanChar 0
 	mov qword [rbp + 49], scanUnsignedLongInt$23
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanChar
 
@@ -2290,16 +2290,16 @@ section .text
 
  scanUnsignedLongInt$25:
 	; Assign input £temporary1428
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanUnsignedLongInt$26:
 	; NotEqual 50 base integral4$0#
-	cmp dword [rbp + 24], 0
+	cmp dword [rbp + 24], {operand2}
 	jne scanUnsignedLongInt$50
 
  scanUnsignedLongInt$27:
 	; NotEqual 49 input integral1$48#
-	cmp byte [rbp + 44], 48
+	cmp byte [rbp + 44], {operand2}
 	jne scanUnsignedLongInt$49
 
  scanUnsignedLongInt$28:
@@ -2308,7 +2308,7 @@ section .text
  scanUnsignedLongInt$29:
 	; Call 49 scanChar 0
 	mov qword [rbp + 49], scanUnsignedLongInt$30
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanChar
 
@@ -2320,14 +2320,14 @@ section .text
 
  scanUnsignedLongInt$32:
 	; Assign input £temporary1433
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanUnsignedLongInt$33:
 	; PreCall 49
 
  scanUnsignedLongInt$34:
 	; IntegralToIntegral £temporary1434 input
-	mov al, [rbp + 44]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanUnsignedLongInt$35
@@ -2336,12 +2336,12 @@ section .text
 
  scanUnsignedLongInt$35:
 	; Parameter 73 signed int £temporary1434
-	mov [rbp + 73], eax
+	mov [rbp + 73], {operand2}
 
  scanUnsignedLongInt$36:
 	; Call 49 tolower 0
 	mov qword [rbp + 49], scanUnsignedLongInt$37
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp tolower
 
@@ -2358,7 +2358,7 @@ section .text
 
  scanUnsignedLongInt$40:
 	; Assign base integral4$16#
-	mov dword [rbp + 24], 16
+	mov dword [rbp + 24], {operand2}
 
  scanUnsignedLongInt$41:
 	; PreCall 49
@@ -2366,7 +2366,7 @@ section .text
  scanUnsignedLongInt$42:
 	; Call 49 scanChar 0
 	mov qword [rbp + 49], scanUnsignedLongInt$43
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanChar
 
@@ -2378,7 +2378,7 @@ section .text
 
  scanUnsignedLongInt$45:
 	; Assign input £temporary1437
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanUnsignedLongInt$46:
 	; Jump 50
@@ -2386,7 +2386,7 @@ section .text
 
  scanUnsignedLongInt$47:
 	; Assign base integral4$8#
-	mov dword [rbp + 24], 8
+	mov dword [rbp + 24], {operand2}
 
  scanUnsignedLongInt$48:
 	; Jump 50
@@ -2394,25 +2394,25 @@ section .text
 
  scanUnsignedLongInt$49:
 	; Assign base integral4$10#
-	mov dword [rbp + 24], 10
+	mov dword [rbp + 24], {operand2}
 
  scanUnsignedLongInt$50:
 	; PreCall 49
 
  scanUnsignedLongInt$51:
 	; Parameter 73 signed char input
-	mov al, [rbp + 44]
-	mov [rbp + 73], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 73], {operand2}
 
  scanUnsignedLongInt$52:
 	; Parameter 74 signed int base
-	mov eax, [rbp + 24]
-	mov [rbp + 74], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 74], {operand2}
 
  scanUnsignedLongInt$53:
 	; Call 49 isDigitInBase 0
 	mov qword [rbp + 49], scanUnsignedLongInt$54
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp @3421$isDigitInBase
 
@@ -2429,29 +2429,29 @@ section .text
 
  scanUnsignedLongInt$57:
 	; IntegralToIntegral £temporary1446 base
-	mov ebx, [rbp + 24]
+	mov ebx, [{operand1}{WithSign(operand2)}]
 	mov rax, 4294967295
 	and rbx, rax
 
  scanUnsignedLongInt$58:
 	; Multiply unsignedLongValue unsignedLongValue £temporary1446
-	mov rax, [rbp + 28]
+	mov rax, [{operand1}{WithSign(operand2)}]
 	xor rdx, rdx
 	mul rbx
-	mov [rbp + 28], rax
+	mov [rbp + 28], {operand2}
 
  scanUnsignedLongInt$59:
 	; PreCall 49
 
  scanUnsignedLongInt$60:
 	; Parameter 73 signed char input
-	mov al, [rbp + 44]
-	mov [rbp + 73], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 73], {operand2}
 
  scanUnsignedLongInt$61:
 	; Call 49 digitToValue 0
 	mov qword [rbp + 49], scanUnsignedLongInt$62
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp @3447$digitToValue
 
@@ -2468,11 +2468,11 @@ section .text
 
  scanUnsignedLongInt$65:
 	; Add unsignedLongValue unsignedLongValue £temporary1449
-	add [rbp + 28], rbx
+	add [rbp + 28], {operand2}
 
  scanUnsignedLongInt$66:
 	; Assign found integral4$1#
-	mov dword [rbp + 45], 1
+	mov dword [rbp + 45], {operand2}
 
  scanUnsignedLongInt$67:
 	; PreCall 49
@@ -2480,7 +2480,7 @@ section .text
  scanUnsignedLongInt$68:
 	; Call 49 scanChar 0
 	mov qword [rbp + 49], scanUnsignedLongInt$69
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanChar
 
@@ -2492,7 +2492,7 @@ section .text
 
  scanUnsignedLongInt$71:
 	; Assign input £temporary1450
-	mov [rbp + 44], bl
+	mov [rbp + 44], {operand2}
 
  scanUnsignedLongInt$72:
 	; Jump 50
@@ -2500,7 +2500,7 @@ section .text
 
  scanUnsignedLongInt$73:
 	; Equal 75 found integral4$0#
-	cmp dword [rbp + 45], 0
+	cmp dword [rbp + 45], {operand2}
 	je scanUnsignedLongInt$75
 
  scanUnsignedLongInt$74:
@@ -2512,13 +2512,13 @@ section .text
 
  scanUnsignedLongInt$76:
 	; Parameter 73 signed char input
-	mov al, [rbp + 44]
-	mov [rbp + 73], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 73], {operand2}
 
  scanUnsignedLongInt$77:
 	; Call 49 unscanChar 0
 	mov qword [rbp + 49], scanUnsignedLongInt$78
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp unscanChar
 
@@ -2527,10 +2527,10 @@ section .text
 
  scanUnsignedLongInt$79:
 	; Return unsignedLongValue
-	mov rbx, [rbp + 28]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  scanUnsignedLongInt$80:
@@ -2570,11 +2570,11 @@ section .text
 
  scanLongDouble:
 	; Assign minus integral4$0#
-	mov dword [rbp + 24], 0
+	mov dword [rbp + 24], {operand2}
 
  scanLongDouble$1:
 	; Assign found integral4$0#
-	mov dword [rbp + 28], 0
+	mov dword [rbp + 28], {operand2}
 
  scanLongDouble$2:
 	; PushFloat floating8$0.0#
@@ -2598,7 +2598,7 @@ section .text
  scanLongDouble$7:
 	; Call 48 scanChar 0
 	mov qword [rbp + 48], scanLongDouble$8
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	jmp scanChar
 
@@ -2610,14 +2610,14 @@ section .text
 
  scanLongDouble$10:
 	; Assign input £temporary1457
-	mov [rbp + 48], bl
+	mov [rbp + 48], {operand2}
 
  scanLongDouble$11:
 	; PreCall 49
 
  scanLongDouble$12:
 	; IntegralToIntegral £temporary1458 input
-	mov al, [rbp + 48]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanLongDouble$13
@@ -2626,12 +2626,12 @@ section .text
 
  scanLongDouble$13:
 	; Parameter 73 signed int £temporary1458
-	mov [rbp + 73], eax
+	mov [rbp + 73], {operand2}
 
  scanLongDouble$14:
 	; Call 49 isspace 0
 	mov qword [rbp + 49], scanLongDouble$15
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp isspace
 
@@ -2652,7 +2652,7 @@ section .text
  scanLongDouble$19:
 	; Call 49 scanChar 0
 	mov qword [rbp + 49], scanLongDouble$20
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanChar
 
@@ -2664,7 +2664,7 @@ section .text
 
  scanLongDouble$22:
 	; Assign input £temporary1460
-	mov [rbp + 48], bl
+	mov [rbp + 48], {operand2}
 
  scanLongDouble$23:
 	; Jump 11
@@ -2672,7 +2672,7 @@ section .text
 
  scanLongDouble$24:
 	; NotEqual 31 input integral1$43#
-	cmp byte [rbp + 48], 43
+	cmp byte [rbp + 48], {operand2}
 	jne scanLongDouble$31
 
  scanLongDouble$25:
@@ -2681,7 +2681,7 @@ section .text
  scanLongDouble$26:
 	; Call 49 scanChar 0
 	mov qword [rbp + 49], scanLongDouble$27
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanChar
 
@@ -2693,7 +2693,7 @@ section .text
 
  scanLongDouble$29:
 	; Assign input £temporary1463
-	mov [rbp + 48], bl
+	mov [rbp + 48], {operand2}
 
  scanLongDouble$30:
 	; Jump 38
@@ -2701,12 +2701,12 @@ section .text
 
  scanLongDouble$31:
 	; NotEqual 38 input integral1$45#
-	cmp byte [rbp + 48], 45
+	cmp byte [rbp + 48], {operand2}
 	jne scanLongDouble$38
 
  scanLongDouble$32:
 	; Assign minus integral4$1#
-	mov dword [rbp + 24], 1
+	mov dword [rbp + 24], {operand2}
 
  scanLongDouble$33:
 	; PreCall 49
@@ -2714,7 +2714,7 @@ section .text
  scanLongDouble$34:
 	; Call 49 scanChar 0
 	mov qword [rbp + 49], scanLongDouble$35
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanChar
 
@@ -2726,14 +2726,14 @@ section .text
 
  scanLongDouble$37:
 	; Assign input £temporary1465
-	mov [rbp + 48], bl
+	mov [rbp + 48], {operand2}
 
  scanLongDouble$38:
 	; PreCall 49
 
  scanLongDouble$39:
 	; IntegralToIntegral £temporary1470 input
-	mov al, [rbp + 48]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanLongDouble$40
@@ -2742,12 +2742,12 @@ section .text
 
  scanLongDouble$40:
 	; Parameter 73 signed int £temporary1470
-	mov [rbp + 73], eax
+	mov [rbp + 73], {operand2}
 
  scanLongDouble$41:
 	; Call 49 isdigit 0
 	mov qword [rbp + 49], scanLongDouble$42
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp isdigit
 
@@ -2776,7 +2776,7 @@ section .text
 
  scanLongDouble$48:
 	; Subtract £temporary1473 input integral1$48#
-	mov al, [rbp + 48]
+	mov al, [{operand1}{WithSign(operand2)}]
 	sub al, 48
 
  scanLongDouble$49:
@@ -2789,7 +2789,7 @@ section .text
 
  scanLongDouble$50:
 	; IntegralToFloating £temporary1474 £temporary1475
-	mov [container4bytes#], eax
+	mov [container4bytes#], {operand2}
 	fild dword [container4bytes#]
 
  scanLongDouble$51:
@@ -2806,7 +2806,7 @@ section .text
  scanLongDouble$54:
 	; Call 49 scanChar 0
 	mov qword [rbp + 49], scanLongDouble$55
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanChar
 
@@ -2818,11 +2818,11 @@ section .text
 
  scanLongDouble$57:
 	; Assign input £temporary1477
-	mov [rbp + 48], bl
+	mov [rbp + 48], {operand2}
 
  scanLongDouble$58:
 	; Assign found integral4$1#
-	mov dword [rbp + 28], 1
+	mov dword [rbp + 28], {operand2}
 
  scanLongDouble$59:
 	; Jump 38
@@ -2830,7 +2830,7 @@ section .text
 
  scanLongDouble$60:
 	; NotEqual 92 input integral1$46#
-	cmp byte [rbp + 48], 46
+	cmp byte [rbp + 48], {operand2}
 	jne scanLongDouble$92
 
  scanLongDouble$61:
@@ -2839,7 +2839,7 @@ section .text
  scanLongDouble$62:
 	; Call 49 scanChar 0
 	mov qword [rbp + 49], scanLongDouble$63
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanChar
 
@@ -2851,14 +2851,14 @@ section .text
 
  scanLongDouble$65:
 	; Assign input £temporary1480
-	mov [rbp + 48], bl
+	mov [rbp + 48], {operand2}
 
  scanLongDouble$66:
 	; PreCall 49
 
  scanLongDouble$67:
 	; IntegralToIntegral £temporary1481 input
-	mov al, [rbp + 48]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanLongDouble$68
@@ -2867,12 +2867,12 @@ section .text
 
  scanLongDouble$68:
 	; Parameter 73 signed int £temporary1481
-	mov [rbp + 73], eax
+	mov [rbp + 73], {operand2}
 
  scanLongDouble$69:
 	; Call 49 isdigit 0
 	mov qword [rbp + 49], scanLongDouble$70
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp isdigit
 
@@ -2913,7 +2913,7 @@ section .text
 
  scanLongDouble$79:
 	; Subtract £temporary1484 input integral1$48#
-	mov al, [rbp + 48]
+	mov al, [{operand1}{WithSign(operand2)}]
 	sub al, 48
 
  scanLongDouble$80:
@@ -2926,7 +2926,7 @@ section .text
 
  scanLongDouble$81:
 	; IntegralToFloating £temporary1485 £temporary1486
-	mov [container4bytes#], eax
+	mov [container4bytes#], {operand2}
 	fild dword [container4bytes#]
 
  scanLongDouble$82:
@@ -2947,7 +2947,7 @@ section .text
  scanLongDouble$86:
 	; Call 49 scanChar 0
 	mov qword [rbp + 49], scanLongDouble$87
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanChar
 
@@ -2959,11 +2959,11 @@ section .text
 
  scanLongDouble$89:
 	; Assign input £temporary1489
-	mov [rbp + 48], bl
+	mov [rbp + 48], {operand2}
 
  scanLongDouble$90:
 	; Assign found integral4$1#
-	mov dword [rbp + 28], 1
+	mov dword [rbp + 28], {operand2}
 
  scanLongDouble$91:
 	; Jump 66
@@ -2974,7 +2974,7 @@ section .text
 
  scanLongDouble$93:
 	; IntegralToIntegral £temporary1493 input
-	mov al, [rbp + 48]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanLongDouble$94
@@ -2983,12 +2983,12 @@ section .text
 
  scanLongDouble$94:
 	; Parameter 73 signed int £temporary1493
-	mov [rbp + 73], eax
+	mov [rbp + 73], {operand2}
 
  scanLongDouble$95:
 	; Call 49 tolower 0
 	mov qword [rbp + 49], scanLongDouble$96
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp tolower
 
@@ -3008,12 +3008,12 @@ section .text
 
  scanLongDouble$100:
 	; Parameter 73 signed int integral4$10#
-	mov dword [rbp + 73], 10
+	mov dword [rbp + 73], {operand2}
 
  scanLongDouble$101:
 	; Call 49 scanLongInt 0
 	mov qword [rbp + 49], scanLongDouble$102
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp scanLongInt
 
@@ -3025,7 +3025,7 @@ section .text
 
  scanLongDouble$104:
 	; IntegralToFloating £temporary1497 £temporary1496
-	mov [container8bytes#], rbx
+	mov [container8bytes#], {operand2}
 	fild qword [container8bytes#]
 
  scanLongDouble$105:
@@ -3059,7 +3059,7 @@ section .text
  scanLongDouble$112:
 	; Call 57 pow 0
 	mov qword [rbp + 65], scanLongDouble$113
-	mov [rbp + 73], rbp
+	mov [rbp + 73], {operand2}
 	add rbp, 65
 	jmp pow
 
@@ -3089,13 +3089,13 @@ section .text
 
  scanLongDouble$119:
 	; Parameter 73 signed char input
-	mov al, [rbp + 48]
-	mov [rbp + 73], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 73], {operand2}
 
  scanLongDouble$120:
 	; Call 49 unscanChar 0
 	mov qword [rbp + 49], scanLongDouble$121
-	mov [rbp + 57], rbp
+	mov [rbp + 57], {operand2}
 	add rbp, 49
 	jmp unscanChar
 
@@ -3104,7 +3104,7 @@ section .text
 
  scanLongDouble$122:
 	; Equal 126 minus integral4$0#
-	cmp dword [rbp + 24], 0
+	cmp dword [rbp + 24], {operand2}
 	je scanLongDouble$126
 
  scanLongDouble$123:
@@ -3121,7 +3121,7 @@ section .text
 
  scanLongDouble$126:
 	; Equal 128 found integral4$0#
-	cmp dword [rbp + 28], 0
+	cmp dword [rbp + 28], {operand2}
 	je scanLongDouble$128
 
  scanLongDouble$127:
@@ -3134,9 +3134,9 @@ section .text
 
  scanLongDouble$129:
 	; Return value
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  scanLongDouble$130:
@@ -3146,45 +3146,45 @@ section .text
 
  scanFormat:
 	; Assign percent integral4$0#
-	mov dword [rbp + 49], 0
+	mov dword [rbp + 49], {operand2}
 
  scanFormat$1:
 	; Assign shortInt integral4$0#
-	mov dword [rbp + 53], 0
+	mov dword [rbp + 53], {operand2}
 
  scanFormat$2:
 	; Assign longIntOrDouble integral4$0#
-	mov dword [rbp + 57], 0
+	mov dword [rbp + 57], {operand2}
 
  scanFormat$3:
 	; Assign longDouble integral4$0#
-	mov dword [rbp + 61], 0
+	mov dword [rbp + 61], {operand2}
 
  scanFormat$4:
 	; Assign star integral4$0#
-	mov dword [rbp + 65], 0
+	mov dword [rbp + 65], {operand2}
 
  scanFormat$5:
 	; Assign g_inCount integral4$0#
-	mov dword [g_inCount], 0
+	mov dword [g_inCount], {operand2}
 
  scanFormat$6:
 	; Assign g_inChars integral4$0#
-	mov dword [g_inChars], 0
+	mov dword [g_inChars], {operand2}
 
  scanFormat$7:
 	; Assign index integral4$0#
-	mov dword [rbp + 93], 0
+	mov dword [rbp + 93], {operand2}
 
  scanFormat$8:
 	; IntegralToIntegral £temporary1514 index
-	mov eax, [rbp + 93]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanFormat$9:
 	; Add £temporary1515 format £temporary1514
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanFormat$10:
@@ -3192,18 +3192,18 @@ section .text
 
  scanFormat$11:
 	; Equal 338 £temporary1516 integral1$0#
-	cmp byte [rsi], 0
+	cmp byte [rsi], {operand2}
 	je scanFormat$338
 
  scanFormat$12:
 	; IntegralToIntegral £temporary1520 index
-	mov eax, [rbp + 93]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanFormat$13:
 	; Add £temporary1521 format £temporary1520
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanFormat$14:
@@ -3211,12 +3211,12 @@ section .text
 
  scanFormat$15:
 	; Assign c £temporary1522
-	mov al, [rsi]
-	mov [rbp + 40], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 40], {operand2}
 
  scanFormat$16:
 	; IntegralToIntegral £temporary1524 c
-	mov al, [rbp + 40]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanFormat$17
@@ -3226,16 +3226,16 @@ section .text
  scanFormat$17:
 	; Add d £temporary1524 integral4$1#
 	inc eax
-	mov [rbp + 153], eax
+	mov [rbp + 153], {operand2}
 
  scanFormat$18:
 	; Equal 330 percent integral4$0#
-	cmp dword [rbp + 49], 0
+	cmp dword [rbp + 49], {operand2}
 	je scanFormat$330
 
  scanFormat$19:
 	; Subtract £temporary1525 d integral4$1#
-	mov eax, [rbp + 153]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	dec eax
 
  scanFormat$20:
@@ -3327,7 +3327,7 @@ section .text
 
  scanFormat$38:
 	; Assign shortInt integral4$1#
-	mov dword [rbp + 53], 1
+	mov dword [rbp + 53], {operand2}
 
  scanFormat$39:
 	; Jump 336
@@ -3335,7 +3335,7 @@ section .text
 
  scanFormat$40:
 	; Assign longIntOrDouble integral4$1#
-	mov dword [rbp + 57], 1
+	mov dword [rbp + 57], {operand2}
 
  scanFormat$41:
 	; Jump 336
@@ -3343,7 +3343,7 @@ section .text
 
  scanFormat$42:
 	; Assign longDouble integral4$1#
-	mov dword [rbp + 61], 1
+	mov dword [rbp + 61], {operand2}
 
  scanFormat$43:
 	; Jump 336
@@ -3351,7 +3351,7 @@ section .text
 
  scanFormat$44:
 	; Assign star integral4$1#
-	mov dword [rbp + 65], 1
+	mov dword [rbp + 65], {operand2}
 
  scanFormat$45:
 	; Jump 336
@@ -3363,7 +3363,7 @@ section .text
  scanFormat$47:
 	; Call 157 scanChar 0
 	mov qword [rbp + 157], scanFormat$48
-	mov [rbp + 165], rbp
+	mov [rbp + 165], {operand2}
 	add rbp, 157
 	jmp scanChar
 
@@ -3375,20 +3375,20 @@ section .text
 
  scanFormat$50:
 	; Assign charValue £temporary1526
-	mov [rbp + 157], bl
+	mov [rbp + 157], {operand2}
 
  scanFormat$51:
 	; NotEqual 59 star integral4$0#
-	cmp dword [rbp + 65], 0
+	cmp dword [rbp + 65], {operand2}
 	jne scanFormat$59
 
  scanFormat$52:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$53:
 	; Subtract £temporary1530 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$54:
@@ -3399,25 +3399,25 @@ section .text
 
  scanFormat$56:
 	; Assign charPtr £temporary1532
-	mov rax, [rsi]
-	mov [rbp + 41], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 41], {operand2}
 
  scanFormat$57:
 	; Dereference £temporary1533 charPtr 0
-	mov rsi, [rbp + 41]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$58:
 	; Assign £temporary1533 charValue
-	mov al, [rbp + 157]
-	mov [rsi], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  scanFormat$59:
 	; Assign percent integral4$0#
-	mov dword [rbp + 49], 0
+	mov dword [rbp + 49], {operand2}
 
  scanFormat$60:
 	; IntegralToIntegral £temporary1536 charValue
-	mov al, [rbp + 157]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge scanFormat$61
@@ -3439,16 +3439,16 @@ section .text
 
  scanFormat$64:
 	; NotEqual 76 star integral4$0#
-	cmp dword [rbp + 65], 0
+	cmp dword [rbp + 65], {operand2}
 	jne scanFormat$76
 
  scanFormat$65:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$66:
 	; Subtract £temporary1544 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$67:
@@ -3459,25 +3459,25 @@ section .text
 
  scanFormat$69:
 	; Assign charPtr £temporary1546
-	mov rax, [rsi]
-	mov [rbp + 41], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 41], {operand2}
 
  scanFormat$70:
 	; PreCall 157
 
  scanFormat$71:
 	; Parameter 181 pointer charPtr
-	mov rax, [rbp + 41]
-	mov [rbp + 181], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 181], {operand2}
 
  scanFormat$72:
 	; Parameter 189 signed int integral4$0#
-	mov dword [rbp + 189], 0
+	mov dword [rbp + 189], {operand2}
 
  scanFormat$73:
 	; Call 157 scanString 0
 	mov qword [rbp + 157], scanFormat$74
-	mov [rbp + 165], rbp
+	mov [rbp + 165], {operand2}
 	add rbp, 157
 	jmp scanString
 
@@ -3493,16 +3493,16 @@ section .text
 
  scanFormat$77:
 	; Parameter 181 pointer integral8$0#
-	mov qword [rbp + 181], 0
+	mov qword [rbp + 181], {operand2}
 
  scanFormat$78:
 	; Parameter 189 signed int integral4$0#
-	mov dword [rbp + 189], 0
+	mov dword [rbp + 189], {operand2}
 
  scanFormat$79:
 	; Call 157 scanString 0
 	mov qword [rbp + 157], scanFormat$80
-	mov [rbp + 165], rbp
+	mov [rbp + 165], {operand2}
 	add rbp, 157
 	jmp scanString
 
@@ -3511,7 +3511,7 @@ section .text
 
  scanFormat$81:
 	; Assign percent integral4$0#
-	mov dword [rbp + 49], 0
+	mov dword [rbp + 49], {operand2}
 
  scanFormat$82:
 	; Jump 336
@@ -3522,12 +3522,12 @@ section .text
 
  scanFormat$84:
 	; Parameter 181 signed int integral4$10#
-	mov dword [rbp + 181], 10
+	mov dword [rbp + 181], {operand2}
 
  scanFormat$85:
 	; Call 157 scanLongInt 0
 	mov qword [rbp + 157], scanFormat$86
-	mov [rbp + 165], rbp
+	mov [rbp + 165], {operand2}
 	add rbp, 157
 	jmp scanLongInt
 
@@ -3539,25 +3539,25 @@ section .text
 
  scanFormat$88:
 	; Assign longValue £temporary1551
-	mov [rbp + 69], rbx
+	mov [rbp + 69], {operand2}
 
  scanFormat$89:
 	; NotEqual 117 star integral4$0#
-	cmp dword [rbp + 65], 0
+	cmp dword [rbp + 65], {operand2}
 	jne scanFormat$117
 
  scanFormat$90:
 	; Equal 100 shortInt integral4$0#
-	cmp dword [rbp + 53], 0
+	cmp dword [rbp + 53], {operand2}
 	je scanFormat$100
 
  scanFormat$91:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$92:
 	; Subtract £temporary1555 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$93:
@@ -3568,16 +3568,16 @@ section .text
 
  scanFormat$95:
 	; Assign shortPtr £temporary1557
-	mov rax, [rsi]
-	mov [rbp + 85], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 85], {operand2}
 
  scanFormat$96:
 	; Dereference £temporary1558 shortPtr 0
-	mov rsi, [rbp + 85]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$97:
 	; IntegralToIntegral £temporary1559 longValue
-	mov rax, [rbp + 69]
+	mov rax, [{operand1}{WithSign(operand2)}]
 	cmp rax, 0
 	jge scanFormat$98
 	neg rax
@@ -3585,7 +3585,7 @@ section .text
 
  scanFormat$98:
 	; Assign £temporary1558 £temporary1559
-	mov [rsi], ax
+	mov [rsi], {operand2}
 
  scanFormat$99:
 	; Jump 117
@@ -3593,16 +3593,16 @@ section .text
 
  scanFormat$100:
 	; NotEqual 110 longIntOrDouble integral4$0#
-	cmp dword [rbp + 57], 0
+	cmp dword [rbp + 57], {operand2}
 	jne scanFormat$110
 
  scanFormat$101:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$102:
 	; Subtract £temporary1563 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$103:
@@ -3613,16 +3613,16 @@ section .text
 
  scanFormat$105:
 	; Assign intPtr £temporary1565
-	mov rax, [rsi]
-	mov [rbp + 97], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 97], {operand2}
 
  scanFormat$106:
 	; Dereference £temporary1566 intPtr 0
-	mov rsi, [rbp + 97]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$107:
 	; IntegralToIntegral £temporary1567 longValue
-	mov rax, [rbp + 69]
+	mov rax, [{operand1}{WithSign(operand2)}]
 	cmp rax, 0
 	jge scanFormat$108
 	neg rax
@@ -3630,7 +3630,7 @@ section .text
 
  scanFormat$108:
 	; Assign £temporary1566 £temporary1567
-	mov [rsi], eax
+	mov [rsi], {operand2}
 
  scanFormat$109:
 	; Jump 117
@@ -3638,11 +3638,11 @@ section .text
 
  scanFormat$110:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$111:
 	; Subtract £temporary1569 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$112:
@@ -3653,21 +3653,21 @@ section .text
 
  scanFormat$114:
 	; Assign longPtr £temporary1571
-	mov rax, [rsi]
-	mov [rbp + 77], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 77], {operand2}
 
  scanFormat$115:
 	; Dereference £temporary1572 longPtr 0
-	mov rsi, [rbp + 77]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$116:
 	; Assign £temporary1572 longValue
-	mov rax, [rbp + 69]
-	mov [rsi], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  scanFormat$117:
 	; Assign percent integral4$0#
-	mov dword [rbp + 49], 0
+	mov dword [rbp + 49], {operand2}
 
  scanFormat$118:
 	; Jump 336
@@ -3678,12 +3678,12 @@ section .text
 
  scanFormat$120:
 	; Parameter 181 signed int integral4$8#
-	mov dword [rbp + 181], 8
+	mov dword [rbp + 181], {operand2}
 
  scanFormat$121:
 	; Call 157 scanUnsignedLongInt 0
 	mov qword [rbp + 157], scanFormat$122
-	mov [rbp + 165], rbp
+	mov [rbp + 165], {operand2}
 	add rbp, 157
 	jmp scanUnsignedLongInt
 
@@ -3695,25 +3695,25 @@ section .text
 
  scanFormat$124:
 	; Assign unsignedLongValue £temporary1580
-	mov [rbp + 113], rbx
+	mov [rbp + 113], {operand2}
 
  scanFormat$125:
 	; NotEqual 153 star integral4$0#
-	cmp dword [rbp + 65], 0
+	cmp dword [rbp + 65], {operand2}
 	jne scanFormat$153
 
  scanFormat$126:
 	; Equal 136 shortInt integral4$0#
-	cmp dword [rbp + 53], 0
+	cmp dword [rbp + 53], {operand2}
 	je scanFormat$136
 
  scanFormat$127:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$128:
 	; Subtract £temporary1584 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$129:
@@ -3724,20 +3724,20 @@ section .text
 
  scanFormat$131:
 	; Assign unsignedShortPtr £temporary1586
-	mov rax, [rsi]
-	mov [rbp + 129], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 129], {operand2}
 
  scanFormat$132:
 	; Dereference £temporary1587 unsignedShortPtr 0
-	mov rsi, [rbp + 129]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$133:
 	; IntegralToIntegral £temporary1588 unsignedLongValue
-	mov rax, [rbp + 113]
+	mov rax, [{operand1}{WithSign(operand2)}]
 
  scanFormat$134:
 	; Assign £temporary1587 £temporary1588
-	mov [rsi], ax
+	mov [rsi], {operand2}
 
  scanFormat$135:
 	; Jump 153
@@ -3745,16 +3745,16 @@ section .text
 
  scanFormat$136:
 	; NotEqual 146 longIntOrDouble integral4$0#
-	cmp dword [rbp + 57], 0
+	cmp dword [rbp + 57], {operand2}
 	jne scanFormat$146
 
  scanFormat$137:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$138:
 	; Subtract £temporary1592 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$139:
@@ -3765,20 +3765,20 @@ section .text
 
  scanFormat$141:
 	; Assign unsignedIntPtr £temporary1594
-	mov rax, [rsi]
-	mov [rbp + 137], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 137], {operand2}
 
  scanFormat$142:
 	; Dereference £temporary1595 unsignedIntPtr 0
-	mov rsi, [rbp + 137]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$143:
 	; IntegralToIntegral £temporary1596 unsignedLongValue
-	mov rax, [rbp + 113]
+	mov rax, [{operand1}{WithSign(operand2)}]
 
  scanFormat$144:
 	; Assign £temporary1595 £temporary1596
-	mov [rsi], eax
+	mov [rsi], {operand2}
 
  scanFormat$145:
 	; Jump 153
@@ -3786,11 +3786,11 @@ section .text
 
  scanFormat$146:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$147:
 	; Subtract £temporary1598 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$148:
@@ -3801,21 +3801,21 @@ section .text
 
  scanFormat$150:
 	; Assign unsignedLongPtr £temporary1600
-	mov rax, [rsi]
-	mov [rbp + 121], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 121], {operand2}
 
  scanFormat$151:
 	; Dereference £temporary1601 unsignedLongPtr 0
-	mov rsi, [rbp + 121]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$152:
 	; Assign £temporary1601 unsignedLongValue
-	mov rax, [rbp + 113]
-	mov [rsi], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  scanFormat$153:
 	; Assign percent integral4$0#
-	mov dword [rbp + 49], 0
+	mov dword [rbp + 49], {operand2}
 
  scanFormat$154:
 	; Jump 336
@@ -3826,12 +3826,12 @@ section .text
 
  scanFormat$156:
 	; Parameter 181 signed int integral4$16#
-	mov dword [rbp + 181], 16
+	mov dword [rbp + 181], {operand2}
 
  scanFormat$157:
 	; Call 157 scanUnsignedLongInt 0
 	mov qword [rbp + 157], scanFormat$158
-	mov [rbp + 165], rbp
+	mov [rbp + 165], {operand2}
 	add rbp, 157
 	jmp scanUnsignedLongInt
 
@@ -3843,25 +3843,25 @@ section .text
 
  scanFormat$160:
 	; Assign unsignedLongValue £temporary1609
-	mov [rbp + 113], rbx
+	mov [rbp + 113], {operand2}
 
  scanFormat$161:
 	; NotEqual 189 star integral4$0#
-	cmp dword [rbp + 65], 0
+	cmp dword [rbp + 65], {operand2}
 	jne scanFormat$189
 
  scanFormat$162:
 	; Equal 172 shortInt integral4$0#
-	cmp dword [rbp + 53], 0
+	cmp dword [rbp + 53], {operand2}
 	je scanFormat$172
 
  scanFormat$163:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$164:
 	; Subtract £temporary1613 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$165:
@@ -3872,20 +3872,20 @@ section .text
 
  scanFormat$167:
 	; Assign unsignedShortPtr £temporary1615
-	mov rax, [rsi]
-	mov [rbp + 129], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 129], {operand2}
 
  scanFormat$168:
 	; Dereference £temporary1616 unsignedShortPtr 0
-	mov rsi, [rbp + 129]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$169:
 	; IntegralToIntegral £temporary1617 unsignedLongValue
-	mov rax, [rbp + 113]
+	mov rax, [{operand1}{WithSign(operand2)}]
 
  scanFormat$170:
 	; Assign £temporary1616 £temporary1617
-	mov [rsi], ax
+	mov [rsi], {operand2}
 
  scanFormat$171:
 	; Jump 189
@@ -3893,16 +3893,16 @@ section .text
 
  scanFormat$172:
 	; NotEqual 182 longIntOrDouble integral4$0#
-	cmp dword [rbp + 57], 0
+	cmp dword [rbp + 57], {operand2}
 	jne scanFormat$182
 
  scanFormat$173:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$174:
 	; Subtract £temporary1621 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$175:
@@ -3913,20 +3913,20 @@ section .text
 
  scanFormat$177:
 	; Assign unsignedIntPtr £temporary1623
-	mov rax, [rsi]
-	mov [rbp + 137], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 137], {operand2}
 
  scanFormat$178:
 	; Dereference £temporary1624 unsignedIntPtr 0
-	mov rsi, [rbp + 137]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$179:
 	; IntegralToIntegral £temporary1625 unsignedLongValue
-	mov rax, [rbp + 113]
+	mov rax, [{operand1}{WithSign(operand2)}]
 
  scanFormat$180:
 	; Assign £temporary1624 £temporary1625
-	mov [rsi], eax
+	mov [rsi], {operand2}
 
  scanFormat$181:
 	; Jump 189
@@ -3934,11 +3934,11 @@ section .text
 
  scanFormat$182:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$183:
 	; Subtract £temporary1627 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$184:
@@ -3949,21 +3949,21 @@ section .text
 
  scanFormat$186:
 	; Assign unsignedLongPtr £temporary1629
-	mov rax, [rsi]
-	mov [rbp + 121], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 121], {operand2}
 
  scanFormat$187:
 	; Dereference £temporary1630 unsignedLongPtr 0
-	mov rsi, [rbp + 121]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$188:
 	; Assign £temporary1630 unsignedLongValue
-	mov rax, [rbp + 113]
-	mov [rsi], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  scanFormat$189:
 	; Assign percent integral4$0#
-	mov dword [rbp + 49], 0
+	mov dword [rbp + 49], {operand2}
 
  scanFormat$190:
 	; Jump 336
@@ -3974,12 +3974,12 @@ section .text
 
  scanFormat$192:
 	; Parameter 181 signed int integral4$0#
-	mov dword [rbp + 181], 0
+	mov dword [rbp + 181], {operand2}
 
  scanFormat$193:
 	; Call 157 scanUnsignedLongInt 0
 	mov qword [rbp + 157], scanFormat$194
-	mov [rbp + 165], rbp
+	mov [rbp + 165], {operand2}
 	add rbp, 157
 	jmp scanUnsignedLongInt
 
@@ -3991,25 +3991,25 @@ section .text
 
  scanFormat$196:
 	; Assign unsignedLongValue £temporary1638
-	mov [rbp + 113], rbx
+	mov [rbp + 113], {operand2}
 
  scanFormat$197:
 	; NotEqual 225 star integral4$0#
-	cmp dword [rbp + 65], 0
+	cmp dword [rbp + 65], {operand2}
 	jne scanFormat$225
 
  scanFormat$198:
 	; Equal 208 shortInt integral4$0#
-	cmp dword [rbp + 53], 0
+	cmp dword [rbp + 53], {operand2}
 	je scanFormat$208
 
  scanFormat$199:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$200:
 	; Subtract £temporary1642 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$201:
@@ -4020,20 +4020,20 @@ section .text
 
  scanFormat$203:
 	; Assign unsignedShortPtr £temporary1644
-	mov rax, [rsi]
-	mov [rbp + 129], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 129], {operand2}
 
  scanFormat$204:
 	; Dereference £temporary1645 unsignedShortPtr 0
-	mov rsi, [rbp + 129]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$205:
 	; IntegralToIntegral £temporary1646 unsignedLongValue
-	mov rax, [rbp + 113]
+	mov rax, [{operand1}{WithSign(operand2)}]
 
  scanFormat$206:
 	; Assign £temporary1645 £temporary1646
-	mov [rsi], ax
+	mov [rsi], {operand2}
 
  scanFormat$207:
 	; Jump 225
@@ -4041,16 +4041,16 @@ section .text
 
  scanFormat$208:
 	; NotEqual 218 longIntOrDouble integral4$0#
-	cmp dword [rbp + 57], 0
+	cmp dword [rbp + 57], {operand2}
 	jne scanFormat$218
 
  scanFormat$209:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$210:
 	; Subtract £temporary1650 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$211:
@@ -4061,20 +4061,20 @@ section .text
 
  scanFormat$213:
 	; Assign unsignedIntPtr £temporary1652
-	mov rax, [rsi]
-	mov [rbp + 137], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 137], {operand2}
 
  scanFormat$214:
 	; Dereference £temporary1653 unsignedIntPtr 0
-	mov rsi, [rbp + 137]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$215:
 	; IntegralToIntegral £temporary1654 unsignedLongValue
-	mov rax, [rbp + 113]
+	mov rax, [{operand1}{WithSign(operand2)}]
 
  scanFormat$216:
 	; Assign £temporary1653 £temporary1654
-	mov [rsi], eax
+	mov [rsi], {operand2}
 
  scanFormat$217:
 	; Jump 225
@@ -4082,11 +4082,11 @@ section .text
 
  scanFormat$218:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$219:
 	; Subtract £temporary1656 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$220:
@@ -4097,21 +4097,21 @@ section .text
 
  scanFormat$222:
 	; Assign unsignedLongPtr £temporary1658
-	mov rax, [rsi]
-	mov [rbp + 121], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 121], {operand2}
 
  scanFormat$223:
 	; Dereference £temporary1659 unsignedLongPtr 0
-	mov rsi, [rbp + 121]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$224:
 	; Assign £temporary1659 unsignedLongValue
-	mov rax, [rbp + 113]
-	mov [rsi], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  scanFormat$225:
 	; Assign percent integral4$0#
-	mov dword [rbp + 49], 0
+	mov dword [rbp + 49], {operand2}
 
  scanFormat$226:
 	; Jump 336
@@ -4123,7 +4123,7 @@ section .text
  scanFormat$228:
 	; Call 157 scanLongDouble 0
 	mov qword [rbp + 157], scanFormat$229
-	mov [rbp + 165], rbp
+	mov [rbp + 165], {operand2}
 	add rbp, 157
 	jmp scanLongDouble
 
@@ -4139,21 +4139,21 @@ section .text
 
  scanFormat$232:
 	; NotEqual 261 star integral4$0#
-	cmp dword [rbp + 65], 0
+	cmp dword [rbp + 65], {operand2}
 	jne scanFormat$261
 
  scanFormat$233:
 	; Equal 243 longIntOrDouble integral4$0#
-	cmp dword [rbp + 57], 0
+	cmp dword [rbp + 57], {operand2}
 	je scanFormat$243
 
  scanFormat$234:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$235:
 	; Subtract £temporary1671 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$236:
@@ -4164,12 +4164,12 @@ section .text
 
  scanFormat$238:
 	; Assign doublePtr £temporary1673
-	mov rax, [rsi]
-	mov [rbp + 157], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 157], {operand2}
 
  scanFormat$239:
 	; Dereference £temporary1674 doublePtr 0
-	mov rsi, [rbp + 157]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$240:
 	; PushFloat longDoubleValue
@@ -4185,16 +4185,16 @@ section .text
 
  scanFormat$243:
 	; Equal 253 longDouble integral4$0#
-	cmp dword [rbp + 61], 0
+	cmp dword [rbp + 61], {operand2}
 	je scanFormat$253
 
  scanFormat$244:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$245:
 	; Subtract £temporary1677 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$246:
@@ -4205,12 +4205,12 @@ section .text
 
  scanFormat$248:
 	; Assign longDoublePtr £temporary1679
-	mov rax, [rsi]
-	mov [rbp + 157], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 157], {operand2}
 
  scanFormat$249:
 	; Dereference £temporary1680 longDoublePtr 0
-	mov rsi, [rbp + 157]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$250:
 	; PushFloat longDoubleValue
@@ -4226,11 +4226,11 @@ section .text
 
  scanFormat$253:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$254:
 	; Subtract £temporary1682 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$255:
@@ -4241,12 +4241,12 @@ section .text
 
  scanFormat$257:
 	; Assign floatPtr £temporary1684
-	mov rax, [rsi]
-	mov [rbp + 157], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 157], {operand2}
 
  scanFormat$258:
 	; Dereference £temporary1685 floatPtr 0
-	mov rsi, [rbp + 157]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$259:
 	; PushFloat longDoubleValue
@@ -4258,7 +4258,7 @@ section .text
 
  scanFormat$261:
 	; Assign percent integral4$0#
-	mov dword [rbp + 49], 0
+	mov dword [rbp + 49], {operand2}
 
  scanFormat$262:
 	; Jump 336
@@ -4266,7 +4266,7 @@ section .text
 
  scanFormat$263:
 	; Assign not integral4$0#
-	mov dword [rbp + 157], 0
+	mov dword [rbp + 157], {operand2}
 
  scanFormat$264:
 	; Add index index integral4$1#
@@ -4274,13 +4274,13 @@ section .text
 
  scanFormat$265:
 	; IntegralToIntegral £temporary1697 index
-	mov eax, [rbp + 93]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanFormat$266:
 	; Add £temporary1698 format £temporary1697
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanFormat$267:
@@ -4288,12 +4288,12 @@ section .text
 
  scanFormat$268:
 	; NotEqual 271 £temporary1699 integral1$94#
-	cmp byte [rsi], 94
+	cmp byte [rsi], {operand2}
 	jne scanFormat$271
 
  scanFormat$269:
 	; Assign not integral4$1#
-	mov dword [rbp + 157], 1
+	mov dword [rbp + 157], {operand2}
 
  scanFormat$270:
 	; Add index index integral4$1#
@@ -4301,18 +4301,18 @@ section .text
 
  scanFormat$271:
 	; Assign startIndex index
-	mov eax, [rbp + 93]
-	mov [rbp + 161], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 161], {operand2}
 
  scanFormat$272:
 	; IntegralToIntegral £temporary1705 index
-	mov eax, [rbp + 93]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanFormat$273:
 	; Add £temporary1706 format £temporary1705
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanFormat$274:
@@ -4320,7 +4320,7 @@ section .text
 
  scanFormat$275:
 	; Equal 278 £temporary1707 integral1$93#
-	cmp byte [rsi], 93
+	cmp byte [rsi], {operand2}
 	je scanFormat$278
 
  scanFormat$276:
@@ -4333,19 +4333,19 @@ section .text
 
  scanFormat$278:
 	; Subtract size index startIndex
-	mov eax, [rbp + 93]
-	sub eax, [rbp + 161]
-	mov [rbp + 165], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	sub eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 165], {operand2}
 
  scanFormat$279:
 	; IntegralToIntegral £temporary1712 index
-	mov eax, [rbp + 93]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanFormat$280:
 	; Add £temporary1713 format £temporary1712
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanFormat$281:
@@ -4353,18 +4353,18 @@ section .text
 
  scanFormat$282:
 	; Assign c £temporary1714
-	mov al, [rsi]
-	mov [rbp + 169], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 169], {operand2}
 
  scanFormat$283:
 	; IntegralToIntegral £temporary1716 index
-	mov eax, [rbp + 93]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanFormat$284:
 	; Add £temporary1717 format £temporary1716
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanFormat$285:
@@ -4372,20 +4372,20 @@ section .text
 
  scanFormat$286:
 	; Assign £temporary1718 integral1$0#
-	mov byte [rsi], 0
+	mov byte [rsi], {operand2}
 
  scanFormat$287:
 	; NotEqual 305 star integral4$0#
-	cmp dword [rbp + 65], 0
+	cmp dword [rbp + 65], {operand2}
 	jne scanFormat$305
 
  scanFormat$288:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$289:
 	; Subtract £temporary1722 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$290:
@@ -4396,26 +4396,26 @@ section .text
 
  scanFormat$292:
 	; Assign string £temporary1724
-	mov rax, [rsi]
-	mov [rbp + 170], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 170], {operand2}
 
  scanFormat$293:
 	; PreCall 178
 
  scanFormat$294:
 	; Parameter 202 pointer string
-	mov rax, [rbp + 170]
-	mov [rbp + 202], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 202], {operand2}
 
  scanFormat$295:
 	; IntegralToIntegral £temporary1726 startIndex
-	mov eax, [rbp + 161]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanFormat$296:
 	; Add £temporary1727 format £temporary1726
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanFormat$297:
@@ -4426,22 +4426,22 @@ section .text
 
  scanFormat$299:
 	; Parameter 210 pointer £temporary1729
-	mov [rbp + 210], rsi
+	mov [rbp + 210], {operand2}
 
  scanFormat$300:
 	; Parameter 218 signed int size
-	mov eax, [rbp + 165]
-	mov [rbp + 218], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 218], {operand2}
 
  scanFormat$301:
 	; Parameter 222 signed int not
-	mov eax, [rbp + 157]
-	mov [rbp + 222], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 222], {operand2}
 
  scanFormat$302:
 	; Call 178 scanPattern 0
 	mov qword [rbp + 178], scanFormat$303
-	mov [rbp + 186], rbp
+	mov [rbp + 186], {operand2}
 	add rbp, 178
 	jmp scanPattern
 
@@ -4457,17 +4457,17 @@ section .text
 
  scanFormat$306:
 	; Parameter 194 pointer integral8$0#
-	mov qword [rbp + 194], 0
+	mov qword [rbp + 194], {operand2}
 
  scanFormat$307:
 	; IntegralToIntegral £temporary1732 startIndex
-	mov eax, [rbp + 161]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanFormat$308:
 	; Add £temporary1733 format £temporary1732
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanFormat$309:
@@ -4478,22 +4478,22 @@ section .text
 
  scanFormat$311:
 	; Parameter 202 pointer £temporary1735
-	mov [rbp + 202], rsi
+	mov [rbp + 202], {operand2}
 
  scanFormat$312:
 	; Parameter 210 signed int size
-	mov eax, [rbp + 165]
-	mov [rbp + 210], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 210], {operand2}
 
  scanFormat$313:
 	; Parameter 214 signed int not
-	mov eax, [rbp + 157]
-	mov [rbp + 214], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 214], {operand2}
 
  scanFormat$314:
 	; Call 170 scanPattern 0
 	mov qword [rbp + 170], scanFormat$315
-	mov [rbp + 178], rbp
+	mov [rbp + 178], {operand2}
 	add rbp, 170
 	jmp scanPattern
 
@@ -4502,13 +4502,13 @@ section .text
 
  scanFormat$316:
 	; IntegralToIntegral £temporary1740 index
-	mov eax, [rbp + 93]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  scanFormat$317:
 	; Add £temporary1741 format £temporary1740
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  scanFormat$318:
@@ -4516,8 +4516,8 @@ section .text
 
  scanFormat$319:
 	; Assign £temporary1742 c
-	mov al, [rbp + 169]
-	mov [rsi], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  scanFormat$320:
 	; Jump 336
@@ -4525,11 +4525,11 @@ section .text
 
  scanFormat$321:
 	; Add arg_list arg_list integral8$8#
-	add qword [rbp + 32], 8
+	add qword [rbp + 32], {operand2}
 
  scanFormat$322:
 	; Subtract £temporary1744 arg_list integral8$8#
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	sub rsi, 8
 
  scanFormat$323:
@@ -4540,21 +4540,21 @@ section .text
 
  scanFormat$325:
 	; Assign charsPtr £temporary1746
-	mov rax, [rsi]
-	mov [rbp + 105], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 105], {operand2}
 
  scanFormat$326:
 	; Dereference £temporary1747 charsPtr 0
-	mov rsi, [rbp + 105]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  scanFormat$327:
 	; Assign £temporary1747 g_inChars
-	mov eax, [g_inChars]
-	mov [rsi], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  scanFormat$328:
 	; Assign percent integral4$0#
-	mov dword [rbp + 49], 0
+	mov dword [rbp + 49], {operand2}
 
  scanFormat$329:
 	; Jump 336
@@ -4562,28 +4562,28 @@ section .text
 
  scanFormat$330:
 	; NotEqual 336 c integral1$37#
-	cmp byte [rbp + 40], 37
+	cmp byte [rbp + 40], {operand2}
 	jne scanFormat$336
 
  scanFormat$331:
 	; Assign percent integral4$1#
-	mov dword [rbp + 49], 1
+	mov dword [rbp + 49], {operand2}
 
  scanFormat$332:
 	; Assign shortInt integral4$0#
-	mov dword [rbp + 53], 0
+	mov dword [rbp + 53], {operand2}
 
  scanFormat$333:
 	; Assign longIntOrDouble integral4$0#
-	mov dword [rbp + 57], 0
+	mov dword [rbp + 57], {operand2}
 
  scanFormat$334:
 	; Assign longDouble integral4$0#
-	mov dword [rbp + 61], 0
+	mov dword [rbp + 61], {operand2}
 
  scanFormat$335:
 	; Assign star integral4$0#
-	mov dword [rbp + 65], 0
+	mov dword [rbp + 65], {operand2}
 
  scanFormat$336:
 	; Add index index integral4$1#
@@ -4595,10 +4595,10 @@ section .text
 
  scanFormat$338:
 	; Return g_inCount
-	mov ebx, [g_inCount]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov ebx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  scanFormat$339:
@@ -4617,26 +4617,26 @@ section .text
  scanf$2:
 	; Add arg_list £temporary1755 integral8$8#
 	add rsi, 8
-	mov [rdi + 32], rsi
+	mov [rdi + 32], {operand2}
 
  scanf$3:
 	; PreCall 40
 
  scanf$4:
 	; Parameter 64 pointer format
-	mov rax, [rbp + 24]
-	mov [rdi + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rdi + 64], {operand2}
 
  scanf$5:
 	; Parameter 72 pointer arg_list
-	mov rax, [rdi + 32]
-	mov [rdi + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rdi + 72], {operand2}
 
  scanf$6:
 	; Call 40 vscanf 0
 	mov qword [rdi + 40], scanf$7
-	mov [rdi + 48], rbp
-	mov [rdi + 56], rdi
+	mov [rdi + 48], {operand2}
+	mov [rdi + 56], {operand2}
 	add rdi, 40
 	mov rbp, rdi
 	jmp vscanf
@@ -4649,9 +4649,9 @@ section .text
 
  scanf$9:
 	; Return £temporary1757
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  scanf$10:
@@ -4664,23 +4664,23 @@ section .text
 
  vscanf$1:
 	; Parameter 64 pointer stdin
-	mov rax, [stdin]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  vscanf$2:
 	; Parameter 72 pointer format
-	mov rax, [rbp + 24]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  vscanf$3:
 	; Parameter 80 pointer arg_list
-	mov rax, [rbp + 32]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  vscanf$4:
 	; Call 40 vfscanf 0
 	mov qword [rbp + 40], vscanf$5
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp vfscanf
 
@@ -4692,9 +4692,9 @@ section .text
 
  vscanf$7:
 	; Return £temporary1759
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  vscanf$8:
@@ -4713,31 +4713,31 @@ section .text
  fscanf$2:
 	; Add arg_list £temporary1761 integral8$8#
 	add rsi, 8
-	mov [rdi + 40], rsi
+	mov [rdi + 40], {operand2}
 
  fscanf$3:
 	; PreCall 48
 
  fscanf$4:
 	; Parameter 72 pointer inStream
-	mov rax, [rbp + 24]
-	mov [rdi + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rdi + 72], {operand2}
 
  fscanf$5:
 	; Parameter 80 pointer format
-	mov rax, [rbp + 32]
-	mov [rdi + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rdi + 80], {operand2}
 
  fscanf$6:
 	; Parameter 88 pointer arg_list
-	mov rax, [rdi + 40]
-	mov [rdi + 88], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rdi + 88], {operand2}
 
  fscanf$7:
 	; Call 48 vfscanf 0
 	mov qword [rdi + 48], fscanf$8
-	mov [rdi + 56], rbp
-	mov [rdi + 64], rdi
+	mov [rdi + 56], {operand2}
+	mov [rdi + 64], {operand2}
 	add rdi, 48
 	mov rbp, rdi
 	jmp vfscanf
@@ -4750,9 +4750,9 @@ section .text
 
  fscanf$10:
 	; Return £temporary1763
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fscanf$11:
@@ -4762,33 +4762,33 @@ section .text
 
  vfscanf:
 	; Assign g_inStatus integral4$0#
-	mov dword [g_inStatus], 0
+	mov dword [g_inStatus], {operand2}
 
  vfscanf$1:
 	; IntegralToIntegral £temporary1765 inStream
-	mov rax, [rbp + 24]
+	mov rax, [{operand1}{WithSign(operand2)}]
 
  vfscanf$2:
 	; Assign g_inDevice £temporary1765
-	mov [g_inDevice], rax
+	mov [g_inDevice], {operand2}
 
  vfscanf$3:
 	; PreCall 48
 
  vfscanf$4:
 	; Parameter 72 pointer format
-	mov rax, [rbp + 32]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  vfscanf$5:
 	; Parameter 80 pointer arg_list
-	mov rax, [rbp + 40]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  vfscanf$6:
 	; Call 48 scanFormat 0
 	mov qword [rbp + 48], vfscanf$7
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	jmp scanFormat
 
@@ -4800,9 +4800,9 @@ section .text
 
  vfscanf$9:
 	; Return £temporary1766
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  vfscanf$10:
@@ -4821,31 +4821,31 @@ section .text
  sscanf$2:
 	; Add arg_list £temporary1768 integral8$8#
 	add rsi, 8
-	mov [rdi + 40], rsi
+	mov [rdi + 40], {operand2}
 
  sscanf$3:
 	; PreCall 48
 
  sscanf$4:
 	; Parameter 72 pointer inString
-	mov rax, [rbp + 24]
-	mov [rdi + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rdi + 72], {operand2}
 
  sscanf$5:
 	; Parameter 80 pointer format
-	mov rax, [rbp + 32]
-	mov [rdi + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rdi + 80], {operand2}
 
  sscanf$6:
 	; Parameter 88 pointer arg_list
-	mov rax, [rdi + 40]
-	mov [rdi + 88], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rdi + 88], {operand2}
 
  sscanf$7:
 	; Call 48 vsscanf 0
 	mov qword [rdi + 48], sscanf$8
-	mov [rdi + 56], rbp
-	mov [rdi + 64], rdi
+	mov [rdi + 56], {operand2}
+	mov [rdi + 64], {operand2}
 	add rdi, 48
 	mov rbp, rdi
 	jmp vsscanf
@@ -4858,9 +4858,9 @@ section .text
 
  sscanf$10:
 	; Return £temporary1770
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  sscanf$11:
@@ -4870,33 +4870,33 @@ section .text
 
  vsscanf:
 	; Assign g_inStatus integral4$1#
-	mov dword [g_inStatus], 1
+	mov dword [g_inStatus], {operand2}
 
  vsscanf$1:
 	; IntegralToIntegral £temporary1772 inString
-	mov rax, [rbp + 24]
+	mov rax, [{operand1}{WithSign(operand2)}]
 
  vsscanf$2:
 	; Assign g_inDevice £temporary1772
-	mov [g_inDevice], rax
+	mov [g_inDevice], {operand2}
 
  vsscanf$3:
 	; PreCall 48
 
  vsscanf$4:
 	; Parameter 72 pointer format
-	mov rax, [rbp + 32]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  vsscanf$5:
 	; Parameter 80 pointer arg_list
-	mov rax, [rbp + 40]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  vsscanf$6:
 	; Call 48 scanFormat 0
 	mov qword [rbp + 48], vsscanf$7
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	jmp scanFormat
 
@@ -4908,9 +4908,9 @@ section .text
 
  vsscanf$9:
 	; Return £temporary1773
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  vsscanf$10:

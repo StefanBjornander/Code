@@ -147,7 +147,7 @@ section .text
 
  filecreate$1:
 	; IntegralToIntegral £temporary817 name
-	mov rdi, [rbp + 24]
+	mov rdi, [{operand1}{WithSign(operand2)}]
 
  filecreate$2:
 	; AssignRegister rdi £temporary817
@@ -166,9 +166,9 @@ section .text
  filecreate$6:
 	; Return £temporary819
 	mov ebx, eax
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  filecreate$7:
@@ -193,17 +193,17 @@ section .text
 
  fileexistsX$1:
 	; Parameter 56 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  fileexistsX$2:
 	; Parameter 64 string string_r#
-	mov qword [rbp + 64], @2499string_r#
+	mov qword [rbp + 64], {operand2}
 
  fileexistsX$3:
 	; Call 32 fopen 0
 	mov qword [rbp + 32], fileexistsX$4
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fopen
 
@@ -215,29 +215,29 @@ section .text
 
  fileexistsX$6:
 	; Assign filePtr £temporary820
-	mov [rbp + 32], rbx
+	mov [rbp + 32], {operand2}
 
  fileexistsX$7:
 	; PreCall 40
 
  fileexistsX$8:
 	; Parameter 64 string string_0Afileexists2025s2025p0A#
-	mov qword [rbp + 64], @2501string_0Afileexists2025s2025p0A#
+	mov qword [rbp + 64], {operand2}
 
  fileexistsX$9:
 	; Parameter 72 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  fileexistsX$10:
 	; Parameter 80 pointer filePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 80], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 80], {operand2}
 
  fileexistsX$11:
 	; Call 40 printf 16
 	mov qword [rbp + 40], fileexistsX$12
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	mov rdi, rbp
 	add rdi, 16
@@ -248,7 +248,7 @@ section .text
 
  fileexistsX$13:
 	; Equal 19 filePtr integral8$0#
-	cmp qword [rbp + 32], 0
+	cmp qword [rbp + 32], {operand2}
 	je fileexistsX$19
 
  fileexistsX$14:
@@ -256,13 +256,13 @@ section .text
 
  fileexistsX$15:
 	; Parameter 64 pointer filePtr
-	mov rax, [rbp + 32]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  fileexistsX$16:
 	; Call 40 fclose 0
 	mov qword [rbp + 40], fileexistsX$17
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fclose
 
@@ -272,17 +272,17 @@ section .text
  fileexistsX$18:
 	; Return integral4$1#
 	mov ebx, 1
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fileexistsX$19:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fileexistsX$20:
@@ -296,7 +296,7 @@ section .text
 
  fileexists$1:
 	; IntegralToIntegral £temporary828 name
-	mov rdi, [rbp + 24]
+	mov rdi, [{operand1}{WithSign(operand2)}]
 
  fileexists$2:
 	; AssignRegister rdi £temporary828
@@ -331,9 +331,9 @@ section .text
 
  fileexists$10:
 	; Return £temporary832
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fileexists$11:
@@ -347,14 +347,14 @@ section .text
 
  @2522$fileopen$1:
 	; IntegralToIntegral £temporary835 name
-	mov rdi, [rbp + 24]
+	mov rdi, [{operand1}{WithSign(operand2)}]
 
  @2522$fileopen$2:
 	; AssignRegister rdi £temporary835
 
  @2522$fileopen$3:
 	; IntegralToIntegral £temporary837 mode
-	mov si, [rbp + 32]
+	mov si, [{operand1}{WithSign(operand2)}]
 	mov rbx, 65535
 	and rsi, rbx
 
@@ -371,9 +371,9 @@ section .text
  @2522$fileopen$7:
 	; Return £temporary838
 	mov ebx, eax
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  @2522$fileopen$8:
@@ -395,16 +395,16 @@ section .text
 
  fopen:
 	; Assign index integral4$0#
-	mov dword [rbp + 40], 0
+	mov dword [rbp + 40], {operand2}
 
  fopen$1:
 	; GreaterThanEqual 22 index integral4$20#
-	cmp dword [rbp + 40], 20
+	cmp dword [rbp + 40], {operand2}
 	jge fopen$22
 
  fopen$2:
 	; Multiply £temporary841 index integral4$41#
-	mov eax, [rbp + 40]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [@2531integral4$41#]
 
@@ -423,7 +423,7 @@ section .text
 
  fopen$6:
 	; NotEqual 20 £temporary844.open integral4$0#
-	cmp dword [rsi], 0
+	cmp dword [rsi], {operand2}
 	jne fopen$20
 
  fopen$7:
@@ -431,17 +431,17 @@ section .text
 
  fopen$8:
 	; Parameter 68 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 68], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 68], {operand2}
 
  fopen$9:
 	; Parameter 76 pointer mode
-	mov rax, [rbp + 32]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  fopen$10:
 	; Multiply £temporary847 index integral4$41#
-	mov eax, [rbp + 40]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [@2534integral4$41#]
 
@@ -463,12 +463,12 @@ section .text
 
  fopen$15:
 	; Parameter 84 pointer £temporary851
-	mov [rbp + 84], rsi
+	mov [rbp + 84], {operand2}
 
  fopen$16:
 	; Call 44 freopen 0
 	mov qword [rbp + 44], fopen$17
-	mov [rbp + 52], rbp
+	mov [rbp + 52], {operand2}
 	add rbp, 44
 	jmp freopen
 
@@ -480,9 +480,9 @@ section .text
 
  fopen$19:
 	; Return £temporary852
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fopen$20:
@@ -496,9 +496,9 @@ section .text
  fopen$22:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fopen$23:
@@ -556,24 +556,24 @@ section .text
 
  freopen:
 	; Assign handle integral4$minus1#
-	mov dword [rbp + 48], -1
+	mov dword [rbp + 48], {operand2}
 
  freopen$1:
 	; PreCall 52
 
  freopen$2:
 	; Parameter 76 pointer mode
-	mov rax, [rbp + 32]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$3:
 	; Parameter 84 string string_r#
-	mov qword [rbp + 84], @2545string_r#
+	mov qword [rbp + 84], {operand2}
 
  freopen$4:
 	; Call 52 strcmp 0
 	mov qword [rbp + 52], freopen$5
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp strcmp
 
@@ -593,17 +593,17 @@ section .text
 
  freopen$9:
 	; Parameter 76 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$10:
 	; Parameter 84 unsigned short int integral2$0#
-	mov word [rbp + 84], 0
+	mov word [rbp + 84], {operand2}
 
  freopen$11:
 	; Call 52 fileopen 0
 	mov qword [rbp + 52], freopen$12
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp @2522$fileopen
 
@@ -615,7 +615,7 @@ section .text
 
  freopen$14:
 	; Assign handle £temporary857
-	mov [rbp + 48], ebx
+	mov [rbp + 48], {operand2}
 
  freopen$15:
 	; Jump 138
@@ -626,17 +626,17 @@ section .text
 
  freopen$17:
 	; Parameter 76 pointer mode
-	mov rax, [rbp + 32]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$18:
 	; Parameter 84 string string_w#
-	mov qword [rbp + 84], @2548string_w#
+	mov qword [rbp + 84], {operand2}
 
  freopen$19:
 	; Call 52 strcmp 0
 	mov qword [rbp + 52], freopen$20
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp strcmp
 
@@ -656,13 +656,13 @@ section .text
 
  freopen$24:
 	; Parameter 76 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$25:
 	; Call 52 filecreate 0
 	mov qword [rbp + 52], freopen$26
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp filecreate
 
@@ -674,7 +674,7 @@ section .text
 
  freopen$28:
 	; Assign handle £temporary860
-	mov [rbp + 48], ebx
+	mov [rbp + 48], {operand2}
 
  freopen$29:
 	; Jump 138
@@ -685,17 +685,17 @@ section .text
 
  freopen$31:
 	; Parameter 76 pointer mode
-	mov rax, [rbp + 32]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$32:
 	; Parameter 84 string string_a#
-	mov qword [rbp + 84], @2550string_a#
+	mov qword [rbp + 84], {operand2}
 
  freopen$33:
 	; Call 52 strcmp 0
 	mov qword [rbp + 52], freopen$34
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp strcmp
 
@@ -715,17 +715,17 @@ section .text
 
  freopen$38:
 	; Parameter 76 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$39:
 	; Parameter 84 unsigned short int integral2$1#
-	mov word [rbp + 84], 1
+	mov word [rbp + 84], {operand2}
 
  freopen$40:
 	; Call 52 fileopen 0
 	mov qword [rbp + 52], freopen$41
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp @2522$fileopen
 
@@ -737,11 +737,11 @@ section .text
 
  freopen$43:
 	; Assign handle £temporary863
-	mov [rbp + 48], ebx
+	mov [rbp + 48], {operand2}
 
  freopen$44:
 	; Equal 52 handle integral4$minus1#
-	cmp dword [rbp + 48], -1
+	cmp dword [rbp + 48], {operand2}
 	je freopen$52
 
  freopen$45:
@@ -749,21 +749,21 @@ section .text
 
  freopen$46:
 	; Parameter 76 pointer stream
-	mov rax, [rbp + 40]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$47:
 	; Parameter 84 signed int integral4$0#
-	mov dword [rbp + 84], 0
+	mov dword [rbp + 84], {operand2}
 
  freopen$48:
 	; Parameter 88 signed int integral4$2#
-	mov dword [rbp + 88], 2
+	mov dword [rbp + 88], {operand2}
 
  freopen$49:
 	; Call 52 fseek 0
 	mov qword [rbp + 52], freopen$50
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp fseek
 
@@ -779,13 +779,13 @@ section .text
 
  freopen$53:
 	; Parameter 76 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$54:
 	; Call 52 filecreate 0
 	mov qword [rbp + 52], freopen$55
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp filecreate
 
@@ -797,7 +797,7 @@ section .text
 
  freopen$57:
 	; Assign handle £temporary866
-	mov [rbp + 48], ebx
+	mov [rbp + 48], {operand2}
 
  freopen$58:
 	; Jump 138
@@ -808,17 +808,17 @@ section .text
 
  freopen$60:
 	; Parameter 76 pointer mode
-	mov rax, [rbp + 32]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$61:
 	; Parameter 84 string string_r2B#
-	mov qword [rbp + 84], @2557string_r2B#
+	mov qword [rbp + 84], {operand2}
 
  freopen$62:
 	; Call 52 strcmp 0
 	mov qword [rbp + 52], freopen$63
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp strcmp
 
@@ -838,12 +838,12 @@ section .text
 
  freopen$67:
 	; Parameter 76 string string_r2B10A#
-	mov qword [rbp + 76], @2559string_r2B10A#
+	mov qword [rbp + 76], {operand2}
 
  freopen$68:
 	; Call 52 printf 0
 	mov qword [rbp + 52], freopen$69
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	mov rdi, rbp
 	jmp printf
@@ -856,17 +856,17 @@ section .text
 
  freopen$71:
 	; Parameter 76 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$72:
 	; Parameter 84 unsigned short int integral2$3#
-	mov word [rbp + 84], 3
+	mov word [rbp + 84], {operand2}
 
  freopen$73:
 	; Call 52 fileopen 0
 	mov qword [rbp + 52], freopen$74
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp @2522$fileopen
 
@@ -878,19 +878,19 @@ section .text
 
  freopen$76:
 	; Assign handle £temporary872
-	mov [rbp + 48], ebx
+	mov [rbp + 48], {operand2}
 
  freopen$77:
 	; PreCall 52
 
  freopen$78:
 	; Parameter 76 string string_r2B20A#
-	mov qword [rbp + 76], @2561string_r2B20A#
+	mov qword [rbp + 76], {operand2}
 
  freopen$79:
 	; Call 52 printf 0
 	mov qword [rbp + 52], freopen$80
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	mov rdi, rbp
 	jmp printf
@@ -907,17 +907,17 @@ section .text
 
  freopen$83:
 	; Parameter 76 pointer mode
-	mov rax, [rbp + 32]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$84:
 	; Parameter 84 string string_w2B#
-	mov qword [rbp + 84], @2562string_w2B#
+	mov qword [rbp + 84], {operand2}
 
  freopen$85:
 	; Call 52 strcmp 0
 	mov qword [rbp + 52], freopen$86
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp strcmp
 
@@ -937,13 +937,13 @@ section .text
 
  freopen$90:
 	; Parameter 76 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$91:
 	; Call 52 fileexists 0
 	mov qword [rbp + 52], freopen$92
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp fileexists
 
@@ -963,17 +963,17 @@ section .text
 
  freopen$96:
 	; Parameter 76 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$97:
 	; Parameter 84 unsigned short int integral2$3#
-	mov word [rbp + 84], 3
+	mov word [rbp + 84], {operand2}
 
  freopen$98:
 	; Call 52 fileopen 0
 	mov qword [rbp + 52], freopen$99
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp @2522$fileopen
 
@@ -985,7 +985,7 @@ section .text
 
  freopen$101:
 	; Assign handle £temporary877
-	mov [rbp + 48], ebx
+	mov [rbp + 48], {operand2}
 
  freopen$102:
 	; Jump 138
@@ -996,13 +996,13 @@ section .text
 
  freopen$104:
 	; Parameter 76 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$105:
 	; Call 52 filecreate 0
 	mov qword [rbp + 52], freopen$106
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp filecreate
 
@@ -1014,7 +1014,7 @@ section .text
 
  freopen$108:
 	; Assign handle £temporary878
-	mov [rbp + 48], ebx
+	mov [rbp + 48], {operand2}
 
  freopen$109:
 	; Jump 138
@@ -1025,17 +1025,17 @@ section .text
 
  freopen$111:
 	; Parameter 76 pointer mode
-	mov rax, [rbp + 32]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$112:
 	; Parameter 84 string string_a2B#
-	mov qword [rbp + 84], @2566string_a2B#
+	mov qword [rbp + 84], {operand2}
 
  freopen$113:
 	; Call 52 strcmp 0
 	mov qword [rbp + 52], freopen$114
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp strcmp
 
@@ -1055,17 +1055,17 @@ section .text
 
  freopen$118:
 	; Parameter 76 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$119:
 	; Parameter 84 unsigned short int integral2$3#
-	mov word [rbp + 84], 3
+	mov word [rbp + 84], {operand2}
 
  freopen$120:
 	; Call 52 fileopen 0
 	mov qword [rbp + 52], freopen$121
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp @2522$fileopen
 
@@ -1077,11 +1077,11 @@ section .text
 
  freopen$123:
 	; Assign handle £temporary884
-	mov [rbp + 48], ebx
+	mov [rbp + 48], {operand2}
 
  freopen$124:
 	; Equal 132 handle integral4$minus1#
-	cmp dword [rbp + 48], -1
+	cmp dword [rbp + 48], {operand2}
 	je freopen$132
 
  freopen$125:
@@ -1089,21 +1089,21 @@ section .text
 
  freopen$126:
 	; Parameter 76 pointer stream
-	mov rax, [rbp + 40]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$127:
 	; Parameter 84 signed int integral4$0#
-	mov dword [rbp + 84], 0
+	mov dword [rbp + 84], {operand2}
 
  freopen$128:
 	; Parameter 88 signed int integral4$2#
-	mov dword [rbp + 88], 2
+	mov dword [rbp + 88], {operand2}
 
  freopen$129:
 	; Call 52 fseek 0
 	mov qword [rbp + 52], freopen$130
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp fseek
 
@@ -1119,13 +1119,13 @@ section .text
 
  freopen$133:
 	; Parameter 76 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 76], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  freopen$134:
 	; Call 52 filecreate 0
 	mov qword [rbp + 52], freopen$135
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp filecreate
 
@@ -1137,59 +1137,59 @@ section .text
 
  freopen$137:
 	; Assign handle £temporary887
-	mov [rbp + 48], ebx
+	mov [rbp + 48], {operand2}
 
  freopen$138:
 	; Equal 154 handle integral4$minus1#
-	cmp dword [rbp + 48], -1
+	cmp dword [rbp + 48], {operand2}
 	je freopen$154
 
  freopen$139:
 	; Dereference £temporary903 stream 0
-	mov rsi, [rbp + 40]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  freopen$140:
 	; Assign £temporary903.open integral4$1#
-	mov dword [rsi], 1
+	mov dword [rsi], {operand2}
 
  freopen$141:
 	; Dereference £temporary904 stream 0
-	mov rsi, [rbp + 40]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  freopen$142:
 	; Assign £temporary904.handle handle
-	mov eax, [rbp + 48]
-	mov [rsi + 4], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rsi + 4], {operand2}
 
  freopen$143:
 	; Dereference £temporary905 stream 0
-	mov rsi, [rbp + 40]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  freopen$144:
 	; Assign £temporary905.size integral4$0#
-	mov dword [rsi + 33], 0
+	mov dword [rsi + 33], {operand2}
 
  freopen$145:
 	; PreCall 52
 
  freopen$146:
 	; Dereference £temporary906 stream 0
-	mov rsi, [rbp + 40]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  freopen$147:
 	; Parameter 76 array £temporary906.name
-	mov [rbp + 76], rsi
-	add qword [rbp + 76], 8
+	mov [rbp + 76], {operand2}
+	add qword [rbp + 76], {operand2}
 
  freopen$148:
 	; Parameter 84 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 84], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 84], {operand2}
 
  freopen$149:
 	; Call 52 strcpy 0
 	mov qword [rbp + 52], freopen$150
-	mov [rbp + 60], rbp
+	mov [rbp + 60], {operand2}
 	add rbp, 52
 	jmp strcpy
 
@@ -1198,34 +1198,34 @@ section .text
 
  freopen$151:
 	; Dereference £temporary908 stream 0
-	mov rsi, [rbp + 40]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  freopen$152:
 	; Assign £temporary908.temporary integral4$0#
-	mov dword [rsi + 37], 0
+	mov dword [rsi + 37], {operand2}
 
  freopen$153:
 	; Return stream
-	mov rbx, [rbp + 40]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  freopen$154:
 	; Dereference £temporary909 stream 0
-	mov rsi, [rbp + 40]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  freopen$155:
 	; Assign £temporary909.open integral4$0#
-	mov dword [rsi], 0
+	mov dword [rsi], {operand2}
 
  freopen$156:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  freopen$157:
@@ -1247,21 +1247,21 @@ section .text
 
  fflush:
 	; NotEqual 22 stream integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	jne fflush$22
 
  fflush$1:
 	; Assign index integral4$0#
-	mov dword [rbp + 32], 0
+	mov dword [rbp + 32], {operand2}
 
  fflush$2:
 	; GreaterThanEqual 22 index integral4$20#
-	cmp dword [rbp + 32], 20
+	cmp dword [rbp + 32], {operand2}
 	jge fflush$22
 
  fflush$3:
 	; Multiply £temporary915 index integral4$41#
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [@2631integral4$41#]
 
@@ -1280,7 +1280,7 @@ section .text
 
  fflush$7:
 	; Equal 20 £temporary918.open integral4$0#
-	cmp dword [rsi], 0
+	cmp dword [rsi], {operand2}
 	je fflush$20
 
  fflush$8:
@@ -1288,7 +1288,7 @@ section .text
 
  fflush$9:
 	; Multiply £temporary919 index integral4$41#
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [@2633integral4$41#]
 
@@ -1310,12 +1310,12 @@ section .text
 
  fflush$14:
 	; Parameter 60 pointer £temporary923
-	mov [rbp + 60], rsi
+	mov [rbp + 60], {operand2}
 
  fflush$15:
 	; Call 36 fflush 0
 	mov qword [rbp + 36], fflush$16
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp fflush
 
@@ -1333,9 +1333,9 @@ section .text
  fflush$19:
 	; Return integral4$minus1#
 	mov ebx, -1
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fflush$20:
@@ -1349,9 +1349,9 @@ section .text
  fflush$22:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fflush$23:
@@ -1373,7 +1373,7 @@ section .text
 
  fclose:
 	; Equal 7 stream integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	je fclose$7
 
  fclose$1:
@@ -1382,11 +1382,11 @@ section .text
 
  fclose$2:
 	; Dereference £temporary936 stream 0
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  fclose$3:
 	; IntegralToIntegral £temporary937 £temporary936.handle
-	mov edi, [rsi + 4]
+	mov edi, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rdi, rbx
 
@@ -1400,23 +1400,23 @@ section .text
  fclose$6:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fclose$7:
 	; Assign index integral4$0#
-	mov dword [rbp + 32], 0
+	mov dword [rbp + 32], {operand2}
 
  fclose$8:
 	; GreaterThanEqual 28 index integral4$20#
-	cmp dword [rbp + 32], 20
+	cmp dword [rbp + 32], {operand2}
 	jge fclose$28
 
  fclose$9:
 	; Multiply £temporary940 index integral4$41#
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [@2649integral4$41#]
 
@@ -1435,7 +1435,7 @@ section .text
 
  fclose$13:
 	; Equal 26 £temporary943.open integral4$0#
-	cmp dword [rsi], 0
+	cmp dword [rsi], {operand2}
 	je fclose$26
 
  fclose$14:
@@ -1443,7 +1443,7 @@ section .text
 
  fclose$15:
 	; Multiply £temporary944 index integral4$41#
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [@2651integral4$41#]
 
@@ -1465,12 +1465,12 @@ section .text
 
  fclose$20:
 	; Parameter 60 pointer £temporary948
-	mov [rbp + 60], rsi
+	mov [rbp + 60], {operand2}
 
  fclose$21:
 	; Call 36 fclose 0
 	mov qword [rbp + 36], fclose$22
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp fclose
 
@@ -1488,9 +1488,9 @@ section .text
  fclose$25:
 	; Return integral4$minus1#
 	mov ebx, -1
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fclose$26:
@@ -1504,9 +1504,9 @@ section .text
  fclose$28:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fclose$29:
@@ -1520,7 +1520,7 @@ section .text
 
  remove$1:
 	; IntegralToIntegral £temporary960 name
-	mov rdi, [rbp + 24]
+	mov rdi, [{operand1}{WithSign(operand2)}]
 
  remove$2:
 	; AssignRegister rdi £temporary960
@@ -1540,21 +1540,21 @@ section .text
  remove$6:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  remove$7:
 	; Assign errno FREMOVE
-	mov dword [errno], 18
+	mov dword [errno], {operand2}
 
  remove$8:
 	; Return integral4$minus1#
 	mov ebx, -1
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  remove$9:
@@ -1568,14 +1568,14 @@ section .text
 
  rename$1:
 	; IntegralToIntegral £temporary967 oldName
-	mov rdi, [rbp + 24]
+	mov rdi, [{operand1}{WithSign(operand2)}]
 
  rename$2:
 	; AssignRegister rdi £temporary967
 
  rename$3:
 	; IntegralToIntegral £temporary969 newName
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  rename$4:
 	; AssignRegister rsi £temporary969
@@ -1595,21 +1595,21 @@ section .text
  rename$8:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  rename$9:
 	; Assign errno FRENAME
-	mov dword [errno], 19
+	mov dword [errno], {operand2}
 
  rename$10:
 	; Return integral4$minus1#
 	mov ebx, -1
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  rename$11:
@@ -1620,9 +1620,9 @@ section .text
  setvbuf:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  setvbuf$1:
@@ -1632,9 +1632,9 @@ section .text
 
  setbuf:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  setbuf$1:
@@ -1644,7 +1644,7 @@ section .text
 
  fgetc:
 	; Assign c integral1$0#
-	mov byte [rbp + 32], 0
+	mov byte [rbp + 32], {operand2}
 
  fgetc$1:
 	; PreCall 33
@@ -1656,25 +1656,25 @@ section .text
 
  fgetc$3:
 	; Parameter 57 pointer £temporary974
-	mov [rbp + 57], rsi
+	mov [rbp + 57], {operand2}
 
  fgetc$4:
 	; Parameter 65 signed int integral4$1#
-	mov dword [rbp + 65], 1
+	mov dword [rbp + 65], {operand2}
 
  fgetc$5:
 	; Parameter 69 signed int integral4$1#
-	mov dword [rbp + 69], 1
+	mov dword [rbp + 69], {operand2}
 
  fgetc$6:
 	; Parameter 73 pointer stream
-	mov rax, [rbp + 24]
-	mov [rbp + 73], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 73], {operand2}
 
  fgetc$7:
 	; Call 33 fread 0
 	mov qword [rbp + 33], fgetc$8
-	mov [rbp + 41], rbp
+	mov [rbp + 41], {operand2}
 	add rbp, 33
 	jmp fread
 
@@ -1691,7 +1691,7 @@ section .text
 
  fgetc$11:
 	; IntegralToIntegral £temporary977 c
-	mov bl, [rbp + 32]
+	mov bl, [{operand1}{WithSign(operand2)}]
 	and ebx, 255
 	cmp bl, 0
 	jge fgetc$12
@@ -1700,17 +1700,17 @@ section .text
 
  fgetc$12:
 	; Return £temporary977
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fgetc$13:
 	; Return integral4$minus1#
 	mov ebx, -1
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fgetc$14:
@@ -1726,37 +1726,37 @@ section .text
 
  fgets:
 	; Assign count integral4$0#
-	mov dword [rbp + 44], 0
+	mov dword [rbp + 44], {operand2}
 
  fgets$1:
 	; Assign prevChar integral1$0#
-	mov byte [rbp + 48], 0
+	mov byte [rbp + 48], {operand2}
 
  fgets$2:
 	; Subtract £temporary981 size integral4$1#
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	dec eax
 
  fgets$3:
 	; GreaterThanEqual 36 count £temporary981
-	cmp [rbp + 44], eax
+	cmp [rbp + 44], {operand2}
 	jge fgets$36
 
  fgets$4:
 	; Assign currChar integral1$0#
-	mov byte [rbp + 49], 0
+	mov byte [rbp + 49], {operand2}
 
  fgets$5:
 	; PreCall 50
 
  fgets$6:
 	; Parameter 74 pointer stream
-	mov rax, [rbp + 36]
-	mov [rbp + 74], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 74], {operand2}
 
  fgets$7:
 	; Parameter 82 string string_25c#
-	mov qword [rbp + 82], @2696string_25c#
+	mov qword [rbp + 82], {operand2}
 
  fgets$8:
 	; Address £temporary983 currChar
@@ -1765,12 +1765,12 @@ section .text
 
  fgets$9:
 	; Parameter 90 pointer £temporary983
-	mov [rbp + 90], rsi
+	mov [rbp + 90], {operand2}
 
  fgets$10:
 	; Call 50 fscanf 8
 	mov qword [rbp + 50], fgets$11
-	mov [rbp + 58], rbp
+	mov [rbp + 58], {operand2}
 	add rbp, 50
 	mov rdi, rbp
 	add rdi, 8
@@ -1781,23 +1781,23 @@ section .text
 
  fgets$12:
 	; NotEqual 19 prevChar integral1$13#
-	cmp byte [rbp + 48], 13
+	cmp byte [rbp + 48], {operand2}
 	jne fgets$19
 
  fgets$13:
 	; NotEqual 19 currChar integral1$10#
-	cmp byte [rbp + 49], 10
+	cmp byte [rbp + 49], {operand2}
 	jne fgets$19
 
  fgets$14:
 	; IntegralToIntegral £temporary989 count
-	mov eax, [rbp + 44]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  fgets$15:
 	; Add £temporary990 text £temporary989
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  fgets$16:
@@ -1805,7 +1805,7 @@ section .text
 
  fgets$17:
 	; Assign £temporary991 integral1$0#
-	mov byte [rsi], 0
+	mov byte [rsi], {operand2}
 
  fgets$18:
 	; Jump 36
@@ -1813,7 +1813,7 @@ section .text
 
  fgets$19:
 	; IntegralToIntegral £temporary994 currChar
-	mov al, [rbp + 49]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge fgets$20
@@ -1827,13 +1827,13 @@ section .text
 
  fgets$21:
 	; IntegralToIntegral £temporary997 count
-	mov eax, [rbp + 44]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  fgets$22:
 	; Add £temporary998 text £temporary997
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  fgets$23:
@@ -1841,7 +1841,7 @@ section .text
 
  fgets$24:
 	; Assign £temporary999 integral1$0#
-	mov byte [rsi], 0
+	mov byte [rsi], {operand2}
 
  fgets$25:
 	; Jump 36
@@ -1849,17 +1849,17 @@ section .text
 
  fgets$26:
 	; Equal 34 currChar integral1$13#
-	cmp byte [rbp + 49], 13
+	cmp byte [rbp + 49], {operand2}
 	je fgets$34
 
  fgets$27:
 	; Equal 34 currChar integral1$10#
-	cmp byte [rbp + 49], 10
+	cmp byte [rbp + 49], {operand2}
 	je fgets$34
 
  fgets$28:
 	; Assign £temporary1007 count
-	mov eax, [rbp + 44]
+	mov eax, [{operand1}{WithSign(operand2)}]
 
  fgets$29:
 	; Add count count integral4$1#
@@ -1872,7 +1872,7 @@ section .text
 
  fgets$31:
 	; Add £temporary1009 text £temporary1008
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  fgets$32:
@@ -1880,13 +1880,13 @@ section .text
 
  fgets$33:
 	; Assign £temporary1010 currChar
-	mov al, [rbp + 49]
-	mov [rsi], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  fgets$34:
 	; Assign prevChar currChar
-	mov al, [rbp + 49]
-	mov [rbp + 48], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 48], {operand2}
 
  fgets$35:
 	; Jump 2
@@ -1894,10 +1894,10 @@ section .text
 
  fgets$36:
 	; Return text
-	mov rbx, [rbp + 24]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fgets$37:
@@ -1910,13 +1910,13 @@ section .text
 
  fputs$1:
 	; Parameter 64 pointer s
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  fputs$2:
 	; Call 40 strlen 0
 	mov qword [rbp + 40], fputs$3
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp strlen
 
@@ -1929,34 +1929,34 @@ section .text
  fputs$5:
 	; Add size £temporary1014 integral4$1#
 	inc ebx
-	mov [rbp + 40], ebx
+	mov [rbp + 40], {operand2}
 
  fputs$6:
 	; PreCall 44
 
  fputs$7:
 	; Parameter 68 pointer s
-	mov rax, [rbp + 24]
-	mov [rbp + 68], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 68], {operand2}
 
  fputs$8:
 	; Parameter 76 signed int size
-	mov eax, [rbp + 40]
-	mov [rbp + 76], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 76], {operand2}
 
  fputs$9:
 	; Parameter 80 signed int integral4$1#
-	mov dword [rbp + 80], 1
+	mov dword [rbp + 80], {operand2}
 
  fputs$10:
 	; Parameter 84 pointer stream
-	mov rax, [rbp + 32]
-	mov [rbp + 84], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 84], {operand2}
 
  fputs$11:
 	; Call 44 fwrite 0
 	mov qword [rbp + 44], fputs$12
-	mov [rbp + 52], rbp
+	mov [rbp + 52], {operand2}
 	add rbp, 44
 	jmp fwrite
 
@@ -1968,7 +1968,7 @@ section .text
 
  fputs$14:
 	; NotEqual 17 £temporary1017 size
-	cmp ebx, [rbp + 40]
+	cmp ebx, [{operand1}{WithSign(operand2)}]
 	jne fputs$17
 
  fputs$15:
@@ -1985,9 +1985,9 @@ section .text
 
  fputs$18:
 	; Return £temporary1019
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fputs$19:
@@ -2000,13 +2000,13 @@ section .text
 
  getchar$1:
 	; Parameter 48 pointer stdin
-	mov rax, [stdin]
-	mov [rbp + 48], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 48], {operand2}
 
  getchar$2:
 	; Call 24 fgetc 0
 	mov qword [rbp + 24], getchar$3
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp fgetc
 
@@ -2018,9 +2018,9 @@ section .text
 
  getchar$5:
 	; Return £temporary1020
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  getchar$6:
@@ -2033,22 +2033,22 @@ section .text
 
  gets$1:
 	; Parameter 56 pointer s
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  gets$2:
 	; Parameter 64 signed int integral4$minus1#
-	mov dword [rbp + 64], -1
+	mov dword [rbp + 64], {operand2}
 
  gets$3:
 	; Parameter 68 pointer stdin
-	mov rax, [stdin]
-	mov [rbp + 68], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 68], {operand2}
 
  gets$4:
 	; Call 32 fgets 0
 	mov qword [rbp + 32], gets$5
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fgets
 
@@ -2068,13 +2068,13 @@ section .text
 
  gets$9:
 	; Parameter 56 pointer s
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  gets$10:
 	; Call 32 strlen 0
 	mov qword [rbp + 32], gets$11
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp strlen
 
@@ -2086,16 +2086,16 @@ section .text
 
  gets$13:
 	; Assign size £temporary1023
-	mov [rbp + 32], ebx
+	mov [rbp + 32], {operand2}
 
  gets$14:
 	; LessThanEqual 20 size integral4$0#
-	cmp dword [rbp + 32], 0
+	cmp dword [rbp + 32], {operand2}
 	jle gets$20
 
  gets$15:
 	; Subtract £temporary1026 size integral4$1#
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	dec eax
 
  gets$16:
@@ -2105,7 +2105,7 @@ section .text
 
  gets$17:
 	; Add £temporary1028 s £temporary1027
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  gets$18:
@@ -2113,22 +2113,22 @@ section .text
 
  gets$19:
 	; Assign £temporary1029 integral1$0#
-	mov byte [rsi], 0
+	mov byte [rsi], {operand2}
 
  gets$20:
 	; Return s
-	mov rbx, [rbp + 24]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  gets$21:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  gets$22:
@@ -2141,18 +2141,18 @@ section .text
 
  puts$1:
 	; Parameter 56 pointer s
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  puts$2:
 	; Parameter 64 pointer stdout
-	mov rax, [stdout]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  puts$3:
 	; Call 32 fputs 0
 	mov qword [rbp + 32], puts$4
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fputs
 
@@ -2172,17 +2172,17 @@ section .text
 
  puts$8:
 	; Parameter 56 signed int integral4$10#
-	mov dword [rbp + 56], 10
+	mov dword [rbp + 56], {operand2}
 
  puts$9:
 	; Parameter 60 pointer stdout
-	mov rax, [stdout]
-	mov [rbp + 60], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 60], {operand2}
 
  puts$10:
 	; Call 32 fputc 0
 	mov qword [rbp + 32], puts$11
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fputc
 
@@ -2194,17 +2194,17 @@ section .text
 
  puts$13:
 	; Return £temporary1036
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  puts$14:
 	; Return integral4$minus1#
 	mov ebx, -1
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  puts$15:
@@ -2214,11 +2214,11 @@ section .text
 
  ungetc:
 	; Dereference £temporary1039 stream 0
-	mov rsi, [rbp + 28]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  ungetc$1:
 	; IntegralToIntegral £temporary1040 £temporary1039.ungetc
-	mov al, [rsi + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge ungetc$2
@@ -2232,11 +2232,11 @@ section .text
 
  ungetc$3:
 	; Dereference £temporary1042 stream 0
-	mov rsi, [rbp + 28]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  ungetc$4:
 	; IntegralToIntegral £temporary1043 c
-	mov eax, [rbp + 24]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	cmp eax, 0
 	jge ungetc$5
 	neg eax
@@ -2244,14 +2244,14 @@ section .text
 
  ungetc$5:
 	; Assign £temporary1042.ungetc £temporary1043
-	mov [rsi + 24], al
+	mov [rsi + 24], {operand2}
 
  ungetc$6:
 	; Return c
-	mov ebx, [rbp + 24]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov ebx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  ungetc$7:
@@ -2261,11 +2261,11 @@ section .text
 
  fread:
 	; Dereference £temporary1047 stream 0
-	mov rsi, [rbp + 40]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  fread$1:
 	; IntegralToIntegral £temporary1048 £temporary1047.handle
-	mov edi, [rsi + 4]
+	mov edi, [{operand1}{WithSign(operand2)}]
 	mov rax, 4294967295
 	and rdi, rax
 
@@ -2274,14 +2274,14 @@ section .text
 
  fread$3:
 	; IntegralToIntegral £temporary1050 ptr
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  fread$4:
 	; AssignRegister rsi £temporary1050
 
  fread$5:
 	; Multiply £temporary1052 size nobj
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [rbp + 36]
 
@@ -2308,9 +2308,9 @@ section .text
  fread$11:
 	; Return £temporary1055
 	mov ebx, eax
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fread$12:
@@ -2320,11 +2320,11 @@ section .text
 
  fwrite:
 	; Dereference £temporary1057 stream 0
-	mov rsi, [rbp + 40]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  fwrite$1:
 	; IntegralToIntegral £temporary1058 £temporary1057.handle
-	mov edi, [rsi + 4]
+	mov edi, [{operand1}{WithSign(operand2)}]
 	mov rax, 4294967295
 	and rdi, rax
 
@@ -2333,14 +2333,14 @@ section .text
 
  fwrite$3:
 	; IntegralToIntegral £temporary1060 ptr
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  fwrite$4:
 	; AssignRegister rsi £temporary1060
 
  fwrite$5:
 	; Multiply £temporary1062 size nobj
-	mov eax, [rbp + 32]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	xor edx, edx
 	imul dword [rbp + 36]
 
@@ -2367,9 +2367,9 @@ section .text
  fwrite$11:
 	; Return £temporary1065
 	mov ebx, eax
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fwrite$12:
@@ -2383,11 +2383,11 @@ section .text
 
  fseek$1:
 	; Dereference £temporary1068 stream 0
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  fseek$2:
 	; IntegralToIntegral £temporary1069 £temporary1068.handle
-	mov edi, [rsi + 4]
+	mov edi, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rdi, rbx
 
@@ -2396,7 +2396,7 @@ section .text
 
  fseek$4:
 	; IntegralToIntegral £temporary1071 offset
-	mov esi, [rbp + 32]
+	mov esi, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rsi, rbx
 
@@ -2405,7 +2405,7 @@ section .text
 
  fseek$6:
 	; IntegralToIntegral £temporary1073 origin
-	mov edx, [rbp + 36]
+	mov edx, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rdx, rbx
 
@@ -2422,9 +2422,9 @@ section .text
  fseek$10:
 	; Return £temporary1074
 	mov ebx, eax
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fseek$11:
@@ -2437,21 +2437,21 @@ section .text
 
  ftell$1:
 	; Parameter 56 pointer stream
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  ftell$2:
 	; Parameter 64 signed int integral4$0#
-	mov dword [rbp + 64], 0
+	mov dword [rbp + 64], {operand2}
 
  ftell$3:
 	; Parameter 68 signed int SEEK_CUR
-	mov dword [rbp + 68], 1
+	mov dword [rbp + 68], {operand2}
 
  ftell$4:
 	; Call 32 fseek 0
 	mov qword [rbp + 32], ftell$5
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fseek
 
@@ -2463,9 +2463,9 @@ section .text
 
  ftell$7:
 	; Return £temporary1075
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  ftell$8:
@@ -2478,21 +2478,21 @@ section .text
 
  rewind$1:
 	; Parameter 56 pointer stream
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  rewind$2:
 	; Parameter 64 signed int integral4$0#
-	mov dword [rbp + 64], 0
+	mov dword [rbp + 64], {operand2}
 
  rewind$3:
 	; Parameter 68 signed int SEEK_SET
-	mov dword [rbp + 68], 0
+	mov dword [rbp + 68], {operand2}
 
  rewind$4:
 	; Call 32 fseek 0
 	mov qword [rbp + 32], rewind$5
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fseek
 
@@ -2501,9 +2501,9 @@ section .text
 
  rewind$6:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  rewind$7:
@@ -2513,27 +2513,27 @@ section .text
 
  fgetpos:
 	; Dereference £temporary1078 ptr 0
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  fgetpos$1:
 	; PreCall 40
-	mov [rbp + 40], rsi
+	mov [rbp + 40], {operand2}
 
  fgetpos$2:
 	; Parameter 64 pointer stream
-	mov rax, [rbp + 24]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  fgetpos$3:
 	; Call 40 ftell 0
 	mov qword [rbp + 48], fgetpos$4
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	jmp ftell
 
  fgetpos$4:
 	; PostCall 40
-	mov rsi, [rbp + 40]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  fgetpos$5:
 	; GetReturnValue £temporary1079
@@ -2543,14 +2543,14 @@ section .text
 
  fgetpos$7:
 	; Assign £temporary1078 £temporary1080
-	mov [rsi], ebx
+	mov [rsi], {operand2}
 
  fgetpos$8:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fgetpos$9:
@@ -2563,26 +2563,26 @@ section .text
 
  fsetpos$1:
 	; Parameter 64 pointer stream
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  fsetpos$2:
 	; Dereference £temporary1081 ptr 0
-	mov rsi, [rbp + 32]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  fsetpos$3:
 	; Parameter 72 signed int £temporary1081
-	mov eax, [rsi]
-	mov [rbp + 72], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  fsetpos$4:
 	; Parameter 76 signed int integral4$0#
-	mov dword [rbp + 76], 0
+	mov dword [rbp + 76], {operand2}
 
  fsetpos$5:
 	; Call 40 fseek 0
 	mov qword [rbp + 40], fsetpos$6
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fseek
 
@@ -2597,9 +2597,9 @@ section .text
 
  fsetpos$9:
 	; Return £temporary1083
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  fsetpos$10:
@@ -2609,22 +2609,22 @@ section .text
 
  clearerr:
 	; Dereference £temporary1084 stream 0
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  clearerr$1:
 	; Assign errno integral4$0#
-	mov dword [errno], 0
+	mov dword [errno], {operand2}
 
  clearerr$2:
 	; Assign £temporary1084.errno errno
-	mov eax, [errno]
-	mov [rsi + 25], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rsi + 25], {operand2}
 
  clearerr$3:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  clearerr$4:
@@ -2637,21 +2637,21 @@ section .text
 
  feof$1:
 	; Parameter 56 pointer stream
-	mov rax, [rbp + 24]
-	mov [rbp + 56], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 56], {operand2}
 
  feof$2:
 	; Parameter 64 signed int integral4$0#
-	mov dword [rbp + 64], 0
+	mov dword [rbp + 64], {operand2}
 
  feof$3:
 	; Parameter 68 signed int integral4$1#
-	mov dword [rbp + 68], 1
+	mov dword [rbp + 68], {operand2}
 
  feof$4:
 	; Call 32 fseek 0
 	mov qword [rbp + 32], feof$5
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp fseek
 
@@ -2668,28 +2668,28 @@ section .text
 
  feof$8:
 	; Assign currPosition £temporary1086
-	mov [rbp + 32], rbx
+	mov [rbp + 32], {operand2}
 
  feof$9:
 	; PreCall 40
 
  feof$10:
 	; Parameter 64 pointer stream
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  feof$11:
 	; Parameter 72 signed int integral4$0#
-	mov dword [rbp + 72], 0
+	mov dword [rbp + 72], {operand2}
 
  feof$12:
 	; Parameter 76 signed int integral4$2#
-	mov dword [rbp + 76], 2
+	mov dword [rbp + 76], {operand2}
 
  feof$13:
 	; Call 40 fseek 0
 	mov qword [rbp + 40], feof$14
-	mov [rbp + 48], rbp
+	mov [rbp + 48], {operand2}
 	add rbp, 40
 	jmp fseek
 
@@ -2706,32 +2706,32 @@ section .text
 
  feof$17:
 	; Assign lastPosition £temporary1088
-	mov [rbp + 40], rbx
+	mov [rbp + 40], {operand2}
 
  feof$18:
 	; PreCall 48
 
  feof$19:
 	; Parameter 72 pointer stream
-	mov rax, [rbp + 24]
-	mov [rbp + 72], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 72], {operand2}
 
  feof$20:
 	; IntegralToIntegral £temporary1089 currPosition
-	mov rax, [rbp + 32]
+	mov rax, [{operand1}{WithSign(operand2)}]
 
  feof$21:
 	; Parameter 80 signed int £temporary1089
-	mov [rbp + 80], eax
+	mov [rbp + 80], {operand2}
 
  feof$22:
 	; Parameter 84 signed int integral4$0#
-	mov dword [rbp + 84], 0
+	mov dword [rbp + 84], {operand2}
 
  feof$23:
 	; Call 48 fseek 0
 	mov qword [rbp + 48], feof$24
-	mov [rbp + 56], rbp
+	mov [rbp + 56], {operand2}
 	add rbp, 48
 	jmp fseek
 
@@ -2740,8 +2740,8 @@ section .text
 
  feof$25:
 	; NotEqual 28 currPosition lastPosition
-	mov rax, [rbp + 40]
-	cmp [rbp + 32], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 32], {operand2}
 	jne feof$28
 
  feof$26:
@@ -2758,14 +2758,14 @@ section .text
 
  feof$29:
 	; Assign endOfFile £temporary1092
-	mov [rbp + 48], eax
+	mov [rbp + 48], {operand2}
 
  feof$30:
 	; Return endOfFile
-	mov ebx, [rbp + 48]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov ebx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  feof$31:
@@ -2775,14 +2775,14 @@ section .text
 
  ferror:
 	; Dereference £temporary1093 stream 0
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  ferror$1:
 	; Return £temporary1093.errno
-	mov ebx, [rsi + 25]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov ebx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  ferror$2:
@@ -2801,25 +2801,25 @@ section .text
 
  perror$1:
 	; Parameter 56 string string_25s3A2025s2E0A#
-	mov qword [rbp + 56], @2823string_25s3A2025s2E0A#
+	mov qword [rbp + 56], {operand2}
 
  perror$2:
 	; Parameter 64 pointer s
-	mov rax, [rbp + 24]
-	mov [rbp + 64], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 64], {operand2}
 
  perror$3:
 	; PreCall 32
 
  perror$4:
 	; Parameter 96 signed int errno
-	mov eax, [errno]
-	mov [rbp + 96], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 96], {operand2}
 
  perror$5:
 	; Call 72 strerror 0
 	mov qword [rbp + 72], perror$6
-	mov [rbp + 80], rbp
+	mov [rbp + 80], {operand2}
 	add rbp, 72
 	jmp strerror
 
@@ -2831,12 +2831,12 @@ section .text
 
  perror$8:
 	; Parameter 72 pointer £temporary1094
-	mov [rbp + 72], rbx
+	mov [rbp + 72], {operand2}
 
  perror$9:
 	; Call 32 printf 16
 	mov qword [rbp + 32], perror$10
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	mov rdi, rbp
 	add rdi, 16
@@ -2847,9 +2847,9 @@ section .text
 
  perror$11:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  perror$12:

@@ -23,17 +23,17 @@ section .text
 
  generateName:
 	; Add £temporary1096 index integral4$1#
-	mov eax, [rbp + 24]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	inc eax
 
  generateName$1:
 	; GreaterThanEqual 31 £temporary1096 max
-	cmp eax, [rbp + 36]
+	cmp eax, [{operand1}{WithSign(operand2)}]
 	jge generateName$31
 
  generateName$2:
 	; Add £temporary1099 index integral4$1#
-	mov eax, [rbp + 24]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	inc eax
 
  generateName$3:
@@ -43,7 +43,7 @@ section .text
 
  generateName$4:
 	; Add £temporary1101 name £temporary1100
-	mov rsi, [rbp + 28]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  generateName$5:
@@ -51,26 +51,26 @@ section .text
 
  generateName$6:
 	; Assign £temporary1102 integral1$0#
-	mov byte [rsi], 0
+	mov byte [rsi], {operand2}
 
  generateName$7:
 	; Assign c integral1$97#
-	mov byte [rbp + 40], 97
+	mov byte [rbp + 40], {operand2}
 
  generateName$8:
 	; GreaterThan 36 c integral1$122#
-	cmp byte [rbp + 40], 122
+	cmp byte [rbp + 40], {operand2}
 	jg generateName$36
 
  generateName$9:
 	; IntegralToIntegral £temporary1106 index
-	mov eax, [rbp + 24]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  generateName$10:
 	; Add £temporary1107 name £temporary1106
-	mov rsi, [rbp + 28]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  generateName$11:
@@ -78,21 +78,21 @@ section .text
 
  generateName$12:
 	; Assign £temporary1108 c
-	mov al, [rbp + 40]
-	mov [rsi], al
+	mov al, [{operand1}{WithSign(operand2)}]
+	mov [rsi], {operand2}
 
  generateName$13:
 	; PreCall 41
 
  generateName$14:
 	; Parameter 65 pointer name
-	mov rax, [rbp + 28]
-	mov [rbp + 65], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 65], {operand2}
 
  generateName$15:
 	; Call 41 fileexists 0
 	mov qword [rbp + 41], generateName$16
-	mov [rbp + 49], rbp
+	mov [rbp + 49], {operand2}
 	add rbp, 41
 	jmp fileexists
 
@@ -112,27 +112,27 @@ section .text
 
  generateName$20:
 	; Add £temporary1112 index integral4$1#
-	mov eax, [rbp + 24]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	inc eax
 
  generateName$21:
 	; Parameter 65 signed int £temporary1112
-	mov [rbp + 65], eax
+	mov [rbp + 65], {operand2}
 
  generateName$22:
 	; Parameter 69 pointer name
-	mov rax, [rbp + 28]
-	mov [rbp + 69], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 69], {operand2}
 
  generateName$23:
 	; Parameter 77 signed int max
-	mov eax, [rbp + 36]
-	mov [rbp + 77], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 77], {operand2}
 
  generateName$24:
 	; Call 41 generateName 0
 	mov qword [rbp + 41], generateName$25
-	mov [rbp + 49], rbp
+	mov [rbp + 49], {operand2}
 	add rbp, 41
 	jmp generateName
 
@@ -150,9 +150,9 @@ section .text
  generateName$28:
 	; Return integral4$1#
 	mov ebx, 1
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  generateName$29:
@@ -165,19 +165,19 @@ section .text
 
  generateName$31:
 	; GreaterThanEqual 36 index max
-	mov eax, [rbp + 36]
-	cmp [rbp + 24], eax
+	mov eax, [{operand1}{WithSign(operand2)}]
+	cmp [rbp + 24], {operand2}
 	jge generateName$36
 
  generateName$32:
 	; IntegralToIntegral £temporary1120 index
-	mov eax, [rbp + 24]
+	mov eax, [{operand1}{WithSign(operand2)}]
 	mov rbx, 4294967295
 	and rax, rbx
 
  generateName$33:
 	; Add £temporary1121 name £temporary1120
-	mov rsi, [rbp + 28]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 	add rsi, rax
 
  generateName$34:
@@ -185,14 +185,14 @@ section .text
 
  generateName$35:
 	; Assign £temporary1122 integral1$0#
-	mov byte [rsi], 0
+	mov byte [rsi], {operand2}
 
  generateName$36:
 	; Return integral4$0#
 	mov ebx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  generateName$37:
@@ -205,21 +205,21 @@ section .text
 
  tmpnam$1:
 	; Parameter 56 signed int integral4$0#
-	mov dword [rbp + 56], 0
+	mov dword [rbp + 56], {operand2}
 
  tmpnam$2:
 	; Parameter 60 pointer name
-	mov rax, [rbp + 24]
-	mov [rbp + 60], rax
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov [rbp + 60], {operand2}
 
  tmpnam$3:
 	; Parameter 68 signed int integral4$4#
-	mov dword [rbp + 68], 4
+	mov dword [rbp + 68], {operand2}
 
  tmpnam$4:
 	; Call 32 generateName 0
 	mov qword [rbp + 32], tmpnam$5
-	mov [rbp + 40], rbp
+	mov [rbp + 40], {operand2}
 	add rbp, 32
 	jmp generateName
 
@@ -236,18 +236,18 @@ section .text
 
  tmpnam$8:
 	; Return name
-	mov rbx, [rbp + 24]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  tmpnam$9:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  tmpnam$10:
@@ -266,21 +266,21 @@ section .text
 
  tmpfile$1:
 	; Parameter 60 signed int integral4$0#
-	mov dword [rbp + 60], 0
+	mov dword [rbp + 60], {operand2}
 
  tmpfile$2:
 	; Parameter 64 array name
-	mov [rbp + 64], rbp
-	add qword [rbp + 64], 32
+	mov [rbp + 64], {operand2}
+	add qword [rbp + 64], {operand2}
 
  tmpfile$3:
 	; Parameter 72 signed int integral4$4#
-	mov dword [rbp + 72], 4
+	mov dword [rbp + 72], {operand2}
 
  tmpfile$4:
 	; Call 36 generateName 0
 	mov qword [rbp + 36], tmpfile$5
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp generateName
 
@@ -300,17 +300,17 @@ section .text
 
  tmpfile$9:
 	; Parameter 60 array name
-	mov [rbp + 60], rbp
-	add qword [rbp + 60], 32
+	mov [rbp + 60], {operand2}
+	add qword [rbp + 60], {operand2}
 
  tmpfile$10:
 	; Parameter 68 string string_w#
-	mov qword [rbp + 68], @3071string_w#
+	mov qword [rbp + 68], {operand2}
 
  tmpfile$11:
 	; Call 36 fopen 0
 	mov qword [rbp + 36], tmpfile$12
-	mov [rbp + 44], rbp
+	mov [rbp + 44], {operand2}
 	add rbp, 36
 	jmp fopen
 
@@ -322,35 +322,35 @@ section .text
 
  tmpfile$14:
 	; Assign stream £temporary1132
-	mov [rbp + 24], rbx
+	mov [rbp + 24], {operand2}
 
  tmpfile$15:
 	; Equal 19 stream integral8$0#
-	cmp qword [rbp + 24], 0
+	cmp qword [rbp + 24], {operand2}
 	je tmpfile$19
 
  tmpfile$16:
 	; Dereference £temporary1136 stream 0
-	mov rsi, [rbp + 24]
+	mov rsi, [{operand1}{WithSign(operand2)}]
 
  tmpfile$17:
 	; Assign £temporary1136.temporary integral4$1#
-	mov dword [rsi + 37], 1
+	mov dword [rsi + 37], {operand2}
 
  tmpfile$18:
 	; Return stream
-	mov rbx, [rbp + 24]
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rbx, [{operand1}{WithSign(operand2)}]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  tmpfile$19:
 	; Return integral8$0#
 	mov rbx, 0
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  tmpfile$20:

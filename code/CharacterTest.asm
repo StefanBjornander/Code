@@ -241,11 +241,11 @@ section .text
 
  character_testX$1:
 	; Parameter 49 string string_ascii2025i0A#
-	mov qword [rbp + 49], @8178string_ascii2025i0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$2:
 	; IntegralToIntegral £temporary3917 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$3
@@ -254,12 +254,12 @@ section .text
 
  character_testX$3:
 	; Parameter 57 signed int £temporary3917
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$4:
 	; Call 25 printf 4
 	mov qword [rbp + 25], character_testX$5
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 4
@@ -273,11 +273,11 @@ section .text
 
  character_testX$7:
 	; Parameter 49 string string_islower282725c2729203D2025s0A#
-	mov qword [rbp + 49], @8179string_islower282725c2729203D2025s0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$8:
 	; IntegralToIntegral £temporary3919 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$9
@@ -286,14 +286,14 @@ section .text
 
  character_testX$9:
 	; Parameter 57 signed int £temporary3919
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$10:
 	; PreCall 25
 
  character_testX$11:
 	; IntegralToIntegral £temporary3920 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$12
@@ -302,12 +302,12 @@ section .text
 
  character_testX$12:
 	; Parameter 85 signed int £temporary3920
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$13:
 	; Call 61 islower 0
 	mov qword [rbp + 61], character_testX$14
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp islower
 
@@ -336,12 +336,12 @@ section .text
 
  character_testX$20:
 	; Parameter 61 string £temporary3923
-	mov [rbp + 61], rax
+	mov [rbp + 61], {operand2}
 
  character_testX$21:
 	; Call 25 printf 12
 	mov qword [rbp + 25], character_testX$22
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 12
@@ -355,11 +355,11 @@ section .text
 
  character_testX$24:
 	; Parameter 49 string string_isupper282725c2729203D2025s0A#
-	mov qword [rbp + 49], @8183string_isupper282725c2729203D2025s0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$25:
 	; IntegralToIntegral £temporary3925 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$26
@@ -368,14 +368,14 @@ section .text
 
  character_testX$26:
 	; Parameter 57 signed int £temporary3925
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$27:
 	; PreCall 25
 
  character_testX$28:
 	; IntegralToIntegral £temporary3926 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$29
@@ -384,12 +384,12 @@ section .text
 
  character_testX$29:
 	; Parameter 85 signed int £temporary3926
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$30:
 	; Call 61 isupper 0
 	mov qword [rbp + 61], character_testX$31
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp isupper
 
@@ -418,12 +418,12 @@ section .text
 
  character_testX$37:
 	; Parameter 61 string £temporary3929
-	mov [rbp + 61], rax
+	mov [rbp + 61], {operand2}
 
  character_testX$38:
 	; Call 25 printf 12
 	mov qword [rbp + 25], character_testX$39
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 12
@@ -437,11 +437,11 @@ section .text
 
  character_testX$41:
 	; Parameter 49 string string_isalpha282725c2729203D2025s0A#
-	mov qword [rbp + 49], @8187string_isalpha282725c2729203D2025s0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$42:
 	; IntegralToIntegral £temporary3931 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$43
@@ -450,14 +450,14 @@ section .text
 
  character_testX$43:
 	; Parameter 57 signed int £temporary3931
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$44:
 	; PreCall 25
 
  character_testX$45:
 	; IntegralToIntegral £temporary3932 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$46
@@ -466,12 +466,12 @@ section .text
 
  character_testX$46:
 	; Parameter 85 signed int £temporary3932
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$47:
 	; Call 61 isalpha 0
 	mov qword [rbp + 61], character_testX$48
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp isalpha
 
@@ -500,12 +500,12 @@ section .text
 
  character_testX$54:
 	; Parameter 61 string £temporary3935
-	mov [rbp + 61], rax
+	mov [rbp + 61], {operand2}
 
  character_testX$55:
 	; Call 25 printf 12
 	mov qword [rbp + 25], character_testX$56
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 12
@@ -519,11 +519,11 @@ section .text
 
  character_testX$58:
 	; Parameter 49 string string_isdigit282725c2729203D2025s0A#
-	mov qword [rbp + 49], @8191string_isdigit282725c2729203D2025s0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$59:
 	; IntegralToIntegral £temporary3937 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$60
@@ -532,14 +532,14 @@ section .text
 
  character_testX$60:
 	; Parameter 57 signed int £temporary3937
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$61:
 	; PreCall 25
 
  character_testX$62:
 	; IntegralToIntegral £temporary3938 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$63
@@ -548,12 +548,12 @@ section .text
 
  character_testX$63:
 	; Parameter 85 signed int £temporary3938
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$64:
 	; Call 61 isdigit 0
 	mov qword [rbp + 61], character_testX$65
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp isdigit
 
@@ -582,12 +582,12 @@ section .text
 
  character_testX$71:
 	; Parameter 61 string £temporary3941
-	mov [rbp + 61], rax
+	mov [rbp + 61], {operand2}
 
  character_testX$72:
 	; Call 25 printf 12
 	mov qword [rbp + 25], character_testX$73
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 12
@@ -601,11 +601,11 @@ section .text
 
  character_testX$75:
 	; Parameter 49 string string_isalnum282725c2729203D2025s0A#
-	mov qword [rbp + 49], @8195string_isalnum282725c2729203D2025s0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$76:
 	; IntegralToIntegral £temporary3943 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$77
@@ -614,14 +614,14 @@ section .text
 
  character_testX$77:
 	; Parameter 57 signed int £temporary3943
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$78:
 	; PreCall 25
 
  character_testX$79:
 	; IntegralToIntegral £temporary3944 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$80
@@ -630,12 +630,12 @@ section .text
 
  character_testX$80:
 	; Parameter 85 signed int £temporary3944
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$81:
 	; Call 61 isalnum 0
 	mov qword [rbp + 61], character_testX$82
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp isalnum
 
@@ -664,12 +664,12 @@ section .text
 
  character_testX$88:
 	; Parameter 61 string £temporary3947
-	mov [rbp + 61], rax
+	mov [rbp + 61], {operand2}
 
  character_testX$89:
 	; Call 25 printf 12
 	mov qword [rbp + 25], character_testX$90
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 12
@@ -683,11 +683,11 @@ section .text
 
  character_testX$92:
 	; Parameter 49 string string_isxdigit282725c2729203D2025s0A#
-	mov qword [rbp + 49], @8199string_isxdigit282725c2729203D2025s0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$93:
 	; IntegralToIntegral £temporary3949 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$94
@@ -696,14 +696,14 @@ section .text
 
  character_testX$94:
 	; Parameter 57 signed int £temporary3949
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$95:
 	; PreCall 25
 
  character_testX$96:
 	; IntegralToIntegral £temporary3950 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$97
@@ -712,12 +712,12 @@ section .text
 
  character_testX$97:
 	; Parameter 85 signed int £temporary3950
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$98:
 	; Call 61 isxdigit 0
 	mov qword [rbp + 61], character_testX$99
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp isxdigit
 
@@ -746,12 +746,12 @@ section .text
 
  character_testX$105:
 	; Parameter 61 string £temporary3953
-	mov [rbp + 61], rax
+	mov [rbp + 61], {operand2}
 
  character_testX$106:
 	; Call 25 printf 12
 	mov qword [rbp + 25], character_testX$107
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 12
@@ -765,11 +765,11 @@ section .text
 
  character_testX$109:
 	; Parameter 49 string string_isgraph282725c2729203D2025s0A#
-	mov qword [rbp + 49], @8203string_isgraph282725c2729203D2025s0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$110:
 	; IntegralToIntegral £temporary3955 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$111
@@ -778,14 +778,14 @@ section .text
 
  character_testX$111:
 	; Parameter 57 signed int £temporary3955
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$112:
 	; PreCall 25
 
  character_testX$113:
 	; IntegralToIntegral £temporary3956 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$114
@@ -794,12 +794,12 @@ section .text
 
  character_testX$114:
 	; Parameter 85 signed int £temporary3956
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$115:
 	; Call 61 isgraph 0
 	mov qword [rbp + 61], character_testX$116
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp isgraph
 
@@ -828,12 +828,12 @@ section .text
 
  character_testX$122:
 	; Parameter 61 string £temporary3959
-	mov [rbp + 61], rax
+	mov [rbp + 61], {operand2}
 
  character_testX$123:
 	; Call 25 printf 12
 	mov qword [rbp + 25], character_testX$124
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 12
@@ -847,11 +847,11 @@ section .text
 
  character_testX$126:
 	; Parameter 49 string string_isprint282725c2729203D2025s0A#
-	mov qword [rbp + 49], @8207string_isprint282725c2729203D2025s0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$127:
 	; IntegralToIntegral £temporary3961 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$128
@@ -860,14 +860,14 @@ section .text
 
  character_testX$128:
 	; Parameter 57 signed int £temporary3961
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$129:
 	; PreCall 25
 
  character_testX$130:
 	; IntegralToIntegral £temporary3962 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$131
@@ -876,12 +876,12 @@ section .text
 
  character_testX$131:
 	; Parameter 85 signed int £temporary3962
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$132:
 	; Call 61 isprint 0
 	mov qword [rbp + 61], character_testX$133
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp isprint
 
@@ -910,12 +910,12 @@ section .text
 
  character_testX$139:
 	; Parameter 61 string £temporary3965
-	mov [rbp + 61], rax
+	mov [rbp + 61], {operand2}
 
  character_testX$140:
 	; Call 25 printf 12
 	mov qword [rbp + 25], character_testX$141
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 12
@@ -929,11 +929,11 @@ section .text
 
  character_testX$143:
 	; Parameter 49 string string_ispunct282725c2729203D2025s0A#
-	mov qword [rbp + 49], @8211string_ispunct282725c2729203D2025s0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$144:
 	; IntegralToIntegral £temporary3967 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$145
@@ -942,14 +942,14 @@ section .text
 
  character_testX$145:
 	; Parameter 57 signed int £temporary3967
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$146:
 	; PreCall 25
 
  character_testX$147:
 	; IntegralToIntegral £temporary3968 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$148
@@ -958,12 +958,12 @@ section .text
 
  character_testX$148:
 	; Parameter 85 signed int £temporary3968
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$149:
 	; Call 61 ispunct 0
 	mov qword [rbp + 61], character_testX$150
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp ispunct
 
@@ -992,12 +992,12 @@ section .text
 
  character_testX$156:
 	; Parameter 61 string £temporary3971
-	mov [rbp + 61], rax
+	mov [rbp + 61], {operand2}
 
  character_testX$157:
 	; Call 25 printf 12
 	mov qword [rbp + 25], character_testX$158
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 12
@@ -1011,11 +1011,11 @@ section .text
 
  character_testX$160:
 	; Parameter 49 string string_iscntrl282725c2729203D2025s0A#
-	mov qword [rbp + 49], @8215string_iscntrl282725c2729203D2025s0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$161:
 	; IntegralToIntegral £temporary3973 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$162
@@ -1024,14 +1024,14 @@ section .text
 
  character_testX$162:
 	; Parameter 57 signed int £temporary3973
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$163:
 	; PreCall 25
 
  character_testX$164:
 	; IntegralToIntegral £temporary3974 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$165
@@ -1040,12 +1040,12 @@ section .text
 
  character_testX$165:
 	; Parameter 85 signed int £temporary3974
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$166:
 	; Call 61 iscntrl 0
 	mov qword [rbp + 61], character_testX$167
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp iscntrl
 
@@ -1074,12 +1074,12 @@ section .text
 
  character_testX$173:
 	; Parameter 61 string £temporary3977
-	mov [rbp + 61], rax
+	mov [rbp + 61], {operand2}
 
  character_testX$174:
 	; Call 25 printf 12
 	mov qword [rbp + 25], character_testX$175
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 12
@@ -1093,11 +1093,11 @@ section .text
 
  character_testX$177:
 	; Parameter 49 string string_isspace282725c2729203D2025s0A#
-	mov qword [rbp + 49], @8219string_isspace282725c2729203D2025s0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$178:
 	; IntegralToIntegral £temporary3979 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$179
@@ -1106,14 +1106,14 @@ section .text
 
  character_testX$179:
 	; Parameter 57 signed int £temporary3979
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$180:
 	; PreCall 25
 
  character_testX$181:
 	; IntegralToIntegral £temporary3980 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$182
@@ -1122,12 +1122,12 @@ section .text
 
  character_testX$182:
 	; Parameter 85 signed int £temporary3980
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$183:
 	; Call 61 isspace 0
 	mov qword [rbp + 61], character_testX$184
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp isspace
 
@@ -1156,12 +1156,12 @@ section .text
 
  character_testX$190:
 	; Parameter 61 string £temporary3983
-	mov [rbp + 61], rax
+	mov [rbp + 61], {operand2}
 
  character_testX$191:
 	; Call 25 printf 12
 	mov qword [rbp + 25], character_testX$192
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 12
@@ -1175,11 +1175,11 @@ section .text
 
  character_testX$194:
 	; Parameter 49 string string_tolower282725c2729203D202725c270A#
-	mov qword [rbp + 49], @8223string_tolower282725c2729203D202725c270A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$195:
 	; IntegralToIntegral £temporary3985 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$196
@@ -1188,14 +1188,14 @@ section .text
 
  character_testX$196:
 	; Parameter 57 signed int £temporary3985
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$197:
 	; PreCall 25
 
  character_testX$198:
 	; IntegralToIntegral £temporary3986 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$199
@@ -1204,12 +1204,12 @@ section .text
 
  character_testX$199:
 	; Parameter 85 signed int £temporary3986
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$200:
 	; Call 61 tolower 0
 	mov qword [rbp + 61], character_testX$201
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp tolower
 
@@ -1236,12 +1236,12 @@ section .text
 
  character_testX$205:
 	; Parameter 61 signed int £temporary3989
-	mov [rbp + 61], ebx
+	mov [rbp + 61], {operand2}
 
  character_testX$206:
 	; Call 25 printf 8
 	mov qword [rbp + 25], character_testX$207
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 8
@@ -1255,11 +1255,11 @@ section .text
 
  character_testX$209:
 	; Parameter 49 string string_toupper282725c2729203D202725c270A0A#
-	mov qword [rbp + 49], @8224string_toupper282725c2729203D202725c270A0A#
+	mov qword [rbp + 49], {operand2}
 
  character_testX$210:
 	; IntegralToIntegral £temporary3991 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$211
@@ -1268,14 +1268,14 @@ section .text
 
  character_testX$211:
 	; Parameter 57 signed int £temporary3991
-	mov [rbp + 57], eax
+	mov [rbp + 57], {operand2}
 
  character_testX$212:
 	; PreCall 25
 
  character_testX$213:
 	; IntegralToIntegral £temporary3992 c
-	mov al, [rbp + 24]
+	mov al, [{operand1}{WithSign(operand2)}]
 	and eax, 255
 	cmp al, 0
 	jge character_testX$214
@@ -1284,12 +1284,12 @@ section .text
 
  character_testX$214:
 	; Parameter 85 signed int £temporary3992
-	mov [rbp + 85], eax
+	mov [rbp + 85], {operand2}
 
  character_testX$215:
 	; Call 61 toupper 0
 	mov qword [rbp + 61], character_testX$216
-	mov [rbp + 69], rbp
+	mov [rbp + 69], {operand2}
 	add rbp, 61
 	jmp toupper
 
@@ -1316,12 +1316,12 @@ section .text
 
  character_testX$220:
 	; Parameter 61 signed int £temporary3995
-	mov [rbp + 61], ebx
+	mov [rbp + 61], {operand2}
 
  character_testX$221:
 	; Call 25 printf 8
 	mov qword [rbp + 25], character_testX$222
-	mov [rbp + 33], rbp
+	mov [rbp + 33], {operand2}
 	add rbp, 25
 	mov rdi, rbp
 	add rdi, 8
@@ -1332,9 +1332,9 @@ section .text
 
  character_testX$223:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  character_testX$224:
@@ -1347,12 +1347,12 @@ section .text
 
  character_test$1:
 	; Parameter 48 signed char integral1$97#
-	mov byte [rbp + 48], 97
+	mov byte [rbp + 48], {operand2}
 
  character_test$2:
 	; Call 24 character_testX 0
 	mov qword [rbp + 24], character_test$3
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp character_testX
 
@@ -1364,12 +1364,12 @@ section .text
 
  character_test$5:
 	; Parameter 48 signed char integral1$66#
-	mov byte [rbp + 48], 66
+	mov byte [rbp + 48], {operand2}
 
  character_test$6:
 	; Call 24 character_testX 0
 	mov qword [rbp + 24], character_test$7
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp character_testX
 
@@ -1381,12 +1381,12 @@ section .text
 
  character_test$9:
 	; Parameter 48 signed char integral1$49#
-	mov byte [rbp + 48], 49
+	mov byte [rbp + 48], {operand2}
 
  character_test$10:
 	; Call 24 character_testX 0
 	mov qword [rbp + 24], character_test$11
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp character_testX
 
@@ -1398,12 +1398,12 @@ section .text
 
  character_test$13:
 	; Parameter 48 signed char integral1$46#
-	mov byte [rbp + 48], 46
+	mov byte [rbp + 48], {operand2}
 
  character_test$14:
 	; Call 24 character_testX 0
 	mov qword [rbp + 24], character_test$15
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp character_testX
 
@@ -1415,12 +1415,12 @@ section .text
 
  character_test$17:
 	; Parameter 48 signed char integral1$10#
-	mov byte [rbp + 48], 10
+	mov byte [rbp + 48], {operand2}
 
  character_test$18:
 	; Call 24 character_testX 0
 	mov qword [rbp + 24], character_test$19
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp character_testX
 
@@ -1432,12 +1432,12 @@ section .text
 
  character_test$21:
 	; Parameter 48 signed char integral1$102#
-	mov byte [rbp + 48], 102
+	mov byte [rbp + 48], {operand2}
 
  character_test$22:
 	; Call 24 character_testX 0
 	mov qword [rbp + 24], character_test$23
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp character_testX
 
@@ -1449,12 +1449,12 @@ section .text
 
  character_test$25:
 	; Parameter 48 signed char integral1$103#
-	mov byte [rbp + 48], 103
+	mov byte [rbp + 48], {operand2}
 
  character_test$26:
 	; Call 24 character_testX 0
 	mov qword [rbp + 24], character_test$27
-	mov [rbp + 32], rbp
+	mov [rbp + 32], {operand2}
 	add rbp, 24
 	jmp character_testX
 
@@ -1463,9 +1463,9 @@ section .text
 
  character_test$28:
 	; Return
-	mov rax, [rbp]
-	mov rdi, [rbp + 16]
-	mov rbp, [rbp + 8]
+	mov rax, [{operand1}{WithSign(operand2)}]
+	mov rdi, [{operand1}{WithSign(operand2)}]
+	mov rbp, [{operand1}{WithSign(operand2)}]
 	jmp rax
 
  character_test$29:
