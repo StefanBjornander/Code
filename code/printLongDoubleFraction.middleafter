@@ -1,35 +1,35 @@
 0: PushFloat longDoubleValue
 1: PushFloat longDoubleValue
-2: FloatingToIntegral £temporary1919 longDoubleValue
-3: IntegralToFloating £temporary1921 £temporary1919
-4: Subtract £temporary1920 longDoubleValue £temporary1921
+2: FloatingToIntegral £temporary1898 longDoubleValue
+3: IntegralToFloating £temporary1900 £temporary1898
+4: Subtract £temporary1899 longDoubleValue £temporary1900
 5: PopFloat longDoubleValue
-6: NotEqual 8 precision integral4$0#
-7: Assign precision integral4$6#
-8: NotEqual 10 grid integral4$0#
-9: LessThanEqual 14 precision integral4$0#
-10: PreCall 40
-11: Parameter 64 signed char integral1$46#
-12: Call 40 printChar 0
-13: PostCall 40
-14: Assign £temporary1931 precision
-15: Subtract precision precision integral4$1#
-16: LessThanEqual 34 £temporary1931 integral4$0#
+6: NotEqual 8 precision integral2$0#
+7: Assign precision integral2$6#
+8: NotEqual 10 grid integral2$0#
+9: LessThanEqual 14 precision integral2$0#
+10: PreCall 18
+11: Parameter 24 signed char integral1$46#
+12: Call 18 printChar 0
+13: PostCall 18
+14: Assign £temporary1910 precision
+15: Subtract precision precision integral2$1#
+16: LessThanEqual 34 £temporary1910 integral2$0#
 17: PushFloat floating8$10.0#
 18: PushFloat longDoubleValue
-19: Multiply £temporary1934 floating8$10.0# longDoubleValue
+19: Multiply £temporary1913 floating8$10.0# longDoubleValue
 20: TopFloat longDoubleValue10
-21: FloatingToIntegral £temporary1935 longDoubleValue10
-22: Assign digitValue £temporary1935
-23: PreCall 52
-24: Add £temporary1936 digitValue integral4$48#
-25: IntegralToIntegral £temporary1937 £temporary1936
-26: Parameter 76 signed char £temporary1937
-27: Call 52 printChar 0
-28: PostCall 52
+21: FloatingToIntegral £temporary1914 longDoubleValue10
+22: Assign digitValue £temporary1914
+23: PreCall 28
+24: Add £temporary1915 digitValue integral2$48#
+25: IntegralToIntegral £temporary1916 £temporary1915
+26: Parameter 34 signed char £temporary1916
+27: Call 28 printChar 0
+28: PostCall 28
 29: PushFloat longDoubleValue10
-30: IntegralToFloating £temporary1939 digitValue
-31: Subtract £temporary1940 longDoubleValue10 £temporary1939
+30: IntegralToFloating £temporary1918 digitValue
+31: Subtract £temporary1919 longDoubleValue10 £temporary1918
 32: PopFloat longDoubleValue
 33: Jump 14
 34: Return
