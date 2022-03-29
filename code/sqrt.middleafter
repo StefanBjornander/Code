@@ -7,21 +7,21 @@
 6: TopFloat root_i
 7: PushFloat x
 8: PushFloat root_i
-9: Divide £temporary514 x root_i
-10: Add £temporary515 root_i £temporary514
+9: Divide £temporary525 x root_i
+10: Add £temporary526 root_i £temporary525
 11: PushFloat floating8$2#
-12: Divide £temporary516 £temporary515 floating8$2#
+12: Divide £temporary527 £temporary526 floating8$2#
 13: PopFloat root_i_plus_1
-14: PreCall 30
+14: PreCall 48
 15: PushFloat root_i_plus_1
 16: PushFloat root_i
-17: Subtract £temporary517 root_i_plus_1 root_i
-18: Parameter 36 double £temporary517
-19: Call 30 fabs 0
-20: PostCall 30
-21: GetReturnValue £temporary518
+17: Subtract £temporary528 root_i_plus_1 root_i
+18: Parameter 72 double £temporary528
+19: Call 48 fabs 0
+20: PostCall 48
+21: GetReturnValue £temporary529
 22: PushFloat floating8$0.000000001#
-23: GreaterThanEqual 5 £temporary518 floating8$0.000000001#
+23: GreaterThanEqual 5 £temporary529 floating8$0.000000001#
 24: PushFloat root_i_plus_1
 25: Return root_i_plus_1
 26: Assign errno EDOM
