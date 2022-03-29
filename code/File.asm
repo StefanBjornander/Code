@@ -157,7 +157,7 @@ section .text
 	mov rsi, 511
 
  filecreate$4:
-	; SysCall
+	; SystemCall
 	syscall
 
  filecreate$5:
@@ -306,7 +306,7 @@ section .text
 	mov rsi, 0
 
  fileexists$4:
-	; SysCall
+	; SystemCall
 	syscall
 
  fileexists$5:
@@ -362,7 +362,7 @@ section .text
 	; AssignRegister rsi £temporary837
 
  @2522$fileopen$5:
-	; SysCall
+	; SystemCall
 	syscall
 
  @2522$fileopen$6:
@@ -1394,7 +1394,7 @@ section .text
 	; AssignRegister rdi £temporary937
 
  fclose$5:
-	; SysCall
+	; SystemCall
 	syscall
 
  fclose$6:
@@ -1526,7 +1526,7 @@ section .text
 	; AssignRegister rdi £temporary960
 
  remove$3:
-	; SysCall
+	; SystemCall
 	syscall
 
  remove$4:
@@ -1581,7 +1581,7 @@ section .text
 	; AssignRegister rsi £temporary969
 
  rename$5:
-	; SysCall
+	; SystemCall
 	syscall
 
  rename$6:
@@ -2299,7 +2299,7 @@ section .text
 	mov rax, 0
 
  fread$9:
-	; SysCall
+	; SystemCall
 	syscall
 
  fread$10:
@@ -2358,7 +2358,7 @@ section .text
 	mov rax, 1
 
  fwrite$9:
-	; SysCall
+	; SystemCall
 	syscall
 
  fwrite$10:
@@ -2413,7 +2413,7 @@ section .text
 	; AssignRegister rdx £temporary1073
 
  fseek$8:
-	; SysCall
+	; SystemCall
 	syscall
 
  fseek$9:

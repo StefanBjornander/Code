@@ -5482,7 +5482,7 @@ section .text
 	mov rdi, 18446744073709551615
 
  abort$2:
-	; SysCall
+	; SystemCall
 	syscall
 
  abort$3:
@@ -6094,7 +6094,7 @@ section .text
 	; AssignRegister rdi £temporary2988
 
  exit$19:
-	; SysCall
+	; SystemCall
 	syscall
 
  exit$20:

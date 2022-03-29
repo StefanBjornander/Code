@@ -269,7 +269,7 @@ section .text
 	mov rdx, 1
 
  printChar$15:
-	; SysCall
+	; SystemCall
 	syscall
 
  printChar$16:

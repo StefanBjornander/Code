@@ -125,7 +125,7 @@ section .text
 	mov rdx, 1
 
  scanChar$17:
-	; SysCall
+	; SystemCall
 	syscall
 
  scanChar$18:

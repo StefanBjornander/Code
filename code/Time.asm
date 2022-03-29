@@ -123,7 +123,7 @@ section .text
 	; AssignRegister rdi £temporary3067
 
  time$4:
-	; SysCall
+	; SystemCall
 	syscall
 
  time$5:
