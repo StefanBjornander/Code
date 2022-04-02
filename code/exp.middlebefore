@@ -34,8 +34,8 @@
 33: PostCall 54
 34: GetReturnValue £temporary396
 35: PushFloat floating8$0.000000001#
-36: GreaterThanEqual < PushFloat term> £temporary396 floating8$0.000000001#
-37: Jump < PushFloat sum>
+36: GreaterThanEqual PushFloat term £temporary396 floating8$0.000000001#
+37: Jump PushFloat sum
 38: PushFloat sum
 39: Return sum
 40: Empty

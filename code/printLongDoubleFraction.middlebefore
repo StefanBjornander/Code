@@ -4,31 +4,31 @@
 3: IntegralToFloating £temporary1900 £temporary1898
 4: Subtract £temporary1899 longDoubleValue £temporary1900
 5: PopFloat longDoubleValue
-6: Equal < Empty> precision integral2$0#
-7: Jump < Empty>
+6: Equal Empty precision integral2$0#
+7: Jump Empty
 8: Empty
 9: Assign precision integral2$6#
-10: Jump < Empty>
+10: Jump Empty
 11: Empty
 12: Empty
-13: NotEqual < Empty> grid integral2$0#
-14: Jump < GreaterThan < Empty> precision integral2$0#>
-15: GreaterThan < Empty> precision integral2$0#
-16: Jump < Empty>
+13: NotEqual Empty grid integral2$0#
+14: Jump GreaterThan Empty precision integral2$0#
+15: GreaterThan Empty precision integral2$0#
+16: Jump Empty
 17: Empty
 18: PreCall 18
 19: Parameter 24 signed char integral1$46#
 20: Call 18 printChar 0
 21: PostCall 18
-22: Jump < Empty>
+22: Jump Empty
 23: Empty
 24: Empty
 25: Empty
 26: Assign £temporary1910 precision
 27: Subtract £temporary1911 precision integral2$1#
 28: Assign precision £temporary1911
-29: GreaterThan < PushFloat floating8$10.0#> £temporary1910 integral2$0#
-30: Jump < Empty>
+29: GreaterThan PushFloat floating8$10.0# £temporary1910 integral2$0#
+30: Jump Empty
 31: PushFloat floating8$10.0#
 32: PushFloat longDoubleValue
 33: Multiply £temporary1913 floating8$10.0# longDoubleValue
@@ -49,7 +49,7 @@
 48: Subtract £temporary1919 longDoubleValue10 £temporary1918
 49: PopFloat longDoubleValue
 50: Empty
-51: Jump < Empty>
+51: Jump Empty
 52: Empty
 53: Return
 54: FunctionEnd printLongDoubleFraction

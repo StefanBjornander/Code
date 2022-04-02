@@ -1,7 +1,7 @@
 0: PushFloat x
 1: PushFloat floating8$0#
-2: GreaterThanEqual < Empty> x floating8$0#
-3: Jump < Empty>
+2: GreaterThanEqual Empty x floating8$0#
+3: Jump Empty
 4: Empty
 5: PushFloat floating8$1#
 6: PopFloat root_i_plus_1
@@ -28,11 +28,11 @@
 27: PostCall 30
 28: GetReturnValue £temporary518
 29: PushFloat floating8$0.000000001#
-30: GreaterThanEqual < PushFloat root_i> £temporary518 floating8$0.000000001#
-31: Jump < PushFloat root_i_plus_1>
+30: GreaterThanEqual PushFloat root_i £temporary518 floating8$0.000000001#
+31: Jump PushFloat root_i_plus_1
 32: PushFloat root_i_plus_1
 33: Return root_i_plus_1
-34: Jump < Empty>
+34: Jump Empty
 35: Empty
 36: Assign errno EDOM
 37: PushFloat floating8$0#

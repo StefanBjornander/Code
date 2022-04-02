@@ -1,19 +1,19 @@
 0: PushFloat x
 1: PushFloat floating8$0#
-2: GreaterThan < Empty> x floating8$0#
-3: Jump < Empty>
+2: GreaterThan Empty x floating8$0#
+3: Jump Empty
 4: Empty
 5: Assign n integral2$0#
 6: PushFloat x
 7: PushFloat floating8$1#
-8: GreaterThan < Empty> x floating8$1#
-9: Jump < Empty>
+8: GreaterThan Empty x floating8$1#
+9: Jump Empty
 10: Empty
 11: Empty
 12: PushFloat x
 13: PushFloat floating8$1#
-14: GreaterThan < PushFloat x> x floating8$1#
-15: Jump < PushFloat floating8$1#>
+14: GreaterThan PushFloat x x floating8$1#
+15: Jump PushFloat floating8$1#
 16: PushFloat x
 17: PushFloat floating8$2.71#
 18: Divide £temporary402 x floating8$2.71#
@@ -21,19 +21,19 @@
 20: Add £temporary403 n integral2$1#
 21: Assign n £temporary403
 22: Empty
-23: Jump < Empty>
-24: Jump < Empty>
+23: Jump Empty
+24: Jump Empty
 25: Empty
 26: PushFloat x
 27: PushFloat floating8$0.368#
-28: LessThan < Empty> x floating8$0.368#
-29: Jump < Empty>
+28: LessThan Empty x floating8$0.368#
+29: Jump Empty
 30: Empty
 31: Empty
 32: PushFloat x
 33: PushFloat floating8$0.368#
-34: LessThan < PushFloat x> x floating8$0.368#
-35: Jump < PushFloat floating8$1#>
+34: LessThan PushFloat x x floating8$0.368#
+35: Jump PushFloat floating8$1#
 36: PushFloat x
 37: PushFloat floating8$2.71#
 38: Multiply £temporary406 x floating8$2.71#
@@ -41,8 +41,8 @@
 40: Subtract £temporary407 n integral2$1#
 41: Assign n £temporary407
 42: Empty
-43: Jump < Empty>
-44: Jump < Empty>
+43: Jump Empty
+44: Jump Empty
 45: Empty
 46: Empty
 47: Empty
@@ -90,13 +90,13 @@
 89: PostCall 64
 90: GetReturnValue £temporary420
 91: PushFloat floating8$0.000000001#
-92: GreaterThanEqual < PushFloat term> £temporary420 floating8$0.000000001#
-93: Jump < PushFloat sum>
+92: GreaterThanEqual PushFloat term £temporary420 floating8$0.000000001#
+93: Jump PushFloat sum
 94: PushFloat sum
 95: IntegralToFloating £temporary423 n
 96: Add £temporary422 sum £temporary423
 97: Return £temporary422
-98: Jump < Empty>
+98: Jump Empty
 99: Empty
 100: Assign errno EDOM
 101: PushFloat floating8$0#
