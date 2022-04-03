@@ -587,12 +587,12 @@ unsigned int newBlockSize = ( ( unsigned int ) ( sizeof ( BLOCK_HEADER ) ) )  +
 ( ( unsigned int ) memorySize ) , minGap = 0 ;
 
     
- unsigned int lastAddress = 65528u ; 
+       
    
  
     
 
-             
+unsigned int lastAddress = ( unsigned int ) ( stack_top + 1048572u ) ;
 
    
 
@@ -642,11 +642,11 @@ else {
 unsigned int newAddress = lastAddress - newBlockSize ;
 
     
- unsigned int stackTop = register_bp ; 
+       
    
  
     
-       
+ unsigned int stackTop = register_rbp ; 
    
 
 
@@ -839,12 +839,12 @@ return oldMemoryPtr ;
 
 
     
- { unsigned int lastAddress = 65528u ; 
+        
    
  
     
 
-              
+{ unsigned int lastAddress = ( unsigned int ) ( stack_top + 1048572u ) ;
 
    
 
