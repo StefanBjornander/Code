@@ -30,6 +30,7 @@ end
 
 Stack.push = function(self, value)
   self.m_first = Cell:construct(value, self.m_first)
+  self.m_size = self.m_size + 1
 end
 
 Stack.top = function(self)
@@ -41,6 +42,7 @@ Stack.pop = function(self)
   assert(self.m_first ~= nil, "Pop: Stack Empty.")
   top_value = self.m_first:value()
   self.m_first = self.m_first:next()
+  self.m_size = self.m_size - 1
   return top_value
 end
 
